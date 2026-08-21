@@ -2373,6 +2373,22 @@ test('current net-new US and UK agency batch preserves first-party email and own
   }
 });
 
+test('current net-new UK and South Africa multichannel batch remains execution ready', () => {
+  for (const company of ['Minnis Brands', 'THR Outdoor', 'AirTents South Africa']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.match(candidate.contactEmail, /@/);
+    assert.equal(candidate.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(candidate.officialSocialProfileVerified, true);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+  }
+  const alpineWaves = verifiedExternalCandidates.find(item => item.company === 'AlpineWaves');
+  assert.ok(alpineWaves);
+  assert.equal(alpineWaves.contactCapabilityVerified, true);
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...alpineWaves, platform: 'website_form' }).ready, true);
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...alpineWaves, platform: 'instagram', url: alpineWaves.instagramUrl }).ready, true);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));

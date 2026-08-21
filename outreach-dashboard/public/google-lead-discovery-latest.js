@@ -1,17 +1,17 @@
 window.GOOGLE_LEAD_DISCOVERY_LATEST = {
-  "generatedAt": "2026-08-21T08:56:57.503Z",
+  "generatedAt": "2026-08-21T09:02:01.002Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "continuously refill verified agency and key-account prospects above ICP 70, exclude active customers, then convert them into exact official social and website outreach targets",
   "discoveryRefillAttempted": true,
   "discoveryRefreshModel": "artifact_rebuilt_each_run_from_verified_refill_pool",
-  "candidatePoolCount": 458,
+  "candidatePoolCount": 462,
   "activeCustomerExcludedCount": 3,
-  "qualifiedNonPartnerCompanyCount": 439,
+  "qualifiedNonPartnerCompanyCount": 443,
   "qualifiedThreshold": 70,
-  "refillCandidateCount": 439,
+  "refillCandidateCount": 443,
   "refillByCustomerType": {
     "agency": 8,
-    "key_account": 225
+    "key_account": 227
   },
   "leads": [
     {
@@ -73,7 +73,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -162,7 +162,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -247,7 +247,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -344,7 +344,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -437,7 +437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -530,7 +530,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -633,7 +633,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -737,7 +737,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -827,7 +827,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -928,7 +928,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1007,7 +1007,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1110,7 +1110,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1222,7 +1222,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1320,7 +1320,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1417,7 +1417,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1512,7 +1512,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1608,7 +1608,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1705,7 +1705,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1802,7 +1802,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1900,7 +1900,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1995,7 +1995,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -2082,7 +2082,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2177,7 +2177,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2274,7 +2274,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2369,7 +2369,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2466,7 +2466,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2563,7 +2563,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2670,7 +2670,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2689,7 +2689,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:56:59.165Z",
+        "verifiedAt": "2026-08-21T09:02:03.356Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -2758,7 +2758,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2846,7 +2846,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2933,7 +2933,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3018,7 +3018,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3108,7 +3108,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3127,7 +3127,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:56:57.942Z",
+        "verifiedAt": "2026-08-21T09:02:01.410Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -3193,7 +3193,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3280,7 +3280,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3383,7 +3383,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3404,7 +3404,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:56:59.165Z",
+        "verifiedAt": "2026-08-21T09:02:03.356Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -3473,7 +3473,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3563,7 +3563,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3666,7 +3666,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3693,7 +3693,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:56:59.165Z",
+        "verifiedAt": "2026-08-21T09:02:03.356Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -3762,7 +3762,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3847,7 +3847,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3942,7 +3942,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4038,7 +4038,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4065,7 +4065,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:56:57.942Z",
+        "verifiedAt": "2026-08-21T09:02:01.410Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -4131,7 +4131,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4224,7 +4224,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4320,7 +4320,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4415,7 +4415,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4508,7 +4508,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4606,7 +4606,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4704,7 +4704,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4803,7 +4803,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4898,7 +4898,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4995,7 +4995,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5030,6 +5030,96 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ],
         "error": ""
       }
+    },
+    {
+      "id": "google-customer-minnis-brands-linkedin",
+      "name": "Minnis Brands",
+      "company": "Minnis Brands",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "UK and Ireland outdoor leisure and sport agency",
+      "role": "Owner Todd Minnis, responsible for supplier and brand partnerships.",
+      "background": "Minnis Brands is a multi-brand outdoor leisure, sport and fashion agency with more than 40 years of sales and distribution relationships across the UK and Ireland and explicitly invites supplier partnerships.",
+      "buyerPersona": "Owner Todd Minnis, responsible for supplier and brand partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "UK and Ireland outdoor leisure and sport agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Minnis Brands is a multi-brand outdoor leisure, sport and fashion agency with more than 40 years of sales and distribution relationships across the UK and Ireland and explicitly invites supplier partnerships.",
+      "linkedin_url": "https://www.linkedin.com/in/toddminnis",
+      "linkedin": "https://www.linkedin.com/in/toddminnis",
+      "publicEmail": "todd@minnisbrands.com",
+      "contactEmail": "todd@minnisbrands.com",
+      "vendorPortal": "https://minnisbrands.com/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Named owner email and exact company Instagram and principal LinkedIn links are published on the first-party site.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_agency_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://minnisbrands.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Minnis%20Brands%22%20%22UK%20and%20Ireland%20outdoor%20leisure%20and%20sport%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://minnisbrands.com/contact/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Minnis%20Brands%22%20%22UK%20and%20Ireland%20outdoor%20leisure%20and%20sport%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://minnisbrands.com/contact/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:03.572Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "linkedin",
+      "platformUrl": "https://www.linkedin.com/in/toddminnis",
+      "url": "https://www.linkedin.com/in/toddminnis",
+      "action": "develop",
+      "reason": "verified_linkedin_profile_ready",
+      "alternateChannels": {
+        "linkedin": "https://www.linkedin.com/in/toddminnis",
+        "instagram": "https://www.instagram.com/minnisbrands",
+        "facebook": "",
+        "websiteContact": "https://minnisbrands.com/contact/"
+      },
+      "identitySource": "verified LinkedIn profile + official website + Google background query",
+      "channelPriority": 0,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:03.572Z",
+        "evidenceUrl": "https://minnisbrands.com/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/cabela%27s",
@@ -5104,7 +5194,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -5194,7 +5284,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -5279,7 +5369,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -5366,7 +5456,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -5389,6 +5479,96 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
         "httpStatus": 403,
         "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
+    },
+    {
+      "id": "google-customer-minnis-brands-instagram",
+      "name": "Minnis Brands",
+      "company": "Minnis Brands",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "UK and Ireland outdoor leisure and sport agency",
+      "role": "Owner Todd Minnis, responsible for supplier and brand partnerships.",
+      "background": "Minnis Brands is a multi-brand outdoor leisure, sport and fashion agency with more than 40 years of sales and distribution relationships across the UK and Ireland and explicitly invites supplier partnerships.",
+      "buyerPersona": "Owner Todd Minnis, responsible for supplier and brand partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "UK and Ireland outdoor leisure and sport agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Minnis Brands is a multi-brand outdoor leisure, sport and fashion agency with more than 40 years of sales and distribution relationships across the UK and Ireland and explicitly invites supplier partnerships.",
+      "linkedin_url": "https://www.linkedin.com/in/toddminnis",
+      "linkedin": "https://www.linkedin.com/in/toddminnis",
+      "publicEmail": "todd@minnisbrands.com",
+      "contactEmail": "todd@minnisbrands.com",
+      "vendorPortal": "https://minnisbrands.com/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Named owner email and exact company Instagram and principal LinkedIn links are published on the first-party site.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_agency_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://minnisbrands.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Minnis%20Brands%22%20%22UK%20and%20Ireland%20outdoor%20leisure%20and%20sport%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://minnisbrands.com/contact/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Minnis%20Brands%22%20%22UK%20and%20Ireland%20outdoor%20leisure%20and%20sport%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://minnisbrands.com/contact/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:03.572Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/minnisbrands",
+      "url": "https://www.instagram.com/minnisbrands",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "linkedin": "https://www.linkedin.com/in/toddminnis",
+        "instagram": "https://www.instagram.com/minnisbrands",
+        "facebook": "",
+        "websiteContact": "https://minnisbrands.com/contact/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:03.572Z",
+        "evidenceUrl": "https://minnisbrands.com/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": true
@@ -5466,7 +5646,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -5558,7 +5738,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -5645,7 +5825,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -5748,7 +5928,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5846,7 +6026,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5939,7 +6119,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6032,7 +6212,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6129,7 +6309,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6225,7 +6405,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6320,7 +6500,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6415,7 +6595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6512,7 +6692,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6609,7 +6789,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6704,7 +6884,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6798,7 +6978,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6895,7 +7075,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6993,7 +7173,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7090,7 +7270,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7117,7 +7297,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-21T08:11:38.423Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:56:58.967Z",
+        "verifiedAt": "2026-08-21T09:02:02.765Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -7187,7 +7367,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7222,6 +7402,104 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ],
         "error": ""
       }
+    },
+    {
+      "id": "google-customer-minnis-brands-website-contact",
+      "name": "Minnis Brands",
+      "company": "Minnis Brands",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "UK and Ireland outdoor leisure and sport agency",
+      "role": "Owner Todd Minnis, responsible for supplier and brand partnerships.",
+      "background": "Minnis Brands is a multi-brand outdoor leisure, sport and fashion agency with more than 40 years of sales and distribution relationships across the UK and Ireland and explicitly invites supplier partnerships.",
+      "buyerPersona": "Owner Todd Minnis, responsible for supplier and brand partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "UK and Ireland outdoor leisure and sport agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Minnis Brands is a multi-brand outdoor leisure, sport and fashion agency with more than 40 years of sales and distribution relationships across the UK and Ireland and explicitly invites supplier partnerships.",
+      "linkedin_url": "https://www.linkedin.com/in/toddminnis",
+      "linkedin": "https://www.linkedin.com/in/toddminnis",
+      "publicEmail": "todd@minnisbrands.com",
+      "contactEmail": "todd@minnisbrands.com",
+      "vendorPortal": "https://minnisbrands.com/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Named owner email and exact company Instagram and principal LinkedIn links are published on the first-party site.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_agency_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://minnisbrands.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Minnis%20Brands%22%20%22UK%20and%20Ireland%20outdoor%20leisure%20and%20sport%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://minnisbrands.com/contact/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Minnis%20Brands%22%20%22UK%20and%20Ireland%20outdoor%20leisure%20and%20sport%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://minnisbrands.com/",
+      "socialProfileVerifiedAt": "2026-08-21T09:58:00.000Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://minnisbrands.com/contact/",
+      "url": "https://minnisbrands.com/contact/",
+      "contactUrl": "https://minnisbrands.com/contact/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Aminnisbrands.com%20%22Minnis%20Brands%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Minnis Brands Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_public_business_email_verified",
+      "alternateChannels": {
+        "linkedin": "https://www.linkedin.com/in/toddminnis",
+        "instagram": "https://www.instagram.com/minnisbrands",
+        "facebook": "",
+        "websiteContact": "https://minnisbrands.com/contact/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:03.572Z",
+        "evidenceUrl": "https://minnisbrands.com/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -7296,7 +7574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7381,7 +7659,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7466,7 +7744,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7554,7 +7832,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7583,6 +7861,93 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true
+    },
+    {
+      "id": "google-customer-alpinewaves-instagram",
+      "name": "AlpineWaves",
+      "company": "AlpineWaves",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "UK and Ireland outdoor brand sales agency",
+      "role": "Agency principal responsible for new brand appointments and distribution strategy.",
+      "background": "AlpineWaves provides tailored UK and Ireland distribution strategies for emerging and established outdoor brands and explicitly invites prospective brand partners to make contact.",
+      "buyerPersona": "Agency principal responsible for new brand appointments and distribution strategy.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "UK and Ireland outdoor brand sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "AlpineWaves provides tailored UK and Ireland distribution strategies for emerging and established outdoor brands and explicitly invites prospective brand partners to make contact.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.alpinewaves.co.uk/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No exact public email exposed; use only the first-party contact form or company Instagram linked by the official site.",
+      "emailVerificationStatus": "not_verified",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://www.alpinewaves.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22AlpineWaves%22%20%22UK%20and%20Ireland%20outdoor%20brand%20sales%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.alpinewaves.co.uk/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22AlpineWaves%22%20%22UK%20and%20Ireland%20outdoor%20brand%20sales%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://www.alpinewaves.co.uk/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:04.355Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/alpinewavesco",
+      "url": "https://www.instagram.com/alpinewavesco",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/alpinewavesco",
+        "facebook": "",
+        "websiteContact": "https://www.alpinewaves.co.uk/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:04.355Z",
+        "evidenceUrl": "https://www.alpinewaves.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -7657,7 +8022,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7744,7 +8109,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7831,7 +8196,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7935,7 +8300,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8028,7 +8393,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8121,7 +8486,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8214,7 +8579,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8311,7 +8676,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8408,7 +8773,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8501,7 +8866,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8596,7 +8961,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8691,7 +9056,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8786,7 +9151,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8881,7 +9246,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8979,7 +9344,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9075,7 +9440,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9172,7 +9537,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9265,7 +9630,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9369,7 +9734,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9466,7 +9831,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9493,7 +9858,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:57:00.285Z",
+        "verifiedAt": "2026-08-21T09:02:06.403Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -9559,7 +9924,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9657,7 +10022,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9755,7 +10120,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9848,7 +10213,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9945,7 +10310,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9982,6 +10347,101 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true
+    },
+    {
+      "id": "google-customer-alpinewaves-website-contact",
+      "name": "AlpineWaves",
+      "company": "AlpineWaves",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "UK and Ireland outdoor brand sales agency",
+      "role": "Agency principal responsible for new brand appointments and distribution strategy.",
+      "background": "AlpineWaves provides tailored UK and Ireland distribution strategies for emerging and established outdoor brands and explicitly invites prospective brand partners to make contact.",
+      "buyerPersona": "Agency principal responsible for new brand appointments and distribution strategy.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "UK and Ireland outdoor brand sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "AlpineWaves provides tailored UK and Ireland distribution strategies for emerging and established outdoor brands and explicitly invites prospective brand partners to make contact.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.alpinewaves.co.uk/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No exact public email exposed; use only the first-party contact form or company Instagram linked by the official site.",
+      "emailVerificationStatus": "not_verified",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://www.alpinewaves.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22AlpineWaves%22%20%22UK%20and%20Ireland%20outdoor%20brand%20sales%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.alpinewaves.co.uk/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22AlpineWaves%22%20%22UK%20and%20Ireland%20outdoor%20brand%20sales%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://www.alpinewaves.co.uk/",
+      "socialProfileVerifiedAt": "2026-08-21T09:58:00.000Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.alpinewaves.co.uk/",
+      "url": "https://www.alpinewaves.co.uk/",
+      "contactUrl": "https://www.alpinewaves.co.uk/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.alpinewaves.co.uk%20%22AlpineWaves%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear AlpineWaves Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/alpinewavesco",
+        "facebook": "",
+        "websiteContact": "https://www.alpinewaves.co.uk/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:04.355Z",
+        "evidenceUrl": "https://www.alpinewaves.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -10046,7 +10506,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:02.763Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:06.673Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10056,7 +10516,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10075,7 +10535,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:02.763Z",
+        "verifiedAt": "2026-08-21T09:02:06.673Z",
         "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -10146,7 +10606,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10231,7 +10691,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10321,7 +10781,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10413,7 +10873,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:02.763Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:06.673Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10423,7 +10883,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10444,7 +10904,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:02.763Z",
+        "verifiedAt": "2026-08-21T09:02:06.673Z",
         "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -10515,7 +10975,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10602,7 +11062,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10706,7 +11166,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10733,7 +11193,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:02.763Z",
+        "verifiedAt": "2026-08-21T09:02:06.673Z",
         "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -10804,7 +11264,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10897,7 +11357,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10992,7 +11452,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11089,7 +11549,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11187,7 +11647,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11284,7 +11744,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11381,7 +11841,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11476,7 +11936,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11569,7 +12029,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11665,7 +12125,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -11769,7 +12229,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11854,7 +12314,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11941,7 +12401,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12041,7 +12501,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12143,7 +12603,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12236,7 +12696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12321,7 +12781,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12416,7 +12876,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12511,7 +12971,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12610,7 +13070,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12703,7 +13163,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12798,7 +13258,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12895,7 +13355,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12990,7 +13450,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13088,7 +13548,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -13115,7 +13575,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:02.970Z",
+        "verifiedAt": "2026-08-21T09:02:08.099Z",
         "evidenceUrl": "https://alpinecowboy.com/index.html",
         "httpStatus": 200,
         "signals": [],
@@ -13181,7 +13641,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13274,7 +13734,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -13369,7 +13829,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13462,7 +13922,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -13560,7 +14020,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -13657,7 +14117,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -13754,7 +14214,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13847,7 +14307,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -13940,7 +14400,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -14037,7 +14497,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14132,7 +14592,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14225,7 +14685,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -14320,7 +14780,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14418,7 +14878,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -14511,7 +14971,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -14609,7 +15069,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -14706,7 +15166,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14791,7 +15251,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14878,7 +15338,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14977,7 +15437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15086,7 +15546,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15179,7 +15639,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15274,7 +15734,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15372,7 +15832,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15467,7 +15927,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15564,7 +16024,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15662,7 +16122,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15757,7 +16217,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15854,7 +16314,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15949,7 +16409,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16042,7 +16502,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16069,7 +16529,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:02.750Z",
+        "verifiedAt": "2026-08-21T09:02:09.712Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -16135,7 +16595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16230,7 +16690,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16327,7 +16787,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16425,7 +16885,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16522,7 +16982,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16617,7 +17077,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16715,7 +17175,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16810,7 +17270,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16903,7 +17363,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17004,7 +17464,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17097,7 +17557,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17190,7 +17650,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17287,7 +17747,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17384,7 +17844,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17495,7 +17955,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -17598,7 +18058,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -17685,7 +18145,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -17775,7 +18235,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -17860,7 +18320,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -17877,6 +18337,95 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
       "discoveredAt": "2026-07-14T04:02:10.362Z"
+    },
+    {
+      "id": "google-customer-thr-outdoor-instagram",
+      "name": "THR Outdoor",
+      "company": "THR Outdoor",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African premium camping and caravan distributor",
+      "role": "Commercial or range manager responsible for new supplier and product partnerships.",
+      "background": "THR Outdoor is the official South African distributor for Dometic, Thule, Thetford and Reich and supplies premium outdoor, caravan and camping equipment nationwide.",
+      "buyerPersona": "Commercial or range manager responsible for new supplier and product partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African premium camping and caravan distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "THR Outdoor is the official South African distributor for Dometic, Thule, Thetford and Reich and supplies premium outdoor, caravan and camping equipment nationwide.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "support@thr-outdoor.co.za",
+      "contactEmail": "support@thr-outdoor.co.za",
+      "vendorPortal": "https://thr-outdoor.co.za/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Company-domain support email and exact company social profiles are published on the first-party website.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_distributor_homepage_and_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://thr-outdoor.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22THR%20Outdoor%22%20%22South%20African%20premium%20camping%20and%20caravan%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://thr-outdoor.co.za/contact/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22THR%20Outdoor%22%20%22South%20African%20premium%20camping%20and%20caravan%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://thr-outdoor.co.za/contact/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:11.092Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/thr_outdoor",
+      "url": "https://www.instagram.com/thr_outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/thr_outdoor",
+        "facebook": "https://www.facebook.com/throutdoor",
+        "websiteContact": "https://thr-outdoor.co.za/contact/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:11.092Z",
+        "evidenceUrl": "https://thr-outdoor.co.za/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -17951,7 +18500,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18056,7 +18605,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18163,7 +18712,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18192,6 +18741,97 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ],
         "error": ""
       }
+    },
+    {
+      "id": "google-customer-thr-outdoor-facebook",
+      "name": "THR Outdoor",
+      "company": "THR Outdoor",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African premium camping and caravan distributor",
+      "role": "Commercial or range manager responsible for new supplier and product partnerships.",
+      "background": "THR Outdoor is the official South African distributor for Dometic, Thule, Thetford and Reich and supplies premium outdoor, caravan and camping equipment nationwide.",
+      "buyerPersona": "Commercial or range manager responsible for new supplier and product partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African premium camping and caravan distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "THR Outdoor is the official South African distributor for Dometic, Thule, Thetford and Reich and supplies premium outdoor, caravan and camping equipment nationwide.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "support@thr-outdoor.co.za",
+      "contactEmail": "support@thr-outdoor.co.za",
+      "vendorPortal": "https://thr-outdoor.co.za/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Company-domain support email and exact company social profiles are published on the first-party website.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_distributor_homepage_and_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://thr-outdoor.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22THR%20Outdoor%22%20%22South%20African%20premium%20camping%20and%20caravan%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://thr-outdoor.co.za/contact/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22THR%20Outdoor%22%20%22South%20African%20premium%20camping%20and%20caravan%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://thr-outdoor.co.za/contact/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:11.092Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/throutdoor",
+      "url": "https://www.facebook.com/throutdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/thr_outdoor",
+        "facebook": "https://www.facebook.com/throutdoor",
+        "websiteContact": "https://thr-outdoor.co.za/contact/"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:11.092Z",
+        "evidenceUrl": "https://thr-outdoor.co.za/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -18266,7 +18906,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -18377,7 +19017,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -18490,7 +19130,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -18599,7 +19239,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -18707,7 +19347,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18805,7 +19445,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -18898,7 +19538,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -18996,7 +19636,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19094,7 +19734,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19191,7 +19831,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19286,7 +19926,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19382,7 +20022,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19478,7 +20118,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19573,7 +20213,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19670,7 +20310,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19765,7 +20405,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19858,7 +20498,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -19955,7 +20595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20050,7 +20690,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20143,7 +20783,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20240,7 +20880,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20335,7 +20975,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20428,7 +21068,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20526,7 +21166,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20621,7 +21261,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20722,7 +21362,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20807,7 +21447,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20900,7 +21540,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -20997,7 +21637,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -21095,7 +21735,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21188,7 +21828,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21273,7 +21913,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -21370,7 +22010,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -21466,7 +22106,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -21561,7 +22201,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21654,7 +22294,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -21750,7 +22390,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -21847,7 +22487,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21882,6 +22522,103 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ],
         "error": ""
       }
+    },
+    {
+      "id": "google-customer-thr-outdoor-website-contact",
+      "name": "THR Outdoor",
+      "company": "THR Outdoor",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African premium camping and caravan distributor",
+      "role": "Commercial or range manager responsible for new supplier and product partnerships.",
+      "background": "THR Outdoor is the official South African distributor for Dometic, Thule, Thetford and Reich and supplies premium outdoor, caravan and camping equipment nationwide.",
+      "buyerPersona": "Commercial or range manager responsible for new supplier and product partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African premium camping and caravan distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "THR Outdoor is the official South African distributor for Dometic, Thule, Thetford and Reich and supplies premium outdoor, caravan and camping equipment nationwide.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "support@thr-outdoor.co.za",
+      "contactEmail": "support@thr-outdoor.co.za",
+      "vendorPortal": "https://thr-outdoor.co.za/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Company-domain support email and exact company social profiles are published on the first-party website.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_distributor_homepage_and_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://thr-outdoor.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22THR%20Outdoor%22%20%22South%20African%20premium%20camping%20and%20caravan%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://thr-outdoor.co.za/contact/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22THR%20Outdoor%22%20%22South%20African%20premium%20camping%20and%20caravan%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://thr-outdoor.co.za/",
+      "socialProfileVerifiedAt": "2026-08-21T09:58:00.000Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://thr-outdoor.co.za/contact/",
+      "url": "https://thr-outdoor.co.za/contact/",
+      "contactUrl": "https://thr-outdoor.co.za/contact/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Athr-outdoor.co.za%20%22THR%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear THR Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_public_business_email_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/thr_outdoor",
+        "facebook": "https://www.facebook.com/throutdoor",
+        "websiteContact": "https://thr-outdoor.co.za/contact/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:11.092Z",
+        "evidenceUrl": "https://thr-outdoor.co.za/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/boating-camping-fishing",
@@ -21956,7 +22693,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22033,7 +22770,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22132,7 +22869,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22211,7 +22948,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22312,7 +23049,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22397,7 +23134,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22490,7 +23227,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -22584,7 +23321,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -22679,7 +23416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -22775,7 +23512,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -22873,7 +23610,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -22969,7 +23706,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23067,7 +23804,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23164,7 +23901,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23260,7 +23997,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23356,7 +24093,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23452,7 +24189,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23550,7 +24287,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23647,7 +24384,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23740,7 +24477,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23837,7 +24574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -23932,7 +24669,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24025,7 +24762,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24122,7 +24859,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24217,7 +24954,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24312,7 +25049,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24407,7 +25144,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24502,7 +25239,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24595,7 +25332,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24680,7 +25417,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24773,7 +25510,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24866,7 +25603,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -24963,7 +25700,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -25060,7 +25797,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -25145,7 +25882,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -25241,7 +25978,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -25337,7 +26074,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -25447,7 +26184,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -25537,7 +26274,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -25624,7 +26361,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -25709,7 +26446,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -25799,7 +26536,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -25888,7 +26625,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -25975,7 +26712,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -26064,7 +26801,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -26168,7 +26905,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -26260,7 +26997,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -26349,7 +27086,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -26455,7 +27192,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -26553,7 +27290,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -26648,7 +27385,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -26741,7 +27478,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -26839,7 +27576,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -26936,7 +27673,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27033,7 +27770,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27126,7 +27863,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27223,7 +27960,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27321,7 +28058,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27419,7 +28156,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27516,7 +28253,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27614,7 +28351,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27712,7 +28449,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27808,7 +28545,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27901,7 +28638,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -27999,7 +28736,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28092,7 +28829,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28189,7 +28926,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28287,7 +29024,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28383,7 +29120,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28479,7 +29216,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28575,7 +29312,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28602,7 +29339,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:01.900Z",
+        "verifiedAt": "2026-08-21T09:02:10.207Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -28671,7 +29408,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -28765,7 +29502,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -28858,7 +29595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -28953,7 +29690,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -29046,7 +29783,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -29143,7 +29880,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -29238,7 +29975,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -29333,7 +30070,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -29429,7 +30166,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -29522,7 +30259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -29620,7 +30357,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -29716,7 +30453,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -29811,7 +30548,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -29909,7 +30646,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30004,7 +30741,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -30101,7 +30838,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -30194,7 +30931,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30290,7 +31027,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30386,7 +31123,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -30479,7 +31216,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30575,7 +31312,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30671,7 +31408,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30768,7 +31505,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30866,7 +31603,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -30964,7 +31701,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -31062,7 +31799,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -31148,7 +31885,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -31238,7 +31975,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -31326,7 +32063,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -31420,7 +32157,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -31485,14 +32222,14 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Ute Mountaineer is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "mountainexpert@utemountaineer.com",
-      "contactEmail": "mountainexpert@utemountaineer.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://utemountaineer.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
       "emailEvidenceUrl": "",
       "website": "https://utemountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ute%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -31518,11 +32255,11 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "email",
-      "channelType": "email",
+      "platform": "website_form",
+      "channelType": "website_form",
       "platformUrl": "https://utemountaineer.com/",
       "url": "https://utemountaineer.com/",
       "contactUrl": "https://utemountaineer.com/",
@@ -31531,8 +32268,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
       "websiteContactMessage": "Dear Ute Mountaineer Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_public_business_email_verified",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -31544,15 +32281,12 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.300Z",
-        "evidenceUrl": "https://www.utemountaineer.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
+        "status": "unreachable",
+        "verifiedAt": "2026-08-21T09:02:12.325Z",
+        "evidenceUrl": "https://utemountaineer.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       }
     },
     {
@@ -31592,7 +32326,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
       "website": "https://neptunemountaineering.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
+      "sourceEvidenceUrl": "https://neptunemountaineering.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -31614,7 +32348,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -31690,7 +32424,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://kencooutfitters.com/pages/rewards",
       "website": "https://kencooutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Kenco%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://kencooutfitters.com/pages/rewards",
+      "sourceEvidenceUrl": "https://kencooutfitters.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Kenco%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -31712,7 +32446,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -31788,7 +32522,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://shop.jessebrowns.com/pages/contact",
       "website": "https://jessebrowns.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Jesse%20Brown's%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://shop.jessebrowns.com/pages/contact",
+      "sourceEvidenceUrl": "https://jessebrowns.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Jesse%20Brown's%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -31810,7 +32544,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -31908,7 +32642,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32001,7 +32735,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32075,7 +32809,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
       "website": "https://www.purelyoutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Purely%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
+      "sourceEvidenceUrl": "https://www.purelyoutdoors.co.uk/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Purely%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -32097,7 +32831,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32195,7 +32929,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32293,7 +33027,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32388,7 +33122,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32486,7 +33220,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32562,7 +33296,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.tahoesportshub.com/contact",
       "website": "https://www.tahoesportshub.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tahoe%20Sports%20Hub%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tahoesportshub.com/contact",
+      "sourceEvidenceUrl": "https://www.tahoesportshub.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Tahoe%20Sports%20Hub%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -32584,7 +33318,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32682,7 +33416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -32780,7 +33514,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -32875,7 +33609,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -32972,7 +33706,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33068,7 +33802,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -33163,7 +33897,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -33258,7 +33992,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -33355,7 +34089,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33448,7 +34182,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33541,7 +34275,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33634,7 +34368,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33729,7 +34463,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33825,7 +34559,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -33923,7 +34657,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -34019,7 +34753,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -34121,7 +34855,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -34186,7 +34920,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.mountainwarehouse.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
+      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -34208,7 +34942,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -34297,7 +35031,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -34323,6 +35057,95 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
           "form_control",
           "public_business_email",
           "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
+    },
+    {
+      "id": "google-customer-airtents-south-africa-instagram",
+      "name": "AirTents South Africa",
+      "company": "AirTents South Africa",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 86,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African premium inflatable tent distributor",
+      "role": "Owner or category manager responsible for complementary camping equipment partnerships.",
+      "background": "AirTents is the official South African distributor for Coody inflatable tents and related camping lighting, pumps and outdoor accessories, with nationwide sales and quotation capability.",
+      "buyerPersona": "Owner or category manager responsible for complementary camping equipment partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African premium inflatable tent distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "AirTents is the official South African distributor for Coody inflatable tents and related camping lighting, pumps and outdoor accessories, with nationwide sales and quotation capability.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@airtents.co.za",
+      "contactEmail": "info@airtents.co.za",
+      "vendorPortal": "https://www.airtents.co.za/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Company-domain email and South African distributor social profiles are published on the first-party website.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_distributor_homepage",
+      "emailEvidenceUrl": "",
+      "website": "https://www.airtents.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22AirTents%20South%20Africa%22%20%22South%20African%20premium%20inflatable%20tent%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.airtents.co.za/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22AirTents%20South%20Africa%22%20%22South%20African%20premium%20inflatable%20tent%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://www.airtents.co.za/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:12.808Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/coody.southafrica",
+      "url": "https://www.instagram.com/coody.southafrica",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/coody.southafrica",
+        "facebook": "https://www.facebook.com/p/Coody-South-Africa-Community-61565489093145",
+        "websiteContact": "https://www.airtents.co.za/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:12.808Z",
+        "evidenceUrl": "https://www.airtents.co.za/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
           "contact_invitation"
         ],
         "error": ""
@@ -34402,7 +35225,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -34469,7 +35292,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.mountainwarehouse.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
+      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -34491,7 +35314,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -34582,7 +35405,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -34609,6 +35432,97 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "signals": [
           "form_control",
           "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
+    },
+    {
+      "id": "google-customer-airtents-south-africa-facebook",
+      "name": "AirTents South Africa",
+      "company": "AirTents South Africa",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 86,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African premium inflatable tent distributor",
+      "role": "Owner or category manager responsible for complementary camping equipment partnerships.",
+      "background": "AirTents is the official South African distributor for Coody inflatable tents and related camping lighting, pumps and outdoor accessories, with nationwide sales and quotation capability.",
+      "buyerPersona": "Owner or category manager responsible for complementary camping equipment partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African premium inflatable tent distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "AirTents is the official South African distributor for Coody inflatable tents and related camping lighting, pumps and outdoor accessories, with nationwide sales and quotation capability.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@airtents.co.za",
+      "contactEmail": "info@airtents.co.za",
+      "vendorPortal": "https://www.airtents.co.za/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Company-domain email and South African distributor social profiles are published on the first-party website.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_distributor_homepage",
+      "emailEvidenceUrl": "",
+      "website": "https://www.airtents.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22AirTents%20South%20Africa%22%20%22South%20African%20premium%20inflatable%20tent%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.airtents.co.za/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22AirTents%20South%20Africa%22%20%22South%20African%20premium%20inflatable%20tent%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://www.airtents.co.za/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:12.808Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/p/Coody-South-Africa-Community-61565489093145",
+      "url": "https://www.facebook.com/p/Coody-South-Africa-Community-61565489093145",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/coody.southafrica",
+        "facebook": "https://www.facebook.com/p/Coody-South-Africa-Community-61565489093145",
+        "websiteContact": "https://www.airtents.co.za/"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:12.808Z",
+        "evidenceUrl": "https://www.airtents.co.za/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
           "contact_invitation"
         ],
         "error": ""
@@ -34674,7 +35588,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -34784,7 +35698,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -34857,7 +35771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.mountainwarehouse.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
+      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -34879,7 +35793,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -34954,7 +35868,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://explorationwild.com/pages/about-us",
       "website": "https://explorationwild.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://explorationwild.com/pages/about-us",
+      "sourceEvidenceUrl": "https://explorationwild.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -34976,7 +35890,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35074,7 +35988,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35172,7 +36086,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35270,7 +36184,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35368,7 +36282,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35466,7 +36380,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35563,7 +36477,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35660,7 +36574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35758,7 +36672,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35832,7 +36746,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.bentgate.com/service/",
       "website": "https://www.bentgate.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.bentgate.com/service/",
+      "sourceEvidenceUrl": "https://www.bentgate.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -35854,7 +36768,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -35951,7 +36865,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -36044,7 +36958,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -36115,7 +37029,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://jhoutdoors.com/pages/faq",
       "website": "https://jhoutdoors.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22J%26H%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://jhoutdoors.com/pages/faq",
+      "sourceEvidenceUrl": "https://jhoutdoors.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22J%26H%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -36137,7 +37051,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36235,7 +37149,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36331,7 +37245,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36429,7 +37343,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36527,7 +37441,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36625,7 +37539,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36723,7 +37637,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36822,7 +37736,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -36920,7 +37834,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37018,7 +37932,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -37115,7 +38029,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37212,7 +38126,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37311,7 +38225,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37400,7 +38314,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://maxcons.co.za/",
-      "socialProfileVerifiedAt": "2026-08-21T08:37:30.362Z",
+      "socialProfileVerifiedAt": "2026-08-21T08:57:37.954Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -37410,7 +38324,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37443,6 +38357,103 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "signals": [
           "form_control",
           "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
+    },
+    {
+      "id": "google-customer-airtents-south-africa-website-contact",
+      "name": "AirTents South Africa",
+      "company": "AirTents South Africa",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 86,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African premium inflatable tent distributor",
+      "role": "Owner or category manager responsible for complementary camping equipment partnerships.",
+      "background": "AirTents is the official South African distributor for Coody inflatable tents and related camping lighting, pumps and outdoor accessories, with nationwide sales and quotation capability.",
+      "buyerPersona": "Owner or category manager responsible for complementary camping equipment partnerships.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African premium inflatable tent distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "AirTents is the official South African distributor for Coody inflatable tents and related camping lighting, pumps and outdoor accessories, with nationwide sales and quotation capability.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@airtents.co.za",
+      "contactEmail": "info@airtents.co.za",
+      "vendorPortal": "https://www.airtents.co.za/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Company-domain email and South African distributor social profiles are published on the first-party website.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_distributor_homepage",
+      "emailEvidenceUrl": "",
+      "website": "https://www.airtents.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22AirTents%20South%20Africa%22%20%22South%20African%20premium%20inflatable%20tent%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.airtents.co.za/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22AirTents%20South%20Africa%22%20%22South%20African%20premium%20inflatable%20tent%20distributor%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://www.airtents.co.za/",
+      "socialProfileVerifiedAt": "2026-08-21T09:58:00.000Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://www.airtents.co.za/",
+      "url": "https://www.airtents.co.za/",
+      "contactUrl": "https://www.airtents.co.za/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.airtents.co.za%20%22AirTents%20South%20Africa%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear AirTents South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_public_business_email_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/coody.southafrica",
+        "facebook": "https://www.facebook.com/p/Coody-South-Africa-Community-61565489093145",
+        "websiteContact": "https://www.airtents.co.za/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:12.808Z",
+        "evidenceUrl": "https://www.airtents.co.za/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
           "contact_invitation"
         ],
         "error": ""
@@ -37508,7 +38519,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37606,7 +38617,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37704,7 +38715,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37802,7 +38813,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37900,7 +38911,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -37995,7 +39006,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -38090,7 +39101,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -38185,7 +39196,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -38282,7 +39293,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -38379,7 +39390,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -38472,7 +39483,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -38499,7 +39510,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-13T02:02:36.359Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T07:48:42.902Z",
+        "verifiedAt": "2026-08-21T09:02:15.329Z",
         "evidenceUrl": "https://www.threemountainassociates.com/",
         "httpStatus": 200,
         "signals": [],
@@ -38565,7 +39576,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -38592,7 +39603,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-13T02:02:36.359Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:11.791Z",
+        "verifiedAt": "2026-08-21T09:02:15.969Z",
         "evidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -38650,7 +39661,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:15.080Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:16.714Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -38660,7 +39671,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -38679,7 +39690,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-04T08:45:35.991Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.080Z",
+        "verifiedAt": "2026-08-21T09:02:16.714Z",
         "evidenceUrl": "https://www.bravehardy.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -38751,7 +39762,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -38770,7 +39781,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.024Z",
+        "verifiedAt": "2026-08-21T09:02:16.817Z",
         "evidenceUrl": "https://www.publiclands.com/",
         "httpStatus": 200,
         "signals": [
@@ -38816,7 +39827,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.campman.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.campman.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -38828,7 +39839,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.campman.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:15.531Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:16.990Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -38838,7 +39849,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -38857,7 +39868,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.531Z",
+        "verifiedAt": "2026-08-21T09:02:16.990Z",
         "evidenceUrl": "https://www.campman.com/",
         "httpStatus": 200,
         "signals": [
@@ -38906,7 +39917,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://mountaineer.com/privacy-policy/",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://mountaineer.com/privacy-policy/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -38928,7 +39939,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -38947,7 +39958,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.431Z",
+        "verifiedAt": "2026-08-21T09:02:18.583Z",
         "evidenceUrl": "https://mountaineer.com/privacy-policy/",
         "httpStatus": 200,
         "signals": [
@@ -39017,7 +40028,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39036,7 +40047,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:15.709Z",
+        "verifiedAt": "2026-08-21T09:02:17.897Z",
         "evidenceUrl": "https://www.sierra.com/",
         "httpStatus": 403,
         "signals": [],
@@ -39080,7 +40091,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.outdoorplay.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.outdoorplay.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -39102,7 +40113,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39121,7 +40132,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:16.719Z",
+        "verifiedAt": "2026-08-21T09:02:17.727Z",
         "evidenceUrl": "https://www.outdoorplay.com/",
         "httpStatus": 200,
         "signals": [
@@ -39192,7 +40203,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39211,7 +40222,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:15.820Z",
+        "verifiedAt": "2026-08-21T09:02:17.434Z",
         "evidenceUrl": "https://www.campmor.com/",
         "httpStatus": 403,
         "signals": [],
@@ -39268,7 +40279,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://ramseyoutdoor.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:04.076Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:13.418Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -39278,7 +40289,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39297,7 +40308,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.076Z",
+        "verifiedAt": "2026-08-21T09:02:13.418Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -39367,7 +40378,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39386,7 +40397,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:18.748Z",
+        "verifiedAt": "2026-08-21T09:02:19.355Z",
         "evidenceUrl": "https://questoutdoors.com/",
         "httpStatus": 404,
         "signals": [],
@@ -39430,7 +40441,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.riversportsoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.riversportsoutfitters.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -39452,7 +40463,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39471,7 +40482,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.797Z",
+        "verifiedAt": "2026-08-21T09:02:19.426Z",
         "evidenceUrl": "https://www.riversportsoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -39541,7 +40552,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39560,7 +40571,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:19.741Z",
+        "verifiedAt": "2026-08-21T09:02:19.953Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -39604,7 +40615,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.halfmoonoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.halfmoonoutfitters.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -39616,7 +40627,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.halfmoonoutfitters.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:19.164Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:19.059Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -39626,7 +40637,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39645,7 +40656,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.164Z",
+        "verifiedAt": "2026-08-21T09:02:19.059Z",
         "evidenceUrl": "https://www.halfmoonoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -39715,7 +40726,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39734,7 +40745,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.501Z",
+        "verifiedAt": "2026-08-21T09:02:13.430Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -39803,7 +40814,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39822,7 +40833,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.742Z",
+        "verifiedAt": "2026-08-21T09:02:13.791Z",
         "evidenceUrl": "https://jaxgoods.com/",
         "httpStatus": 200,
         "signals": [
@@ -39868,7 +40879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.christysports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.christysports.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -39880,7 +40891,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.christysports.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:19.761Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:21.135Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -39890,7 +40901,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39909,7 +40920,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.761Z",
+        "verifiedAt": "2026-08-21T09:02:21.135Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -39969,7 +40980,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://paragonsports.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:05.626Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:14.430Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -39979,7 +40990,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -39998,7 +41009,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:05.626Z",
+        "verifiedAt": "2026-08-21T09:02:14.430Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -40069,7 +41080,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40088,7 +41099,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:07.054Z",
+        "verifiedAt": "2026-08-21T09:02:15.247Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -40136,7 +41147,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.tiso.com/pages/contact",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/contact",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -40158,7 +41169,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40177,7 +41188,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:21.093Z",
+        "verifiedAt": "2026-08-21T09:02:22.197Z",
         "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -40226,9 +41237,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
       "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -40248,7 +41259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40266,13 +41277,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channelPriority": 1,
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:37:33.406Z",
-        "evidenceUrl": "https://www.georgefisher.co.uk/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
-      }
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:22.655Z",
+        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-ld-mountain-centre-instagram",
@@ -40333,7 +41348,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40352,7 +41367,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.261Z",
+        "verifiedAt": "2026-08-21T09:02:22.438Z",
         "evidenceUrl": "https://www.ldmountaincentre.com/",
         "httpStatus": 200,
         "signals": [],
@@ -40418,7 +41433,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40437,7 +41452,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:19.899Z",
+        "verifiedAt": "2026-08-21T09:02:23.082Z",
         "evidenceUrl": "https://www.absolute-snow.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -40503,7 +41518,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40522,7 +41537,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:20.133Z",
+        "verifiedAt": "2026-08-21T09:02:23.144Z",
         "evidenceUrl": "https://www.ellis-brigham.com/",
         "httpStatus": 200,
         "signals": [],
@@ -40566,7 +41581,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.facewest.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.facewest.co.uk/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -40588,7 +41603,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40607,7 +41622,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.944Z",
+        "verifiedAt": "2026-08-21T09:02:23.557Z",
         "evidenceUrl": "https://www.facewest.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -40677,7 +41692,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40762,7 +41777,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40852,7 +41867,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -40939,7 +41954,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41026,7 +42041,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41113,7 +42128,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41198,7 +42213,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41283,7 +42298,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41368,7 +42383,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41457,7 +42472,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41543,7 +42558,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41628,7 +42643,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41715,7 +42730,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41804,7 +42819,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41881,7 +42896,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -41968,7 +42983,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42053,7 +43068,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42138,7 +43153,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42225,7 +43240,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42302,7 +43317,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42387,7 +43402,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42464,7 +43479,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42552,7 +43567,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42637,7 +43652,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -42704,7 +43719,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:15.080Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:16.714Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -42714,7 +43729,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -42735,7 +43750,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-04T08:45:35.991Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.080Z",
+        "verifiedAt": "2026-08-21T09:02:16.714Z",
         "evidenceUrl": "https://www.bravehardy.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -42807,7 +43822,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -42828,7 +43843,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.024Z",
+        "verifiedAt": "2026-08-21T09:02:16.817Z",
         "evidenceUrl": "https://www.publiclands.com/",
         "httpStatus": 200,
         "signals": [
@@ -42896,7 +43911,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -42923,11 +43938,11 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:50:59.783Z",
-        "evidenceUrl": "https://www.moosejaw.com/",
-        "httpStatus": 0,
+        "verifiedAt": "2026-08-21T09:02:23.202Z",
+        "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
+        "httpStatus": 403,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       }
     },
     {
@@ -42989,7 +44004,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43016,7 +44031,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.762Z",
+        "verifiedAt": "2026-08-21T09:02:23.997Z",
         "evidenceUrl": "https://www.ems.com/",
         "httpStatus": 200,
         "signals": [
@@ -43062,7 +44077,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.campman.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.campman.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -43084,7 +44099,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43105,7 +44120,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.531Z",
+        "verifiedAt": "2026-08-21T09:02:16.990Z",
         "evidenceUrl": "https://www.campman.com/",
         "httpStatus": 200,
         "signals": [
@@ -43176,7 +44191,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43202,12 +44217,14 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channelPriority": 2,
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:13.999Z",
-        "evidenceUrl": "https://www.packratoc.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:25.477Z",
+        "evidenceUrl": "https://packratoc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       }
     },
     {
@@ -43247,7 +44264,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://mountaineer.com/privacy-policy/",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://mountaineer.com/privacy-policy/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -43269,7 +44286,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43290,7 +44307,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.431Z",
+        "verifiedAt": "2026-08-21T09:02:18.583Z",
         "evidenceUrl": "https://mountaineer.com/privacy-policy/",
         "httpStatus": 200,
         "signals": [
@@ -43360,7 +44377,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43381,7 +44398,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:15.709Z",
+        "verifiedAt": "2026-08-21T09:02:17.897Z",
         "evidenceUrl": "https://www.sierra.com/",
         "httpStatus": 403,
         "signals": [],
@@ -43425,7 +44442,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.outdoorplay.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.outdoorplay.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -43447,7 +44464,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43468,7 +44485,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:16.719Z",
+        "verifiedAt": "2026-08-21T09:02:17.727Z",
         "evidenceUrl": "https://www.outdoorplay.com/",
         "httpStatus": 200,
         "signals": [
@@ -43539,7 +44556,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43560,7 +44577,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:15.820Z",
+        "verifiedAt": "2026-08-21T09:02:17.434Z",
         "evidenceUrl": "https://www.campmor.com/",
         "httpStatus": 403,
         "signals": [],
@@ -43617,7 +44634,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://ramseyoutdoor.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:04.076Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:13.418Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -43627,7 +44644,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43648,7 +44665,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.076Z",
+        "verifiedAt": "2026-08-21T09:02:13.418Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -43708,7 +44725,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.masseysoutfitters.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:23.137Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:24.410Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -43718,7 +44735,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43745,7 +44762,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:23.137Z",
+        "verifiedAt": "2026-08-21T09:02:24.410Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -43813,7 +44830,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43834,7 +44851,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:18.748Z",
+        "verifiedAt": "2026-08-21T09:02:19.355Z",
         "evidenceUrl": "https://questoutdoors.com/",
         "httpStatus": 404,
         "signals": [],
@@ -43878,7 +44895,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.riversportsoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.riversportsoutfitters.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -43890,7 +44907,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.riversportsoutfitters.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:19.797Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:19.426Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -43900,7 +44917,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -43921,7 +44938,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.797Z",
+        "verifiedAt": "2026-08-21T09:02:19.426Z",
         "evidenceUrl": "https://www.riversportsoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -43991,7 +45008,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44012,7 +45029,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:19.741Z",
+        "verifiedAt": "2026-08-21T09:02:19.953Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -44056,7 +45073,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.halfmoonoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.halfmoonoutfitters.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -44078,7 +45095,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44099,7 +45116,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.164Z",
+        "verifiedAt": "2026-08-21T09:02:19.059Z",
         "evidenceUrl": "https://www.halfmoonoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -44169,7 +45186,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44190,7 +45207,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.501Z",
+        "verifiedAt": "2026-08-21T09:02:13.430Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -44249,7 +45266,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://jaxgoods.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:04.742Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:13.791Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -44259,7 +45276,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44280,7 +45297,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.742Z",
+        "verifiedAt": "2026-08-21T09:02:13.791Z",
         "evidenceUrl": "https://jaxgoods.com/",
         "httpStatus": 200,
         "signals": [
@@ -44326,7 +45343,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.christysports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.christysports.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -44338,7 +45355,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.christysports.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:19.761Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:21.135Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -44348,7 +45365,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44369,7 +45386,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.761Z",
+        "verifiedAt": "2026-08-21T09:02:21.135Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -44429,7 +45446,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://paragonsports.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:05.626Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:14.430Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -44439,7 +45456,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44460,7 +45477,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:05.626Z",
+        "verifiedAt": "2026-08-21T09:02:14.430Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -44531,7 +45548,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44552,7 +45569,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:07.054Z",
+        "verifiedAt": "2026-08-21T09:02:15.247Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -44600,7 +45617,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.tiso.com/pages/contact",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/contact",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -44622,7 +45639,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44643,7 +45660,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:21.093Z",
+        "verifiedAt": "2026-08-21T09:02:22.197Z",
         "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -44692,9 +45709,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
       "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -44714,7 +45731,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44734,13 +45751,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channelPriority": 2,
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:37:33.406Z",
-        "evidenceUrl": "https://www.georgefisher.co.uk/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
-      }
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:22.655Z",
+        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-ld-mountain-centre-facebook",
@@ -44801,7 +45822,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44822,7 +45843,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.261Z",
+        "verifiedAt": "2026-08-21T09:02:22.438Z",
         "evidenceUrl": "https://www.ldmountaincentre.com/",
         "httpStatus": 200,
         "signals": [],
@@ -44888,7 +45909,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44909,7 +45930,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:19.899Z",
+        "verifiedAt": "2026-08-21T09:02:23.082Z",
         "evidenceUrl": "https://www.absolute-snow.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -44975,7 +45996,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -44996,7 +46017,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:20.133Z",
+        "verifiedAt": "2026-08-21T09:02:23.144Z",
         "evidenceUrl": "https://www.ellis-brigham.com/",
         "httpStatus": 200,
         "signals": [],
@@ -45040,7 +46061,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.facewest.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.facewest.co.uk/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -45052,7 +46073,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.facewest.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:22.944Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:23.557Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -45062,7 +46083,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45083,7 +46104,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.944Z",
+        "verifiedAt": "2026-08-21T09:02:23.557Z",
         "evidenceUrl": "https://www.facewest.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -45153,7 +46174,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45240,7 +46261,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45332,7 +46353,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45421,7 +46442,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45510,7 +46531,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45599,7 +46620,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45686,7 +46707,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45773,7 +46794,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45860,7 +46881,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -45951,7 +46972,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46039,7 +47060,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46126,7 +47147,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46215,7 +47236,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46306,7 +47327,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46385,7 +47406,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46474,7 +47495,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46561,7 +47582,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46648,7 +47669,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46737,7 +47758,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46830,7 +47851,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46909,7 +47930,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -46996,7 +48017,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -47075,7 +48096,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -47160,7 +48181,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -47250,7 +48271,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -47337,7 +48358,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -47416,7 +48437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -47511,7 +48532,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -47538,7 +48559,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-10T10:25:49.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:24.487Z",
+        "verifiedAt": "2026-08-21T09:02:24.550Z",
         "evidenceUrl": "https://www.survive-thrive.com/",
         "httpStatus": 0,
         "signals": [],
@@ -47604,7 +48625,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -47631,7 +48652,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-10T10:25:49.085Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.079Z",
+        "verifiedAt": "2026-08-21T09:02:28.917Z",
         "evidenceUrl": "https://www.campingtravelstore.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -47677,7 +48698,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://outcamping.co.uk/pages/about-us",
       "website": "https://outcamping.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outcamping%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outcamping.co.uk/",
+      "sourceEvidenceUrl": "https://outcamping.co.uk/pages/about-us",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outcamping%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -47699,7 +48720,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -47726,7 +48747,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-10T10:38:59.099Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:25.397Z",
+        "verifiedAt": "2026-08-21T09:02:26.738Z",
         "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
         "httpStatus": 200,
         "signals": [
@@ -47797,7 +48818,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -47895,7 +48916,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -47990,7 +49011,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48017,7 +49038,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-10T11:14:30.262Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:25.678Z",
+        "verifiedAt": "2026-08-21T09:02:27.438Z",
         "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
         "httpStatus": 200,
         "signals": [
@@ -48063,7 +49084,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
       "website": "https://blackandwhiteoutdoors.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Black%20%26%20White%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://blackandwhiteoutdoors.com/",
+      "sourceEvidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Black%20%26%20White%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -48085,7 +49106,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48112,7 +49133,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-10T11:24:24.227Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:25.935Z",
+        "verifiedAt": "2026-08-21T09:02:27.007Z",
         "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -48183,7 +49204,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48281,7 +49302,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48376,7 +49397,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48469,7 +49490,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48565,7 +49586,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -48592,7 +49613,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-29T09:22:31.075Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.870Z",
+        "verifiedAt": "2026-08-21T09:02:29.617Z",
         "evidenceUrl": "https://durangooutdoorexchange.com/",
         "httpStatus": 200,
         "signals": [
@@ -48663,7 +49684,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -48758,7 +49779,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -48851,7 +49872,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -48944,7 +49965,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -48971,7 +49992,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.696Z",
+        "verifiedAt": "2026-08-21T09:02:29.753Z",
         "evidenceUrl": "https://www.carawayandco.com/",
         "httpStatus": 200,
         "signals": [
@@ -49040,7 +50061,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -49137,7 +50158,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -49230,7 +50251,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -49325,7 +50346,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -49422,7 +50443,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -49517,7 +50538,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -49615,7 +50636,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -49712,7 +50733,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -49739,7 +50760,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:06.427Z",
+        "verifiedAt": "2026-08-21T09:02:14.673Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -49809,7 +50830,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -49836,7 +50857,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-08-04T08:45:35.991Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.080Z",
+        "verifiedAt": "2026-08-21T09:02:16.714Z",
         "evidenceUrl": "https://www.bravehardy.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -49908,7 +50929,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -49935,7 +50956,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.024Z",
+        "verifiedAt": "2026-08-21T09:02:16.817Z",
         "evidenceUrl": "https://www.publiclands.com/",
         "httpStatus": 200,
         "signals": [
@@ -50003,7 +51024,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -50036,11 +51057,11 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:50:59.783Z",
-        "evidenceUrl": "https://www.moosejaw.com/",
-        "httpStatus": 0,
+        "verifiedAt": "2026-08-21T09:02:23.202Z",
+        "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
+        "httpStatus": 403,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       }
     },
     {
@@ -50102,7 +51123,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -50135,7 +51156,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.762Z",
+        "verifiedAt": "2026-08-21T09:02:23.997Z",
         "evidenceUrl": "https://www.ems.com/",
         "httpStatus": 200,
         "signals": [
@@ -50181,7 +51202,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.campman.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.campman.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -50203,7 +51224,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -50230,7 +51251,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.531Z",
+        "verifiedAt": "2026-08-21T09:02:16.990Z",
         "evidenceUrl": "https://www.campman.com/",
         "httpStatus": 200,
         "signals": [
@@ -50301,7 +51322,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -50333,12 +51354,14 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channelPriority": 3,
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:13.999Z",
-        "evidenceUrl": "https://www.packratoc.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:25.477Z",
+        "evidenceUrl": "https://packratoc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       }
     },
     {
@@ -50378,7 +51401,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://mountaineer.com/privacy-policy/",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://mountaineer.com/privacy-policy/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -50400,7 +51423,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -50427,7 +51450,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:15.431Z",
+        "verifiedAt": "2026-08-21T09:02:18.583Z",
         "evidenceUrl": "https://mountaineer.com/privacy-policy/",
         "httpStatus": 200,
         "signals": [
@@ -50497,7 +51520,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -50524,7 +51547,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:15.709Z",
+        "verifiedAt": "2026-08-21T09:02:17.897Z",
         "evidenceUrl": "https://www.sierra.com/",
         "httpStatus": 403,
         "signals": [],
@@ -50568,7 +51591,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.outdoorplay.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.outdoorplay.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -50590,7 +51613,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -50617,7 +51640,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:16.719Z",
+        "verifiedAt": "2026-08-21T09:02:17.727Z",
         "evidenceUrl": "https://www.outdoorplay.com/",
         "httpStatus": 200,
         "signals": [
@@ -50688,7 +51711,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -50715,7 +51738,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:15.820Z",
+        "verifiedAt": "2026-08-21T09:02:17.434Z",
         "evidenceUrl": "https://www.campmor.com/",
         "httpStatus": 403,
         "signals": [],
@@ -50782,7 +51805,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -50809,7 +51832,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.076Z",
+        "verifiedAt": "2026-08-21T09:02:13.418Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -50879,7 +51902,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -50912,7 +51935,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:23.137Z",
+        "verifiedAt": "2026-08-21T09:02:24.410Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -50980,7 +52003,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51007,7 +52030,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:18.748Z",
+        "verifiedAt": "2026-08-21T09:02:19.355Z",
         "evidenceUrl": "https://questoutdoors.com/",
         "httpStatus": 404,
         "signals": [],
@@ -51051,7 +52074,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.riversportsoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.riversportsoutfitters.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -51073,7 +52096,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51100,7 +52123,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.797Z",
+        "verifiedAt": "2026-08-21T09:02:19.426Z",
         "evidenceUrl": "https://www.riversportsoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -51170,7 +52193,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -51197,7 +52220,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:19.741Z",
+        "verifiedAt": "2026-08-21T09:02:19.953Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -51241,7 +52264,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.halfmoonoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.halfmoonoutfitters.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -51263,7 +52286,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51290,7 +52313,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.164Z",
+        "verifiedAt": "2026-08-21T09:02:19.059Z",
         "evidenceUrl": "https://www.halfmoonoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -51360,7 +52383,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -51387,7 +52410,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.501Z",
+        "verifiedAt": "2026-08-21T09:02:13.430Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -51456,7 +52479,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51483,7 +52506,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.742Z",
+        "verifiedAt": "2026-08-21T09:02:13.791Z",
         "evidenceUrl": "https://jaxgoods.com/",
         "httpStatus": 200,
         "signals": [
@@ -51529,7 +52552,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.christysports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.christysports.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -51551,7 +52574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51578,7 +52601,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:19.761Z",
+        "verifiedAt": "2026-08-21T09:02:21.135Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -51648,7 +52671,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -51675,7 +52698,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:05.626Z",
+        "verifiedAt": "2026-08-21T09:02:14.430Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -51746,7 +52769,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51773,7 +52796,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:07.054Z",
+        "verifiedAt": "2026-08-21T09:02:15.247Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -51821,7 +52844,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.tiso.com/pages/contact",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/contact",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -51843,7 +52866,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -51870,7 +52893,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:21.093Z",
+        "verifiedAt": "2026-08-21T09:02:22.197Z",
         "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -51919,9 +52942,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
       "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -51941,7 +52964,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -51967,13 +52990,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channelPriority": 3,
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:37:33.406Z",
-        "evidenceUrl": "https://www.georgefisher.co.uk/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
-      }
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:22.655Z",
+        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-ld-mountain-centre-website-contact",
@@ -52034,7 +53061,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52061,7 +53088,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.261Z",
+        "verifiedAt": "2026-08-21T09:02:22.438Z",
         "evidenceUrl": "https://www.ldmountaincentre.com/",
         "httpStatus": 200,
         "signals": [],
@@ -52127,7 +53154,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52154,7 +53181,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T08:19:19.899Z",
+        "verifiedAt": "2026-08-21T09:02:23.082Z",
         "evidenceUrl": "https://www.absolute-snow.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -52220,7 +53247,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52247,7 +53274,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:20.133Z",
+        "verifiedAt": "2026-08-21T09:02:23.144Z",
         "evidenceUrl": "https://www.ellis-brigham.com/",
         "httpStatus": 200,
         "signals": [],
@@ -52291,7 +53318,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "",
       "website": "https://www.facewest.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.facewest.co.uk/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -52313,7 +53340,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52340,7 +53367,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.944Z",
+        "verifiedAt": "2026-08-21T09:02:23.557Z",
         "evidenceUrl": "https://www.facewest.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -52410,7 +53437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52503,7 +53530,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -52601,7 +53628,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52696,7 +53723,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52791,7 +53818,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52886,7 +53913,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -52979,7 +54006,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53072,7 +54099,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53165,7 +54192,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53262,7 +54289,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53356,7 +54383,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53449,7 +54476,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53544,7 +54571,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53641,7 +54668,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53726,7 +54753,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -53821,7 +54848,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -53914,7 +54941,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54007,7 +55034,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54102,7 +55129,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54201,7 +55228,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54286,7 +55313,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54379,7 +55406,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54464,7 +55491,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54555,7 +55582,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -54651,7 +55678,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54744,7 +55771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54829,7 +55856,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -54930,7 +55957,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -55015,7 +56042,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55108,7 +56135,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55205,7 +56232,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55300,7 +56327,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55397,7 +56424,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55495,7 +56522,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55590,7 +56617,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -55683,7 +56710,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -55773,7 +56800,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -55864,7 +56891,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -55959,7 +56986,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56056,7 +57083,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56154,7 +57181,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56252,7 +57279,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -56349,7 +57376,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -56442,7 +57469,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -56535,7 +57562,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56634,7 +57661,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56731,7 +57758,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56829,7 +57856,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -56926,7 +57953,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -57011,7 +58038,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -57098,7 +58125,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -57196,7 +58223,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -57289,7 +58316,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -57379,7 +58406,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -57477,7 +58504,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -57571,7 +58598,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -57669,7 +58696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -57764,7 +58791,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -57849,7 +58876,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -57947,7 +58974,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -58045,7 +59072,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -58141,7 +59168,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -58234,7 +59261,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -58328,7 +59355,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -58415,7 +59442,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -58510,7 +59537,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -58597,7 +59624,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -58692,7 +59719,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -58779,7 +59806,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -58874,7 +59901,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -58973,7 +60000,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -59072,7 +60099,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -59172,7 +60199,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -59272,7 +60299,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -59373,7 +60400,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -59471,7 +60498,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -59569,7 +60596,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -59669,7 +60696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -59761,7 +60788,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -59852,7 +60879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -59945,7 +60972,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -60043,7 +61070,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -60141,7 +61168,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -60240,7 +61267,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -60342,7 +61369,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -60444,7 +61471,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -60546,7 +61573,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -60637,7 +61664,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -60727,7 +61754,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -60817,7 +61844,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -60913,7 +61940,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -61013,7 +62040,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -61112,7 +62139,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -61211,7 +62238,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -61309,7 +62336,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -61407,7 +62434,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -61507,7 +62534,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -61607,7 +62634,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -61707,7 +62734,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -61808,7 +62835,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -61909,7 +62936,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -62009,7 +63036,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -62099,7 +63126,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/contact.html",
-      "socialProfileVerifiedAt": "2026-08-21T08:56:58.967Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:02.765Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -62109,7 +63136,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -62139,7 +63166,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:56:58.967Z",
+        "verifiedAt": "2026-08-21T09:02:02.765Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -62199,7 +63226,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/contact.html",
-      "socialProfileVerifiedAt": "2026-08-21T08:56:58.967Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:02.765Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -62209,7 +63236,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -62239,7 +63266,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/four_cornersuk/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:56:58.967Z",
+        "verifiedAt": "2026-08-21T09:02:02.765Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -62309,7 +63336,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -62338,6 +63365,97 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "signals": [
           "form_control",
           "public_business_email"
+        ],
+        "error": ""
+      }
+    },
+    {
+      "id": "google-customer-alpinewaves-linkedin",
+      "name": "AlpineWaves",
+      "company": "AlpineWaves",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "UK and Ireland outdoor brand sales agency",
+      "role": "Agency principal responsible for new brand appointments and distribution strategy.",
+      "background": "AlpineWaves provides tailored UK and Ireland distribution strategies for emerging and established outdoor brands and explicitly invites prospective brand partners to make contact.",
+      "buyerPersona": "Agency principal responsible for new brand appointments and distribution strategy.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "UK and Ireland outdoor brand sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "AlpineWaves provides tailored UK and Ireland distribution strategies for emerging and established outdoor brands and explicitly invites prospective brand partners to make contact.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.alpinewaves.co.uk/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No exact public email exposed; use only the first-party contact form or company Instagram linked by the official site.",
+      "emailVerificationStatus": "not_verified",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://www.alpinewaves.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22AlpineWaves%22%20%22UK%20and%20Ireland%20outdoor%20brand%20sales%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.alpinewaves.co.uk/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22AlpineWaves%22%20%22UK%20and%20Ireland%20outdoor%20brand%20sales%20agency%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://www.alpinewaves.co.uk/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:04.355Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "linkedin",
+      "platformUrl": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
+      "url": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/alpinewavesco",
+        "facebook": "",
+        "websiteContact": "https://www.alpinewaves.co.uk/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-08-21T08:56:57.503Z",
+      "taskId": "google-customer-alpinewaves-linkedin",
+      "channelType": "linkedin",
+      "targetUrl": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
+      "verifiedTargetUrl": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:04.355Z",
+        "evidenceUrl": "https://www.alpinewaves.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
         ],
         "error": ""
       }
@@ -62401,7 +63519,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -62497,7 +63615,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -62593,7 +63711,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -62693,7 +63811,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -62793,7 +63911,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -62891,7 +64009,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -62989,7 +64107,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -63087,7 +64205,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -63185,7 +64303,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -63283,7 +64401,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -63381,7 +64499,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -63488,7 +64606,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -63595,7 +64713,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -63696,7 +64814,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -63797,7 +64915,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -63898,7 +65016,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -63999,7 +65117,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -64100,7 +65218,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -64200,7 +65318,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -64298,7 +65416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -64396,7 +65514,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -64494,7 +65612,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -64596,7 +65714,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -64698,7 +65816,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -64794,7 +65912,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -64890,7 +66008,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -64986,7 +66104,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -65084,7 +66202,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -65182,7 +66300,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -65280,7 +66398,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -65378,7 +66496,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -65479,7 +66597,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -65580,7 +66698,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -65676,7 +66794,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -65777,7 +66895,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -65878,7 +66996,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -65979,7 +67097,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -66079,7 +67197,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -66193,7 +67311,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -66319,7 +67437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -66445,7 +67563,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -66557,7 +67675,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -66657,7 +67775,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -66747,7 +67865,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:02.750Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:09.712Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -66757,7 +67875,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -66787,7 +67905,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:02.750Z",
+        "verifiedAt": "2026-08-21T09:02:09.712Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -66853,7 +67971,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -66951,7 +68069,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -67051,7 +68169,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -67151,7 +68269,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -67251,7 +68369,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -67351,7 +68469,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -67449,7 +68567,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -67547,7 +68665,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -67647,7 +68765,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -67747,7 +68865,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -67841,7 +68959,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -67939,7 +69057,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -68037,7 +69155,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -68137,7 +69255,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -68237,7 +69355,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -68335,7 +69453,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -68431,7 +69549,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -68527,7 +69645,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -68623,7 +69741,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -68723,7 +69841,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -68823,7 +69941,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -68921,7 +70039,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -69019,7 +70137,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -69123,7 +70241,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -69227,7 +70345,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -69327,7 +70445,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -69427,7 +70545,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -69528,7 +70646,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -69629,7 +70747,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -69727,7 +70845,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -69825,7 +70943,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -69924,7 +71042,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -70023,7 +71141,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -70123,7 +71241,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -70223,7 +71341,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -70319,7 +71437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -70419,7 +71537,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -70517,7 +71635,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -70615,7 +71733,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -70713,7 +71831,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -70812,7 +71930,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -70911,7 +72029,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -71010,7 +72128,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -71109,7 +72227,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -71208,7 +72326,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -71307,7 +72425,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -71401,7 +72519,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -71494,7 +72612,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -71587,7 +72705,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -71678,7 +72796,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -71771,7 +72889,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -71871,7 +72989,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -71971,7 +73089,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -72071,7 +73189,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -72171,7 +73289,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -72272,7 +73390,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -72373,7 +73491,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -72474,7 +73592,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -72575,7 +73693,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -72675,7 +73793,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -72775,7 +73893,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -72874,7 +73992,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -72973,7 +74091,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -73070,7 +74188,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -73167,7 +74285,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -73265,7 +74383,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -73363,7 +74481,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -73463,7 +74581,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -73563,7 +74681,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -73659,7 +74777,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -73760,7 +74878,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -73859,7 +74977,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -73958,7 +75076,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -74059,7 +75177,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -74160,7 +75278,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -74261,7 +75379,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -74361,7 +75479,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -74461,7 +75579,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -74560,7 +75678,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -74659,7 +75777,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -74758,7 +75876,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -74857,7 +75975,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -74958,7 +76076,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -75059,7 +76177,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -75160,7 +76278,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -75261,7 +76379,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -75362,7 +76480,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -75396,204 +76514,6 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true
-    },
-    {
-      "id": "google-customer-ute-mountaineer-instagram",
-      "name": "Ute Mountaineer",
-      "company": "Ute Mountaineer",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Ute Mountaineer is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Ute Mountaineer is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "mountainexpert@utemountaineer.com",
-      "contactEmail": "mountainexpert@utemountaineer.com",
-      "vendorPortal": "https://utemountaineer.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page",
-      "emailEvidenceUrl": "",
-      "website": "https://utemountaineer.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Ute%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://utemountaineer.com/",
-      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Ute%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.utemountaineer.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:04.300Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "channelType": "instagram",
-      "platformUrl": "https://www.instagram.com/p/DZFsebxHE95/",
-      "url": "https://www.instagram.com/p/DZFsebxHE95/",
-      "contactUrl": "https://utemountaineer.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Autemountaineer.com%20%22Ute%20Mountaineer%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Ute Mountaineer Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_social_channel_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://utemountaineer.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "taskId": "google-customer-ute-mountaineer-instagram",
-      "targetUrl": "https://www.instagram.com/p/DZFsebxHE95/",
-      "verifiedTargetUrl": "https://www.instagram.com/p/DZFsebxHE95/",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.300Z",
-        "evidenceUrl": "https://www.utemountaineer.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
-      }
-    },
-    {
-      "id": "google-customer-ute-mountaineer-facebook",
-      "name": "Ute Mountaineer",
-      "company": "Ute Mountaineer",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Ute Mountaineer is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Ute Mountaineer is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "mountainexpert@utemountaineer.com",
-      "contactEmail": "mountainexpert@utemountaineer.com",
-      "vendorPortal": "https://utemountaineer.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page",
-      "emailEvidenceUrl": "",
-      "website": "https://utemountaineer.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Ute%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://utemountaineer.com/",
-      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Ute%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.utemountaineer.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:04.300Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "channelType": "facebook",
-      "platformUrl": "https://www.facebook.com/utemountaineeraspen/",
-      "url": "https://www.facebook.com/utemountaineeraspen/",
-      "contactUrl": "https://utemountaineer.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Autemountaineer.com%20%22Ute%20Mountaineer%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Ute Mountaineer Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_social_channel_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://utemountaineer.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "taskId": "google-customer-ute-mountaineer-facebook",
-      "targetUrl": "https://www.facebook.com/utemountaineeraspen/",
-      "verifiedTargetUrl": "https://www.facebook.com/utemountaineeraspen/",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:04.300Z",
-        "evidenceUrl": "https://www.utemountaineer.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
-      }
     },
     {
       "id": "google-customer-neptune-mountaineering-facebook",
@@ -75632,7 +76552,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
       "website": "https://neptunemountaineering.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
+      "sourceEvidenceUrl": "https://neptunemountaineering.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -75654,7 +76574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -75733,7 +76653,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
       "website": "https://neptunemountaineering.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
+      "sourceEvidenceUrl": "https://neptunemountaineering.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -75755,7 +76675,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -75834,7 +76754,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://kencooutfitters.com/pages/rewards",
       "website": "https://kencooutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Kenco%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://kencooutfitters.com/pages/rewards",
+      "sourceEvidenceUrl": "https://kencooutfitters.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Kenco%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -75856,7 +76776,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -75935,7 +76855,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://kencooutfitters.com/pages/rewards",
       "website": "https://kencooutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Kenco%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://kencooutfitters.com/pages/rewards",
+      "sourceEvidenceUrl": "https://kencooutfitters.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Kenco%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -75957,7 +76877,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -76036,7 +76956,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://shop.jessebrowns.com/pages/contact",
       "website": "https://jessebrowns.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Jesse%20Brown's%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://shop.jessebrowns.com/pages/contact",
+      "sourceEvidenceUrl": "https://jessebrowns.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Jesse%20Brown's%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -76058,7 +76978,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -76137,7 +77057,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://shop.jessebrowns.com/pages/contact",
       "website": "https://jessebrowns.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Jesse%20Brown's%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://shop.jessebrowns.com/pages/contact",
+      "sourceEvidenceUrl": "https://jessebrowns.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Jesse%20Brown's%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -76159,7 +77079,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -76260,7 +77180,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -76359,7 +77279,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -76436,7 +77356,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
       "website": "https://www.purelyoutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Purely%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
+      "sourceEvidenceUrl": "https://www.purelyoutdoors.co.uk/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Purely%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -76458,7 +77378,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -76537,7 +77457,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
       "website": "https://www.purelyoutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Purely%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
+      "sourceEvidenceUrl": "https://www.purelyoutdoors.co.uk/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Purely%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -76559,7 +77479,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -76660,7 +77580,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -76761,7 +77681,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -76862,7 +77782,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -76960,7 +77880,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -77036,7 +77956,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.tahoesportshub.com/contact",
       "website": "https://www.tahoesportshub.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tahoe%20Sports%20Hub%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tahoesportshub.com/contact",
+      "sourceEvidenceUrl": "https://www.tahoesportshub.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Tahoe%20Sports%20Hub%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -77058,7 +77978,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -77159,7 +78079,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -77260,7 +78180,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -77358,7 +78278,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -77456,7 +78376,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -77556,7 +78476,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -77654,7 +78574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -77752,7 +78672,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -77850,7 +78770,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -77948,7 +78868,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -78049,7 +78969,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -78150,7 +79070,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -78249,7 +79169,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -78326,7 +79246,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://explorationwild.com/pages/about-us",
       "website": "https://explorationwild.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://explorationwild.com/pages/about-us",
+      "sourceEvidenceUrl": "https://explorationwild.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -78348,7 +79268,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -78427,7 +79347,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://explorationwild.com/pages/about-us",
       "website": "https://explorationwild.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://explorationwild.com/pages/about-us",
+      "sourceEvidenceUrl": "https://explorationwild.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -78449,7 +79369,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -78528,7 +79448,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://explorationwild.com/pages/about-us",
       "website": "https://explorationwild.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://explorationwild.com/pages/about-us",
+      "sourceEvidenceUrl": "https://explorationwild.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Exploration%20Wild%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -78550,7 +79470,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -78651,7 +79571,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -78752,7 +79672,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -78853,7 +79773,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -78954,7 +79874,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -79055,7 +79975,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -79156,7 +80076,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -79257,7 +80177,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -79358,7 +80278,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -79436,7 +80356,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.bentgate.com/service/",
       "website": "https://www.bentgate.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.bentgate.com/service/",
+      "sourceEvidenceUrl": "https://www.bentgate.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -79458,7 +80378,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -79536,7 +80456,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://www.bentgate.com/service/",
       "website": "https://www.bentgate.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.bentgate.com/service/",
+      "sourceEvidenceUrl": "https://www.bentgate.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -79558,7 +80478,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -79636,7 +80556,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://jhoutdoors.com/pages/faq",
       "website": "https://jhoutdoors.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22J%26H%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://jhoutdoors.com/pages/faq",
+      "sourceEvidenceUrl": "https://jhoutdoors.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22J%26H%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -79658,7 +80578,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -79737,7 +80657,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://jhoutdoors.com/pages/faq",
       "website": "https://jhoutdoors.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22J%26H%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://jhoutdoors.com/pages/faq",
+      "sourceEvidenceUrl": "https://jhoutdoors.com/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22J%26H%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -79759,7 +80679,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -79860,7 +80780,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -79959,7 +80879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -80058,7 +80978,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -80159,7 +81079,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -80260,7 +81180,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -80361,7 +81281,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -80463,7 +81383,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -80565,7 +81485,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -80666,7 +81586,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -80767,7 +81687,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -80868,7 +81788,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -80969,7 +81889,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -81070,7 +81990,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -81171,7 +82091,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -81271,7 +82191,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -81371,7 +82291,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -81471,7 +82391,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -81561,7 +82481,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.threemountainassociates.com/",
-      "socialProfileVerifiedAt": "2026-08-21T07:48:42.902Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:15.329Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -81571,7 +82491,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -81601,7 +82521,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/3mountain/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T07:48:42.902Z",
+        "verifiedAt": "2026-08-21T09:02:15.329Z",
         "evidenceUrl": "https://www.threemountainassociates.com/",
         "httpStatus": 200,
         "signals": [],
@@ -81657,7 +82577,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.threemountainassociates.com/",
-      "socialProfileVerifiedAt": "2026-08-21T07:48:42.902Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:15.329Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -81667,7 +82587,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -81697,7 +82617,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/threemountainassociates/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T07:48:42.902Z",
+        "verifiedAt": "2026-08-21T09:02:15.329Z",
         "evidenceUrl": "https://www.threemountainassociates.com/",
         "httpStatus": 200,
         "signals": [],
@@ -81753,7 +82673,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:11.791Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:15.969Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -81763,7 +82683,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -81793,7 +82713,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/awesomeoutdoorsgroup/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:11.791Z",
+        "verifiedAt": "2026-08-21T09:02:15.969Z",
         "evidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -81851,7 +82771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:11.791Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:15.969Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -81861,7 +82781,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -81891,7 +82811,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:11.791Z",
+        "verifiedAt": "2026-08-21T09:02:15.969Z",
         "evidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -81949,7 +82869,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.mountain-equipment.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:07.054Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:15.247Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -81959,7 +82879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -81982,7 +82902,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://linkedin.com/company/mountain-equipment",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:07.054Z",
+        "verifiedAt": "2026-08-21T09:02:15.247Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -82042,7 +82962,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.ems.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:22.762Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:23.997Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -82052,7 +82972,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -82083,7 +83003,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/easternmntnsports/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:22.762Z",
+        "verifiedAt": "2026-08-21T09:02:23.997Z",
         "evidenceUrl": "https://www.ems.com/",
         "httpStatus": 200,
         "signals": [
@@ -82091,6 +83011,105 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ],
         "error": ""
       }
+    },
+    {
+      "id": "google-customer-pack-rat-outdoor-center-instagram",
+      "name": "Pack Rat Outdoor Center",
+      "company": "Pack Rat Outdoor Center",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 84,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping and travel retail social refill channel",
+      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "background": "Pack Rat Outdoor Center is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping and travel retail social refill channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Pack Rat Outdoor Center is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.packratoc.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://www.packratoc.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Pack%20Rat%20Outdoor%20Center%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Pack%20Rat%20Outdoor%20Center%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://packratoc.com/",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:25.477Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/21 17:02:01",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/packratoc",
+      "url": "https://www.instagram.com/packratoc",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "https://www.facebook.com/packratoc",
+        "websiteContact": "https://www.packratoc.com/"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/packratoc/",
+          "status": "identity_mismatch",
+          "evidence": "Instagram handle packratoc does not match company Pack Rat Outdoor Center; do not use this account for outreach."
+        }
+      },
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-21T09:02:25.477Z",
+        "evidenceUrl": "https://packratoc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "taskId": "google-customer-pack-rat-outdoor-center-instagram",
+      "channelType": "instagram",
+      "targetUrl": "https://www.instagram.com/packratoc",
+      "verifiedTargetUrl": "https://www.instagram.com/packratoc"
     },
     {
       "id": "google-customer-massey-outfitters-instagram",
@@ -82141,7 +83160,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.masseysoutfitters.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:23.137Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:24.410Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -82151,7 +83170,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -82182,7 +83201,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/masseysoutfitters/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:23.137Z",
+        "verifiedAt": "2026-08-21T09:02:24.410Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -82240,7 +83259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.campingtravelstore.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.079Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:28.917Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -82250,7 +83269,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -82280,7 +83299,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/CampingTravelStore",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.079Z",
+        "verifiedAt": "2026-08-21T09:02:28.917Z",
         "evidenceUrl": "https://www.campingtravelstore.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -82338,7 +83357,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.campingtravelstore.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.079Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:28.917Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -82348,7 +83367,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -82378,7 +83397,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://instagram.com/campingtravelstore",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.079Z",
+        "verifiedAt": "2026-08-21T09:02:28.917Z",
         "evidenceUrl": "https://www.campingtravelstore.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -82436,7 +83455,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.campingtravelstore.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.079Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:28.917Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -82446,7 +83465,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -82476,7 +83495,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/company/12116586",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.079Z",
+        "verifiedAt": "2026-08-21T09:02:28.917Z",
         "evidenceUrl": "https://www.campingtravelstore.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -82544,7 +83563,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -82645,7 +83664,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -82746,7 +83765,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -82844,7 +83863,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -82932,7 +83951,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:25.678Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:27.438Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -82942,7 +83961,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -82972,7 +83991,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/OutdoorsRamsey",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:25.678Z",
+        "verifiedAt": "2026-08-21T09:02:27.438Z",
         "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
         "httpStatus": 200,
         "signals": [
@@ -83018,7 +84037,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "emailEvidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
       "website": "https://blackandwhiteoutdoors.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Black%20%26%20White%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://blackandwhiteoutdoors.com/",
+      "sourceEvidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
       "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Black%20%26%20White%20Outdoors%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -83030,7 +84049,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:25.935Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:27.007Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -83040,7 +84059,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -83070,7 +84089,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/share/1Aw8XQBgZt/?mibextid=wwXIfr",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:25.935Z",
+        "verifiedAt": "2026-08-21T09:02:27.007Z",
         "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -83131,7 +84150,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://durangooutdoorexchange.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.870Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:29.617Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -83141,7 +84160,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -83171,7 +84190,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://facebook.com/dgooutdoorexchange",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.870Z",
+        "verifiedAt": "2026-08-21T09:02:29.617Z",
         "evidenceUrl": "https://durangooutdoorexchange.com/",
         "httpStatus": 200,
         "signals": [
@@ -83232,7 +84251,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://durangooutdoorexchange.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.870Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:29.617Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -83242,7 +84261,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -83272,7 +84291,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/dgooutdoorexchange/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.870Z",
+        "verifiedAt": "2026-08-21T09:02:29.617Z",
         "evidenceUrl": "https://durangooutdoorexchange.com/",
         "httpStatus": 200,
         "signals": [
@@ -83343,7 +84362,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -83431,7 +84450,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.carawayandco.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.696Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:29.753Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -83441,7 +84460,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -83471,7 +84490,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/CarawayandCo",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.696Z",
+        "verifiedAt": "2026-08-21T09:02:29.753Z",
         "evidenceUrl": "https://www.carawayandco.com/",
         "httpStatus": 200,
         "signals": [
@@ -83530,7 +84549,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.carawayandco.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:19:27.696Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:29.753Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -83540,7 +84559,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -83570,7 +84589,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/carawayandco/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:19:27.696Z",
+        "verifiedAt": "2026-08-21T09:02:29.753Z",
         "evidenceUrl": "https://www.carawayandco.com/",
         "httpStatus": 200,
         "signals": [
@@ -83639,7 +84658,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -83739,7 +84758,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -83839,7 +84858,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -83937,7 +84956,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -84038,7 +85057,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -84139,7 +85158,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -84240,7 +85259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -84340,7 +85359,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -84440,7 +85459,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -84530,7 +85549,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://perpetualmotionnw.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:06.427Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:14.673Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -84540,7 +85559,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -84570,7 +85589,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/perpetual_motion_nw/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:06.427Z",
+        "verifiedAt": "2026-08-21T09:02:14.673Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -84630,7 +85649,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://perpetualmotionnw.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:06.427Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:14.673Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -84640,7 +85659,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -84670,7 +85689,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/Perpetual-Motion-NW-133722600013221/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:06.427Z",
+        "verifiedAt": "2026-08-21T09:02:14.673Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -84730,7 +85749,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://perpetualmotionnw.com/",
-      "socialProfileVerifiedAt": "2026-08-21T08:57:06.427Z",
+      "socialProfileVerifiedAt": "2026-08-21T09:02:14.673Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -84740,7 +85759,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -84770,7 +85789,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/company/perpetual-motion-northwest/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T08:57:06.427Z",
+        "verifiedAt": "2026-08-21T09:02:14.673Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -84840,7 +85859,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -84938,7 +85957,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -85036,7 +86055,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -85136,7 +86155,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -85236,7 +86255,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -85337,7 +86356,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -85438,7 +86457,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -85536,7 +86555,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -85634,7 +86653,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -85732,7 +86751,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -85833,7 +86852,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -85934,7 +86953,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -86035,7 +87054,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -86131,7 +87150,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -86227,7 +87246,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -86329,7 +87348,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -86431,7 +87450,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -86531,7 +87550,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -86631,7 +87650,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -86731,7 +87750,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -86832,7 +87851,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -86933,7 +87952,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -87030,7 +88049,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -87127,7 +88146,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -87225,7 +88244,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -87323,7 +88342,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -87424,7 +88443,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -87525,7 +88544,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -87624,7 +88643,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -87723,7 +88742,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -87814,7 +88833,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/21 16:56:57",
+        "localTime": "2026/8/21 17:02:01",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -87848,10 +88867,10 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
     }
   ],
   "firstPartyEnrichment": {
-    "completedAt": "2026-08-21T08:57:47.165Z",
+    "completedAt": "2026-08-21T09:02:29.754Z",
     "attemptedCompanies": 50,
-    "verifiedCompanies": 42,
-    "cachedCompanies": 431,
+    "verifiedCompanies": 35,
+    "cachedCompanies": 435,
     "results": [
       {
         "company": "Bass Pro Shops",
@@ -87869,11 +88888,29 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "signals": []
       },
       {
+        "company": "Minnis Brands",
+        "ok": true,
+        "evidenceUrl": "https://minnisbrands.com/contact/",
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ]
+      },
+      {
         "company": "Four Corners UK",
         "ok": true,
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "signals": [
           "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "AlpineWaves",
+        "ok": true,
+        "evidenceUrl": "https://www.alpinewaves.co.uk/",
+        "signals": [
           "contact_invitation"
         ]
       },
@@ -87906,6 +88943,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "signals": []
       },
       {
+        "company": "THR Outdoor",
+        "ok": true,
+        "evidenceUrl": "https://thr-outdoor.co.za/contact/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
         "company": "Backcountry Experience",
         "ok": true,
         "evidenceUrl": "https://www.bcexp.com/",
@@ -87916,11 +88962,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       {
         "company": "Ute Mountaineer",
+        "ok": false,
+        "evidenceUrl": "https://utemountaineer.com/",
+        "signals": []
+      },
+      {
+        "company": "AirTents South Africa",
         "ok": true,
-        "evidenceUrl": "https://www.utemountaineer.com/",
+        "evidenceUrl": "https://www.airtents.co.za/",
         "signals": [
           "form_control",
-          "public_business_email"
+          "contact_invitation"
         ]
       },
       {
@@ -87978,250 +89030,42 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ]
       },
       {
-        "company": "Professional Marketing Inc",
+        "company": "Three Mountain Associates",
         "ok": true,
-        "evidenceUrl": "https://www.wileyoutdoorproducts.com/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Air Fresh Marketing",
-        "ok": true,
-        "evidenceUrl": "https://www.airfreshmarketing.com/outdoor-recreation-brand-ambassadors",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Taunton Leisure",
-        "ok": true,
-        "evidenceUrl": "https://www.tauntonleisure.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Dark Blizzard Sales",
-        "ok": true,
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ]
-      },
-      {
-        "company": "Outdoor Cap Company",
-        "ok": true,
-        "evidenceUrl": "https://retail.outdoorcap.com/contact-us",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "San Hima South Africa",
-        "ok": true,
-        "evidenceUrl": "https://sanhima.co.za/pages/contact",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Alpenglow Sports",
-        "ok": true,
-        "evidenceUrl": "https://alpenglowsports.com/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Neptune Mountaineering",
-        "ok": true,
-        "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Kenco Outfitters",
-        "ok": true,
-        "evidenceUrl": "https://kencooutfitters.com/pages/rewards",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Jesse Brown's Outdoors",
-        "ok": true,
-        "evidenceUrl": "https://shop.jessebrowns.com/pages/contact",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Travel Country Outfitters",
-        "ok": false,
-        "evidenceUrl": "https://www.travelcountry.com/shop/Action/Info_Show/Id/42",
+        "evidenceUrl": "https://www.threemountainassociates.com/",
         "signals": []
       },
       {
-        "company": "Roads Rivers and Trails",
+        "company": "Awesome Outdoors Group",
         "ok": true,
-        "evidenceUrl": "https://roadsriversandtrails.com/trip-planning/",
+        "evidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
         "signals": [
-          "form_control",
-          "public_business_email"
+          "supplier_invitation"
         ]
       },
       {
-        "company": "Purely Outdoors",
+        "company": "Brave Hardy",
         "ok": true,
-        "evidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "West End Outdoors",
-        "ok": true,
-        "evidenceUrl": "https://www.westendoutdoors.co.uk/policies/contact-information",
-        "signals": [
-          "form_control"
-        ]
-      },
-      {
-        "company": "Tahoe Sports Hub",
-        "ok": true,
-        "evidenceUrl": "https://www.tahoesportshub.com/contact",
+        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
         "signals": [
           "form_control",
           "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "The Trail Head",
-        "ok": true,
-        "evidenceUrl": "https://trailheadmontana.net/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "The Bunker Agency",
-        "ok": true,
-        "evidenceUrl": "https://www.thebunkeratlanta.com/about",
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ]
-      },
-      {
-        "company": "360 Adventure Collective",
-        "ok": true,
-        "evidenceUrl": "https://360adventurecollective.org/",
-        "signals": [
-          "form_control"
-        ]
-      },
-      {
-        "company": "Edgeline Collective",
-        "ok": true,
-        "evidenceUrl": "https://edgelinecollective.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "SportPursuit",
-        "ok": false,
-        "evidenceUrl": "https://www.sportpursuit.com/terms-conditions",
-        "signals": []
-      },
-      {
-        "company": "The Evans Group",
-        "ok": true,
-        "evidenceUrl": "https://theevansgroup.net/about/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Nick Landry Sales",
-        "ok": true,
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ]
-      },
-      {
-        "company": "Mountain Warehouse",
-        "ok": true,
-        "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Maxcons Camping and Outdoor",
-        "ok": true,
-        "evidenceUrl": "https://maxcons.co.za/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Exploration Wild",
-        "ok": true,
-        "evidenceUrl": "https://explorationwild.com/pages/about-us",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Backcountry Sportsman",
-        "ok": true,
-        "evidenceUrl": "https://backcountrysportsmanoutfitters.com/",
-        "signals": [
-          "form_control",
           "supplier_invitation",
           "contact_invitation"
         ]
       },
       {
-        "company": "Grasshopper Leisure",
+        "company": "Public Lands",
         "ok": true,
-        "evidenceUrl": "https://www.grasshopperleisure.co.uk/",
+        "evidenceUrl": "https://www.publiclands.com/",
+        "signals": [
+          "form_control"
+        ]
+      },
+      {
+        "company": "Campman",
+        "ok": true,
+        "evidenceUrl": "https://www.campman.com/",
         "signals": [
           "form_control",
           "public_business_email",
@@ -88229,39 +89073,79 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ]
       },
       {
-        "company": "WeyFarm Outdoors",
+        "company": "The Mountaineer",
         "ok": true,
-        "evidenceUrl": "https://weyfarm-outdoors.co.uk/",
+        "evidenceUrl": "https://mountaineer.com/privacy-policy/",
         "signals": [
           "form_control",
           "contact_invitation"
         ]
       },
       {
-        "company": "Bentgate Mountaineering",
-        "ok": true,
-        "evidenceUrl": "https://www.bentgate.com/service/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "The Great Outdoor Shop",
+        "company": "Sierra",
         "ok": false,
-        "evidenceUrl": "https://thegreatoutdoorshop.com/",
+        "evidenceUrl": "https://www.sierra.com/",
         "signals": []
       },
       {
-        "company": "Arizona Hiking Shack",
+        "company": "Outdoorplay",
+        "ok": true,
+        "evidenceUrl": "https://www.outdoorplay.com/",
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Campmor",
         "ok": false,
-        "evidenceUrl": "https://www.hikingshack.com/",
+        "evidenceUrl": "https://www.campmor.com/",
         "signals": []
       },
       {
-        "company": "J&H Outdoors",
+        "company": "Quest Outdoors",
+        "ok": false,
+        "evidenceUrl": "https://questoutdoors.com/",
+        "signals": []
+      },
+      {
+        "company": "River Sports Outfitters",
         "ok": true,
-        "evidenceUrl": "https://jhoutdoors.com/pages/faq",
+        "evidenceUrl": "https://www.riversportsoutfitters.com/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Rock/Creek",
+        "ok": false,
+        "evidenceUrl": "https://www.rockcreek.com/",
+        "signals": []
+      },
+      {
+        "company": "Half-Moon Outfitters",
+        "ok": true,
+        "evidenceUrl": "https://www.halfmoonoutfitters.com/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Christy Sports",
+        "ok": true,
+        "evidenceUrl": "https://www.christysports.com/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Tiso",
+        "ok": true,
+        "evidenceUrl": "https://www.tiso.com/pages/contact",
         "signals": [
           "form_control",
           "public_business_email",
@@ -88269,18 +89153,89 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ]
       },
       {
-        "company": "Hilton's Tent City",
+        "company": "George Fisher",
         "ok": true,
-        "evidenceUrl": "https://www.hiltonstentcity.com/pages/returns-exchanges",
+        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
         "signals": [
           "form_control",
-          "public_business_email"
+          "contact_invitation"
         ]
       },
       {
-        "company": "Blue Ridge Knives",
+        "company": "LD Mountain Centre",
         "ok": true,
-        "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
+        "evidenceUrl": "https://www.ldmountaincentre.com/",
+        "signals": []
+      },
+      {
+        "company": "Absolute-Snow",
+        "ok": false,
+        "evidenceUrl": "https://www.absolute-snow.co.uk/",
+        "signals": []
+      },
+      {
+        "company": "Ellis Brigham",
+        "ok": true,
+        "evidenceUrl": "https://www.ellis-brigham.com/",
+        "signals": []
+      },
+      {
+        "company": "Facewest",
+        "ok": true,
+        "evidenceUrl": "https://www.facewest.co.uk/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Moosejaw",
+        "ok": false,
+        "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
+        "signals": []
+      },
+      {
+        "company": "Eastern Mountain Sports",
+        "ok": true,
+        "evidenceUrl": "https://www.ems.com/",
+        "signals": [
+          "form_control"
+        ]
+      },
+      {
+        "company": "Pack Rat Outdoor Center",
+        "ok": true,
+        "evidenceUrl": "https://packratoc.com/",
+        "signals": [
+          "form_control"
+        ]
+      },
+      {
+        "company": "Massey Outfitters",
+        "ok": true,
+        "evidenceUrl": "https://www.masseysoutfitters.com/",
+        "signals": [
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Survive & Thrive",
+        "ok": false,
+        "evidenceUrl": "https://www.survive-thrive.com/",
+        "signals": []
+      },
+      {
+        "company": "Camping Travel Store",
+        "ok": true,
+        "evidenceUrl": "https://www.campingtravelstore.co.uk/",
+        "signals": [
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Outcamping",
+        "ok": true,
+        "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
         "signals": [
           "form_control",
           "public_business_email",
@@ -88288,12 +89243,39 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ]
       },
       {
-        "company": "Zia Works Distribution",
+        "company": "Outdoors Ramsey",
         "ok": true,
-        "evidenceUrl": "https://www.nwziaworks.com/",
+        "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
+        "signals": [
+          "form_control"
+        ]
+      },
+      {
+        "company": "Black & White Outdoors",
+        "ok": true,
+        "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
         "signals": [
           "form_control",
           "public_business_email",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Durango Outdoor Exchange",
+        "ok": true,
+        "evidenceUrl": "https://durangooutdoorexchange.com/",
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Caraway & Co.",
+        "ok": true,
+        "evidenceUrl": "https://www.carawayandco.com/",
+        "signals": [
+          "supplier_invitation",
           "contact_invitation"
         ]
       }
