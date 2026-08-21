@@ -1463,5 +1463,25 @@
     "dataSources": ["official company website", "official sales email", "official camping systems description"],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-21T08:01:00.000Z"
+  },
+  {
+    "company": "Unify Brand Partnerships",
+    "country": "United Kingdom",
+    "url": "https://unify-bp.com/",
+    "contactUrl": "https://unify-bp.com/contact/",
+    "publicEmail": "letschat@unify-bp.com",
+    "contactEmail": "letschat@unify-bp.com",
+    "publicEmailStatus": "Official company-domain enquiries email published on Unify Brand Partnerships' first-party Contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_brand_partnership_contact_page",
+    "segment": "United Kingdom active, outdoor and lifestyle brand agency and distributor",
+    "customerType": "sales_agency",
+    "fitScore": 96,
+    "background": "Unify Brand Partnerships states that it supports brands through UK distribution, strategic sales, retail development, marketing and brand activations and invites prospective partners to contact its team.",
+    "buyerPersona": "Brand partnership, distribution or strategic sales decision maker.",
+    "evidenceUrl": "https://unify-bp.com/contact/",
+    "dataSources": ["official agency website", "official contact page", "official wholesale partnership announcement"],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-21T08:07:00.000Z"
   }
 ]

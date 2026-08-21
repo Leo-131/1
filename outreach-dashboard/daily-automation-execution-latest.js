@@ -7,10 +7,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 5,
+  "chromeOpenedCount": 2,
   "customerDevelopmentPerformed": true,
   "customerMessageSent": true,
-  "realDevelopmentCount": 3,
+  "realDevelopmentCount": 1,
   "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
@@ -21,83 +21,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-hardin-outdoors-website-contact",
-      "company": "Hardin Outdoors",
+      "id": "google-customer-unify-brand-partnerships-website-contact",
+      "company": "Unify Brand Partnerships",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.hardinoutdoors.com/about",
-      "ok": false,
-      "sendStatus": "send_unconfirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-      "timestamp": "2026-08-21T08:02:56.927Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "send_unconfirmed",
-        "reason": "sent_folder_confirmation_missing",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-        "recipientEmail": "elliott.hardin@hardinoutdoors.com",
-        "targetUrl": "mailto:elliott.hardin@hardinoutdoors.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Hardin Outdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_delivery_unconfirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"send_unconfirmed\",\"sendStatus\":\"send_unconfirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"elliott.hardin@hardinoutdoors.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
-      "id": "google-customer-formalito-website-contact",
-      "company": "Formalito",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://formalito.co.za/contact/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:03:11.573Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "prior_unconfirmed_sent_folder_recovered",
-        "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "info@formalito.co.za",
-        "targetUrl": "mailto:info@formalito.co.za",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_recovered",
-        "draft": "Dear Formalito Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"prior_send_unconfirmed_no_resend;sent_folder_record_confirmed\",\"nextAction\":\"The prior unconfirmed send is now visible in Sent; no resend occurred.\",\"recipientEmail\":\"info@formalito.co.za\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-agrinet-website-contact",
-      "company": "Agrinet",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.agrinet.co.za/contact-us",
+      "targetUrl": "https://unify-bp.com/contact/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:03:35.929Z",
+      "timestamp": "2026-08-21T08:08:03.537Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "info@agrinet.co.za",
-        "targetUrl": "mailto:info@agrinet.co.za",
+        "recipientEmail": "letschat@unify-bp.com",
+        "targetUrl": "mailto:letschat@unify-bp.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Agrinet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear Unify Brand Partnerships Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -105,42 +47,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 108
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@agrinet.co.za\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-bossenberg-website-contact",
-      "company": "Bossenberg",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.bossenberg.co.za/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:04:03.923Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "sales@bossenberg.co.za",
-        "targetUrl": "mailto:sales@bossenberg.co.za",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Bossenberg Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@bossenberg.co.za\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"letschat@unify-bp.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
@@ -153,14 +62,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T08:04:30.488Z",
+      "timestamp": "2026-08-21T08:08:29.905Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "38658E79EBE36F2C7CEF19DA086E905A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38658E79EBE36F2C7CEF19DA086E905A",
+        "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -174,8 +83,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "38658E79EBE36F2C7CEF19DA086E905A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38658E79EBE36F2C7CEF19DA086E905A",
+          "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -199,83 +108,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "results": [
     {
-      "id": "google-customer-hardin-outdoors-website-contact",
-      "company": "Hardin Outdoors",
+      "id": "google-customer-unify-brand-partnerships-website-contact",
+      "company": "Unify Brand Partnerships",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.hardinoutdoors.com/about",
-      "ok": false,
-      "sendStatus": "send_unconfirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-      "timestamp": "2026-08-21T08:02:56.927Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "send_unconfirmed",
-        "reason": "sent_folder_confirmation_missing",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-        "recipientEmail": "elliott.hardin@hardinoutdoors.com",
-        "targetUrl": "mailto:elliott.hardin@hardinoutdoors.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Hardin Outdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_delivery_unconfirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"send_unconfirmed\",\"sendStatus\":\"send_unconfirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"elliott.hardin@hardinoutdoors.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
-      "id": "google-customer-formalito-website-contact",
-      "company": "Formalito",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://formalito.co.za/contact/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:03:11.573Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "prior_unconfirmed_sent_folder_recovered",
-        "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "info@formalito.co.za",
-        "targetUrl": "mailto:info@formalito.co.za",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_recovered",
-        "draft": "Dear Formalito Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"prior_send_unconfirmed_no_resend;sent_folder_record_confirmed\",\"nextAction\":\"The prior unconfirmed send is now visible in Sent; no resend occurred.\",\"recipientEmail\":\"info@formalito.co.za\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-agrinet-website-contact",
-      "company": "Agrinet",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.agrinet.co.za/contact-us",
+      "targetUrl": "https://unify-bp.com/contact/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:03:35.929Z",
+      "timestamp": "2026-08-21T08:08:03.537Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "info@agrinet.co.za",
-        "targetUrl": "mailto:info@agrinet.co.za",
+        "recipientEmail": "letschat@unify-bp.com",
+        "targetUrl": "mailto:letschat@unify-bp.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Agrinet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear Unify Brand Partnerships Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -283,42 +134,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 108
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@agrinet.co.za\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-bossenberg-website-contact",
-      "company": "Bossenberg",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.bossenberg.co.za/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:04:03.923Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "sales@bossenberg.co.za",
-        "targetUrl": "mailto:sales@bossenberg.co.za",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Bossenberg Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@bossenberg.co.za\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"letschat@unify-bp.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
@@ -331,14 +149,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T08:04:30.488Z",
+      "timestamp": "2026-08-21T08:08:29.905Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "38658E79EBE36F2C7CEF19DA086E905A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38658E79EBE36F2C7CEF19DA086E905A",
+        "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -352,8 +170,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "38658E79EBE36F2C7CEF19DA086E905A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38658E79EBE36F2C7CEF19DA086E905A",
+          "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -386,6 +204,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
       "company": "G.B. Stumpp & Associates",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-hardin-outdoors-website-contact",
+      "company": "Hardin Outdoors",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -993,6 +818,48 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-tin-shack-ltd-website-contact",
+      "company": "Tin Shack Ltd",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-website-contact",
+      "company": "Garibaldi Supply Co.",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-d-m-a-distributing-website-contact",
+      "company": "D.M.A. Distributing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-gmd-wholesale-website-contact",
+      "company": "GMD Wholesale",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-gear-canada-website-contact",
+      "company": "Outdoor Gear Canada",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-premium-living-products-website-contact",
+      "company": "Premium Living Products",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-front-point-sales-linkedin",
       "company": "Front Point Sales",
       "action": "verify_target",
@@ -1030,6 +897,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
       "company": "G.B. Stumpp & Associates",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-hardin-outdoors-website-contact",
+      "company": "Hardin Outdoors",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -1347,29 +1221,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 32,
-    "dueNow": 93,
-    "visibleTodayQueue": 55,
-    "potentialPool": 55,
+    "dueNow": 97,
+    "visibleTodayQueue": 53,
+    "potentialPool": 53,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 45,
-    "executableCompanies": 36,
+    "refillNeeded": 47,
+    "executableCompanies": 34,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 94,
+    "executableReserveNeeded": 96,
     "executableByChannel": {
       "linkedin": 1,
       "facebook": 3,
       "instagram": 1,
-      "email": 12,
+      "email": 10,
       "website_form": 19
     },
     "verifiedSocialCompanies": 5,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 15,
     "enrichmentBacklogCount": 19,
-    "googleDiscovered": 93,
+    "googleDiscovered": 97,
     "facebookDiscovered": 8,
-    "websiteContactDiscovered": 28,
+    "websiteContactDiscovered": 26,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1387,12 +1261,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 32
+      "count": 34
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 27
+      "count": 33
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1420,11 +1294,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 2
-    },
-    {
       "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
       "count": 1
@@ -1435,38 +1304,31 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 1
     },
     {
-      "reason": "prior_unconfirmed_sent_folder_recovered",
+      "reason": "sent_folder_message_confirmed",
       "status": "sent_confirmed",
-      "count": 1
-    },
-    {
-      "reason": "sent_folder_confirmation_missing",
-      "status": "send_unconfirmed",
       "count": 1
     }
   ],
   "blockerCounts": {
     "official_website_contact_channel": 41,
-    "official_public_business_email_verified": 32,
-    "homepage_only_contact_path_requires_verification": 27,
+    "official_public_business_email_verified": 34,
+    "homepage_only_contact_path_requires_verification": 33,
     "website_contact_capability_not_verified": 12,
     "social_profile_not_first_party_verified": 8,
     "official_website_social_channel_verified": 7,
     "personal_email_domain_not_allowed": 7,
     "linkedin_channel_requires_supported_executor": 2,
-    "sent_folder_message_confirmed": 2,
     "concrete_google_discovered_major_customer_facebook": 1,
     "concrete_google_discovered_major_customer_instagram": 1,
-    "prior_unconfirmed_sent_folder_recovered": 1,
-    "sent_folder_confirmation_missing": 1
+    "sent_folder_message_confirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 55,
-    "queueCount": 93,
-    "googleDiscovered": 93,
-    "refillNeeded": 45,
-    "confirmedToday": 3,
+    "potentialPool": 53,
+    "queueCount": 97,
+    "googleDiscovered": 97,
+    "refillNeeded": 47,
+    "confirmedToday": 6,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1478,17 +1340,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (41); official_public_business_email_verified (32); homepage_only_contact_path_requires_verification (27).",
-  "recoveryHint": "Refill the high-ICP pool with 45 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (41); official_public_business_email_verified (34); homepage_only_contact_path_requires_verification (33).",
+  "recoveryHint": "Refill the high-ICP pool with 47 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 45 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 45 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 47 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 47 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 55,
-      "refillNeeded": 45
+      "potentialPool": 53,
+      "refillNeeded": 47
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1503,12 +1365,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T08:04:35.189Z",
+      "updatedAt": "2026-08-21T08:08:38.148Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T08:04:32.236Z",
-      "executionGeneratedAt": "2026-08-21T07:58:26.839Z",
-      "githubSyncUpdatedAt": "2026-08-21T07:59:11.557Z",
+      "artifactGeneratedAt": "2026-08-21T08:08:31.777Z",
+      "executionGeneratedAt": "2026-08-21T08:04:35.841Z",
+      "githubSyncUpdatedAt": "2026-08-21T08:05:17.299Z",
       "counts": {
         "dailyQueue": 100,
         "googleDiscovered": 100,
@@ -1576,7 +1438,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 6,
+  "ledgerReconciliationCount": 5,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T08:04:35.841Z"
+  "completedAt": "2026-08-21T08:08:40.694Z"
 };

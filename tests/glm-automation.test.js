@@ -2305,6 +2305,14 @@ test('United States refill includes Hardin Outdoors first-party agency owner ema
   assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
 });
 
+test('United Kingdom refill includes Unify Brand Partnerships first-party agency email', () => {
+  const candidate = verifiedExternalCandidates.find(item => item.company === 'Unify Brand Partnerships');
+  assert.ok(candidate);
+  assert.equal(candidate.country, 'United Kingdom');
+  assert.equal(candidate.customerType, 'sales_agency');
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
