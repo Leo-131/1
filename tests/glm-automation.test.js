@@ -2700,6 +2700,12 @@ test('same-day exact terminal task cannot starve later queue candidates', () => 
   assert.ok(mainSource.includes("status: 'same_day_retry_circuit_open'"));
 });
 
+test('company social fallback rejects personal LinkedIn profiles', () => {
+  assert.ok(mainSource.includes(".filter(url => !/linkedin\\.com\\/in\\//i.test(String(url || '')))"));
+  assert.ok(mainSource.includes('Company outreach'));
+  assert.ok(mainSource.includes('LinkedIn organization URLs only'));
+});
+
 test('daily execution watchdog recomputes confirmed count inside its own scope', () => {
   const watchdogStart = mainSource.indexOf('const watchdog = setTimeout(async () =>');
   const watchdogEnd = mainSource.indexOf('}, timeoutMs);', watchdogStart);

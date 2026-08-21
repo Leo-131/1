@@ -2397,7 +2397,13 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
     alternateChannels.linkedin,
     alternateChannels.facebook,
     alternateChannels.instagram,
-  ].filter((url, index, list) => /^https?:\/\//i.test(String(url || '')) && list.indexOf(url) === index);
+  ].filter((url, index, list) => /^https?:\/\//i.test(String(url || '')) && list.indexOf(url) === index)
+    // A first-party company page may link founders or staff. That proves the
+    // person is associated with the company, not that their personal LinkedIn
+    // profile is an authorized company messaging surface. Company outreach
+    // uses LinkedIn organization URLs only; named-buyer outreach is a separate
+    // identity-verified workflow.
+    .filter(url => !/linkedin\.com\/in\//i.test(String(url || '')));
   const ranked = links
     .map((url) => {
       const text = String(url || '').toLowerCase();
