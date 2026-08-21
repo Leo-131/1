@@ -2641,6 +2641,10 @@ test('August 21 net-new US and UK agency refill keeps first-party executable cha
     ['Phil Hunt Agencies', 'United Kingdom', 'phil@philhuntagencies.co.uk'],
     ['The Outdoor Agency Ireland', 'United Kingdom', 'stephen@theoutdooragencyireland.com'],
     ['The Foundry', 'United Kingdom', 'info@thisisthefoundry.com'],
+    ['Sean Gearty Associates', 'United States', 'info@seangeartyassociates.com'],
+    ['Thomas F. Gowen & Sons', 'United States', 'info@tfgowen.com'],
+    ['All Outdoor Sales', 'United States', 'info@alloutdoorsales.com'],
+    ['Mainstream Marketing', 'United States', 'info@mainstreammktg.com'],
   ]) {
     const row = verifiedExternalCandidates.find(item => item.company === company);
     assert.ok(row, company);
