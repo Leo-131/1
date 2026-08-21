@@ -2436,6 +2436,21 @@ test('current South Africa and UK distributor refill has first-party trade email
   }
 });
 
+test('current UK trade distributor refill uses company-owned contact evidence', () => {
+  for (const [company, email, evidenceUrl] of [
+    ['Ardblair Sports', 'admin@ardblairsports.com', 'https://www.ardblairsports.com/contact'],
+    ['Persson Jones Sporting Goods', 'support@persson-jones.uk', 'https://persson-jones.uk/contact-us/'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.evidenceUrl, evidenceUrl);
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(row.customerType, 'brand_agent');
+    assert.ok(row.fitScore >= 70);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
