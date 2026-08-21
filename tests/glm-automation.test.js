@@ -2823,6 +2823,10 @@ test('Navigator-ready named buyer route keeps exact first-party identity and com
   assert.match(row.linkedinBuyerUrl, /^https:\/\/www\.linkedin\.com\/in\/steve-booth-/);
   assert.equal(row.buyerIdentityEvidenceUrl, row.evidenceUrl);
   assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+  assert.ok(discoverySource.includes("buyerName: item.buyerName || ''"));
+  assert.ok(discoverySource.includes("linkedinBuyerUrl: item.linkedinBuyerUrl || ''"));
+  assert.ok(discoverySource.includes('buyerIdentityVerified: item.buyerIdentityVerified === true'));
+  assert.ok(discoverySource.includes("buyerIdentityEvidenceUrl: item.buyerIdentityEvidenceUrl || ''"));
 });
 
 test('Outdoor Brands UK uses only its first-party verified contact form', () => {

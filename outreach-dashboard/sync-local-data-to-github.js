@@ -252,6 +252,7 @@ function syncOnce() {
   copyIfExists(path.join(ROOT, 'external-evidence-confirmations.json'), path.join(OUT, 'external-evidence-confirmations.json'));
   copyIfExists(path.join(ROOT, 'external-evidence-confirmations.json'), path.join(ROOT, 'public', 'external-evidence-confirmations.json'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(ROOT, 'public', 'autonomous-outreach-results.js'));
+  copyIfExists(path.join(ROOT, 'cloud-task-state.json'), path.join(ROOT, 'public', 'cloud-task-state.json'));
   copyIfExists(path.join(ROOT, 'outreach-intelligence-latest.json'), path.join(OUT, 'outreach-intelligence-latest.json'));
   copyIfExists(path.join(ROOT, 'outreach-intelligence-latest.js'), path.join(OUT, 'outreach-intelligence-latest.js'));
   copyIfExists(
@@ -266,6 +267,10 @@ function syncOnce() {
     'google-lead-discovery-latest.js',
     'google-lead-discovery-latest.json',
     'system-visibility-latest.js',
+    'cloud-task-state.json',
+    'public/cloud-task-state.json',
+    'cloud-task-controller.js',
+    'run-cloud-outreach-task.js',
     'system-visibility-latest.json',
   ].forEach((name) => {
     copyIfExists(path.join(ROOT, name), path.join(ROOT, 'public', name));
@@ -338,11 +343,13 @@ function syncOnce() {
     '../tests/first-party-channel-enrichment.test.js',
     '../tests/outreach-intelligence.test.js',
     '../tests/system-readiness.test.js',
+    '../tests/cloud-task-controller.test.js',
     'package.json',
     'package-lock.json',
     'docs/plans/2026-07-21-nonzero-daily-execution-design.md',
     'docs/plans/2026-08-04-autonomous-sales-intelligence-design.md',
     'docs/daily-google-lead-outreach-optimized-prompt.md',
+    'docs/cloud-task-handoff.md',
   ];
   const publicDailyRun = `public/daily-runs/${latestDate}-daily-automation.json`;
   if (fs.existsSync(path.join(ROOT, publicDailyRun))) {
