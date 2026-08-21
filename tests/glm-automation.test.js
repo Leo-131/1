@@ -2517,6 +2517,30 @@ test('next South Africa key-account refill preserves official multichannel owner
   }
 });
 
+test('current United States agency refill uses fresh first-party routes', () => {
+  const expected = new Map([
+    ['Odle Sales', 'info@odlesales.com'],
+    ['Mitchum Sales & Consulting', 'daniel.mitchum@gmail.com'],
+    ['Walk Off Collective', 'info@thewalkoffcollective.com'],
+    ['TrailCross', 'trailcrossllc@gmail.com'],
+    ['Redline Sports Group', 'info@redlinesportsgroup.com'],
+  ]);
+  for (const [company, email] of expected) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.country, 'United States');
+    assert.equal(row.customerType, 'sales_agency');
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.ok(row.fitScore >= 70);
+  }
+  const walkOff = verifiedExternalCandidates.find(item => item.company === 'Walk Off Collective');
+  const trailCross = verifiedExternalCandidates.find(item => item.company === 'TrailCross');
+  assert.equal(walkOff.instagramUrl, 'https://www.instagram.com/thewalkoffcollective/');
+  assert.equal(trailCross.facebookUrl, 'https://www.facebook.com/trailcrossllc/');
+  assert.equal(walkOff.officialSocialProfileVerified, true);
+  assert.equal(trailCross.officialSocialProfileVerified, true);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
