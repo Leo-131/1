@@ -2937,6 +2937,7 @@ test('final daily replenishment keeps only first-party verified agency emails', 
     ['Evergreen Outdoor Group', 'team@evergreenog.com'],
     ['Fieldstone Marketing', 'info@fieldstonemarketing.com'],
     ['Blackwatch Agency', 'info@blackwatchagency.com'],
+    ['HL Outdoor Group', 'hans@hloutdoorgroup.com'],
   ];
   for (const [company, email] of expected) {
     const row = verifiedExternalCandidates.find(item => item.company === company);
