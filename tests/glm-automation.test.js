@@ -2635,6 +2635,9 @@ test('August 21 net-new US and UK agency refill keeps first-party executable cha
     ['Sports, Inc.', 'United States', 'info@hq.sportsinc.com', 'key_account'],
     ['Stellar Sales Alliance', 'United States', 'Fernando@stellarsalesalliance.com'],
     ['Sport Dimension', 'United States', 'info@sportdimension.com', 'key_account'],
+    ['Alexander & Townsend', 'United States', 'contacts@alexander-townsend.com'],
+    ['Mountain States Sales', 'United States', 'Don@MountainStatesSales.com'],
+    ['MWS Associates', 'United States', 'contact@mws-associates.com'],
   ]) {
     const row = verifiedExternalCandidates.find(item => item.company === company);
     assert.ok(row, company);
