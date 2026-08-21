@@ -2636,6 +2636,16 @@ test('next sporting-goods agency batch uses first-party founder addresses', () =
   }
 });
 
+test('South Africa distributor route uses first-party company-domain sales evidence', () => {
+  const row = verifiedExternalCandidates.find(item => item.company === 'LGB Distributors');
+  assert.ok(row);
+  assert.equal(row.country, 'South Africa');
+  assert.equal(row.customerType, 'key_account');
+  assert.equal(row.contactEmail, 'sales@lgbdistributors.co.za');
+  assert.equal(row.evidenceUrl, 'https://lgbdistributors.co.za/lgbdistributors/contacts.html');
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));

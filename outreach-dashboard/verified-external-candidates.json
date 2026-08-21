@@ -2613,5 +2613,25 @@
     "dataSources": ["official agency page", "official principal email", "official sales-agency description"],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-21T11:16:00.000Z"
+  },
+  {
+    "company": "LGB Distributors",
+    "country": "South Africa",
+    "url": "https://lgbdistributors.co.za/lgbdistributors/",
+    "contactUrl": "https://lgbdistributors.co.za/lgbdistributors/contacts.html",
+    "publicEmail": "sales@lgbdistributors.co.za",
+    "contactEmail": "sales@lgbdistributors.co.za",
+    "publicEmailStatus": "Official first-party distributor contact page publishes the exact company-domain sales address.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_sales_contact",
+    "segment": "South African sporting-goods, teamwear and equipment distributor",
+    "customerType": "key_account",
+    "fitScore": 86,
+    "background": "LGB Distributors is a Johannesburg distributor of sports goods, apparel and equipment for multiple team-sport categories.",
+    "buyerPersona": "Sales and distribution leadership responsible for evaluating new product and supplier relationships.",
+    "evidenceUrl": "https://lgbdistributors.co.za/lgbdistributors/contacts.html",
+    "dataSources": ["official distributor website", "official company-domain sales email", "official distributor description"],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-21T11:24:00.000Z"
   }
 ]
