@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "taskId": "daily-google-lead-outreach-automation",
   "mode": "cloud_control_plane_local_browser_executor",
-  "shanghaiDate": "2026-08-21",
-  "status": "complete",
-  "revision": 25,
-  "updatedAt": "2026-08-21T13:44:26.114Z",
+  "shanghaiDate": "2026-08-22",
+  "status": "active",
+  "revision": 26,
+  "updatedAt": "2026-08-21T16:17:37.968Z",
   "objective": {
     "dailyTarget": 100,
     "countries": [
@@ -20,17 +20,17 @@
     "multiChannelSameCustomer": true
   },
   "progress": {
-    "confirmedToday": 100,
-    "remainingToday": 0,
-    "potentialPool": 64,
-    "executableCompanies": 47,
+    "confirmedToday": 0,
+    "remainingToday": 100,
+    "potentialPool": 76,
+    "executableCompanies": 59,
     "latestExecutionPhase": "browser_execution",
-    "latestRealDevelopmentCount": 1,
-    "latestReportingVerdict": "development_performed"
+    "latestRealDevelopmentCount": 0,
+    "latestReportingVerdict": "no_customer_development_performed"
   },
   "lease": null,
   "handoff": {
-    "claimable": false,
+    "claimable": true,
     "instructions": "Pull the shared branch on a clean checkout, claim with a device alias, then run npm run cloud:run -- --device=<alias>."
   },
   "executorContract": {
@@ -50,14 +50,14 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "09e4e50871bc52ea472ccfed861735a67bcac4f1",
-    "upstreamHead": "09e4e50871bc52ea472ccfed861735a67bcac4f1",
-    "remoteHead": "09e4e50871bc52ea472ccfed861735a67bcac4f1"
+    "localHead": "ab1deaca5869b487b91e2e8dca204be95b8c9055",
+    "upstreamHead": "ab1deaca5869b487b91e2e8dca204be95b8c9055",
+    "remoteHead": "ab1deaca5869b487b91e2e8dca204be95b8c9055"
   },
   "latestExecution": {
-    "completedAt": "2026-08-21T13:44:17.911Z",
+    "completedAt": "2026-08-21T16:17:34.335Z",
     "browserTransportUsed": "cdp",
     "chromeOpened": true,
-    "realDevelopmentCount": 1
+    "realDevelopmentCount": 0
   }
 }
