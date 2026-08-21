@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { verifiedBusinessEmailTarget } = require('./alibaba-email-delivery');
 
 const ROOT = __dirname;
 const RUN_DIR = path.join(ROOT, 'daily-runs');
@@ -1331,9 +1332,10 @@ function channelExecutionReadiness(item = {}) {
   const verifiedEmail = /^official_supplier_email_verified$/.test(officialStatus)
     || /^official_public_business_email$/i.test(String(item.emailVerificationStatus || ''));
   if (platform === 'email' || item.publicEmail || item.contactEmail) {
-    return verifiedEmail
+    const executableEmail = verifiedBusinessEmailTarget(item);
+    return verifiedEmail && executableEmail.ok
       ? { ready: true, gate: 'official_business_email', evidenceUrl: liveFirstPartyEvidence || item.sourceEvidenceUrl || item.evidenceUrl || '' }
-      : { ready: false, gate: 'enrichment_required', reason: 'public_business_email_requires_verification' };
+      : { ready: false, gate: 'enrichment_required', reason: executableEmail.reason || 'public_business_email_requires_verification' };
   }
   const verifiedWebsiteRoute = /^official_(?:supplier_(?:form|route)|contact_form)_verified$/.test(officialStatus)
     || item.contactCapabilityVerified === true;

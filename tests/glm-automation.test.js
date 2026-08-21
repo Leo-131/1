@@ -2275,6 +2275,28 @@ test('a social task that already fell back to an unreachable website cannot rese
   assert.ok(block.includes('blockedPlatform === itemPlatform'));
 });
 
+test('queue readiness rejects personal-domain email even when discovery labels it official', () => {
+  const readiness = dailyRunner.channelExecutionReadiness({
+    platform: 'email',
+    contactEmail: 'agency@gmail.com',
+    emailVerificationStatus: 'official_public_business_email',
+    externalVerificationStatus: 'official_supplier_email_verified',
+  });
+  assert.equal(readiness.ready, false);
+  assert.equal(readiness.reason, 'personal_email_domain_not_allowed');
+});
+
+test('South Africa refill includes current first-party distributor emails', () => {
+  for (const company of ['Formalito', 'Seagull Industries', 'Lite Optec', 'San Hima South Africa']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.equal(candidate.country, 'South Africa');
+    assert.match(candidate.contactEmail, /@/);
+    assert.match(candidate.evidenceUrl, /^https:\/\//);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
