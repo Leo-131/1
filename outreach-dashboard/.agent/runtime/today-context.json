@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T08:23:00.539Z",
+  "generatedAt": "2026-08-21T08:29:46.625Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-08-21",
   "policyVersion": "2026-07-30",
@@ -13,8 +13,8 @@
     "maximumRunLimit": 50,
     "runMaximumMinutes": 45
   },
-  "confirmedToday": 11,
-  "remainingToday": 89,
+  "confirmedToday": 12,
+  "remainingToday": 88,
   "campaignScope": {
     "enabled": true,
     "name": "us_uk_south_africa_large_key_accounts_and_brand_agencies",
@@ -42,9 +42,9 @@
     "executableReserveNeeded": 96
   },
   "latestExecution": {
-    "completedAt": "2026-08-21T08:22:52.397Z",
+    "completedAt": "2026-08-21T08:29:37.196Z",
     "phase": "browser_execution",
-    "realDevelopmentCount": 4,
+    "realDevelopmentCount": 1,
     "reportingVerdict": "development_performed"
   },
   "browser": {
@@ -54,7 +54,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "69a19be3126b35959537757125377e79bdd051f4",
-    "upstreamHead": "69a19be3126b35959537757125377e79bdd051f4"
+    "localHead": "06da1ff17c28a7253d24e8a68eacaef89cb85990",
+    "upstreamHead": "06da1ff17c28a7253d24e8a68eacaef89cb85990"
   }
 }

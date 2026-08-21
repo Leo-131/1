@@ -2314,7 +2314,7 @@ test('United Kingdom refill includes Unify Brand Partnerships first-party agency
 });
 
 test('current US and UK agency refill uses executable first-party channels', () => {
-  for (const company of ['ProAgencies', 'Remix Brands', 'Bullish Endurance', 'The Gravity Collective']) {
+  for (const company of ['ProAgencies', 'Remix Brands', 'Bullish Endurance', 'The Gravity Collective', 'Hapus Outdoor']) {
     const candidate = verifiedExternalCandidates.find(item => item.company === company);
     assert.ok(candidate, company);
     assert.equal(candidate.customerType, 'sales_agency');
@@ -2325,6 +2325,9 @@ test('current US and UK agency refill uses executable first-party channels', () 
   const formCandidate = verifiedExternalCandidates.find(item => item.company === 'Four Corners UK');
   assert.ok(formCandidate);
   assert.equal(dailyRunner.channelExecutionReadiness({ ...formCandidate, platform: 'website_form' }).ready, true);
+  const multiChannel = verifiedExternalCandidates.find(item => item.company === 'Hapus Outdoor');
+  assert.equal(multiChannel.officialSocialProfileVerified, true);
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...multiChannel, platform: 'instagram', url: multiChannel.instagramUrl }).ready, true);
 });
 
 test('represented-brand social pages cannot be executed as the agency identity', () => {
