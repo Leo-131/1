@@ -2669,6 +2669,13 @@ test('confirmed email immediately continues to a first-party verified official s
   assert.ok(!mainSource.includes("socialResult.evidence || 'social_result_missing'"));
 });
 
+test('same-day exact terminal task cannot starve later queue candidates', () => {
+  assert.ok(mainSource.includes('const sameDayExactTerminalAttempt = results.find'));
+  assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
+  assert.ok(mainSource.includes('exact_task_terminal_status:'));
+  assert.ok(mainSource.includes("status: 'same_day_retry_circuit_open'"));
+});
+
 test('daily execution watchdog recomputes confirmed count inside its own scope', () => {
   const watchdogStart = mainSource.indexOf('const watchdog = setTimeout(async () =>');
   const watchdogEnd = mainSource.indexOf('}, timeoutMs);', watchdogStart);

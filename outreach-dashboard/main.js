@@ -420,6 +420,22 @@ function blockingAutomationResultFor(item) {
       evidence: `same_day_retry_circuit_open;failed_attempts:${sameDayFailedAttempts.length}`,
     };
   }
+  // An exact task that already exhausted its website/social route today must
+  // never re-enter the queue merely because it is represented as a verified
+  // social row on the next discovery pass. Keep this task-scoped so a truly
+  // different verified channel for the same company can still be considered
+  // by the normal company and uncertainty gates.
+  const itemTaskIds = new Set([item.id, item.taskId, item.task_id].filter(Boolean).map(String));
+  const sameDayExactTerminalAttempt = results.find(result => result
+    && ['failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))
+    && isSameAutomationDay(result.timestamp)
+    && [result.id, result.taskId, result.task_id].filter(Boolean).some(id => itemTaskIds.has(String(id))));
+  if (sameDayExactTerminalAttempt) {
+    return {
+      status: 'same_day_retry_circuit_open',
+      evidence: `same_day_retry_circuit_open;exact_task_terminal_status:${sameDayExactTerminalAttempt.status}`,
+    };
+  }
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
     // A page/form failure is channel-specific. If discovery later supplies a
