@@ -2607,6 +2607,23 @@ test('latest net-new US agencies use exact president or founder emails from firs
   }
 });
 
+test('next US company-domain agency batch retains first-party principal evidence', () => {
+  for (const [company, email] of [
+    ['Kevin Brew Sales', 'kbrew@kevinbrewsales.com'],
+    ['S-Go International', 'info@s-goint.com'],
+    ['Cultivated Supply', 'jacob@cultivatedsupply.com'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+  }
+  const cultivated = verifiedExternalCandidates.find(item => item.company === 'Cultivated Supply');
+  assert.equal(cultivated.buyerIdentityVerified, true);
+  assert.match(cultivated.linkedinBuyerUrl, /linkedin\.com\/in\/jacob-jacques/);
+  assert.equal(cultivated.buyerIdentityEvidenceUrl, cultivated.evidenceUrl);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
