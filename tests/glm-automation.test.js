@@ -2377,15 +2377,15 @@ test('discovery ignores likes and follows while preserving confirmed DM protecti
   assert.ok(history.sentConfirmed.has('bever'));
 });
 
-test('North America receives only the configured safe-priority bonus', () => {
+test('US, UK, and South Africa receive only the configured safe-priority bonus', () => {
   assert.equal(dailyRunner.preferredCountryScore({ country: 'United States' }), 30);
-  assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'Canada' }), 30);
-  assert.equal(dailyRunner.preferredCountryScore({ country: 'Mexico' }), 30);
-  assert.equal(dailyRunner.preferredCountryScore({ country: 'United Kingdom' }), 0);
+  assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'United Kingdom' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'South Africa' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'Canada' }), 0);
 });
 
-test('North America campaign scope includes large key accounts and brand agencies but excludes other markets', () => {
-  assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'canada', 'mexico']);
+test('campaign scope includes US, UK, and South Africa large key accounts and brand agencies but excludes other markets', () => {
+  assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'united kingdom', 'south africa']);
   assert.deepEqual(dailyConfig.campaignScope.requiredCustomerTypes, ['sales_agency', 'key_account']);
   assert.ok(dailyRunnerSource.includes('function campaignScopeMatches'));
   assert.match(dailyRunnerSource, /\.filter\(campaignScopeMatches\)/);
