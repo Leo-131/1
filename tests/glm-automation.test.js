@@ -2321,6 +2321,24 @@ test('first-party official sales-agency personal email is executable only with e
   assert.equal(verifiedBusinessEmailTarget({ ...lead, evidenceUrl: 'https://directory.example/agency' }).ok, false);
   assert.equal(verifiedBusinessEmailTarget({ ...lead, customerType: 'key_account' }).ok, false);
   assert.equal(verifiedBusinessEmailTarget({ ...lead, externalVerificationStatus: 'search_result_only' }).ok, false);
+  assert.equal(verifiedBusinessEmailTarget({
+    ...lead,
+    evidenceUrl: 'https://www.google.com/search?q=mitchum',
+    sourceEvidenceUrl: 'https://mitchumsales.com/',
+  }).ok, true);
+});
+
+test('first-party verified LinkedIn company routes use the supported dedicated Chrome executor', () => {
+  const status = dailyRunner.potentialStatusFor({
+    company: 'Navigator Agency',
+    platform: 'linkedin',
+    action: 'develop',
+    reason: 'official_website_social_channel_verified',
+    url: 'https://www.linkedin.com/company/navigator-agency/',
+    officialSocialProfileVerified: true,
+  }, dailyRunner.knownTouchIndex([], [], Date.now()));
+  assert.equal(status.action, 'develop');
+  assert.notEqual(status.reason, 'linkedin_channel_requires_supported_executor');
 });
 
 test('South Africa refill includes current first-party distributor emails', () => {

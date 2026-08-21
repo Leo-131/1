@@ -1229,7 +1229,9 @@ function potentialStatusFor(item, history) {
     return { action: 'cooldown', reason: touch && touch.status === 'website_contact_ready' ? 'website_contact_ready_no_repeat' : `${COOLDOWN_DAYS}_day_no_repeat_touch`, touch };
   }
   if (String(item.platform || '').toLowerCase() === 'email') return { action: 'email_priority', reason: item.reason || 'official_website_contact_channel', touch };
-  if (String(item.platform || '').toLowerCase() === 'linkedin') return { action: 'verify_target', reason: 'linkedin_channel_requires_supported_executor', touch };
+  if (String(item.platform || '').toLowerCase() === 'linkedin') {
+    return { action: item.action || 'develop', reason: item.reason || 'official_linkedin_channel_ready', touch };
+  }
   if (!targetUrl(item, {})) return { action: 'verify_target', reason: 'missing_verified_profile_url', touch };
   return { action: item.action || 'develop', reason: item.reason || 'high_icp_potential_ready', touch };
 }
@@ -1703,6 +1705,7 @@ module.exports = {
   isHistoricalDevelopmentResult,
   legacyStatusIndicatesTouch,
   knownTouchIndex,
+  potentialStatusFor,
   writeFileWithRetry,
   preferSocialChannels,
   channelExecutionReadiness,

@@ -44,7 +44,15 @@ function firstPartyOfficialAgencyPersonalEmail(lead = {}, recipient = recipientE
   if (String(lead.emailVerificationStatus || '').toLowerCase() !== 'official_public_business_email') return false;
 
   const websiteHost = normalizedWebsiteHost(lead.website || lead.url || lead.contactUrl);
-  const evidenceHost = normalizedWebsiteHost(lead.evidenceUrl || lead.sourceEvidenceUrl);
+  // Normalized discovery rows may retain a Google query in evidenceUrl while
+  // carrying the authoritative live page in sourceEvidenceUrl/verification.
+  // Prefer the explicit first-party fields; never promote the search URL.
+  const evidenceHost = normalizedWebsiteHost(
+    lead.firstPartyChannelVerification && lead.firstPartyChannelVerification.evidenceUrl
+      || lead.sourceEvidenceUrl
+      || lead.emailEvidenceUrl
+      || lead.evidenceUrl,
+  );
   if (!websiteHost || evidenceHost !== websiteHost) return false;
 
   const evidence = [lead.publicEmailStatus, lead.emailEvidence, lead.contactNote]
