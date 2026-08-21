@@ -2921,3 +2921,29 @@ test('daily execution watchdog recomputes confirmed count inside its own scope',
   assert.match(watchdogSource, /const confirmedToday = sameDayConfirmedCompanyCount\(/);
   assert.match(watchdogSource, /executionQueueGoalStatus\(latest\.summary \|\| \{\}, confirmedToday\)/);
 });
+
+test('final daily replenishment keeps only first-party verified agency emails', () => {
+  const expected = [
+    ['Aim Outside', 'scott@aimoutside.com'],
+    ['Jim Ferry & Associates', 'jferry@jimferryassoc.com'],
+    ['Lammert Associates', 'al@lammertassociates.com'],
+    ['The Jones Company', 'sales@thejonescompany.com'],
+    ['ISGW', 'info@vikingarms.com'],
+    ['EverRoam Collective', 'info@everroamcollective.com'],
+    ['Global Sales Guys', 'info@globalsalesguys.com'],
+    ['NW Road Reps', 'info@nwroadreps.com'],
+    ['GEVIC', 'info@gevicllc.com'],
+    ['IRONRIDGE', 'info@ironridgegroup.co'],
+    ['Evergreen Outdoor Group', 'team@evergreenog.com'],
+    ['Fieldstone Marketing', 'info@fieldstonemarketing.com'],
+    ['Blackwatch Agency', 'info@blackwatchagency.com'],
+  ];
+  for (const [company, email] of expected) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(row.externalVerificationStatus, 'official_supplier_email_verified');
+    assert.match(row.evidenceUrl, /^https:\/\//);
+  }
+});
