@@ -25895,5 +25895,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-cutlery-distributing-group-website-contact",
+    "company": "Cutlery Distributing Group",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-21T10:08:57.756Z",
+    "target_url": "mailto:cdg@cdgsa.co.za",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "draft": "Dear Cutlery Distributing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "cdg@cdgsa.co.za",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
+  },
+  {
+    "task_id": "google-customer-jjb-trading-website-contact",
+    "company": "JJB Trading",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-21T10:09:25.308Z",
+    "target_url": "mailto:sales@jjbtrading.com",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "draft": "Dear JJB Trading Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "sales@jjbtrading.com",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

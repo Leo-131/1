@@ -2479,6 +2479,21 @@ test('current South Africa agency refill carries owned multi-channel evidence', 
   assert.equal(iconic.officialSocialProfileVerified, true);
 });
 
+test('current South Africa distributor refill uses first-party business emails', () => {
+  const cdg = verifiedExternalCandidates.find(item => item.company === 'Cutlery Distributing Group');
+  const jjb = verifiedExternalCandidates.find(item => item.company === 'JJB Trading');
+  assert.equal(cdg.contactEmail, 'cdg@cdgsa.co.za');
+  assert.equal(cdg.evidenceUrl, 'https://www.cdgsa.co.za/cdg-terms-conditions');
+  assert.equal(cdg.customerType, 'brand_agent');
+  assert.equal(jjb.contactEmail, 'sales@jjbtrading.com');
+  assert.equal(jjb.evidenceUrl, 'https://www.jjbtrading.com/');
+  assert.equal(jjb.customerType, 'sales_agency');
+  assert.equal(cdg.emailVerificationStatus, 'official_public_business_email');
+  assert.equal(jjb.emailVerificationStatus, 'official_public_business_email');
+  assert.ok(cdg.fitScore >= 70);
+  assert.ok(jjb.fitScore >= 70);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
