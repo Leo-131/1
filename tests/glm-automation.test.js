@@ -2466,6 +2466,19 @@ test('current South Africa wholesale refill uses first-party sales addresses', (
   }
 });
 
+test('current South Africa agency refill carries owned multi-channel evidence', () => {
+  const agentC = verifiedExternalCandidates.find(item => item.company === 'AGENT-C');
+  const iconic = verifiedExternalCandidates.find(item => item.company === 'Iconic Outdoor');
+  assert.equal(agentC.contactEmail, 'sales@agent-c.co.za');
+  assert.equal(agentC.facebookUrl, 'https://www.facebook.com/Agent.c.cycle.sport.outdoor');
+  assert.equal(agentC.socialProfileEvidenceUrl, agentC.evidenceUrl);
+  assert.equal(iconic.contactEmail, 'info@iconicoutdoor.co.za');
+  assert.equal(iconic.instagramUrl, 'https://www.instagram.com/iconicoutdoor/');
+  assert.equal(iconic.socialProfileEvidenceUrl, iconic.evidenceUrl);
+  assert.equal(agentC.officialSocialProfileVerified, true);
+  assert.equal(iconic.officialSocialProfileVerified, true);
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
