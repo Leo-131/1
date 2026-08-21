@@ -2357,6 +2357,22 @@ test('current net-new US and South Africa batch preserves verified multichannel 
   }
 });
 
+test('current net-new US and UK agency batch preserves first-party email and owned social evidence', () => {
+  for (const company of ['All Roads North', 'Snowpeak Agencies', 'BlackRocks Brands', 'Twist Distribution']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.match(candidate.contactEmail, /@/);
+    assert.match(candidate.evidenceUrl, /^https:\/\//);
+    assert.equal(candidate.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+  }
+  for (const company of ['Snowpeak Agencies', 'BlackRocks Brands', 'Twist Distribution']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.equal(candidate.officialSocialProfileVerified, true, company);
+    assert.equal(candidate.socialProfileEvidenceUrl, candidate.url, company);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
