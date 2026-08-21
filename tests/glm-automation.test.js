@@ -2336,6 +2336,25 @@ test('represented-brand social pages cannot be executed as the agency identity',
   assert.equal(candidate.socialProfileOwnerCompany, 'BeaverWax');
   assert.ok(discoverySource.includes('declaredSocialOwner'));
   assert.ok(discoverySource.includes('not agency ${item.company}'));
+  assert.ok(discoverySource.includes("socialProfileOwnerCompany: item.socialProfileOwnerCompany || ''"));
+  assert.ok(enrichmentSource.includes('function socialOwnershipMatches'));
+  assert.ok(enrichmentSource.includes('const cachedSocialProfiles = socialOwnershipMatches(baseRow)'));
+  assert.ok(enrichmentSource.includes('const ownedSocialLinks = socialOwnershipMatches(baseRow)'));
+});
+
+test('current net-new US and South Africa batch preserves verified multichannel routes', () => {
+  for (const company of ['Seymour Sales Group', 'Maxcons Camping and Outdoor', 'Camp Life South Africa', 'The Great Outdoors South Africa']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.match(candidate.contactEmail, /@/);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+  }
+  for (const company of ['Tactical Distributors SA', 'Peak Outfitters South Africa']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'website_form' }).ready, true);
+    assert.equal(candidate.officialSocialProfileVerified, true);
+  }
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {

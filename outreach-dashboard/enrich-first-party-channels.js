@@ -104,6 +104,11 @@ function sameSocialProfile(left, right) {
   return clean(left) && clean(left) === clean(right);
 }
 
+function socialOwnershipMatches(row = {}) {
+  const owner = normalizedCompany(row.socialProfileOwnerCompany || '');
+  return !owner || owner === normalizedCompany(row.company || row.name || '');
+}
+
 function normalizedEvidenceUrl(value) {
   try {
     const parsed = new URL(String(value || ''));
@@ -130,7 +135,7 @@ function cachedVerificationFromRows(rows = []) {
     externalVerificationStatus: rows.map(row => row.externalVerificationStatus).find(value => /^official_/.test(String(value || ''))) || '',
     publicEmail: rows.map(row => row.publicEmail || row.contactEmail).find(Boolean) || '',
     emailVerificationStatus: rows.map(row => row.emailVerificationStatus).find(Boolean) || '',
-    socialProfiles: rows.filter(row => row.officialSocialProfileVerified === true).map(row => row.platformUrl || row.url).filter(Boolean),
+    socialProfiles: rows.filter(row => row.officialSocialProfileVerified === true && socialOwnershipMatches(row)).map(row => row.platformUrl || row.url).filter(Boolean),
   };
 }
 
@@ -147,7 +152,8 @@ function promoteVerifiedEmailRow(row = {}) {
 
 function applyCachedVerification(rows = [], cached = {}) {
   const baseRow = rows[0] || {};
-  for (const socialUrl of cached.socialProfiles || []) {
+  const cachedSocialProfiles = socialOwnershipMatches(baseRow) ? (cached.socialProfiles || []) : [];
+  for (const socialUrl of cachedSocialProfiles) {
     if (rows.some(row => sameSocialProfile(row.platformUrl || row.url, socialUrl))) continue;
     const platform = /linkedin\.com/i.test(socialUrl) ? 'linkedin'
       : /facebook\.com|fb\.com/i.test(socialUrl) ? 'facebook'
@@ -183,7 +189,7 @@ function applyCachedVerification(rows = [], cached = {}) {
       row.emailEvidence = 'first_party_live_page_cache';
       promoteVerifiedEmailRow(row);
     }
-    if ((cached.socialProfiles || []).some(url => sameSocialProfile(url, row.platformUrl || row.url))) {
+    if (cachedSocialProfiles.some(url => sameSocialProfile(url, row.platformUrl || row.url))) {
       row.officialSocialProfileVerified = true;
       row.socialProfileEvidenceUrl = cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.evidenceUrl || '';
       row.socialProfileVerifiedAt = cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.verifiedAt || '';
@@ -211,7 +217,8 @@ async function enrichCompany(rows) {
   // annotations. Materialize missing channel siblings so one company can be
   // touched by email and its official social account in the same campaign.
   const baseRow = rows[0] || {};
-  for (const socialUrl of inspected.socialLinks || []) {
+  const ownedSocialLinks = socialOwnershipMatches(baseRow) ? (inspected.socialLinks || []) : [];
+  for (const socialUrl of ownedSocialLinks) {
     const platform = /linkedin\.com/i.test(socialUrl) ? 'linkedin'
       : /facebook\.com|fb\.com/i.test(socialUrl) ? 'facebook'
         : /instagram\.com/i.test(socialUrl) ? 'instagram'
@@ -253,7 +260,7 @@ async function enrichCompany(rows) {
         : 'official_contact_form_verified';
     }
     const rowSocialUrl = row.platformUrl || row.url;
-    const socialEvidence = inspected.socialLinks.find(link => sameSocialProfile(link, rowSocialUrl));
+    const socialEvidence = ownedSocialLinks.find(link => sameSocialProfile(link, rowSocialUrl));
     if (socialEvidence) {
       row.officialSocialProfileVerified = true;
       row.socialProfileEvidenceUrl = best.finalUrl;

@@ -1589,6 +1589,7 @@ function baseLead(item, id, evidenceUrl) {
     channel: String(item.platform || '').toLowerCase(),
     identityStatus: 'verified',
     officialSocialProfileVerified: item.officialSocialProfileVerified === true,
+    socialProfileOwnerCompany: item.socialProfileOwnerCompany || '',
     socialProfileEvidenceUrl: item.socialProfileEvidenceUrl || '',
     socialProfileVerifiedAt: item.socialProfileVerifiedAt || '',
     profiledAt: enrichment.decisionMaker && enrichment.dataSources ? new Date().toISOString() : '',
