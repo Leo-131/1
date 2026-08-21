@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T09:30:53.990Z",
+      "timestamp": "2026-08-21T09:36:14.148Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "3B81F99665595DA5CB0AD151374668B2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
+        "tabId": "C745013FF2AA278DE07093BB1738D916",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -50,8 +50,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "3B81F99665595DA5CB0AD151374668B2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
+          "tabId": "C745013FF2AA278DE07093BB1738D916",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -83,14 +83,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T09:30:53.990Z",
+      "timestamp": "2026-08-21T09:36:14.148Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "3B81F99665595DA5CB0AD151374668B2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
+        "tabId": "C745013FF2AA278DE07093BB1738D916",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -104,8 +104,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "3B81F99665595DA5CB0AD151374668B2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
+          "tabId": "C745013FF2AA278DE07093BB1738D916",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -171,6 +171,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-cooltraxx-international-website-contact",
+      "company": "Cooltraxx International",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-outdoors-ramsey-website-contact",
       "company": "Outdoors Ramsey",
       "action": "email_priority",
@@ -194,13 +201,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-bbq-fans-website-contact",
       "company": "BBQ Fans",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -290,13 +290,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-esprinet-group-website-contact",
-      "company": "Esprinet Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-edgeline-collective-website-contact",
       "company": "Edgeline Collective",
       "action": "develop",
@@ -367,53 +360,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-bergfreunde-website-contact",
-      "company": "Bergfreunde",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-au-vieux-campeur-website-contact",
-      "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-above-and-beyond-website-contact",
       "company": "Above and Beyond",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-campz-website-contact",
-      "company": "Campz",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-intersport-norway-website-contact",
-      "company": "Intersport Norway",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-esprinet-group-linkedin",
-      "company": "Esprinet Group",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-front-point-sales-linkedin",
@@ -451,20 +402,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-intersport-norway-facebook",
-      "company": "Intersport Norway",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-zia-works-distribution-instagram",
       "company": "Zia Works Distribution",
       "action": "develop",
@@ -479,22 +416,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -570,6 +493,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
       "action": "email_priority",
@@ -582,6 +512,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-adventure-brands-south-africa-website-contact",
+      "company": "Adventure Brands South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-canada-outdoors-website-contact",
@@ -645,6 +582,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-morrison-sports-marketing-website-contact",
@@ -738,6 +682,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-d-m-a-distributing-website-contact",
       "company": "D.M.A. Distributing",
       "action": "verify_target",
@@ -768,6 +719,55 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-premium-living-products-website-contact",
       "company": "Premium Living Products",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-mutinous-sales-and-marketing-website-contact",
+      "company": "Mutinous Sales and Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-campz-website-contact",
+      "company": "Campz",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-intersport-norway-website-contact",
+      "company": "Intersport Norway",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -1147,7 +1147,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 30,
+    "readyToDevelop": 25,
     "dueNow": 93,
     "visibleTodayQueue": 54,
     "potentialPool": 54,
@@ -1169,8 +1169,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verifiedSocialReserveNeeded": 15,
     "enrichmentBacklogCount": 19,
     "googleDiscovered": 93,
-    "facebookDiscovered": 7,
-    "websiteContactDiscovered": 26,
+    "facebookDiscovered": 5,
+    "websiteContactDiscovered": 28,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1183,7 +1183,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 43
+      "count": 45
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1193,17 +1193,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 30
+      "count": 33
     },
     {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
       "count": 12
-    },
-    {
-      "reason": "social_profile_not_first_party_verified",
-      "status": "skipped",
-      "count": 8
     },
     {
       "reason": "personal_email_domain_not_allowed",
@@ -1216,26 +1211,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 6
     },
     {
+      "reason": "social_profile_not_first_party_verified",
+      "status": "skipped",
+      "count": 4
+    },
+    {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
       "count": 2
-    },
-    {
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "status": "skipped",
-      "count": 1
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 43,
+    "official_website_contact_channel": 45,
     "official_public_business_email_verified": 36,
-    "homepage_only_contact_path_requires_verification": 30,
+    "homepage_only_contact_path_requires_verification": 33,
     "website_contact_capability_not_verified": 12,
-    "social_profile_not_first_party_verified": 8,
     "personal_email_domain_not_allowed": 7,
     "official_website_social_channel_verified": 6,
-    "linkedin_channel_requires_supported_executor": 2,
-    "concrete_google_discovered_major_customer_facebook": 1
+    "social_profile_not_first_party_verified": 4,
+    "linkedin_channel_requires_supported_executor": 2
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1255,8 +1249,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (43); official_public_business_email_verified (36); homepage_only_contact_path_requires_verification (30).",
-  "recoveryHint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (45); official_public_business_email_verified (36); homepage_only_contact_path_requires_verification (33).",
+  "recoveryHint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
@@ -1266,26 +1260,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "target": 100,
       "potentialPool": 54,
       "refillNeeded": 46
-    },
-    {
-      "reason": "google_social_profile_not_executable",
-      "action": "Complete Google social channel verification",
-      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
-      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
     }
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 25,\n    \"dueNow\": 93,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 93,\n    \"facebookDiscovered\": 5,\n    \"websiteContactDiscovered\": 26,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 25,\n    \"dueNow\": 93,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 93,\n    \"facebookDiscovered\": 5,\n    \"websiteContactDiscovered\": 28,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T09:31:06.379Z",
+      "updatedAt": "2026-08-21T09:36:24.385Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T09:31:01.468Z",
-      "executionGeneratedAt": "2026-08-21T09:25:17.913Z",
-      "githubSyncUpdatedAt": "2026-08-21T09:25:56.941Z",
+      "artifactGeneratedAt": "2026-08-21T09:36:19.673Z",
+      "executionGeneratedAt": "2026-08-21T09:31:07.402Z",
+      "githubSyncUpdatedAt": "2026-08-21T09:31:57.387Z",
       "counts": {
         "dailyQueue": 93,
         "googleDiscovered": 93,
@@ -1353,7 +1341,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 5,
+  "ledgerReconciliationCount": 1,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T09:31:07.402Z"
+  "completedAt": "2026-08-21T09:36:26.967Z"
 };

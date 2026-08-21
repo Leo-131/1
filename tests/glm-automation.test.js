@@ -2416,6 +2416,21 @@ test('current net-new US outdoor agency batch has official email and owned socia
   }
 });
 
+test('current South Africa and UK distributor refill has first-party trade email evidence', () => {
+  for (const [company, email, evidenceUrl] of [
+    ['Adventure Brands South Africa', 'sales@adventurebrands.co.za', 'https://adventurebrands.co.za/'],
+    ['Cooltraxx International', 'tradedesk@cooltraxx.com', 'https://www.cooltraxx.com/about-us/'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.evidenceUrl, evidenceUrl);
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.ok(['brand_agent', 'sales_agency'].includes(row.customerType));
+    assert.ok(row.fitScore >= 70);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
