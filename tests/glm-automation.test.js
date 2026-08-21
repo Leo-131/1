@@ -2659,6 +2659,31 @@ test('August 21 net-new US and UK agency refill keeps first-party executable cha
   assert.equal(maxtrack.officialSocialProfileVerified, true);
 });
 
+test('August 21 second refill adds untouched US UK and South Africa agency routes from first-party evidence', () => {
+  const candidates = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'verified-external-candidates.json'), 'utf8'));
+  const expected = [
+    ['emia Distribution', 'sales@emia.co.za'],
+    ['Melbro Brands', 'servicedesk@melbro.co.za'],
+    ['Aussie Gear South Africa', 'info@aussiegear.co.za'],
+    ['Summum Brands', 'info@summum-brands.com'],
+    ['Whylo Distributors', 'andrew@whylo.co.za'],
+    ['Springtime-Santa', 'info@springtime-santa.com'],
+    ['ASG Sales', 'sales@asgsales.com'],
+  ];
+  for (const [company, email] of expected) {
+    const candidate = candidates.find(item => item.company === company);
+    assert.ok(candidate, `${company} must remain in the durable first-party refill`);
+    assert.equal(candidate.publicEmail.toLowerCase(), email.toLowerCase());
+    assert.equal(candidate.externalVerificationStatus, 'official_supplier_email_verified');
+    assert.match(candidate.evidenceUrl, /^https:\/\//);
+  }
+  for (const company of ['Gargano Atkins Sales & Marketing', 'Alpine Waves', 'Novo Brands', 'BVC Holdings']) {
+    const candidate = candidates.find(item => item.company === company);
+    assert.equal(candidate.externalVerificationStatus, 'official_supplier_form_verified');
+    assert.match(candidate.contactUrl, /^https:\/\//);
+  }
+});
+
 test('next sporting-goods agency batch uses first-party founder addresses', () => {
   for (const [company, email] of [
     ['DRVFORCE', 'john@drvforce.com'],
