@@ -1,5 +1,5 @@
 {
-  "ok": true,
+  "ok": false,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -7,11 +7,11 @@
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 2,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 1,
-  "reportingVerdict": "development_performed",
+  "chromeOpenedCount": 1,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -21,39 +21,6 @@
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-unify-brand-partnerships-website-contact",
-      "company": "Unify Brand Partnerships",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://unify-bp.com/contact/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:08:03.537Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "letschat@unify-bp.com",
-        "targetUrl": "mailto:letschat@unify-bp.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Unify Brand Partnerships Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"letschat@unify-bp.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
       "id": "google-customer-sideways-distribution-facebook",
       "company": "Sideways Distribution",
       "action": "develop",
@@ -62,14 +29,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T08:08:29.905Z",
+      "timestamp": "2026-08-21T08:13:44.881Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
+        "tabId": "EA308DF7FEA3BA2BA643B46DA6AB6931",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA308DF7FEA3BA2BA643B46DA6AB6931",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -83,8 +50,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
+          "tabId": "EA308DF7FEA3BA2BA643B46DA6AB6931",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA308DF7FEA3BA2BA643B46DA6AB6931",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -108,39 +75,6 @@
   ],
   "results": [
     {
-      "id": "google-customer-unify-brand-partnerships-website-contact",
-      "company": "Unify Brand Partnerships",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://unify-bp.com/contact/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T08:08:03.537Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "letschat@unify-bp.com",
-        "targetUrl": "mailto:letschat@unify-bp.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Unify Brand Partnerships Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"letschat@unify-bp.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
       "id": "google-customer-sideways-distribution-facebook",
       "company": "Sideways Distribution",
       "action": "develop",
@@ -149,14 +83,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T08:08:29.905Z",
+      "timestamp": "2026-08-21T08:13:44.881Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
+        "tabId": "EA308DF7FEA3BA2BA643B46DA6AB6931",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA308DF7FEA3BA2BA643B46DA6AB6931",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -170,8 +104,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "F0798F99B1516B9BADC3F610CFC8766E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0798F99B1516B9BADC3F610CFC8766E",
+          "tabId": "EA308DF7FEA3BA2BA643B46DA6AB6931",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA308DF7FEA3BA2BA643B46DA6AB6931",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -860,6 +794,20 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-mutinous-sales-and-marketing-website-contact",
+      "company": "Mutinous Sales and Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-atmosphere-website-contact",
+      "company": "Atmosphere",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-front-point-sales-linkedin",
       "company": "Front Point Sales",
       "action": "verify_target",
@@ -1221,29 +1169,29 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 32,
-    "dueNow": 97,
-    "visibleTodayQueue": 53,
-    "potentialPool": 53,
+    "dueNow": 98,
+    "visibleTodayQueue": 52,
+    "potentialPool": 52,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 47,
-    "executableCompanies": 34,
+    "refillNeeded": 48,
+    "executableCompanies": 33,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 96,
+    "executableReserveNeeded": 97,
     "executableByChannel": {
       "linkedin": 1,
       "facebook": 3,
       "instagram": 1,
-      "email": 10,
+      "email": 9,
       "website_form": 19
     },
     "verifiedSocialCompanies": 5,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 15,
     "enrichmentBacklogCount": 19,
-    "googleDiscovered": 97,
+    "googleDiscovered": 98,
     "facebookDiscovered": 8,
-    "websiteContactDiscovered": 26,
+    "websiteContactDiscovered": 25,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1259,14 +1207,14 @@
       "count": 41
     },
     {
+      "reason": "homepage_only_contact_path_requires_verification",
+      "status": "skipped",
+      "count": 35
+    },
+    {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
       "count": 34
-    },
-    {
-      "reason": "homepage_only_contact_path_requires_verification",
-      "status": "skipped",
-      "count": 33
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1302,33 +1250,27 @@
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
       "count": 1
-    },
-    {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 1
     }
   ],
   "blockerCounts": {
     "official_website_contact_channel": 41,
+    "homepage_only_contact_path_requires_verification": 35,
     "official_public_business_email_verified": 34,
-    "homepage_only_contact_path_requires_verification": 33,
     "website_contact_capability_not_verified": 12,
     "social_profile_not_first_party_verified": 8,
     "official_website_social_channel_verified": 7,
     "personal_email_domain_not_allowed": 7,
     "linkedin_channel_requires_supported_executor": 2,
     "concrete_google_discovered_major_customer_facebook": 1,
-    "concrete_google_discovered_major_customer_instagram": 1,
-    "sent_folder_message_confirmed": 1
+    "concrete_google_discovered_major_customer_instagram": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 53,
-    "queueCount": 97,
-    "googleDiscovered": 97,
-    "refillNeeded": 47,
-    "confirmedToday": 6,
+    "potentialPool": 52,
+    "queueCount": 98,
+    "googleDiscovered": 98,
+    "refillNeeded": 48,
+    "confirmedToday": 7,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1340,17 +1282,17 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (41); official_public_business_email_verified (34); homepage_only_contact_path_requires_verification (33).",
-  "recoveryHint": "Refill the high-ICP pool with 47 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (41); homepage_only_contact_path_requires_verification (35); official_public_business_email_verified (34).",
+  "recoveryHint": "Refill the high-ICP pool with 48 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 47 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 47 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 48 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 48 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 53,
-      "refillNeeded": 47
+      "potentialPool": 52,
+      "refillNeeded": 48
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1361,20 +1303,20 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 52,\n    \"potentialPool\": 52,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 48,\n    \"executableCompanies\": 33,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 97,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 9,\n      \"website_form\": 19\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 100,\n    \"facebookDiscovered\": 8,\n    \"websiteContactDiscovered\": 25,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 98,\n    \"visibleTodayQueue\": 52,\n    \"potentialPool\": 52,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 48,\n    \"executableCompanies\": 33,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 97,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 9,\n      \"website_form\": 19\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 98,\n    \"facebookDiscovered\": 8,\n    \"websiteContactDiscovered\": 25,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T08:08:38.148Z",
+      "updatedAt": "2026-08-21T08:13:49.884Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T08:08:31.777Z",
-      "executionGeneratedAt": "2026-08-21T08:04:35.841Z",
-      "githubSyncUpdatedAt": "2026-08-21T08:05:17.299Z",
+      "artifactGeneratedAt": "2026-08-21T08:13:46.621Z",
+      "executionGeneratedAt": "2026-08-21T08:08:40.694Z",
+      "githubSyncUpdatedAt": "2026-08-21T08:09:24.597Z",
       "counts": {
-        "dailyQueue": 100,
-        "googleDiscovered": 100,
-        "websiteContact": 84,
+        "dailyQueue": 98,
+        "googleDiscovered": 98,
+        "websiteContact": 82,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1438,7 +1380,7 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 5,
+  "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T08:08:40.694Z"
+  "completedAt": "2026-08-21T08:13:51.281Z"
 }
