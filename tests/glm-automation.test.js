@@ -2638,6 +2638,9 @@ test('August 21 net-new US and UK agency refill keeps first-party executable cha
     ['Alexander & Townsend', 'United States', 'contacts@alexander-townsend.com'],
     ['Mountain States Sales', 'United States', 'Don@MountainStatesSales.com'],
     ['MWS Associates', 'United States', 'contact@mws-associates.com'],
+    ['Phil Hunt Agencies', 'United Kingdom', 'phil@philhuntagencies.co.uk'],
+    ['The Outdoor Agency Ireland', 'United Kingdom', 'stephen@theoutdooragencyireland.com'],
+    ['The Foundry', 'United Kingdom', 'info@thisisthefoundry.com'],
   ]) {
     const row = verifiedExternalCandidates.find(item => item.company === company);
     assert.ok(row, company);

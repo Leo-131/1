@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T12:23:48.516Z",
+  "generatedAt": "2026-08-21T12:29:58.124Z",
   "companies": [
     {
-      "companyId": "company_97b44397255953f1",
-      "company": "TrailCross",
+      "companyId": "company_33ec3b824fd1fc86",
+      "company": "Nickel N Diamond Sales",
       "keys": [
-        "trailcross",
-        "trailcrosscom",
-        "gmailcom",
         "nickelndiamondsales",
         "beaverwaxcom",
+        "gmailcom",
         "ziaworksdistribution",
         "nwziaworkscom",
+        "trailcross",
+        "trailcrosscom",
         "sidewaysdistribution",
         "parallel33salesgroup",
         "parallel33salescom",
@@ -38,10 +38,10 @@
         "tahoesportshubemail20260810"
       ],
       "domains": [
-        "trailcross.com",
-        "gmail.com",
         "beaverwax.com",
+        "gmail.com",
         "nwziaworks.com",
+        "trailcross.com",
         "parallel33sales.com",
         "pfpandassociates.com",
         "rockcreek.com",
@@ -52,23 +52,13 @@
         "campstudio.co.th"
       ],
       "channels": [
-        "linkedin",
         "facebook",
         "instagram",
         "email",
+        "linkedin",
         "website_form"
       ],
       "evidence": [
-        {
-          "channel": "linkedin",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-21T11:41:47.187Z"
-        },
         {
           "channel": "instagram",
           "score": 100,
@@ -78,6 +68,16 @@
           ],
           "evidenceUrl": "https://www.nwziaworks.com/",
           "checkedAt": "2026-08-21T12:02:07.793Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.trailcross.com/",
+          "checkedAt": "2026-08-21T11:41:47.187Z"
         },
         {
           "channel": "email",
@@ -100,7 +100,7 @@
           "checkedAt": ""
         },
         {
-          "channel": "linkedin",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -177,7 +177,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-21T11:41:47.187Z"
+          "checkedAt": "2026-08-21T12:29:41.518Z"
         },
         {
           "channel": "email",
@@ -267,7 +267,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-21T11:41:47.187Z"
+          "checkedAt": "2026-08-21T12:29:41.518Z"
         },
         {
           "channel": "facebook",
@@ -1565,7 +1565,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://minnisbrands.com/contact/",
-          "checkedAt": "2026-08-21T11:06:38.020Z"
+          "checkedAt": "2026-08-21T12:23:32.357Z"
         },
         {
           "channel": "email",
@@ -1575,7 +1575,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://minnisbrands.com/contact/",
-          "checkedAt": "2026-08-21T11:06:38.020Z"
+          "checkedAt": "2026-08-21T12:23:32.357Z"
         },
         {
           "channel": "linkedin",
@@ -1605,7 +1605,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://minnisbrands.com/contact/",
-          "checkedAt": "2026-08-21T11:06:38.020Z"
+          "checkedAt": "2026-08-21T12:23:32.357Z"
         },
         {
           "channel": "website_form",
@@ -1626,6 +1626,221 @@
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing"
         }
       ]
+    },
+    {
+      "companyId": "company_41c934af8a4c8f70",
+      "company": "The Outdoor Agency Ireland",
+      "keys": [
+        "theoutdooragencyireland",
+        "theoutdooragencyirelandcom"
+      ],
+      "domains": [
+        "theoutdooragencyireland.com"
+      ],
+      "channels": [
+        "email",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theoutdooragencyireland.com/",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theoutdooragencyireland.com/",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theoutdooragencyireland.com/",
+          "checkedAt": "2026-08-21T12:29:26.423Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theoutdooragencyireland.com/",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theoutdooragencyireland.com/",
+          "checkedAt": "2026-08-21T12:29:26.423Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theoutdooragencyireland.com/",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_bc6b20f0b8bd2246",
+      "company": "The Foundry",
+      "keys": [
+        "thefoundry",
+        "thisisthefoundrycom"
+      ],
+      "domains": [
+        "thisisthefoundry.com"
+      ],
+      "channels": [
+        "email",
+        "instagram",
+        "linkedin"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+          "checkedAt": "2026-08-21T12:29:36.483Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        },
+        {
+          "channel": "linkedin",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+          "checkedAt": "2026-08-21T12:29:36.483Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_1d4e3069d716a238",
+      "company": "Phil Hunt Agencies",
+      "keys": [
+        "philhuntagencies",
+        "philhuntagenciescouk"
+      ],
+      "domains": [
+        "philhuntagencies.co.uk"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.philhuntagencies.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.philhuntagencies.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.philhuntagencies.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.philhuntagencies.co.uk/",
+          "checkedAt": "2026-08-21T12:28:00.000Z"
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_cc55bd75f298b4f8",
@@ -2445,7 +2660,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-21T12:23:12.082Z"
+          "checkedAt": "2026-08-21T12:29:23.450Z"
         },
         {
           "channel": "instagram",
@@ -2455,7 +2670,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-21T12:23:12.082Z"
+          "checkedAt": "2026-08-21T12:29:23.450Z"
         },
         {
           "channel": "website_form",
@@ -2944,7 +3159,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://level8outdoor.com/about-us",
-          "checkedAt": "2026-08-21T11:41:44.957Z"
+          "checkedAt": "2026-08-21T12:29:42.381Z"
         },
         {
           "channel": "website_form",
@@ -3165,7 +3380,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-21T11:10:58.390Z"
+          "checkedAt": "2026-08-21T12:29:51.117Z"
         },
         {
           "channel": "facebook",
@@ -3175,7 +3390,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-21T11:10:58.390Z"
+          "checkedAt": "2026-08-21T12:29:51.117Z"
         }
       ],
       "history": [
@@ -4293,7 +4508,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-21T12:23:27.087Z"
+          "checkedAt": "2026-08-21T12:29:40.040Z"
         },
         {
           "channel": "facebook",
@@ -4303,7 +4518,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-21T12:23:27.087Z"
+          "checkedAt": "2026-08-21T12:29:40.040Z"
         },
         {
           "channel": "linkedin",
@@ -4313,7 +4528,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-21T12:23:27.087Z"
+          "checkedAt": "2026-08-21T12:29:40.040Z"
         },
         {
           "channel": "website_form",
@@ -5992,8 +6207,8 @@
         "intersport.no"
       ],
       "channels": [
-        "website_form",
-        "facebook"
+        "facebook",
+        "website_form"
       ],
       "evidence": [
         {
@@ -6015,26 +6230,6 @@
           ],
           "evidenceUrl": "https://www.intersport.no/",
           "checkedAt": "2026-08-12T13:08:17.199Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
         }
       ],
       "history": [
@@ -9397,7 +9592,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -9810,7 +10005,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.proagencies.com/our-people",
-          "checkedAt": "2026-08-21T11:32:05.517Z"
+          "checkedAt": "2026-08-21T12:23:27.695Z"
         },
         {
           "channel": "research",
@@ -9868,7 +10063,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.hapusoutdoor.com/",
-          "checkedAt": "2026-08-21T11:32:06.340Z"
+          "checkedAt": "2026-08-21T12:23:28.502Z"
         },
         {
           "channel": "linkedin",
@@ -10560,7 +10755,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.tworiverssales.com/",
-          "checkedAt": "2026-08-21T11:06:37.180Z"
+          "checkedAt": "2026-08-21T12:23:31.670Z"
         },
         {
           "channel": "research",
@@ -10693,7 +10888,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
-          "checkedAt": "2026-08-21T11:06:38.767Z"
+          "checkedAt": "2026-08-21T12:23:33.568Z"
         },
         {
           "channel": "website_form",
@@ -10713,7 +10908,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
-          "checkedAt": "2026-08-21T11:06:38.767Z"
+          "checkedAt": "2026-08-21T12:23:33.568Z"
         },
         {
           "channel": "linkedin",
@@ -10723,7 +10918,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
-          "checkedAt": "2026-08-21T11:06:38.767Z"
+          "checkedAt": "2026-08-21T12:23:33.568Z"
         }
       ],
       "history": [
@@ -10805,7 +11000,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.thewalkoffcollective.com/",
-          "checkedAt": "2026-08-21T11:06:38.936Z"
+          "checkedAt": "2026-08-21T12:23:33.753Z"
         },
         {
           "channel": "research",
@@ -10867,7 +11062,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://snowpeakagencies.co.uk/",
-          "checkedAt": "2026-08-21T11:06:39.982Z"
+          "checkedAt": "2026-08-21T12:23:38.036Z"
         },
         {
           "channel": "research",
@@ -10973,7 +11168,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://vigosgroup.com/contact",
+          "evidenceUrl": "https://vigosgroup.com/",
           "checkedAt": ""
         },
         {
@@ -11972,7 +12167,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.thegravitycollective.co.uk/",
-          "checkedAt": "2026-08-21T11:41:37.921Z"
+          "checkedAt": "2026-08-21T12:23:45.028Z"
         },
         {
           "channel": "research",
@@ -12028,7 +12223,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-21T11:41:37.906Z"
+          "checkedAt": "2026-08-21T12:23:45.002Z"
         },
         {
           "channel": "linkedin",
@@ -12822,7 +13017,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-21T12:23:21.307Z"
+          "checkedAt": "2026-08-21T12:29:33.220Z"
         },
         {
           "channel": "instagram",
@@ -12832,7 +13027,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-21T12:23:21.307Z"
+          "checkedAt": "2026-08-21T12:29:33.220Z"
         },
         {
           "channel": "website_form",
@@ -12974,7 +13169,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-21T12:23:15.724Z"
+          "checkedAt": "2026-08-21T12:29:27.235Z"
         },
         {
           "channel": "facebook",
@@ -12984,7 +13179,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-21T12:23:15.724Z"
+          "checkedAt": "2026-08-21T12:29:27.235Z"
         },
         {
           "channel": "email",
@@ -13301,7 +13496,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.mytrailhouse.com/",
-          "checkedAt": "2026-08-21T11:41:44.810Z"
+          "checkedAt": "2026-08-21T12:29:39.822Z"
         },
         {
           "channel": "email",
@@ -13496,7 +13691,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.blackrocks.net/",
-          "checkedAt": "2026-08-21T11:41:48.015Z"
+          "checkedAt": "2026-08-21T12:29:43.029Z"
         },
         {
           "channel": "email",
@@ -13629,7 +13824,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://maxtrack.com/",
-          "checkedAt": "2026-08-21T11:53:07.815Z"
+          "checkedAt": "2026-08-21T12:29:45.458Z"
         },
         {
           "channel": "email",
@@ -13690,7 +13885,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.activagency.com/about",
-          "checkedAt": "2026-08-21T11:41:50.441Z"
+          "checkedAt": "2026-08-21T12:29:46.630Z"
         },
         {
           "channel": "website_form",
@@ -13927,7 +14122,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-21T11:41:51.358Z"
+          "checkedAt": "2026-08-21T12:29:46.811Z"
         },
         {
           "channel": "instagram",
@@ -13937,7 +14132,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-21T11:41:51.358Z"
+          "checkedAt": "2026-08-21T12:29:46.811Z"
         },
         {
           "channel": "linkedin",
@@ -13947,7 +14142,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-21T11:41:51.358Z"
+          "checkedAt": "2026-08-21T12:29:46.811Z"
         }
       ],
       "history": [
@@ -14135,7 +14330,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-21T11:10:56.773Z"
+          "checkedAt": "2026-08-21T12:29:46.733Z"
         },
         {
           "channel": "instagram",
@@ -14145,7 +14340,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-21T11:10:56.773Z"
+          "checkedAt": "2026-08-21T12:29:46.733Z"
         },
         {
           "channel": "linkedin",
@@ -14155,7 +14350,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-21T11:10:56.773Z"
+          "checkedAt": "2026-08-21T12:29:46.733Z"
         }
       ],
       "history": [
@@ -14279,7 +14474,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.repfirst.com/about-us",
-          "checkedAt": "2026-08-21T11:10:57.378Z"
+          "checkedAt": "2026-08-21T12:29:47.594Z"
         }
       ],
       "history": [
@@ -14314,7 +14509,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://p-psg.com/",
-          "checkedAt": "2026-08-21T11:10:58.659Z"
+          "checkedAt": "2026-08-21T12:29:48.606Z"
         },
         {
           "channel": "website_form",
@@ -14457,7 +14652,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.northbranchtraders.com/about-us",
-          "checkedAt": "2026-08-21T11:10:59.464Z"
+          "checkedAt": "2026-08-21T12:29:51.701Z"
         },
         {
           "channel": "facebook",
@@ -14467,7 +14662,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.northbranchtraders.com/about-us",
-          "checkedAt": "2026-08-21T11:10:59.464Z"
+          "checkedAt": "2026-08-21T12:29:51.701Z"
         },
         {
           "channel": "instagram",
@@ -14477,7 +14672,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.northbranchtraders.com/about-us",
-          "checkedAt": "2026-08-21T11:10:59.464Z"
+          "checkedAt": "2026-08-21T12:29:51.701Z"
         }
       ],
       "history": [
@@ -14557,7 +14752,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://vertoutdoors.com/team",
-          "checkedAt": "2026-08-21T11:11:00.221Z"
+          "checkedAt": "2026-08-21T12:29:53.382Z"
         },
         {
           "channel": "facebook",
@@ -14567,7 +14762,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://vertoutdoors.com/team",
-          "checkedAt": "2026-08-21T11:11:00.221Z"
+          "checkedAt": "2026-08-21T12:29:53.382Z"
         }
       ],
       "history": [
@@ -14695,7 +14890,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://liteoptec.co.za/",
+          "evidenceUrl": "https://liteoptec.co.za/contact-us/",
           "checkedAt": ""
         },
         {
@@ -15306,7 +15501,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-21T12:23:14.927Z"
+          "checkedAt": "2026-08-21T12:29:34.708Z"
         },
         {
           "channel": "website_form",
@@ -22416,7 +22611,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-21T12:23:22.213Z"
+          "checkedAt": "2026-08-21T12:29:33.906Z"
         },
         {
           "channel": "facebook",
@@ -22426,7 +22621,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-21T12:23:22.213Z"
+          "checkedAt": "2026-08-21T12:29:33.906Z"
         }
       ],
       "history": [
@@ -26623,7 +26818,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-21T12:23:22.690Z"
+          "checkedAt": "2026-08-21T12:29:35.866Z"
         },
         {
           "channel": "facebook",
@@ -26633,7 +26828,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-21T12:23:22.690Z"
+          "checkedAt": "2026-08-21T12:29:35.866Z"
         },
         {
           "channel": "website_form",
@@ -27018,7 +27213,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-21T12:23:24.217Z"
+          "checkedAt": "2026-08-21T12:29:35.731Z"
         },
         {
           "channel": "instagram",
@@ -27287,7 +27482,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-21T12:23:24.763Z"
+          "checkedAt": "2026-08-21T12:29:37.117Z"
         },
         {
           "channel": "facebook",
@@ -27297,7 +27492,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-21T12:23:24.763Z"
+          "checkedAt": "2026-08-21T12:29:37.117Z"
         },
         {
           "channel": "email",
@@ -27380,7 +27575,7 @@
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.mountain-equipment.com/",
-          "checkedAt": "2026-08-21T12:23:24.892Z"
+          "checkedAt": "2026-08-21T12:29:37.814Z"
         }
       ],
       "history": [
@@ -29071,8 +29266,7 @@
       ],
       "channels": [
         "instagram",
-        "facebook",
-        "website_form"
+        "facebook"
       ],
       "evidence": [
         {
@@ -29087,16 +29281,6 @@
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -29151,8 +29335,7 @@
       ],
       "channels": [
         "instagram",
-        "facebook",
-        "website_form"
+        "facebook"
       ],
       "evidence": [
         {
@@ -29167,16 +29350,6 @@
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -29243,8 +29416,7 @@
       ],
       "channels": [
         "instagram",
-        "facebook",
-        "website_form"
+        "facebook"
       ],
       "evidence": [
         {
@@ -29259,16 +29431,6 @@
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -29831,7 +29993,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://packratoc.com/",
-          "checkedAt": "2026-08-21T12:23:27.616Z"
+          "checkedAt": "2026-08-21T12:29:39.714Z"
         },
         {
           "channel": "facebook",
@@ -29942,16 +30104,6 @@
       "evidence": [
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -36166,8 +36318,8 @@
   ],
   "suppressions": [
     {
-      "companyId": "company_97b44397255953f1",
-      "company": "TrailCross",
+      "companyId": "company_33ec3b824fd1fc86",
+      "company": "Nickel N Diamond Sales",
       "permanent": true,
       "crossChannel": true,
       "reason": "previous_customer_development_no_repeat",
@@ -40961,6 +41113,42 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_41c934af8a4c8f70",
+        "company": "The Outdoor Agency Ireland",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://theoutdooragencyireland.com/",
+        "alternatives": [
+          "facebook",
+          "instagram"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_bc6b20f0b8bd2246",
+        "company": "The Foundry",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+        "alternatives": [
+          "linkedin",
+          "instagram"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_1d4e3069d716a238",
+        "company": "Phil Hunt Agencies",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.philhuntagencies.co.uk/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_cc55bd75f298b4f8",
         "company": "13west",
         "action": "first_touch",
@@ -41173,36 +41361,6 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_a5b63ae83c161ccc",
-        "company": "Continental Sports Inc",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://csisports.ca/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_2b779fa6b17ab462",
-        "company": "Rabbit Mountain Mexico",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://rabbitmex.com/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_4804c472b8956cc6",
-        "company": "Canada Outdoors",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.canadaoutdoors.com/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_88cb2f6ed35353a1",
         "company": "Alpin Sales",
         "action": "first_touch",
@@ -41331,13 +41489,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-21T12:23:48.516Z",
+    "generatedAt": "2026-08-21T12:29:58.124Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 598,
+      "companies": 601,
       "permanentlySuppressed": 477,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 883
+      "verifiedEvidenceRoutes": 899
     },
     "decisions": [
       {
@@ -41359,6 +41517,42 @@
         "channel": "facebook",
         "evidenceScore": 95,
         "evidenceUrl": "https://nohrth.com/about-us/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_41c934af8a4c8f70",
+        "company": "The Outdoor Agency Ireland",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://theoutdooragencyireland.com/",
+        "alternatives": [
+          "facebook",
+          "instagram"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_bc6b20f0b8bd2246",
+        "company": "The Foundry",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.thisisthefoundry.com/sector/outdoors",
+        "alternatives": [
+          "linkedin",
+          "instagram"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_1d4e3069d716a238",
+        "company": "Phil Hunt Agencies",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.philhuntagencies.co.uk/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -41423,41 +41617,6 @@
           "facebook",
           "instagram"
         ],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_f3b010a2419d9012",
-        "company": "Black & White Outdoors",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://blackandwhiteoutdoors.com/",
-        "alternatives": [
-          "facebook"
-        ],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_0fdfc3f4662c955e",
-        "company": "Four Corners UK",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.fourcornersuk.com/",
-        "alternatives": [
-          "facebook",
-          "instagram"
-        ],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_bf0ca6bde4f53237",
-        "company": "Waypoint Outdoor",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.waypointoutdoor.com/contact/",
-        "alternatives": [],
         "reason": "highest_priority_verified_channel"
       }
     ],
