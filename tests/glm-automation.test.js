@@ -2302,6 +2302,27 @@ test('queue readiness rejects personal-domain email even when discovery labels i
   assert.equal(readiness.reason, 'personal_email_domain_not_allowed');
 });
 
+test('first-party official sales-agency personal email is executable only with exact strong evidence', () => {
+  const { verifiedBusinessEmailTarget } = require('../outreach-dashboard/alibaba-email-delivery');
+  const lead = {
+    company: 'Mitchum Sales & Consulting',
+    customerType: 'sales_agency',
+    fitScore: 94,
+    website: 'https://mitchumsales.com/',
+    evidenceUrl: 'https://mitchumsales.com/',
+    contactEmail: 'daniel.mitchum@gmail.com',
+    publicEmailStatus: "Official first-party agency site publishes the principal's address and invites brand inquiries.",
+    emailEvidence: 'official_principal_contact',
+    emailVerificationStatus: 'official_public_business_email',
+    externalVerificationStatus: 'official_supplier_email_verified',
+  };
+  assert.equal(verifiedBusinessEmailTarget(lead).reason, 'verified_first_party_agency_personal_domain_email');
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...lead, platform: 'email' }).ready, true);
+  assert.equal(verifiedBusinessEmailTarget({ ...lead, evidenceUrl: 'https://directory.example/agency' }).ok, false);
+  assert.equal(verifiedBusinessEmailTarget({ ...lead, customerType: 'key_account' }).ok, false);
+  assert.equal(verifiedBusinessEmailTarget({ ...lead, externalVerificationStatus: 'search_result_only' }).ok, false);
+});
+
 test('South Africa refill includes current first-party distributor emails', () => {
   for (const company of ['Formalito', 'Seagull Industries', 'Lite Optec', 'San Hima South Africa', 'Agrinet', 'Bossenberg']) {
     const candidate = verifiedExternalCandidates.find(item => item.company === company);

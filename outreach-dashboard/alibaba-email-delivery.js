@@ -24,12 +24,44 @@ function recipientEmail(lead = {}) {
   return normalizedEmail(lead.publicEmail || lead.contactEmail || lead.email || lead.recipientEmail);
 }
 
+function normalizedWebsiteHost(value) {
+  try {
+    const url = new URL(clean(value));
+    if (url.protocol !== 'https:') return '';
+    return url.hostname.toLowerCase().replace(/^www\./, '');
+  } catch {
+    return '';
+  }
+}
+
+function firstPartyOfficialAgencyPersonalEmail(lead = {}, recipient = recipientEmail(lead)) {
+  if (!recipient) return false;
+  const domain = recipient.split('@')[1];
+  if (!PERSONAL_EMAIL_DOMAINS.has(domain)) return false;
+  if (String(lead.customerType || '').toLowerCase() !== 'sales_agency') return false;
+  if (Number(lead.fitScore || 0) < 70) return false;
+  if (String(lead.externalVerificationStatus || '').toLowerCase() !== 'official_supplier_email_verified') return false;
+  if (String(lead.emailVerificationStatus || '').toLowerCase() !== 'official_public_business_email') return false;
+
+  const websiteHost = normalizedWebsiteHost(lead.website || lead.url || lead.contactUrl);
+  const evidenceHost = normalizedWebsiteHost(lead.evidenceUrl || lead.sourceEvidenceUrl);
+  if (!websiteHost || evidenceHost !== websiteHost) return false;
+
+  const evidence = [lead.publicEmailStatus, lead.emailEvidence, lead.contactNote]
+    .filter(Boolean).join(' ').toLowerCase().replace(/[_-]+/g, ' ');
+  return /official first party|official (?:principal|agency|business) (?:contact|email|site|homepage)/.test(evidence)
+    && /principal|agency|business|brand inquiry|representation/.test(evidence);
+}
+
 function verifiedBusinessEmailTarget(lead = {}) {
   const recipient = recipientEmail(lead);
   if (!recipient) return { ok: false, reason: 'verified_public_email_missing', recipient: '' };
   if (recipient === 'leo@flextailgear.com') return { ok: false, reason: 'sender_address_is_not_customer', recipient };
   const domain = recipient.split('@')[1];
-  if (PERSONAL_EMAIL_DOMAINS.has(domain)) return { ok: false, reason: 'personal_email_domain_not_allowed', recipient, domain };
+  const officialAgencyPersonalEmail = firstPartyOfficialAgencyPersonalEmail(lead, recipient);
+  if (PERSONAL_EMAIL_DOMAINS.has(domain) && !officialAgencyPersonalEmail) {
+    return { ok: false, reason: 'personal_email_domain_not_allowed', recipient, domain };
+  }
 
   const evidence = [
     lead.externalVerificationStatus,
@@ -46,7 +78,13 @@ function verifiedBusinessEmailTarget(lead = {}) {
   const normalizedEvidence = evidence.replace(/[_-]+/g, ' ');
   const verified = /official website mailto|verified|deliverable|official public|official business|public business email|official supplier email|official brand rep directory email|official procurement email|official vendor email/.test(normalizedEvidence);
   if (!verified) return { ok: false, reason: 'public_business_email_requires_verification', recipient, domain };
-  return { ok: true, reason: 'verified_public_business_email', recipient, domain, evidence: clean(evidence).slice(0, 240) };
+  return {
+    ok: true,
+    reason: officialAgencyPersonalEmail ? 'verified_first_party_agency_personal_domain_email' : 'verified_public_business_email',
+    recipient,
+    domain,
+    evidence: clean(evidence).slice(0, 240),
+  };
 }
 
 async function verifyBusinessEmailDomain(lead = {}, dependencies = {}) {
@@ -350,6 +388,7 @@ async function sendAndConfirmAlibabaEmail(input = {}, dependencies = {}) {
 module.exports = {
   PERSONAL_EMAIL_DOMAINS,
   recipientEmail,
+  firstPartyOfficialAgencyPersonalEmail,
   verifiedBusinessEmailTarget,
   validateFirstTouchEmail,
   sentMailboxPath,
