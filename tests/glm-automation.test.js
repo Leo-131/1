@@ -2684,6 +2684,22 @@ test('August 21 second refill adds untouched US UK and South Africa agency route
   }
 });
 
+test('August 21 final refill persists net-new company-domain and official-form routes', () => {
+  const candidates = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'verified-external-candidates.json'), 'utf8'));
+  const emailCompanies = ['Nautis South Africa', 'Camping Trade South Africa', 'SA Camp', 'Buxson Outdoor Distribution', 'Meerkat Outdoor', 'Outwear Ltd', 'Dennett Outdoor', 'Bollin Group', 'Sidas UK'];
+  for (const company of emailCompanies) {
+    const candidate = candidates.find(item => item.company === company);
+    assert.equal(candidate.externalVerificationStatus, 'official_supplier_email_verified');
+    assert.match(candidate.publicEmail, /@/);
+    assert.match(candidate.evidenceUrl, /^https:\/\//);
+  }
+  for (const company of ['Excell Marketing', 'Ludwikoski & Associates', 'Suggs-Nicholas-Shea', 'Haynes Florance & Associates', 'Ken Jefferies & Associates']) {
+    const candidate = candidates.find(item => item.company === company);
+    assert.equal(candidate.externalVerificationStatus, 'official_supplier_form_verified');
+    assert.match(candidate.contactUrl, /^https:\/\//);
+  }
+});
+
 test('next sporting-goods agency batch uses first-party founder addresses', () => {
   for (const [company, email] of [
     ['DRVFORCE', 'john@drvforce.com'],
