@@ -1,0 +1,71 @@
+name: FLEXTAIL Cloud Outreach Control
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Cloud task action
+        required: true
+        type: choice
+        options:
+          - refresh
+          - claim
+          - release
+      device:
+        description: Non-secret computer alias (required for claim/release)
+        required: false
+        type: string
+  schedule:
+    - cron: '30 0 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: flextail-cloud-outreach-control
+  cancel-in-progress: false
+
+jobs:
+  update-cloud-task:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: vercel-main-sync
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate request
+        env:
+          TASK_ACTION: ${{ github.event_name == 'schedule' && 'refresh' || inputs.action }}
+          DEVICE_ID: ${{ inputs.device }}
+        run: |
+          if [[ "$TASK_ACTION" != "refresh" && -z "$DEVICE_ID" ]]; then
+            echo "A non-secret device alias is required for $TASK_ACTION" >&2
+            exit 1
+          fi
+
+      - name: Update shared task state
+        env:
+          TASK_ACTION: ${{ github.event_name == 'schedule' && 'refresh' || inputs.action }}
+          DEVICE_ID: ${{ inputs.device }}
+        run: node cloud-task-controller.js "$TASK_ACTION" "--device=$DEVICE_ID"
+
+      - name: Publish cloud task state
+        env:
+          TASK_ACTION: ${{ github.event_name == 'schedule' && 'refresh' || inputs.action }}
+          DEVICE_ID: ${{ inputs.device }}
+        run: |
+          git add -- cloud-task-state.json public/cloud-task-state.json
+          if git diff --cached --quiet; then
+            echo "Cloud task state is already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "cloud task: $TASK_ACTION ${DEVICE_ID:-scheduler}"
+          git push origin HEAD:vercel-main-sync
