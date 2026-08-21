@@ -2494,6 +2494,29 @@ test('current South Africa distributor refill uses first-party business emails',
   assert.ok(jjb.fitScore >= 70);
 });
 
+test('next South Africa key-account refill preserves official multichannel ownership', () => {
+  const awesome = verifiedExternalCandidates.find(item => item.company === 'Awesome Tools');
+  const advanced = verifiedExternalCandidates.find(item => item.company === 'Advanced 4x4');
+  const cape = verifiedExternalCandidates.find(item => item.company === 'Cape Importers');
+  const ikamper = verifiedExternalCandidates.find(item => item.company === 'iKamper South Africa');
+  assert.equal(awesome.contactEmail, 'sales@awesometools.co.za');
+  assert.equal(awesome.customerType, 'brand_agent');
+  assert.equal(advanced.contactEmail, 'sales@advanced4x4.co.za');
+  assert.equal(advanced.instagramUrl, 'https://www.instagram.com/advanced_4x4/');
+  assert.equal(cape.contactEmail, 'online@capeimporters.co.za');
+  assert.equal(cape.linkedinUrl, 'https://www.linkedin.com/company/cape-importers/');
+  assert.equal(ikamper.contactEmail, 'info@ikamper.co.za');
+  assert.equal(ikamper.facebookUrl, 'https://www.facebook.com/iKamperSA');
+  for (const row of [awesome, advanced, cape, ikamper]) {
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.ok(row.fitScore >= 70);
+  }
+  for (const row of [advanced, cape, ikamper]) {
+    assert.equal(row.officialSocialProfileVerified, true);
+    assert.equal(row.socialProfileEvidenceUrl, row.evidenceUrl);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
