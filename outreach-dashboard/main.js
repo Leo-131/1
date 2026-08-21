@@ -1940,7 +1940,9 @@ async function prepareInstagramDraft(opened, draft, lead = {}) {
     port: opened && opened.port,
     tabId: opened && opened.tabId,
     targetUrl: opened && opened.targetUrl,
-    expectedCompany: lead && (lead.company || lead.name),
+    expectedCompany: lead && (lead.namedBuyerVerified && lead.buyerName
+      ? lead.buyerName
+      : (lead.company || lead.name)),
     officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified),
     draft: safeDraft,
     autoSend: true,
@@ -2076,7 +2078,9 @@ async function prepareSocialDraft(opened, draft, lead = {}) {
     port: opened && opened.port,
     tabId: opened && opened.tabId,
     targetUrl: opened && opened.targetUrl,
-    expectedCompany: lead && (lead.company || lead.name),
+    expectedCompany: lead && (lead.namedBuyerVerified && lead.buyerName
+      ? lead.buyerName
+      : (lead.company || lead.name)),
     officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified),
     draft: safeDraft,
     autoSend: true,
@@ -2386,6 +2390,27 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
     ? lead.alternateChannels
     : {};
   const officialWebsiteLinks = Array.isArray(inspection && inspection.socialLinks) ? inspection.socialLinks : [];
+  const namedBuyerUrl = String(lead.linkedinBuyerUrl || '').trim();
+  const namedBuyerName = String(lead.buyerName || '').trim();
+  const namedBuyerEvidenceUrl = String(lead.buyerIdentityEvidenceUrl || '').trim();
+  const sameRegistrableHost = (left, right) => {
+    try {
+      const host = value => {
+        const parts = new URL(value).hostname.toLowerCase().replace(/^www\./, '').split('.').filter(Boolean);
+        const suffix = parts.slice(-2).join('.');
+        return parts.slice(/^(?:co\.uk|com\.au|co\.nz|co\.za)$/.test(suffix) ? -3 : -2).join('.');
+      };
+      return host(left) === host(right);
+    } catch {
+      return false;
+    }
+  };
+  const firstPartyWebsite = lead.website || lead.evidenceUrl || lead.contactUrl || '';
+  const namedBuyerVerified = lead.buyerIdentityVerified === true
+    && Boolean(namedBuyerName)
+    && /^https:\/\/(?:[a-z]{2,3}\.)?linkedin\.com\/in\//i.test(namedBuyerUrl)
+    && /^https:\/\//i.test(namedBuyerEvidenceUrl)
+    && sameRegistrableHost(namedBuyerEvidenceUrl, firstPartyWebsite);
   const links = [
     ...officialWebsiteLinks,
     lead.linkedinUrl,
@@ -2416,7 +2441,9 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
     })
     .filter(item => item.platform && item.rank > 0)
     .sort((a, b) => b.rank - a.rank);
-  const best = ranked[0];
+  const best = ranked[0] || (namedBuyerVerified
+    ? { url: namedBuyerUrl, platform: 'linkedin', rank: 3, namedBuyer: true }
+    : null);
   if (!best) return null;
   const verifiedByOfficialWebsite = officialWebsiteLinks.some(url => String(url || '').toLowerCase() === String(best.url || '').toLowerCase());
   return {
@@ -2429,9 +2456,13 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
     verifiedTargetUrl: best.url,
     url: best.url,
     action: 'develop',
-    reason: 'official_website_social_fallback',
-    officialSocialProfileVerified: verifiedByOfficialWebsite || lead.officialSocialProfileVerified === true,
-    socialProfileEvidenceUrl: verifiedByOfficialWebsite
+    reason: best.namedBuyer ? 'first_party_verified_named_buyer_linkedin' : 'official_website_social_fallback',
+    namedBuyerVerified: Boolean(best.namedBuyer),
+    buyerName: best.namedBuyer ? namedBuyerName : lead.buyerName,
+    officialSocialProfileVerified: Boolean(best.namedBuyer) || verifiedByOfficialWebsite || lead.officialSocialProfileVerified === true,
+    socialProfileEvidenceUrl: best.namedBuyer
+      ? namedBuyerEvidenceUrl
+      : verifiedByOfficialWebsite
       ? (inspection.url || lead.contactUrl || lead.website || lead.url || '')
       : (lead.socialProfileEvidenceUrl || ''),
   };

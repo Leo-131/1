@@ -2805,10 +2805,32 @@ test('same-day exact terminal task cannot starve later queue candidates', () => 
   assert.ok(mainSource.includes("status: 'same_day_retry_circuit_open'"));
 });
 
-test('company social fallback rejects personal LinkedIn profiles', () => {
+test('company social fallback rejects unverified personal LinkedIn profiles but supports a first-party verified named buyer', () => {
   assert.ok(mainSource.includes(".filter(url => !/linkedin\\.com\\/in\\//i.test(String(url || '')))"));
   assert.ok(mainSource.includes('Company outreach'));
   assert.ok(mainSource.includes('LinkedIn organization URLs only'));
+  assert.ok(mainSource.includes('const namedBuyerVerified = lead.buyerIdentityVerified === true'));
+  assert.ok(mainSource.includes("reason: best.namedBuyer ? 'first_party_verified_named_buyer_linkedin'"));
+  assert.ok(mainSource.includes('lead.namedBuyerVerified && lead.buyerName'));
+});
+
+test('Navigator-ready named buyer route keeps exact first-party identity and company-domain email evidence', () => {
+  const row = verifiedExternalCandidates.find(item => item.company === 'S Booth Agencies');
+  assert.ok(row);
+  assert.equal(row.contactEmail, 'steve@sboothsales.com');
+  assert.equal(row.buyerName, 'Stephen Booth');
+  assert.equal(row.buyerIdentityVerified, true);
+  assert.match(row.linkedinBuyerUrl, /^https:\/\/www\.linkedin\.com\/in\/steve-booth-/);
+  assert.equal(row.buyerIdentityEvidenceUrl, row.evidenceUrl);
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+});
+
+test('Outdoor Brands UK uses only its first-party verified contact form', () => {
+  const row = verifiedExternalCandidates.find(item => item.company === 'Outdoor Brands UK');
+  assert.ok(row);
+  assert.equal(row.contactEmail, '');
+  assert.equal(row.contactCapabilityVerified, true);
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'website_form' }).ready, true);
 });
 
 test('daily execution watchdog recomputes confirmed count inside its own scope', () => {
