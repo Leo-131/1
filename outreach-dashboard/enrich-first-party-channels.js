@@ -73,6 +73,14 @@ function absoluteLinks(html, pageUrl) {
   return [...new Set(links)];
 }
 
+// Some WordPress/demo themes leave the theme vendor's social accounts in the
+// footer. Those links are first-party page content, but they are not owned by
+// the customer and must never become outreach targets.
+function isTemplateVendorSocialUrl(value) {
+  const normalized = String(value || '').toLowerCase();
+  return /(?:facebook\.com\/(?:themefusion|avada)|instagram\.com\/(?:themefusion|avada)|linkedin\.com\/(?:company|in)\/(?:themefusion|avada))(?:[-/?#]|$)/i.test(normalized);
+}
+
 function inspectOfficialPage(html, pageUrl) {
   const text = String(html || '').replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ');
   const links = absoluteLinks(html, pageUrl);
@@ -80,7 +88,7 @@ function inspectOfficialPage(html, pageUrl) {
   const businessEmails = links.filter(link => /^mailto:/i.test(link)).map(link => decodeURIComponent(link.replace(/^mailto:/i, '').split('?')[0])).filter(email => /@/.test(email) && !/no-?reply/i.test(email));
   const supplierIntent = /become\s+(?:a\s+)?supplier|supplier\s+(?:application|enquir|inquiry|partnership)|vendor\s+(?:application|registration|onboarding)|brands?\s+(?:apply|partner|contact)|wholesale\s+(?:application|enquir|inquiry)/i.test(text);
   const contactIntent = /contact\s+us|get\s+in\s+touch|send\s+us\s+(?:a\s+)?message|enquir(?:y|ies)|business\s+(?:inquiry|enquiry)/i.test(text);
-  const socialLinks = links.filter(link => /https?:\/\/(?:www\.)?(?:linkedin\.com\/(?:company|in)\/|facebook\.com\/|instagram\.com\/)/i.test(link));
+  const socialLinks = links.filter(link => /https?:\/\/(?:www\.)?(?:linkedin\.com\/(?:company|in)\/|facebook\.com\/|instagram\.com\/)/i.test(link) && !isTemplateVendorSocialUrl(link));
   const signals = [hasForm && 'form_control', businessEmails.length && 'public_business_email', supplierIntent && 'supplier_invitation', contactIntent && 'contact_invitation'].filter(Boolean);
   return { hasForm, businessEmails, supplierIntent, contactIntent, socialLinks, signals };
 }
@@ -135,7 +143,7 @@ function cachedVerificationFromRows(rows = []) {
     externalVerificationStatus: rows.map(row => row.externalVerificationStatus).find(value => /^official_/.test(String(value || ''))) || '',
     publicEmail: rows.map(row => row.publicEmail || row.contactEmail).find(Boolean) || '',
     emailVerificationStatus: rows.map(row => row.emailVerificationStatus).find(Boolean) || '',
-    socialProfiles: rows.filter(row => row.officialSocialProfileVerified === true && socialOwnershipMatches(row)).map(row => row.platformUrl || row.url).filter(Boolean),
+    socialProfiles: rows.filter(row => row.officialSocialProfileVerified === true && socialOwnershipMatches(row)).map(row => row.platformUrl || row.url).filter(url => url && !isTemplateVendorSocialUrl(url)),
   };
 }
 
@@ -152,7 +160,7 @@ function promoteVerifiedEmailRow(row = {}) {
 
 function applyCachedVerification(rows = [], cached = {}) {
   const baseRow = rows[0] || {};
-  const cachedSocialProfiles = socialOwnershipMatches(baseRow) ? (cached.socialProfiles || []) : [];
+  const cachedSocialProfiles = socialOwnershipMatches(baseRow) ? (cached.socialProfiles || []).filter(url => !isTemplateVendorSocialUrl(url)) : [];
   for (const socialUrl of cachedSocialProfiles) {
     if (rows.some(row => sameSocialProfile(row.platformUrl || row.url, socialUrl))) continue;
     const platform = /linkedin\.com/i.test(socialUrl) ? 'linkedin'
@@ -279,6 +287,7 @@ async function enrichCompany(rows) {
 
 async function main() {
   const artifact = JSON.parse(fs.readFileSync(JSON_PATH, 'utf8'));
+  artifact.leads = (artifact.leads || []).filter(row => !isTemplateVendorSocialUrl(row.platformUrl || row.targetUrl || row.url));
   const config = fs.existsSync(CONFIG_PATH) ? JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8')) : {};
   const groups = new Map();
   for (const row of artifact.leads || []) {
@@ -333,4 +342,4 @@ async function main() {
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
 
-module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, cachedEvidenceMatchesRows, campaignScopeMatches, retryTransientFileOperation, atomicWriteFile };
+module.exports = { inspectOfficialPage, isTemplateVendorSocialUrl, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, cachedEvidenceMatchesRows, campaignScopeMatches, retryTransientFileOperation, atomicWriteFile };

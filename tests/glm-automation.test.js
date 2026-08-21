@@ -85,6 +85,17 @@ test('live first-party enrichment promotes a discovered company-domain email to 
   assert.ok(enrichmentSource.includes("row.reason = 'official_public_business_email_verified'"));
 });
 
+test('first-party enrichment rejects website-template vendor social accounts', () => {
+  const { inspectOfficialPage, isTemplateVendorSocialUrl } = require('../outreach-dashboard/enrich-first-party-channels');
+  const inspected = inspectOfficialPage(`
+    <a href="https://www.facebook.com/ThemeFusion-101565403356430/">Facebook</a>
+    <a href="https://www.instagram.com/themefusion/">Instagram</a>
+    <a href="https://www.instagram.com/pioneeroutdoorgroup/">Instagram</a>
+  `, 'https://pioneerog.com/');
+  assert.equal(isTemplateVendorSocialUrl('https://www.instagram.com/themefusion/'), true);
+  assert.deepEqual(inspected.socialLinks, ['https://www.instagram.com/pioneeroutdoorgroup/']);
+});
+
 test('email queue keeps distinct agencies listed on the same first-party directory page', () => {
   const rows = dailyRunner.dedupeQueueItems([
     { company: 'Agency One', platform: 'email', contactEmail: 'one@example.com', contactUrl: 'https://brand.example/reps' },
@@ -2387,6 +2398,22 @@ test('current net-new UK and South Africa multichannel batch remains execution r
   assert.equal(alpineWaves.contactCapabilityVerified, true);
   assert.equal(dailyRunner.channelExecutionReadiness({ ...alpineWaves, platform: 'website_form' }).ready, true);
   assert.equal(dailyRunner.channelExecutionReadiness({ ...alpineWaves, platform: 'instagram', url: alpineWaves.instagramUrl }).ready, true);
+});
+
+test('current net-new US outdoor agency batch has official email and owned social evidence', () => {
+  for (const company of ['METHOD Outdoor Collective', 'Pioneer Outdoor Group', 'Two Rivers Sales', 'Trail House']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.equal(candidate.country, 'United States');
+    assert.match(candidate.contactEmail, /@/);
+    assert.equal(candidate.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+  }
+  for (const company of ['METHOD Outdoor Collective', 'Two Rivers Sales', 'Trail House']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.equal(candidate.officialSocialProfileVerified, true, company);
+    assert.equal(candidate.socialProfileEvidenceUrl, candidate.url, company);
+  }
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {
