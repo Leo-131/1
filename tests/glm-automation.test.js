@@ -2313,6 +2313,28 @@ test('United Kingdom refill includes Unify Brand Partnerships first-party agency
   assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
 });
 
+test('current US and UK agency refill uses executable first-party channels', () => {
+  for (const company of ['ProAgencies', 'Remix Brands', 'Bullish Endurance', 'The Gravity Collective']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, company);
+    assert.equal(candidate.customerType, 'sales_agency');
+    assert.match(candidate.contactEmail, /@/);
+    assert.match(candidate.evidenceUrl, /^https:\/\//);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
+  }
+  const formCandidate = verifiedExternalCandidates.find(item => item.company === 'Four Corners UK');
+  assert.ok(formCandidate);
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...formCandidate, platform: 'website_form' }).ready, true);
+});
+
+test('represented-brand social pages cannot be executed as the agency identity', () => {
+  const candidate = verifiedExternalCandidates.find(item => item.company === 'Sideways Distribution');
+  assert.ok(candidate);
+  assert.equal(candidate.socialProfileOwnerCompany, 'BeaverWax');
+  assert.ok(discoverySource.includes('declaredSocialOwner'));
+  assert.ok(discoverySource.includes('not agency ${item.company}'));
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));

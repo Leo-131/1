@@ -1611,6 +1611,23 @@ function channelLeads(item) {
   const baseId = `google-customer-${slug(item.company)}`;
   const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner' || isActiveCustomer(item.company));
   const invalidChannels = {};
+  const declaredSocialOwner = String(item.socialProfileOwnerCompany || '').trim();
+  if (declaredSocialOwner && activeCustomerKey(declaredSocialOwner) !== activeCustomerKey(item.company)) {
+    if (item.instagramUrl) {
+      invalidChannels.instagram = {
+        url: item.instagramUrl,
+        status: 'identity_mismatch',
+        evidence: `Official page belongs to represented brand ${declaredSocialOwner}, not agency ${item.company}; do not use it as the agency account.`,
+      };
+    }
+    if (item.facebookUrl) {
+      invalidChannels.facebook = {
+        url: item.facebookUrl,
+        status: 'identity_mismatch',
+        evidence: `Official page belongs to represented brand ${declaredSocialOwner}, not agency ${item.company}; do not use it as the agency account.`,
+      };
+    }
+  }
   if (item.instagramUrl) {
     let instagramHandle = '';
     try {
