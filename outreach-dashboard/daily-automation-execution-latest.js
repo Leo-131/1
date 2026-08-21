@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": true,
+  "ok": false,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -7,11 +7,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 5,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 4,
-  "reportingVerdict": "development_performed",
+  "chromeOpenedCount": 1,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -21,144 +21,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-method-outdoor-collective-website-contact",
-      "company": "METHOD Outdoor Collective",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.methodoutdoor.co/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:21:00.083Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:linkedin;identity_mismatch_expected_METHOD Outdoor Collective_title_Sasha Dietschi-Cooper | LinkedIn",
-        "recipientEmail": "sasha@methodoutdoor.co",
-        "targetUrl": "mailto:sasha@methodoutdoor.co",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear METHOD Outdoor Collective Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sasha@methodoutdoor.co\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "linkedin",
-        "secondaryChannelTarget": "https://www.linkedin.com/in/sashadc"
-      }
-    },
-    {
-      "id": "google-customer-pioneer-outdoor-group-website-contact",
-      "company": "Pioneer Outdoor Group",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://pioneerog.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:21:28.972Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "sales@pioneerog.com",
-        "targetUrl": "mailto:sales@pioneerog.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Pioneer Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@pioneerog.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-two-rivers-sales-website-contact",
-      "company": "Two Rivers Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.tworiverssales.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:23:19.134Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:linkedin;instagram_message_button_clicked_composer_not_found",
-        "recipientEmail": "tj@tworiverssales.com",
-        "targetUrl": "mailto:tj@tworiverssales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Two Rivers Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tj@tworiverssales.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "linkedin",
-        "secondaryChannelTarget": "https://www.linkedin.com/in/tj-parnell-ba221a76"
-      }
-    },
-    {
-      "id": "google-customer-trail-house-website-contact",
-      "company": "Trail House",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.mytrailhouse.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:24:46.323Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:instagram;instagram_message_button_clicked_composer_not_found",
-        "recipientEmail": "sean@mytrailhouse.com",
-        "targetUrl": "mailto:sean@mytrailhouse.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Trail House Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sean@mytrailhouse.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "instagram",
-        "secondaryChannelTarget": "https://www.instagram.com/the.trailhouse"
-      }
-    },
-    {
       "id": "google-customer-nickel-n-diamond-sales-facebook",
       "company": "Nickel N Diamond Sales",
       "action": "develop",
@@ -167,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T09:25:12.021Z",
+      "timestamp": "2026-08-21T09:30:53.990Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "951C4877511A8036F83E39FC7A713754",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/951C4877511A8036F83E39FC7A713754",
+        "tabId": "3B81F99665595DA5CB0AD151374668B2",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -188,8 +50,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "951C4877511A8036F83E39FC7A713754",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/951C4877511A8036F83E39FC7A713754",
+          "tabId": "3B81F99665595DA5CB0AD151374668B2",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -213,144 +75,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "results": [
     {
-      "id": "google-customer-method-outdoor-collective-website-contact",
-      "company": "METHOD Outdoor Collective",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.methodoutdoor.co/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:21:00.083Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:linkedin;identity_mismatch_expected_METHOD Outdoor Collective_title_Sasha Dietschi-Cooper | LinkedIn",
-        "recipientEmail": "sasha@methodoutdoor.co",
-        "targetUrl": "mailto:sasha@methodoutdoor.co",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear METHOD Outdoor Collective Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sasha@methodoutdoor.co\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "linkedin",
-        "secondaryChannelTarget": "https://www.linkedin.com/in/sashadc"
-      }
-    },
-    {
-      "id": "google-customer-pioneer-outdoor-group-website-contact",
-      "company": "Pioneer Outdoor Group",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://pioneerog.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:21:28.972Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "sales@pioneerog.com",
-        "targetUrl": "mailto:sales@pioneerog.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Pioneer Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@pioneerog.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-two-rivers-sales-website-contact",
-      "company": "Two Rivers Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.tworiverssales.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:23:19.134Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:linkedin;instagram_message_button_clicked_composer_not_found",
-        "recipientEmail": "tj@tworiverssales.com",
-        "targetUrl": "mailto:tj@tworiverssales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Two Rivers Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tj@tworiverssales.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "linkedin",
-        "secondaryChannelTarget": "https://www.linkedin.com/in/tj-parnell-ba221a76"
-      }
-    },
-    {
-      "id": "google-customer-trail-house-website-contact",
-      "company": "Trail House",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.mytrailhouse.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T09:24:46.323Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:instagram;instagram_message_button_clicked_composer_not_found",
-        "recipientEmail": "sean@mytrailhouse.com",
-        "targetUrl": "mailto:sean@mytrailhouse.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Trail House Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sean@mytrailhouse.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "instagram",
-        "secondaryChannelTarget": "https://www.instagram.com/the.trailhouse"
-      }
-    },
-    {
       "id": "google-customer-nickel-n-diamond-sales-facebook",
       "company": "Nickel N Diamond Sales",
       "action": "develop",
@@ -359,14 +83,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T09:25:12.021Z",
+      "timestamp": "2026-08-21T09:30:53.990Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "951C4877511A8036F83E39FC7A713754",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/951C4877511A8036F83E39FC7A713754",
+        "tabId": "3B81F99665595DA5CB0AD151374668B2",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -380,8 +104,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "951C4877511A8036F83E39FC7A713754",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/951C4877511A8036F83E39FC7A713754",
+          "tabId": "3B81F99665595DA5CB0AD151374668B2",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B81F99665595DA5CB0AD151374668B2",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1021,6 +745,34 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-gmd-wholesale-website-contact",
+      "company": "GMD Wholesale",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-gear-canada-website-contact",
+      "company": "Outdoor Gear Canada",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-premium-living-products-website-contact",
+      "company": "Premium Living Products",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-front-point-sales-linkedin",
       "company": "Front Point Sales",
       "action": "verify_target",
@@ -1397,19 +1149,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "highIcp": 16,
     "readyToDevelop": 30,
     "dueNow": 93,
-    "visibleTodayQueue": 58,
-    "potentialPool": 58,
+    "visibleTodayQueue": 54,
+    "potentialPool": 54,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 42,
-    "executableCompanies": 39,
+    "refillNeeded": 46,
+    "executableCompanies": 35,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 91,
+    "executableReserveNeeded": 95,
     "executableByChannel": {
       "linkedin": 1,
       "facebook": 3,
       "instagram": 1,
-      "email": 14,
+      "email": 10,
       "website_form": 20
     },
     "verifiedSocialCompanies": 5,
@@ -1418,7 +1170,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "enrichmentBacklogCount": 19,
     "googleDiscovered": 93,
     "facebookDiscovered": 7,
-    "websiteContactDiscovered": 30,
+    "websiteContactDiscovered": 26,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1431,7 +1183,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 42
+      "count": 43
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1441,7 +1193,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 27
+      "count": 30
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1464,11 +1216,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 6
     },
     {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 4
-    },
-    {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
       "count": 2
@@ -1480,24 +1227,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 42,
+    "official_website_contact_channel": 43,
     "official_public_business_email_verified": 36,
-    "homepage_only_contact_path_requires_verification": 27,
+    "homepage_only_contact_path_requires_verification": 30,
     "website_contact_capability_not_verified": 12,
     "social_profile_not_first_party_verified": 8,
     "personal_email_domain_not_allowed": 7,
     "official_website_social_channel_verified": 6,
-    "sent_folder_message_confirmed": 4,
     "linkedin_channel_requires_supported_executor": 2,
     "concrete_google_discovered_major_customer_facebook": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 58,
+    "potentialPool": 54,
     "queueCount": 93,
     "googleDiscovered": 93,
-    "refillNeeded": 42,
-    "confirmedToday": 22,
+    "refillNeeded": 46,
+    "confirmedToday": 26,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1509,17 +1255,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (42); official_public_business_email_verified (36); homepage_only_contact_path_requires_verification (27).",
-  "recoveryHint": "Refill the high-ICP pool with 42 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (43); official_public_business_email_verified (36); homepage_only_contact_path_requires_verification (30).",
+  "recoveryHint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 42 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 42 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 46 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 58,
-      "refillNeeded": 42
+      "potentialPool": 54,
+      "refillNeeded": 46
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1530,20 +1276,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 93,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 93,\n    \"facebookDiscovered\": 7,\n    \"websiteContactDiscovered\": 26,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 25,\n    \"dueNow\": 93,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 93,\n    \"facebookDiscovered\": 5,\n    \"websiteContactDiscovered\": 26,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T09:25:17.023Z",
+      "updatedAt": "2026-08-21T09:31:06.379Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T09:25:13.765Z",
-      "executionGeneratedAt": "2026-08-21T09:08:25.251Z",
-      "githubSyncUpdatedAt": "2026-08-21T09:09:24.612Z",
+      "artifactGeneratedAt": "2026-08-21T09:31:01.468Z",
+      "executionGeneratedAt": "2026-08-21T09:25:17.913Z",
+      "githubSyncUpdatedAt": "2026-08-21T09:25:56.941Z",
       "counts": {
         "dailyQueue": 93,
         "googleDiscovered": 93,
-        "websiteContact": 79,
+        "websiteContact": 84,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1609,5 +1355,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "ledgerReconciliationCount": 5,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T09:25:17.913Z"
+  "completedAt": "2026-08-21T09:31:07.402Z"
 };
