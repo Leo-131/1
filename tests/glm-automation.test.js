@@ -2451,6 +2451,21 @@ test('current UK trade distributor refill uses company-owned contact evidence', 
   }
 });
 
+test('current South Africa wholesale refill uses first-party sales addresses', () => {
+  for (const [company, email, evidenceUrl] of [
+    ['ULTRANEXUS', 'wholesale@ultranexus.co.za', 'https://ultranexus.co.za/'],
+    ['Eiger Equipment', 'joshua@eigerequipment.co.za', 'https://eigertrade.co.za/contact/'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.evidenceUrl, evidenceUrl);
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(row.customerType, 'brand_agent');
+    assert.ok(row.fitScore >= 70);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
