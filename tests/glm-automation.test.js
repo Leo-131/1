@@ -2624,6 +2624,18 @@ test('next US company-domain agency batch retains first-party principal evidence
   assert.equal(cultivated.buyerIdentityEvidenceUrl, cultivated.evidenceUrl);
 });
 
+test('next sporting-goods agency batch uses first-party founder addresses', () => {
+  for (const [company, email] of [
+    ['DRVFORCE', 'john@drvforce.com'],
+    ['Venture Sports Group', 'al@venturesportsgroup.com'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
