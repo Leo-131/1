@@ -2624,6 +2624,27 @@ test('next US company-domain agency batch retains first-party principal evidence
   assert.equal(cultivated.buyerIdentityEvidenceUrl, cultivated.evidenceUrl);
 });
 
+test('August 21 net-new US and UK agency refill keeps first-party executable channels', () => {
+  for (const [company, country, email] of [
+    ['Outlaw Mountain Sports', 'United States', 'info@outlawmtn.com'],
+    ['Housed & Harnessed', 'United Kingdom', 'letschat@housedandharnessed.uk'],
+    ['Action Sports Distribution', 'United Kingdom', 'info@actionsportsdist.co.uk'],
+    ['Maxtrack Distribution', 'United Kingdom', 'info@maxtrack.com'],
+    ['Watersports Solution', 'United Kingdom', 'sales@watersportssolution.co.uk'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.country, country);
+    assert.equal(row.customerType, 'sales_agency');
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+  }
+  const maxtrack = verifiedExternalCandidates.find(item => item.company === 'Maxtrack Distribution');
+  assert.equal(maxtrack.instagramUrl, 'https://www.instagram.com/maxtrack.distribution/');
+  assert.equal(maxtrack.officialSocialProfileVerified, true);
+});
+
 test('next sporting-goods agency batch uses first-party founder addresses', () => {
   for (const [company, email] of [
     ['DRVFORCE', 'john@drvforce.com'],
