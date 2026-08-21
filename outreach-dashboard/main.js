@@ -3494,14 +3494,32 @@ async function executeVerifiedSocialTouchAfterConfirmedEmail(lead = {}, emailRes
     attemptedChannels: ['email'],
     fallbackDepth: Number(options.fallbackDepth || 0) + 1,
   });
-  recordAutomationResult(fallbackLead, socialResult);
   const socialOutput = parseExecutionOutput(socialResult && socialResult.output);
+  // Validation and transport failures can return a reason/error without a
+  // sendStatus. Normalize that outcome before recording it so the secondary
+  // channel never disappears from the ledger as `social_result_missing`.
+  // This is evidence preservation only: an absent confirmation is always a
+  // failed_open, never promoted to a confirmed social action.
+  const secondaryChannelStatus = socialOutput.sendStatus
+    || socialResult.sendStatus
+    || 'failed_open';
+  const secondaryChannelEvidence = socialOutput.evidence
+    || socialResult.evidence
+    || socialResult.reason
+    || socialResult.error
+    || socialResult.decision && socialResult.decision.reason
+    || 'social_execution_result_missing';
+  recordAutomationResult(fallbackLead, {
+    ...socialResult,
+    sendStatus: secondaryChannelStatus,
+    evidence: secondaryChannelEvidence,
+  });
   return {
     ...emailResult,
-    secondaryChannelStatus: socialOutput.sendStatus || socialResult.sendStatus || 'failed_open',
+    secondaryChannelStatus,
     secondaryChannelPlatform: fallbackLead.platform,
     secondaryChannelTarget: fallbackLead.url,
-    evidence: `${emailResult.evidence || 'sent_confirmed'};parallel_multichannel:${fallbackLead.platform};${socialOutput.evidence || socialResult.evidence || 'social_result_missing'}`,
+    evidence: `${emailResult.evidence || 'sent_confirmed'};parallel_multichannel:${fallbackLead.platform};${secondaryChannelEvidence}`,
   };
 }
 

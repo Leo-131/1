@@ -2658,11 +2658,15 @@ test('confirmed email immediately continues to a first-party verified official s
   assert.equal(dailyConfig.cadence.multiChannelSameCustomer, true);
   assert.ok(mainSource.includes('executeVerifiedSocialTouchAfterConfirmedEmail'));
   assert.ok(mainSource.includes('parallel_multichannel:'));
-  assert.ok(mainSource.includes('recordAutomationResult(fallbackLead, socialResult)'));
+  assert.ok(mainSource.includes('recordAutomationResult(fallbackLead, {'));
   assert.ok(enrichmentSource.includes("reason: 'official_website_social_channel_verified'"));
   assert.ok(enrichmentSource.includes('rows.push({'));
   assert.ok(mainSource.includes("const isExplicitSocial = ['linkedin', 'facebook', 'instagram'].includes(platform)"));
   assert.ok(mainSource.includes('const isWebsiteContact = !isExplicitSocial'));
+  assert.ok(mainSource.includes("|| 'social_execution_result_missing'"));
+  assert.ok(mainSource.includes('sendStatus: secondaryChannelStatus'));
+  assert.ok(mainSource.includes('evidence: secondaryChannelEvidence'));
+  assert.ok(!mainSource.includes("socialResult.evidence || 'social_result_missing'"));
 });
 
 test('daily execution watchdog recomputes confirmed count inside its own scope', () => {
