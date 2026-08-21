@@ -40,7 +40,13 @@ function firstPartyOfficialAgencyPersonalEmail(lead = {}, recipient = recipientE
   if (!PERSONAL_EMAIL_DOMAINS.has(domain)) return false;
   if (String(lead.customerType || '').toLowerCase() !== 'sales_agency') return false;
   if (Number(lead.fitScore || 0) < 70) return false;
-  if (String(lead.externalVerificationStatus || '').toLowerCase() !== 'official_supplier_email_verified') return false;
+  const externalStatus = String(lead.externalVerificationStatus || '').toLowerCase();
+  const liveSignals = lead.firstPartyChannelVerification && Array.isArray(lead.firstPartyChannelVerification.signals)
+    ? lead.firstPartyChannelVerification.signals.map(value => String(value).toLowerCase())
+    : [];
+  const firstPartyEmailStatus = externalStatus === 'official_supplier_email_verified'
+    || (externalStatus === 'official_contact_form_verified' && liveSignals.includes('public_business_email'));
+  if (!firstPartyEmailStatus) return false;
   if (String(lead.emailVerificationStatus || '').toLowerCase() !== 'official_public_business_email') return false;
 
   const websiteHost = normalizedWebsiteHost(lead.website || lead.url || lead.contactUrl);

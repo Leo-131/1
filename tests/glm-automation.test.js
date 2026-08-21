@@ -2326,6 +2326,19 @@ test('first-party official sales-agency personal email is executable only with e
     evidenceUrl: 'https://www.google.com/search?q=mitchum',
     sourceEvidenceUrl: 'https://mitchumsales.com/',
   }).ok, true);
+  assert.equal(verifiedBusinessEmailTarget({
+    ...lead,
+    externalVerificationStatus: 'official_contact_form_verified',
+    firstPartyChannelVerification: {
+      evidenceUrl: 'https://mitchumsales.com/',
+      signals: ['form_control', 'public_business_email'],
+    },
+  }).ok, true);
+  assert.equal(verifiedBusinessEmailTarget({
+    ...lead,
+    externalVerificationStatus: 'official_contact_form_verified',
+    firstPartyChannelVerification: { evidenceUrl: 'https://mitchumsales.com/', signals: ['form_control'] },
+  }).ok, false);
 });
 
 test('first-party verified LinkedIn company routes use the supported dedicated Chrome executor', () => {

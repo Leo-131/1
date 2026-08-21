@@ -21,25 +21,25 @@
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-bw-sales-group-website-contact",
-      "company": "BW Sales Group",
+      "id": "google-customer-pfp-associates-website-contact",
+      "company": "PFP & Associates",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.bwsalesgroup.com/",
+      "targetUrl": "https://www.pfpandassociates.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T11:01:43.388Z",
+      "timestamp": "2026-08-21T11:07:58.600Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "nate.lov@gmail.com",
-        "targetUrl": "mailto:nate.lov@gmail.com",
+        "recipientEmail": "tputnam.pfp@gmail.com",
+        "targetUrl": "mailto:tputnam.pfp@gmail.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear BW Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear PFP & Associates Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -47,34 +47,55 @@
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 109
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"nate.lov@gmail.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tputnam.pfp@gmail.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-trailcross-website-contact",
+      "company": "TrailCross",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.trailcross.com/",
+      "ok": false,
+      "sendStatus": "skipped",
+      "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
+      "timestamp": "2026-08-21T11:08:01.252Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "skipped": true,
+        "sendStatus": "skipped",
+        "reason": "email_domain_daily_limit_reached",
+        "mode": "email_domain_safety_gate",
+        "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
+        "nextAction": "Pause this domain until the next Asia/Shanghai business day; use another verified company or channel."
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-bw-sales-group-website-contact",
-      "company": "BW Sales Group",
+      "id": "google-customer-pfp-associates-website-contact",
+      "company": "PFP & Associates",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.bwsalesgroup.com/",
+      "targetUrl": "https://www.pfpandassociates.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T11:01:43.388Z",
+      "timestamp": "2026-08-21T11:07:58.600Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "nate.lov@gmail.com",
-        "targetUrl": "mailto:nate.lov@gmail.com",
+        "recipientEmail": "tputnam.pfp@gmail.com",
+        "targetUrl": "mailto:tputnam.pfp@gmail.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear BW Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear PFP & Associates Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -82,10 +103,31 @@
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 109
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"nate.lov@gmail.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tputnam.pfp@gmail.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-trailcross-website-contact",
+      "company": "TrailCross",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.trailcross.com/",
+      "ok": false,
+      "sendStatus": "skipped",
+      "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
+      "timestamp": "2026-08-21T11:08:01.252Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "skipped": true,
+        "sendStatus": "skipped",
+        "reason": "email_domain_daily_limit_reached",
+        "mode": "email_domain_safety_gate",
+        "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
+        "nextAction": "Pause this domain until the next Asia/Shanghai business day; use another verified company or channel."
       }
     }
   ],
@@ -301,13 +343,6 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-trailcross-linkedin",
-      "company": "TrailCross",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-front-point-sales-linkedin",
       "company": "Front Point Sales",
       "action": "develop",
@@ -341,13 +376,6 @@
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-pfp-associates-website-contact",
-      "company": "PFP & Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-sideways-distribution-website-contact",
@@ -728,13 +756,6 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-trailcross-linkedin",
-      "company": "TrailCross",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-front-point-sales-linkedin",
       "company": "Front Point Sales",
       "action": "develop",
@@ -796,13 +817,6 @@
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-pfp-associates-website-contact",
-      "company": "PFP & Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "personal_email_domain_not_allowed"
     },
     {
       "id": "google-customer-lathrop-associates-website-contact",
@@ -1109,28 +1123,28 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 24,
-    "dueNow": 92,
-    "visibleTodayQueue": 55,
-    "potentialPool": 55,
+    "readyToDevelop": 23,
+    "dueNow": 91,
+    "visibleTodayQueue": 54,
+    "potentialPool": 54,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 45,
+    "refillNeeded": 46,
     "executableCompanies": 36,
     "executableReserveTarget": 130,
     "executableReserveNeeded": 94,
     "executableByChannel": {
-      "linkedin": 2,
+      "linkedin": 1,
       "facebook": 3,
       "instagram": 1,
-      "email": 10,
+      "email": 11,
       "website_form": 20
     },
-    "verifiedSocialCompanies": 6,
+    "verifiedSocialCompanies": 5,
     "verifiedSocialReserveTarget": 20,
-    "verifiedSocialReserveNeeded": 14,
-    "enrichmentBacklogCount": 19,
-    "googleDiscovered": 92,
+    "verifiedSocialReserveNeeded": 15,
+    "enrichmentBacklogCount": 18,
+    "googleDiscovered": 91,
     "facebookDiscovered": 3,
     "websiteContactDiscovered": 26,
     "scheduledLater": 0,
@@ -1155,12 +1169,7 @@
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 34
-    },
-    {
-      "reason": "official_website_social_channel_verified",
-      "status": "skipped",
-      "count": 12
+      "count": 33
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1168,9 +1177,19 @@
       "count": 12
     },
     {
+      "reason": "official_website_social_channel_verified",
+      "status": "skipped",
+      "count": 10
+    },
+    {
       "reason": "personal_email_domain_not_allowed",
       "status": "skipped",
-      "count": 7
+      "count": 6
+    },
+    {
+      "reason": "email_domain_daily_limit_reached",
+      "status": "skipped",
+      "count": 1
     },
     {
       "reason": "sent_folder_message_confirmed",
@@ -1186,20 +1205,21 @@
   "blockerCounts": {
     "official_website_contact_channel": 44,
     "homepage_only_contact_path_requires_verification": 35,
-    "official_public_business_email_verified": 34,
-    "official_website_social_channel_verified": 12,
+    "official_public_business_email_verified": 33,
     "website_contact_capability_not_verified": 12,
-    "personal_email_domain_not_allowed": 7,
+    "official_website_social_channel_verified": 10,
+    "personal_email_domain_not_allowed": 6,
+    "email_domain_daily_limit_reached": 1,
     "sent_folder_message_confirmed": 1,
     "social_profile_not_first_party_verified": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 55,
-    "queueCount": 92,
-    "googleDiscovered": 92,
-    "refillNeeded": 45,
-    "confirmedToday": 44,
+    "potentialPool": 54,
+    "queueCount": 91,
+    "googleDiscovered": 91,
+    "refillNeeded": 46,
+    "confirmedToday": 45,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1211,35 +1231,35 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (44); homepage_only_contact_path_requires_verification (35); official_public_business_email_verified (34).",
-  "recoveryHint": "Refill the high-ICP pool with 45 verified leads or unblock existing website/social leads before the next run.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (44); homepage_only_contact_path_requires_verification (35); official_public_business_email_verified (33).",
+  "recoveryHint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 45 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 45 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 46 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 55,
-      "refillNeeded": 45
+      "potentialPool": 54,
+      "refillNeeded": 46
     }
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 24,\n    \"dueNow\": 91,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 9,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 6,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 14,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 91,\n    \"facebookDiscovered\": 3,\n    \"websiteContactDiscovered\": 25,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 23,\n    \"dueNow\": 91,\n    \"visibleTodayQueue\": 53,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 91,\n    \"facebookDiscovered\": 3,\n    \"websiteContactDiscovered\": 26,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T11:01:47.840Z",
+      "updatedAt": "2026-08-21T11:08:05.373Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T11:01:44.928Z",
-      "executionGeneratedAt": "2026-08-21T10:57:19.694Z",
-      "githubSyncUpdatedAt": "2026-08-21T10:57:46.996Z",
+      "artifactGeneratedAt": "2026-08-21T11:08:02.750Z",
+      "executionGeneratedAt": "2026-08-21T11:04:38.576Z",
+      "githubSyncUpdatedAt": "2026-08-21T11:02:21.681Z",
       "counts": {
         "dailyQueue": 91,
         "googleDiscovered": 91,
-        "websiteContact": 84,
+        "websiteContact": 85,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1305,5 +1325,5 @@
   },
   "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T11:01:49.114Z"
+  "completedAt": "2026-08-21T11:08:06.232Z"
 }
