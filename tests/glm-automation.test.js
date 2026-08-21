@@ -2287,7 +2287,7 @@ test('queue readiness rejects personal-domain email even when discovery labels i
 });
 
 test('South Africa refill includes current first-party distributor emails', () => {
-  for (const company of ['Formalito', 'Seagull Industries', 'Lite Optec', 'San Hima South Africa']) {
+  for (const company of ['Formalito', 'Seagull Industries', 'Lite Optec', 'San Hima South Africa', 'Agrinet', 'Bossenberg']) {
     const candidate = verifiedExternalCandidates.find(item => item.company === company);
     assert.ok(candidate, company);
     assert.equal(candidate.country, 'South Africa');
@@ -2295,6 +2295,14 @@ test('South Africa refill includes current first-party distributor emails', () =
     assert.match(candidate.evidenceUrl, /^https:\/\//);
     assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
   }
+});
+
+test('United States refill includes Hardin Outdoors first-party agency owner email', () => {
+  const candidate = verifiedExternalCandidates.find(item => item.company === 'Hardin Outdoors');
+  assert.ok(candidate);
+  assert.equal(candidate.country, 'United States');
+  assert.equal(candidate.customerType, 'sales_agency');
+  assert.equal(dailyRunner.channelExecutionReadiness({ ...candidate, platform: 'email' }).ready, true);
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {
