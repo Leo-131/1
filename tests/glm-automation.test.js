@@ -2625,17 +2625,21 @@ test('next US company-domain agency batch retains first-party principal evidence
 });
 
 test('August 21 net-new US and UK agency refill keeps first-party executable channels', () => {
-  for (const [company, country, email] of [
+  for (const [company, country, email, customerType = 'sales_agency'] of [
     ['Outlaw Mountain Sports', 'United States', 'info@outlawmtn.com'],
     ['Housed & Harnessed', 'United Kingdom', 'letschat@housedandharnessed.uk'],
     ['Action Sports Distribution', 'United Kingdom', 'info@actionsportsdist.co.uk'],
     ['Maxtrack Distribution', 'United Kingdom', 'info@maxtrack.com'],
     ['Watersports Solution', 'United Kingdom', 'sales@watersportssolution.co.uk'],
+    ['PSS Agency', 'United States', 'info@pssagency.com'],
+    ['Sports, Inc.', 'United States', 'info@hq.sportsinc.com', 'key_account'],
+    ['Stellar Sales Alliance', 'United States', 'Fernando@stellarsalesalliance.com'],
+    ['Sport Dimension', 'United States', 'info@sportdimension.com', 'key_account'],
   ]) {
     const row = verifiedExternalCandidates.find(item => item.company === company);
     assert.ok(row, company);
     assert.equal(row.country, country);
-    assert.equal(row.customerType, 'sales_agency');
+    assert.equal(row.customerType, customerType);
     assert.equal(row.contactEmail, email);
     assert.equal(row.emailVerificationStatus, 'official_public_business_email');
     assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
