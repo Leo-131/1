@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T22:05:45.667Z",
+  "generatedAt": "2026-08-22T01:05:48.976Z",
   "companies": [
     {
       "companyId": "company_31b8a5c6af22e9f4",
@@ -26,7 +26,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-          "checkedAt": "2026-08-21T12:39:50.648Z"
+          "checkedAt": "2026-08-22T01:05:23.191Z"
         },
         {
           "channel": "linkedin",
@@ -36,7 +36,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-          "checkedAt": "2026-08-21T12:39:50.648Z"
+          "checkedAt": "2026-08-22T01:05:23.191Z"
         },
         {
           "channel": "instagram",
@@ -46,7 +46,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-          "checkedAt": "2026-08-21T12:39:50.648Z"
+          "checkedAt": "2026-08-22T01:05:23.191Z"
         },
         {
           "channel": "linkedin",
@@ -56,7 +56,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-          "checkedAt": "2026-08-21T12:39:50.648Z"
+          "checkedAt": "2026-08-22T01:05:23.191Z"
         },
         {
           "channel": "website_form",
@@ -2051,7 +2051,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-          "checkedAt": "2026-08-21T12:39:52.554Z"
+          "checkedAt": "2026-08-22T01:05:25.187Z"
         },
         {
           "channel": "instagram",
@@ -2061,7 +2061,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-          "checkedAt": "2026-08-21T12:39:52.554Z"
+          "checkedAt": "2026-08-22T01:05:25.187Z"
         },
         {
           "channel": "instagram",
@@ -2071,7 +2071,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-          "checkedAt": "2026-08-21T12:39:52.554Z"
+          "checkedAt": "2026-08-22T01:05:25.187Z"
         },
         {
           "channel": "website_form",
@@ -3247,7 +3247,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-21T22:05:11.279Z"
+          "checkedAt": "2026-08-22T01:05:06.385Z"
         },
         {
           "channel": "instagram",
@@ -3257,7 +3257,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-21T22:05:11.279Z"
+          "checkedAt": "2026-08-22T01:05:06.385Z"
         },
         {
           "channel": "website_form",
@@ -3399,6 +3399,12 @@
           "timestamp": "2026-08-21T12:44:09.073Z",
           "channel": "website_form",
           "evidence": "website_page_unavailable_404: 404 錯誤：找不到頁面;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:08:49.572Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: 404 錯誤：找不到頁面;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -3508,6 +3514,12 @@
         {
           "status": "website_contact_unreachable_skip",
           "timestamp": "2026-08-21T11:33:59.737Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: 404 Error - Page Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:11:10.358Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: 404 Error - Page Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
@@ -4510,7 +4522,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://suggsnicholasshea.com/contact/",
+          "evidenceUrl": "https://suggsnicholasshea.com/about/",
           "checkedAt": ""
         },
         {
@@ -4520,7 +4532,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://suggsnicholasshea.com/contact/",
+          "evidenceUrl": "https://suggsnicholasshea.com/about/",
           "checkedAt": ""
         },
         {
@@ -4530,7 +4542,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://suggsnicholasshea.com/contact/",
+          "evidenceUrl": "https://suggsnicholasshea.com/about/",
           "checkedAt": ""
         }
       ],
@@ -4779,6 +4791,12 @@
           "timestamp": "2026-08-21T13:12:55.021Z",
           "channel": "website_form",
           "evidence": "website_page_unavailable_404: File not found (404 error)\n\nIf you think what you're looking for should be here, please contact the site owner.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:08:04.168Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: File not found (404 error)\n\nIf you think what you're looking for should be here, please contact the site owner.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -4909,6 +4927,12 @@
           "timestamp": "2026-08-21T12:05:22.549Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Page not found\n\nLooks like you’ve followed a broken link or entered a URL that doesn’t exist on this site.\n\nIf this is your site, and you weren’t expecting a 404 for this path, ple;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:09:18.744Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page not found\n\nLooks like you’ve followed a broken link or entered a URL that doesn’t exist on this site.\n\nIf this is your site, and you weren’t expecting a 404 for this path, ple;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -4936,7 +4960,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.actionsportsagency.com/",
-          "checkedAt": "2026-08-21T12:39:50.569Z"
+          "checkedAt": "2026-08-22T01:05:23.110Z"
         },
         {
           "channel": "facebook",
@@ -4946,7 +4970,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.actionsportsagency.com/",
-          "checkedAt": "2026-08-21T12:39:50.569Z"
+          "checkedAt": "2026-08-22T01:05:23.110Z"
         },
         {
           "channel": "website_form",
@@ -5071,6 +5095,12 @@
         {
           "status": "website_contact_unreachable_skip",
           "timestamp": "2026-08-21T13:13:45.350Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: 919.980.4522\nContact Us\nWHO WE ARE\nTEAM\nTERRITORY\nPARTNER WITH US\nGALLERY\nNEWS\nCONTACT\n404 PAGE NOT FOUND\n\nIt seems we can’t find what you’re looking for. Perhaps searching can hel;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:10:10.713Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: 919.980.4522\nContact Us\nWHO WE ARE\nTEAM\nTERRITORY\nPARTNER WITH US\nGALLERY\nNEWS\nCONTACT\n404 PAGE NOT FOUND\n\nIt seems we can’t find what you’re looking for. Perhaps searching can hel;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
@@ -5693,7 +5723,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-21T22:05:27.223Z"
+          "checkedAt": "2026-08-22T01:05:22.275Z"
         },
         {
           "channel": "facebook",
@@ -5703,7 +5733,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-21T22:05:27.223Z"
+          "checkedAt": "2026-08-22T01:05:22.275Z"
         },
         {
           "channel": "linkedin",
@@ -5713,7 +5743,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-21T22:05:27.223Z"
+          "checkedAt": "2026-08-22T01:05:22.275Z"
         },
         {
           "channel": "website_form",
@@ -5950,6 +5980,12 @@
           "timestamp": "2026-08-21T07:34:13.913Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nRab - Save up to 46% on Clothing & Equipment\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:11:30.230Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nRab - Save up to 46% on Clothing & Equipment\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -6020,231 +6056,6 @@
           "timestamp": "2026-08-21T19:12:10.529Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Page not found - WWSRA;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_5eb35eb0563d7a2b",
-      "company": "Next Adventure",
-      "keys": [
-        "nextadventure",
-        "nextadventurenet"
-      ],
-      "domains": [
-        "nextadventure.net"
-      ],
-      "channels": [
-        "website_form",
-        "instagram",
-        "facebook",
-        "linkedin"
-      ],
-      "evidence": [
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": "2026-08-21T13:35:22.150Z"
-        },
-        {
-          "channel": "linkedin",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": "2026-08-21T13:35:22.150Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-14T03:04:11.644Z",
-          "channel": "instagram",
-          "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:10:03.335Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:03:11.311Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to content\n\nNEXT ADVENTURE LIVES ON!! Visit us in-store for the hottest deals on gear, apparel, and adventure essentials!\n\nLOGIN\nView cart\nHOME\nUSED GEAR\nRENTALS\nGEAR SERVICE ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T01:12:59.730Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T02:09:01.302Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T10:12:35.151Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T10:23:56.291Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:02:22.556Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:47.687Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T01:59:26.044Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;identity_mismatch_expected_Next Adventure_title_www.instagram.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.257Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;identity_mismatch_expected_Next Adventure_title_www.instagram.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-06T04:08:28.135Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-06T07:06:59.227Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-06T16:07:45.706Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-10T04:07:12.028Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-10T07:06:59.836Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-10T16:07:43.772Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-12T02:11:54.617Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-13T09:47:41.990Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-14T05:06:30.829Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-18T13:13:36.579Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-18T22:15:30.324Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-19T22:15:16.315Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-21T07:33:51.442Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
         }
       ]
     },
@@ -6487,6 +6298,12 @@
           "timestamp": "2026-08-21T12:59:44.413Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:11:48.100Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -6551,6 +6368,12 @@
           "timestamp": "2026-08-21T13:00:57.813Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:12:49.867Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -14358,7 +14181,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-21T22:05:20.191Z"
+          "checkedAt": "2026-08-22T01:05:15.373Z"
         },
         {
           "channel": "instagram",
@@ -14368,7 +14191,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-21T22:05:20.191Z"
+          "checkedAt": "2026-08-22T01:05:15.373Z"
         },
         {
           "channel": "website_form",
@@ -14632,7 +14455,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-21T22:05:16.081Z"
+          "checkedAt": "2026-08-22T01:05:10.612Z"
         },
         {
           "channel": "facebook",
@@ -14642,7 +14465,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-21T22:05:16.081Z"
+          "checkedAt": "2026-08-22T01:05:10.612Z"
         },
         {
           "channel": "email",
@@ -16347,7 +16170,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://liteoptec.co.za/contact-us/",
+          "evidenceUrl": "https://liteoptec.co.za/",
           "checkedAt": ""
         },
         {
@@ -16579,7 +16402,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://advanced4x4.co.za/pages/outdoor",
-          "checkedAt": "2026-08-21T13:32:07.165Z"
+          "checkedAt": "2026-08-21T22:05:34.712Z"
         },
         {
           "channel": "research",
@@ -17002,7 +16825,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-21T22:05:14.469Z"
+          "checkedAt": "2026-08-22T01:05:10.063Z"
         },
         {
           "channel": "website_form",
@@ -18682,7 +18505,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sharpendsales.com/",
-          "checkedAt": "2026-08-21T12:39:49.997Z"
+          "checkedAt": "2026-08-22T01:05:22.036Z"
         },
         {
           "channel": "research",
@@ -18807,7 +18630,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://eliteoutdoorsports.com/who-we-are/",
-          "checkedAt": "2026-08-21T12:39:51.785Z"
+          "checkedAt": "2026-08-22T01:05:26.496Z"
         }
       ],
       "history": [
@@ -19189,7 +19012,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.trekitt.co.uk/",
+          "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
           "checkedAt": ""
         },
         {
@@ -19200,7 +19023,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
-          "checkedAt": "2026-08-21T12:39:53.742Z"
+          "checkedAt": "2026-08-22T01:05:26.970Z"
         },
         {
           "channel": "instagram",
@@ -19210,7 +19033,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
-          "checkedAt": "2026-08-21T12:39:53.742Z"
+          "checkedAt": "2026-08-22T01:05:26.970Z"
         },
         {
           "channel": "email",
@@ -19303,7 +19126,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
-          "checkedAt": "2026-08-21T12:39:55.655Z"
+          "checkedAt": "2026-08-22T01:05:28.644Z"
         },
         {
           "channel": "instagram",
@@ -19313,7 +19136,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
-          "checkedAt": "2026-08-21T12:39:55.655Z"
+          "checkedAt": "2026-08-22T01:05:28.644Z"
         }
       ],
       "history": [
@@ -19698,7 +19521,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://venturesportsgroup.wordpress.com/about/",
-          "checkedAt": "2026-08-21T11:15:20.205Z"
+          "checkedAt": "2026-08-22T01:05:28.761Z"
         },
         {
           "channel": "research",
@@ -19753,7 +19576,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://whylo.co.za/shop-landing/",
-          "checkedAt": "2026-08-21T12:54:39.382Z"
+          "checkedAt": "2026-08-22T01:05:33.941Z"
         },
         {
           "channel": "research",
@@ -19854,7 +19677,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nautis.co.za/",
-          "checkedAt": "2026-08-21T13:04:40.107Z"
+          "checkedAt": "2026-08-22T01:05:29.372Z"
         },
         {
           "channel": "instagram",
@@ -19864,7 +19687,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nautis.co.za/",
-          "checkedAt": "2026-08-21T13:04:40.107Z"
+          "checkedAt": "2026-08-22T01:05:29.372Z"
         },
         {
           "channel": "linkedin",
@@ -19874,7 +19697,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nautis.co.za/",
-          "checkedAt": "2026-08-21T13:04:40.107Z"
+          "checkedAt": "2026-08-22T01:05:29.372Z"
         },
         {
           "channel": "research",
@@ -20242,7 +20065,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greatoutdoorprovision.com/pages/faqs-policies",
-          "checkedAt": "2026-08-21T13:35:07.420Z"
+          "checkedAt": "2026-08-22T01:05:37.433Z"
         },
         {
           "channel": "instagram",
@@ -20252,7 +20075,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greatoutdoorprovision.com/pages/faqs-policies",
-          "checkedAt": "2026-08-21T13:35:07.420Z"
+          "checkedAt": "2026-08-22T01:05:37.433Z"
         },
         {
           "channel": "email",
@@ -20298,7 +20121,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.billjacksons.com/",
+          "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
           "checkedAt": ""
         },
         {
@@ -20308,8 +20131,8 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.billjacksons.com/",
-          "checkedAt": "2026-08-21T13:35:09.633Z"
+          "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
+          "checkedAt": "2026-08-22T01:05:39.192Z"
         },
         {
           "channel": "facebook",
@@ -20318,8 +20141,8 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.billjacksons.com/",
-          "checkedAt": "2026-08-21T13:35:09.633Z"
+          "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
+          "checkedAt": "2026-08-22T01:05:39.192Z"
         },
         {
           "channel": "email",
@@ -20511,7 +20334,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.skcamping.com/",
-          "checkedAt": "2026-08-21T13:35:12.427Z"
+          "checkedAt": "2026-08-22T01:05:38.683Z"
         },
         {
           "channel": "instagram",
@@ -20521,7 +20344,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.skcamping.com/",
-          "checkedAt": "2026-08-21T13:35:12.427Z"
+          "checkedAt": "2026-08-22T01:05:38.683Z"
         },
         {
           "channel": "email",
@@ -21001,7 +20824,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.roam-sales.com/",
-          "checkedAt": "2026-08-21T13:35:14.474Z"
+          "checkedAt": "2026-08-22T01:05:39.774Z"
         },
         {
           "channel": "facebook",
@@ -21011,7 +20834,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.roam-sales.com/",
-          "checkedAt": "2026-08-21T13:35:14.474Z"
+          "checkedAt": "2026-08-22T01:05:39.774Z"
         }
       ],
       "history": [
@@ -21092,7 +20915,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.7summitssportsinc.com/",
-          "checkedAt": "2026-08-21T13:35:14.604Z"
+          "checkedAt": "2026-08-22T01:05:41.541Z"
         }
       ],
       "history": [
@@ -21940,6 +21763,217 @@
           "timestamp": "2026-07-14T03:04:05.771Z",
           "channel": "instagram",
           "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_submitted"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5eb35eb0563d7a2b",
+      "company": "Next Adventure",
+      "keys": [
+        "nextadventure",
+        "nextadventurenet"
+      ],
+      "domains": [
+        "nextadventure.net"
+      ],
+      "channels": [
+        "instagram",
+        "website_form",
+        "facebook",
+        "linkedin"
+      ],
+      "evidence": [
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://nextadventure.net/",
+          "checkedAt": "2026-08-21T13:35:22.150Z"
+        },
+        {
+          "channel": "linkedin",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://nextadventure.net/",
+          "checkedAt": "2026-08-21T13:35:22.150Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://nextadventure.net/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://nextadventure.net/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-14T03:04:11.644Z",
+          "channel": "instagram",
+          "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:10:03.335Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:03:11.311Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to content\n\nNEXT ADVENTURE LIVES ON!! Visit us in-store for the hottest deals on gear, apparel, and adventure essentials!\n\nLOGIN\nView cart\nHOME\nUSED GEAR\nRENTALS\nGEAR SERVICE ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T01:12:59.730Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T02:09:01.302Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T10:12:35.151Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T10:23:56.291Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:02:22.556Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.687Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T01:59:26.044Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;identity_mismatch_expected_Next Adventure_title_www.instagram.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.257Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;identity_mismatch_expected_Next Adventure_title_www.instagram.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-06T04:08:28.135Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-06T07:06:59.227Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-06T16:07:45.706Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T04:07:12.028Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T07:06:59.836Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T16:07:43.772Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-12T02:11:54.617Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-13T09:47:41.990Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-14T05:06:30.829Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-18T13:13:36.579Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-18T22:15:30.324Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-19T22:15:16.315Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-21T07:33:51.442Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-21T22:10:40.034Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
         }
       ]
     },
@@ -28861,7 +28895,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-21T22:05:21.136Z"
+          "checkedAt": "2026-08-22T01:05:17.661Z"
         },
         {
           "channel": "facebook",
@@ -28871,7 +28905,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-21T22:05:21.136Z"
+          "checkedAt": "2026-08-22T01:05:17.661Z"
         }
       ],
       "history": [
@@ -29203,7 +29237,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-21T22:05:21.969Z"
+          "checkedAt": "2026-08-22T01:05:17.379Z"
         },
         {
           "channel": "instagram",
@@ -29452,7 +29486,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-21T22:05:24.178Z"
+          "checkedAt": "2026-08-22T01:05:19.157Z"
         },
         {
           "channel": "facebook",
@@ -29462,7 +29496,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-21T22:05:24.178Z"
+          "checkedAt": "2026-08-22T01:05:19.157Z"
         }
       ],
       "history": [
@@ -29524,7 +29558,7 @@
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.mountain-equipment.com/",
-          "checkedAt": "2026-08-21T22:05:23.938Z"
+          "checkedAt": "2026-08-22T01:05:20.069Z"
         }
       ],
       "history": [
@@ -31856,7 +31890,7 @@
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
-          "checkedAt": "2026-08-21T22:05:24.685Z"
+          "checkedAt": "2026-08-22T01:05:19.199Z"
         }
       ],
       "history": [
@@ -32111,7 +32145,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://packratoc.com/",
-          "checkedAt": "2026-08-21T22:05:26.807Z"
+          "checkedAt": "2026-08-22T01:05:22.537Z"
         },
         {
           "channel": "facebook",
@@ -44040,7 +44074,7 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-21T22:05:45.667Z",
+    "generatedAt": "2026-08-22T01:05:48.976Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 642,
