@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "taskId": "daily-google-lead-outreach-automation",
   "mode": "cloud_control_plane_local_browser_executor",
-  "shanghaiDate": "2026-08-22",
+  "shanghaiDate": "2026-08-23",
   "status": "active",
-  "revision": 33,
-  "updatedAt": "2026-08-22T13:07:59.633Z",
+  "revision": 34,
+  "updatedAt": "2026-08-22T16:20:01.377Z",
   "objective": {
     "dailyTarget": 100,
     "countries": [
@@ -22,9 +22,9 @@
   "progress": {
     "confirmedToday": 0,
     "remainingToday": 100,
-    "potentialPool": 70,
-    "executableCompanies": 53,
-    "latestExecutionPhase": "no_executable_tasks",
+    "potentialPool": 75,
+    "executableCompanies": 57,
+    "latestExecutionPhase": "browser_execution",
     "latestRealDevelopmentCount": 0,
     "latestReportingVerdict": "no_customer_development_performed"
   },
@@ -50,14 +50,14 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "ec6895682c0b1628c0155e4dca52e4207271f1d3",
-    "upstreamHead": "ec6895682c0b1628c0155e4dca52e4207271f1d3",
-    "remoteHead": "ec6895682c0b1628c0155e4dca52e4207271f1d3"
+    "localHead": "a19dad8338edeee03b4789e99eef4296bf29f8f4",
+    "upstreamHead": "a19dad8338edeee03b4789e99eef4296bf29f8f4",
+    "remoteHead": "a19dad8338edeee03b4789e99eef4296bf29f8f4"
   },
   "latestExecution": {
-    "completedAt": "2026-08-22T13:07:44.264Z",
-    "browserTransportUsed": "none",
-    "chromeOpened": false,
+    "completedAt": "2026-08-22T16:19:56.766Z",
+    "browserTransportUsed": "cdp",
+    "chromeOpened": true,
     "realDevelopmentCount": 0
   }
 }
