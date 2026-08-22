@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-08-22T01:05:45.128Z",
+  "generatedAt": "2026-08-22T04:06:23.426Z",
   "date": "2026-08-22",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -156,7 +156,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -259,7 +259,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/contact.html",
-      "socialProfileVerifiedAt": "2026-08-22T01:05:06.385Z",
+      "socialProfileVerifiedAt": "2026-08-22T04:05:11.568Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -269,7 +269,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -300,7 +300,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-22T01:05:06.385Z",
+        "verifiedAt": "2026-08-22T04:05:11.568Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -383,7 +383,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -491,7 +491,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -605,7 +605,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -713,7 +713,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -741,7 +741,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T11:23:52.090Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T13:37:47.453Z",
+        "verifiedAt": "2026-08-22T04:05:45.151Z",
         "evidenceUrl": "https://www.outdoorbrands.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -815,7 +815,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.tauntonleisure.com/",
-      "socialProfileVerifiedAt": "2026-08-21T12:48:42.410Z",
+      "socialProfileVerifiedAt": "2026-08-22T04:05:43.228Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -825,7 +825,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -856,7 +856,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/TauntonLeisure/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:42.410Z",
+        "verifiedAt": "2026-08-22T04:05:43.228Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -939,7 +939,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -1049,7 +1049,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -1151,10 +1151,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -1260,10 +1259,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -1371,10 +1369,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -1483,10 +1480,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -1592,10 +1588,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -1703,10 +1698,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -1816,10 +1810,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -1929,10 +1922,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -2043,10 +2035,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -2072,7 +2063,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-22T01:05:08.361Z",
+        "verifiedAt": "2026-08-22T04:05:13.956Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -2152,10 +2143,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2265,10 +2255,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -2378,10 +2367,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -2489,10 +2477,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2602,10 +2589,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2715,10 +2701,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2826,10 +2811,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2939,10 +2923,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "instagram",
       "channelType": "instagram",
@@ -3054,10 +3037,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -3163,10 +3145,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -3272,10 +3253,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -3381,10 +3361,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -3494,10 +3473,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -3610,10 +3588,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -3721,10 +3698,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "instagram",
       "platformUrl": "https://www.instagram.com/activagency",
@@ -3824,10 +3800,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -3937,10 +3912,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -4050,10 +4024,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -4163,10 +4136,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -4278,10 +4250,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -4391,10 +4362,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "instagram",
       "channelType": "instagram",
@@ -4502,10 +4472,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -4614,10 +4583,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -4725,10 +4693,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -4834,10 +4801,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "linkedin",
       "channelType": "linkedin",
@@ -4949,10 +4915,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "linkedin",
       "channelType": "linkedin",
@@ -5060,10 +5025,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -5175,10 +5139,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -5288,10 +5251,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "instagram",
       "channelType": "instagram",
@@ -5401,10 +5363,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -5513,10 +5474,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -5624,10 +5584,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -5736,10 +5695,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -5765,7 +5723,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:41.121Z",
+        "verifiedAt": "2026-08-22T04:05:43.405Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -5848,10 +5806,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -5877,7 +5834,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-14T06:34:21.742Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:40.365Z",
+        "verifiedAt": "2026-08-22T04:05:43.035Z",
         "evidenceUrl": "https://retail.outdoorcap.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -5962,10 +5919,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -5991,7 +5947,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:34.787Z",
+        "verifiedAt": "2026-08-22T04:05:31.538Z",
         "evidenceUrl": "https://1889sales.com/about.html",
         "httpStatus": 200,
         "signals": [
@@ -6073,10 +6029,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -6102,7 +6057,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T11:50:46.264Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T12:48:36.059Z",
+        "verifiedAt": "2026-08-22T04:05:30.587Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 0,
         "signals": [],
@@ -6182,10 +6137,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -6294,10 +6248,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -6404,10 +6357,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -6518,10 +6470,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -6631,10 +6582,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -6740,10 +6690,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "channelType": "facebook",
@@ -6853,10 +6802,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -6967,10 +6915,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -7080,10 +7027,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -7189,10 +7135,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -7302,10 +7247,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "linkedin",
       "channelType": "linkedin",
@@ -7408,7 +7352,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://perpetualmotionnw.com/",
-      "socialProfileVerifiedAt": "2026-08-22T01:05:22.275Z",
+      "socialProfileVerifiedAt": "2026-08-22T04:05:27.126Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7418,10 +7362,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "linkedin",
       "channelType": "linkedin",
@@ -7450,7 +7393,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/company/perpetual-motion-northwest/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-22T01:05:22.275Z",
+        "verifiedAt": "2026-08-22T04:05:27.126Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -7533,10 +7476,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "facebook",
       "platformUrl": "https://www.facebook.com/rockcreek",
@@ -7636,7 +7578,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -7746,7 +7688,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -7856,7 +7798,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7978,7 +7920,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8103,7 +8045,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8225,7 +8167,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8349,7 +8291,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8473,7 +8415,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8597,7 +8539,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8724,7 +8666,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8839,7 +8781,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8963,7 +8905,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9088,7 +9030,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9211,7 +9153,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9331,7 +9273,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9455,7 +9397,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9580,7 +9522,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9607,7 +9549,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-22T01:05:08.361Z",
+        "verifiedAt": "2026-08-22T04:05:13.956Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -9700,7 +9642,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9822,7 +9764,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9942,7 +9884,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10065,7 +10007,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10187,7 +10129,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10310,7 +10252,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10337,7 +10279,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:41.121Z",
+        "verifiedAt": "2026-08-22T04:05:43.405Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -10433,7 +10375,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10556,7 +10498,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10680,7 +10622,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10802,7 +10744,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10829,7 +10771,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-14T06:34:21.742Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:40.365Z",
+        "verifiedAt": "2026-08-22T04:05:43.035Z",
         "evidenceUrl": "https://retail.outdoorcap.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -10927,7 +10869,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11052,7 +10994,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11079,7 +11021,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T08:11:38.423Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-22T01:05:06.385Z",
+        "verifiedAt": "2026-08-22T04:05:11.568Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -11176,7 +11118,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11300,7 +11242,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11420,7 +11362,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11447,7 +11389,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T11:23:52.090Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T13:37:47.453Z",
+        "verifiedAt": "2026-08-22T04:05:45.151Z",
         "evidenceUrl": "https://www.outdoorbrands.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -11544,7 +11486,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11664,7 +11606,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11786,7 +11728,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11908,7 +11850,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12030,7 +11972,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12154,7 +12096,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12278,7 +12220,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12402,7 +12344,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12526,7 +12468,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12648,7 +12590,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12772,7 +12714,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12897,7 +12839,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13017,7 +12959,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13137,7 +13079,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13261,7 +13203,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13385,7 +13327,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13509,7 +13451,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13629,7 +13571,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13753,7 +13695,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13877,7 +13819,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14001,7 +13943,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14123,7 +14065,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14247,7 +14189,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14274,7 +14216,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:34.787Z",
+        "verifiedAt": "2026-08-22T04:05:31.538Z",
         "evidenceUrl": "https://1889sales.com/about.html",
         "httpStatus": 200,
         "signals": [
@@ -14369,7 +14311,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14396,7 +14338,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T11:50:46.264Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T12:48:36.059Z",
+        "verifiedAt": "2026-08-22T04:05:30.587Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 0,
         "signals": [],
@@ -14489,7 +14431,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14610,7 +14552,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14734,7 +14676,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14859,7 +14801,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14983,7 +14925,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15103,7 +15045,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15227,7 +15169,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15254,7 +15196,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-22T01:05:22.275Z",
+        "verifiedAt": "2026-08-22T04:05:27.126Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -15351,7 +15293,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15471,7 +15413,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15498,7 +15440,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:42.410Z",
+        "verifiedAt": "2026-08-22T04:05:43.228Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -15595,7 +15537,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15717,7 +15659,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15837,7 +15779,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15957,7 +15899,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16079,7 +16021,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -16199,7 +16141,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16314,7 +16256,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16431,7 +16373,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16556,7 +16498,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16679,7 +16621,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16799,7 +16741,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16923,7 +16865,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17048,7 +16990,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17075,7 +17017,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-22T01:05:08.361Z",
+        "verifiedAt": "2026-08-22T04:05:13.956Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -17168,7 +17110,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17290,7 +17232,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17410,7 +17352,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17532,7 +17474,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17559,7 +17501,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-14T06:34:21.742Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:40.365Z",
+        "verifiedAt": "2026-08-22T04:05:43.035Z",
         "evidenceUrl": "https://retail.outdoorcap.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -17657,7 +17599,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -17782,7 +17724,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17809,7 +17751,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T08:11:38.423Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-22T01:05:06.385Z",
+        "verifiedAt": "2026-08-22T04:05:11.568Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -17906,7 +17848,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18030,7 +17972,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18057,7 +17999,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T11:23:52.090Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T13:37:47.453Z",
+        "verifiedAt": "2026-08-22T04:05:45.151Z",
         "evidenceUrl": "https://www.outdoorbrands.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -18154,7 +18096,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18274,7 +18216,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18396,7 +18338,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18518,7 +18460,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18640,7 +18582,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18764,7 +18706,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18888,7 +18830,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19012,7 +18954,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19136,7 +19078,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19260,7 +19202,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19385,7 +19327,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19509,7 +19451,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19633,7 +19575,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19757,7 +19699,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19877,7 +19819,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20001,7 +19943,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20125,7 +20067,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20249,7 +20191,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20371,7 +20313,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20495,7 +20437,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20616,7 +20558,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20740,7 +20682,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20865,7 +20807,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20989,7 +20931,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21113,7 +21055,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21140,7 +21082,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-22T01:05:22.275Z",
+        "verifiedAt": "2026-08-22T04:05:27.126Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -21237,7 +21179,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21264,7 +21206,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:42.410Z",
+        "verifiedAt": "2026-08-22T04:05:43.228Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -21361,7 +21303,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21483,7 +21425,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21603,7 +21545,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21725,7 +21667,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21845,7 +21787,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -21967,7 +21909,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22092,7 +22034,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22214,7 +22156,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22338,7 +22280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22462,7 +22404,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -22586,7 +22528,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22713,7 +22655,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22828,7 +22770,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/22 09:05:04",
+        "localTime": "2026/8/22 12:05:09",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22952,10 +22894,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23059,10 +23000,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23165,10 +23105,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23272,10 +23211,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23301,7 +23239,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:41.121Z",
+        "verifiedAt": "2026-08-22T04:05:43.405Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -23379,10 +23317,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23486,10 +23423,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23594,10 +23530,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23700,10 +23635,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23809,10 +23743,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -23916,7 +23849,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Sat 03:05",
+        "localTime": "Sat 06:06",
         "window": "off_workday",
         "nextBest": "Europe/Oslo morning"
       },
@@ -24021,7 +23954,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Sat 04:05",
+        "localTime": "Sat 07:06",
         "window": "off_workday",
         "nextBest": "Europe/Helsinki morning"
       },
@@ -24127,7 +24060,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -24232,10 +24165,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "email",
       "channelType": "email",
@@ -24341,7 +24273,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:05",
+        "localTime": "Sat 16:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -24446,7 +24378,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 11:05",
+        "localTime": "Sat 14:06",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
@@ -24549,7 +24481,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -24652,10 +24584,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -24758,10 +24689,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -24862,10 +24792,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -24966,10 +24895,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -24995,7 +24923,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-21T12:48:34.787Z",
+        "verifiedAt": "2026-08-22T04:05:31.538Z",
         "evidenceUrl": "https://1889sales.com/about.html",
         "httpStatus": 200,
         "signals": [
@@ -25072,10 +25000,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -25101,7 +25028,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T11:50:46.264Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-21T12:48:36.059Z",
+        "verifiedAt": "2026-08-22T04:05:30.587Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 0,
         "signals": [],
@@ -25176,7 +25103,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Rome",
-        "localTime": "Sat 03:05",
+        "localTime": "Sat 06:06",
         "window": "off_workday",
         "nextBest": "Europe/Rome morning"
       },
@@ -25283,10 +25210,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -25387,7 +25313,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -25490,7 +25416,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -25593,10 +25519,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -25697,10 +25622,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -25803,10 +25727,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -25911,10 +25834,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26017,10 +25939,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26121,10 +26042,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26227,10 +26147,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26331,10 +26250,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26437,10 +26355,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26543,10 +26460,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26651,7 +26567,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Sat 03:05",
+        "localTime": "Sat 06:06",
         "window": "off_workday",
         "nextBest": "Europe/Berlin morning"
       },
@@ -26754,10 +26670,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26858,10 +26773,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -26962,10 +26876,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -27068,7 +26981,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -27173,7 +27086,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Sat 03:05",
+        "localTime": "Sat 06:06",
         "window": "off_workday",
         "nextBest": "Europe/Paris morning"
       },
@@ -27276,7 +27189,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -27371,7 +27284,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Sat 03:05",
+        "localTime": "Sat 06:06",
         "window": "off_workday",
         "nextBest": "Europe/Paris morning"
       },
@@ -27474,7 +27387,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Sat 09:05",
+        "localTime": "Sat 12:06",
         "window": "off_workday",
         "nextBest": "Asia/Shanghai morning"
       },
@@ -27577,10 +27490,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -27683,7 +27595,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 11:05",
+        "localTime": "Sat 14:06",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
@@ -27931,7 +27843,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -27987,7 +27899,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -28043,7 +27955,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -28099,10 +28011,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -28156,10 +28067,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -28213,10 +28123,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:05",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Sat 00:06",
+        "window": "off_workday",
+        "nextBest": "America/Toronto morning"
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -28270,7 +28179,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Sat 08:05",
+        "localTime": "Sat 11:06",
         "window": "off_workday",
         "nextBest": "Asia/Jakarta morning"
       },
@@ -28326,7 +28235,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 11:05",
+        "localTime": "Sat 14:06",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
@@ -28382,7 +28291,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:05",
+        "localTime": "Sat 16:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -28438,7 +28347,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:05",
+        "localTime": "Sat 16:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -28494,7 +28403,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:05",
+        "localTime": "Sat 16:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -28550,7 +28459,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:05",
+        "localTime": "Sat 16:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -28606,7 +28515,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:05",
+        "localTime": "Sat 16:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -28662,7 +28571,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Sat 06:35",
+        "localTime": "Sat 09:36",
         "window": "off_workday",
         "nextBest": "Asia/Kolkata morning"
       },
@@ -28735,7 +28644,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -28845,7 +28754,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -28953,7 +28862,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29061,7 +28970,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29171,7 +29080,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29281,7 +29190,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29392,7 +29301,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29502,7 +29411,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29614,7 +29523,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29738,7 +29647,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29859,7 +29768,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -29970,7 +29879,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -30079,7 +29988,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -30189,7 +30098,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -30300,7 +30209,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -30406,7 +30315,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:05",
+        "localTime": "Sat 05:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
