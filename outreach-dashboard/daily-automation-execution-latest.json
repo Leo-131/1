@@ -13,7 +13,7 @@
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (35); homepage_only_contact_path_requires_verification (28); official_public_business_email_verified (28).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (36); official_public_business_email_verified (28); homepage_only_contact_path_requires_verification (27).",
   "recoveryHint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
@@ -302,6 +302,13 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-taunton-leisure-website-contact",
       "company": "Taunton Leisure",
       "action": "develop",
@@ -549,13 +556,6 @@
     {
       "id": "google-customer-morrison-sports-marketing-website-contact",
       "company": "Morrison Sports Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -813,13 +813,6 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-alpinetrek-website-contact",
       "company": "Alpinetrek",
       "action": "verify_target",
@@ -852,12 +845,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 35
-    },
-    {
-      "reason": "homepage_only_contact_path_requires_verification",
-      "status": "skipped",
-      "count": 28
+      "count": 36
     },
     {
       "reason": "official_public_business_email_verified",
@@ -865,9 +853,14 @@
       "count": 28
     },
     {
+      "reason": "homepage_only_contact_path_requires_verification",
+      "status": "skipped",
+      "count": 27
+    },
+    {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 10
+      "count": 9
     },
     {
       "reason": "official_website_social_channel_verified",
@@ -886,10 +879,10 @@
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 35,
-    "homepage_only_contact_path_requires_verification": 28,
+    "official_website_contact_channel": 36,
     "official_public_business_email_verified": 28,
-    "website_contact_capability_not_verified": 10,
+    "homepage_only_contact_path_requires_verification": 27,
+    "website_contact_capability_not_verified": 9,
     "official_website_social_channel_verified": 8,
     "personal_email_domain_not_allowed": 6,
     "social_profile_not_first_party_verified": 2
@@ -1537,6 +1530,22 @@
       "blockingEvidence": "website_failure_circuit_open;failed_days:3;window_days:30"
     },
     {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
+      "action": "develop",
+      "platform": "website_form",
+      "readiness": {
+        "ready": true,
+        "gate": "official_supplier_route",
+        "evidenceUrl": "https://perpetualmotionnw.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "website_failure_circuit_open",
+      "blockingEvidence": "website_failure_circuit_open;failed_days:3;window_days:30"
+    },
+    {
       "id": "google-customer-taunton-leisure-website-contact",
       "company": "Taunton Leisure",
       "action": "develop",
@@ -1748,27 +1757,27 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 30,
+    "readyToDevelop": 31,
     "dueNow": 99,
     "visibleTodayQueue": 69,
     "potentialPool": 70,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
     "refillNeeded": 30,
-    "executableCompanies": 52,
+    "executableCompanies": 53,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 78,
+    "executableReserveNeeded": 77,
     "executableByChannel": {
       "linkedin": 1,
       "facebook": 5,
       "instagram": 2,
       "email": 13,
-      "website_form": 31
+      "website_form": 32
     },
     "verifiedSocialCompanies": 8,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 12,
-    "enrichmentBacklogCount": 18,
+    "enrichmentBacklogCount": 17,
     "googleDiscovered": 99,
     "facebookDiscovered": 5,
     "websiteContactDiscovered": 28,
@@ -1789,5 +1798,5 @@
     "historicalSenderIdentityFailures": 9,
     "senderRestoredAt": "2026-08-14T05:43:37.464Z"
   },
-  "completedAt": "2026-08-23T01:08:03.110Z"
+  "completedAt": "2026-08-23T04:08:06.240Z"
 }
