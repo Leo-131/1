@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "runDateShanghai": "2026-08-24",
+  "sender": "leo@flextailgear.com",
+  "surface": "Alibaba Mail web UI in isolated Chrome/CDP 9224",
+  "status": "ready_for_action_time_confirmation",
+  "messageTemplate": "FLEXTAIL global distribution or brand-representation introduction; compact outdoor electrics, 36+ planned 2026 SKUs, product overview link, and request for the buyer or vendor-onboarding owner.",
+  "attachments": [],
+  "recipients": [
+    {
+      "company": "13west",
+      "email": "team@13west.com",
+      "subject": "FLEXTAIL global brand representation | 13west",
+      "verification": "official_public_business_email",
+      "evidenceUrl": "https://13west.com/about/",
+      "historyGate": "pre_send_failed_open_only"
+    },
+    {
+      "company": "Outdoor Cap Company",
+      "email": "retailsales@outdoorcap.com",
+      "subject": "FLEXTAIL global distribution partnership | Outdoor Cap Company",
+      "verification": "official_public_business_email",
+      "evidenceUrl": "https://retail.outdoorcap.com/contact-us",
+      "historyGate": "pre_send_failed_open_only"
+    },
+    {
+      "company": "Our Habit Sales",
+      "email": "ourhabit.sales@gmail.com",
+      "subject": "FLEXTAIL global brand representation | Our Habit Sales",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "pre_send_website_unreachable_only"
+    },
+    {
+      "company": "Nick Landry Sales",
+      "email": "nicklandry.sales@gmail.com",
+      "subject": "FLEXTAIL global brand representation | Nick Landry Sales",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "pre_send_website_unreachable_only"
+    },
+    {
+      "company": "Sideways Distribution",
+      "email": "shanebardiau.pnw@gmail.com",
+      "subject": "FLEXTAIL global brand representation | Sideways Distribution",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "pre_send_website_unreachable_only"
+    },
+    {
+      "company": "Sales Society 72",
+      "email": "salessociety72@gmail.com",
+      "subject": "FLEXTAIL global brand representation | Sales Society 72",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "pre_send_website_unreachable_only"
+    },
+    {
+      "company": "Dark Blizzard Sales",
+      "email": "darkblizzardsales@gmail.com",
+      "subject": "FLEXTAIL global brand representation | Dark Blizzard Sales",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "pre_send_website_unreachable_only"
+    },
+    {
+      "company": "Agence Top Notch Inc",
+      "email": "arnaud@agencetopnotch.com",
+      "subject": "FLEXTAIL global brand representation | Agence Top Notch Inc",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "no_prior_contact"
+    },
+    {
+      "company": "Choppy Water",
+      "email": "n.wendelken@choppywater.de",
+      "subject": "FLEXTAIL global brand representation | Choppy Water",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "no_prior_contact"
+    },
+    {
+      "company": "NSBF Finland",
+      "email": "matti@nitrosnowboards.fi",
+      "subject": "FLEXTAIL global brand representation | NSBF Finland",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "no_prior_contact"
+    },
+    {
+      "company": "Noble Custom",
+      "email": "sam@noblecustom.co.uk",
+      "subject": "FLEXTAIL global brand representation | Noble Custom",
+      "verification": "official_brand_rep_directory_email",
+      "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+      "historyGate": "no_prior_contact"
+    }
+  ]
+}

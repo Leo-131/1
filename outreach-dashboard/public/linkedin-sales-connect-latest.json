@@ -1,0 +1,28 @@
+{
+  "runDateShanghai": "2026-08-24",
+  "timestamp": "2026-08-24T19:17:19.7403422+08:00",
+  "browserTransport": "dedicated_visible_chrome_cdp_9224",
+  "source": "linkedin_sales_navigator_filtered_people_search",
+  "batchLimit": 2,
+  "confirmedCount": 0,
+  "status": "send_unconfirmed",
+  "stopped": true,
+  "stopReason": "linkedin_connect_confirmation_missing_no_replay",
+  "results": [
+    {
+      "name": "Stacy Krohn",
+      "title": "Senior Buyer- Womens, Youth Outerwear & Outdoor Apparel",
+      "company": "DICK'S Sporting Goods",
+      "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAoR-asB8rYqVfDcFDWJMS6ifFTUmSdCUyQ,NAME_SEARCH,s248",
+      "status": "send_unconfirmed",
+      "evidence": "linkedin_connect_clicked_confirmation_missing",
+      "replayAllowed": false
+    },
+    {
+      "name": "Ryan Jordan",
+      "title": "Buyer - SPORTING GOODS - Bikes, Scooters, Watersports and Wintersports",
+      "company": "Costco Wholesale",
+      "status": "not_attempted_after_channel_stop"
+    }
+  ]
+}

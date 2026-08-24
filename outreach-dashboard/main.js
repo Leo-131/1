@@ -74,7 +74,8 @@ const DEFAULT_WEBSITE_CONTACT_EMAIL = 'leo@flextailgear.com';
 const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo';
 const DEFAULT_WEBSITE_CONTACT_LAST_NAME = 'Liu';
 const DEFAULT_WEBSITE_CONTACT_PHONE = '+86 17321028184';
-const DEFAULT_WEBSITE_CONTACT_SUBJECT = 'FLEXTAIL retail partnership | 2026 assortment';
+const LEGACY_WEBSITE_CONTACT_SUBJECT = 'FLEXTAIL retail partnership | 2026 assortment';
+const DEFAULT_WEBSITE_CONTACT_SUBJECT = 'FLEXTAIL global distribution & representation partnership';
 
 const PLATFORM_CONFIG = {
   li: {
@@ -333,6 +334,10 @@ function historicalAutomationResultBlocksCompany(result = {}) {
   // A bounce suppresses the exact email route, not every verified channel for
   // the company. Social remains safe because no customer interaction occurred.
   if (result.status === 'bounced') return false;
+  // Missing confirmation after an irreversible send/connect action is a
+  // company-wide no-replay lock. Do not require a second evidence marker to
+  // prove interaction: uncertainty itself is the duplicate-risk signal.
+  if (result.status === 'send_unconfirmed') return true;
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
     return sendStatusHasCustomerInteraction(result.status, result.evidence);
   }
@@ -438,6 +443,9 @@ function blockingAutomationResultFor(item) {
   }
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
+    // A failed alternate-channel draft must not suppress a restored,
+    // first-party verified email when no irreversible action occurred.
+    .filter((result) => !recoverableAlternateChannelPreSendFailure(item, result))
     // A page/form failure is channel-specific. If discovery later supplies a
     // verified official business email, that stronger alternate channel must
     // remain executable on the same day. Once that email path has also been
@@ -456,9 +464,6 @@ function blockingAutomationResultFor(item) {
     .filter((result) => !['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
       || (isSameAutomationDay(result.timestamp)
         && String(result.evidence || '').includes(WEBSITE_CONTACT_STRATEGY_MARKER)))
-    .filter((result) => result.status !== 'send_unconfirmed'
-      || sendStatusHasCustomerInteraction(result.status, result.evidence)
-      || /prior_send_unconfirmed_no_resend|sent_folder_record_missing/i.test(String(result.evidence || '')))
     .filter((result) => result.status !== 'failed_open'
       || !(/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
         && /official_social_fallback/i.test(String(result.evidence || ''))
@@ -656,6 +661,10 @@ function failedOpenResultShouldBlockRetry(result = {}) {
     'contact_page_open_failed',
     'no_contact_entry_control',
     'website_contact_entry_not_verified',
+    // Explicit pre-send states: no composer opened and no recipient/message
+    // was transmitted. A restored web session may safely retry this route.
+    'no_email_composer_opened',
+    'email_route_preserved_draft_no_reopen',
     // A watchdog timeout is a technical pre-send failure. The same-day
     // company circuit prevents immediate replay, but later Shanghai days may
     // safely retry a still-verified route.
@@ -673,6 +682,16 @@ function failedOpenResultShouldBlockRetry(result = {}) {
   ];
   if (hardFailures.some(fragment => evidence.includes(fragment))) return true;
   return true;
+}
+
+function recoverableAlternateChannelPreSendFailure(item = {}, result = {}) {
+  if (!verifiedBusinessEmailTarget(item).ok || result.status !== 'failed_open') return false;
+  const itemPlatform = automationPlatformFor(item);
+  const resultPlatform = automationPlatformFor(result);
+  if (itemPlatform !== 'email' || !resultPlatform || resultPlatform === 'email') return false;
+  const evidence = String(result.evidence || '').toLowerCase();
+  if (/send_clicked|physical_send|submit_clicked|message_sent|customer_interaction|persisted_after_reload/.test(evidence)) return false;
+  return /draft_inserted|send_control_not_found|composer_not_found|no_irreversible_action_performed/.test(evidence);
 }
 
 function isFixedAlibabaRecipientVerifierFailure(result = {}) {
@@ -2136,13 +2155,26 @@ function buildOpenClawPrompt(lead, decision, targetUrl, mode) {
     `Role/context: ${lead.role || lead.keyword || ''}.`,
     'Open or inspect only the exact target identity. Execute only if all safety gates pass; otherwise pause with evidence.',
     'Prepare the next safe action and a short English follow-up draft for automatic execution.',
+    `Approved outreach subject: ${websiteContactSubject(lead)}. Preserve this subject exactly; it must position the message as global distributor or brand-representation recruitment, never as a generic retail partnership.`,
     'Return concise JSON only with keys: verdict, evidence, nextAction, draft, sendStatus.',
     `Suggested draft: ${decision?.draft || ''}`,
   ].join('\n');
 }
 
 function websiteContactSubject(lead = {}) {
-  return lead.websiteContactSubject || DEFAULT_WEBSITE_CONTACT_SUBJECT;
+  const supplied = String(lead.websiteContactSubject || '').trim();
+  if (supplied && supplied !== LEGACY_WEBSITE_CONTACT_SUBJECT) return supplied;
+  const company = String(lead.company || lead.name || '').replace(/\s+/g, ' ').trim();
+  const context = [lead.customerType, lead.segment, lead.role, lead.keyword, lead.background]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+  const partnership = /sales[_ -]?agency|representative|representation|manufacturer.?s rep|brand agency/.test(context)
+    ? 'global brand representation'
+    : /distribut|import|wholesale|retail|key[_ -]?account|buyer|vendor/.test(context)
+      ? 'global distribution partnership'
+      : 'global distribution & representation partnership';
+  return `FLEXTAIL ${partnership}${company ? ` | ${company}` : ''}`;
 }
 
 function legacyMarketingEmailSignature() {
@@ -4332,11 +4364,11 @@ function hasVerifiedInstagramFallback(item = {}) {
 
 function socialPriorityRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
-  if (String(item.platform || '').toLowerCase() === 'email' && verifiedBusinessEmailTarget(item).ok) return 400;
-  if (isWebsiteContactQueueItem(item)) return 380;
-  if (/\blinkedin\b|linkedin\.com/.test(text)) return 340;
-  if (/\bfacebook\b|facebook\.com/.test(text)) return 330;
-  if (/\binstagram\b|instagram\.com/.test(text)) return 320;
+  if (String(item.platform || '').toLowerCase() === 'email' && verifiedBusinessEmailTarget(item).ok) return 500;
+  if (/\blinkedin\b|linkedin\.com/.test(text)) return 450;
+  if (/\bfacebook\b|facebook\.com/.test(text)) return 440;
+  if (/\binstagram\b|instagram\.com/.test(text)) return 430;
+  if (isWebsiteContactQueueItem(item)) return 300;
   return 100;
 }
 

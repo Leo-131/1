@@ -5,7 +5,7 @@ const path = require('path');
 const vm = require('node:vm');
 
 const { leadMessages, parseJsonContent, professionalSalesDraft, requestGlm } = require('../outreach-dashboard/glm-service');
-const { buildDiscoveryRun, buildLeads } = require('../outreach-dashboard/google-lead-discovery-runner');
+const { buildDiscoveryRun, buildLeads, websiteContactSubject } = require('../outreach-dashboard/google-lead-discovery-runner');
 const {
   buildAutoGlmTask,
   isBlockedFacebookTarget,
@@ -58,13 +58,13 @@ test('daily automation default run date follows Shanghai business day', () => {
 
 test('daily queue prioritizes verified Email, website forms, LinkedIn, Facebook and Instagram in that order', () => {
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'email' })
-    > dailyRunner.channelPriorityScore({ platform: 'website_form', reason: 'official_website_contact_channel' }));
-  assert.ok(dailyRunner.channelPriorityScore({ platform: 'website_form', reason: 'official_website_contact_channel' })
     > dailyRunner.channelPriorityScore({ platform: 'linkedin' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'linkedin' })
     > dailyRunner.channelPriorityScore({ platform: 'facebook' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
     > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'instagram' })
+    > dailyRunner.channelPriorityScore({ platform: 'website_form', reason: 'official_website_contact_channel' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
     > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
 });
@@ -93,6 +93,8 @@ test('first-party enrichment rejects website-template vendor social accounts', (
     <a href="https://www.instagram.com/pioneeroutdoorgroup/">Instagram</a>
   `, 'https://pioneerog.com/');
   assert.equal(isTemplateVendorSocialUrl('https://www.instagram.com/themefusion/'), true);
+  assert.equal(isTemplateVendorSocialUrl('https://www.linkedin.com/company/wix-com'), true);
+  assert.equal(isTemplateVendorSocialUrl('https://www.linkedin.com/company/squarespace/'), true);
   assert.deepEqual(inspected.socialLinks, ['https://www.instagram.com/pioneeroutdoorgroup/']);
 });
 
@@ -477,7 +479,7 @@ test('Google discovery preserves LinkedIn information while creating executable 
   const websiteLead = cabela.find(item => item.platform === 'website_form');
   assert.equal(websiteLead.action, 'email_priority');
   assert.equal(websiteLead.emailFrom, 'leo@flextailgear.com');
-  assert.equal(websiteLead.websiteContactSubject, 'FLEXTAIL retail partnership | 2026 assortment');
+  assert.equal(websiteLead.websiteContactSubject, "FLEXTAIL global distribution partnership | Cabela's");
   assert.match(websiteLead.websiteContactMessage, /Dear Cabela's Team/);
   assert.match(websiteLead.websiteContactMessage, /category buyer or vendor-onboarding team/);
   assert.match(websiteLead.websiteContactMessage, /https:\/\/www\.flextail\.com\//);
@@ -492,6 +494,44 @@ test('Google discovery preserves LinkedIn information while creating executable 
   assert.ok(websiteLead.alternateChannels.instagram);
   assert.ok(websiteLead.alternateChannels.facebook);
   assert.ok(websiteLead.alternateChannels.linkedin);
+});
+
+test('outreach subjects position global distributor and representation recruitment by customer type', () => {
+  const agency = websiteContactSubject({
+    company: 'Yukon Trading Company',
+    customerType: 'sales_agency',
+    segment: 'outdoor specialty sales representative agency',
+  });
+  assert.equal(agency, 'FLEXTAIL global brand representation | Yukon Trading Company');
+  const distributor = websiteContactSubject({
+    company: "Cabela's",
+    customerType: 'key_account',
+    segment: 'outdoor retail distributor',
+  });
+  assert.equal(distributor, "FLEXTAIL global distribution partnership | Cabela's");
+  assert.doesNotMatch(agency, /retail partnership|2026 assortment/i);
+  assert.doesNotMatch(distributor, /retail partnership|2026 assortment/i);
+  assert.ok(mainSource.includes('Preserve this subject exactly'));
+  assert.ok(mainSource.includes('global distributor or brand-representation recruitment'));
+  assert.ok(optimizedPromptSource.includes('global channel-partner recruitment'));
+  assert.ok(optimizedPromptSource.includes('FLEXTAIL global brand representation | <Company>'));
+  assert.ok(optimizedPromptSource.includes('FLEXTAIL global distribution partnership | <Company>'));
+});
+
+test('Sales Navigator filtered buyer search supports resumable uncapped confirmed Connect execution', () => {
+  assert.ok(chromeDriverSource.includes("command === 'connect-linkedin-sales-search'"));
+  assert.ok(chromeDriverSource.includes('linkedin_sales_people_search_identity_mismatch'));
+  assert.ok(chromeDriverSource.includes('Number.MAX_SAFE_INTEGER'));
+  assert.ok(chromeDriverSource.includes('continuationRequired'));
+  assert.ok(chromeDriverSource.includes('45 * 60 * 1000'));
+  assert.ok(chromeDriverSource.includes('connection_requested_confirmed'));
+  assert.ok(chromeDriverSource.includes('linkedin_connect_confirmation_missing_no_replay'));
+  assert.ok(outreachPolicySource.includes('filtered Sales Navigator people search'));
+  assert.ok(outreachPolicySource.includes('complete email visibly exposed by LinkedIn'));
+  assert.ok(outreachPolicySource.includes('Do not impose an application-level numeric cap'));
+  assert.ok(optimizedPromptSource.includes('email_not_exposed'));
+  assert.ok(optimizedPromptSource.includes('LinkedIn visibly exposes the complete address'));
+  assert.ok(optimizedPromptSource.includes('A Connect request is engagement evidence only'));
 });
 
 test('Google discovery reroutes known broken Instagram links to alternate channels', () => {
@@ -2948,6 +2988,59 @@ test('final daily replenishment keeps only first-party verified agency emails', 
     assert.equal(row.externalVerificationStatus, 'official_supplier_email_verified');
     assert.match(row.evidenceUrl, /^https:\/\//);
   }
+});
+
+test('history dedupe matches renamed companies through the exact verified recipient', () => {
+  const historical = {
+    task_id: 'google-customer-northwest-road-reps-website-contact',
+    company: 'Northwest Road Reps',
+    status: 'sent_confirmed',
+    timestamp: '2026-08-13T02:15:03.349Z',
+    target_url: 'mailto:info@nwroadreps.com',
+    recipientEmail: 'info@nwroadreps.com',
+  };
+  const current = {
+    id: 'google-customer-nw-road-reps-website-contact',
+    company: 'NW Road Reps',
+    platform: 'email',
+    contactEmail: 'info@nwroadreps.com',
+  };
+  const history = dailyRunner.knownTouchIndex([historical], [], Date.now());
+  assert.ok(dailyRunner.companyLeadKeys(current).some(key => history.priorDeveloped.has(key)));
+});
+
+test('terminal delivery retires only the exact route while preserving alternate channels', () => {
+  const history = dailyRunner.knownTouchIndex([{
+    company: 'Example Agency',
+    status: 'bounced',
+    timestamp: '2026-08-20T02:00:00.000Z',
+    target_url: 'mailto:sales@example-agency.com',
+  }], [], Date.now());
+  assert.ok(dailyRunner.routeLeadKeys({ contactEmail: 'sales@example-agency.com' })
+    .some(key => history.routeBlocked.has(key)));
+  assert.equal(dailyRunner.routeLeadKeys({
+    platform: 'instagram',
+    url: 'https://www.instagram.com/exampleagency/',
+  }).some(key => history.routeBlocked.has(key)), false);
+});
+
+test('every send_unconfirmed result is a company-wide no-replay lock', () => {
+  const start = mainSource.indexOf('function historicalAutomationResultBlocksCompany');
+  const end = mainSource.indexOf('function exactSocialHandleMatchesCompany', start);
+  const source = mainSource.slice(start, end);
+  assert.ok(source.includes("if (result.status === 'send_unconfirmed') return true"));
+  assert.equal(source.includes('prior_send_unconfirmed_no_resend|sent_folder_record_missing'), false);
+});
+
+test('restored verified email can retry explicit pre-send composer and alternate-channel failures', () => {
+  assert.ok(mainSource.includes("'no_email_composer_opened'"));
+  assert.ok(mainSource.includes("'email_route_preserved_draft_no_reopen'"));
+  assert.ok(mainSource.includes('recoverableAlternateChannelPreSendFailure(item, result)'));
+  const start = mainSource.indexOf('function recoverableAlternateChannelPreSendFailure');
+  const end = mainSource.indexOf('function isFixedAlibabaRecipientVerifierFailure', start);
+  const source = mainSource.slice(start, end);
+  assert.match(source, /send_clicked\|physical_send\|submit_clicked\|message_sent\|customer_interaction\|persisted_after_reload/);
+  assert.match(source, /no_irreversible_action_performed/);
 });
 
 test('an exhausted email domain is excluded before it consumes the remaining execution slot', () => {

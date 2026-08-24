@@ -279,11 +279,13 @@ function dealProbabilityScore(task) {
 function channelPriorityScore(task) {
   const platform = String(task.platform || task.channel || '').trim().toLowerCase();
   const identity = `${task.id || ''} ${task.reason || ''} ${task.url || ''}`.toLowerCase();
-  if (platform === 'email') return 400;
-  if (platform === 'website_form' || /website-contact|official_website_contact_channel/.test(identity)) return 380;
-  if (platform === 'linkedin' || /linkedin/.test(identity)) return 340;
-  if (platform === 'facebook' || /facebook/.test(identity)) return 330;
-  if (platform === 'instagram' || /instagram/.test(identity)) return 320;
+  if (platform === 'email') return 500;
+  if (platform === 'linkedin' || /linkedin/.test(identity)) return 450;
+  if (platform === 'facebook' || /facebook/.test(identity)) return 440;
+  if (platform === 'instagram' || /instagram/.test(identity)) return 430;
+  // Website forms remain a safe fallback, but a first-party verified social
+  // target has a more deterministic visible send/confirmation surface.
+  if (platform === 'website_form' || /website-contact|official_website_contact_channel/.test(identity)) return 300;
   return 100;
 }
 
@@ -615,14 +617,42 @@ function leadKeys(item) {
 }
 
 function companyLeadKeys(item) {
+  const mailtoTarget = String(item.target_url || item.targetUrl || item.url || '').match(/^mailto:([^?]+)/i);
   return [
     item.id,
     item.task_id,
     leadFamilyKey(item.id || item.task_id),
     item.name,
     item.company,
+    item.recipientEmail,
+    item.contactEmail,
+    item.publicEmail,
+    mailtoTarget && mailtoTarget[1],
     hostnameKey(item.website || item.url || item.target_url),
   ].map(cleanKey).filter(Boolean);
+}
+
+function routeLeadKeys(item = {}) {
+  const keys = [];
+  const emailValues = [item.recipientEmail, item.contactEmail, item.publicEmail];
+  const target = String(item.target_url || item.targetUrl || item.url || item.contactUrl || item.platformUrl || '').trim();
+  const mailto = target.match(/^mailto:([^?]+)/i);
+  if (mailto) emailValues.push(mailto[1]);
+  for (const value of emailValues) {
+    const email = String(value || '').trim().toLowerCase();
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) keys.push(`email:recipient:${email}`);
+  }
+  try {
+    const parsed = new URL(target);
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+    if (/^(linkedin|facebook|instagram)\.com$/.test(host)) {
+      const path = parsed.pathname.replace(/\/+$/, '').toLowerCase();
+      if (path) keys.push(`social:${host}:${path}`);
+    } else if (host) {
+      keys.push(`website:${host}`);
+    }
+  } catch {}
+  return [...new Set(keys.map(cleanKey).filter(Boolean))];
 }
 
 function knownTouchIndex(results, contacts, now = Date.now()) {
@@ -635,8 +665,12 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
   const priorDevelopedDetails = new Map();
   const sameDayDeveloped = new Set();
   const sameDayDetails = new Map();
+  const routeBlocked = new Set();
   const partners = new Set([...PARTNER_COMPANIES].flatMap(partnerCompanyKeys));
   for (const result of results || []) {
+    if (['sent_confirmed', 'submitted_confirmed', 'send_unconfirmed', 'bounced', 'failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))) {
+      routeLeadKeys(result).forEach(key => routeBlocked.add(key));
+    }
     if (isHistoricalDevelopmentResult(result)) {
       for (const key of companyLeadKeys(result)) {
         priorDeveloped.add(key);
@@ -717,6 +751,7 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
     priorDevelopedDetails,
     sameDayDeveloped,
     sameDayDetails,
+    routeBlocked,
     partners,
   };
 }
@@ -1027,8 +1062,8 @@ function writeSystemVisibilityArtifact(run) {
     },
     dailyQueueGoal: dailyQueueGoalVisibility(run.summary || {}),
   };
-  fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
-  fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.js'), `window.SYSTEM_VISIBILITY_LATEST = ${JSON.stringify(visibility, null, 2)};\n`);
+  writeFileWithRetry(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
+  writeFileWithRetry(path.join(ROOT, 'system-visibility-latest.js'), `window.SYSTEM_VISIBILITY_LATEST = ${JSON.stringify(visibility, null, 2)};\n`);
   [
     'daily-automation-latest.json',
     'daily-automation-latest.js',
@@ -1370,6 +1405,10 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
   const seen = new Set();
   const deduped = [...currentPlan, ...embedded, ...discovered]
     .filter(isActivePotentialCandidate)
+    // Keep discovery capacity aligned with the executor. A terminal result
+    // retires only its exact email recipient / official website / social
+    // profile route; another independently verified channel remains eligible.
+    .filter(item => !routeLeadKeys(item).some(key => history.routeBlocked.has(key)))
     // When the same official host is present in a stale plan/table row and a
     // freshly enriched discovery row, preserve the live first-party verified
     // route. Otherwise the earlier unverified row masks a usable email/form.
@@ -1436,6 +1475,7 @@ function channelReadinessSummary(items = [], history = null) {
       historySetHasCompany(history.sameDayDeveloped)
       || historySetHasCompany(history.priorDeveloped)
       || historySetHasCompany(history.activeCooldown)
+      || routeLeadKeys(item).some(key => history.routeBlocked && history.routeBlocked.has(key))
     ));
     if (readiness.ready === true && !historicallyBlocked) {
       row.ready = true;
@@ -1700,6 +1740,7 @@ module.exports = {
   automationRunDate,
   channelPriorityScore,
   companyLeadKeys,
+  routeLeadKeys,
   isActivePotentialCandidate,
   isKnownPartnerCompany,
   isHistoricalDevelopmentResult,

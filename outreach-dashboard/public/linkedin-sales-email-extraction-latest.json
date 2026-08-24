@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "runDateShanghai": "2026-08-24",
+  "source": "https://www.linkedin.com/sales/search/people?sessionId=Bu1UlugwSwOqp8XwDuzYUA%3D%3D&sharedSearchId=1606763395%2CPEOPLE_SEARCH_SHARE%2C5960506324",
+  "browser": {
+    "isolatedChromeCdpPort": 9224,
+    "primaryChromeTouched": false
+  },
+  "observedResultCount": "1.5K+",
+  "pagesInspected": [1, 2],
+  "detailProfilesInspected": [
+    {
+      "name": "Stacy Krohn",
+      "title": "Senior Buyer- Womens, Youth Outerwear & Outdoor Apparel",
+      "company": "DICK'S Sporting Goods",
+      "publicEmail": null,
+      "contactInfoVisible": false,
+      "connectionEvidence": "Connection sent: 8/24/2026"
+    }
+  ],
+  "resultPagePublicEmails": [],
+  "verifiedEmailCount": 0,
+  "emailOutreachSentConfirmed": 0,
+  "status": "no_public_email_exposed",
+  "evidence": "Sales Navigator search pages and the complete visible Stacy Krohn detail panel contained no email address, mailto link, or Contact info control. No email was guessed and no Alibaba Mail message was sent.",
+  "continuation": "Continue from saved queue only when LinkedIn visibly exposes an email or another first-party source verifies an exact official recipient."
+}
