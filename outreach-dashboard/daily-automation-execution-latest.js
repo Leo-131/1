@@ -941,14 +941,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
-    "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "ok": true,
+    "reason": "bounce_scan_complete",
+    "scanned": 26,
+    "updated": 1,
+    "senderIdentityFailures": 5,
+    "historicalSenderIdentityFailures": 9,
+    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
   },
-  "completedAt": "2026-08-24T13:06:57.249Z"
+  "completedAt": "2026-08-24T13:07:28.106Z"
 };
