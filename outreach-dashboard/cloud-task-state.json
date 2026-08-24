@@ -50,9 +50,9 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "8f90fe25c59f3cb5391c85cb249ba943b532c7bc",
-    "upstreamHead": "570d7c9ff4738a25c0ed20c1f06c78c049f8decd",
-    "remoteHead": "570d7c9ff4738a25c0ed20c1f06c78c049f8decd"
+  "localHead": "8f90fe25c59f3cb5391c85cb249ba943b532c7bc",
+  "upstreamHead": "570d7c9ff4738a25c0ed20c1f06c78c049f8decd",
+  "remoteHead": "570d7c9ff4738a25c0ed20c1f06c78c049f8decd"
   },
   "latestExecution": {
     "completedAt": "2026-08-24T12:55:56.779Z",
