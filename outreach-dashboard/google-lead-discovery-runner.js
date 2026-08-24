@@ -1511,7 +1511,17 @@ function slug(value) {
 }
 
 function websiteContactSubject(item) {
-  return 'FLEXTAIL retail partnership | 2026 assortment';
+  const company = String(item && (item.company || item.name) || '').replace(/\s+/g, ' ').trim();
+  const context = [item && item.customerType, item && item.segment, item && item.role, item && item.keyword, item && item.background]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+  const partnership = /sales[_ -]?agency|representative|representation|manufacturer.?s rep|brand agency/.test(context)
+    ? 'global brand representation'
+    : /distribut|import|wholesale|retail|key[_ -]?account|buyer|vendor/.test(context)
+      ? 'global distribution partnership'
+      : 'global distribution & representation partnership';
+  return `FLEXTAIL ${partnership}${company ? ` | ${company}` : ''}`;
 }
 
 function legacyMarketingEmailSignature() {
@@ -1870,4 +1880,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { buildDiscoveryRun, buildLeads };
+module.exports = { buildDiscoveryRun, buildLeads, websiteContactSubject };

@@ -78,7 +78,10 @@ function absoluteLinks(html, pageUrl) {
 // the customer and must never become outreach targets.
 function isTemplateVendorSocialUrl(value) {
   const normalized = String(value || '').toLowerCase();
-  return /(?:facebook\.com\/(?:themefusion|avada)|instagram\.com\/(?:themefusion|avada)|linkedin\.com\/(?:company|in)\/(?:themefusion|avada))(?:[-/?#]|$)/i.test(normalized);
+  // Site-builder footer credits frequently link to the builder's own social
+  // account. Those are not customer-owned channels even though the link is
+  // present on the first-party page.
+  return /(?:facebook\.com\/(?:themefusion|avada|wix|squarespace)|instagram\.com\/(?:themefusion|avada|wix|squarespace)|linkedin\.com\/(?:company|in)\/(?:themefusion|avada|wix-com|squarespace))(?:[-/?#]|$)/i.test(normalized);
 }
 
 function inspectOfficialPage(html, pageUrl) {
