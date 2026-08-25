@@ -2323,12 +2323,18 @@ test('website pre-send failures continue to first-party verified social instead 
   assert.match(mainSource, /send_unconfirmed\|submit_unconfirmed[\s\S]*customer_interaction\|message_sent/);
 });
 
-test('a social task that already fell back to an unreachable website cannot reselect itself', () => {
+test('a social task only bypasses its website failure after a verified target-route change', () => {
   const start = mainSource.indexOf('function verifiedSocialCanBypassWebsitePreSendBlock');
   const end = mainSource.indexOf('function developmentPriorityCompare', start);
   const block = mainSource.slice(start, end);
   assert.ok(block.includes("blockTaskId === String(item.id || item.taskId || '')"));
   assert.ok(block.includes('blockedPlatform === itemPlatform'));
+  assert.ok(block.includes('verifiedSocialRouteChangedAfterWebsitePreSendFailure(item, block)'));
+  assert.ok(mainSource.includes('function verifiedSocialRouteChangedAfterWebsitePreSendFailure'));
+  assert.ok(mainSource.includes('function socialTargetIdentifiesCompany'));
+  assert.ok(mainSource.includes('if (!socialTargetIdentifiesCompany(item)) return false'));
+  assert.match(mainSource, /currentTarget === failedTarget/);
+  assert.match(mainSource, /send_unconfirmed\|submit_unconfirmed[\s\S]*customer_interaction\|message_sent\|draft_inserted/);
 });
 
 test('queue readiness rejects personal-domain email even when discovery labels it official', () => {

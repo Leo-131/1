@@ -367,6 +367,41 @@ function exactSocialHandleMatchesCompany(item = {}) {
   }
 }
 
+function socialTargetIdentifiesCompany(item = {}) {
+  if (exactSocialHandleMatchesCompany(item)) return true;
+  const companyKey = canonicalLeadKey(item.company || item.name || '');
+  const ownerKey = canonicalLeadKey(item.socialProfileOwnerCompany || '');
+  if (companyKey && ownerKey && (companyKey.includes(ownerKey) || ownerKey.includes(companyKey))) return true;
+  const candidate = item.url || item.platformUrl || item.verifiedTargetUrl || item.targetUrl || '';
+  try {
+    const url = new URL(String(candidate));
+    if (!/(?:^|\.)linkedin\.com$/i.test(url.hostname)) return false;
+    const match = url.pathname.match(/^\/company\/([^/?#]+)/i);
+    if (!match) return false;
+    const slugKey = canonicalLeadKey(match[1]);
+    return companyKey.length >= 4 && slugKey.length >= 4
+      && (companyKey.includes(slugKey) || slugKey.includes(companyKey));
+  } catch {
+    return false;
+  }
+}
+
+function verifiedSocialRouteChangedAfterWebsitePreSendFailure(item = {}, result = {}) {
+  if (!isSocialQueueItem(item) || item.officialSocialProfileVerified !== true) return false;
+  if (!socialTargetIdentifiesCompany(item)) return false;
+  if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(result.status || ''))) return false;
+  const currentTarget = canonicalExactAutomationKey(
+    item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl,
+  );
+  const failedTarget = canonicalExactAutomationKey(
+    result.target_url || result.targetUrl || result.url,
+  );
+  if (!currentTarget || !failedTarget || currentTarget === failedTarget) return false;
+  if (!/(?:linkedin|facebook|instagram)\.com/i.test(currentTarget)) return false;
+  const evidence = String(result.evidence || '');
+  return !/send_unconfirmed|submit_unconfirmed|send_physical_click|submit_physical_click|send_clicked|customer_interaction|message_sent|draft_inserted/i.test(evidence);
+}
+
 function blockingAutomationResultFor(item) {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const ledgerResults = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
@@ -434,6 +469,7 @@ function blockingAutomationResultFor(item) {
   const sameDayExactTerminalAttempt = results.find(result => result
     && ['failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))
     && isSameAutomationDay(result.timestamp)
+    && !verifiedSocialRouteChangedAfterWebsitePreSendFailure(item, result)
     && [result.id, result.taskId, result.task_id].filter(Boolean).some(id => itemTaskIds.has(String(id))));
   if (sameDayExactTerminalAttempt) {
     return {
@@ -4392,13 +4428,16 @@ function verifiedSocialCanBypassWebsitePreSendBlock(item = {}, block = null) {
   if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(block.status || ''))) return false;
   // If a social task already fell back to an unreachable website, that result
   // must not make the original social task executable again on every run. The
-  // bypass is only for a distinct verified social route discovered after a
-  // website-only attempt, never the same task or the same social platform.
+  // Bypass is only for a distinct, company-matching verified social target
+  // discovered after a website-only attempt. Stable task IDs may survive that
+  // channel promotion, so compare the target route as well as the task ID.
   const blockTaskId = String(block.task_id || block.taskId || block.id || '');
-  if (blockTaskId && blockTaskId === String(item.id || item.taskId || '')) return false;
+  if (blockTaskId && blockTaskId === String(item.id || item.taskId || '')
+    && !verifiedSocialRouteChangedAfterWebsitePreSendFailure(item, block)) return false;
   const blockedPlatform = automationPlatformFor(block);
   const itemPlatform = automationPlatformFor(item);
-  if (blockedPlatform && itemPlatform && blockedPlatform === itemPlatform) return false;
+  if (blockedPlatform && itemPlatform && blockedPlatform === itemPlatform
+    && !verifiedSocialRouteChangedAfterWebsitePreSendFailure(item, block)) return false;
   const evidence = String(block.evidence || '');
   return !/send_unconfirmed|submit_unconfirmed|send_physical_click|submit_physical_click|send_clicked|customer_interaction|message_sent/i.test(evidence);
 }
