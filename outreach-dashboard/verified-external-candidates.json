@@ -3193,5 +3193,25 @@
     "dataSources": ["official agency website", "official company-domain principal email"],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-25T12:46:00.000Z"
+  },
+  {
+    "company": "Compass Brands",
+    "country": "United Kingdom",
+    "url": "https://www.compassbrands.co.uk/",
+    "contactUrl": "https://www.compassbrands.co.uk/about",
+    "publicEmail": "tomas@compassbrands.co.uk",
+    "contactEmail": "tomas@compassbrands.co.uk",
+    "publicEmailStatus": "Named company-domain Sales and Operations email published on the first-party about page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_principal_contact",
+    "segment": "United Kingdom outdoor brand wholesale and sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 91,
+    "background": "Compass Brands builds outdoor-brand awareness and sales across the UK and Ireland through wholesale, trade and retail-channel execution.",
+    "buyerPersona": "Sales and Operations principal responsible for new outdoor brands.",
+    "evidenceUrl": "https://www.compassbrands.co.uk/about",
+    "dataSources": ["official agency about page", "official company-domain sales and operations email"],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-25T12:58:00.000Z"
   }
 ]
