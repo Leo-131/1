@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": false,
+  "ok": true,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -8,10 +8,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "chromeStage": "opened",
   "chromeOpened": true,
   "chromeOpenedCount": 2,
-  "customerDevelopmentPerformed": false,
-  "customerMessageSent": false,
-  "realDevelopmentCount": 0,
-  "reportingVerdict": "no_customer_development_performed",
+  "customerDevelopmentPerformed": true,
+  "customerMessageSent": true,
+  "realDevelopmentCount": 2,
+  "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -21,59 +21,69 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-mcqueen-ball-linkedin",
-      "company": "McQueen Ball",
-      "action": "develop",
-      "platform": "linkedin",
-      "targetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-25T14:31:56.352Z",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://mcqueen-ball.com/help/contact-us",
-        "tabId": "BA7D44C2EF2F7061680A47826C3965A4",
-        "title": "Page not found - McQueen Ball",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage"
-      },
+      "id": "google-customer-patriot-outdoors-south-africa-website-contact",
+      "company": "Patriot Outdoors South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://patriot-outdoors.com/contact-us/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-25T14:37:43.883Z",
+      "chromeOpen": null,
       "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://mcqueen-ball.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://mcqueen-ball.com/help/contact-us",
-          "tabId": "BA7D44C2EF2F7061680A47826C3965A4",
-          "title": "Page not found - McQueen Ball",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage"
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "keenan@patriot-outdoors.com",
+        "targetUrl": "mailto:keenan@patriot-outdoors.com",
+        "subject": "FLEXTAIL global brand representation | Patriot Outdoors South Africa",
+        "draft": "Dear Patriot Outdoors South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 111
         },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | McQueen Ball",
-        "draft": "Dear McQueen Ball Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | McQueen Ball\",\"draft\":\"Dear McQueen Ball Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://mcqueen-ball.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://mcqueen-ball.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage\"},{\"targetUrl\":\"https://mcqueen-ball.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://mcqueen-ball.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage\"},{\"targetUrl\":\"https://mcqueen-ball.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://mcqueen-ball.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.linkedin.com/in/brad-mcqueen-968a60294/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_McQueen Ball_title_\"}",
-        "fallbackFrom": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 92,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi McQueen Ball team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Northeastern US outdoor and lifestyle sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"keenan@patriot-outdoors.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-lowrance-south-africa-distribution-website-contact",
+      "company": "Lowrance South Africa Distribution",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://lowrance.co.za/contact-us/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-25T14:38:08.428Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "sales@lowrance.co.za",
+        "targetUrl": "mailto:sales@lowrance.co.za",
+        "subject": "FLEXTAIL global brand representation | Lowrance South Africa Distribution",
+        "draft": "Dear Lowrance South Africa Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 111
         },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@lowrance.co.za\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
     {
@@ -85,110 +95,79 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-25T14:31:58.996Z",
+      "timestamp": "2026-08-25T14:38:11.051Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "error": "Facebook outreach requires an exact verified page/profile URL"
-      }
-    },
-    {
-      "id": "google-customer-1889-sales-website-contact",
-      "company": "1889 Sales",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://1889sales.com/contact.html",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-      "timestamp": "2026-08-25T14:32:30.461Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://1889sales.com/help/contact-us",
-        "tabId": "060DD0ED124D3655E1D78D6F58FD39A3",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/060DD0ED124D3655E1D78D6F58FD39A3",
-        "title": "This Page Does Not Exist"
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://1889sales.com/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://1889sales.com/help/contact-us",
-          "tabId": "060DD0ED124D3655E1D78D6F58FD39A3",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/060DD0ED124D3655E1D78D6F58FD39A3",
-          "title": "This Page Does Not Exist"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | 1889 Sales",
-        "draft": "Dear 1889 Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global brand representation | 1889 Sales\",\"draft\":\"Dear 1889 Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://1889sales.com/contact.html\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-mcqueen-ball-linkedin",
-      "company": "McQueen Ball",
-      "action": "develop",
-      "platform": "linkedin",
-      "targetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-25T14:31:56.352Z",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://mcqueen-ball.com/help/contact-us",
-        "tabId": "BA7D44C2EF2F7061680A47826C3965A4",
-        "title": "Page not found - McQueen Ball",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage"
-      },
+      "id": "google-customer-patriot-outdoors-south-africa-website-contact",
+      "company": "Patriot Outdoors South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://patriot-outdoors.com/contact-us/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-25T14:37:43.883Z",
+      "chromeOpen": null,
       "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://mcqueen-ball.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://mcqueen-ball.com/help/contact-us",
-          "tabId": "BA7D44C2EF2F7061680A47826C3965A4",
-          "title": "Page not found - McQueen Ball",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage"
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "keenan@patriot-outdoors.com",
+        "targetUrl": "mailto:keenan@patriot-outdoors.com",
+        "subject": "FLEXTAIL global brand representation | Patriot Outdoors South Africa",
+        "draft": "Dear Patriot Outdoors South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 111
         },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | McQueen Ball",
-        "draft": "Dear McQueen Ball Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Ooops... Error 404\nWe are sorry, but the page you are looking for does not exist.\n\nPlease check entered address and try again or go to homepage;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | McQueen Ball\",\"draft\":\"Dear McQueen Ball Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://mcqueen-ball.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://mcqueen-ball.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage\"},{\"targetUrl\":\"https://mcqueen-ball.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://mcqueen-ball.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage\"},{\"targetUrl\":\"https://mcqueen-ball.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://mcqueen-ball.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Ooops... Error 404\\nWe are sorry, but the page you are looking for does not exist.\\n\\nPlease check entered address and try again or go to homepage\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.linkedin.com/in/brad-mcqueen-968a60294/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_McQueen Ball_title_\"}",
-        "fallbackFrom": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 92,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi McQueen Ball team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Northeastern US outdoor and lifestyle sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"keenan@patriot-outdoors.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-lowrance-south-africa-distribution-website-contact",
+      "company": "Lowrance South Africa Distribution",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://lowrance.co.za/contact-us/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-25T14:38:08.428Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "sales@lowrance.co.za",
+        "targetUrl": "mailto:sales@lowrance.co.za",
+        "subject": "FLEXTAIL global brand representation | Lowrance South Africa Distribution",
+        "draft": "Dear Lowrance South Africa Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 111
         },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@lowrance.co.za\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
     {
@@ -200,52 +179,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-25T14:31:58.996Z",
+      "timestamp": "2026-08-25T14:38:11.051Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "error": "Facebook outreach requires an exact verified page/profile URL"
-      }
-    },
-    {
-      "id": "google-customer-1889-sales-website-contact",
-      "company": "1889 Sales",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://1889sales.com/contact.html",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-      "timestamp": "2026-08-25T14:32:30.461Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://1889sales.com/help/contact-us",
-        "tabId": "060DD0ED124D3655E1D78D6F58FD39A3",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/060DD0ED124D3655E1D78D6F58FD39A3",
-        "title": "This Page Does Not Exist"
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://1889sales.com/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://1889sales.com/help/contact-us",
-          "tabId": "060DD0ED124D3655E1D78D6F58FD39A3",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/060DD0ED124D3655E1D78D6F58FD39A3",
-          "title": "This Page Does Not Exist"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | 1889 Sales",
-        "draft": "Dear 1889 Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global brand representation | 1889 Sales\",\"draft\":\"Dear 1889 Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://1889sales.com/contact.html\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://1889sales.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
@@ -300,13 +238,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-minnis-brands-linkedin",
       "company": "Minnis Brands",
       "action": "develop",
@@ -328,11 +259,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-esprinet-group-linkedin",
-      "company": "Esprinet Group",
+      "id": "google-customer-mcqueen-ball-linkedin",
+      "company": "McQueen Ball",
       "action": "develop",
       "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-next-adventure-linkedin",
@@ -475,20 +406,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-intersport-norway-facebook",
-      "company": "Intersport Norway",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-minnis-brands-instagram",
       "company": "Minnis Brands",
       "action": "develop",
@@ -601,22 +518,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -652,6 +555,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-activ-agency-denver-website-contact",
       "company": "Activ Agency Denver",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-1889-sales-website-contact",
+      "company": "1889 Sales",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -748,6 +658,41 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
+      "company": "Terra Outdoor Gear Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-wire-to-wire-partners-website-contact",
+      "company": "Wire to Wire Partners",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-action-sports-agency-website-contact",
+      "company": "Action Sports Agency",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ken-jefferies-associates-website-contact",
+      "company": "Ken Jefferies & Associates",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-alpinewaves-linkedin",
       "company": "AlpineWaves",
       "action": "develop",
@@ -757,6 +702,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-alpine-waves-linkedin",
       "company": "Alpine Waves",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-mcqueen-ball-linkedin",
+      "company": "McQueen Ball",
       "action": "develop",
       "platform": "linkedin",
       "reason": "official_website_social_channel_verified"
@@ -919,29 +871,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 47,
-    "dueNow": 74,
-    "visibleTodayQueue": 69,
-    "potentialPool": 27,
+    "readyToDevelop": 42,
+    "dueNow": 73,
+    "visibleTodayQueue": 71,
+    "potentialPool": 28,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 73,
-    "executableCompanies": 18,
+    "refillNeeded": 72,
+    "executableCompanies": 19,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 112,
+    "executableReserveNeeded": 111,
     "executableByChannel": {
       "linkedin": 4,
       "facebook": 9,
       "instagram": 4,
-      "website_form": 1
+      "email": 2
     },
     "verifiedSocialCompanies": 17,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 3,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 74,
-    "facebookDiscovered": 22,
-    "websiteContactDiscovered": 8,
+    "googleDiscovered": 73,
+    "facebookDiscovered": 20,
+    "websiteContactDiscovered": 7,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -954,17 +906,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 43
+      "count": 45
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 14
+      "count": 18
     },
     {
       "reason": "social_profile_not_first_party_verified",
       "status": "skipped",
-      "count": 13
+      "count": 9
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -974,12 +926,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 8
+      "count": 7
     },
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 4
+      "count": 6
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -987,9 +939,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "status": "skipped",
-      "count": 1
+      "reason": "sent_folder_message_confirmed",
+      "status": "sent_confirmed",
+      "count": 2
     },
     {
       "reason": "verified_linkedin_profile_ready",
@@ -998,22 +950,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "official_website_social_channel_verified": 43,
-    "homepage_only_contact_path_requires_verification": 14,
-    "social_profile_not_first_party_verified": 13,
+    "official_website_social_channel_verified": 45,
+    "homepage_only_contact_path_requires_verification": 18,
+    "social_profile_not_first_party_verified": 9,
     "website_contact_capability_not_verified": 9,
-    "official_public_business_email_verified": 8,
-    "official_website_contact_channel": 4,
+    "official_public_business_email_verified": 7,
+    "official_website_contact_channel": 6,
     "concrete_google_discovered_major_customer_instagram": 2,
-    "concrete_google_discovered_major_customer_facebook": 1,
+    "sent_folder_message_confirmed": 2,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 27,
-    "queueCount": 74,
-    "googleDiscovered": 74,
-    "refillNeeded": 73,
+    "potentialPool": 28,
+    "queueCount": 73,
+    "googleDiscovered": 73,
+    "refillNeeded": 72,
     "confirmedToday": 26,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -1026,17 +978,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (43); homepage_only_contact_path_requires_verification (14); social_profile_not_first_party_verified (13).",
-  "recoveryHint": "Refill the high-ICP pool with 73 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (45); homepage_only_contact_path_requires_verification (18); social_profile_not_first_party_verified (9).",
+  "recoveryHint": "Refill the high-ICP pool with 72 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 73 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 73 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 72 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 72 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 27,
-      "refillNeeded": 73
+      "potentialPool": 28,
+      "refillNeeded": 72
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1051,12 +1003,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-25T14:32:34.861Z",
+      "updatedAt": "2026-08-25T14:38:15.971Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-25",
-      "artifactGeneratedAt": "2026-08-25T14:32:31.751Z",
-      "executionGeneratedAt": "2026-08-25T14:25:47.301Z",
-      "githubSyncUpdatedAt": "2026-08-25T14:26:41.255Z",
+      "artifactGeneratedAt": "2026-08-25T14:38:12.438Z",
+      "executionGeneratedAt": "2026-08-25T14:32:35.453Z",
+      "githubSyncUpdatedAt": "2026-08-25T14:33:21.678Z",
       "counts": {
         "dailyQueue": 73,
         "googleDiscovered": 73,
@@ -1124,7 +1076,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 0,
+  "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-25T14:32:35.453Z"
+  "completedAt": "2026-08-25T14:38:16.862Z"
 };
