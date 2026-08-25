@@ -378,10 +378,11 @@ function syncOnce() {
   }
   const message = `sync: local outreach data ${latestDate}`;
   git(['commit', '-m', message], { stdio: 'inherit' });
+  let localCommit = git(['rev-parse', 'HEAD']);
   if (PUSH) {
     try {
       remoteCommit = integrateRemoteBranch(branch) || remoteCommit;
-      const localCommit = git(['rev-parse', 'HEAD']);
+      localCommit = git(['rev-parse', 'HEAD']);
       git(['push', 'origin', branch], { stdio: 'inherit' });
       writeSyncStatus({ ok: true, pushed: true, branch, localCommit, remoteCommit: localCommit, message });
       commitAndPushStatus(branch, latestDate);
@@ -398,7 +399,6 @@ function syncOnce() {
       throw error;
     }
   } else {
-    const localCommit = git(['rev-parse', 'HEAD']);
     writeSyncStatus({ ok: true, pushed: false, branch, localCommit, remoteCommit, message: `${message} (no push)` });
   }
   console.log(`github sync: ${message}`);
