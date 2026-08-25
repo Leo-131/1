@@ -390,6 +390,12 @@ function verifiedSocialRouteChangedAfterWebsitePreSendFailure(item = {}, result 
   if (!isSocialQueueItem(item) || item.officialSocialProfileVerified !== true) return false;
   if (!socialTargetIdentifiesCompany(item)) return false;
   if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(result.status || ''))) return false;
+  const itemTaskIds = new Set([item.id, item.taskId, item.task_id].filter(Boolean).map(String));
+  const resultTaskIds = [result.id, result.taskId, result.task_id].filter(Boolean).map(String);
+  // A website fallback produced by this exact social task is still the same
+  // attempt. Do not mistake the fallback URL for newly discovered social
+  // evidence and replay the same company indefinitely.
+  if (resultTaskIds.some(id => itemTaskIds.has(id))) return false;
   const currentTarget = canonicalExactAutomationKey(
     item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl,
   );

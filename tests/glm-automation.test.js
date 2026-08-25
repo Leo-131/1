@@ -1700,6 +1700,7 @@ test('recoverable social composer failures fall back across verified channels wi
   assert.ok(mainSource.includes("['email', cameFromWebsiteSocialFallback ? '' : (channels.websiteContact || lead.contactUrl || lead.website)]"));
   assert.ok(mainSource.includes('cameFromWebsiteSocialFallback'));
   assert.ok(mainSource.includes('if (!blockingAutomationResultFor(fallback)) return fallback'));
+  assert.ok(mainSource.includes('if (resultTaskIds.some(id => itemTaskIds.has(id))) return false'));
   assert.ok(mainSource.includes('fallbackPlatform: alternateFallback.platform'));
   assert.ok(mainSource.includes('driver_timeout_bounded:80000'));
   assert.ok(mainSource.includes('fallbackDepth < 3'));
@@ -2885,15 +2886,15 @@ test('discovery ignores likes and follows while preserving confirmed DM protecti
   assert.ok(history.sentConfirmed.has('bever'));
 });
 
-test('US, UK, and South Africa receive only the configured safe-priority bonus', () => {
+test('US, Canada, UK, and South Africa receive only the configured safe-priority bonus', () => {
   assert.equal(dailyRunner.preferredCountryScore({ country: 'United States' }), 30);
   assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'United Kingdom' }), 30);
   assert.equal(dailyRunner.preferredCountryScore({ country: 'South Africa' }), 30);
-  assert.equal(dailyRunner.preferredCountryScore({ country: 'Canada' }), 0);
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'Canada' }), 30);
 });
 
-test('campaign scope includes US, UK, and South Africa large key accounts and brand agencies but excludes other markets', () => {
-  assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'united kingdom', 'south africa']);
+test('campaign scope includes US, Canada, UK, and South Africa large key accounts and brand agencies but excludes other markets', () => {
+  assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'canada', 'united kingdom', 'south africa']);
   assert.deepEqual(dailyConfig.campaignScope.requiredCustomerTypes, ['sales_agency', 'key_account']);
   assert.ok(dailyRunnerSource.includes('function campaignScopeMatches'));
   assert.match(dailyRunnerSource, /\.filter\(campaignScopeMatches\)/);

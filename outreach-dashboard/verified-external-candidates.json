@@ -2953,5 +2953,45 @@
   },
   {
     "company": "Yukon Trading Company", "country": "United States", "url": "https://www.yukontradingcompany.com/", "contactUrl": "https://www.yukontradingcompany.com/contact", "publicEmail": "Office@yukontradingcompany.com", "contactEmail": "Office@yukontradingcompany.com", "publicEmailStatus": "Official company-domain office email published on the first-party contact page.", "emailVerificationStatus": "official_public_business_email", "emailEvidence": "official_office_contact", "segment": "Pacific Northwest outdoor specialty sales representative agency", "customerType": "sales_agency", "fitScore": 95, "background": "Yukon Trading Company is an outdoor-specific sales representative agency serving specialty retailers across the Pacific Northwest and representing top-tier outdoor brands.", "buyerPersona": "Agency leadership responsible for adding new represented outdoor brands.", "evidenceUrl": "https://www.yukontradingcompany.com/contact", "dataSources": ["official agency contact page", "official company-domain office email"], "externalVerificationStatus": "official_supplier_email_verified", "verifiedAt": "2026-08-21T13:45:00.000Z"
+  },
+  {
+    "company": "RMT & Company",
+    "country": "Canada",
+    "url": "https://rmtcompany.ca/",
+    "contactUrl": "https://rmtcompany.ca/",
+    "publicEmail": "robert@rmtcompany.ca",
+    "contactEmail": "robert@rmtcompany.ca",
+    "publicEmailStatus": "Named company-domain email published on the first-party independent sales agency homepage.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_principal_contact",
+    "segment": "British Columbia performance sports and outdoor sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 89,
+    "background": "RMT & Company provides wholesale representation for performance, running, cycling and outdoor brands to British Columbia retailers.",
+    "buyerPersona": "Agency principal responsible for new represented brands.",
+    "evidenceUrl": "https://rmtcompany.ca/",
+    "dataSources": ["official agency website", "official company-domain principal email"],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-25T11:15:00.000Z"
+  },
+  {
+    "company": "Paradice Trading",
+    "country": "Canada",
+    "url": "https://paradicetrading.com/",
+    "contactUrl": "https://paradicetrading.com/",
+    "publicEmail": "Reed@ParadiceTrading.com",
+    "contactEmail": "Reed@ParadiceTrading.com",
+    "publicEmailStatus": "Named company-domain email published in the first-party sales-agency contact section.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_principal_contact",
+    "segment": "Western Canada outdoor and action-sports sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 91,
+    "background": "Paradice Trading provides wholesale sales, marketing and retailer development for outdoor, snowboard and action-sports brands across Western Canada.",
+    "buyerPersona": "Agency leadership responsible for new represented brands.",
+    "evidenceUrl": "https://paradicetrading.com/",
+    "dataSources": ["official agency website", "official company-domain contact email"],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-25T11:15:00.000Z"
   }
 ]
