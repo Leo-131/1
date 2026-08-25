@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T13:05:55.319Z",
+  "generatedAt": "2026-08-25T13:17:02.498Z",
   "companies": [
     {
       "companyId": "company_402ccf121bb3b80c",
@@ -36,7 +36,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-25T11:44:15.456Z"
+          "checkedAt": "2026-08-25T13:16:34.430Z"
         },
         {
           "channel": "linkedin",
@@ -56,7 +56,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-25T11:44:15.456Z"
+          "checkedAt": "2026-08-25T13:16:34.430Z"
         },
         {
           "channel": "instagram",
@@ -106,7 +106,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-25T11:44:15.456Z"
+          "checkedAt": "2026-08-25T13:16:34.430Z"
         },
         {
           "channel": "linkedin",
@@ -116,7 +116,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-25T11:44:15.456Z"
+          "checkedAt": "2026-08-25T13:16:34.430Z"
         },
         {
           "channel": "research",
@@ -584,7 +584,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.motion-sports.co.uk/contact",
-          "checkedAt": "2026-08-24T11:48:21.878Z"
+          "checkedAt": "2026-08-25T13:16:43.659Z"
         },
         {
           "channel": "facebook",
@@ -594,7 +594,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.motion-sports.co.uk/contact",
-          "checkedAt": "2026-08-24T11:48:21.878Z"
+          "checkedAt": "2026-08-25T13:16:43.659Z"
         },
         {
           "channel": "instagram",
@@ -604,7 +604,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.motion-sports.co.uk/contact",
-          "checkedAt": "2026-08-24T11:48:21.878Z"
+          "checkedAt": "2026-08-25T13:16:43.659Z"
         },
         {
           "channel": "facebook",
@@ -614,7 +614,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.motion-sports.co.uk/contact",
-          "checkedAt": "2026-08-24T11:48:21.878Z"
+          "checkedAt": "2026-08-25T13:16:43.659Z"
         },
         {
           "channel": "website_form",
@@ -1078,7 +1078,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.brreps.com/",
-          "checkedAt": "2026-08-25T04:05:32.897Z"
+          "checkedAt": "2026-08-25T13:16:51.374Z"
         },
         {
           "channel": "facebook",
@@ -1088,7 +1088,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.brreps.com/",
-          "checkedAt": "2026-08-25T04:05:32.897Z"
+          "checkedAt": "2026-08-25T13:16:51.374Z"
         },
         {
           "channel": "instagram",
@@ -1098,7 +1098,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.brreps.com/",
-          "checkedAt": "2026-08-25T04:05:32.897Z"
+          "checkedAt": "2026-08-25T13:16:51.374Z"
         },
         {
           "channel": "facebook",
@@ -1108,7 +1108,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.brreps.com/",
-          "checkedAt": "2026-08-25T04:05:32.897Z"
+          "checkedAt": "2026-08-25T13:16:51.374Z"
         },
         {
           "channel": "website_form",
@@ -1178,7 +1178,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://owensoutdoorsales.com/",
-          "checkedAt": "2026-08-25T04:05:32.195Z"
+          "checkedAt": "2026-08-25T13:16:49.741Z"
         },
         {
           "channel": "facebook",
@@ -1188,7 +1188,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://owensoutdoorsales.com/",
-          "checkedAt": "2026-08-25T04:05:32.195Z"
+          "checkedAt": "2026-08-25T13:16:49.741Z"
         },
         {
           "channel": "facebook",
@@ -1198,7 +1198,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://owensoutdoorsales.com/",
-          "checkedAt": "2026-08-25T04:05:32.195Z"
+          "checkedAt": "2026-08-25T13:16:49.741Z"
         },
         {
           "channel": "instagram",
@@ -1208,7 +1208,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://owensoutdoorsales.com/",
-          "checkedAt": "2026-08-25T04:05:32.195Z"
+          "checkedAt": "2026-08-25T13:16:49.741Z"
         },
         {
           "channel": "website_form",
@@ -1863,6 +1863,158 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_a85c1950c0321637",
+      "company": "Ultimo Group South Africa",
+      "keys": [
+        "ultimogroupsouthafrica",
+        "ultimocoza"
+      ],
+      "domains": [
+        "ultimo.co.za"
+      ],
+      "channels": [
+        "email",
+        "facebook",
+        "instagram",
+        "linkedin"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultimo.co.za/about-us/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultimo.co.za/about-us/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultimo.co.za/about-us/",
+          "checkedAt": "2026-08-25T13:16:16.636Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultimo.co.za/about-us/",
+          "checkedAt": "2026-08-25T13:16:16.636Z"
+        },
+        {
+          "channel": "linkedin",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultimo.co.za/about-us/",
+          "checkedAt": "2026-08-25T13:16:16.636Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultimo.co.za/about-us/",
+          "checkedAt": "2026-08-25T13:25:00.000Z"
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_13a6e576723b2a45",
+      "company": "Naturehike South Africa",
+      "keys": [
+        "naturehikesouthafrica",
+        "naturehikecoza",
+        "naturehikeafrica"
+      ],
+      "domains": [
+        "naturehike.co.za",
+        "naturehike.africa"
+      ],
+      "channels": [
+        "email",
+        "facebook",
+        "instagram",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-25T13:16:18.261Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-25T13:16:18.261Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-25T13:25:00.000Z"
+        }
+      ],
+      "history": []
+    },
+    {
       "companyId": "company_4808b27ca40a0622",
       "company": "Shiner Distribution",
       "keys": [
@@ -2287,43 +2439,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "first_party_evidence"
           ],
           "evidenceUrl": "https://tinshack.ca/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_6f07636520905ff4",
-      "company": "GMD Wholesale",
-      "keys": [
-        "gmdwholesale",
-        "gmdwholesaleca"
-      ],
-      "domains": [
-        "gmdwholesale.ca"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://gmdwholesale.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://gmdwholesale.ca/",
           "checkedAt": ""
         }
       ],
@@ -2983,7 +3098,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-25T11:18:22.254Z"
+          "checkedAt": "2026-08-25T13:05:40.013Z"
         },
         {
           "channel": "email",
@@ -2993,7 +3108,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-25T11:18:22.254Z"
+          "checkedAt": "2026-08-25T13:05:40.013Z"
         },
         {
           "channel": "email",
@@ -3073,7 +3188,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-25T11:18:22.254Z"
+          "checkedAt": "2026-08-25T13:05:40.013Z"
         },
         {
           "channel": "facebook",
@@ -5146,97 +5261,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_1c916c28ed082463",
-      "company": "Outdoor Gear Canada",
-      "keys": [
-        "outdoorgearcanada",
-        "ogcca"
-      ],
-      "domains": [
-        "ogc.ca"
-      ],
-      "channels": [
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.ogc.ca/",
-          "checkedAt": "2026-08-25T12:47:42.021Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.ogc.ca/",
-          "checkedAt": "2026-08-25T12:47:42.021Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.ogc.ca/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-13T06:58:41.062Z",
-          "channel": "facebook",
-          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-14T02:33:16.669Z",
-          "channel": "facebook",
-          "evidence": "identity_check_pending_empty_page"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-17T10:14:14.129Z",
-          "channel": "facebook",
-          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-17T16:15:04.696Z",
-          "channel": "facebook",
-          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-18T16:14:32.634Z",
-          "channel": "facebook",
-          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-19T16:12:27.346Z",
-          "channel": "facebook",
-          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-20T16:10:07.935Z",
-          "channel": "facebook",
-          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_e4a228cde5d155b2",
       "company": "LD Mountain Centre",
       "keys": [
@@ -6366,7 +6390,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-25T13:05:13.087Z"
+          "checkedAt": "2026-08-25T13:16:14.769Z"
         },
         {
           "channel": "instagram",
@@ -6376,7 +6400,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-25T13:05:13.087Z"
+          "checkedAt": "2026-08-25T13:16:14.769Z"
         },
         {
           "channel": "website_form",
@@ -12561,7 +12585,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-25T11:44:15.698Z"
+          "checkedAt": "2026-08-25T13:16:35.089Z"
         },
         {
           "channel": "instagram",
@@ -12571,7 +12595,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-25T11:44:15.698Z"
+          "checkedAt": "2026-08-25T13:16:35.089Z"
         },
         {
           "channel": "linkedin",
@@ -12581,7 +12605,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-25T11:44:15.698Z"
+          "checkedAt": "2026-08-25T13:16:35.089Z"
         },
         {
           "channel": "research",
@@ -12837,7 +12861,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-25T13:05:12.208Z"
+          "checkedAt": "2026-08-25T13:16:13.853Z"
         },
         {
           "channel": "instagram",
@@ -12847,7 +12871,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-25T13:05:12.208Z"
+          "checkedAt": "2026-08-25T13:16:13.853Z"
         },
         {
           "channel": "website_form",
@@ -13111,7 +13135,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-25T13:05:30.009Z"
+          "checkedAt": "2026-08-25T13:16:10.586Z"
         },
         {
           "channel": "facebook",
@@ -13121,7 +13145,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-25T13:05:30.009Z"
+          "checkedAt": "2026-08-25T13:16:10.586Z"
         },
         {
           "channel": "email",
@@ -13372,7 +13396,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.twistdistribution.com/pages/contact",
-          "checkedAt": "2026-08-25T11:18:19.379Z"
+          "checkedAt": "2026-08-25T13:05:32.958Z"
         },
         {
           "channel": "facebook",
@@ -13382,7 +13406,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.twistdistribution.com/pages/contact",
-          "checkedAt": "2026-08-25T11:18:19.379Z"
+          "checkedAt": "2026-08-25T13:05:32.958Z"
         },
         {
           "channel": "email",
@@ -13392,7 +13416,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.twistdistribution.com/pages/contact",
-          "checkedAt": "2026-08-25T11:18:19.379Z"
+          "checkedAt": "2026-08-25T13:05:32.958Z"
         },
         {
           "channel": "website_form",
@@ -13448,7 +13472,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.mytrailhouse.com/",
-          "checkedAt": "2026-08-25T11:18:19.948Z"
+          "checkedAt": "2026-08-25T13:05:30.788Z"
         },
         {
           "channel": "research",
@@ -13914,7 +13938,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.blackrocks.net/",
-          "checkedAt": "2026-08-25T11:18:31.774Z"
+          "checkedAt": "2026-08-25T13:05:44.893Z"
         },
         {
           "channel": "research",
@@ -14047,7 +14071,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://maxtrack.com/",
-          "checkedAt": "2026-08-25T11:18:32.947Z"
+          "checkedAt": "2026-08-25T13:05:46.907Z"
         },
         {
           "channel": "research",
@@ -14161,7 +14185,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://theoutdooragencyireland.com/",
-          "checkedAt": "2026-08-25T11:43:55.964Z"
+          "checkedAt": "2026-08-25T13:05:48.271Z"
         },
         {
           "channel": "facebook",
@@ -15208,7 +15232,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://liteoptec.co.za/",
+          "evidenceUrl": "https://liteoptec.co.za/contact-us/",
           "checkedAt": ""
         },
         {
@@ -15453,7 +15477,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.somethingcleverpnw.com/",
-          "checkedAt": "2026-08-25T11:44:16.574Z"
+          "checkedAt": "2026-08-25T13:16:36.820Z"
         },
         {
           "channel": "email",
@@ -15511,7 +15535,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://advanced4x4.co.za/pages/outdoor",
-          "checkedAt": "2026-08-25T11:44:19.558Z"
+          "checkedAt": "2026-08-25T13:16:39.810Z"
         },
         {
           "channel": "facebook",
@@ -15521,7 +15545,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://advanced4x4.co.za/pages/outdoor",
-          "checkedAt": "2026-08-25T11:44:19.558Z"
+          "checkedAt": "2026-08-25T13:16:39.810Z"
         },
         {
           "channel": "email",
@@ -15578,7 +15602,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         },
         {
@@ -15589,7 +15613,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sail.ca/en/contact-us",
-          "checkedAt": "2026-08-20T10:05:32.126Z"
+          "checkedAt": "2026-08-25T13:16:38.934Z"
         },
         {
           "channel": "instagram",
@@ -15599,7 +15623,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sail.ca/en/contact-us",
-          "checkedAt": "2026-08-20T10:05:32.126Z"
+          "checkedAt": "2026-08-25T13:16:38.934Z"
         },
         {
           "channel": "linkedin",
@@ -15609,7 +15633,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sail.ca/en/contact-us",
-          "checkedAt": "2026-08-20T10:05:32.126Z"
+          "checkedAt": "2026-08-25T13:16:38.934Z"
         }
       ],
       "history": [
@@ -15775,7 +15799,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.actionsportsdist.co.uk/",
-          "checkedAt": "2026-08-24T11:48:21.128Z"
+          "checkedAt": "2026-08-25T13:16:42.277Z"
         },
         {
           "channel": "research",
@@ -15831,7 +15855,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.groundupsales.net/who-we-are",
-          "checkedAt": "2026-08-24T11:48:22.931Z"
+          "checkedAt": "2026-08-25T13:16:44.335Z"
         },
         {
           "channel": "facebook",
@@ -15841,7 +15865,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.groundupsales.net/who-we-are",
-          "checkedAt": "2026-08-24T11:48:22.931Z"
+          "checkedAt": "2026-08-25T13:16:44.335Z"
         }
       ],
       "history": [
@@ -15954,7 +15978,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.cordillerasales.com/",
-          "checkedAt": "2026-08-25T04:05:28.718Z"
+          "checkedAt": "2026-08-25T13:16:48.098Z"
         },
         {
           "channel": "website_form",
@@ -24756,7 +24780,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-25T13:05:17.310Z"
+          "checkedAt": "2026-08-25T13:16:18.710Z"
         },
         {
           "channel": "facebook",
@@ -24766,7 +24790,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-25T13:05:17.310Z"
+          "checkedAt": "2026-08-25T13:16:18.710Z"
         }
       ],
       "history": [
@@ -29802,7 +29826,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-25T13:05:18.891Z"
+          "checkedAt": "2026-08-25T13:16:20.155Z"
         },
         {
           "channel": "facebook",
@@ -29812,7 +29836,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-25T13:05:18.891Z"
+          "checkedAt": "2026-08-25T13:16:20.155Z"
         }
       ],
       "history": [
@@ -30144,7 +30168,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-25T13:05:19.618Z"
+          "checkedAt": "2026-08-25T13:16:19.445Z"
         },
         {
           "channel": "instagram",
@@ -30393,7 +30417,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-25T13:05:22.372Z"
+          "checkedAt": "2026-08-25T13:16:20.976Z"
         },
         {
           "channel": "facebook",
@@ -30403,7 +30427,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-25T13:05:22.372Z"
+          "checkedAt": "2026-08-25T13:16:20.976Z"
         }
       ],
       "history": [
@@ -30465,7 +30489,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.mountain-equipment.com/",
-          "checkedAt": "2026-08-25T13:05:20.172Z"
+          "checkedAt": "2026-08-25T13:16:22.993Z"
         }
       ],
       "history": [
@@ -32504,7 +32528,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://packratoc.com/",
-          "checkedAt": "2026-08-25T13:05:23.804Z"
+          "checkedAt": "2026-08-25T13:16:22.741Z"
         },
         {
           "channel": "facebook",
@@ -33970,6 +33994,81 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
         }
       ]
+    },
+    {
+      "companyId": "company_b2faaec82c8e3790",
+      "company": "Smith Power Equipment",
+      "keys": [
+        "smithpowerequipment",
+        "smithpowercoza"
+      ],
+      "domains": [
+        "smithpower.co.za"
+      ],
+      "channels": [],
+      "evidence": [
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://smithpower.co.za/brands/",
+          "checkedAt": "2026-08-25T13:25:00.000Z"
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_8926cd6cded4928c",
+      "company": "Diversicor",
+      "keys": [
+        "diversicor",
+        "diversicorcoza"
+      ],
+      "domains": [
+        "diversicor.co.za"
+      ],
+      "channels": [],
+      "evidence": [
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.diversicor.co.za/",
+          "checkedAt": "2026-08-25T13:25:00.000Z"
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_285bbcec8698702a",
+      "company": "Nicholas Yale",
+      "keys": [
+        "nicholasyale",
+        "nicholasyalecoza"
+      ],
+      "domains": [
+        "nicholasyale.co.za"
+      ],
+      "channels": [],
+      "evidence": [
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.nicholasyale.co.za/about-us",
+          "checkedAt": "2026-08-25T13:25:00.000Z"
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_9c1ccfd7b8c70dee",
@@ -38919,6 +39018,65 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-18T16:13:36.938Z",
           "channel": "facebook",
           "evidence": "facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;follow_not_available;facebook_post_like_not_available"
+        }
+      ]
+    },
+    {
+      "companyId": "company_1c916c28ed082463",
+      "company": "Outdoor Gear Canada",
+      "keys": [
+        "outdoorgearcanada",
+        "ogcca"
+      ],
+      "domains": [
+        "ogc.ca"
+      ],
+      "channels": [
+        "facebook"
+      ],
+      "evidence": [],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T06:58:41.062Z",
+          "channel": "facebook",
+          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-14T02:33:16.669Z",
+          "channel": "facebook",
+          "evidence": "identity_check_pending_empty_page"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-17T10:14:14.129Z",
+          "channel": "facebook",
+          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-17T16:15:04.696Z",
+          "channel": "facebook",
+          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-18T16:14:32.634Z",
+          "channel": "facebook",
+          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-19T16:12:27.346Z",
+          "channel": "facebook",
+          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-20T16:10:07.935Z",
+          "channel": "facebook",
+          "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -44592,6 +44750,28 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_a85c1950c0321637",
+        "company": "Ultimo Group South Africa",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://ultimo.co.za/about-us/",
+        "alternatives": [
+          "linkedin"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_13a6e576723b2a45",
+        "company": "Naturehike South Africa",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_503a5196071be267",
         "company": "G.B. Stumpp & Associates",
         "action": "first_touch",
@@ -44682,26 +44862,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.blackdogsalesgroup.com/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_ab263a4b4ba6a636",
-        "company": "C.G. Emery International",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.cgemery.info/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_52934be907df212f",
-        "company": "Boardwalk Sales Agency",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.boardwalksales.ca/home",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -44834,13 +44994,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-25T13:05:55.319Z",
+    "generatedAt": "2026-08-25T13:17:02.498Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 658,
+      "companies": 662,
       "permanentlySuppressed": 529,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 1029
+      "verifiedEvidenceRoutes": 1041
     },
     "decisions": [
       {
