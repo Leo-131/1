@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T15:48:49.145Z",
+  "generatedAt": "2026-08-25T16:16:43.159Z",
   "phase": "pre-sync",
-  "shanghaiDate": "2026-08-25",
+  "shanghaiDate": "2026-08-26",
   "policyVersion": "2026-07-30",
   "policyStatus": "READY",
   "sendingAllowed": true,
@@ -13,8 +13,8 @@
     "maximumRunLimit": 50,
     "runMaximumMinutes": 45
   },
-  "confirmedToday": 46,
-  "remainingToday": 54,
+  "confirmedToday": 0,
+  "remainingToday": 100,
   "campaignScope": {
     "enabled": true,
     "name": "us_canada_uk_south_africa_large_key_accounts_and_brand_agencies",
@@ -43,10 +43,10 @@
     "executableReserveNeeded": 111
   },
   "latestExecution": {
-    "completedAt": "2026-08-25T15:48:22.808Z",
+    "completedAt": "2026-08-25T16:16:35.798Z",
     "phase": "browser_execution",
-    "realDevelopmentCount": 2,
-    "reportingVerdict": "development_performed"
+    "realDevelopmentCount": 0,
+    "reportingVerdict": "no_customer_development_performed"
   },
   "browser": {
     "requiredTransport": "dedicated Chrome/CDP",
@@ -55,7 +55,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "10067fff02affdc0c391c6a0fd7f6ed049c4347e",
-    "upstreamHead": "10067fff02affdc0c391c6a0fd7f6ed049c4347e"
+    "localHead": "1f3e6be4bd34093834029d85ad2ea82ea39278d0",
+    "upstreamHead": "1f3e6be4bd34093834029d85ad2ea82ea39278d0"
   }
 }
