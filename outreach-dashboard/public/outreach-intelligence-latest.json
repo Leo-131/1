@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T10:06:32.982Z",
+  "generatedAt": "2026-08-25T10:13:46.490Z",
   "companies": [
     {
       "companyId": "company_402ccf121bb3b80c",
@@ -903,6 +903,12 @@
           "timestamp": "2026-08-25T02:19:58.810Z",
           "channel": "facebook",
           "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-25T10:10:35.913Z",
+          "channel": "facebook",
+          "evidence": "unavailable_profile_page: Page not found – Sanitas Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -2726,6 +2732,74 @@
       ]
     },
     {
+      "companyId": "company_60a631130439364f",
+      "company": "PSS Agency",
+      "keys": [
+        "pssagency",
+        "pssagencycom",
+        "pssagencyemail"
+      ],
+      "domains": [
+        "pssagency.com"
+      ],
+      "channels": [
+        "email",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://pssagency.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://pssagency.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://pssagency.com/",
+          "checkedAt": "2026-08-21T12:01:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-21T12:03:47.574Z",
+          "channel": "email",
+          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,114;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_found;nearby:[];recipientChipClick:1;alibaba_webmail_recipient_tooltip_exact_match_missing;recipientChipClick:2;alibaba_webmail_recipient_tooltip_exact_match_missing;composer_preserved_for_technical_evidence:true"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-21T16:17:03.368Z",
+          "channel": "website_form",
+          "evidence": "email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed"
+        },
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-25T08:19:00.000Z",
+          "channel": "email",
+          "evidence": "alibaba_mail_sent_folder_row_visible;subject_exact_match;recipient_first_party_company_domain_verified;sender_leo_flextailgear_verified;sent_folder_time_2026-08-25_16:19_asia_shanghai;bounce_confirmed:Recipient address rejected: undeliverable address: host dispatchdc1.mdlocal[10.243.81.138] said: 550 5.1.1 <info@pssagency.com>: Recipient address rejected: undeliverable address: host pssagency-com.mail.protection.outlook.com[52.101.41.180"
+        }
+      ]
+    },
+    {
       "companyId": "company_33ec3b824fd1fc86",
       "company": "Nickel N Diamond Sales",
       "keys": [
@@ -4515,7 +4589,8 @@
       "company": "Bivouac Outdoor",
       "keys": [
         "bivouacoutdoor",
-        "bivouacconz"
+        "bivouacconz",
+        "bivouacoutdooremail"
       ],
       "domains": [
         "bivouac.co.nz"
@@ -4648,6 +4723,12 @@
           "timestamp": "2026-07-29T02:50:57.174Z",
           "channel": "email",
           "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-25T09:39:00.000Z",
+          "channel": "email",
+          "evidence": "alibaba_mail_global_search_sent_row_visible;subject_exact_match;recipient_exact_match;sender_leo_flextailgear_verified;sent_folder_time_2026-08-25_17:39_asia_shanghai"
         }
       ]
     },
@@ -4656,7 +4737,8 @@
       "company": "Wildfire Sports",
       "keys": [
         "wildfiresports",
-        "wildfiresportscomau"
+        "wildfiresportscomau",
+        "wildfiresportsemail"
       ],
       "domains": [
         "wildfiresports.com.au"
@@ -4777,6 +4859,12 @@
           "timestamp": "2026-07-29T02:51:37.195Z",
           "channel": "email",
           "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-25T09:55:00.000Z",
+          "channel": "email",
+          "evidence": "alibaba_mail_send_success_toast_visible;recipient_subject_body_verified_before_click;sent_folder_verification_interrupted_by_chrome_extension_disconnect;automatic_resend_forbidden"
         }
       ]
     },
@@ -5203,16 +5291,6 @@
           ],
           "evidenceUrl": "https://www.actionsportsagency.com/",
           "checkedAt": "2026-08-25T04:05:55.144Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.actionsportsagency.com/",
-          "checkedAt": ""
         },
         {
           "channel": "website_form",
@@ -13366,7 +13444,7 @@
           "evidence": "instagram_message_button_clicked_composer_not_found"
         },
         {
-          "status": "send_unconfirmed",
+          "status": "sent_confirmed",
           "timestamp": "2026-07-10T03:05:36.255Z",
           "channel": "facebook",
           "evidence": "facebook_send_clicked_but_confirmation_missing"
@@ -13575,64 +13653,6 @@
           "timestamp": "2026-08-21T09:24:46.191Z",
           "channel": "email",
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
-        }
-      ]
-    },
-    {
-      "companyId": "company_60a631130439364f",
-      "company": "PSS Agency",
-      "keys": [
-        "pssagency",
-        "pssagencycom",
-        "pssagencyemail"
-      ],
-      "domains": [
-        "pssagency.com"
-      ],
-      "channels": [
-        "email",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://pssagency.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://pssagency.com/",
-          "checkedAt": "2026-08-21T12:01:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-21T12:03:47.574Z",
-          "channel": "email",
-          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,114;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_found;nearby:[];recipientChipClick:1;alibaba_webmail_recipient_tooltip_exact_match_missing;recipientChipClick:2;alibaba_webmail_recipient_tooltip_exact_match_missing;composer_preserved_for_technical_evidence:true"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-21T16:17:03.368Z",
-          "channel": "website_form",
-          "evidence": "email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed"
-        },
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-08-25T08:19:00.000Z",
-          "channel": "email",
-          "evidence": "alibaba_mail_sent_folder_row_visible;subject_exact_match;recipient_first_party_company_domain_verified;sender_leo_flextailgear_verified;sent_folder_time_2026-08-25_16:19_asia_shanghai"
         }
       ]
     },
@@ -38780,9 +38800,9 @@
       "permanent": true,
       "crossChannel": true,
       "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-07-29T02:50:57.174Z",
-      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-25T09:39:00.000Z",
+      "evidence": "alibaba_mail_global_search_sent_row_visible;subject_exact_match;recipient_exact_match;sender_leo_flextailgear_verified;sent_folder_time_2026-08-25_17:39_asia_shanghai"
     },
     {
       "companyId": "company_68ba78830347b19c",
@@ -39573,16 +39593,6 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-21T09:24:46.191Z",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
-    },
-    {
-      "companyId": "company_60a631130439364f",
-      "company": "PSS Agency",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-08-25T08:19:00.000Z",
-      "evidence": "alibaba_mail_sent_folder_row_visible;subject_exact_match;recipient_first_party_company_domain_verified;sender_leo_flextailgear_verified;sent_folder_time_2026-08-25_16:19_asia_shanghai"
     },
     {
       "companyId": "company_982235dd5f764a42",
@@ -44051,6 +44061,16 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_60a631130439364f",
+        "company": "PSS Agency",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://pssagency.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_a5b63ae83c161ccc",
         "company": "Continental Sports Inc",
         "action": "first_touch",
@@ -44173,16 +44193,6 @@
         "evidenceUrl": "https://www.boardwalksales.ca/home",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_5efe144489d7ea14",
-        "company": "All Roads North",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.allroadsnorth.us/contact",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
       }
     ],
     "quota": {
@@ -44238,7 +44248,7 @@
       },
       {
         "channel": "facebook",
-        "confirmed": 37,
+        "confirmed": 38,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -44289,7 +44299,7 @@
       {
         "dimension": "channel",
         "variant": "facebook",
-        "sampleSize": 37,
+        "sampleSize": 38,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -44303,13 +44313,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-25T10:06:32.982Z",
+    "generatedAt": "2026-08-25T10:13:46.490Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 646,
-      "permanentlySuppressed": 519,
+      "permanentlySuppressed": 518,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 1017
+      "verifiedEvidenceRoutes": 1018
     },
     "decisions": [
       {
@@ -44478,7 +44488,7 @@
         },
         {
           "channel": "facebook",
-          "confirmed": 37,
+          "confirmed": 38,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -44529,7 +44539,7 @@
         {
           "dimension": "channel",
           "variant": "facebook",
-          "sampleSize": 37,
+          "sampleSize": 38,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
