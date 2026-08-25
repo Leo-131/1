@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-08-25T14:24:28.714Z",
+  "generatedAt": "2026-08-25T14:32:31.751Z",
   "date": "2026-08-25",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,28 +50,28 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 45,
-    "dueNow": 76,
-    "visibleTodayQueue": 67,
-    "potentialPool": 25,
+    "readyToDevelop": 42,
+    "dueNow": 73,
+    "visibleTodayQueue": 69,
+    "potentialPool": 26,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 75,
-    "executableCompanies": 15,
+    "refillNeeded": 74,
+    "executableCompanies": 17,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 115,
+    "executableReserveNeeded": 113,
     "executableByChannel": {
-      "linkedin": 3,
-      "facebook": 8,
+      "linkedin": 4,
+      "facebook": 9,
       "instagram": 4
     },
-    "verifiedSocialCompanies": 15,
+    "verifiedSocialCompanies": 17,
     "verifiedSocialReserveTarget": 20,
-    "verifiedSocialReserveNeeded": 5,
-    "enrichmentBacklogCount": 10,
-    "googleDiscovered": 76,
-    "facebookDiscovered": 21,
-    "websiteContactDiscovered": 8,
+    "verifiedSocialReserveNeeded": 3,
+    "enrichmentBacklogCount": 9,
+    "googleDiscovered": 73,
+    "facebookDiscovered": 20,
+    "websiteContactDiscovered": 7,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -83,7 +83,7 @@ window.DAILY_AUTOMATION_LATEST = {
   "discoveryRefill": {
     "discoveryRefillAttempted": true,
     "qualifiedThreshold": 70,
-    "refillCandidateCount": 601,
+    "refillCandidateCount": 604,
     "refillByCustomerType": {
       "agency": 8,
       "key_account": 246
@@ -154,7 +154,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -258,7 +258,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/contact.html",
-      "socialProfileVerifiedAt": "2026-08-25T14:23:48.952Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:28:58.931Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -268,7 +268,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -300,7 +300,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:23:48.952Z",
+        "verifiedAt": "2026-08-25T14:28:58.931Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -383,7 +383,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -489,7 +489,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -602,7 +602,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -717,7 +717,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -826,7 +826,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -935,7 +935,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1048,7 +1048,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1151,7 +1151,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1260,7 +1260,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1371,7 +1371,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1480,7 +1480,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1591,7 +1591,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1704,7 +1704,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1744,6 +1744,119 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 265,
+      "priorityScore": 265,
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "visibleOnly": false
+    },
+    {
+      "id": "google-customer-1889-sales-website-contact",
+      "name": "1889 Sales",
+      "company": "1889 Sales",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Pacific Northwest outdoor brand representation agency",
+      "role": "Agency leadership responsible for brand fit and territory growth.",
+      "background": "1889 Sales represents outdoor, work and tactical brands across seven western states and explicitly invites brands seeking Pacific Northwest representation.",
+      "buyerPersona": "Agency leadership responsible for brand fit and territory growth.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Pacific Northwest outdoor brand representation agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "1889 Sales represents outdoor, work and tactical brands across seven western states and explicitly invites brands seeking Pacific Northwest representation.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://1889sales.com/contact.html",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party contact page exposes a brand-growth enquiry form.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://1889sales.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%221889%20Sales%22%20%22Pacific%20Northwest%20outdoor%20brand%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://1889sales.com/contact.html",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%221889%20Sales%22%20%22Pacific%20Northwest%20outdoor%20brand%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Tue 10:32",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://1889sales.com/contact.html",
+      "url": "https://1889sales.com/contact.html",
+      "contactUrl": "https://1889sales.com/contact.html",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3A1889sales.com%20%221889%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | 1889 Sales",
+      "websiteContactMessage": "Dear 1889 Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://1889sales.com/contact.html"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-12T12:08:00.110Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:28:59.582Z",
+        "evidenceUrl": "https://1889sales.com/contact.html",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "taskId": "google-customer-1889-sales-website-contact",
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 13,
@@ -1817,7 +1930,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1846,7 +1959,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T14:23:50.509Z",
+        "verifiedAt": "2026-08-25T14:29:01.952Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -1926,7 +2039,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2037,7 +2150,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2150,7 +2263,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2263,7 +2376,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2304,6 +2417,117 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 25,
       "dealProbabilityScore": 275,
       "priorityScore": 275,
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "visibleOnly": false
+    },
+    {
+      "id": "google-customer-old-timber-outfitters-facebook",
+      "name": "Old Timber Outfitters",
+      "company": "Old Timber Outfitters",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Midwest outdoor brand sales representation agency",
+      "role": "Agency owner responsible for selecting new represented outdoor brands.",
+      "background": "Old Timber Outfitters represents hunting, fishing, camping, hiking and outdoor-lifestyle brands across the Midwest.",
+      "buyerPersona": "Agency owner responsible for selecting new represented outdoor brands.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Midwest outdoor brand sales representation agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Old Timber Outfitters represents hunting, fishing, camping, hiking and outdoor-lifestyle brands across the Midwest.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://oldtimberoutfitters.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site presents a direct Contact Now route.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://oldtimberoutfitters.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Old%20Timber%20Outfitters%22%20%22Midwest%20outdoor%20brand%20sales%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://oldtimberoutfitters.com/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Old%20Timber%20Outfitters%22%20%22Midwest%20outdoor%20brand%20sales%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://oldtimberoutfitters.com/",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:00.463Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Tue 10:32",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "facebook",
+      "channelType": "facebook",
+      "platformUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "url": "https://www.facebook.com/profile.php?id=61585747707884",
+      "contactUrl": "https://oldtimberoutfitters.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Aoldtimberoutfitters.com%20%22Old%20Timber%20Outfitters%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | Old Timber Outfitters",
+      "websiteContactMessage": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://oldtimberoutfitters.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "taskId": "google-customer-old-timber-outfitters-facebook",
+      "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "verifiedTargetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:29:00.463Z",
+        "evidenceUrl": "https://oldtimberoutfitters.com/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 263,
+      "priorityScore": 263,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -2372,7 +2596,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2485,7 +2709,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2598,7 +2822,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2709,7 +2933,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2754,6 +2978,119 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 13,
       "dealProbabilityScore": 263,
       "priorityScore": 263,
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "visibleOnly": false
+    },
+    {
+      "id": "google-customer-mcqueen-ball-linkedin",
+      "name": "McQueen Ball",
+      "company": "McQueen Ball",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 92,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Northeastern US outdoor and lifestyle sales agency",
+      "role": "Agency leadership responsible for new outdoor brand representation.",
+      "background": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "buyerPersona": "Agency leadership responsible for new outdoor brand representation.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Northeastern US outdoor and lifestyle sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://mcqueen-ball.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site exposes a Contact Us route.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://mcqueen-ball.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://mcqueen-ball.com/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://mcqueen-ball.com/",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:08.916Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Tue 10:32",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "linkedin",
+      "channelType": "linkedin",
+      "platformUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "url": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "contactUrl": "https://mcqueen-ball.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Amcqueen-ball.com%20%22McQueen%20Ball%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | McQueen Ball",
+      "websiteContactMessage": "Dear McQueen Ball Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://mcqueen-ball.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "taskId": "google-customer-mcqueen-ball-linkedin",
+      "targetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "verifiedTargetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:29:08.916Z",
+        "evidenceUrl": "https://mcqueen-ball.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 262,
+      "priorityScore": 262,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -2822,7 +3159,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2938,7 +3275,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3049,7 +3386,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3152,7 +3489,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3261,7 +3598,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3370,7 +3707,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3483,7 +3820,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3597,7 +3934,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3712,7 +4049,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3825,7 +4162,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3926,7 +4263,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:23:51.604Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:08.829Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3936,7 +4273,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3968,7 +4305,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:23:51.604Z",
+        "verifiedAt": "2026-08-25T14:29:08.829Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -4047,7 +4384,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4160,7 +4497,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4273,7 +4610,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4384,7 +4721,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4497,7 +4834,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4608,7 +4945,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4711,7 +5048,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:27.611Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:20.243Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4721,7 +5058,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4753,7 +5090,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:27.611Z",
+        "verifiedAt": "2026-08-25T14:29:20.243Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -4822,7 +5159,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.actionsportsagency.com/",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:28.439Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:19.840Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4832,7 +5169,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4864,7 +5201,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/ActionSportsAgency/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:28.439Z",
+        "verifiedAt": "2026-08-25T14:29:19.840Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -4937,7 +5274,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://nohrth.com/about-us/",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:26.058Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:19.394Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4947,7 +5284,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4979,7 +5316,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/pages/Nohrth-Sales-Agency/433244803529461?pnref=lhc",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:26.058Z",
+        "verifiedAt": "2026-08-25T14:29:19.394Z",
         "evidenceUrl": "https://nohrth.com/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -5050,7 +5387,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:28.466Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:22.959Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5060,7 +5397,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5092,7 +5429,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/perspectiveoutdoor/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:28.466Z",
+        "verifiedAt": "2026-08-25T14:29:22.959Z",
         "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -5173,7 +5510,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5202,7 +5539,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T12:54:26.311Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:37.405Z",
+        "verifiedAt": "2026-08-25T14:29:38.622Z",
         "evidenceUrl": "https://www.kenjefferiesandassociates.com/",
         "httpStatus": 200,
         "signals": [
@@ -5284,7 +5621,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5313,7 +5650,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T03:03:45.764Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:34.899Z",
+        "verifiedAt": "2026-08-25T14:29:32.239Z",
         "evidenceUrl": "https://sky-lines.ca/",
         "httpStatus": 200,
         "signals": [
@@ -5395,7 +5732,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5424,7 +5761,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-05T08:50:29.133Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:32.067Z",
+        "verifiedAt": "2026-08-25T14:29:29.304Z",
         "evidenceUrl": "https://www.tractorsupply.com/",
         "httpStatus": 200,
         "signals": [],
@@ -5504,7 +5841,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5616,7 +5953,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5724,7 +6061,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5762,117 +6099,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 258,
-      "priorityScore": 258,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-1889-sales-website-contact",
-      "name": "1889 Sales",
-      "company": "1889 Sales",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 88,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified North American outdoor sales agency or wholesale distributor",
-      "role": "Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.",
-      "background": "1889 Sales is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.",
-      "buyerPersona": "Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified North American outdoor sales agency or wholesale distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "1889 Sales is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://1889sales.com/about.html",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://1889sales.com/about.html",
-      "evidenceUrl": "https://www.google.com/search?q=%221889%20Sales%22%20%22verified%20North%20American%20outdoor%20sales%20agency%20or%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://1889sales.com/about.html",
-      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%221889%20Sales%22%20%22verified%20North%20American%20outdoor%20sales%20agency%20or%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://1889sales.com/about.html",
-      "url": "https://1889sales.com/about.html",
-      "contactUrl": "https://1889sales.com/about.html",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3A1889sales.com%20%221889%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | 1889 Sales",
-      "websiteContactMessage": "Dear 1889 Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://1889sales.com/about.html"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-12T12:08:00.110Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-25T07:01:14.094Z",
-        "evidenceUrl": "https://1889sales.com/about.html",
-        "httpStatus": 200,
-        "signals": [
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "taskId": "google-customer-1889-sales-website-contact",
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 13,
@@ -5946,7 +6172,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6055,7 +6281,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6164,7 +6390,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6275,7 +6501,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6388,7 +6614,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6503,7 +6729,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6616,7 +6842,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6729,7 +6955,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6838,7 +7064,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6951,7 +7177,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7054,7 +7280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7159,7 +7385,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7270,7 +7496,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 22:24",
+        "localTime": "Tue 22:32",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -7384,7 +7610,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 22:24",
+        "localTime": "Tue 22:32",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -7495,7 +7721,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 22:24",
+        "localTime": "Tue 22:32",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -7606,7 +7832,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7724,7 +7950,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7783,6 +8009,130 @@ window.DAILY_AUTOMATION_LATEST = {
         "ready": true,
         "gate": "first_party_verified_social",
         "evidenceUrl": "https://www.alpinewaves.co.uk/"
+      }
+    },
+    {
+      "id": "google-customer-mcqueen-ball-linkedin",
+      "name": "McQueen Ball",
+      "company": "McQueen Ball",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 92,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Northeastern US outdoor and lifestyle sales agency",
+      "role": "Agency leadership responsible for new outdoor brand representation.",
+      "background": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "buyerPersona": "Agency leadership responsible for new outdoor brand representation.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Northeastern US outdoor and lifestyle sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://mcqueen-ball.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site exposes a Contact Us route.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://mcqueen-ball.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://mcqueen-ball.com/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://mcqueen-ball.com/",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:08.916Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/25 22:28:57",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "linkedin",
+      "channelType": "linkedin",
+      "platformUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "url": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "contactUrl": "https://mcqueen-ball.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Amcqueen-ball.com%20%22McQueen%20Ball%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | McQueen Ball",
+      "websiteContactMessage": "Dear McQueen Ball Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://mcqueen-ball.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "taskId": "google-customer-mcqueen-ball-linkedin",
+      "targetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "verifiedTargetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:29:08.916Z",
+        "evidenceUrl": "https://mcqueen-ball.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=McQueen%20Ball%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Amcqueen-ball.com%20%22McQueen%20Ball%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 262,
+      "priorityScore": 275,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "develop_after_identity_check",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://mcqueen-ball.com/"
       }
     },
     {
@@ -7848,7 +8198,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7958,7 +8308,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/contact.html",
-      "socialProfileVerifiedAt": "2026-08-25T14:23:48.952Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:28:58.931Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7968,7 +8318,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7998,7 +8348,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:23:48.952Z",
+        "verifiedAt": "2026-08-25T14:28:58.931Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -8094,7 +8444,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8220,7 +8570,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8344,7 +8694,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8403,6 +8753,128 @@ window.DAILY_AUTOMATION_LATEST = {
         "ready": true,
         "gate": "first_party_verified_social",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/"
+      }
+    },
+    {
+      "id": "google-customer-old-timber-outfitters-facebook",
+      "name": "Old Timber Outfitters",
+      "company": "Old Timber Outfitters",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Midwest outdoor brand sales representation agency",
+      "role": "Agency owner responsible for selecting new represented outdoor brands.",
+      "background": "Old Timber Outfitters represents hunting, fishing, camping, hiking and outdoor-lifestyle brands across the Midwest.",
+      "buyerPersona": "Agency owner responsible for selecting new represented outdoor brands.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Midwest outdoor brand sales representation agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Old Timber Outfitters represents hunting, fishing, camping, hiking and outdoor-lifestyle brands across the Midwest.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://oldtimberoutfitters.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site presents a direct Contact Now route.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://oldtimberoutfitters.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Old%20Timber%20Outfitters%22%20%22Midwest%20outdoor%20brand%20sales%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://oldtimberoutfitters.com/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Old%20Timber%20Outfitters%22%20%22Midwest%20outdoor%20brand%20sales%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://oldtimberoutfitters.com/",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:00.463Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/25 22:28:57",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "channelType": "facebook",
+      "platformUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "url": "https://www.facebook.com/profile.php?id=61585747707884",
+      "contactUrl": "https://oldtimberoutfitters.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Aoldtimberoutfitters.com%20%22Old%20Timber%20Outfitters%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | Old Timber Outfitters",
+      "websiteContactMessage": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://oldtimberoutfitters.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "taskId": "google-customer-old-timber-outfitters-facebook",
+      "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "verifiedTargetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:29:00.463Z",
+        "evidenceUrl": "https://oldtimberoutfitters.com/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Old%20Timber%20Outfitters%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Aoldtimberoutfitters.com%20%22Old%20Timber%20Outfitters%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 263,
+      "priorityScore": 276,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "develop_after_identity_check",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://oldtimberoutfitters.com/"
       }
     },
     {
@@ -8468,7 +8940,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8595,7 +9067,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8721,7 +9193,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8845,7 +9317,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8969,7 +9441,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9091,7 +9563,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9203,7 +9675,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:27.611Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:20.243Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9213,7 +9685,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9243,7 +9715,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/eosaleslife/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:27.611Z",
+        "verifiedAt": "2026-08-25T14:29:20.243Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -9335,7 +9807,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9461,7 +9933,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9581,7 +10053,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9703,7 +10175,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9823,7 +10295,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9943,7 +10415,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10065,7 +10537,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10116,128 +10588,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 13,
       "dealProbabilityScore": 261,
       "priorityScore": 274,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel",
-      "executionReadiness": {
-        "ready": false,
-        "gate": "enrichment_required",
-        "reason": "website_contact_capability_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-1889-sales-website-contact",
-      "name": "1889 Sales",
-      "company": "1889 Sales",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 88,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified North American outdoor sales agency or wholesale distributor",
-      "role": "Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.",
-      "background": "1889 Sales is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.",
-      "buyerPersona": "Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified North American outdoor sales agency or wholesale distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "1889 Sales is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://1889sales.com/about.html",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://1889sales.com/about.html",
-      "evidenceUrl": "https://www.google.com/search?q=%221889%20Sales%22%20%22verified%20North%20American%20outdoor%20sales%20agency%20or%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://1889sales.com/about.html",
-      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%221889%20Sales%22%20%22verified%20North%20American%20outdoor%20sales%20agency%20or%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://1889sales.com/about.html",
-      "url": "https://1889sales.com/about.html",
-      "contactUrl": "https://1889sales.com/about.html",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3A1889sales.com%20%221889%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | 1889 Sales",
-      "websiteContactMessage": "Dear 1889 Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://1889sales.com/about.html"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-12T12:08:00.110Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-25T07:01:14.094Z",
-        "evidenceUrl": "https://1889sales.com/about.html",
-        "httpStatus": 200,
-        "signals": [
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=1889%20Sales%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3A1889sales.com%20%221889%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-1889-sales-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 258,
-      "priorityScore": 271,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "background_check_then_verify_channel",
       "executionReadiness": {
@@ -10309,7 +10659,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10429,7 +10779,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10549,7 +10899,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10673,7 +11023,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -10782,7 +11132,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10886,7 +11236,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10994,7 +11344,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11023,7 +11373,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T14:23:50.509Z",
+        "verifiedAt": "2026-08-25T14:29:01.952Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -11098,7 +11448,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11202,7 +11552,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11311,7 +11661,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11354,112 +11704,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 25,
       "dealProbabilityScore": 271,
       "priorityScore": 269
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "name": "Fjellsport",
-      "company": "Fjellsport",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Norway",
-      "countryEn": "Norway",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Fjellsport is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Fjellsport is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "kundeservice@fjellsport.no",
-      "contactEmail": "kundeservice@fjellsport.no",
-      "vendorPortal": "https://www.fjellsport.no/faq/personvern",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official public company-domain contact published in the Fjellsport privacy and contact information; route the supplier proposal to the category buyer or vendor-review owner.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "https://www.fjellsport.no/faq/personvern",
-      "website": "https://www.fjellsport.no/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Fjellsport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.fjellsport.no/",
-      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Fjellsport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Oslo",
-        "localTime": "Tue 16:24",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "email",
-      "channelType": "email",
-      "platformUrl": "https://www.fjellsport.no/faq/personvern",
-      "url": "https://www.fjellsport.no/faq/personvern",
-      "contactUrl": "https://www.fjellsport.no/faq/personvern",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.fjellsport.no%20%22Fjellsport%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global distribution partnership | Fjellsport",
-      "websiteContactMessage": "Dear Fjellsport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_public_business_email_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.fjellsport.no/faq/personvern"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-12T11:59:21.373Z",
-        "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 232,
-      "priorityScore": 230
     },
     {
       "id": "google-customer-minnis-brands-linkedin",
@@ -11524,7 +11768,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -11625,7 +11869,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -11743,7 +11987,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -11805,59 +12049,59 @@ window.DAILY_AUTOMATION_LATEST = {
       }
     },
     {
-      "id": "google-customer-esprinet-group-linkedin",
-      "name": "Esprinet Group",
-      "company": "Esprinet Group",
-      "customerType": "agency",
+      "id": "google-customer-mcqueen-ball-linkedin",
+      "name": "McQueen Ball",
+      "company": "McQueen Ball",
+      "customerType": "sales_agency",
       "discoveryMode": "autonomous_refill",
-      "country": "Italy",
-      "countryEn": "Italy",
-      "fitScore": 99,
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 92,
       "fitTier": "A+",
       "marketScore": 4.5,
       "marketStatus": "open",
       "agencyState": "open",
       "agentCompany": "",
-      "keyword": "Southern Europe technology and consumer electronics distributor",
-      "role": "Supplier onboarding, producer partnerships, consumer electronics category, or vendor management director.",
-      "background": "Large Southern European technology and consumer electronics distributor serving about 30,000 resellers and working with more than 850 manufacturers.",
-      "buyerPersona": "Supplier onboarding, producer partnerships, consumer electronics category, or vendor management director.",
+      "keyword": "Northeastern US outdoor and lifestyle sales agency",
+      "role": "Agency leadership responsible for new outdoor brand representation.",
+      "background": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "buyerPersona": "Agency leadership responsible for new outdoor brand representation.",
       "buyerName": "",
       "linkedinBuyerUrl": "",
       "buyerIdentityVerified": false,
       "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "Italy, Spain and Portugal",
-      "excludedMarkets": "Switzerland, Romania, Greece and Hungary",
-      "productCategory": "Southern Europe technology and consumer electronics distributor",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Northeastern US outdoor and lifestyle sales agency",
       "businessModel": "Retail Chain",
       "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Large Southern European technology and consumer electronics distributor serving about 30,000 resellers and working with more than 850 manufacturers.",
-      "linkedin_url": "https://www.linkedin.com/company/esprinet-group/",
-      "linkedin": "https://www.linkedin.com/company/esprinet-group/",
+      "opportunity": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "linkedin_url": "",
+      "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "https://www.esprinet.com/en/become-a-supplier/",
+      "vendorPortal": "https://mcqueen-ball.com/",
       "contactPhone": "",
       "contactNote": "",
-      "publicEmailStatus": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site exposes a Contact Us route.",
       "emailVerificationStatus": "",
-      "emailEvidence": "",
+      "emailEvidence": "official_contact_form",
       "emailEvidenceUrl": "",
-      "website": "https://www.esprinet.com/en/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+      "website": "https://mcqueen-ball.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://mcqueen-ball.com/",
       "discoverySourceUrl": "",
       "externalVerificationStatus": "official_supplier_form_verified",
-      "query": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
+      "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://mcqueen-ball.com/",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:08.916Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11866,43 +12110,67 @@ window.DAILY_AUTOMATION_LATEST = {
       "sendStatus": "",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "Europe/Rome",
-        "localTime": "Tue 16:24",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
+        "timeZone": "local-market",
+        "localTime": "2026/8/25 22:28:57",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
-      "platformUrl": "https://www.linkedin.com/company/esprinet-group/",
-      "url": "https://www.linkedin.com/company/esprinet-group/",
+      "channelType": "linkedin",
+      "platformUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "url": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "contactUrl": "https://mcqueen-ball.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Amcqueen-ball.com%20%22McQueen%20Ball%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | McQueen Ball",
+      "websiteContactMessage": "Dear McQueen Ball Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
       "action": "develop",
-      "reason": "verified_linkedin_profile_ready",
+      "reason": "official_website_social_channel_verified",
       "alternateChannels": {
-        "linkedin": "https://www.linkedin.com/company/esprinet-group/",
+        "linkedin": "",
         "instagram": "",
         "facebook": "",
-        "websiteContact": "https://www.esprinet.com/en/become-a-supplier/"
+        "websiteContact": "https://mcqueen-ball.com/"
       },
-      "identitySource": "verified LinkedIn profile + official website + Google background query",
-      "channelPriority": 0,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "taskId": "google-customer-mcqueen-ball-linkedin",
+      "targetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
+      "verifiedTargetUrl": "https://www.linkedin.com/in/brad-mcqueen-968a60294/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:10.902Z",
-        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+        "verifiedAt": "2026-08-25T14:29:08.916Z",
+        "evidenceUrl": "https://mcqueen-ball.com/",
         "httpStatus": 200,
         "signals": [
-          "form_control",
-          "supplier_invitation"
+          "contact_invitation"
         ],
         "error": ""
       },
-      "contactCapabilityVerified": true,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 258,
-      "priorityScore": 258
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=McQueen%20Ball%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Amcqueen-ball.com%20%22McQueen%20Ball%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 262,
+      "priorityScore": 275,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "develop_after_identity_check",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://mcqueen-ball.com/"
+      }
     },
     {
       "id": "google-customer-next-adventure-linkedin",
@@ -11967,7 +12235,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -12077,7 +12345,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/contact.html",
-      "socialProfileVerifiedAt": "2026-08-25T14:23:48.952Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:28:58.931Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12087,7 +12355,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12117,7 +12385,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:23:48.952Z",
+        "verifiedAt": "2026-08-25T14:28:58.931Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -12213,7 +12481,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12324,7 +12592,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12450,7 +12718,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12560,7 +12828,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12684,7 +12952,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12743,6 +13011,128 @@ window.DAILY_AUTOMATION_LATEST = {
         "ready": true,
         "gate": "first_party_verified_social",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/"
+      }
+    },
+    {
+      "id": "google-customer-old-timber-outfitters-facebook",
+      "name": "Old Timber Outfitters",
+      "company": "Old Timber Outfitters",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Midwest outdoor brand sales representation agency",
+      "role": "Agency owner responsible for selecting new represented outdoor brands.",
+      "background": "Old Timber Outfitters represents hunting, fishing, camping, hiking and outdoor-lifestyle brands across the Midwest.",
+      "buyerPersona": "Agency owner responsible for selecting new represented outdoor brands.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Midwest outdoor brand sales representation agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Old Timber Outfitters represents hunting, fishing, camping, hiking and outdoor-lifestyle brands across the Midwest.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://oldtimberoutfitters.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site presents a direct Contact Now route.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://oldtimberoutfitters.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Old%20Timber%20Outfitters%22%20%22Midwest%20outdoor%20brand%20sales%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://oldtimberoutfitters.com/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Old%20Timber%20Outfitters%22%20%22Midwest%20outdoor%20brand%20sales%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "https://oldtimberoutfitters.com/",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:00.463Z",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/25 22:28:57",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "channelType": "facebook",
+      "platformUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "url": "https://www.facebook.com/profile.php?id=61585747707884",
+      "contactUrl": "https://oldtimberoutfitters.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Aoldtimberoutfitters.com%20%22Old%20Timber%20Outfitters%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | Old Timber Outfitters",
+      "websiteContactMessage": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_social_channel_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://oldtimberoutfitters.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "taskId": "google-customer-old-timber-outfitters-facebook",
+      "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "verifiedTargetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:29:00.463Z",
+        "evidenceUrl": "https://oldtimberoutfitters.com/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Old%20Timber%20Outfitters%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Aoldtimberoutfitters.com%20%22Old%20Timber%20Outfitters%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 263,
+      "priorityScore": 276,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "develop_after_identity_check",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://oldtimberoutfitters.com/"
       }
     },
     {
@@ -12808,7 +13198,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12935,7 +13325,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13042,7 +13432,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13168,7 +13558,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13282,7 +13672,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.actionsportsagency.com/",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:28.439Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:19.840Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13292,7 +13682,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13324,7 +13714,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/ActionSportsAgency/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:28.439Z",
+        "verifiedAt": "2026-08-25T14:29:19.840Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -13403,7 +13793,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13512,7 +13902,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13610,7 +14000,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13698,7 +14088,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://nohrth.com/about-us/",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:26.058Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:19.394Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13708,7 +14098,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13740,7 +14130,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/pages/Nohrth-Sales-Agency/433244803529461?pnref=lhc",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:26.058Z",
+        "verifiedAt": "2026-08-25T14:29:19.394Z",
         "evidenceUrl": "https://nohrth.com/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -13817,7 +14207,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13917,7 +14307,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14023,7 +14413,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14147,7 +14537,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14175,200 +14565,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "httpStatus": 0,
         "signals": [],
         "error": "fetch failed"
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
-    },
-    {
-      "id": "google-customer-campz-facebook",
-      "name": "Campz",
-      "company": "Campz",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Campz is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Campz is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.campz.de/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.campz.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Tue 16:24",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/campz.de",
-      "url": "https://www.facebook.com/campz.de",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/campz.de/",
-        "facebook": "https://www.facebook.com/campz.de",
-        "websiteContact": "https://www.campz.de/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
-    },
-    {
-      "id": "google-customer-intersport-norway-facebook",
-      "name": "Intersport Norway",
-      "company": "Intersport Norway",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Norway",
-      "countryEn": "Norway",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Intersport Norway is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Intersport Norway is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.intersport.no/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.intersport.no/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.intersport.no/",
-      "socialProfileVerifiedAt": "2026-08-12T13:08:17.199Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Oslo",
-        "localTime": "Tue 16:24",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/intersportnorge",
-      "url": "https://www.facebook.com/intersportnorge",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/intersportnorge",
-        "websiteContact": "https://www.intersport.no/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/intersportnorge/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle intersportnorge does not match company Intersport Norway; do not use this account for outreach."
-        }
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-12T13:08:17.199Z",
-        "evidenceUrl": "https://www.intersport.no/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
       },
       "targetRegion": "europe",
       "targetRegionScore": 45,
@@ -14439,7 +14635,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14540,7 +14736,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14651,7 +14847,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14761,7 +14957,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14859,7 +15055,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14981,7 +15177,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -15093,7 +15289,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:23:51.604Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:08.829Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15103,7 +15299,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15135,7 +15331,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:23:51.604Z",
+        "verifiedAt": "2026-08-25T14:29:08.829Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -15200,7 +15396,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:27.611Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:20.243Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15210,7 +15406,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -15240,7 +15436,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/eosaleslife/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:27.611Z",
+        "verifiedAt": "2026-08-25T14:29:20.243Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -15322,7 +15518,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-      "socialProfileVerifiedAt": "2026-08-25T13:24:28.466Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:29:22.959Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15332,7 +15528,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15364,7 +15560,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/perspectiveoutdoor/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:28.466Z",
+        "verifiedAt": "2026-08-25T14:29:22.959Z",
         "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -15441,7 +15637,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15548,7 +15744,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:23:47",
+        "localTime": "2026/8/25 22:28:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -15674,7 +15870,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15783,7 +15979,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -15879,7 +16075,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15975,7 +16171,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16073,7 +16269,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16119,102 +16315,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 17,
       "dealProbabilityScore": 233,
       "priorityScore": 233
-    },
-    {
-      "id": "google-customer-bergfreunde-instagram",
-      "name": "Bergfreunde",
-      "company": "Bergfreunde",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 91,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Bergfreunde is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Bergfreunde is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.bergfreunde.eu/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.bergfreunde.eu/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Bergfreunde%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.bergfreunde.eu/",
-      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Bergfreunde%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Tue 16:24",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/bergfreunde/",
-      "url": "https://www.instagram.com/bergfreunde/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/bergfreunde/",
-        "facebook": "",
-        "websiteContact": "https://www.bergfreunde.eu/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:55:44.560Z",
-        "evidenceUrl": "https://www.bergfreunde.eu/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 225,
-      "priorityScore": 225
     },
     {
       "id": "google-customer-above-and-beyond-instagram",
@@ -16279,7 +16379,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16306,94 +16406,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": "fetch failed"
       },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "name": "Campz",
-      "company": "Campz",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Campz is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Campz is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.campz.de/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.campz.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Tue 16:24",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/campz.de/",
-      "url": "https://www.instagram.com/campz.de/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/campz.de/",
-        "facebook": "https://www.facebook.com/campz.de",
-        "websiteContact": "https://www.campz.de/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 17,
@@ -16463,7 +16475,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16567,7 +16579,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16675,7 +16687,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16779,7 +16791,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16885,7 +16897,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16927,6 +16939,114 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 17,
       "dealProbabilityScore": 266,
       "priorityScore": 266
+    },
+    {
+      "id": "google-customer-1889-sales-website-contact",
+      "name": "1889 Sales",
+      "company": "1889 Sales",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Pacific Northwest outdoor brand representation agency",
+      "role": "Agency leadership responsible for brand fit and territory growth.",
+      "background": "1889 Sales represents outdoor, work and tactical brands across seven western states and explicitly invites brands seeking Pacific Northwest representation.",
+      "buyerPersona": "Agency leadership responsible for brand fit and territory growth.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Pacific Northwest outdoor brand representation agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "1889 Sales represents outdoor, work and tactical brands across seven western states and explicitly invites brands seeking Pacific Northwest representation.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://1889sales.com/contact.html",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party contact page exposes a brand-growth enquiry form.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://1889sales.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%221889%20Sales%22%20%22Pacific%20Northwest%20outdoor%20brand%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://1889sales.com/contact.html",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%221889%20Sales%22%20%22Pacific%20Northwest%20outdoor%20brand%20representation%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Tue 10:32",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://1889sales.com/contact.html",
+      "url": "https://1889sales.com/contact.html",
+      "contactUrl": "https://1889sales.com/contact.html",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3A1889sales.com%20%221889%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | 1889 Sales",
+      "websiteContactMessage": "Dear 1889 Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://1889sales.com/contact.html"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-12T12:08:00.110Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T14:28:59.582Z",
+        "evidenceUrl": "https://1889sales.com/contact.html",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 265,
+      "priorityScore": 265
     },
     {
       "id": "google-customer-sierra-outdoor-collective-website-contact",
@@ -16991,7 +17111,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17099,7 +17219,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17207,7 +17327,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17315,7 +17435,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17421,7 +17541,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17529,7 +17649,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17633,7 +17753,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17737,7 +17857,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17841,7 +17961,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17949,7 +18069,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18057,7 +18177,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18165,7 +18285,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18271,7 +18391,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18300,7 +18420,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:23:51.604Z",
+        "verifiedAt": "2026-08-25T14:29:08.829Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -18375,7 +18495,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18483,7 +18603,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18589,7 +18709,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18697,7 +18817,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18726,7 +18846,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:28.439Z",
+        "verifiedAt": "2026-08-25T14:29:19.840Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -18805,7 +18925,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18834,7 +18954,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T12:54:26.311Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T13:24:37.405Z",
+        "verifiedAt": "2026-08-25T14:29:38.622Z",
         "evidenceUrl": "https://www.kenjefferiesandassociates.com/",
         "httpStatus": 200,
         "signals": [
@@ -18902,15 +19022,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "reason": "website_contact_capability_not_verified",
       "officialWebsite": "https://terraoutdoorgear.com/",
       "evidenceUrl": "https://terraoutdoorgear.com/",
-      "requiredEvidence": "first_party_official_channel_and_executable_control"
-    },
-    {
-      "id": "google-customer-1889-sales-website-contact",
-      "company": "1889 Sales",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified",
-      "officialWebsite": "https://1889sales.com/about.html",
-      "evidenceUrl": "https://1889sales.com/about.html",
       "requiredEvidence": "first_party_official_channel_and_executable_control"
     },
     {
@@ -18988,7 +19099,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19045,7 +19156,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19102,7 +19213,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19159,7 +19270,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19216,7 +19327,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19273,7 +19384,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:24",
+        "localTime": "Tue 10:32",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19330,7 +19441,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Tue 21:24",
+        "localTime": "Tue 21:32",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -19387,7 +19498,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Wed 00:24",
+        "localTime": "Wed 00:32",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -19444,7 +19555,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:24",
+        "localTime": "Wed 02:32",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19501,7 +19612,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:24",
+        "localTime": "Wed 02:32",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19558,7 +19669,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:24",
+        "localTime": "Wed 02:32",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19615,7 +19726,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:24",
+        "localTime": "Wed 02:32",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19672,7 +19783,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:24",
+        "localTime": "Wed 02:32",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19729,7 +19840,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Tue 19:54",
+        "localTime": "Tue 20:02",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -19803,7 +19914,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19914,7 +20025,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20023,7 +20134,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20132,7 +20243,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20243,7 +20354,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20354,7 +20465,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20466,7 +20577,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20577,7 +20688,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20690,7 +20801,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20801,7 +20912,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20924,7 +21035,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21046,7 +21157,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21157,7 +21268,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21268,7 +21379,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21380,7 +21491,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21492,7 +21603,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:24",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
