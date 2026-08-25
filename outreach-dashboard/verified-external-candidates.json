@@ -3133,5 +3133,25 @@
     "dataSources": ["official company contact page", "official company-domain email"],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-25T12:18:00.000Z"
+  },
+  {
+    "company": "Simpson Sales Company",
+    "country": "United States",
+    "url": "https://www.simpsonsalesco.com/",
+    "contactUrl": "https://www.simpsonsalesco.com/ssc-sports-division",
+    "publicEmail": "billpurdy@simpsonsalesco.com",
+    "contactEmail": "billpurdy@simpsonsalesco.com",
+    "publicEmailStatus": "Named company-domain president email published on the first-party shooting-sports division page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_principal_contact",
+    "segment": "Southeastern United States outdoor and sporting-goods manufacturers representative",
+    "customerType": "sales_agency",
+    "fitScore": 86,
+    "background": "Simpson Sales Company represents manufacturers across outdoor and shooting-sports distribution, chain, ecommerce, buying-group and independent-dealer channels.",
+    "buyerPersona": "President responsible for represented manufacturers and key retail channels.",
+    "evidenceUrl": "https://www.simpsonsalesco.com/ssc-sports-division",
+    "dataSources": ["official agency website", "official company-domain president email"],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-25T12:33:00.000Z"
   }
 ]
