@@ -525,9 +525,8 @@ function blockingAutomationResultFor(item) {
 
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
+  'submitted_confirmed',
   'send_unconfirmed',
-  'account_followed',
-  'post_liked',
 ]);
 const WEBSITE_CONTACT_STRATEGY_MARKER = 'contact_path_strategy_v2';
 let liveAlibabaWebmailSessionReady = false;

@@ -1,21 +1,6 @@
 rank,id,name,company,platform,country,targetRegion,marketStatus,agencyState,fitScore,marketScore,dealProbabilityScore,priorityScore,contactChannelScore,targetRegionScore,action,dueNow,localTime,nextBest,reason,url,contactUrl,contactSearchUrl,emailFrom,publicEmail,websiteContactSubject,websiteContactMessage,contactPhone,vendorPortal,linkedinUrl,headquarters,founded,companyScale
-"1","google-customer-minnis-brands-website-contact","Minnis Brands","Minnis Brands","email","United Kingdom","europe","open","open","95","4.5","296","294","29","45","email_priority","true","Tue 11:29","now","official_public_business_email_verified","https://minnisbrands.com/contact/","https://minnisbrands.com/contact/","https://www.google.com/search?q=site%3Aminnisbrands.com%20%22Minnis%20Brands%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","todd@minnisbrands.com","FLEXTAIL global brand representation | Minnis Brands","Dear Minnis Brands Team,
-
-I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
-
-FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
-
-Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
-
-Product overview: https://www.flextail.com/
-
-Best regards,
-Leo Liu
-Sales & Operations Director
-Leo@flextailgear.com","","https://minnisbrands.com/contact/","","","",""
-"2","google-customer-minnis-brands-linkedin","Minnis Brands","Minnis Brands","linkedin","United Kingdom","europe","open","open","95","4.5","296","296","29","45","develop","true","Tue 11:29","now","verified_linkedin_profile_ready","https://www.linkedin.com/in/toddminnis","","","","todd@minnisbrands.com","","","","https://minnisbrands.com/contact/","","","",""
-"3","google-customer-alpinewaves-linkedin","AlpineWaves","AlpineWaves","linkedin","United Kingdom","europe","open","open","94","4.5","283","300","17","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.linkedin.com/company/51668434/admin/feed/posts/","","https://www.google.com/search?q=AlpineWaves%20outdoor%20buyer%20partnership%20contact","","","","","","https://www.alpinewaves.co.uk/","","","",""
-"4","google-customer-alpine-waves-linkedin","Alpine Waves","Alpine Waves","linkedin","United Kingdom","europe","open","open","92","4.5","277","290","13","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.linkedin.com/company/51668434/admin/feed/posts/","https://www.alpinewaves.co.uk/","https://www.google.com/search?q=site%3Awww.alpinewaves.co.uk%20%22Alpine%20Waves%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Alpine Waves","Dear Alpine Waves Team,
+"1","google-customer-alpinewaves-linkedin","AlpineWaves","AlpineWaves","linkedin","United Kingdom","europe","open","open","94","4.5","283","300","17","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.linkedin.com/company/51668434/admin/feed/posts/","","https://www.google.com/search?q=AlpineWaves%20outdoor%20buyer%20partnership%20contact","","","","","","https://www.alpinewaves.co.uk/","","","",""
+"2","google-customer-alpine-waves-linkedin","Alpine Waves","Alpine Waves","linkedin","United Kingdom","europe","open","open","92","4.5","277","290","13","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.linkedin.com/company/51668434/admin/feed/posts/","https://www.alpinewaves.co.uk/","https://www.google.com/search?q=site%3Awww.alpinewaves.co.uk%20%22Alpine%20Waves%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Alpine Waves","Dear Alpine Waves Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -29,8 +14,8 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.alpinewaves.co.uk/","","","",""
-"5","google-customer-next-adventure-linkedin","Next Adventure","Next Adventure","linkedin","United States","americas","open","open","88","4.5","237","254","17","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.linkedin.com/company/next-adventure-inc","","https://www.google.com/search?q=Next%20Adventure%20outdoor%20buyer%20partnership%20contact","","","","","","https://nextadventure.net/","","","",""
-"6","google-customer-four-corners-uk-facebook","Four Corners UK","Four Corners UK","facebook","United Kingdom","europe","open","open","95","4.5","280","293","13","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/fourcornersUKcom","https://www.fourcornersuk.com/contact","https://www.google.com/search?q=site%3Awww.fourcornersuk.com%20%22Four%20Corners%20UK%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Four Corners UK","Dear Four Corners UK Team,
+"3","google-customer-next-adventure-linkedin","Next Adventure","Next Adventure","linkedin","United States","americas","open","open","88","4.5","237","254","17","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.linkedin.com/company/next-adventure-inc","","https://www.google.com/search?q=Next%20Adventure%20outdoor%20buyer%20partnership%20contact","","","","","","https://nextadventure.net/","","","",""
+"4","google-customer-four-corners-uk-facebook","Four Corners UK","Four Corners UK","facebook","United Kingdom","europe","open","open","95","4.5","280","293","13","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/fourcornersUKcom","https://www.fourcornersuk.com/contact","https://www.google.com/search?q=site%3Awww.fourcornersuk.com%20%22Four%20Corners%20UK%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Four Corners UK","Dear Four Corners UK Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -44,7 +29,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.fourcornersuk.com/contact","","","",""
-"7","google-customer-motion-sports-facebook","Motion Sports","Motion Sports","facebook","United Kingdom","europe","open","open","91","4.5","276","289","13","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/WixStudio","https://www.motion-sports.co.uk/contact","https://www.google.com/search?q=site%3Awww.motion-sports.co.uk%20%22Motion%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Motion Sports","Dear Motion Sports Team,
+"5","google-customer-motion-sports-facebook","Motion Sports","Motion Sports","facebook","United Kingdom","europe","open","open","91","4.5","276","289","13","45","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/WixStudio","https://www.motion-sports.co.uk/contact","https://www.google.com/search?q=site%3Awww.motion-sports.co.uk%20%22Motion%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Motion Sports","Dear Motion Sports Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -58,7 +43,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.motion-sports.co.uk/contact","","","",""
-"8","google-customer-ludwikoski-associates-facebook","Ludwikoski & Associates","Ludwikoski & Associates","facebook","United States","americas","open","open","95","4.5","265","278","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://facebook.com/ludreps","https://www.ludreps.com/about-us/","https://www.google.com/search?q=site%3Awww.ludreps.com%20%22Ludwikoski%20%26%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Ludwikoski & Associates","Dear Ludwikoski & Associates Team,
+"6","google-customer-ludwikoski-associates-facebook","Ludwikoski & Associates","Ludwikoski & Associates","facebook","United States","americas","open","open","95","4.5","265","278","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://facebook.com/ludreps","https://www.ludreps.com/about-us/","https://www.google.com/search?q=site%3Awww.ludreps.com%20%22Ludwikoski%20%26%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Ludwikoski & Associates","Dear Ludwikoski & Associates Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -72,7 +57,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.ludreps.com/about-us/","","","",""
-"9","google-customer-sanitas-sales-group-facebook","Sanitas Sales Group","Sanitas Sales Group","facebook","United States","americas","open","open","94","4.5","264","277","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/SanitasSalesGroup/","https://sanitassalesgroup.com/contact/","https://www.google.com/search?q=site%3Asanitassalesgroup.com%20%22Sanitas%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sanitas Sales Group","Dear Sanitas Sales Team,
+"7","google-customer-sanitas-sales-group-facebook","Sanitas Sales Group","Sanitas Sales Group","facebook","United States","americas","open","open","94","4.5","264","277","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/SanitasSalesGroup/","https://sanitassalesgroup.com/contact/","https://www.google.com/search?q=site%3Asanitassalesgroup.com%20%22Sanitas%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sanitas Sales Group","Dear Sanitas Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -86,7 +71,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://sanitassalesgroup.com/contact/","","","",""
-"10","google-customer-ascension-sales-group-facebook","Ascension Sales Group","Ascension Sales Group","facebook","United States","americas","open","open","92","4.5","262","275","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/ascensionsalesgroup/","https://www.ascensionsalesgroup.com/","https://www.google.com/search?q=site%3Awww.ascensionsalesgroup.com%20%22Ascension%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Ascension Sales Group","Dear Ascension Sales Team,
+"8","google-customer-ascension-sales-group-facebook","Ascension Sales Group","Ascension Sales Group","facebook","United States","americas","open","open","92","4.5","262","275","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/ascensionsalesgroup/","https://www.ascensionsalesgroup.com/","https://www.google.com/search?q=site%3Awww.ascensionsalesgroup.com%20%22Ascension%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Ascension Sales Group","Dear Ascension Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -100,7 +85,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.ascensionsalesgroup.com/","","","",""
-"11","google-customer-brandywine-river-reps-facebook","Brandywine River Reps","Brandywine River Reps","facebook","United States","americas","open","open","91","4.5","261","274","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/pages/Brandywine-River-Representatives-LLC/101345649956301","https://www.brreps.com/","https://www.google.com/search?q=site%3Awww.brreps.com%20%22Brandywine%20River%20Reps%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Brandywine River Reps","Dear Brandywine River Reps Team,
+"9","google-customer-brandywine-river-reps-facebook","Brandywine River Reps","Brandywine River Reps","facebook","United States","americas","open","open","91","4.5","261","274","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/pages/Brandywine-River-Representatives-LLC/101345649956301","https://www.brreps.com/","https://www.google.com/search?q=site%3Awww.brreps.com%20%22Brandywine%20River%20Reps%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Brandywine River Reps","Dear Brandywine River Reps Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -114,7 +99,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.brreps.com/","","","",""
-"12","google-customer-owens-outdoor-sales-facebook","Owens Outdoor Sales","Owens Outdoor Sales","facebook","United States","americas","open","open","91","4.5","261","274","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/OwensOutdoorSales","https://owensoutdoorsales.com/","https://www.google.com/search?q=site%3Aowensoutdoorsales.com%20%22Owens%20Outdoor%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Owens Outdoor Sales","Dear Owens Outdoor Sales Team,
+"10","google-customer-owens-outdoor-sales-facebook","Owens Outdoor Sales","Owens Outdoor Sales","facebook","United States","americas","open","open","91","4.5","261","274","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.facebook.com/OwensOutdoorSales","https://owensoutdoorsales.com/","https://www.google.com/search?q=site%3Aowensoutdoorsales.com%20%22Owens%20Outdoor%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Owens Outdoor Sales","Dear Owens Outdoor Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -128,10 +113,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://owensoutdoorsales.com/","","","",""
-"13","google-customer-ld-mountain-centre-facebook","LD Mountain Centre","LD Mountain Centre","facebook","United Kingdom","europe","open","open","84","4.5","248","248","17","45","develop","true","Tue 11:29","now","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/LDMountainCentre","","","","","","","","https://www.ldmountaincentre.com/","","","",""
-"14","google-customer-above-and-beyond-facebook","Above and Beyond","Above and Beyond","facebook","Ireland","europe","open","open","84","4.5","218","218","17","45","develop","true","Tue 11:29","now","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/aboveandbeyondireland","","","","","","","","https://www.aboveandbeyond.ie/","","","",""
-"15","google-customer-minnis-brands-instagram","Minnis Brands","Minnis Brands","instagram","United Kingdom","europe","open","open","95","4.5","296","296","29","45","develop","true","Tue 11:29","now","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/minnisbrands","","","","todd@minnisbrands.com","","","","https://minnisbrands.com/contact/","","","",""
-"16","google-customer-haynes-florance-associates-instagram","Haynes Florance & Associates","Haynes Florance & Associates","instagram","United States","americas","open","open","91","4.5","261","274","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.instagram.com/hfassociates","https://haynes-florance.com/","https://www.google.com/search?q=site%3Ahaynes-florance.com%20%22Haynes%20Florance%20%26%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Haynes Florance & Associates","Dear Haynes Florance & Associates Team,
+"11","google-customer-haynes-florance-associates-instagram","Haynes Florance & Associates","Haynes Florance & Associates","instagram","United States","americas","open","open","91","4.5","261","274","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.instagram.com/hfassociates","https://haynes-florance.com/","https://www.google.com/search?q=site%3Ahaynes-florance.com%20%22Haynes%20Florance%20%26%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Haynes Florance & Associates","Dear Haynes Florance & Associates Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -145,7 +127,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://haynes-florance.com/","","","",""
-"17","google-customer-elevated-outdoor-sales-instagram","Elevated Outdoor Sales","Elevated Outdoor Sales","instagram","United States","americas","open","open","90","4.5","260","273","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.instagram.com/eosaleslife/","https://www.elevatedoutdoorsales.com/home","https://www.google.com/search?q=site%3Awww.elevatedoutdoorsales.com%20%22Elevated%20Outdoor%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Elevated Outdoor Sales","Dear Elevated Outdoor Sales Team,
+"12","google-customer-elevated-outdoor-sales-instagram","Elevated Outdoor Sales","Elevated Outdoor Sales","instagram","United States","americas","open","open","90","4.5","260","273","13","30","develop","true","2026/8/25 18:05:20","open exact company profile, review background, then start compliant buyer/contact development","official_website_social_channel_verified","https://www.instagram.com/eosaleslife/","https://www.elevatedoutdoorsales.com/home","https://www.google.com/search?q=site%3Awww.elevatedoutdoorsales.com%20%22Elevated%20Outdoor%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Elevated Outdoor Sales","Dear Elevated Outdoor Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -159,9 +141,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.elevatedoutdoorsales.com/home","","","",""
-"18","google-customer-ld-mountain-centre-instagram","LD Mountain Centre","LD Mountain Centre","instagram","United Kingdom","europe","open","open","84","4.5","248","248","17","45","develop","true","Tue 11:29","now","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/ld_mountain_centre/","","","","","","","","https://www.ldmountaincentre.com/","","","",""
-"19","google-customer-above-and-beyond-instagram","Above and Beyond","Above and Beyond","instagram","Ireland","europe","open","open","84","4.5","218","218","17","45","develop","true","Tue 11:29","now","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/aboveandbeyondireland/","","","","","","","","https://www.aboveandbeyond.ie/","","","",""
-"20","google-customer-shiner-distribution-website-contact","Shiner Distribution","Shiner Distribution","website_form","United Kingdom","europe","open","open","91","4.5","276","276","13","45","verify_target","true","Tue 11:29","now","homepage_only_contact_path_requires_verification","https://shiner.co.uk/","https://shiner.co.uk/","https://www.google.com/search?q=site%3Ashiner.co.uk%20%22Shiner%20Distribution%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Shiner Distribution","Dear Shiner Distribution Team,
+"13","google-customer-minnis-brands-website-contact","Minnis Brands","Minnis Brands","email","United Kingdom","europe","open","open","95","4.5","296","294","29","45","email_priority","false","Tue 11:43","Europe/London afternoon","official_public_business_email_verified","https://minnisbrands.com/contact/","https://minnisbrands.com/contact/","https://www.google.com/search?q=site%3Aminnisbrands.com%20%22Minnis%20Brands%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","todd@minnisbrands.com","FLEXTAIL global brand representation | Minnis Brands","Dear Minnis Brands Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -174,36 +154,8 @@ Product overview: https://www.flextail.com/
 Best regards,
 Leo Liu
 Sales & Operations Director
-Leo@flextailgear.com","","https://shiner.co.uk/","","","",""
-"21","google-customer-outdoor-brands-uk-website-contact","Outdoor Brands UK","Outdoor Brands UK","website_form","United Kingdom","europe","open","open","88","4.5","273","273","13","45","verify_target","true","Tue 11:29","now","homepage_only_contact_path_requires_verification","https://www.outdoorbrands.co.uk/","https://www.outdoorbrands.co.uk/","https://www.google.com/search?q=site%3Awww.outdoorbrands.co.uk%20%22Outdoor%20Brands%20UK%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Outdoor Brands UK","Dear Outdoor Brands UK Team,
-
-I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
-
-FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
-
-Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
-
-Product overview: https://www.flextail.com/
-
-Best regards,
-Leo Liu
-Sales & Operations Director
-Leo@flextailgear.com","","https://www.outdoorbrands.co.uk/","","","",""
-"22","google-customer-alpinetrek-website-contact","Alpinetrek","Alpinetrek","website_form","United Kingdom","europe","open","open","89","4.5","249","249","13","45","verify_target","true","Tue 11:29","now","homepage_only_contact_path_requires_verification","https://www.alpinetrek.co.uk/","https://www.alpinetrek.co.uk/","https://www.google.com/search?q=site%3Awww.alpinetrek.co.uk%20%22Alpinetrek%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | Alpinetrek","Dear Alpinetrek Team,
-
-I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
-
-FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
-
-Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
-
-Product overview: https://www.flextail.com/
-
-Best regards,
-Leo Liu
-Sales & Operations Director
-Leo@flextailgear.com","","https://www.alpinetrek.co.uk/","","","",""
-"23","google-customer-g-b-stumpp-associates-website-contact","G.B. Stumpp & Associates","G.B. Stumpp & Associates","email","United States","americas","open","open","96","4.5","278","276","25","30","email_priority","false","Tue 06:29","America/New_York morning","official_public_business_email_verified","https://www.gbstumpp.com/Contact.html","https://www.gbstumpp.com/Contact.html","https://www.google.com/search?q=site%3Awww.gbstumpp.com%20%22G.B.%20Stumpp%20%26%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","tdean@gbstumpp.com","FLEXTAIL global brand representation | G.B. Stumpp & Associates","Dear G.B. Stumpp & Associates Team,
+Leo@flextailgear.com","","https://minnisbrands.com/contact/","","","",""
+"14","google-customer-g-b-stumpp-associates-website-contact","G.B. Stumpp & Associates","G.B. Stumpp & Associates","email","United States","americas","open","open","96","4.5","278","276","25","30","email_priority","false","Tue 06:43","America/New_York morning","official_public_business_email_verified","https://www.gbstumpp.com/Contact.html","https://www.gbstumpp.com/Contact.html","https://www.google.com/search?q=site%3Awww.gbstumpp.com%20%22G.B.%20Stumpp%20%26%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","tdean@gbstumpp.com","FLEXTAIL global brand representation | G.B. Stumpp & Associates","Dear G.B. Stumpp & Associates Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -217,7 +169,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.gbstumpp.com/Contact.html","","","",""
-"24","google-customer-hardin-outdoors-website-contact","Hardin Outdoors","Hardin Outdoors","email","United States","americas","open","open","95","4.5","277","275","25","30","email_priority","false","Tue 06:29","America/New_York morning","official_public_business_email_verified","https://www.hardinoutdoors.com/about","https://www.hardinoutdoors.com/about","https://www.google.com/search?q=site%3Awww.hardinoutdoors.com%20%22Hardin%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Elliott.Hardin@Hardinoutdoors.com","FLEXTAIL global brand representation | Hardin Outdoors","Dear Hardin Outdoors Team,
+"15","google-customer-hardin-outdoors-website-contact","Hardin Outdoors","Hardin Outdoors","email","United States","americas","open","open","95","4.5","277","275","25","30","email_priority","false","Tue 06:43","America/New_York morning","official_public_business_email_verified","https://www.hardinoutdoors.com/about","https://www.hardinoutdoors.com/about","https://www.google.com/search?q=site%3Awww.hardinoutdoors.com%20%22Hardin%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Elliott.Hardin@Hardinoutdoors.com","FLEXTAIL global brand representation | Hardin Outdoors","Dear Hardin Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -231,7 +183,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.hardinoutdoors.com/about","","","",""
-"25","google-customer-lathrop-associates-website-contact","Lathrop Associates","Lathrop Associates","email","United States","americas","open","open","94","4.5","276","274","25","30","email_priority","false","Tue 06:29","America/New_York morning","official_public_business_email_verified","https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf","https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf","https://www.google.com/search?q=site%3Awww.lathropassociates.com%20%22Lathrop%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","chris@lathropassociates.com","FLEXTAIL global brand representation | Lathrop Associates","Dear Lathrop Associates Team,
+"16","google-customer-lathrop-associates-website-contact","Lathrop Associates","Lathrop Associates","email","United States","americas","open","open","94","4.5","276","274","25","30","email_priority","false","Tue 06:43","America/New_York morning","official_public_business_email_verified","https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf","https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf","https://www.google.com/search?q=site%3Awww.lathropassociates.com%20%22Lathrop%20Associates%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","chris@lathropassociates.com","FLEXTAIL global brand representation | Lathrop Associates","Dear Lathrop Associates Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -245,7 +197,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf","","","",""
-"26","google-customer-pss-agency-website-contact","PSS Agency","PSS Agency","email","United States","americas","open","open","93","4.5","275","273","25","30","email_priority","false","Tue 06:29","America/New_York morning","official_public_business_email_verified","https://pssagency.com/","https://pssagency.com/","https://www.google.com/search?q=site%3Apssagency.com%20%22PSS%20Agency%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","info@pssagency.com","FLEXTAIL global brand representation | PSS Agency","Dear PSS Agency Team,
+"17","google-customer-pss-agency-website-contact","PSS Agency","PSS Agency","email","United States","americas","open","open","93","4.5","275","273","25","30","email_priority","false","Tue 06:43","America/New_York morning","official_public_business_email_verified","https://pssagency.com/","https://pssagency.com/","https://www.google.com/search?q=site%3Apssagency.com%20%22PSS%20Agency%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","info@pssagency.com","FLEXTAIL global brand representation | PSS Agency","Dear PSS Agency Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -259,7 +211,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://pssagency.com/","","","",""
-"27","google-customer-nickel-n-diamond-sales-website-contact","Nickel N Diamond Sales","Nickel N Diamond Sales","email","United States","americas","open","open","89","4.5","271","269","25","30","email_priority","false","Tue 06:29","America/New_York morning","official_public_business_email_verified","https://www.beaverwax.com/pages/new-contact","https://www.beaverwax.com/pages/new-contact","https://www.google.com/search?q=site%3Awww.beaverwax.com%20%22Nickel%20N%20Diamond%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","nickelndiamondsales@gmail.com","FLEXTAIL global brand representation | Nickel N Diamond Sales","Dear Nickel N Diamond Sales Team,
+"18","google-customer-nickel-n-diamond-sales-website-contact","Nickel N Diamond Sales","Nickel N Diamond Sales","email","United States","americas","open","open","89","4.5","271","269","25","30","email_priority","false","Tue 06:43","America/New_York morning","official_public_business_email_verified","https://www.beaverwax.com/pages/new-contact","https://www.beaverwax.com/pages/new-contact","https://www.google.com/search?q=site%3Awww.beaverwax.com%20%22Nickel%20N%20Diamond%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","nickelndiamondsales@gmail.com","FLEXTAIL global brand representation | Nickel N Diamond Sales","Dear Nickel N Diamond Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -273,7 +225,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.beaverwax.com/pages/new-contact","","","",""
-"28","google-customer-continental-sports-inc-website-contact","Continental Sports Inc","Continental Sports Inc","email","Canada","americas","open","open","91","4.5","243","241","25","30","email_priority","false","Tue 06:29","America/Toronto morning","official_public_business_email_verified","https://csisports.ca/","https://csisports.ca/","https://www.google.com/search?q=site%3Acsisports.ca%20%22Continental%20Sports%20Inc%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","info@csisports.net","FLEXTAIL global brand representation | Continental Sports Inc","Dear Continental Sports Team,
+"19","google-customer-continental-sports-inc-website-contact","Continental Sports Inc","Continental Sports Inc","email","Canada","americas","open","open","91","4.5","243","241","25","30","email_priority","false","Tue 06:43","America/Toronto morning","official_public_business_email_verified","https://csisports.ca/","https://csisports.ca/","https://www.google.com/search?q=site%3Acsisports.ca%20%22Continental%20Sports%20Inc%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","info@csisports.net","FLEXTAIL global brand representation | Continental Sports Inc","Dear Continental Sports Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -287,7 +239,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://csisports.ca/","","","",""
-"29","google-customer-fjellsport-website-contact","Fjellsport","Fjellsport","email","Norway","europe","open","open","90","4.5","232","230","25","45","email_priority","false","Tue 12:29","Europe/Oslo afternoon","official_public_business_email_verified","https://www.fjellsport.no/faq/personvern","https://www.fjellsport.no/faq/personvern","https://www.google.com/search?q=site%3Awww.fjellsport.no%20%22Fjellsport%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","kundeservice@fjellsport.no","FLEXTAIL global distribution partnership | Fjellsport","Dear Fjellsport Team,
+"20","google-customer-fjellsport-website-contact","Fjellsport","Fjellsport","email","Norway","europe","open","open","90","4.5","232","230","25","45","email_priority","false","Tue 12:43","Europe/Oslo afternoon","official_public_business_email_verified","https://www.fjellsport.no/faq/personvern","https://www.fjellsport.no/faq/personvern","https://www.google.com/search?q=site%3Awww.fjellsport.no%20%22Fjellsport%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","kundeservice@fjellsport.no","FLEXTAIL global distribution partnership | Fjellsport","Dear Fjellsport Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -301,7 +253,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.fjellsport.no/faq/personvern","","","",""
-"30","google-customer-varuste-website-contact","Varuste","Varuste","email","Finland","europe","open","open","87","4.5","229","227","25","45","email_priority","false","Tue 13:29","Europe/Helsinki afternoon","official_public_business_email_verified","https://varuste.net/","https://varuste.net/","https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","info@varuste.net","FLEXTAIL global distribution partnership | Varuste","Dear Varuste Team,
+"21","google-customer-varuste-website-contact","Varuste","Varuste","email","Finland","europe","open","open","87","4.5","229","227","25","45","email_priority","false","Tue 13:43","Europe/Helsinki afternoon","official_public_business_email_verified","https://varuste.net/","https://varuste.net/","https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","info@varuste.net","FLEXTAIL global distribution partnership | Varuste","Dear Varuste Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -315,7 +267,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://varuste.net/","","","",""
-"31","google-customer-wildfire-sports-website-contact","Wildfire Sports","Wildfire Sports","email","Australia","oceania","open","open","87","4.5","184","182","25","0","email_priority","false","Tue 20:29","Australia/Sydney morning","official_public_business_email_verified","https://www.wildfiresports.com.au/contact-us","https://www.wildfiresports.com.au/contact-us","https://www.google.com/search?q=site%3Awww.wildfiresports.com.au%20%22Wildfire%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","enquiries@wildfiresports.com.au","FLEXTAIL global distribution partnership | Wildfire Sports","Dear Wildfire Sports Team,
+"22","google-customer-wildfire-sports-website-contact","Wildfire Sports","Wildfire Sports","email","Australia","oceania","open","open","87","4.5","184","182","25","0","email_priority","false","Tue 20:43","Australia/Sydney morning","official_public_business_email_verified","https://www.wildfiresports.com.au/contact-us","https://www.wildfiresports.com.au/contact-us","https://www.google.com/search?q=site%3Awww.wildfiresports.com.au%20%22Wildfire%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","enquiries@wildfiresports.com.au","FLEXTAIL global distribution partnership | Wildfire Sports","Dear Wildfire Sports Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -329,8 +281,9 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.wildfiresports.com.au/contact-us","","","",""
-"32","google-customer-esprinet-group-linkedin","Esprinet Group","Esprinet Group","linkedin","Italy","europe","open","open","99","4.5","258","258","17","45","develop","false","Tue 12:29","Europe/Rome afternoon","verified_linkedin_profile_ready","https://www.linkedin.com/company/esprinet-group/","","","","","","","","https://www.esprinet.com/en/become-a-supplier/","","","",""
-"33","google-customer-northern-exposure-sporting-group-linkedin","Northern Exposure Sporting Group","Northern Exposure Sporting Group","linkedin","Canada","americas","open","open","88","4.5","228","228","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://linkedin.com/in/shawn-hannah-47487913","https://northernsporting.com/","https://www.google.com/search?q=site%3Anorthernsporting.com%20%22Northern%20Exposure%20Sporting%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Northern Exposure Sporting Group","Dear Northern Exposure Sporting Team,
+"23","google-customer-minnis-brands-linkedin","Minnis Brands","Minnis Brands","linkedin","United Kingdom","europe","open","open","95","4.5","296","296","29","45","develop","false","Tue 11:43","Europe/London afternoon","verified_linkedin_profile_ready","https://www.linkedin.com/in/toddminnis","","","","todd@minnisbrands.com","","","","https://minnisbrands.com/contact/","","","",""
+"24","google-customer-esprinet-group-linkedin","Esprinet Group","Esprinet Group","linkedin","Italy","europe","open","open","99","4.5","258","258","17","45","develop","false","Tue 12:43","Europe/Rome afternoon","verified_linkedin_profile_ready","https://www.linkedin.com/company/esprinet-group/","","","","","","","","https://www.esprinet.com/en/become-a-supplier/","","","",""
+"25","google-customer-northern-exposure-sporting-group-linkedin","Northern Exposure Sporting Group","Northern Exposure Sporting Group","linkedin","Canada","americas","open","open","88","4.5","228","228","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://linkedin.com/in/shawn-hannah-47487913","https://northernsporting.com/","https://www.google.com/search?q=site%3Anorthernsporting.com%20%22Northern%20Exposure%20Sporting%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Northern Exposure Sporting Group","Dear Northern Exposure Sporting Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -344,7 +297,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://northernsporting.com/","","","",""
-"34","google-customer-hardin-outdoors-facebook","Hardin Outdoors","Hardin Outdoors","facebook","United States","americas","open","open","95","4.5","277","277","25","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/HardinOutdoors/","https://www.hardinoutdoors.com/about","https://www.google.com/search?q=site%3Awww.hardinoutdoors.com%20%22Hardin%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Elliott.Hardin@Hardinoutdoors.com","FLEXTAIL global brand representation | Hardin Outdoors","Dear Hardin Outdoors Team,
+"26","google-customer-hardin-outdoors-facebook","Hardin Outdoors","Hardin Outdoors","facebook","United States","americas","open","open","95","4.5","277","277","25","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/HardinOutdoors/","https://www.hardinoutdoors.com/about","https://www.google.com/search?q=site%3Awww.hardinoutdoors.com%20%22Hardin%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Elliott.Hardin@Hardinoutdoors.com","FLEXTAIL global brand representation | Hardin Outdoors","Dear Hardin Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -358,7 +311,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.hardinoutdoors.com/about","","","",""
-"35","google-customer-nickel-n-diamond-sales-facebook","Nickel N Diamond Sales","Nickel N Diamond Sales","facebook","United States","americas","open","open","89","4.5","271","271","25","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/BeaverWaxFan/","https://www.beaverwax.com/pages/new-contact","https://www.google.com/search?q=site%3Awww.beaverwax.com%20%22Nickel%20N%20Diamond%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","nickelndiamondsales@gmail.com","FLEXTAIL global brand representation | Nickel N Diamond Sales","Dear Nickel N Diamond Sales Team,
+"27","google-customer-nickel-n-diamond-sales-facebook","Nickel N Diamond Sales","Nickel N Diamond Sales","facebook","United States","americas","open","open","89","4.5","271","271","25","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/BeaverWaxFan/","https://www.beaverwax.com/pages/new-contact","https://www.google.com/search?q=site%3Awww.beaverwax.com%20%22Nickel%20N%20Diamond%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","nickelndiamondsales@gmail.com","FLEXTAIL global brand representation | Nickel N Diamond Sales","Dear Nickel N Diamond Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -372,7 +325,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.beaverwax.com/pages/new-contact","","","",""
-"36","google-customer-powers-pedersen-sales-group-facebook","Powers Pedersen Sales Group","Powers Pedersen Sales Group","facebook","United States","americas","open","open","92","4.5","262","262","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/Powers-Sales-Group-325311146231/","https://p-psg.com/","https://www.google.com/search?q=site%3Ap-psg.com%20%22Powers%20Pedersen%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Powers Pedersen Sales Group","Dear Powers Pedersen Sales Team,
+"28","google-customer-powers-pedersen-sales-group-facebook","Powers Pedersen Sales Group","Powers Pedersen Sales Group","facebook","United States","americas","open","open","92","4.5","262","262","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/Powers-Sales-Group-325311146231/","https://p-psg.com/","https://www.google.com/search?q=site%3Ap-psg.com%20%22Powers%20Pedersen%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Powers Pedersen Sales Group","Dear Powers Pedersen Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -386,7 +339,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://p-psg.com/","","","",""
-"37","google-customer-action-sports-agency-facebook","Action Sports Agency","Action Sports Agency","facebook","United States","americas","open","open","90","4.5","260","260","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/ActionSportsAgency/","https://www.actionsportsagency.com/","https://www.google.com/search?q=site%3Awww.actionsportsagency.com%20%22Action%20Sports%20Agency%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Action Sports Agency","Dear Action Sports Agency Team,
+"29","google-customer-action-sports-agency-facebook","Action Sports Agency","Action Sports Agency","facebook","United States","americas","open","open","90","4.5","260","260","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/ActionSportsAgency/","https://www.actionsportsagency.com/","https://www.google.com/search?q=site%3Awww.actionsportsagency.com%20%22Action%20Sports%20Agency%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Action Sports Agency","Dear Action Sports Agency Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -400,7 +353,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.actionsportsagency.com/","","","",""
-"38","google-customer-awesome-outdoors-group-facebook","Awesome Outdoors Group","Awesome Outdoors Group","facebook","United States","americas","open","open","85","4.5","255","255","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/Awesome-Outdoors-Group-104741054869722","https://www.awesomeoutdoorsgroup.com/about-us","https://www.google.com/search?q=site%3Awww.awesomeoutdoorsgroup.com%20%22Awesome%20Outdoors%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Awesome Outdoors Group","Dear Awesome Outdoors Team,
+"30","google-customer-awesome-outdoors-group-facebook","Awesome Outdoors Group","Awesome Outdoors Group","facebook","United States","americas","open","open","85","4.5","255","255","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/Awesome-Outdoors-Group-104741054869722","https://www.awesomeoutdoorsgroup.com/about-us","https://www.google.com/search?q=site%3Awww.awesomeoutdoorsgroup.com%20%22Awesome%20Outdoors%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Awesome Outdoors Group","Dear Awesome Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -414,8 +367,9 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.awesomeoutdoorsgroup.com/about-us","","","",""
-"39","google-customer-rock-creek-facebook","Rock/Creek","Rock/Creek","facebook","United States","americas","open","open","84","4.5","245","245","29","30","develop","false","Tue 06:29","America/New_York morning","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/rockcreek","","","","companyrockcreek@gmail.com","","","","https://www.rockcreek.com/","","","",""
-"40","google-customer-nohrth-facebook","NOHRTH","NOHRTH","facebook","United States","americas","open","open","90","4.5","235","235","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/pages/Nohrth-Sales-Agency/433244803529461?pnref=lhc","https://nohrth.com/about-us/","https://www.google.com/search?q=site%3Anohrth.com%20%22NOHRTH%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | NOHRTH","Dear NOHRTH Team,
+"31","google-customer-ld-mountain-centre-facebook","LD Mountain Centre","LD Mountain Centre","facebook","United Kingdom","europe","open","open","84","4.5","248","248","17","45","develop","false","Tue 11:43","Europe/London afternoon","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/LDMountainCentre","","","","","","","","https://www.ldmountaincentre.com/","","","",""
+"32","google-customer-rock-creek-facebook","Rock/Creek","Rock/Creek","facebook","United States","americas","open","open","84","4.5","245","245","29","30","develop","false","Tue 06:43","America/New_York morning","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/rockcreek","","","","companyrockcreek@gmail.com","","","","https://www.rockcreek.com/","","","",""
+"33","google-customer-nohrth-facebook","NOHRTH","NOHRTH","facebook","United States","americas","open","open","90","4.5","235","235","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.facebook.com/pages/Nohrth-Sales-Agency/433244803529461?pnref=lhc","https://nohrth.com/about-us/","https://www.google.com/search?q=site%3Anohrth.com%20%22NOHRTH%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | NOHRTH","Dear NOHRTH Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -429,7 +383,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://nohrth.com/about-us/","","","",""
-"41","google-customer-onwardup-facebook","OnwardUP","OnwardUP","facebook","Canada","americas","open","open","94","4.5","234","234","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.facebook.com/onwardup/","https://onwardup.com/brands/","https://www.google.com/search?q=site%3Aonwardup.com%20%22OnwardUP%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | OnwardUP","Dear OnwardUP Team,
+"34","google-customer-onwardup-facebook","OnwardUP","OnwardUP","facebook","Canada","americas","open","open","94","4.5","234","234","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.facebook.com/onwardup/","https://onwardup.com/brands/","https://www.google.com/search?q=site%3Aonwardup.com%20%22OnwardUP%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | OnwardUP","Dear OnwardUP Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -443,8 +397,8 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://onwardup.com/brands/","","","",""
-"42","google-customer-eastern-mountain-sports-facebook","Eastern Mountain Sports","Eastern Mountain Sports","facebook","United States","americas","open","open","84","4.5","233","233","17","30","develop","false","Tue 06:29","America/New_York morning","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/EasternMountainSports","","","","","","","","https://www.ems.com/","","","",""
-"43","google-customer-outdoor-gear-canada-facebook","Outdoor Gear Canada","Outdoor Gear Canada","facebook","Canada","americas","open","open","84","4.5","224","224","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.facebook.com/outdoorgearcanada","https://www.ogc.ca/","https://www.google.com/search?q=site%3Awww.ogc.ca%20%22Outdoor%20Gear%20Canada%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Outdoor Gear Canada","Dear Outdoor Gear Canada Team,
+"35","google-customer-eastern-mountain-sports-facebook","Eastern Mountain Sports","Eastern Mountain Sports","facebook","United States","americas","open","open","84","4.5","233","233","17","30","develop","false","Tue 06:43","America/New_York morning","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/EasternMountainSports","","","","","","","","https://www.ems.com/","","","",""
+"36","google-customer-outdoor-gear-canada-facebook","Outdoor Gear Canada","Outdoor Gear Canada","facebook","Canada","americas","open","open","84","4.5","224","224","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.facebook.com/outdoorgearcanada","https://www.ogc.ca/","https://www.google.com/search?q=site%3Awww.ogc.ca%20%22Outdoor%20Gear%20Canada%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Outdoor Gear Canada","Dear Outdoor Gear Canada Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -458,10 +412,11 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.ogc.ca/","","","",""
-"44","google-customer-campz-facebook","Campz","Campz","facebook","Germany","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 12:29","Europe/Berlin afternoon","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/campz.de","","","","","","","","https://www.campz.de/","","","",""
-"45","google-customer-intersport-norway-facebook","Intersport Norway","Intersport Norway","facebook","Norway","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 12:29","Europe/Oslo afternoon","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/intersportnorge","","","","","","","","https://www.intersport.no/","","","",""
-"46","google-customer-atmosphere-facebook","Atmosphere","Atmosphere","facebook","Canada","americas","open","open","84","4.5","203","203","17","30","develop","false","Tue 06:29","America/Toronto morning","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/Atmosphere","","","","","","","","https://www.atmosphere.ca/","","","",""
-"47","google-customer-latulippe-facebook","Latulippe","Latulippe","facebook","Canada","americas","open","open","87","4.5","202","202","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.facebook.com/Magasin.Latulippe/","https://latulippe.com/","https://www.google.com/search?q=site%3Alatulippe.com%20%22Latulippe%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | Latulippe","Dear Latulippe Team,
+"37","google-customer-above-and-beyond-facebook","Above and Beyond","Above and Beyond","facebook","Ireland","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 11:43","Europe/Dublin afternoon","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/aboveandbeyondireland","","","","","","","","https://www.aboveandbeyond.ie/","","","",""
+"38","google-customer-campz-facebook","Campz","Campz","facebook","Germany","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 12:43","Europe/Berlin afternoon","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/campz.de","","","","","","","","https://www.campz.de/","","","",""
+"39","google-customer-intersport-norway-facebook","Intersport Norway","Intersport Norway","facebook","Norway","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 12:43","Europe/Oslo afternoon","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/intersportnorge","","","","","","","","https://www.intersport.no/","","","",""
+"40","google-customer-atmosphere-facebook","Atmosphere","Atmosphere","facebook","Canada","americas","open","open","84","4.5","203","203","17","30","develop","false","Tue 06:43","America/Toronto morning","concrete_google_discovered_major_customer_facebook","https://www.facebook.com/Atmosphere","","","","","","","","https://www.atmosphere.ca/","","","",""
+"41","google-customer-latulippe-facebook","Latulippe","Latulippe","facebook","Canada","americas","open","open","87","4.5","202","202","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.facebook.com/Magasin.Latulippe/","https://latulippe.com/","https://www.google.com/search?q=site%3Alatulippe.com%20%22Latulippe%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | Latulippe","Dear Latulippe Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -475,7 +430,8 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://latulippe.com/","","","",""
-"48","google-customer-hardin-outdoors-instagram","Hardin Outdoors","Hardin Outdoors","instagram","United States","americas","open","open","95","4.5","277","277","25","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/hardinoutdoors/","https://www.hardinoutdoors.com/about","https://www.google.com/search?q=site%3Awww.hardinoutdoors.com%20%22Hardin%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Elliott.Hardin@Hardinoutdoors.com","FLEXTAIL global brand representation | Hardin Outdoors","Dear Hardin Outdoors Team,
+"42","google-customer-minnis-brands-instagram","Minnis Brands","Minnis Brands","instagram","United Kingdom","europe","open","open","95","4.5","296","296","29","45","develop","false","Tue 11:43","Europe/London afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/minnisbrands","","","","todd@minnisbrands.com","","","","https://minnisbrands.com/contact/","","","",""
+"43","google-customer-hardin-outdoors-instagram","Hardin Outdoors","Hardin Outdoors","instagram","United States","americas","open","open","95","4.5","277","277","25","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/hardinoutdoors/","https://www.hardinoutdoors.com/about","https://www.google.com/search?q=site%3Awww.hardinoutdoors.com%20%22Hardin%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Elliott.Hardin@Hardinoutdoors.com","FLEXTAIL global brand representation | Hardin Outdoors","Dear Hardin Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -489,7 +445,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.hardinoutdoors.com/about","","","",""
-"49","google-customer-nickel-n-diamond-sales-instagram","Nickel N Diamond Sales","Nickel N Diamond Sales","instagram","United States","americas","open","open","89","4.5","271","271","25","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/beaverwax/?hl=en","https://www.beaverwax.com/pages/new-contact","https://www.google.com/search?q=site%3Awww.beaverwax.com%20%22Nickel%20N%20Diamond%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","nickelndiamondsales@gmail.com","FLEXTAIL global brand representation | Nickel N Diamond Sales","Dear Nickel N Diamond Sales Team,
+"44","google-customer-nickel-n-diamond-sales-instagram","Nickel N Diamond Sales","Nickel N Diamond Sales","instagram","United States","americas","open","open","89","4.5","271","271","25","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/beaverwax/?hl=en","https://www.beaverwax.com/pages/new-contact","https://www.google.com/search?q=site%3Awww.beaverwax.com%20%22Nickel%20N%20Diamond%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","nickelndiamondsales@gmail.com","FLEXTAIL global brand representation | Nickel N Diamond Sales","Dear Nickel N Diamond Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -503,8 +459,8 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.beaverwax.com/pages/new-contact","","","",""
-"50","google-customer-activ-agency-denver-instagram","Activ Agency Denver","Activ Agency Denver","instagram","United States","americas","open","open","92","4.5","266","266","17","30","develop","false","Tue 06:29","America/New_York morning","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/activagency","","","","","","","","https://www.activagency.com/about","","","",""
-"51","google-customer-parallel-45-sales-group-instagram","Parallel 45 Sales Group","Parallel 45 Sales Group","instagram","United States","americas","open","open","91","4.5","261","261","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/parallel45sales/","https://parallel45sales.com/","https://www.google.com/search?q=site%3Aparallel45sales.com%20%22Parallel%2045%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Parallel 45 Sales Group","Dear Parallel 45 Sales Team,
+"45","google-customer-activ-agency-denver-instagram","Activ Agency Denver","Activ Agency Denver","instagram","United States","americas","open","open","92","4.5","266","266","17","30","develop","false","Tue 06:43","America/New_York morning","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/activagency","","","","","","","","https://www.activagency.com/about","","","",""
+"46","google-customer-parallel-45-sales-group-instagram","Parallel 45 Sales Group","Parallel 45 Sales Group","instagram","United States","americas","open","open","91","4.5","261","261","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/parallel45sales/","https://parallel45sales.com/","https://www.google.com/search?q=site%3Aparallel45sales.com%20%22Parallel%2045%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Parallel 45 Sales Group","Dear Parallel 45 Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -518,7 +474,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://parallel45sales.com/","","","",""
-"52","google-customer-perspective-outdoor-instagram","Perspective Outdoor","Perspective Outdoor","instagram","United States","americas","open","open","90","4.5","260","260","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/perspectiveoutdoor/","https://www.perspectiveoutdoor.com/contact-us","https://www.google.com/search?q=site%3Awww.perspectiveoutdoor.com%20%22Perspective%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Perspective Outdoor","Dear Perspective Outdoor Team,
+"47","google-customer-perspective-outdoor-instagram","Perspective Outdoor","Perspective Outdoor","instagram","United States","americas","open","open","90","4.5","260","260","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/perspectiveoutdoor/","https://www.perspectiveoutdoor.com/contact-us","https://www.google.com/search?q=site%3Awww.perspectiveoutdoor.com%20%22Perspective%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Perspective Outdoor","Dear Perspective Outdoor Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -532,7 +488,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.perspectiveoutdoor.com/contact-us","","","",""
-"53","google-customer-heron-outdoors-instagram","Heron Outdoors","Heron Outdoors","instagram","United States","americas","open","open","88","4.5","258","258","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/heronoutdoorsco","https://www.heronoutdoors.co/","https://www.google.com/search?q=site%3Awww.heronoutdoors.co%20%22Heron%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Heron Outdoors","Dear Heron Outdoors Team,
+"48","google-customer-heron-outdoors-instagram","Heron Outdoors","Heron Outdoors","instagram","United States","americas","open","open","88","4.5","258","258","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/heronoutdoorsco","https://www.heronoutdoors.co/","https://www.google.com/search?q=site%3Awww.heronoutdoors.co%20%22Heron%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Heron Outdoors","Dear Heron Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -546,7 +502,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.heronoutdoors.co/","","","",""
-"54","google-customer-awesome-outdoors-group-instagram","Awesome Outdoors Group","Awesome Outdoors Group","instagram","United States","americas","open","open","85","4.5","255","255","13","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/awesomeoutdoorsgroup/","https://www.awesomeoutdoorsgroup.com/about-us","https://www.google.com/search?q=site%3Awww.awesomeoutdoorsgroup.com%20%22Awesome%20Outdoors%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Awesome Outdoors Group","Dear Awesome Outdoors Team,
+"49","google-customer-awesome-outdoors-group-instagram","Awesome Outdoors Group","Awesome Outdoors Group","instagram","United States","americas","open","open","85","4.5","255","255","13","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/awesomeoutdoorsgroup/","https://www.awesomeoutdoorsgroup.com/about-us","https://www.google.com/search?q=site%3Awww.awesomeoutdoorsgroup.com%20%22Awesome%20Outdoors%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Awesome Outdoors Group","Dear Awesome Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -560,8 +516,9 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.awesomeoutdoorsgroup.com/about-us","","","",""
-"55","google-customer-rock-creek-instagram","Rock/Creek","Rock/Creek","instagram","United States","americas","open","open","84","4.5","245","245","29","30","develop","false","Tue 06:29","America/New_York morning","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/rockcreek/","","","","companyrockcreek@gmail.com","","","","https://www.rockcreek.com/","","","",""
-"56","google-customer-onwardup-instagram","OnwardUP","OnwardUP","instagram","Canada","americas","open","open","94","4.5","234","234","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/onwardup_campus/","https://onwardup.com/brands/","https://www.google.com/search?q=site%3Aonwardup.com%20%22OnwardUP%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | OnwardUP","Dear OnwardUP Team,
+"50","google-customer-ld-mountain-centre-instagram","LD Mountain Centre","LD Mountain Centre","instagram","United Kingdom","europe","open","open","84","4.5","248","248","17","45","develop","false","Tue 11:43","Europe/London afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/ld_mountain_centre/","","","","","","","","https://www.ldmountaincentre.com/","","","",""
+"51","google-customer-rock-creek-instagram","Rock/Creek","Rock/Creek","instagram","United States","americas","open","open","84","4.5","245","245","29","30","develop","false","Tue 06:43","America/New_York morning","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/rockcreek/","","","","companyrockcreek@gmail.com","","","","https://www.rockcreek.com/","","","",""
+"52","google-customer-onwardup-instagram","OnwardUP","OnwardUP","instagram","Canada","americas","open","open","94","4.5","234","234","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/onwardup_campus/","https://onwardup.com/brands/","https://www.google.com/search?q=site%3Aonwardup.com%20%22OnwardUP%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | OnwardUP","Dear OnwardUP Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -575,8 +532,8 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://onwardup.com/brands/","","","",""
-"57","google-customer-eastern-mountain-sports-instagram","Eastern Mountain Sports","Eastern Mountain Sports","instagram","United States","americas","open","open","84","4.5","233","233","17","30","develop","false","Tue 06:29","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/easternmntnsports/","","","","","","","","https://www.ems.com/","","","",""
-"58","google-customer-northern-exposure-sporting-group-instagram","Northern Exposure Sporting Group","Northern Exposure Sporting Group","instagram","Canada","americas","open","open","88","4.5","228","228","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/northern_exposure_sgi/","https://northernsporting.com/","https://www.google.com/search?q=site%3Anorthernsporting.com%20%22Northern%20Exposure%20Sporting%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Northern Exposure Sporting Group","Dear Northern Exposure Sporting Team,
+"53","google-customer-eastern-mountain-sports-instagram","Eastern Mountain Sports","Eastern Mountain Sports","instagram","United States","americas","open","open","84","4.5","233","233","17","30","develop","false","Tue 06:43","America/New_York morning","official_website_social_channel_verified","https://www.instagram.com/easternmntnsports/","","","","","","","","https://www.ems.com/","","","",""
+"54","google-customer-northern-exposure-sporting-group-instagram","Northern Exposure Sporting Group","Northern Exposure Sporting Group","instagram","Canada","americas","open","open","88","4.5","228","228","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/northern_exposure_sgi/","https://northernsporting.com/","https://www.google.com/search?q=site%3Anorthernsporting.com%20%22Northern%20Exposure%20Sporting%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Northern Exposure Sporting Group","Dear Northern Exposure Sporting Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -590,7 +547,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://northernsporting.com/","","","",""
-"59","google-customer-garibaldi-supply-co-instagram","Garibaldi Supply Co.","Garibaldi Supply Co.","instagram","Canada","americas","open","open","87","4.5","227","227","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/garibaldi_supply_co/","https://garibaldisupplyco.com/","https://www.google.com/search?q=site%3Agaribaldisupplyco.com%20%22Garibaldi%20Supply%20Co.%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Garibaldi Supply Co.","Dear Garibaldi Supply Co. Team,
+"55","google-customer-garibaldi-supply-co-instagram","Garibaldi Supply Co.","Garibaldi Supply Co.","instagram","Canada","americas","open","open","87","4.5","227","227","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/garibaldi_supply_co/","https://garibaldisupplyco.com/","https://www.google.com/search?q=site%3Agaribaldisupplyco.com%20%22Garibaldi%20Supply%20Co.%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Garibaldi Supply Co.","Dear Garibaldi Supply Co. Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -604,10 +561,11 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://garibaldisupplyco.com/","","","",""
-"60","google-customer-bergfreunde-instagram","Bergfreunde","Bergfreunde","instagram","Germany","europe","open","open","91","4.5","225","225","17","45","develop","false","Tue 12:29","Europe/Berlin afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/bergfreunde/","","","","","","","","https://www.bergfreunde.eu/","","","",""
-"61","google-customer-campz-instagram","Campz","Campz","instagram","Germany","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 12:29","Europe/Berlin afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/campz.de/","","","","","","","","https://www.campz.de/","","","",""
-"62","google-customer-atmosphere-instagram","Atmosphere","Atmosphere","instagram","Canada","americas","open","open","84","4.5","203","203","17","30","develop","false","Tue 06:29","America/Toronto morning","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/atmosphereoutdoor/","","","","","","","","https://www.atmosphere.ca/","","","",""
-"63","google-customer-latulippe-instagram","Latulippe","Latulippe","instagram","Canada","americas","open","open","87","4.5","202","202","13","30","develop","false","Tue 06:29","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/latulippe/","https://latulippe.com/","https://www.google.com/search?q=site%3Alatulippe.com%20%22Latulippe%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | Latulippe","Dear Latulippe Team,
+"56","google-customer-bergfreunde-instagram","Bergfreunde","Bergfreunde","instagram","Germany","europe","open","open","91","4.5","225","225","17","45","develop","false","Tue 12:43","Europe/Berlin afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/bergfreunde/","","","","","","","","https://www.bergfreunde.eu/","","","",""
+"57","google-customer-above-and-beyond-instagram","Above and Beyond","Above and Beyond","instagram","Ireland","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 11:43","Europe/Dublin afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/aboveandbeyondireland/","","","","","","","","https://www.aboveandbeyond.ie/","","","",""
+"58","google-customer-campz-instagram","Campz","Campz","instagram","Germany","europe","open","open","84","4.5","218","218","17","45","develop","false","Tue 12:43","Europe/Berlin afternoon","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/campz.de/","","","","","","","","https://www.campz.de/","","","",""
+"59","google-customer-atmosphere-instagram","Atmosphere","Atmosphere","instagram","Canada","americas","open","open","84","4.5","203","203","17","30","develop","false","Tue 06:43","America/Toronto morning","concrete_google_discovered_major_customer_instagram","https://www.instagram.com/atmosphereoutdoor/","","","","","","","","https://www.atmosphere.ca/","","","",""
+"60","google-customer-latulippe-instagram","Latulippe","Latulippe","instagram","Canada","americas","open","open","87","4.5","202","202","13","30","develop","false","Tue 06:43","America/Toronto morning","official_website_social_channel_verified","https://www.instagram.com/latulippe/","https://latulippe.com/","https://www.google.com/search?q=site%3Alatulippe.com%20%22Latulippe%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global distribution partnership | Latulippe","Dear Latulippe Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -621,7 +579,35 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://latulippe.com/","","","",""
-"64","google-customer-waypoint-outdoor-website-contact","Waypoint Outdoor","Waypoint Outdoor","website_form","United States","americas","open","open","99","4.5","269","269","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.waypointoutdoor.com/contact/","https://www.waypointoutdoor.com/contact/","https://www.google.com/search?q=site%3Awww.waypointoutdoor.com%20%22Waypoint%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Waypoint Outdoor","Dear Waypoint Outdoor Team,
+"61","google-customer-shiner-distribution-website-contact","Shiner Distribution","Shiner Distribution","website_form","United Kingdom","europe","open","open","91","4.5","276","276","13","45","verify_target","false","Tue 11:43","Europe/London afternoon","homepage_only_contact_path_requires_verification","https://shiner.co.uk/","https://shiner.co.uk/","https://www.google.com/search?q=site%3Ashiner.co.uk%20%22Shiner%20Distribution%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Shiner Distribution","Dear Shiner Distribution Team,
+
+I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
+
+FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
+
+Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
+
+Product overview: https://www.flextail.com/
+
+Best regards,
+Leo Liu
+Sales & Operations Director
+Leo@flextailgear.com","","https://shiner.co.uk/","","","",""
+"62","google-customer-outdoor-brands-uk-website-contact","Outdoor Brands UK","Outdoor Brands UK","website_form","United Kingdom","europe","open","open","88","4.5","273","273","13","45","verify_target","false","Tue 11:43","Europe/London afternoon","homepage_only_contact_path_requires_verification","https://www.outdoorbrands.co.uk/","https://www.outdoorbrands.co.uk/","https://www.google.com/search?q=site%3Awww.outdoorbrands.co.uk%20%22Outdoor%20Brands%20UK%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Outdoor Brands UK","Dear Outdoor Brands UK Team,
+
+I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
+
+FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
+
+Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
+
+Product overview: https://www.flextail.com/
+
+Best regards,
+Leo Liu
+Sales & Operations Director
+Leo@flextailgear.com","","https://www.outdoorbrands.co.uk/","","","",""
+"63","google-customer-waypoint-outdoor-website-contact","Waypoint Outdoor","Waypoint Outdoor","website_form","United States","americas","open","open","99","4.5","269","269","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.waypointoutdoor.com/contact/","https://www.waypointoutdoor.com/contact/","https://www.google.com/search?q=site%3Awww.waypointoutdoor.com%20%22Waypoint%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Waypoint Outdoor","Dear Waypoint Outdoor Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -635,7 +621,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.waypointoutdoor.com/contact/","","","",""
-"65","google-customer-sespe-group-website-contact","Sespe Group","Sespe Group","website_form","United States","americas","open","open","97","4.5","267","267","13","30","email_priority","false","Tue 06:29","America/New_York morning","official_website_contact_channel","https://www.sespegroup.com/contact-us","https://www.sespegroup.com/contact-us","https://www.google.com/search?q=site%3Awww.sespegroup.com%20%22Sespe%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sespe Group","Dear Sespe Team,
+"64","google-customer-sespe-group-website-contact","Sespe Group","Sespe Group","website_form","United States","americas","open","open","97","4.5","267","267","13","30","email_priority","false","Tue 06:43","America/New_York morning","official_website_contact_channel","https://www.sespegroup.com/contact-us","https://www.sespegroup.com/contact-us","https://www.google.com/search?q=site%3Awww.sespegroup.com%20%22Sespe%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sespe Group","Dear Sespe Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -649,7 +635,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.sespegroup.com/contact-us","","","",""
-"66","google-customer-activ-agency-denver-website-contact","Activ Agency Denver","Activ Agency Denver","website_form","United States","americas","open","open","92","4.5","266","266","17","30","email_priority","false","Tue 06:29","America/New_York morning","official_website_contact_channel","https://www.activagency.com/about","https://www.activagency.com/about","https://www.google.com/search?q=site%3Awww.activagency.com%20%22Activ%20Agency%20Denver%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Activ Agency Denver","Dear Activ Agency Denver Team,
+"65","google-customer-activ-agency-denver-website-contact","Activ Agency Denver","Activ Agency Denver","website_form","United States","americas","open","open","92","4.5","266","266","17","30","email_priority","false","Tue 06:43","America/New_York morning","official_website_contact_channel","https://www.activagency.com/about","https://www.activagency.com/about","https://www.google.com/search?q=site%3Awww.activagency.com%20%22Activ%20Agency%20Denver%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Activ Agency Denver","Dear Activ Agency Denver Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -663,7 +649,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.activagency.com/about","","","",""
-"67","google-customer-sierra-outdoor-collective-website-contact","Sierra Outdoor Collective","Sierra Outdoor Collective","website_form","United States","americas","open","open","94","4.5","264","264","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://sierraoutdoorcollective.com/","https://sierraoutdoorcollective.com/","https://www.google.com/search?q=site%3Asierraoutdoorcollective.com%20%22Sierra%20Outdoor%20Collective%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sierra Outdoor Collective","Dear Sierra Outdoor Collective Team,
+"66","google-customer-sierra-outdoor-collective-website-contact","Sierra Outdoor Collective","Sierra Outdoor Collective","website_form","United States","americas","open","open","94","4.5","264","264","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://sierraoutdoorcollective.com/","https://sierraoutdoorcollective.com/","https://www.google.com/search?q=site%3Asierraoutdoorcollective.com%20%22Sierra%20Outdoor%20Collective%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sierra Outdoor Collective","Dear Sierra Outdoor Collective Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -677,7 +663,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://sierraoutdoorcollective.com/","","","",""
-"68","google-customer-endless-adventure-sales-website-contact","Endless Adventure Sales","Endless Adventure Sales","website_form","United States","americas","open","open","93","4.5","263","263","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://endlessadventuresales.com/contact","https://endlessadventuresales.com/contact","https://www.google.com/search?q=site%3Aendlessadventuresales.com%20%22Endless%20Adventure%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Endless Adventure Sales","Dear Endless Adventure Sales Team,
+"67","google-customer-endless-adventure-sales-website-contact","Endless Adventure Sales","Endless Adventure Sales","website_form","United States","americas","open","open","93","4.5","263","263","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://endlessadventuresales.com/contact","https://endlessadventuresales.com/contact","https://www.google.com/search?q=site%3Aendlessadventuresales.com%20%22Endless%20Adventure%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Endless Adventure Sales","Dear Endless Adventure Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -691,7 +677,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://endlessadventuresales.com/contact","","","",""
-"69","google-customer-excell-marketing-website-contact","Excell Marketing","Excell Marketing","website_form","United States","americas","open","open","93","4.5","263","263","13","30","email_priority","false","Tue 06:29","America/New_York morning","official_website_contact_channel","https://www.excellmarketing.com/Contact/","https://www.excellmarketing.com/Contact/","https://www.google.com/search?q=site%3Awww.excellmarketing.com%20%22Excell%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Excell Marketing","Dear Excell Marketing Team,
+"68","google-customer-excell-marketing-website-contact","Excell Marketing","Excell Marketing","website_form","United States","americas","open","open","93","4.5","263","263","13","30","email_priority","false","Tue 06:43","America/New_York morning","official_website_contact_channel","https://www.excellmarketing.com/Contact/","https://www.excellmarketing.com/Contact/","https://www.google.com/search?q=site%3Awww.excellmarketing.com%20%22Excell%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Excell Marketing","Dear Excell Marketing Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -705,7 +691,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.excellmarketing.com/Contact/","","","",""
-"70","google-customer-sportco-marketing-website-contact","Sportco Marketing","Sportco Marketing","website_form","United States","americas","open","open","93","4.5","263","263","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.sportcomarketinginc.com/","https://www.sportcomarketinginc.com/","https://www.google.com/search?q=site%3Awww.sportcomarketinginc.com%20%22Sportco%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sportco Marketing","Dear Sportco Marketing Team,
+"69","google-customer-sportco-marketing-website-contact","Sportco Marketing","Sportco Marketing","website_form","United States","americas","open","open","93","4.5","263","263","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.sportcomarketinginc.com/","https://www.sportcomarketinginc.com/","https://www.google.com/search?q=site%3Awww.sportcomarketinginc.com%20%22Sportco%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Sportco Marketing","Dear Sportco Marketing Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -719,7 +705,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.sportcomarketinginc.com/","","","",""
-"71","google-customer-the-curtis-group-sales-website-contact","The Curtis Group Sales","The Curtis Group Sales","website_form","United States","americas","open","open","93","4.5","263","263","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://thecurtisgroupsales.com/contact-us/","https://thecurtisgroupsales.com/contact-us/","https://www.google.com/search?q=site%3Athecurtisgroupsales.com%20%22The%20Curtis%20Group%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | The Curtis Group Sales","Dear The Curtis Group Sales Team,
+"70","google-customer-the-curtis-group-sales-website-contact","The Curtis Group Sales","The Curtis Group Sales","website_form","United States","americas","open","open","93","4.5","263","263","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://thecurtisgroupsales.com/contact-us/","https://thecurtisgroupsales.com/contact-us/","https://www.google.com/search?q=site%3Athecurtisgroupsales.com%20%22The%20Curtis%20Group%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | The Curtis Group Sales","Dear The Curtis Group Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -733,7 +719,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://thecurtisgroupsales.com/contact-us/","","","",""
-"72","google-customer-granite-marketing-website-contact","Granite Marketing","Granite Marketing","website_form","United States","americas","open","open","92","4.5","262","262","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.granitereps.com/","https://www.granitereps.com/","https://www.google.com/search?q=site%3Awww.granitereps.com%20%22Granite%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Granite Marketing","Dear Granite Marketing Team,
+"71","google-customer-granite-marketing-website-contact","Granite Marketing","Granite Marketing","website_form","United States","americas","open","open","92","4.5","262","262","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.granitereps.com/","https://www.granitereps.com/","https://www.google.com/search?q=site%3Awww.granitereps.com%20%22Granite%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Granite Marketing","Dear Granite Marketing Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -747,7 +733,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.granitereps.com/","","","",""
-"73","google-customer-powers-pedersen-sales-group-website-contact","Powers Pedersen Sales Group","Powers Pedersen Sales Group","website_form","United States","americas","open","open","92","4.5","262","262","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://p-psg.com/","https://p-psg.com/","https://www.google.com/search?q=site%3Ap-psg.com%20%22Powers%20Pedersen%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Powers Pedersen Sales Group","Dear Powers Pedersen Sales Team,
+"72","google-customer-powers-pedersen-sales-group-website-contact","Powers Pedersen Sales Group","Powers Pedersen Sales Group","website_form","United States","americas","open","open","92","4.5","262","262","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://p-psg.com/","https://p-psg.com/","https://www.google.com/search?q=site%3Ap-psg.com%20%22Powers%20Pedersen%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Powers Pedersen Sales Group","Dear Powers Pedersen Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -761,7 +747,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://p-psg.com/","","","",""
-"74","google-customer-skyline-sales-consulting-website-contact","Skyline Sales & Consulting","Skyline Sales & Consulting","website_form","United States","americas","open","open","92","4.5","262","262","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.skylinesalesreps.com/about-us","https://www.skylinesalesreps.com/about-us","https://www.google.com/search?q=site%3Awww.skylinesalesreps.com%20%22Skyline%20Sales%20%26%20Consulting%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Skyline Sales & Consulting","Dear Skyline Sales & Consulting Team,
+"73","google-customer-skyline-sales-consulting-website-contact","Skyline Sales & Consulting","Skyline Sales & Consulting","website_form","United States","americas","open","open","92","4.5","262","262","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.skylinesalesreps.com/about-us","https://www.skylinesalesreps.com/about-us","https://www.google.com/search?q=site%3Awww.skylinesalesreps.com%20%22Skyline%20Sales%20%26%20Consulting%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Skyline Sales & Consulting","Dear Skyline Sales & Consulting Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -775,7 +761,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://www.skylinesalesreps.com/about-us","","","",""
-"75","google-customer-suggs-nicholas-shea-website-contact","Suggs-Nicholas-Shea","Suggs-Nicholas-Shea","website_form","United States","americas","open","open","92","4.5","262","262","13","30","email_priority","false","Tue 06:29","America/New_York morning","official_website_contact_channel","https://suggsnicholasshea.com/contact/","https://suggsnicholasshea.com/contact/","https://www.google.com/search?q=site%3Asuggsnicholasshea.com%20%22Suggs-Nicholas-Shea%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Suggs-Nicholas-Shea","Dear Suggs-Nicholas-Shea Team,
+"74","google-customer-suggs-nicholas-shea-website-contact","Suggs-Nicholas-Shea","Suggs-Nicholas-Shea","website_form","United States","americas","open","open","92","4.5","262","262","13","30","email_priority","false","Tue 06:43","America/New_York morning","official_website_contact_channel","https://suggsnicholasshea.com/contact/","https://suggsnicholasshea.com/contact/","https://www.google.com/search?q=site%3Asuggsnicholasshea.com%20%22Suggs-Nicholas-Shea%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Suggs-Nicholas-Shea","Dear Suggs-Nicholas-Shea Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -789,7 +775,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://suggsnicholasshea.com/contact/","","","",""
-"76","google-customer-gargano-atkins-sales-marketing-website-contact","Gargano Atkins Sales & Marketing","Gargano Atkins Sales & Marketing","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://garganoatkins.com/","https://garganoatkins.com/","https://www.google.com/search?q=site%3Agarganoatkins.com%20%22Gargano%20Atkins%20Sales%20%26%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Gargano Atkins Sales & Marketing","Dear Gargano Atkins Sales & Marketing Team,
+"75","google-customer-gargano-atkins-sales-marketing-website-contact","Gargano Atkins Sales & Marketing","Gargano Atkins Sales & Marketing","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://garganoatkins.com/","https://garganoatkins.com/","https://www.google.com/search?q=site%3Agarganoatkins.com%20%22Gargano%20Atkins%20Sales%20%26%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Gargano Atkins Sales & Marketing","Dear Gargano Atkins Sales & Marketing Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -803,7 +789,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://garganoatkins.com/","","","",""
-"77","google-customer-hendrix-outdoors-website-contact","Hendrix Outdoors","Hendrix Outdoors","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://hendrixoutdoors.com/","https://hendrixoutdoors.com/","https://www.google.com/search?q=site%3Ahendrixoutdoors.com%20%22Hendrix%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Hendrix Outdoors","Dear Hendrix Outdoors Team,
+"76","google-customer-hendrix-outdoors-website-contact","Hendrix Outdoors","Hendrix Outdoors","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://hendrixoutdoors.com/","https://hendrixoutdoors.com/","https://www.google.com/search?q=site%3Ahendrixoutdoors.com%20%22Hendrix%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Hendrix Outdoors","Dear Hendrix Outdoors Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -817,7 +803,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://hendrixoutdoors.com/","","","",""
-"78","google-customer-parallel-45-sales-group-website-contact","Parallel 45 Sales Group","Parallel 45 Sales Group","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://parallel45sales.com/","https://parallel45sales.com/","https://www.google.com/search?q=site%3Aparallel45sales.com%20%22Parallel%2045%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Parallel 45 Sales Group","Dear Parallel 45 Sales Team,
+"77","google-customer-parallel-45-sales-group-website-contact","Parallel 45 Sales Group","Parallel 45 Sales Group","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://parallel45sales.com/","https://parallel45sales.com/","https://www.google.com/search?q=site%3Aparallel45sales.com%20%22Parallel%2045%20Sales%20Group%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Parallel 45 Sales Group","Dear Parallel 45 Sales Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -831,7 +817,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://parallel45sales.com/","","","",""
-"79","google-customer-wire-to-wire-partners-website-contact","Wire to Wire Partners","Wire to Wire Partners","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://wiretowirepartners.com/","https://wiretowirepartners.com/","https://www.google.com/search?q=site%3Awiretowirepartners.com%20%22Wire%20to%20Wire%20Partners%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Wire to Wire Partners","Dear Wire to Wire Partners Team,
+"78","google-customer-wire-to-wire-partners-website-contact","Wire to Wire Partners","Wire to Wire Partners","website_form","United States","americas","open","open","91","4.5","261","261","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://wiretowirepartners.com/","https://wiretowirepartners.com/","https://www.google.com/search?q=site%3Awiretowirepartners.com%20%22Wire%20to%20Wire%20Partners%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Wire to Wire Partners","Dear Wire to Wire Partners Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 
@@ -845,7 +831,7 @@ Best regards,
 Leo Liu
 Sales & Operations Director
 Leo@flextailgear.com","","https://wiretowirepartners.com/","","","",""
-"80","google-customer-action-sports-agency-website-contact","Action Sports Agency","Action Sports Agency","website_form","United States","americas","open","open","90","4.5","260","260","13","30","verify_target","false","Tue 06:29","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.actionsportsagency.com/","https://www.actionsportsagency.com/","https://www.google.com/search?q=site%3Awww.actionsportsagency.com%20%22Action%20Sports%20Agency%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Action Sports Agency","Dear Action Sports Agency Team,
+"79","google-customer-action-sports-agency-website-contact","Action Sports Agency","Action Sports Agency","website_form","United States","americas","open","open","90","4.5","260","260","13","30","verify_target","false","Tue 06:43","America/New_York morning","homepage_only_contact_path_requires_verification","https://www.actionsportsagency.com/","https://www.actionsportsagency.com/","https://www.google.com/search?q=site%3Awww.actionsportsagency.com%20%22Action%20Sports%20Agency%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","","FLEXTAIL global brand representation | Action Sports Agency","Dear Action Sports Agency Team,
 
 I’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
 

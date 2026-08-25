@@ -2118,6 +2118,13 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('sameDayAutomationCompanyKeys'));
   assert.ok(mainSource.includes('same_day_customer_already_developed'));
   assert.ok(mainSource.includes('const selectedCompanyKeys = new Set(sameDayCompanyKeys)'));
+  const sameDayStatusesStart = mainSource.indexOf('const SAME_DAY_DEVELOPMENT_STATUSES');
+  const sameDayStatusesEnd = mainSource.indexOf(']);', sameDayStatusesStart) + 3;
+  const sameDayStatuses = mainSource.slice(sameDayStatusesStart, sameDayStatusesEnd);
+  assert.match(sameDayStatuses, /sent_confirmed/);
+  assert.match(sameDayStatuses, /submitted_confirmed/);
+  assert.match(sameDayStatuses, /send_unconfirmed/);
+  assert.doesNotMatch(sameDayStatuses, /account_followed|post_liked/);
   assert.ok(mainSource.includes('automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key))'));
   assert.ok(mainSource.includes('itemBlockedBySameDayCompany(item, sameDayCompanyKeys)'));
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
