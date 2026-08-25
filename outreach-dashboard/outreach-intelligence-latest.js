@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T14:13:25.788Z",
+  "generatedAt": "2026-08-25T14:19:26.501Z",
   "companies": [
     {
       "companyId": "company_402ccf121bb3b80c",
@@ -76,7 +76,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-25T02:40:51.870Z"
+          "checkedAt": "2026-08-25T14:13:11.354Z"
         },
         {
           "channel": "website_form",
@@ -467,7 +467,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-25T14:13:05.726Z"
+          "checkedAt": "2026-08-25T14:18:39.822Z"
         },
         {
           "channel": "facebook",
@@ -477,7 +477,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-25T14:13:05.726Z"
+          "checkedAt": "2026-08-25T14:18:39.822Z"
         },
         {
           "channel": "facebook",
@@ -487,7 +487,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-25T14:13:05.726Z"
+          "checkedAt": "2026-08-25T14:18:39.822Z"
         },
         {
           "channel": "instagram",
@@ -497,7 +497,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-25T14:13:05.726Z"
+          "checkedAt": "2026-08-25T14:18:39.822Z"
         },
         {
           "channel": "website_form",
@@ -936,7 +936,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:44:00.058Z"
+          "checkedAt": "2026-08-25T14:19:21.237Z"
         },
         {
           "channel": "facebook",
@@ -946,7 +946,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:44:00.058Z"
+          "checkedAt": "2026-08-25T14:19:21.237Z"
         },
         {
           "channel": "website_form",
@@ -966,7 +966,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:44:00.058Z"
+          "checkedAt": "2026-08-25T14:19:21.237Z"
         },
         {
           "channel": "facebook",
@@ -976,7 +976,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:44:00.058Z"
+          "checkedAt": "2026-08-25T14:19:21.237Z"
         }
       ],
       "history": [
@@ -2946,7 +2946,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-25T13:05:40.013Z"
+          "checkedAt": "2026-08-25T14:18:58.174Z"
         },
         {
           "channel": "email",
@@ -3036,7 +3036,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.trailcross.com/",
-          "checkedAt": "2026-08-25T13:05:40.013Z"
+          "checkedAt": "2026-08-25T14:18:58.174Z"
         },
         {
           "channel": "facebook",
@@ -5882,7 +5882,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.activagency.com/about",
-          "checkedAt": "2026-08-25T13:05:45.456Z"
+          "checkedAt": "2026-08-25T14:19:09.686Z"
         },
         {
           "channel": "website_form",
@@ -5902,7 +5902,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.activagency.com/about",
-          "checkedAt": "2026-08-25T13:05:45.456Z"
+          "checkedAt": "2026-08-25T14:19:09.686Z"
         },
         {
           "channel": "website_form",
@@ -6007,7 +6007,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-25T14:12:49.757Z"
+          "checkedAt": "2026-08-25T14:18:42.844Z"
         },
         {
           "channel": "instagram",
@@ -6017,7 +6017,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-25T14:12:49.757Z"
+          "checkedAt": "2026-08-25T14:18:42.844Z"
         },
         {
           "channel": "website_form",
@@ -9536,6 +9536,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://www.outtech-online.com/",
           "checkedAt": "2026-08-25T11:10:44.999Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outtech-online.com/",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -9581,6 +9591,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://www.summitsalesnw.com/",
           "checkedAt": "2026-08-25T12:56:49.128Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.summitsalesnw.com/",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -11673,7 +11693,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.thegravitycollective.co.uk/",
-          "checkedAt": "2026-08-25T02:40:49.699Z"
+          "checkedAt": "2026-08-25T14:13:11.866Z"
         },
         {
           "channel": "research",
@@ -12074,6 +12094,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://www.mtnstuff.com/",
           "checkedAt": "2026-08-25T11:18:14.940Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.mtnstuff.com/",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -12220,21 +12250,21 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "aimoutside.com"
       ],
       "channels": [
-        "linkedin",
         "email",
+        "linkedin",
         "facebook",
         "instagram"
       ],
       "evidence": [
         {
-          "channel": "linkedin",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-25T13:05:25.281Z"
+          "checkedAt": ""
         },
         {
           "channel": "email",
@@ -12257,7 +12287,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-25T13:05:25.281Z"
         },
         {
-          "channel": "linkedin",
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://aimoutside.com/",
+          "checkedAt": "2026-08-25T13:05:25.281Z"
+        },
+        {
+          "channel": "instagram",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -12305,6 +12345,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://aimoutside.com/",
           "checkedAt": "2026-08-21T13:25:00.000Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://aimoutside.com/",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -12550,7 +12600,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-25T14:12:48.539Z"
+          "checkedAt": "2026-08-25T14:18:47.216Z"
         },
         {
           "channel": "instagram",
@@ -12560,7 +12610,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-25T14:12:48.539Z"
+          "checkedAt": "2026-08-25T14:18:47.216Z"
         },
         {
           "channel": "website_form",
@@ -12958,7 +13008,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://koolbox.co.uk/",
-          "checkedAt": "2026-08-25T13:53:36.729Z"
+          "checkedAt": "2026-08-25T14:18:55.668Z"
         },
         {
           "channel": "research",
@@ -12993,37 +13043,38 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
+          "score": 100,
           "verified": true,
           "reasons": [
-            "official_site_cross_verified_social"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
-          "checkedAt": "2026-08-25T13:33:21.558Z"
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+          "checkedAt": "2026-08-25T14:18:55.540Z"
         },
         {
           "channel": "facebook",
-          "score": 95,
+          "score": 100,
           "verified": true,
           "reasons": [
-            "official_site_cross_verified_social"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
-          "checkedAt": "2026-08-25T13:33:21.558Z"
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+          "checkedAt": "2026-08-25T14:18:55.540Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "channel": "email",
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
           "checkedAt": ""
         }
       ],
@@ -13200,7 +13251,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://avenuedist.com/",
-          "checkedAt": "2026-08-25T13:05:27.783Z"
+          "checkedAt": "2026-08-25T14:18:56.015Z"
         },
         {
           "channel": "email",
@@ -13331,7 +13382,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.mytrailhouse.com/",
-          "checkedAt": "2026-08-25T13:05:30.788Z"
+          "checkedAt": "2026-08-25T14:18:56.381Z"
         },
         {
           "channel": "email",
@@ -13436,7 +13487,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://level8outdoor.com/about-us",
-          "checkedAt": "2026-08-25T13:05:40.870Z"
+          "checkedAt": "2026-08-25T14:18:59.260Z"
         },
         {
           "channel": "website_form",
@@ -13758,7 +13809,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://nwroadreps.com/brands/",
-          "checkedAt": "2026-08-25T13:05:45.310Z"
+          "checkedAt": "2026-08-25T14:19:05.997Z"
         },
         {
           "channel": "research",
@@ -13808,7 +13859,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.accapigroup.com/about-accapi",
-          "checkedAt": "2026-08-25T13:33:16.667Z"
+          "checkedAt": "2026-08-25T14:19:03.389Z"
         },
         {
           "channel": "instagram",
@@ -13818,7 +13869,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.accapigroup.com/about-accapi",
-          "checkedAt": "2026-08-25T13:33:16.667Z"
+          "checkedAt": "2026-08-25T14:19:03.389Z"
         },
         {
           "channel": "facebook",
@@ -13828,7 +13879,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.accapigroup.com/about-accapi",
-          "checkedAt": "2026-08-25T13:33:16.667Z"
+          "checkedAt": "2026-08-25T14:19:03.389Z"
         },
         {
           "channel": "research",
@@ -13928,7 +13979,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.whitbydistribution.com/b2b-sales",
-          "checkedAt": "2026-08-25T13:53:39.960Z"
+          "checkedAt": "2026-08-25T14:19:07.450Z"
         },
         {
           "channel": "linkedin",
@@ -13938,7 +13989,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.whitbydistribution.com/b2b-sales",
-          "checkedAt": "2026-08-25T13:53:39.960Z"
+          "checkedAt": "2026-08-25T14:19:07.450Z"
         },
         {
           "channel": "research",
@@ -14030,7 +14081,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.blackrocks.net/",
-          "checkedAt": "2026-08-25T13:05:44.893Z"
+          "checkedAt": "2026-08-25T14:19:06.640Z"
         },
         {
           "channel": "email",
@@ -14163,7 +14214,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://maxtrack.com/",
-          "checkedAt": "2026-08-25T13:05:46.907Z"
+          "checkedAt": "2026-08-25T14:19:08.490Z"
         },
         {
           "channel": "email",
@@ -14277,7 +14328,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://theoutdooragencyireland.com/",
-          "checkedAt": "2026-08-25T13:05:48.271Z"
+          "checkedAt": "2026-08-25T14:19:09.924Z"
         },
         {
           "channel": "email",
@@ -14297,7 +14348,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://theoutdooragencyireland.com/",
-          "checkedAt": "2026-08-25T13:05:48.271Z"
+          "checkedAt": "2026-08-25T14:19:09.924Z"
         },
         {
           "channel": "research",
@@ -14447,7 +14498,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-25T13:05:48.332Z"
+          "checkedAt": "2026-08-25T14:19:10.244Z"
         },
         {
           "channel": "instagram",
@@ -14457,7 +14508,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-25T13:05:48.332Z"
+          "checkedAt": "2026-08-25T14:19:10.244Z"
         },
         {
           "channel": "linkedin",
@@ -14467,7 +14518,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-25T13:05:48.332Z"
+          "checkedAt": "2026-08-25T14:19:10.244Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -14513,7 +14574,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://roirecreation.com/about-us",
-          "checkedAt": "2026-08-25T11:43:58.462Z"
+          "checkedAt": "2026-08-25T14:19:11.429Z"
         },
         {
           "channel": "instagram",
@@ -14523,7 +14584,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://roirecreation.com/about-us",
-          "checkedAt": "2026-08-25T11:43:58.462Z"
+          "checkedAt": "2026-08-25T14:19:11.429Z"
         }
       ],
       "history": [
@@ -14560,7 +14621,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-25T11:43:56.521Z"
+          "checkedAt": "2026-08-25T14:19:11.993Z"
         },
         {
           "channel": "facebook",
@@ -14570,7 +14631,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-25T11:43:56.521Z"
+          "checkedAt": "2026-08-25T14:19:11.993Z"
         },
         {
           "channel": "linkedin",
@@ -14580,7 +14641,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-25T11:43:56.521Z"
+          "checkedAt": "2026-08-25T14:19:11.993Z"
         },
         {
           "channel": "website_form",
@@ -14655,7 +14716,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:43:57.379Z"
+          "checkedAt": "2026-08-25T14:19:12.477Z"
         },
         {
           "channel": "instagram",
@@ -14665,7 +14726,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:43:57.379Z"
+          "checkedAt": "2026-08-25T14:19:12.477Z"
         },
         {
           "channel": "linkedin",
@@ -14675,7 +14736,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-25T11:43:57.379Z"
+          "checkedAt": "2026-08-25T14:19:12.477Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://canamsalesgroup.com/",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -14799,7 +14870,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.repfirst.com/about-us",
-          "checkedAt": "2026-08-25T11:43:58.864Z"
+          "checkedAt": "2026-08-25T14:19:18.280Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.repfirst.com/about-us",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -15001,6 +15082,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://vertoutdoors.com/team",
           "checkedAt": "2026-08-25T11:44:06.197Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://vertoutdoors.com/team",
+          "checkedAt": "2026-08-25T14:24:00.000Z"
         }
       ],
       "history": [
@@ -23439,24 +23530,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "company": "Backcountry Experience",
       "keys": [
         "backcountryexperience",
-        "backcountryexperiencecom",
-        "bcexpcom"
+        "backcountryexperiencecom"
       ],
       "domains": [
-        "backcountryexperience.com",
-        "bcexp.com"
+        "backcountryexperience.com"
       ],
       "channels": [
-        "email",
-        "website_form"
+        "website_form",
+        "email"
       ],
       "evidence": [
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://www.backcountryexperience.com/",
           "checkedAt": ""
@@ -25132,7 +25221,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-25T14:12:51.528Z"
+          "checkedAt": "2026-08-25T14:18:49.053Z"
         },
         {
           "channel": "facebook",
@@ -25142,7 +25231,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-25T14:12:51.528Z"
+          "checkedAt": "2026-08-25T14:18:49.053Z"
         }
       ],
       "history": [
@@ -30465,7 +30554,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-25T14:12:52.753Z"
+          "checkedAt": "2026-08-25T14:18:48.987Z"
         },
         {
           "channel": "facebook",
@@ -30475,7 +30564,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-25T14:12:52.753Z"
+          "checkedAt": "2026-08-25T14:18:48.987Z"
         }
       ],
       "history": [
@@ -30807,7 +30896,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-25T14:12:56.860Z"
+          "checkedAt": "2026-08-25T14:18:51.332Z"
         },
         {
           "channel": "instagram",
@@ -31128,7 +31217,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.mountain-equipment.com/",
-          "checkedAt": "2026-08-25T14:12:56.380Z"
+          "checkedAt": "2026-08-25T14:18:52.033Z"
         }
       ],
       "history": [
@@ -45488,13 +45577,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-25T14:13:25.788Z",
+    "generatedAt": "2026-08-25T14:19:26.501Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 673,
       "permanentlySuppressed": 542,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 1047
+      "verifiedEvidenceRoutes": 1056
     },
     "decisions": [
       {
