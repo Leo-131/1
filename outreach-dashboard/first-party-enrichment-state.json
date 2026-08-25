@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-25T11:44:19.561Z",
+  "updatedAt": "2026-08-25T11:54:56.874Z",
   "cursor": 327,
-  "companyCount": 494,
+  "companyCount": 495,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -457,7 +457,7 @@
     "moosejaw": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T11:43:53.164Z",
+        "verifiedAt": "2026-08-25T11:54:35.783Z",
         "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
         "httpStatus": 403,
         "signals": [],
@@ -492,7 +492,7 @@
     "pack rat outdoor center": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:53.229Z",
+        "verifiedAt": "2026-08-25T11:54:37.170Z",
         "evidenceUrl": "https://packratoc.com/",
         "httpStatus": 200,
         "signals": [
@@ -1109,7 +1109,7 @@
     "cotswold outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:41.285Z",
+        "verifiedAt": "2026-08-25T11:54:45.325Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -1147,7 +1147,7 @@
     "campsaver": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:41.174Z",
+        "verifiedAt": "2026-08-25T11:54:45.108Z",
         "evidenceUrl": "https://www.campsaver.com/",
         "httpStatus": 200,
         "signals": [
@@ -1232,7 +1232,7 @@
     "valhalla pure outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-20T10:05:47.002Z",
+        "verifiedAt": "2026-08-25T11:54:48.887Z",
         "evidenceUrl": "https://vpo.ca/stores/vpo-vancouver",
         "httpStatus": 200,
         "signals": [
@@ -1267,7 +1267,7 @@
     "trekitt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:57.249Z",
+        "verifiedAt": "2026-08-25T11:54:53.725Z",
         "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1288,7 +1288,7 @@
     "ultralight outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:58.014Z",
+        "verifiedAt": "2026-08-25T11:54:55.063Z",
         "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1641,7 +1641,7 @@
     "backcountry experience": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:47.474Z",
+        "verifiedAt": "2026-08-25T11:54:29.187Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -1804,7 +1804,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:48.110Z",
+        "verifiedAt": "2026-08-25T11:54:30.628Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -2294,7 +2294,7 @@
     "ramsey outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:51.539Z",
+        "verifiedAt": "2026-08-25T11:54:29.755Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -2387,7 +2387,7 @@
     "sunlight sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:50.038Z",
+        "verifiedAt": "2026-08-25T11:54:31.697Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2407,7 +2407,7 @@
     "jax outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:50.180Z",
+        "verifiedAt": "2026-08-25T11:54:31.544Z",
         "evidenceUrl": "https://jaxgoods.com/",
         "httpStatus": 200,
         "signals": [
@@ -2448,7 +2448,7 @@
     "paragon sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:51.633Z",
+        "verifiedAt": "2026-08-25T11:54:34.602Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2470,7 +2470,7 @@
     "mountain equipment": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:53.207Z",
+        "verifiedAt": "2026-08-25T11:54:32.221Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -2514,7 +2514,7 @@
     "george fisher": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:54.538Z",
+        "verifiedAt": "2026-08-25T11:54:37.414Z",
         "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
         "httpStatus": 200,
         "signals": [
@@ -2595,7 +2595,7 @@
     "tractor supply company": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-24T12:39:22.600Z",
+        "verifiedAt": "2026-08-25T11:54:56.872Z",
         "evidenceUrl": "https://www.tractorsupply.com/",
         "httpStatus": 200,
         "signals": [],
@@ -3423,7 +3423,7 @@
     "camping world uk": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T04:05:39.812Z",
+        "verifiedAt": "2026-08-25T11:54:48.573Z",
         "evidenceUrl": "https://www.campingworld.co.uk/us/Visit-and-Contact-Us/cc-339.aspx",
         "httpStatus": 403,
         "signals": [],
@@ -4886,7 +4886,7 @@
     "mountain source": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T11:43:32.146Z",
+        "verifiedAt": "2026-08-25T11:54:17.852Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -5584,7 +5584,7 @@
     "the alpine cowboy": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:42.552Z",
+        "verifiedAt": "2026-08-25T11:54:27.492Z",
         "evidenceUrl": "https://alpinecowboy.com/index.html",
         "httpStatus": 200,
         "signals": [],
@@ -5614,7 +5614,7 @@
     "parallel 45 sales group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:41.349Z",
+        "verifiedAt": "2026-08-25T11:54:24.742Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -5752,7 +5752,7 @@
     "sturm mil tec usa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:44.119Z",
+        "verifiedAt": "2026-08-25T11:54:50.067Z",
         "evidenceUrl": "https://www.sturm-miltec.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -5791,7 +5791,7 @@
     "sharp end sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:53.496Z",
+        "verifiedAt": "2026-08-25T11:54:50.834Z",
         "evidenceUrl": "https://www.sharpendsales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -5808,7 +5808,7 @@
     "west bay trading company": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:53.158Z",
+        "verifiedAt": "2026-08-25T11:54:50.642Z",
         "evidenceUrl": "https://www.westbaytradingcompany.com/",
         "httpStatus": 200,
         "signals": [
@@ -5826,7 +5826,7 @@
     "freestone sales group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:54.442Z",
+        "verifiedAt": "2026-08-25T11:54:52.731Z",
         "evidenceUrl": "https://freestonesalesgroup.com/",
         "httpStatus": 200,
         "signals": [
@@ -5843,7 +5843,7 @@
     "elevated outdoor sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:52.988Z",
+        "verifiedAt": "2026-08-25T11:54:51.973Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -5861,7 +5861,7 @@
     "action sports agency": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:55.144Z",
+        "verifiedAt": "2026-08-25T11:54:51.228Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -5881,7 +5881,7 @@
     "elite outdoor sports marketing": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:56.335Z",
+        "verifiedAt": "2026-08-25T11:54:52.495Z",
         "evidenceUrl": "https://eliteoutdoorsports.com/who-we-are/",
         "httpStatus": 200,
         "signals": [
@@ -5918,7 +5918,7 @@
     "o brien sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:55.670Z",
+        "verifiedAt": "2026-08-25T11:54:54.077Z",
         "evidenceUrl": "https://www.obriensales.com/about/",
         "httpStatus": 200,
         "signals": [
@@ -5937,7 +5937,7 @@
     "perspective outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:55.765Z",
+        "verifiedAt": "2026-08-25T11:54:53.268Z",
         "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -6629,12 +6629,15 @@
     },
     "sideways distribution": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-24T12:39:24.121Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-25T11:54:56.159Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "official_supplier_email_verified",
@@ -6771,7 +6774,7 @@
     "lathrop associates": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T11:43:35.733Z",
+        "verifiedAt": "2026-08-25T11:54:20.809Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -6826,7 +6829,7 @@
     "salvation sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-20T10:05:45.356Z",
+        "verifiedAt": "2026-08-25T11:54:35.093Z",
         "evidenceUrl": "https://salvationsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -7088,7 +7091,7 @@
     "nohrth": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:44.685Z",
+        "verifiedAt": "2026-08-25T11:54:49.789Z",
         "evidenceUrl": "https://nohrth.com/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -7318,7 +7321,7 @@
     "nicolas rochon agency": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:49.050Z",
+        "verifiedAt": "2026-08-25T11:54:25.869Z",
         "evidenceUrl": "https://www.agencenr.com/en/",
         "httpStatus": 200,
         "signals": [
@@ -7710,7 +7713,7 @@
     "formalito": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:39.855Z",
+        "verifiedAt": "2026-08-25T11:54:23.427Z",
         "evidenceUrl": "https://formalito.co.za/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -7809,7 +7812,7 @@
     "agrinet": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:36.742Z",
+        "verifiedAt": "2026-08-25T11:54:40.886Z",
         "evidenceUrl": "https://www.agrinet.co.za/samrand/outdoor",
         "httpStatus": 200,
         "signals": [
@@ -7897,7 +7900,7 @@
     "four corners uk": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:33.245Z",
+        "verifiedAt": "2026-08-25T11:54:18.873Z",
         "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
         "httpStatus": 200,
         "signals": [
@@ -7939,7 +7942,7 @@
     "bullish endurance": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:33.673Z",
+        "verifiedAt": "2026-08-25T11:54:38.151Z",
         "evidenceUrl": "https://www.bullishendurance.com/",
         "httpStatus": 200,
         "signals": [
@@ -8251,7 +8254,7 @@
     "thr outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:42.563Z",
+        "verifiedAt": "2026-08-25T11:54:46.558Z",
         "evidenceUrl": "https://thr-outdoor.co.za/contact/",
         "httpStatus": 200,
         "signals": [
@@ -8673,7 +8676,7 @@
     "drvforce": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:33.778Z",
+        "verifiedAt": "2026-08-25T11:54:38.158Z",
         "evidenceUrl": "https://www.drvforce.com/",
         "httpStatus": 200,
         "signals": [
@@ -8868,7 +8871,7 @@
     "watersports solution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:43.271Z",
+        "verifiedAt": "2026-08-25T11:54:50.347Z",
         "evidenceUrl": "https://www.watersportssolution.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -9018,11 +9021,11 @@
     "mountain states sales": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T04:05:52.570Z",
+        "verifiedAt": "2026-08-25T11:54:50.409Z",
         "evidenceUrl": "https://www.mountainstatessales.com/",
         "httpStatus": 0,
         "signals": [],
-        "error": "timeout"
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "official_supplier_email_verified",
@@ -9221,7 +9224,7 @@
     "gargano atkins sales marketing": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:33.755Z",
+        "verifiedAt": "2026-08-25T11:54:37.883Z",
         "evidenceUrl": "https://garganoatkins.com/",
         "httpStatus": 200,
         "signals": [
@@ -9461,7 +9464,7 @@
     "outwear ltd": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:38.481Z",
+        "verifiedAt": "2026-08-25T11:54:43.733Z",
         "evidenceUrl": "https://www.outwearb2b.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -9483,7 +9486,7 @@
     "haynes florance associates": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:37.312Z",
+        "verifiedAt": "2026-08-25T11:54:41.388Z",
         "evidenceUrl": "https://haynes-florance.com/",
         "httpStatus": 200,
         "signals": [],
@@ -9746,7 +9749,7 @@
     "jim ferry associates": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T04:05:37.623Z",
+        "verifiedAt": "2026-08-25T11:54:42.239Z",
         "evidenceUrl": "https://www.jimferryassociates.com/jimferrysalesreps",
         "httpStatus": 200,
         "signals": [
@@ -9763,7 +9766,7 @@
     "lammert associates": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T04:05:39.337Z",
+        "verifiedAt": "2026-08-25T11:54:43.367Z",
         "evidenceUrl": "https://lammertassociates.com/our-team/",
         "httpStatus": 0,
         "signals": [],
@@ -9930,7 +9933,7 @@
     "paradice trading": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T11:43:40.389Z",
+        "verifiedAt": "2026-08-25T11:54:47.640Z",
         "evidenceUrl": "https://paradicetrading.com/",
         "httpStatus": 200,
         "signals": [
@@ -9968,8 +9971,40 @@
         "https://www.facebook.com/nordicgripno/",
         "https://www.linkedin.com/in/robertthompson1973/"
       ]
+    },
+    "superchief agency": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-25T11:54:24.512Z",
+        "evidenceUrl": "https://www.superchiefagency.com/about",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "karyee@superchiefagency.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "mutinous sales marketing": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-25T11:54:27.493Z",
+        "evidenceUrl": "",
+        "httpStatus": 0,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "marin@mutinousmarketing.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
     }
   },
-  "scopedCompanyCount": 380,
-  "campaignCursor": 157
+  "scopedCompanyCount": 381,
+  "campaignCursor": 207
 }
