@@ -10,7 +10,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "chromeOpenedCount": 2,
   "customerDevelopmentPerformed": true,
   "customerMessageSent": true,
-  "realDevelopmentCount": 1,
+  "realDevelopmentCount": 2,
   "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
@@ -21,6 +21,39 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
+      "id": "google-customer-spire-outdoor-group-website-contact",
+      "company": "Spire Outdoor Group",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.spireoutdoorgroup.com/about",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-25T15:01:52.558Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "info@spireoutdoorgroup.com",
+        "targetUrl": "mailto:info@spireoutdoorgroup.com",
+        "subject": "FLEXTAIL global brand representation | Spire Outdoor Group",
+        "draft": "Dear Spire Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 109
+        },
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@spireoutdoorgroup.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
       "id": "google-customer-stella-blue-sales-website-contact",
       "company": "Stella Blue Sales",
       "action": "email_priority",
@@ -29,7 +62,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-25T14:54:53.538Z",
+      "timestamp": "2026-08-25T15:01:55.218Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -43,25 +76,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-athletiq-sport-website-contact",
-      "company": "Athletiq Sport",
+      "id": "google-customer-outdoor-adventure-group-canada-website-contact",
+      "company": "Outdoor Adventure Group Canada",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.athletiqsport.com/",
+      "targetUrl": "https://www.outdooradventuregroup.com/contact",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T14:55:54.304Z",
+      "timestamp": "2026-08-25T15:02:58.294Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "admin@athletiqsport.com",
-        "targetUrl": "mailto:admin@athletiqsport.com",
-        "subject": "FLEXTAIL global brand representation | Athletiq Sport",
-        "draft": "Dear Athletiq Sport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "recipientEmail": "enquiries@outdooradventuregroup.com",
+        "targetUrl": "mailto:enquiries@outdooradventuregroup.com",
+        "subject": "FLEXTAIL global distribution partnership | Outdoor Adventure Group Canada",
+        "draft": "Dear Outdoor Adventure Group Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -69,9 +102,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 109
+          "words": 111
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"admin@athletiqsport.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"enquiries@outdooradventuregroup.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
@@ -84,57 +117,49 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-25T14:55:56.960Z",
+      "timestamp": "2026-08-25T15:03:00.916Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "error": "Facebook outreach requires an exact verified page/profile URL"
-      }
-    },
-    {
-      "id": "google-customer-green-room-trading-website-contact",
-      "company": "Green Room Trading",
-      "action": "develop",
-      "platform": "website_form",
-      "targetUrl": "https://www.greenroomtrading.ca/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-25T14:56:23.072Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.greenroomtrading.ca/help/contact-us",
-        "tabId": "31D427428417D393C77A77F72CCFE450",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31D427428417D393C77A77F72CCFE450",
-        "title": "Green Room Trading"
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.greenroomtrading.ca/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.greenroomtrading.ca/help/contact-us",
-          "tabId": "31D427428417D393C77A77F72CCFE450",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31D427428417D393C77A77F72CCFE450",
-          "title": "Green Room Trading"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | Green Room Trading",
-        "draft": "Dear Green Room Trading Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global brand representation | Green Room Trading\",\"draft\":\"Dear Green Room Trading Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.greenroomtrading.ca/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
   "results": [
     {
+      "id": "google-customer-spire-outdoor-group-website-contact",
+      "company": "Spire Outdoor Group",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.spireoutdoorgroup.com/about",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-25T15:01:52.558Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "info@spireoutdoorgroup.com",
+        "targetUrl": "mailto:info@spireoutdoorgroup.com",
+        "subject": "FLEXTAIL global brand representation | Spire Outdoor Group",
+        "draft": "Dear Spire Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 109
+        },
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@spireoutdoorgroup.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
       "id": "google-customer-stella-blue-sales-website-contact",
       "company": "Stella Blue Sales",
       "action": "email_priority",
@@ -143,7 +168,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-25T14:54:53.538Z",
+      "timestamp": "2026-08-25T15:01:55.218Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -157,25 +182,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-athletiq-sport-website-contact",
-      "company": "Athletiq Sport",
+      "id": "google-customer-outdoor-adventure-group-canada-website-contact",
+      "company": "Outdoor Adventure Group Canada",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.athletiqsport.com/",
+      "targetUrl": "https://www.outdooradventuregroup.com/contact",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T14:55:54.304Z",
+      "timestamp": "2026-08-25T15:02:58.294Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "admin@athletiqsport.com",
-        "targetUrl": "mailto:admin@athletiqsport.com",
-        "subject": "FLEXTAIL global brand representation | Athletiq Sport",
-        "draft": "Dear Athletiq Sport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "recipientEmail": "enquiries@outdooradventuregroup.com",
+        "targetUrl": "mailto:enquiries@outdooradventuregroup.com",
+        "subject": "FLEXTAIL global distribution partnership | Outdoor Adventure Group Canada",
+        "draft": "Dear Outdoor Adventure Group Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -183,9 +208,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 109
+          "words": 111
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"admin@athletiqsport.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"enquiries@outdooradventuregroup.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
@@ -198,52 +223,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-25T14:55:56.960Z",
+      "timestamp": "2026-08-25T15:03:00.916Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "error": "Facebook outreach requires an exact verified page/profile URL"
-      }
-    },
-    {
-      "id": "google-customer-green-room-trading-website-contact",
-      "company": "Green Room Trading",
-      "action": "develop",
-      "platform": "website_form",
-      "targetUrl": "https://www.greenroomtrading.ca/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-25T14:56:23.072Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.greenroomtrading.ca/help/contact-us",
-        "tabId": "31D427428417D393C77A77F72CCFE450",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31D427428417D393C77A77F72CCFE450",
-        "title": "Green Room Trading"
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.greenroomtrading.ca/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.greenroomtrading.ca/help/contact-us",
-          "tabId": "31D427428417D393C77A77F72CCFE450",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31D427428417D393C77A77F72CCFE450",
-          "title": "Green Room Trading"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | Green Room Trading",
-        "draft": "Dear Green Room Trading Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global brand representation | Green Room Trading\",\"draft\":\"Dear Green Room Trading Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.greenroomtrading.ca/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.greenroomtrading.ca/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
@@ -655,6 +639,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-green-room-trading-website-contact",
+      "company": "Green Room Trading",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-sportco-marketing-website-contact",
       "company": "Sportco Marketing",
       "action": "verify_target",
@@ -720,20 +711,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-parallel-45-sales-group-website-contact",
       "company": "Parallel 45 Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-salvation-sales-website-contact",
-      "company": "Salvation Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
-      "company": "Terra Outdoor Gear Distribution",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -917,9 +894,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 43,
-    "dueNow": 74,
-    "visibleTodayQueue": 73,
+    "readyToDevelop": 42,
+    "dueNow": 73,
+    "visibleTodayQueue": 74,
     "potentialPool": 29,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
@@ -931,16 +908,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "linkedin": 4,
       "facebook": 9,
       "instagram": 4,
-      "email": 2,
-      "website_form": 1
+      "email": 3
     },
     "verifiedSocialCompanies": 17,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 3,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 74,
+    "googleDiscovered": 73,
     "facebookDiscovered": 20,
-    "websiteContactDiscovered": 9,
+    "websiteContactDiscovered": 10,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -958,7 +934,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 17
+      "count": 16
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -986,13 +962,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
-      "reason": "recipient_domain_mail_exchange_unverified",
-      "status": "skipped",
-      "count": 1
-    },
-    {
       "reason": "sent_folder_message_confirmed",
       "status": "sent_confirmed",
+      "count": 2
+    },
+    {
+      "reason": "recipient_domain_mail_exchange_unverified",
+      "status": "skipped",
       "count": 1
     },
     {
@@ -1003,23 +979,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "official_website_social_channel_verified": 45,
-    "homepage_only_contact_path_requires_verification": 17,
+    "homepage_only_contact_path_requires_verification": 16,
     "social_profile_not_first_party_verified": 9,
     "website_contact_capability_not_verified": 9,
     "official_public_business_email_verified": 7,
     "official_website_contact_channel": 5,
     "concrete_google_discovered_major_customer_instagram": 2,
+    "sent_folder_message_confirmed": 2,
     "recipient_domain_mail_exchange_unverified": 1,
-    "sent_folder_message_confirmed": 1,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 29,
-    "queueCount": 74,
-    "googleDiscovered": 74,
+    "queueCount": 73,
+    "googleDiscovered": 73,
     "refillNeeded": 71,
-    "confirmedToday": 30,
+    "confirmedToday": 31,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1031,7 +1007,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (45); homepage_only_contact_path_requires_verification (17); social_profile_not_first_party_verified (9).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (45); homepage_only_contact_path_requires_verification (16); social_profile_not_first_party_verified (9).",
   "recoveryHint": "Refill the high-ICP pool with 71 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1056,12 +1032,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-25T14:56:26.542Z",
+      "updatedAt": "2026-08-25T15:03:07.732Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-25",
-      "artifactGeneratedAt": "2026-08-25T14:56:23.448Z",
-      "executionGeneratedAt": "2026-08-25T14:49:01.003Z",
-      "githubSyncUpdatedAt": "2026-08-25T14:49:41.295Z",
+      "artifactGeneratedAt": "2026-08-25T15:03:02.108Z",
+      "executionGeneratedAt": "2026-08-25T14:56:27.825Z",
+      "githubSyncUpdatedAt": "2026-08-25T14:57:11.242Z",
       "counts": {
         "dailyQueue": 74,
         "googleDiscovered": 74,
@@ -1129,7 +1105,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 0,
+  "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-25T14:56:27.825Z"
+  "completedAt": "2026-08-25T15:03:09.438Z"
 };

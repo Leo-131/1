@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-08-25T14:56:23.448Z",
+  "generatedAt": "2026-08-25T15:03:02.108Z",
   "date": "2026-08-25",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -84,10 +84,10 @@ window.DAILY_AUTOMATION_LATEST = {
   "discoveryRefill": {
     "discoveryRefillAttempted": true,
     "qualifiedThreshold": 70,
-    "refillCandidateCount": 613,
+    "refillCandidateCount": 615,
     "refillByCustomerType": {
       "agency": 8,
-      "key_account": 246
+      "key_account": 247
     },
     "qualifiedQueueCount": 100
   },
@@ -155,7 +155,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -259,7 +259,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:40:39.659Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:23.751Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -269,7 +269,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -301,7 +301,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:40:39.659Z",
+        "verifiedAt": "2026-08-25T14:59:23.751Z",
         "evidenceUrl": "https://www.fourcornersuk.com/",
         "httpStatus": 200,
         "signals": [
@@ -375,7 +375,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.alpinewaves.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:11.354Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:29.913Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -385,7 +385,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -410,7 +410,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:11.354Z",
+        "verifiedAt": "2026-08-25T14:59:29.913Z",
         "evidenceUrl": "https://www.alpinewaves.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -491,7 +491,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -604,7 +604,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -719,7 +719,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -828,7 +828,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -937,7 +937,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1050,7 +1050,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1153,7 +1153,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1262,7 +1262,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1373,7 +1373,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1482,7 +1482,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1593,7 +1593,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1622,7 +1622,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T07:53:14.253Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:03.297Z",
+        "verifiedAt": "2026-08-25T14:59:21.352Z",
         "evidenceUrl": "https://www.hardinoutdoors.com/about",
         "httpStatus": 200,
         "signals": [
@@ -1696,7 +1696,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.ludreps.com/about-us/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:08.037Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:24.868Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1706,7 +1706,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1738,7 +1738,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://facebook.com/ludreps",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:08.037Z",
+        "verifiedAt": "2026-08-25T14:59:24.868Z",
         "evidenceUrl": "https://www.ludreps.com/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -1819,7 +1819,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1932,7 +1932,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1961,7 +1961,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T14:53:10.706Z",
+        "verifiedAt": "2026-08-25T14:58:58.878Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -2031,7 +2031,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://onwardup.com/brands/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:17.326Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:37.051Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2041,7 +2041,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2073,7 +2073,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/onwardup/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:17.326Z",
+        "verifiedAt": "2026-08-25T14:59:37.051Z",
         "evidenceUrl": "https://onwardup.com/brands/",
         "httpStatus": 200,
         "signals": [],
@@ -2142,7 +2142,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://sanitassalesgroup.com/contact/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:20.013Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:39.552Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2152,7 +2152,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2184,7 +2184,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/SanitasSalesGroup/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:20.013Z",
+        "verifiedAt": "2026-08-25T14:59:39.552Z",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -2265,7 +2265,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2376,7 +2376,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2405,7 +2405,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:18.147Z",
+        "verifiedAt": "2026-08-25T14:59:31.751Z",
         "evidenceUrl": "https://sierraoutdoorcollective.com/",
         "httpStatus": 200,
         "signals": [
@@ -2489,7 +2489,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2598,7 +2598,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2709,7 +2709,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2822,7 +2822,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2935,7 +2935,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3048,7 +3048,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3159,7 +3159,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3272,7 +3272,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3385,7 +3385,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3498,7 +3498,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3614,7 +3614,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3725,7 +3725,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3828,7 +3828,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3937,7 +3937,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4046,7 +4046,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4159,7 +4159,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4273,7 +4273,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4388,7 +4388,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4501,7 +4501,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4602,7 +4602,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:53:13.465Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:06.045Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4612,7 +4612,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4644,7 +4644,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:53:13.465Z",
+        "verifiedAt": "2026-08-25T14:59:06.045Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -4723,7 +4723,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4836,7 +4836,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -4949,7 +4949,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5060,7 +5060,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5173,7 +5173,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5284,7 +5284,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5397,7 +5397,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5508,7 +5508,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5623,7 +5623,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5736,7 +5736,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5849,7 +5849,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5960,7 +5960,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6071,7 +6071,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6180,7 +6180,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6292,7 +6292,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6400,7 +6400,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6511,7 +6511,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6620,7 +6620,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6729,7 +6729,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6840,7 +6840,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6953,7 +6953,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7068,7 +7068,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7181,7 +7181,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7294,7 +7294,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7403,7 +7403,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7516,7 +7516,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7619,7 +7619,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7724,7 +7724,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7835,7 +7835,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 22:56",
+        "localTime": "Tue 23:03",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -7949,7 +7949,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 22:56",
+        "localTime": "Tue 23:03",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -8060,7 +8060,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 22:56",
+        "localTime": "Tue 23:03",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -8161,7 +8161,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.alpinewaves.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:11.354Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:29.913Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8171,7 +8171,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8194,7 +8194,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:11.354Z",
+        "verifiedAt": "2026-08-25T14:59:29.913Z",
         "evidenceUrl": "https://www.alpinewaves.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -8289,7 +8289,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8413,7 +8413,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8537,7 +8537,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8647,7 +8647,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:40:39.659Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:23.751Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8657,7 +8657,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8687,7 +8687,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:40:39.659Z",
+        "verifiedAt": "2026-08-25T14:59:23.751Z",
         "evidenceUrl": "https://www.fourcornersuk.com/",
         "httpStatus": 200,
         "signals": [
@@ -8784,7 +8784,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8900,7 +8900,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.ludreps.com/about-us/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:08.037Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:24.868Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8910,7 +8910,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8940,7 +8940,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://facebook.com/ludreps",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:08.037Z",
+        "verifiedAt": "2026-08-25T14:59:24.868Z",
         "evidenceUrl": "https://www.ludreps.com/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -9024,7 +9024,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://sanitassalesgroup.com/contact/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:20.013Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:39.552Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9034,7 +9034,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9064,7 +9064,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/SanitasSalesGroup/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:20.013Z",
+        "verifiedAt": "2026-08-25T14:59:39.552Z",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -9158,7 +9158,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9280,7 +9280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9407,7 +9407,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9533,7 +9533,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9657,7 +9657,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9771,7 +9771,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://onwardup.com/brands/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:17.326Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:37.051Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9781,7 +9781,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9811,7 +9811,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/onwardup_campus/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:17.326Z",
+        "verifiedAt": "2026-08-25T14:59:37.051Z",
         "evidenceUrl": "https://onwardup.com/brands/",
         "httpStatus": 200,
         "signals": [],
@@ -9903,7 +9903,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10025,7 +10025,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10147,7 +10147,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10273,7 +10273,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10397,7 +10397,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10517,7 +10517,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10639,7 +10639,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10759,7 +10759,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10879,7 +10879,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11001,7 +11001,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11123,7 +11123,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11243,7 +11243,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11363,7 +11363,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11487,7 +11487,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -11596,7 +11596,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11700,7 +11700,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11729,7 +11729,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T07:53:14.253Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:03.297Z",
+        "verifiedAt": "2026-08-25T14:59:21.352Z",
         "evidenceUrl": "https://www.hardinoutdoors.com/about",
         "httpStatus": 200,
         "signals": [
@@ -11808,7 +11808,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11837,7 +11837,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-25T14:53:10.706Z",
+        "verifiedAt": "2026-08-25T14:58:58.878Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -11912,7 +11912,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12016,7 +12016,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -12140,7 +12140,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12249,7 +12249,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12356,7 +12356,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -12447,7 +12447,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.alpinewaves.co.uk/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:11.354Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:29.913Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12457,7 +12457,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -12480,7 +12480,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.linkedin.com/company/51668434/admin/feed/posts/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:11.354Z",
+        "verifiedAt": "2026-08-25T14:59:29.913Z",
         "evidenceUrl": "https://www.alpinewaves.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -12575,7 +12575,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -12699,7 +12699,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -12823,7 +12823,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -12933,7 +12933,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.fourcornersuk.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:40:39.659Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:23.751Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12943,7 +12943,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12973,7 +12973,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/fourcornersUKcom",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:40:39.659Z",
+        "verifiedAt": "2026-08-25T14:59:23.751Z",
         "evidenceUrl": "https://www.fourcornersuk.com/",
         "httpStatus": 200,
         "signals": [
@@ -13060,7 +13060,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.hardinoutdoors.com/about",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:03.297Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:21.352Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13070,7 +13070,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13102,7 +13102,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/HardinOutdoors/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:03.297Z",
+        "verifiedAt": "2026-08-25T14:59:21.352Z",
         "evidenceUrl": "https://www.hardinoutdoors.com/about",
         "httpStatus": 200,
         "signals": [
@@ -13181,7 +13181,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13307,7 +13307,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13407,7 +13407,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.ludreps.com/about-us/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:08.037Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:24.868Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13417,7 +13417,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13447,7 +13447,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://facebook.com/ludreps",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:08.037Z",
+        "verifiedAt": "2026-08-25T14:59:24.868Z",
         "evidenceUrl": "https://www.ludreps.com/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -13531,7 +13531,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://sanitassalesgroup.com/contact/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:20.013Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:39.552Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13541,7 +13541,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13571,7 +13571,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.facebook.com/SanitasSalesGroup/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:20.013Z",
+        "verifiedAt": "2026-08-25T14:59:39.552Z",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -13665,7 +13665,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13787,7 +13787,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13914,7 +13914,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14021,7 +14021,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14147,7 +14147,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14271,7 +14271,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14382,7 +14382,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14491,7 +14491,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14589,7 +14589,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14687,7 +14687,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14796,7 +14796,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14896,7 +14896,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15002,7 +15002,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15126,7 +15126,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -15224,7 +15224,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -15315,7 +15315,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.hardinoutdoors.com/about",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:03.297Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:21.352Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15325,7 +15325,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15357,7 +15357,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/hardinoutdoors/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:03.297Z",
+        "verifiedAt": "2026-08-25T14:59:21.352Z",
         "evidenceUrl": "https://www.hardinoutdoors.com/about",
         "httpStatus": 200,
         "signals": [
@@ -15436,7 +15436,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15546,7 +15546,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15634,7 +15634,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://onwardup.com/brands/",
-      "socialProfileVerifiedAt": "2026-08-25T14:13:17.326Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:37.051Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15644,7 +15644,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -15674,7 +15674,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/onwardup_campus/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:17.326Z",
+        "verifiedAt": "2026-08-25T14:59:37.051Z",
         "evidenceUrl": "https://onwardup.com/brands/",
         "httpStatus": 200,
         "signals": [],
@@ -15766,7 +15766,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -15878,7 +15878,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:53:13.465Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:59:06.045Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15888,7 +15888,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15920,7 +15920,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:53:13.465Z",
+        "verifiedAt": "2026-08-25T14:59:06.045Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -15995,7 +15995,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -16117,7 +16117,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16226,7 +16226,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16333,7 +16333,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/25 22:53:06",
+        "localTime": "2026/8/25 22:58:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -16459,7 +16459,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16568,7 +16568,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16664,7 +16664,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16760,7 +16760,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16858,7 +16858,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16968,7 +16968,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17064,7 +17064,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17168,7 +17168,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17276,7 +17276,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17380,7 +17380,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17486,7 +17486,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17592,7 +17592,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17700,7 +17700,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17806,7 +17806,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17835,7 +17835,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:18.147Z",
+        "verifiedAt": "2026-08-25T14:59:31.751Z",
         "evidenceUrl": "https://sierraoutdoorcollective.com/",
         "httpStatus": 200,
         "signals": [
@@ -17914,7 +17914,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18022,7 +18022,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18130,7 +18130,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18238,7 +18238,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18344,7 +18344,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18452,7 +18452,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18556,7 +18556,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18660,7 +18660,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18764,7 +18764,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18872,7 +18872,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18980,7 +18980,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19088,7 +19088,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19194,7 +19194,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19223,7 +19223,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:53:13.465Z",
+        "verifiedAt": "2026-08-25T14:59:06.045Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -19298,7 +19298,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19406,7 +19406,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19512,7 +19512,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19688,7 +19688,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19745,7 +19745,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19802,7 +19802,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19859,7 +19859,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19916,7 +19916,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19973,7 +19973,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 10:56",
+        "localTime": "Tue 11:03",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20030,7 +20030,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Tue 21:56",
+        "localTime": "Tue 22:03",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -20087,7 +20087,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Wed 00:56",
+        "localTime": "Wed 01:03",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -20144,7 +20144,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:56",
+        "localTime": "Wed 03:03",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20201,7 +20201,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:56",
+        "localTime": "Wed 03:03",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20258,7 +20258,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:56",
+        "localTime": "Wed 03:03",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20315,7 +20315,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:56",
+        "localTime": "Wed 03:03",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20372,7 +20372,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 02:56",
+        "localTime": "Wed 03:03",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20429,7 +20429,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Tue 20:26",
+        "localTime": "Tue 20:33",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -20493,7 +20493,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.hapusoutdoor.com/",
-      "socialProfileVerifiedAt": "2026-08-25T14:07:48.694Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:53:36.241Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -20503,7 +20503,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20604,7 +20604,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.proagencies.com/our-people",
-      "socialProfileVerifiedAt": "2026-08-25T14:07:45.900Z",
+      "socialProfileVerifiedAt": "2026-08-25T14:53:36.895Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -20614,7 +20614,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20723,7 +20723,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20832,7 +20832,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20861,7 +20861,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T08:11:38.423Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:11.866Z",
+        "verifiedAt": "2026-08-25T14:59:30.189Z",
         "evidenceUrl": "https://www.thegravitycollective.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -20943,7 +20943,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21054,7 +21054,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21166,7 +21166,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21277,7 +21277,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21390,7 +21390,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21419,7 +21419,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-21T11:23:52.090Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-25T14:13:11.042Z",
+        "verifiedAt": "2026-08-25T14:59:25.910Z",
         "evidenceUrl": "https://www.sboothsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -21501,7 +21501,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21624,7 +21624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21746,7 +21746,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21857,7 +21857,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21968,7 +21968,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22080,7 +22080,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22192,7 +22192,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 15:56",
+        "localTime": "Tue 16:03",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
