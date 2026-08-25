@@ -221,7 +221,13 @@ function integrateRemoteBranch(branch) {
 function syncOnce() {
   fs.mkdirSync(OUT, { recursive: true });
   const branch = git(['branch', '--show-current']);
-  const remoteCommit = PUSH ? integrateRemoteBranch(branch) : remoteHead(branch);
+  // Runtime refreshes happen immediately before this script and legitimately
+  // dirty sync-managed artifacts such as cloud-task-state.json.  Integrating
+  // the remote branch before those artifacts are staged creates a permanent
+  // self-inflicted "local changes would be overwritten" failure.  Capture the
+  // remote checkpoint now, then integrate only after the managed snapshot has
+  // been committed below.  Unrelated working-tree changes remain untouched.
+  let remoteCommit = remoteHead(branch);
   const latest = redact(readJson(path.join(ROOT, 'daily-automation-latest.json'), {}));
   const latestDate = latest.date || new Date().toISOString().slice(0, 10);
   const latestRun = path.join(ROOT, 'daily-runs', `${latestDate}-daily-automation.json`);
@@ -358,6 +364,7 @@ function syncOnce() {
   }
   git(['add', '--', ...paths], { stdio: 'pipe' });
   if (!hasChanges([...paths, publicDailyRun])) {
+    if (PUSH) remoteCommit = integrateRemoteBranch(branch) || remoteCommit;
     writeSyncStatus({
       ok: true,
       pushed: false,
@@ -371,9 +378,10 @@ function syncOnce() {
   }
   const message = `sync: local outreach data ${latestDate}`;
   git(['commit', '-m', message], { stdio: 'inherit' });
-  const localCommit = git(['rev-parse', 'HEAD']);
   if (PUSH) {
     try {
+      remoteCommit = integrateRemoteBranch(branch) || remoteCommit;
+      const localCommit = git(['rev-parse', 'HEAD']);
       git(['push', 'origin', branch], { stdio: 'inherit' });
       writeSyncStatus({ ok: true, pushed: true, branch, localCommit, remoteCommit: localCommit, message });
       commitAndPushStatus(branch, latestDate);
@@ -390,6 +398,7 @@ function syncOnce() {
       throw error;
     }
   } else {
+    const localCommit = git(['rev-parse', 'HEAD']);
     writeSyncStatus({ ok: true, pushed: false, branch, localCommit, remoteCommit, message: `${message} (no push)` });
   }
   console.log(`github sync: ${message}`);
