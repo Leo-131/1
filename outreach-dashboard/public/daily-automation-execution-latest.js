@@ -21,25 +21,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-mthree-outdoor-sales-agency-website-contact",
-      "company": "Mthree Outdoor Sales Agency",
+      "id": "google-customer-branch-point-canada-website-contact",
+      "company": "Branch Point Canada",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.mthree.ca/about",
+      "targetUrl": "https://branchpoint.com/work-with-us/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T15:24:43.466Z",
+      "timestamp": "2026-08-25T15:31:06.754Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "mike@mthree.ca",
-        "targetUrl": "mailto:mike@mthree.ca",
-        "subject": "FLEXTAIL global brand representation | Mthree Outdoor Sales Agency",
-        "draft": "Dear Mthree Outdoor Sales Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "recipientEmail": "info@branchpoint.com",
+        "targetUrl": "mailto:info@branchpoint.com",
+        "subject": "FLEXTAIL global brand representation | Branch Point Canada",
+        "draft": "Dear Branch Point Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -47,32 +47,32 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 111
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"mike@mthree.ca\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@branchpoint.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
     {
-      "id": "google-customer-howe-sound-sales-and-marketing-website-contact",
-      "company": "Howe Sound Sales and Marketing",
+      "id": "google-customer-urbanbutter-creative-group-website-contact",
+      "company": "Urbanbutter Creative Group",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://howesoundsales.com/",
+      "targetUrl": "https://www.urbanbutter.com/about-us",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T15:25:47.111Z",
+      "timestamp": "2026-08-25T15:31:34.499Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "julian@howesoundsales.com",
-        "targetUrl": "mailto:julian@howesoundsales.com",
-        "subject": "FLEXTAIL global brand representation | Howe Sound Sales and Marketing",
-        "draft": "Dear Howe Sound Sales and Marketing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "recipientEmail": "info@urbanbutter.com",
+        "targetUrl": "mailto:info@urbanbutter.com",
+        "subject": "FLEXTAIL global brand representation | Urbanbutter Creative Group",
+        "draft": "Dear Urbanbutter Creative Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -80,9 +80,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 112
+          "words": 109
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"julian@howesoundsales.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@urbanbutter.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
@@ -95,7 +95,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-25T15:25:49.775Z",
+      "timestamp": "2026-08-25T15:31:37.166Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -117,7 +117,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-25T15:25:52.401Z",
+      "timestamp": "2026-08-25T15:31:39.822Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -127,25 +127,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "results": [
     {
-      "id": "google-customer-mthree-outdoor-sales-agency-website-contact",
-      "company": "Mthree Outdoor Sales Agency",
+      "id": "google-customer-branch-point-canada-website-contact",
+      "company": "Branch Point Canada",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.mthree.ca/about",
+      "targetUrl": "https://branchpoint.com/work-with-us/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T15:24:43.466Z",
+      "timestamp": "2026-08-25T15:31:06.754Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "mike@mthree.ca",
-        "targetUrl": "mailto:mike@mthree.ca",
-        "subject": "FLEXTAIL global brand representation | Mthree Outdoor Sales Agency",
-        "draft": "Dear Mthree Outdoor Sales Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "recipientEmail": "info@branchpoint.com",
+        "targetUrl": "mailto:info@branchpoint.com",
+        "subject": "FLEXTAIL global brand representation | Branch Point Canada",
+        "draft": "Dear Branch Point Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -153,32 +153,32 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 111
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"mike@mthree.ca\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@branchpoint.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
     {
-      "id": "google-customer-howe-sound-sales-and-marketing-website-contact",
-      "company": "Howe Sound Sales and Marketing",
+      "id": "google-customer-urbanbutter-creative-group-website-contact",
+      "company": "Urbanbutter Creative Group",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://howesoundsales.com/",
+      "targetUrl": "https://www.urbanbutter.com/about-us",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T15:25:47.111Z",
+      "timestamp": "2026-08-25T15:31:34.499Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "julian@howesoundsales.com",
-        "targetUrl": "mailto:julian@howesoundsales.com",
-        "subject": "FLEXTAIL global brand representation | Howe Sound Sales and Marketing",
-        "draft": "Dear Howe Sound Sales and Marketing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "recipientEmail": "info@urbanbutter.com",
+        "targetUrl": "mailto:info@urbanbutter.com",
+        "subject": "FLEXTAIL global brand representation | Urbanbutter Creative Group",
+        "draft": "Dear Urbanbutter Creative Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -186,9 +186,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 112
+          "words": 109
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"julian@howesoundsales.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@urbanbutter.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
@@ -201,7 +201,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-25T15:25:49.775Z",
+      "timestamp": "2026-08-25T15:31:37.166Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -223,7 +223,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-25T15:25:52.401Z",
+      "timestamp": "2026-08-25T15:31:39.822Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -709,20 +709,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-parallel-45-sales-group-website-contact",
-      "company": "Parallel 45 Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-salvation-sales-website-contact",
-      "company": "Salvation Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-alpinewaves-linkedin",
       "company": "AlpineWaves",
       "action": "develop",
@@ -902,7 +888,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 42,
-    "dueNow": 74,
+    "dueNow": 72,
     "visibleTodayQueue": 74,
     "potentialPool": 29,
     "potentialPoolTarget": 100,
@@ -921,7 +907,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 3,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 74,
+    "googleDiscovered": 72,
     "facebookDiscovered": 20,
     "websiteContactDiscovered": 10,
     "scheduledLater": 0,
@@ -941,7 +927,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 17
+      "count": 15
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -986,7 +972,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "official_website_social_channel_verified": 45,
-    "homepage_only_contact_path_requires_verification": 17,
+    "homepage_only_contact_path_requires_verification": 15,
     "social_profile_not_first_party_verified": 9,
     "website_contact_capability_not_verified": 9,
     "official_public_business_email_verified": 7,
@@ -999,10 +985,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 29,
-    "queueCount": 74,
-    "googleDiscovered": 74,
+    "queueCount": 72,
+    "googleDiscovered": 72,
     "refillNeeded": 71,
-    "confirmedToday": 38,
+    "confirmedToday": 40,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1014,7 +1000,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (45); homepage_only_contact_path_requires_verification (17); social_profile_not_first_party_verified (9).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (45); homepage_only_contact_path_requires_verification (15); social_profile_not_first_party_verified (9).",
   "recoveryHint": "Refill the high-ICP pool with 71 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1035,20 +1021,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-25\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 42,\n    \"dueNow\": 74,\n    \"visibleTodayQueue\": 72,\n    \"potentialPool\": 27,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 73,\n    \"executableCompanies\": 18,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 112,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 9,\n      \"instagram\": 4,\n      \"email\": 1\n    },\n    \"verifiedSocialCompanies\": 17,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 3,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 74,\n    \"facebookDiscovered\": 20,\n    \"websiteContactDiscovered\": 8,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-25-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-25-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-25\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 47,\n    \"dueNow\": 76,\n    \"visibleTodayQueue\": 72,\n    \"potentialPool\": 27,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 73,\n    \"executableCompanies\": 18,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 112,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 9,\n      \"instagram\": 4,\n      \"email\": 1\n    },\n    \"verifiedSocialCompanies\": 17,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 3,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 76,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-25-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-25-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-25T15:25:56.879Z",
+      "updatedAt": "2026-08-25T15:31:43.962Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-25",
-      "artifactGeneratedAt": "2026-08-25T15:25:53.733Z",
-      "executionGeneratedAt": "2026-08-25T15:16:06.417Z",
-      "githubSyncUpdatedAt": "2026-08-25T15:16:51.088Z",
+      "artifactGeneratedAt": "2026-08-25T15:31:41.132Z",
+      "executionGeneratedAt": "2026-08-25T15:25:57.501Z",
+      "githubSyncUpdatedAt": "2026-08-25T15:26:42.273Z",
       "counts": {
-        "dailyQueue": 74,
-        "googleDiscovered": 74,
-        "websiteContact": 32,
+        "dailyQueue": 76,
+        "googleDiscovered": 76,
+        "websiteContact": 29,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1100,7 +1086,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "ok": true,
     "evidence": "alibaba_webmail_authenticated_compose_visible",
     "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
-    "title": "(11封未读邮件)阿里邮箱"
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1114,5 +1100,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-25T15:25:57.501Z"
+  "completedAt": "2026-08-25T15:31:44.533Z"
 };
