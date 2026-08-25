@@ -4,8 +4,8 @@
   "mode": "cloud_control_plane_local_browser_executor",
   "shanghaiDate": "2026-08-25",
   "status": "active",
-  "revision": 90,
-  "updatedAt": "2026-08-25T15:32:04.184Z",
+  "revision": 91,
+  "updatedAt": "2026-08-25T15:41:38.776Z",
   "objective": {
     "dailyTarget": 100,
     "countries": [
@@ -20,10 +20,10 @@
     "multiChannelSameCustomer": true
   },
   "progress": {
-    "confirmedToday": 42,
-    "remainingToday": 58,
-    "potentialPool": 27,
-    "executableCompanies": 18,
+    "confirmedToday": 44,
+    "remainingToday": 56,
+    "potentialPool": 28,
+    "executableCompanies": 19,
     "latestExecutionPhase": "browser_execution",
     "latestRealDevelopmentCount": 2,
     "latestReportingVerdict": "development_performed"
@@ -50,12 +50,12 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "5c24c4251968bd480523464fd2654a808f8b5135",
-    "upstreamHead": "5c24c4251968bd480523464fd2654a808f8b5135",
-    "remoteHead": "5c24c4251968bd480523464fd2654a808f8b5135"
+    "localHead": "da7bc7f82254c2c6be588cc2e206a710a44ac9db",
+    "upstreamHead": "da7bc7f82254c2c6be588cc2e206a710a44ac9db",
+    "remoteHead": "da7bc7f82254c2c6be588cc2e206a710a44ac9db"
   },
   "latestExecution": {
-    "completedAt": "2026-08-25T15:31:44.533Z",
+    "completedAt": "2026-08-25T15:41:18.027Z",
     "browserTransportUsed": "cdp",
     "chromeOpened": true,
     "realDevelopmentCount": 2
