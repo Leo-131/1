@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-08-25T03:13:13.873Z",
-  "ok": false,
-  "pushed": false,
+  "updatedAt": "2026-08-25T03:23:02.911Z",
+  "ok": true,
+  "pushed": true,
   "branch": "vercel-main-sync",
-  "localCommit": "a515b6a1c8789a535f5fa245402ef811fe3e248b",
-  "remoteCommit": "fa0da8618eec09bd6e111006700420be46811e0e",
-  "message": "Remote branch must be merged before push",
-  "error": "Command failed: git -c gc.auto=0 merge --no-edit --no-ff refs/remotes/origin/vercel-main-sync"
+  "localCommit": "eaec32ec9927e4e54073f252c93d4a1697ac7b38",
+  "remoteCommit": "eaec32ec9927e4e54073f252c93d4a1697ac7b38",
+  "message": "sync: local outreach data 2026-08-25"
 }
