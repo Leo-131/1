@@ -1,277 +1,39 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": true,
+  "ok": false,
+  "skippedOnly": true,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "cdp",
-  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
+  "browserTransportUsed": "none",
+  "browserTransportFallbackReason": "",
   "extensionReceiptCount": 0,
-  "executionPhase": "browser_execution",
-  "chromeStage": "opened",
-  "chromeOpened": true,
-  "chromeOpenedCount": 1,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 1,
-  "reportingVerdict": "development_performed",
-  "engine": "Browser transport queue bridge",
-  "mode": "serial-single-target",
-  "batchMode": "parallel-batches",
-  "parallelLimit": 1,
-  "limit": 25,
-  "queueDate": "2026-08-25",
-  "queueSource": "dailyQueue",
-  "executed": [
+  "executionPhase": "no_executable_tasks",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (29); homepage_only_contact_path_requires_verification (18); social_profile_not_first_party_verified (13).",
+  "recoveryHint": "Refill the high-ICP pool with 74 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "recoveryActions": [
     {
-      "id": "google-customer-compass-brands-website-contact",
-      "company": "Compass Brands",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.compassbrands.co.uk/about",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T13:00:27.286Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "tomas@compassbrands.co.uk",
-        "targetUrl": "mailto:tomas@compassbrands.co.uk",
-        "subject": "FLEXTAIL global brand representation | Compass Brands",
-        "draft": "Dear Compass Brands Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tomas@compassbrands.co.uk\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
+      "reason": "daily_queue_goal_not_reached",
+      "action": "Refill high-ICP customer pool",
+      "description": "Add or unblock 74 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 74 verified leads or unblock existing website/social leads before the next run.",
+      "target": 100,
+      "potentialPool": 26,
+      "refillNeeded": 74
+    },
+    {
+      "reason": "google_social_profile_not_executable",
+      "action": "Complete Google social channel verification",
+      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
     }
   ],
-  "results": [
-    {
-      "id": "google-customer-compass-brands-website-contact",
-      "company": "Compass Brands",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.compassbrands.co.uk/about",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-25T13:00:27.286Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "tomas@compassbrands.co.uk",
-        "targetUrl": "mailto:tomas@compassbrands.co.uk",
-        "subject": "FLEXTAIL global brand representation | Compass Brands",
-        "draft": "Dear Compass Brands Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tomas@compassbrands.co.uk\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    }
-  ],
+  "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-alpinewaves-linkedin",
-      "company": "AlpineWaves",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-alpine-waves-linkedin",
-      "company": "Alpine Waves",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-esprinet-group-linkedin",
-      "company": "Esprinet Group",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-next-adventure-linkedin",
-      "company": "Next Adventure",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-four-corners-uk-facebook",
-      "company": "Four Corners UK",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-motion-sports-facebook",
-      "company": "Motion Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-ludwikoski-associates-facebook",
-      "company": "Ludwikoski & Associates",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-sanitas-sales-group-facebook",
-      "company": "Sanitas Sales Group",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-ascension-sales-group-facebook",
-      "company": "Ascension Sales Group",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-brandywine-river-reps-facebook",
-      "company": "Brandywine River Reps",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-owens-outdoor-sales-facebook",
-      "company": "Owens Outdoor Sales",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-latulippe-facebook",
-      "company": "Latulippe",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-intersport-norway-facebook",
-      "company": "Intersport Norway",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-onwardup-instagram",
-      "company": "OnwardUP",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-haynes-florance-associates-instagram",
-      "company": "Haynes Florance & Associates",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-elevated-outdoor-sales-instagram",
-      "company": "Elevated Outdoor Sales",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-garibaldi-supply-co-instagram",
-      "company": "Garibaldi Supply Co.",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-esprinet-group-website-contact",
-      "company": "Esprinet Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-bergfreunde-website-contact",
-      "company": "Bergfreunde",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-au-vieux-campeur-website-contact",
-      "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
     {
       "id": "google-customer-minnis-brands-website-contact",
       "company": "Minnis Brands",
@@ -322,8 +84,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -336,8 +105,50 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_linkedin_profile_ready"
     },
     {
+      "id": "google-customer-alpinewaves-linkedin",
+      "company": "AlpineWaves",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-alpine-waves-linkedin",
+      "company": "Alpine Waves",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-esprinet-group-linkedin",
+      "company": "Esprinet Group",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-next-adventure-linkedin",
+      "company": "Next Adventure",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-four-corners-uk-facebook",
+      "company": "Four Corners UK",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-hardin-outdoors-facebook",
       "company": "Hardin Outdoors",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-motion-sports-facebook",
+      "company": "Motion Sports",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -350,8 +161,43 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-ludwikoski-associates-facebook",
+      "company": "Ludwikoski & Associates",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-sanitas-sales-group-facebook",
+      "company": "Sanitas Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-ascension-sales-group-facebook",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-powers-pedersen-sales-group-facebook",
       "company": "Powers Pedersen Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-brandywine-river-reps-facebook",
+      "company": "Brandywine River Reps",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-owens-outdoor-sales-facebook",
+      "company": "Owens Outdoor Sales",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -413,11 +259,32 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
+      "id": "google-customer-latulippe-facebook",
+      "company": "Latulippe",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-above-and-beyond-facebook",
       "company": "Above and Beyond",
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-intersport-norway-facebook",
+      "company": "Intersport Norway",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
       "id": "google-customer-minnis-brands-instagram",
@@ -448,8 +315,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
+      "id": "google-customer-onwardup-instagram",
+      "company": "OnwardUP",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-haynes-florance-associates-instagram",
+      "company": "Haynes Florance & Associates",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-parallel-45-sales-group-instagram",
       "company": "Parallel 45 Sales Group",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-elevated-outdoor-sales-instagram",
+      "company": "Elevated Outdoor Sales",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -464,6 +352,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-heron-outdoors-instagram",
       "company": "Heron Outdoors",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-instagram",
+      "company": "Garibaldi Supply Co.",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -504,8 +399,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -623,109 +532,46 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-alpinewaves-linkedin",
-      "company": "AlpineWaves",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
+      "id": "google-customer-howe-sound-sales-website-contact",
+      "company": "Howe Sound Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-alpine-waves-linkedin",
-      "company": "Alpine Waves",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
+      "id": "google-customer-parallel-45-sales-group-website-contact",
+      "company": "Parallel 45 Sales Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-next-adventure-linkedin",
-      "company": "Next Adventure",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-four-corners-uk-facebook",
-      "company": "Four Corners UK",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
+      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
+      "company": "Terra Outdoor Gear Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-motion-sports-facebook",
-      "company": "Motion Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
+      "id": "google-customer-wire-to-wire-partners-website-contact",
+      "company": "Wire to Wire Partners",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-ludwikoski-associates-facebook",
-      "company": "Ludwikoski & Associates",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-sanitas-sales-group-facebook",
-      "company": "Sanitas Sales Group",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-ascension-sales-group-facebook",
-      "company": "Ascension Sales Group",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-brandywine-river-reps-facebook",
-      "company": "Brandywine River Reps",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-owens-outdoor-sales-facebook",
-      "company": "Owens Outdoor Sales",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-latulippe-facebook",
-      "company": "Latulippe",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-onwardup-instagram",
-      "company": "OnwardUP",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-haynes-florance-associates-instagram",
-      "company": "Haynes Florance & Associates",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-elevated-outdoor-sales-instagram",
-      "company": "Elevated Outdoor Sales",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-garibaldi-supply-co-instagram",
-      "company": "Garibaldi Supply Co.",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
+      "id": "google-customer-action-sports-agency-website-contact",
+      "company": "Action Sports Agency",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-shiner-distribution-website-contact",
@@ -805,50 +651,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     }
   ],
-  "summary": {
-    "totalLeads": 16,
-    "highIcp": 16,
-    "readyToDevelop": 46,
-    "dueNow": 77,
-    "visibleTodayQueue": 69,
-    "potentialPool": 27,
-    "potentialPoolTarget": 100,
-    "customerTableHighIcp": 0,
-    "refillNeeded": 73,
-    "executableCompanies": 16,
-    "executableReserveTarget": 130,
-    "executableReserveNeeded": 114,
-    "executableByChannel": {
-      "linkedin": 3,
-      "facebook": 8,
-      "instagram": 4,
-      "email": 1
-    },
-    "verifiedSocialCompanies": 15,
-    "verifiedSocialReserveTarget": 20,
-    "verifiedSocialReserveNeeded": 5,
-    "enrichmentBacklogCount": 11,
-    "googleDiscovered": 77,
-    "facebookDiscovered": 22,
-    "websiteContactDiscovered": 11,
-    "scheduledLater": 0,
-    "cooldown": 30,
-    "emailPriority": 0,
-    "openAgencyMarket": 15,
-    "exclusiveAgencySkipped": 1,
-    "needsVerification": 0,
-    "retainedLowIcp": 0
-  },
   "blockerSummary": [
     {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 44
+      "count": 29
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 15
+      "count": 18
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -863,12 +675,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 10
+      "count": 9
     },
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 5
+      "count": 4
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -881,35 +693,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 1
     },
     {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 1
-    },
-    {
       "reason": "verified_linkedin_profile_ready",
       "status": "skipped",
       "count": 1
     }
   ],
   "blockerCounts": {
-    "official_website_social_channel_verified": 44,
-    "homepage_only_contact_path_requires_verification": 15,
+    "official_website_social_channel_verified": 29,
+    "homepage_only_contact_path_requires_verification": 18,
     "social_profile_not_first_party_verified": 13,
     "website_contact_capability_not_verified": 11,
-    "official_public_business_email_verified": 10,
-    "official_website_contact_channel": 5,
+    "official_public_business_email_verified": 9,
+    "official_website_contact_channel": 4,
     "concrete_google_discovered_major_customer_instagram": 2,
     "concrete_google_discovered_major_customer_facebook": 1,
-    "sent_folder_message_confirmed": 1,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 27,
+    "potentialPool": 26,
     "queueCount": 77,
     "googleDiscovered": 77,
-    "refillNeeded": 73,
-    "confirmedToday": 13,
+    "refillNeeded": 74,
+    "confirmedToday": 14,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -920,106 +726,289 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "terminalTaskCount": 0,
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
-  "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (44); homepage_only_contact_path_requires_verification (15); social_profile_not_first_party_verified (13).",
-  "recoveryHint": "Refill the high-ICP pool with 73 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
-  "recoveryActions": [
+  "candidateSelectionAudit": [
     {
-      "reason": "daily_queue_goal_not_reached",
-      "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 73 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 73 verified leads or unblock existing website/social leads before the next run.",
-      "target": 100,
-      "potentialPool": 27,
-      "refillNeeded": 73
+      "id": "google-customer-alpinewaves-linkedin",
+      "company": "AlpineWaves",
+      "action": "develop",
+      "platform": "linkedin",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.alpinewaves.co.uk/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
     },
     {
-      "reason": "google_social_profile_not_executable",
-      "action": "Complete Google social channel verification",
-      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
-      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
+      "id": "google-customer-alpine-waves-linkedin",
+      "company": "Alpine Waves",
+      "action": "develop",
+      "platform": "linkedin",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.alpinewaves.co.uk/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "website_contact_unreachable_skip",
+      "blockingEvidence": "website_page_unavailable_404: 404 錯誤：找不到頁面;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+    },
+    {
+      "id": "google-customer-next-adventure-linkedin",
+      "company": "Next Adventure",
+      "action": "develop",
+      "platform": "linkedin",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://nextadventure.net/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "send_unconfirmed",
+      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
+    },
+    {
+      "id": "google-customer-four-corners-uk-facebook",
+      "company": "Four Corners UK",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.fourcornersuk.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-motion-sports-facebook",
+      "company": "Motion Sports",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.motion-sports.co.uk/contact"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-ludwikoski-associates-facebook",
+      "company": "Ludwikoski & Associates",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.ludreps.com/about-us/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-sanitas-sales-group-facebook",
+      "company": "Sanitas Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://sanitassalesgroup.com/contact/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-ascension-sales-group-facebook",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.ascensionsalesgroup.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-brandywine-river-reps-facebook",
+      "company": "Brandywine River Reps",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.brreps.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-owens-outdoor-sales-facebook",
+      "company": "Owens Outdoor Sales",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://owensoutdoorsales.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-latulippe-facebook",
+      "company": "Latulippe",
+      "action": "develop",
+      "platform": "facebook",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://latulippe.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-onwardup-instagram",
+      "company": "OnwardUP",
+      "action": "develop",
+      "platform": "instagram",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://onwardup.com/brands/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-haynes-florance-associates-instagram",
+      "company": "Haynes Florance & Associates",
+      "action": "develop",
+      "platform": "instagram",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://haynes-florance.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-elevated-outdoor-sales-instagram",
+      "company": "Elevated Outdoor Sales",
+      "action": "develop",
+      "platform": "instagram",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://www.elevatedoutdoorsales.com/home"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-instagram",
+      "company": "Garibaldi Supply Co.",
+      "action": "develop",
+      "platform": "instagram",
+      "readiness": {
+        "ready": true,
+        "gate": "first_party_verified_social",
+        "evidenceUrl": "https://garibaldisupplyco.com/"
+      },
+      "hasTarget": true,
+      "inCandidatePool": false,
+      "sameDayCompanyBlocked": false,
+      "blockingStatus": "same_day_retry_circuit_open",
+      "blockingEvidence": "same_day_retry_circuit_open;exact_task_terminal_status:website_contact_unreachable_skip"
     }
   ],
-  "systemRefresh": {
-    "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-25\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 46,\n    \"dueNow\": 77,\n    \"visibleTodayQueue\": 68,\n    \"potentialPool\": 26,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 74,\n    \"executableCompanies\": 15,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 115,\n    \"executableByChannel\": {\n      \"linkedin\": 3,\n      \"facebook\": 8,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 15,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 5,\n    \"enrichmentBacklogCount\": 11,\n    \"googleDiscovered\": 77,\n    \"facebookDiscovered\": 22,\n    \"websiteContactDiscovered\": 9,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-25-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-25-daily-queue.csv\"\n}",
-    "stderr": "",
-    "error": "",
-    "visibility": {
-      "updatedAt": "2026-08-25T13:00:34.412Z",
-      "source": "main-refreshDailyAutomationArtifacts",
-      "runDate": "2026-08-25",
-      "artifactGeneratedAt": "2026-08-25T13:00:29.074Z",
-      "executionGeneratedAt": "2026-08-25T12:51:03.302Z",
-      "githubSyncUpdatedAt": "2026-08-25T12:52:59.770Z",
-      "counts": {
-        "dailyQueue": 77,
-        "googleDiscovered": 77,
-        "websiteContact": 31,
-        "cooldownQueue": 30,
-        "scheduledLater": 0
-      },
-      "visibleSections": [
-        "workspace",
-        "taskDetailPanel",
-        "todayQueue",
-        "customers",
-        "customerDetail",
-        "seo",
-        "automationAudit",
-        "settings",
-        "rightRail",
-        "githubSyncStatus"
-      ],
-      "refreshedArtifacts": [
-        "daily-automation-latest",
-        "daily-automation-execution-latest",
-        "google-lead-discovery-latest",
-        "github-sync/latest-status",
-        "system-visibility-latest"
-      ],
-      "dailyQueueGoal": {
-        "target": 100,
-        "potentialPool": 26,
-        "refillNeeded": 74,
-        "reached": false
-      },
-      "contactEnrichment": {
-        "enabled": true,
-        "sources": [
-          "dailyQueue",
-          "cooldownQueue",
-          "google-lead-discovery-latest"
-        ],
-        "fields": [
-          "publicEmail",
-          "contactEmail",
-          "contactPhone",
-          "vendorPortal",
-          "contactUrl",
-          "contactSearchUrl",
-          "website"
-        ]
-      }
-    }
-  },
-  "alibabaSessionProbe": {
-    "ok": true,
-    "evidence": "alibaba_webmail_authenticated_compose_visible",
-    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
-    "title": "阿里邮箱"
+  "summary": {
+    "totalLeads": 16,
+    "highIcp": 16,
+    "readyToDevelop": 46,
+    "dueNow": 77,
+    "visibleTodayQueue": 68,
+    "potentialPool": 26,
+    "potentialPoolTarget": 100,
+    "customerTableHighIcp": 0,
+    "refillNeeded": 74,
+    "executableCompanies": 15,
+    "executableReserveTarget": 130,
+    "executableReserveNeeded": 115,
+    "executableByChannel": {
+      "linkedin": 3,
+      "facebook": 8,
+      "instagram": 4
+    },
+    "verifiedSocialCompanies": 15,
+    "verifiedSocialReserveTarget": 20,
+    "verifiedSocialReserveNeeded": 5,
+    "enrichmentBacklogCount": 11,
+    "googleDiscovered": 77,
+    "facebookDiscovered": 22,
+    "websiteContactDiscovered": 9,
+    "scheduledLater": 0,
+    "cooldown": 30,
+    "emailPriority": 0,
+    "openAgencyMarket": 15,
+    "exclusiveAgencySkipped": 1,
+    "needsVerification": 0,
+    "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
+    "ok": true,
+    "reason": "bounce_scan_complete",
+    "scanned": 20,
     "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "senderIdentityFailures": 5,
+    "historicalSenderIdentityFailures": 5,
+    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
   },
-  "ledgerReconciliationCount": 2,
-  "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-25T13:00:35.335Z"
+  "completedAt": "2026-08-25T13:07:35.865Z"
 };
