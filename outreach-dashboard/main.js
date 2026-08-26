@@ -39,6 +39,7 @@ const {
   normalizeTarget,
   validateLeadForExecution,
   isBlockedFacebookTarget,
+  isExactVerifiedFacebookProfileId,
   isUnavailableProfilePage,
 } = require('./autoglm-bridge');
 const {
@@ -2188,7 +2189,7 @@ function validateLeadTargetForPreparation(lead) {
   if (parsed.protocol !== 'https:' || !ALLOWED_EXTERNAL_HOSTS.has(parsed.hostname.toLowerCase())) {
     return { ok: false, error: 'Unsupported platform URL' };
   }
-  if (isBlockedFacebookTarget(parsed)) {
+  if (isBlockedFacebookTarget(parsed) && !isExactVerifiedFacebookProfileId(lead, parsed)) {
     return { ok: false, error: 'Facebook outreach requires an exact verified page/profile URL' };
   }
   if (lead?.identityStatus && lead.identityStatus !== 'verified') {
@@ -3988,7 +3989,13 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
 
 async function runOpenClawLead(lead, decision, options = {}) {
   const target = validateLeadTargetForPreparation(lead);
-  if (!target.ok) return target;
+  if (!target.ok) {
+    return {
+      ...target,
+      sendStatus: 'failed_open',
+      evidence: `pre_send_target_validation_failed:${target.error || 'unknown'};no_customer_interaction`,
+    };
+  }
   const config = loadGlmConfig();
   if (!config || !config.apiKey) return { ok: false, needsConfig: true, error: 'GLM API key is not configured' };
   const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true, reuseTab: Boolean(options.reuseTab) });
@@ -4337,7 +4344,13 @@ async function executeLeadAutomation(lead, options = {}) {
   }
   const followup = isFollowupLead(lead);
   const target = followup ? validateLeadTargetForPreparation(lead) : validateLeadForExecution(lead);
-  if (!target.ok) return target;
+  if (!target.ok) {
+    return {
+      ...target,
+      sendStatus: 'failed_open',
+      evidence: `pre_send_target_validation_failed:${target.error || 'unknown'};no_customer_interaction`,
+    };
+  }
   if (!options.allowParallel) glmAutomationRunning = true;
   try {
     const decision = {

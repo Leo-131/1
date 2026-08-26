@@ -1,13 +1,13 @@
 {
   "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "none",
-  "browserTransportFallbackReason": "",
+  "browserTransportUsed": "cdp",
+  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
   "extensionReceiptCount": 0,
-  "executionPhase": "no_browser_execution",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -27,13 +27,53 @@
       "platform": "facebook",
       "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
       "ok": false,
-      "sendStatus": "",
-      "evidence": "",
-      "timestamp": "2026-08-26T07:25:37.738Z",
-      "chromeOpen": null,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-26T08:03:57.548Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+        "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
+        "title": "404 - Page Not Found",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+      },
       "result": {
         "ok": false,
-        "error": "Facebook outreach requires an exact verified page/profile URL"
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+          "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
+          "title": "404 - Page Not Found",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL global brand representation | Old Timber Outfitters",
+        "draft": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | Old Timber Outfitters\",\"draft\":\"Dear Old Timber Outfitters Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://oldtimberoutfitters.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/profile.php?id=61585747707884\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Old Timber Outfitters_title_www.facebook.com\"}",
+        "fallbackFrom": "https://www.facebook.com/profile.php?id=61585747707884",
+        "fallbackPlatform": "email",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 93,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Old Timber Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Midwest outdoor brand sales representation agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false
       }
     }
   ],
@@ -45,13 +85,53 @@
       "platform": "facebook",
       "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
       "ok": false,
-      "sendStatus": "",
-      "evidence": "",
-      "timestamp": "2026-08-26T07:25:37.738Z",
-      "chromeOpen": null,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-26T08:03:57.548Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+        "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
+        "title": "404 - Page Not Found",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+      },
       "result": {
         "ok": false,
-        "error": "Facebook outreach requires an exact verified page/profile URL"
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+          "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
+          "title": "404 - Page Not Found",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL global brand representation | Old Timber Outfitters",
+        "draft": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | Old Timber Outfitters\",\"draft\":\"Dear Old Timber Outfitters Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://oldtimberoutfitters.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/profile.php?id=61585747707884\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Old Timber Outfitters_title_www.facebook.com\"}",
+        "fallbackFrom": "https://www.facebook.com/profile.php?id=61585747707884",
+        "fallbackPlatform": "email",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 93,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Old Timber Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Midwest outdoor brand sales representation agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false
       }
     }
   ],
@@ -920,12 +1000,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T07:25:46.811Z",
+      "updatedAt": "2026-08-26T08:04:08.538Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T07:25:42.012Z",
-      "executionGeneratedAt": "2026-08-26T07:08:28.756Z",
-      "githubSyncUpdatedAt": "2026-08-26T07:09:06.292Z",
+      "artifactGeneratedAt": "2026-08-26T08:03:59.768Z",
+      "executionGeneratedAt": "2026-08-26T07:25:47.927Z",
+      "githubSyncUpdatedAt": "2026-08-26T07:26:54.867Z",
       "counts": {
         "dailyQueue": 82,
         "googleDiscovered": 82,
@@ -995,5 +1075,5 @@
   },
   "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T07:25:47.927Z"
+  "completedAt": "2026-08-26T08:04:09.987Z"
 }

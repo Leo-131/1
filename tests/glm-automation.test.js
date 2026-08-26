@@ -9,6 +9,7 @@ const { buildDiscoveryRun, buildLeads, websiteContactSubject } = require('../out
 const {
   buildAutoGlmTask,
   isBlockedFacebookTarget,
+  isExactVerifiedFacebookProfileId,
   isUnavailableProfilePage,
   normalizeTarget,
   validateLeadForExecution,
@@ -1050,12 +1051,19 @@ test('AutoGLM only accepts exact supported platform URLs and blocks repeat conta
     verifiedTargetUrl: 'https://www.facebook.com/profile.php?id=123',
   }).ok, false);
   assert.equal(validateLeadForExecution({
+    verifiedTargetUrl: 'https://www.facebook.com/profile.php?id=123',
+    officialSocialProfileVerified: true,
+  }).ok, true);
+  assert.equal(validateLeadForExecution({
     verifiedTargetUrl: 'https://www.facebook.com/bassproshops',
   }).ok, true);
 });
 
 test('Facebook execution rejects generic destinations before outreach', () => {
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/profile.php?id=123')), true);
+  assert.equal(isExactVerifiedFacebookProfileId({ officialSocialProfileVerified: true }, new URL('https://www.facebook.com/profile.php?id=123')), true);
+  assert.equal(isExactVerifiedFacebookProfileId({ officialSocialProfileVerified: false }, new URL('https://www.facebook.com/profile.php?id=123')), false);
+  assert.equal(isExactVerifiedFacebookProfileId({ officialSocialProfileVerified: true }, new URL('https://www.facebook.com/profile.php?id=not-a-number')), false);
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/search/top?q=camping')), true);
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/watch?v=123')), true);
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/bassproshops')), false);
