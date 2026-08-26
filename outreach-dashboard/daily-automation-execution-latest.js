@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 13,
   "queueDate": "2026-08-26",
   "queueSource": "dailyQueue",
   "executed": [
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T04:27:57.330Z",
+      "timestamp": "2026-08-26T07:08:12.379Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -47,7 +47,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T04:27:57.330Z",
+      "timestamp": "2026-08-26T07:08:12.379Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -57,8 +57,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "skipped": [
     {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
+      "id": "google-customer-naturehike-south-africa-website-contact",
+      "company": "Naturehike South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -69,6 +83,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "linkedin",
       "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-esprinet-group-linkedin",
+      "company": "Esprinet Group",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-next-adventure-linkedin",
@@ -134,6 +155,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-naturehike-south-africa-facebook",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-latulippe-facebook",
       "company": "Latulippe",
       "action": "develop",
@@ -169,11 +197,95 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "company": "Outdoor Nature",
+      "id": "google-customer-naturehike-south-africa-instagram",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-novo-brands-website-contact",
+      "company": "Novo Brands",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bvc-holdings-website-contact",
+      "company": "BVC Holdings",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-minnis-brands-website-contact",
@@ -232,22 +344,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "company": "Naturehike South Africa",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -258,13 +356,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "linkedin",
       "reason": "verified_linkedin_profile_ready"
-    },
-    {
-      "id": "google-customer-esprinet-group-linkedin",
-      "company": "Esprinet Group",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-northern-exposure-sporting-group-linkedin",
@@ -328,13 +419,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-facebook",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-nohrth-facebook",
@@ -449,13 +533,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-instagram",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-atmosphere-instagram",
       "company": "Atmosphere",
       "action": "develop",
@@ -470,22 +547,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -556,48 +619,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-endless-adventure-sales-website-contact",
       "company": "Endless Adventure Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-excell-marketing-website-contact",
-      "company": "Excell Marketing",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-green-room-trading-website-contact",
-      "company": "Green Room Trading",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-level-8-outdoor-website-contact",
-      "company": "Level 8 Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sportco-marketing-website-contact",
-      "company": "Sportco Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-curtis-group-sales-website-contact",
-      "company": "The Curtis Group Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-granite-marketing-website-contact",
-      "company": "Granite Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -775,7 +796,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 50,
-    "dueNow": 79,
+    "dueNow": 82,
     "visibleTodayQueue": 75,
     "potentialPool": 25,
     "potentialPoolTarget": 100,
@@ -793,7 +814,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 79,
+    "googleDiscovered": 82,
     "facebookDiscovered": 21,
     "websiteContactDiscovered": 12,
     "scheduledLater": 0,
@@ -813,7 +834,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 12
+      "count": 14
     },
     {
       "reason": "official_public_business_email_verified",
@@ -833,7 +854,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 5
+      "count": 6
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -848,19 +869,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "official_website_social_channel_verified": 50,
-    "homepage_only_contact_path_requires_verification": 12,
+    "homepage_only_contact_path_requires_verification": 14,
     "official_public_business_email_verified": 12,
     "social_profile_not_first_party_verified": 10,
     "website_contact_capability_not_verified": 9,
-    "official_website_contact_channel": 5,
+    "official_website_contact_channel": 6,
     "concrete_google_discovered_major_customer_instagram": 3,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 25,
-    "queueCount": 79,
-    "googleDiscovered": 79,
+    "queueCount": 82,
+    "googleDiscovered": 82,
     "refillNeeded": 75,
     "confirmedToday": 0,
     "reached": false,
@@ -874,7 +895,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (50); homepage_only_contact_path_requires_verification (12); official_public_business_email_verified (12).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (50); homepage_only_contact_path_requires_verification (14); official_public_business_email_verified (12).",
   "recoveryHint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -895,20 +916,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-26\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 50,\n    \"dueNow\": 79,\n    \"visibleTodayQueue\": 75,\n    \"potentialPool\": 25,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 75,\n    \"executableCompanies\": 16,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 114,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 79,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-26\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 50,\n    \"dueNow\": 82,\n    \"visibleTodayQueue\": 75,\n    \"potentialPool\": 25,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 75,\n    \"executableCompanies\": 16,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 114,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 82,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T04:28:06.389Z",
+      "updatedAt": "2026-08-26T07:08:27.722Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T04:28:00.745Z",
-      "executionGeneratedAt": "2026-08-26T04:07:35.065Z",
-      "githubSyncUpdatedAt": "2026-08-26T04:08:03.889Z",
+      "artifactGeneratedAt": "2026-08-26T07:08:22.741Z",
+      "executionGeneratedAt": "2026-08-26T04:28:07.738Z",
+      "githubSyncUpdatedAt": "2026-08-26T04:29:01.943Z",
       "counts": {
-        "dailyQueue": 79,
-        "googleDiscovered": 79,
-        "websiteContact": 29,
+        "dailyQueue": 82,
+        "googleDiscovered": 82,
+        "websiteContact": 32,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -963,16 +984,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "title": "阿里邮箱"
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
+    "ok": true,
+    "reason": "bounce_scan_complete",
+    "scanned": 21,
     "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "senderIdentityFailures": 5,
+    "historicalSenderIdentityFailures": 5,
+    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
   },
   "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T04:28:07.738Z"
+  "completedAt": "2026-08-26T07:08:28.756Z"
 };
