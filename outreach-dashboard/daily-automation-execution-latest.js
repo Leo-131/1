@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 13,
+  "limit": 25,
   "queueDate": "2026-08-26",
   "queueSource": "dailyQueue",
   "executed": [
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T07:08:12.379Z",
+      "timestamp": "2026-08-26T07:25:37.738Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -47,7 +47,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T07:08:12.379Z",
+      "timestamp": "2026-08-26T07:25:37.738Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -920,12 +920,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T07:08:27.722Z",
+      "updatedAt": "2026-08-26T07:25:46.811Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T07:08:22.741Z",
-      "executionGeneratedAt": "2026-08-26T04:28:07.738Z",
-      "githubSyncUpdatedAt": "2026-08-26T04:29:01.943Z",
+      "artifactGeneratedAt": "2026-08-26T07:25:42.012Z",
+      "executionGeneratedAt": "2026-08-26T07:08:28.756Z",
+      "githubSyncUpdatedAt": "2026-08-26T07:09:06.292Z",
       "counts": {
         "dailyQueue": 82,
         "googleDiscovered": 82,
@@ -984,15 +984,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "title": "阿里邮箱"
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "bounce_scan_complete",
-    "scanned": 21,
+    "ok": false,
+    "reason": "email_sender_not_configured",
     "updated": 0,
-    "senderIdentityFailures": 5,
-    "historicalSenderIdentityFailures": 5,
-    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
   "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T07:08:28.756Z"
+  "completedAt": "2026-08-26T07:25:47.927Z"
 };

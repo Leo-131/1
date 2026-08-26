@@ -1802,6 +1802,37 @@ async function connectLinkedinSalesSearch(payload = {}) {
   };
 }
 
+async function inspectLinkedinSalesLead(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, sendStatus: 'failed_open', evidence: 'dedicated_cdp_9224_required' };
+  const tab = await findTab(port, payload.tabId, payload.targetUrl);
+  if (!tab) return { ok: false, sendStatus: 'failed_open', evidence: 'linkedin_sales_lead_tab_not_found' };
+  const result = await evaluateJson(tab, `(() => {
+    const url = location.href;
+    const title = document.title;
+    const body = String(document.body && document.body.innerText || '');
+    const emails = Array.from(new Set((body.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}/gi) || []).map(v => v.toLowerCase()))).slice(0, 10);
+    const lines = body.split(/\\n+/).map(v => v.replace(/\\s+/g, ' ').trim()).filter(Boolean)
+      .filter(v => /email|contact|buyer|category|company|website/i.test(v)).slice(0, 40);
+    const links = Array.from(document.querySelectorAll('a[href]')).map(a => ({
+      text: String(a.innerText || a.textContent || '').replace(/\\s+/g, ' ').trim(),
+      href: a.href,
+    })).filter(v => String(v.href || '').includes('/sales/company/') || /contact|website|mailto:/i.test(v.href) || /company|website|contact/i.test(v.text)).slice(0, 30);
+    return JSON.stringify({ url, title, emails, lines, links });
+  })()`, 8000);
+  let parsed;
+  try { parsed = new URL(result.url); } catch { parsed = null; }
+  if (!parsed || !/linkedin\.com$/i.test(parsed.hostname) || !/^\/sales\/lead\//.test(parsed.pathname)) {
+    return { ok: false, sendStatus: 'failed_open', evidence: 'linkedin_sales_lead_identity_mismatch', result };
+  }
+  return {
+    ok: true,
+    sendStatus: result.emails.length ? 'email_exposed_exact' : 'email_not_exposed',
+    evidence: result.emails.length ? 'complete_email_visible_in_sales_navigator' : 'complete_email_not_visible_in_sales_navigator',
+    result,
+  };
+}
+
 async function main() {
   const command = process.argv[2];
   const rawPayload = process.argv[3] || '{}';
@@ -1814,6 +1845,7 @@ async function main() {
   else if (command === 'engage-social-profile') result = await engageSocialProfile(payload);
   else if (command === 'inspect-social-context') result = await inspectSocialContext(payload);
   else if (command === 'connect-linkedin-sales-search') result = await connectLinkedinSalesSearch(payload);
+  else if (command === 'inspect-linkedin-sales-lead') result = await inspectLinkedinSalesLead(payload);
   else throw new Error(`Unknown command: ${command}`);
   process.stdout.write(JSON.stringify(result));
 }
