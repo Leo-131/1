@@ -273,8 +273,16 @@ function composeAttachmentControlExpression() {
           || Number(compose.contains(right.element)) - Number(compose.contains(left.element))
           || left.index - right.index;
       });
-    ranked[0].element.click();
-    return JSON.stringify({ ok: true, inputReady: false, evidence: 'alibaba_webmail_attachment_control_clicked', count: controls.length, selectedLabel: ranked[0].label.slice(0, 120) });
+    const rect = ranked[0].element.getBoundingClientRect();
+    return JSON.stringify({
+      ok: true,
+      inputReady: false,
+      evidence: 'alibaba_webmail_attachment_control_ready',
+      count: controls.length,
+      selectedLabel: ranked[0].label.slice(0, 120),
+      x: Math.round(rect.x + rect.width / 2),
+      y: Math.round(rect.y + rect.height / 2),
+    });
   })()`;
 }
 

@@ -1896,7 +1896,7 @@ function isFixedAlibabaPreSendTechnicalFailure(result = {}) {
   const evidence = String(result.evidence || '').toLowerCase();
   if (!evidence.includes('no_send_performed')) return false;
   if (/send_clicked|enter_send_attempted|submit_clicked|message_sent|persisted_after_reload/.test(evidence)) return false;
-  return /alibaba_webmail_attachment_control_(?:not_unique|missing)|first_touch_email_policy_failed:email_body_must_be_90_140_words/.test(evidence);
+  return /alibaba_webmail_attachment_control_(?:not_unique|missing)|alibaba_webmail_attachment_file_input_not_found|alibaba_webmail_file_chooser_(?:preconditions_failed|not_opened|backend_node_missing|selection_timeout|selection_failed|transport_unavailable|transport_error|transport_closed|protocol_error)|first_touch_email_policy_failed:email_body_must_be_90_140_words/.test(evidence);
 }
 
 async function setChromeFileInputs(opened, filePaths = []) {
@@ -1904,20 +1904,185 @@ async function setChromeFileInputs(opened, filePaths = []) {
   if (!opened || !opened.webSocketDebuggerUrl || !files.length || files.some(filePath => !fs.existsSync(filePath))) {
     return { ok: false, evidence: 'approved_email_attachment_missing' };
   }
-  const evaluated = await cdpCommand(opened.webSocketDebuggerUrl, 'Runtime.evaluate', {
-    expression: `(() => {
-      const scoped = document.querySelector('[data-testid="compose-container"] input[type="file"]');
-      if (scoped) return scoped;
-      const inputs = Array.from(document.querySelectorAll('input[type="file"]'));
-      return inputs.length === 1 ? inputs[0] : null;
-    })()`,
-  }, 5000);
-  const objectId = evaluated && evaluated.result && evaluated.result.objectId;
+  let evaluated = null;
+  let objectId = '';
+  for (let attempt = 0; attempt < 12 && !objectId; attempt += 1) {
+    evaluated = await cdpCommand(opened.webSocketDebuggerUrl, 'Runtime.evaluate', {
+      expression: `(() => {
+        const roots = [document];
+        for (let index = 0; index < roots.length; index += 1) {
+          for (const element of roots[index].querySelectorAll('*')) {
+            if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+            if (element.tagName === 'IFRAME') {
+              try { if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument); } catch {}
+            }
+          }
+        }
+        const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input[type="file"]')));
+        const compose = document.querySelector('[data-testid="compose-container"]');
+        return (compose && inputs.find(input => compose.contains(input))) || (inputs.length === 1 ? inputs[0] : null);
+      })()`,
+    }, 5000);
+    objectId = evaluated && evaluated.result && evaluated.result.objectId;
+    if (!objectId && attempt < 11) await sleep(500);
+  }
   if (!objectId) return { ok: false, evidence: 'alibaba_webmail_attachment_file_input_not_found' };
   const setResult = await cdpCommand(opened.webSocketDebuggerUrl, 'DOM.setFileInputFiles', { objectId, files }, 15000);
   return setResult === null || setResult
     ? { ok: true, evidence: `alibaba_webmail_approved_attachments_selected:${files.map(filePath => path.basename(filePath)).join('|')}` }
     : { ok: false, evidence: 'alibaba_webmail_attachment_selection_failed' };
+}
+
+function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}) {
+  const files = Array.isArray(filePaths) ? filePaths : [];
+  const x = Number(control.x);
+  const y = Number(control.y);
+  if (!opened?.webSocketDebuggerUrl || !files.length || files.some(filePath => !fs.existsSync(filePath))
+    || !Number.isFinite(x) || !Number.isFinite(y)) {
+    return Promise.resolve({ ok: false, evidence: 'alibaba_webmail_file_chooser_preconditions_failed' });
+  }
+  if (typeof WebSocket === 'undefined') {
+    return setChromeFileInputsViaChooserRawSocket(opened.webSocketDebuggerUrl, files, x, y);
+  }
+  return new Promise((resolve) => {
+    let settled = false;
+    let socket;
+    let chooserSeen = false;
+    const done = (value) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      try { socket.close(); } catch {}
+      resolve(value);
+    };
+    const send = (id, method, params = {}) => socket.send(JSON.stringify({ id, method, params }));
+    const timer = setTimeout(() => done({ ok: false, evidence: chooserSeen
+      ? 'alibaba_webmail_file_chooser_selection_timeout'
+      : 'alibaba_webmail_file_chooser_not_opened' }), 20000);
+    try { socket = new WebSocket(opened.webSocketDebuggerUrl); } catch {
+      done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_unavailable' });
+      return;
+    }
+    socket.addEventListener('open', () => send(1, 'Page.setInterceptFileChooserDialog', { enabled: true }));
+    socket.addEventListener('message', async (event) => {
+      try {
+        let raw;
+        if (typeof event.data === 'string') raw = event.data;
+        else if (event.data && typeof event.data.arrayBuffer === 'function') raw = Buffer.from(await event.data.arrayBuffer()).toString('utf8');
+        else raw = String(event.data || '');
+        const message = JSON.parse(raw);
+        if (message.id === 1) {
+          send(2, 'Page.bringToFront');
+          send(3, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' });
+          send(4, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
+          send(5, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+        } else if (message.method === 'Page.fileChooserOpened') {
+          chooserSeen = true;
+          const backendNodeId = message.params && message.params.backendNodeId;
+          if (!backendNodeId) {
+            done({ ok: false, evidence: 'alibaba_webmail_file_chooser_backend_node_missing' });
+            return;
+          }
+          send(6, 'DOM.setFileInputFiles', { backendNodeId, files });
+        } else if (message.id === 6) {
+          done(message.error
+            ? { ok: false, evidence: `alibaba_webmail_file_chooser_selection_failed:${message.error.message || 'unknown'}` }
+            : { ok: true, evidence: `alibaba_webmail_approved_attachments_selected_via_chooser:${files.map(filePath => path.basename(filePath)).join('|')}` });
+        }
+      } catch {
+        done({ ok: false, evidence: 'alibaba_webmail_file_chooser_protocol_error' });
+      }
+    });
+    socket.addEventListener('error', () => done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_error' }));
+  });
+}
+
+function setChromeFileInputsViaChooserRawSocket(wsUrl, files, x, y) {
+  return new Promise((resolve) => {
+    const parsed = new URL(wsUrl);
+    const secure = parsed.protocol === 'wss:';
+    const port = Number(parsed.port || (secure ? 443 : 80));
+    const key = crypto.randomBytes(16).toString('base64');
+    const request = [
+      `GET ${parsed.pathname}${parsed.search} HTTP/1.1`,
+      `Host: ${parsed.host}`,
+      'Upgrade: websocket',
+      'Connection: Upgrade',
+      `Sec-WebSocket-Key: ${key}`,
+      'Sec-WebSocket-Version: 13',
+      '',
+      '',
+    ].join('\r\n');
+    let socket;
+    let settled = false;
+    let handshakeDone = false;
+    let chooserSeen = false;
+    let buffer = Buffer.alloc(0);
+    const done = (value) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      try { socket.end(); } catch {}
+      try { socket.destroy(); } catch {}
+      resolve(value);
+    };
+    const send = (id, method, params = {}) => socket.write(encodeWebSocketFrame(JSON.stringify({ id, method, params })));
+    const timer = setTimeout(() => done({ ok: false, evidence: chooserSeen
+      ? 'alibaba_webmail_file_chooser_selection_timeout'
+      : 'alibaba_webmail_file_chooser_not_opened' }), 20000);
+    try {
+      socket = secure
+        ? tls.connect({ host: parsed.hostname, port, servername: parsed.hostname })
+        : net.connect({ host: parsed.hostname, port });
+    } catch {
+      done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_unavailable' });
+      return;
+    }
+    socket.on('connect', () => socket.write(request));
+    socket.on('data', (chunk) => {
+      buffer = Buffer.concat([buffer, chunk]);
+      if (!handshakeDone) {
+        const headerEnd = buffer.indexOf('\r\n\r\n');
+        if (headerEnd === -1) return;
+        const header = buffer.subarray(0, headerEnd).toString('utf8');
+        if (!/^HTTP\/1\.1 101/i.test(header)) {
+          done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_unavailable' });
+          return;
+        }
+        handshakeDone = true;
+        buffer = buffer.subarray(headerEnd + 4);
+        send(1, 'Page.setInterceptFileChooserDialog', { enabled: true });
+      }
+      const decoded = decodeWebSocketFrames(buffer);
+      buffer = decoded.rest;
+      for (const frame of decoded.frames) {
+        if (frame.opcode !== 1) continue;
+        let message;
+        try { message = JSON.parse(frame.text); } catch { continue; }
+        if (message.id === 1) {
+          send(2, 'Page.bringToFront');
+          send(3, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' });
+          send(4, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
+          send(5, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+        } else if (message.method === 'Page.fileChooserOpened') {
+          chooserSeen = true;
+          const backendNodeId = message.params && message.params.backendNodeId;
+          if (!backendNodeId) {
+            done({ ok: false, evidence: 'alibaba_webmail_file_chooser_backend_node_missing' });
+            return;
+          }
+          send(6, 'DOM.setFileInputFiles', { backendNodeId, files });
+        } else if (message.id === 6) {
+          done(message.error
+            ? { ok: false, evidence: `alibaba_webmail_file_chooser_selection_failed:${message.error.message || 'unknown'}` }
+            : { ok: true, evidence: `alibaba_webmail_approved_attachments_selected_via_chooser:${files.map(filePath => path.basename(filePath)).join('|')}` });
+          return;
+        }
+      }
+    });
+    socket.on('error', () => done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_error' }));
+    socket.on('close', () => { if (!settled) done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_closed' }); });
+  });
 }
 
 function parseDriverJson(stdout) {
@@ -3246,8 +3411,9 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       manualApprovalRequired: false,
       autoSendAuthorized: true,
     };
-    if (!attachmentControl.inputReady) await sleep(500);
-    const attachmentSelection = await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS);
+    const attachmentSelection = attachmentControl.inputReady
+      ? await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS)
+      : await setChromeFileInputsViaChooser(chromeOpen, APPROVED_EMAIL_ATTACHMENTS, attachmentControl);
     if (!attachmentSelection.ok) return {
       ok: false,
       sendStatus: 'failed_open',

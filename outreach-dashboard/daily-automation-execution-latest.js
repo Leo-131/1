@@ -28,14 +28,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://smithpower.co.za/brands/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:36:58.203Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:10:58.746Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -43,7 +43,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:mail@smithpower.co.za",
         "subject": "FLEXTAIL global brand representation | Smith Power Equipment",
         "draft": "Dear Smith Power Equipment Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"mail@smithpower.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"mail@smithpower.co.za\",\"messageId\":\"\"}"
       }
     },
     {
@@ -54,14 +54,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://transcon.co.uk/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:37:17.210Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:11:16.602Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -69,7 +69,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:info@transcon.co.uk",
         "subject": "FLEXTAIL global brand representation | Trans-Continental Group Ltd",
         "draft": "Dear Trans-Continental Group Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@transcon.co.uk\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@transcon.co.uk\",\"messageId\":\"\"}"
       }
     },
     {
@@ -80,14 +80,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.diversicor.co.za/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:37:34.830Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:11:33.583Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -95,7 +95,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:info@diversicor.co.za",
         "subject": "FLEXTAIL global brand representation | Diversicor",
         "draft": "Dear Diversicor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@diversicor.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@diversicor.co.za\",\"messageId\":\"\"}"
       }
     },
     {
@@ -106,14 +106,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.oukitel.co.za/collections/sale",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:37:52.317Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:11:50.720Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -121,7 +121,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:sales@oukitel.co.za",
         "subject": "FLEXTAIL global distribution partnership | Oukitel South Africa",
         "draft": "Dear Oukitel South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@oukitel.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@oukitel.co.za\",\"messageId\":\"\"}"
       }
     },
     {
@@ -132,14 +132,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.nicholasyale.co.za/about-us",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:38:13.534Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:12:09.939Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -147,7 +147,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:info@nicholasyale.co.za",
         "subject": "FLEXTAIL global brand representation | Nicholas Yale",
         "draft": "Dear Nicholas Yale Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@nicholasyale.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@nicholasyale.co.za\",\"messageId\":\"\"}"
       }
     }
   ],
@@ -160,14 +160,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://smithpower.co.za/brands/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:36:58.203Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:10:58.746Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -175,7 +175,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:mail@smithpower.co.za",
         "subject": "FLEXTAIL global brand representation | Smith Power Equipment",
         "draft": "Dear Smith Power Equipment Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"mail@smithpower.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"mail@smithpower.co.za\",\"messageId\":\"\"}"
       }
     },
     {
@@ -186,14 +186,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://transcon.co.uk/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:37:17.210Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:11:16.602Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -201,7 +201,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:info@transcon.co.uk",
         "subject": "FLEXTAIL global brand representation | Trans-Continental Group Ltd",
         "draft": "Dear Trans-Continental Group Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@transcon.co.uk\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@transcon.co.uk\",\"messageId\":\"\"}"
       }
     },
     {
@@ -212,14 +212,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.diversicor.co.za/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:37:34.830Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:11:33.583Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -227,7 +227,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:info@diversicor.co.za",
         "subject": "FLEXTAIL global brand representation | Diversicor",
         "draft": "Dear Diversicor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@diversicor.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@diversicor.co.za\",\"messageId\":\"\"}"
       }
     },
     {
@@ -238,14 +238,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.oukitel.co.za/collections/sale",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:37:52.317Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:11:50.720Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -253,7 +253,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:sales@oukitel.co.za",
         "subject": "FLEXTAIL global distribution partnership | Oukitel South Africa",
         "draft": "Dear Oukitel South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@oukitel.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@oukitel.co.za\",\"messageId\":\"\"}"
       }
     },
     {
@@ -264,14 +264,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.nicholasyale.co.za/about-us",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
-      "timestamp": "2026-08-26T11:38:13.534Z",
+      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
+      "timestamp": "2026-08-26T12:12:09.939Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_attachment_control_unavailable",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed",
+        "reason": "alibaba_webmail_required_attachment_selection_failed",
+        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed",
         "manualApprovalRequired": false,
         "autoSendAuthorized": true,
         "engine": "alibaba-enterprise-mail-smtp-imap",
@@ -279,7 +279,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "targetUrl": "mailto:info@nicholasyale.co.za",
         "subject": "FLEXTAIL global brand representation | Nicholas Yale",
         "draft": "Dear Nicholas Yale Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_missing;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@nicholasyale.co.za\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_attachment_control_ready;alibaba_webmail_file_chooser_preconditions_failed;no_send_performed\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@nicholasyale.co.za\",\"messageId\":\"\"}"
       }
     }
   ],
@@ -299,6 +299,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
       "action": "email_priority",
@@ -311,6 +318,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "linkedin",
       "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-esprinet-group-linkedin",
+      "company": "Esprinet Group",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-next-adventure-linkedin",
@@ -418,6 +432,41 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-minnis-brands-website-contact",
       "company": "Minnis Brands",
       "action": "email_priority",
@@ -509,13 +558,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
       "action": "email_priority",
@@ -535,13 +577,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "linkedin",
       "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-esprinet-group-linkedin",
-      "company": "Esprinet Group",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-northern-exposure-sporting-group-linkedin",
@@ -740,13 +775,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
       "action": "develop",
@@ -759,34 +787,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-brands-uk-website-contact",
-      "company": "Outdoor Brands UK",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-palisade-trading-website-contact",
-      "company": "Palisade Trading",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-waypoint-outdoor-website-contact",
-      "company": "Waypoint Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sespe-group-website-contact",
-      "company": "Sespe Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
@@ -1029,7 +1029,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 9
     },
     {
-      "reason": "alibaba_webmail_attachment_control_unavailable",
+      "reason": "alibaba_webmail_required_attachment_selection_failed",
       "status": "failed_open",
       "count": 5
     },
@@ -1063,7 +1063,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "official_website_social_channel_verified": 56,
     "official_public_business_email_verified": 20,
     "website_contact_capability_not_verified": 9,
-    "alibaba_webmail_attachment_control_unavailable": 5,
+    "alibaba_webmail_required_attachment_selection_failed": 5,
     "social_profile_not_first_party_verified": 5,
     "homepage_only_contact_path_requires_verification": 4,
     "concrete_google_discovered_major_customer_instagram": 3,
@@ -1113,12 +1113,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T11:38:19.660Z",
+      "updatedAt": "2026-08-26T12:12:14.253Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T11:38:15.162Z",
-      "executionGeneratedAt": "2026-08-26T10:58:58.837Z",
-      "githubSyncUpdatedAt": "2026-08-26T10:49:49.223Z",
+      "artifactGeneratedAt": "2026-08-26T12:12:10.393Z",
+      "executionGeneratedAt": "2026-08-26T11:59:11.916Z",
+      "githubSyncUpdatedAt": "2026-08-26T11:44:10.622Z",
       "counts": {
         "dailyQueue": 77,
         "googleDiscovered": 77,
@@ -1188,5 +1188,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "ledgerReconciliationCount": 5,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T11:38:20.305Z"
+  "completedAt": "2026-08-26T12:12:15.229Z"
 };
