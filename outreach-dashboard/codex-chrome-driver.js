@@ -1833,6 +1833,42 @@ async function inspectLinkedinSalesLead(payload = {}) {
   };
 }
 
+async function inspectLinkedinSalesSearch(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, sendStatus: 'failed_open', evidence: 'dedicated_cdp_9224_required' };
+  const tab = await findTab(port, payload.tabId, payload.targetUrl);
+  if (!tab) return { ok: false, sendStatus: 'failed_open', evidence: 'linkedin_sales_search_tab_not_found' };
+  const maximum = Math.max(1, Math.min(Number(payload.limit || 50), 200));
+  const rows = new Map();
+  for (let pass = 0; pass < 20 && rows.size < maximum; pass += 1) {
+    const snapshot = await evaluateJson(tab, `(() => {
+      const anchors = Array.from(document.querySelectorAll('a[href*="/sales/lead/"]'));
+      const items = anchors.map(a => {
+        const card = a.closest('li, article, [data-x-search-result], [class*="search-results__result-item"]') || a.parentElement;
+        const text = String(card && card.innerText || a.innerText || '').replace(/\\s+/g, ' ').trim();
+        return { name: String(a.innerText || a.textContent || '').replace(/\\s+/g, ' ').trim(), profileUrl: a.href, text: text.slice(0, 900) };
+      }).filter(v => v.name && v.profileUrl);
+      const scrollers = Array.from(document.querySelectorAll('*')).filter(el => el.scrollHeight > el.clientHeight + 300 && el.clientHeight > 300);
+      const scroller = scrollers.sort((a,b) => b.clientHeight - a.clientHeight)[0] || document.scrollingElement;
+      const before = scroller ? scroller.scrollTop : 0;
+      if (scroller) scroller.scrollTop = Math.min(scroller.scrollHeight, before + Math.max(500, scroller.clientHeight * 0.8));
+      return JSON.stringify({ url: location.href, title: document.title, items, before, after: scroller ? scroller.scrollTop : 0 });
+    })()`, 8000);
+    let parsed;
+    try { parsed = new URL(snapshot.url); } catch { parsed = null; }
+    if (!parsed || !/linkedin\.com$/i.test(parsed.hostname) || !/^\/sales\/search\/people/.test(parsed.pathname)) {
+      return { ok: false, sendStatus: 'failed_open', evidence: 'linkedin_sales_people_search_identity_mismatch' };
+    }
+    for (const item of snapshot.items || []) {
+      const key = String(item.profileUrl || '').split('?')[0];
+      if (key && !rows.has(key)) rows.set(key, item);
+      if (rows.size >= maximum) break;
+    }
+    await sleep(650);
+  }
+  return { ok: true, sendStatus: 'read_only_inspection', evidence: 'sales_navigator_visible_rows_collected_no_interaction', count: rows.size, results: Array.from(rows.values()).slice(0, maximum) };
+}
+
 async function main() {
   const command = process.argv[2];
   const rawPayload = process.argv[3] || '{}';
@@ -1846,6 +1882,7 @@ async function main() {
   else if (command === 'inspect-social-context') result = await inspectSocialContext(payload);
   else if (command === 'connect-linkedin-sales-search') result = await connectLinkedinSalesSearch(payload);
   else if (command === 'inspect-linkedin-sales-lead') result = await inspectLinkedinSalesLead(payload);
+  else if (command === 'inspect-linkedin-sales-search') result = await inspectLinkedinSalesSearch(payload);
   else throw new Error(`Unknown command: ${command}`);
   process.stdout.write(JSON.stringify(result));
 }

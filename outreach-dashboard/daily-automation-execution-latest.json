@@ -16,129 +16,99 @@
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 50,
   "queueDate": "2026-08-26",
-  "queueSource": "dailyQueue",
+  "queueSource": "dailyPotentialPool",
   "executed": [
     {
-      "id": "google-customer-old-timber-outfitters-facebook",
-      "company": "Old Timber Outfitters",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "id": "google-customer-gjs-africa-distribution-website-contact",
+      "company": "GJS Africa Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "targetUrl": "https://gjsafrica.co.za/contact-us/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-26T08:03:57.548Z",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-26T09:22:09.648Z",
       "chromeOpen": {
-        "ok": false,
+        "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
-        "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
-        "title": "404 - Page Not Found",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+        "targetUrl": "https://gjsafrica.co.za/help/contact-us",
+        "tabId": "2960D39B156BBC0BA10098906A143977",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2960D39B156BBC0BA10098906A143977",
+        "title": "gjsafrica.co.za"
       },
       "result": {
         "ok": false,
         "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+        "targetUrl": "https://gjsafrica.co.za/help/contact-us",
         "chromeOpen": {
-          "ok": false,
+          "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
-          "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
-          "title": "404 - Page Not Found",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+          "targetUrl": "https://gjsafrica.co.za/help/contact-us",
+          "tabId": "2960D39B156BBC0BA10098906A143977",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2960D39B156BBC0BA10098906A143977",
+          "title": "gjsafrica.co.za"
         },
         "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | Old Timber Outfitters",
-        "draft": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | Old Timber Outfitters\",\"draft\":\"Dear Old Timber Outfitters Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://oldtimberoutfitters.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/profile.php?id=61585747707884\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Old Timber Outfitters_title_www.facebook.com\"}",
-        "fallbackFrom": "https://www.facebook.com/profile.php?id=61585747707884",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 93,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Old Timber Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Midwest outdoor brand sales representation agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "subject": "FLEXTAIL global brand representation | GJS Africa Distribution",
+        "draft": "Dear GJS Africa Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global brand representation | GJS Africa Distribution\",\"draft\":\"Dear GJS Africa Distribution Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://gjsafrica.co.za/contact-us/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_route_detected\"},{\"targetUrl\":\"https://gjsafrica.co.za/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-old-timber-outfitters-facebook",
-      "company": "Old Timber Outfitters",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/profile.php?id=61585747707884",
+      "id": "google-customer-gjs-africa-distribution-website-contact",
+      "company": "GJS Africa Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "targetUrl": "https://gjsafrica.co.za/contact-us/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-26T08:03:57.548Z",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-26T09:22:09.648Z",
       "chromeOpen": {
-        "ok": false,
+        "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
-        "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
-        "title": "404 - Page Not Found",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+        "targetUrl": "https://gjsafrica.co.za/help/contact-us",
+        "tabId": "2960D39B156BBC0BA10098906A143977",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2960D39B156BBC0BA10098906A143977",
+        "title": "gjsafrica.co.za"
       },
       "result": {
         "ok": false,
         "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
+        "targetUrl": "https://gjsafrica.co.za/help/contact-us",
         "chromeOpen": {
-          "ok": false,
+          "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://oldtimberoutfitters.com/help/contact-us",
-          "tabId": "D5B6BD20A216D1C01E5AEBF883AAAE52",
-          "title": "404 - Page Not Found",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: 404\n\nPage not found!"
+          "targetUrl": "https://gjsafrica.co.za/help/contact-us",
+          "tabId": "2960D39B156BBC0BA10098906A143977",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2960D39B156BBC0BA10098906A143977",
+          "title": "gjsafrica.co.za"
         },
         "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | Old Timber Outfitters",
-        "draft": "Dear Old Timber Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "evidence": "unavailable_profile_page: 404\n\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | Old Timber Outfitters\",\"draft\":\"Dear Old Timber Outfitters Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://oldtimberoutfitters.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact\"},{\"targetUrl\":\"https://oldtimberoutfitters.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 404\\n\\nPage not found!\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/profile.php?id=61585747707884\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Old Timber Outfitters_title_www.facebook.com\"}",
-        "fallbackFrom": "https://www.facebook.com/profile.php?id=61585747707884",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 93,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Old Timber Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Midwest outdoor brand sales representation agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "subject": "FLEXTAIL global brand representation | GJS Africa Distribution",
+        "draft": "Dear GJS Africa Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global brand representation | GJS Africa Distribution\",\"draft\":\"Dear GJS Africa Distribution Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://gjsafrica.co.za/contact-us/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_route_detected\"},{\"targetUrl\":\"https://gjsafrica.co.za/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://gjsafrica.co.za/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
   "skipped": [
     {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "company": "Naturehike South Africa",
+      "id": "google-customer-minnis-brands-website-contact",
+      "company": "Minnis Brands",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -151,11 +121,11 @@
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
+      "id": "google-customer-minnis-brands-linkedin",
+      "company": "Minnis Brands",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "verified_linkedin_profile_ready"
     },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
@@ -207,6 +177,13 @@
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-old-timber-outfitters-facebook",
+      "company": "Old Timber Outfitters",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-ascension-sales-group-facebook",
       "company": "Ascension Sales Group",
       "action": "develop",
@@ -228,15 +205,22 @@
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-nomadic-supply-company-facebook",
-      "company": "Nomadic Supply Company",
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-taunton-leisure-facebook",
+      "company": "Taunton Leisure",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-facebook",
-      "company": "Naturehike South Africa",
+      "id": "google-customer-nomadic-supply-company-facebook",
+      "company": "Nomadic Supply Company",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -247,6 +231,13 @@
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-minnis-brands-instagram",
+      "company": "Minnis Brands",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-onwardup-instagram",
@@ -277,8 +268,15 @@
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-instagram",
-      "company": "Naturehike South Africa",
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-taunton-leisure-instagram",
+      "company": "Taunton Leisure",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -291,11 +289,32 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "google-customer-campz-instagram",
       "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-shiner-distribution-website-contact",
+      "company": "Shiner Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-brands-uk-website-contact",
+      "company": "Outdoor Brands UK",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-esprinet-group-website-contact",
@@ -305,15 +324,15 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
       "platform": "website_form",
-      "reason": "official_website_contact_channel"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-novo-brands-website-contact",
-      "company": "Novo Brands",
+      "id": "google-customer-taunton-leisure-website-contact",
+      "company": "Taunton Leisure",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -326,29 +345,8 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-bvc-holdings-website-contact",
-      "company": "BVC Holdings",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -359,20 +357,6 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-minnis-brands-website-contact",
-      "company": "Minnis Brands",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
@@ -424,18 +408,25 @@
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
+      "id": "google-customer-naturehike-south-africa-website-contact",
+      "company": "Naturehike South Africa",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-minnis-brands-linkedin",
-      "company": "Minnis Brands",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "verified_linkedin_profile_ready"
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-northern-exposure-sporting-group-linkedin",
@@ -480,25 +471,18 @@
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-taunton-leisure-facebook",
-      "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-rock-creek-facebook",
       "company": "Rock/Creek",
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-facebook",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-nohrth-facebook",
@@ -513,13 +497,6 @@
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-minnis-brands-instagram",
-      "company": "Minnis Brands",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-hardin-outdoors-instagram",
@@ -592,25 +569,18 @@
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-taunton-leisure-instagram",
-      "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-rock-creek-instagram",
       "company": "Rock/Creek",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-instagram",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-atmosphere-instagram",
@@ -625,27 +595,6 @@
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-above-and-beyond-instagram",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-shiner-distribution-website-contact",
-      "company": "Shiner Distribution",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-brands-uk-website-contact",
-      "company": "Outdoor Brands UK",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-palisade-trading-website-contact",
@@ -704,6 +653,27 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-excell-marketing-website-contact",
+      "company": "Excell Marketing",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-green-room-trading-website-contact",
+      "company": "Green Room Trading",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-level-8-outdoor-website-contact",
+      "company": "Level 8 Outdoor",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
       "action": "develop",
@@ -741,6 +711,13 @@
     {
       "id": "google-customer-sanitas-sales-group-facebook",
       "company": "Sanitas Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-old-timber-outfitters-facebook",
+      "company": "Old Timber Outfitters",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -876,25 +853,26 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 50,
-    "dueNow": 82,
-    "visibleTodayQueue": 75,
-    "potentialPool": 25,
+    "dueNow": 81,
+    "visibleTodayQueue": 76,
+    "potentialPool": 26,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 75,
-    "executableCompanies": 16,
+    "refillNeeded": 74,
+    "executableCompanies": 17,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 114,
+    "executableReserveNeeded": 113,
     "executableByChannel": {
       "linkedin": 2,
       "facebook": 10,
-      "instagram": 4
+      "instagram": 4,
+      "website_form": 1
     },
     "verifiedSocialCompanies": 16,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 82,
+    "googleDiscovered": 81,
     "facebookDiscovered": 21,
     "websiteContactDiscovered": 12,
     "scheduledLater": 0,
@@ -909,7 +887,7 @@
     {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 50
+      "count": 52
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
@@ -934,7 +912,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 6
+      "count": 5
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -948,21 +926,21 @@
     }
   ],
   "blockerCounts": {
-    "official_website_social_channel_verified": 50,
+    "official_website_social_channel_verified": 52,
     "homepage_only_contact_path_requires_verification": 14,
     "official_public_business_email_verified": 12,
     "social_profile_not_first_party_verified": 10,
     "website_contact_capability_not_verified": 9,
-    "official_website_contact_channel": 6,
+    "official_website_contact_channel": 5,
     "concrete_google_discovered_major_customer_instagram": 3,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 25,
-    "queueCount": 82,
-    "googleDiscovered": 82,
-    "refillNeeded": 75,
+    "potentialPool": 26,
+    "queueCount": 81,
+    "googleDiscovered": 81,
+    "refillNeeded": 74,
     "confirmedToday": 0,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -975,17 +953,17 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (50); homepage_only_contact_path_requires_verification (14); official_public_business_email_verified (12).",
-  "recoveryHint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (52); homepage_only_contact_path_requires_verification (14); official_public_business_email_verified (12).",
+  "recoveryHint": "Refill the high-ICP pool with 74 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 75 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 74 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 74 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 25,
-      "refillNeeded": 75
+      "potentialPool": 26,
+      "refillNeeded": 74
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -996,20 +974,20 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-26\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 50,\n    \"dueNow\": 82,\n    \"visibleTodayQueue\": 75,\n    \"potentialPool\": 25,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 75,\n    \"executableCompanies\": 16,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 114,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 82,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-26\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 50,\n    \"dueNow\": 81,\n    \"visibleTodayQueue\": 76,\n    \"potentialPool\": 25,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 75,\n    \"executableCompanies\": 16,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 114,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 81,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T08:04:08.538Z",
+      "updatedAt": "2026-08-26T09:22:14.930Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T08:03:59.768Z",
-      "executionGeneratedAt": "2026-08-26T07:25:47.927Z",
-      "githubSyncUpdatedAt": "2026-08-26T07:26:54.867Z",
+      "artifactGeneratedAt": "2026-08-26T09:22:11.590Z",
+      "executionGeneratedAt": "2026-08-26T08:04:09.987Z",
+      "githubSyncUpdatedAt": "2026-08-26T08:07:07.610Z",
       "counts": {
-        "dailyQueue": 82,
-        "googleDiscovered": 82,
-        "websiteContact": 32,
+        "dailyQueue": 81,
+        "googleDiscovered": 81,
+        "websiteContact": 31,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1061,7 +1039,7 @@
     "ok": true,
     "evidence": "alibaba_webmail_authenticated_compose_visible",
     "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
-    "title": "阿里邮箱"
+    "title": "(6封未读邮件)阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1073,7 +1051,7 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 0,
+  "ledgerReconciliationCount": 1,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T08:04:09.987Z"
+  "completedAt": "2026-08-26T09:22:15.647Z"
 }
