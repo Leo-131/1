@@ -1933,16 +1933,14 @@ async function setChromeFileInputs(opened, filePaths = []) {
     : { ok: false, evidence: 'alibaba_webmail_attachment_selection_failed' };
 }
 
-function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}) {
+function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}, clickExpression = '') {
   const files = Array.isArray(filePaths) ? filePaths : [];
-  const x = Number(control.x);
-  const y = Number(control.y);
   if (!opened?.webSocketDebuggerUrl || !files.length || files.some(filePath => !fs.existsSync(filePath))
-    || !Number.isFinite(x) || !Number.isFinite(y)) {
+    || !String(clickExpression || '').trim()) {
     return Promise.resolve({ ok: false, evidence: 'alibaba_webmail_file_chooser_preconditions_failed' });
   }
   if (typeof WebSocket === 'undefined') {
-    return setChromeFileInputsViaChooserRawSocket(opened.webSocketDebuggerUrl, files, x, y);
+    return setChromeFileInputsViaChooserRawSocket(opened.webSocketDebuggerUrl, files, clickExpression);
   }
   return new Promise((resolve) => {
     let settled = false;
@@ -1973,9 +1971,7 @@ function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}) {
         const message = JSON.parse(raw);
         if (message.id === 1) {
           send(2, 'Page.bringToFront');
-          send(3, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' });
-          send(4, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
-          send(5, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+          send(3, 'Runtime.evaluate', { expression: clickExpression, returnByValue: true });
         } else if (message.method === 'Page.fileChooserOpened') {
           chooserSeen = true;
           const backendNodeId = message.params && message.params.backendNodeId;
@@ -1997,7 +1993,7 @@ function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}) {
   });
 }
 
-function setChromeFileInputsViaChooserRawSocket(wsUrl, files, x, y) {
+function setChromeFileInputsViaChooserRawSocket(wsUrl, files, clickExpression) {
   return new Promise((resolve) => {
     const parsed = new URL(wsUrl);
     const secure = parsed.protocol === 'wss:';
@@ -2061,9 +2057,7 @@ function setChromeFileInputsViaChooserRawSocket(wsUrl, files, x, y) {
         try { message = JSON.parse(frame.text); } catch { continue; }
         if (message.id === 1) {
           send(2, 'Page.bringToFront');
-          send(3, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' });
-          send(4, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
-          send(5, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+          send(3, 'Runtime.evaluate', { expression: clickExpression, returnByValue: true });
         } else if (message.method === 'Page.fileChooserOpened') {
           chooserSeen = true;
           const backendNodeId = message.params && message.params.backendNodeId;
@@ -3413,7 +3407,12 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     };
     const attachmentSelection = attachmentControl.inputReady
       ? await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS)
-      : await setChromeFileInputsViaChooser(chromeOpen, APPROVED_EMAIL_ATTACHMENTS, attachmentControl);
+      : await setChromeFileInputsViaChooser(
+        chromeOpen,
+        APPROVED_EMAIL_ATTACHMENTS,
+        attachmentControl,
+        composeAttachmentControlExpression({ click: true }),
+      );
     if (!attachmentSelection.ok) return {
       ok: false,
       sendStatus: 'failed_open',

@@ -242,7 +242,7 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
   })()`;
 }
 
-function composeAttachmentControlExpression() {
+function composeAttachmentControlExpression({ click = false } = {}) {
   return `(() => {
     const compose = document.querySelector('[data-testid="compose-container"]');
     if (!compose) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_compose_container_missing_for_attachments' });
@@ -274,10 +274,11 @@ function composeAttachmentControlExpression() {
           || left.index - right.index;
       });
     const rect = ranked[0].element.getBoundingClientRect();
+    if (${Boolean(click)}) ranked[0].element.click();
     return JSON.stringify({
       ok: true,
       inputReady: false,
-      evidence: 'alibaba_webmail_attachment_control_ready',
+      evidence: ${Boolean(click) ? "'alibaba_webmail_attachment_control_clicked'" : "'alibaba_webmail_attachment_control_ready'"},
       count: controls.length,
       selectedLabel: ranked[0].label.slice(0, 120),
       x: Math.round(rect.x + rect.width / 2),
