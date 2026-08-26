@@ -1,6 +1,7 @@
 'use strict';
 
 const nodemailer = require('nodemailer');
+const { APPROVED_EMAIL_ATTACHMENTS, APPROVED_EMAIL_SIGNATURE, validateApprovedEmailAttachments } = require('./sales-collateral');
 const { ImapFlow } = require('imapflow');
 const dns = require('dns').promises;
 const { alibabaEmailConfig, emailSenderReadiness, isEmail } = require('./email-channel');
@@ -136,8 +137,10 @@ function validateFirstTouchEmail({ from, to, subject, text, attachments } = {}) 
   if (!/36\+.*2026|2026.*36\+/i.test(clean(text))) errors.push('email_36_plus_2026_sku_proof_missing');
   if (!/flextail\.com/i.test(clean(text))) errors.push('email_flextail_link_missing');
   if (!/buyer|procurement|purchasing|vendor|supplier|category|assortment/i.test(clean(text))) errors.push('email_procurement_cta_missing');
-  if (Array.isArray(attachments) && attachments.length) errors.push('first_touch_attachments_not_allowed');
-  return { ok: errors.length === 0, errors, words };
+  if (!clean(text).endsWith(clean(APPROVED_EMAIL_SIGNATURE))) errors.push('approved_email_signature_missing_or_modified');
+  const attachmentValidation = validateApprovedEmailAttachments(attachments);
+  if (!attachmentValidation.ok) errors.push('approved_first_touch_attachment_set_required');
+  return { ok: errors.length === 0, errors, words, attachmentValidation };
 }
 
 function sentMailboxPath(list = []) {
@@ -325,7 +328,7 @@ async function sendAndConfirmAlibabaEmail(input = {}, dependencies = {}) {
     to: target.recipient,
     subject: clean(input.subject),
     text: clean(input.text),
-    attachments: [],
+    attachments: APPROVED_EMAIL_ATTACHMENTS.map(filePath => ({ path: filePath })),
   };
   const content = validateFirstTouchEmail(message);
   if (!content.ok) {

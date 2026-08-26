@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 13,
+  "limit": 25,
   "queueDate": "2026-08-26",
   "queueSource": "dailyQueue",
   "executed": [
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T01:49:32.645Z",
+      "timestamp": "2026-08-26T03:46:52.845Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -47,7 +47,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T01:49:32.645Z",
+      "timestamp": "2026-08-26T03:46:52.845Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -56,13 +56,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "skipped": [
-    {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "company": "Naturehike South Africa",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
@@ -134,13 +127,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-facebook",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-latulippe-facebook",
       "company": "Latulippe",
       "action": "develop",
@@ -174,55 +160,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-instagram",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-novo-brands-website-contact",
-      "company": "Novo Brands",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-bvc-holdings-website-contact",
-      "company": "BVC Holdings",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-minnis-brands-website-contact",
@@ -276,6 +213,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-nickel-n-diamond-sales-website-contact",
       "company": "Nickel N Diamond Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-website-contact",
+      "company": "Naturehike South Africa",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -377,6 +321,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-facebook",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-nohrth-facebook",
@@ -489,6 +440,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-instagram",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-atmosphere-instagram",
@@ -612,6 +570,34 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-level-8-outdoor-website-contact",
       "company": "Level 8 Outdoor",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-sportco-marketing-website-contact",
+      "company": "Sportco Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-the-curtis-group-sales-website-contact",
+      "company": "The Curtis Group Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-granite-marketing-website-contact",
+      "company": "Granite Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-powers-pedersen-sales-group-website-contact",
+      "company": "Powers Pedersen Sales Group",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -789,7 +775,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 50,
-    "dueNow": 81,
+    "dueNow": 79,
     "visibleTodayQueue": 75,
     "potentialPool": 25,
     "potentialPoolTarget": 100,
@@ -807,7 +793,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 81,
+    "googleDiscovered": 79,
     "facebookDiscovered": 21,
     "websiteContactDiscovered": 12,
     "scheduledLater": 0,
@@ -847,7 +833,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 6
+      "count": 4
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -866,15 +852,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "official_public_business_email_verified": 12,
     "social_profile_not_first_party_verified": 10,
     "website_contact_capability_not_verified": 9,
-    "official_website_contact_channel": 6,
+    "official_website_contact_channel": 4,
     "concrete_google_discovered_major_customer_instagram": 3,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 25,
-    "queueCount": 81,
-    "googleDiscovered": 81,
+    "queueCount": 79,
+    "googleDiscovered": 79,
     "refillNeeded": 75,
     "confirmedToday": 0,
     "reached": false,
@@ -909,20 +895,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-26\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 50,\n    \"dueNow\": 81,\n    \"visibleTodayQueue\": 75,\n    \"potentialPool\": 25,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 75,\n    \"executableCompanies\": 16,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 114,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 81,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-26\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 50,\n    \"dueNow\": 79,\n    \"visibleTodayQueue\": 75,\n    \"potentialPool\": 25,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 75,\n    \"executableCompanies\": 16,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 114,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 79,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 12,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-26-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T01:49:43.096Z",
+      "updatedAt": "2026-08-26T03:47:01.873Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T01:49:40.283Z",
-      "executionGeneratedAt": "2026-08-25T19:15:27.121Z",
-      "githubSyncUpdatedAt": "2026-08-25T19:15:59.456Z",
+      "artifactGeneratedAt": "2026-08-26T03:46:56.297Z",
+      "executionGeneratedAt": "2026-08-26T01:49:43.951Z",
+      "githubSyncUpdatedAt": "2026-08-26T01:50:13.008Z",
       "counts": {
-        "dailyQueue": 81,
-        "googleDiscovered": 81,
-        "websiteContact": 31,
+        "dailyQueue": 79,
+        "googleDiscovered": 79,
+        "websiteContact": 29,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -971,19 +957,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   },
   "alibabaSessionProbe": {
-    "ok": false,
-    "evidence": "alibaba_webmail_login_required"
+    "ok": true,
+    "evidence": "alibaba_webmail_authenticated_compose_visible",
+    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "bounce_scan_complete",
-    "scanned": 21,
+    "ok": false,
+    "reason": "email_sender_not_configured",
     "updated": 0,
-    "senderIdentityFailures": 5,
-    "historicalSenderIdentityFailures": 5,
-    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
-  "ledgerReconciliationCount": 11,
+  "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T01:49:43.951Z"
+  "completedAt": "2026-08-26T03:47:03.203Z"
 };

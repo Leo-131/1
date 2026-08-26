@@ -242,6 +242,37 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
   })()`;
 }
 
+function composeAttachmentControlExpression() {
+  return `(() => {
+    const compose = document.querySelector('[data-testid="compose-container"]');
+    if (!compose) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_compose_container_missing_for_attachments' });
+    const visible = element => Boolean(element?.getClientRects?.().length);
+    const identity = element => [element.innerText, element.textContent, element.getAttribute?.('aria-label'), element.getAttribute?.('title'), element.getAttribute?.('data-testid')].filter(Boolean).join(' ').trim();
+    const input = compose.querySelector('input[type="file"]');
+    if (input) return JSON.stringify({ ok: true, inputReady: true, evidence: 'alibaba_webmail_attachment_input_ready' });
+    const pattern = /\b(attach|attachment|add file)\b|\u9644\u4ef6|\u6dfb\u52a0\u6587\u4ef6/i;
+    const controls = Array.from(compose.querySelectorAll('button,[role="button"],a,[tabindex]'))
+      .filter(element => visible(element) && !element.disabled && pattern.test(identity(element)));
+    if (controls.length !== 1) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_attachment_control_not_unique', count: controls.length });
+    controls[0].click();
+    return JSON.stringify({ ok: true, inputReady: false, evidence: 'alibaba_webmail_attachment_control_clicked' });
+  })()`;
+}
+
+function composeAttachmentInspectionExpression({ names } = {}) {
+  const expected = Array.isArray(names) ? names : [];
+  return `(() => {
+    const expected = ${JSON.stringify(expected)};
+    const compose = document.querySelector('[data-testid="compose-container"]');
+    if (!compose) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_compose_container_missing_for_attachment_inspection' });
+    const text = String(compose.innerText || compose.textContent || '');
+    const matched = expected.filter(name => text.includes(name));
+    const pending = /\b(uploading|attaching)\b|\u4e0a\u4f20\u4e2d|\u6b63\u5728\u4e0a\u4f20/i.test(text);
+    const ok = matched.length === expected.length && !pending;
+    return JSON.stringify({ ok, matched, expected, pending, evidence: ok ? 'alibaba_webmail_required_attachments_verified' : 'alibaba_webmail_required_attachments_not_ready' });
+  })()`;
+}
+
 function composeRecipientFocusExpression() {
   return `(() => {
     const fields = ${composeFieldsExpression()};
@@ -453,4 +484,4 @@ function sentFolderConfirmationExpression({ subject } = {}) {
   })()`;
 }
 
-module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeRecipientChipExpression, composeRecipientTooltipInspectionExpression, composeSubjectFocusExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };
+module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeRecipientChipExpression, composeRecipientTooltipInspectionExpression, composeSubjectFocusExpression, composeInspectionExpression, composeAttachmentControlExpression, composeAttachmentInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };

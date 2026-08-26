@@ -2108,7 +2108,8 @@ test('sales copy selects verified FLEXTAIL collateral and keeps social DMs conci
   const emailDraft = professionalSalesDraft({ company: 'Trail Shop', platform: 'Email', category: 'camping' }, '');
   assert.doesNotMatch(socialDraft, /https?:\/\//);
   assert.match(emailDraft, /https:\/\/www\.flextail\.com\//);
-  assert.match(emailDraft, /Best regards,/);
+  assert.match(emailDraft, /Overseas Business Unit/);
+  assert.match(emailDraft, /5th Floor, No\. 68, Yincheng Middle Road/);
   assert.match(emailDraft, /vendor\/category review/);
   assert.doesNotMatch(emailDraft, /nice to e-meet you/i);
 });

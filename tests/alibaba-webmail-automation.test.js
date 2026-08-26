@@ -7,6 +7,8 @@ const {
   composeFillExpression,
   composeSubjectFocusExpression,
   composeInspectionExpression,
+  composeAttachmentControlExpression,
+  composeAttachmentInspectionExpression,
   composeSendExpression,
   postSendStateExpression,
   sendToastExpression,
@@ -27,6 +29,8 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
     composeStartExpression(),
     composeFillExpression(payload),
     composeInspectionExpression(payload),
+    composeAttachmentControlExpression(),
+    composeAttachmentInspectionExpression({ names: ['2026 Catalog (HD).pdf', 'Distributor Network.png'] }),
     composeSendExpression(payload),
     postSendStateExpression(payload),
     sendToastExpression(),
@@ -69,6 +73,9 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeInspectionExpression(payload), /\[class\*="recipient"\]/);
   assert.match(composeInspectionExpression(payload), /root\.host/);
   assert.match(composeInspectionExpression(payload), /replace\(\/\\u00a0\/g/);
+  assert.match(composeAttachmentControlExpression(), /compose-container/);
+  assert.match(composeAttachmentControlExpression(), /input\[type="file"\]/);
+  assert.match(composeAttachmentInspectionExpression({ names: ['Distributor Network.png'] }), /required_attachments_verified/);
   assert.match(composeSendExpression(payload), /send_button_not_unique/);
   assert.match(composeSendExpression(payload), /send_control_verified/);
   assert.match(composeSendExpression(payload), /getBoundingClientRect/);
