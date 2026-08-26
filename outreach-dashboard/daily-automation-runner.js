@@ -574,10 +574,13 @@ function noSafeMessageButtonEvidence(value = '') {
 
 function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
   if (!result || !SAME_DAY_DEVELOPMENT_STATUSES.has(result.status) || !sameAutomationDay(result.timestamp, now)) return false;
-  // A pre-send technical failure does not count as development, but it retires
-  // the whole company for the rest of the Shanghai day so later queues advance
-  // instead of reopening it through another channel.
-  if (result.status === 'failed_open') return true;
+  // A failure proven to have happened before any irreversible action is safe
+  // to retry after a code/UI repair. Uncertain clicks remain hard same-day locks.
+  if (result.status === 'failed_open') {
+    const evidence = String(result.evidence || '');
+    return !/no_send_performed/i.test(evidence)
+      || /send_clicked|enter_send_attempted|submit_clicked/i.test(evidence);
+  }
   return isTouchResult(result);
 }
 
@@ -668,7 +671,10 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
   const routeBlocked = new Set();
   const partners = new Set([...PARTNER_COMPANIES].flatMap(partnerCompanyKeys));
   for (const result of results || []) {
-    if (['sent_confirmed', 'submitted_confirmed', 'send_unconfirmed', 'bounced', 'failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))) {
+    const recoverablePreSendFailure = result.status === 'failed_open'
+      && /no_send_performed/i.test(String(result.evidence || ''))
+      && !/send_clicked|enter_send_attempted|submit_clicked/i.test(String(result.evidence || ''));
+    if (!recoverablePreSendFailure && ['sent_confirmed', 'submitted_confirmed', 'send_unconfirmed', 'bounced', 'failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))) {
       routeLeadKeys(result).forEach(key => routeBlocked.add(key));
     }
     if (isHistoricalDevelopmentResult(result)) {

@@ -13,7 +13,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (36); homepage_only_contact_path_requires_verification (14); official_public_business_email_verified (12).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (37); homepage_only_contact_path_requires_verification (14); official_public_business_email_verified (13).",
   "recoveryHint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -34,20 +34,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
-    {
-      "id": "google-customer-minnis-brands-website-contact",
-      "company": "Minnis Brands",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-minnis-brands-linkedin",
-      "company": "Minnis Brands",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "verified_linkedin_profile_ready"
-    },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
@@ -119,20 +105,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-taunton-leisure-facebook",
-      "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-nomadic-supply-company-facebook",
       "company": "Nomadic Supply Company",
       "action": "develop",
@@ -145,13 +117,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-minnis-brands-instagram",
-      "company": "Minnis Brands",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-onwardup-instagram",
@@ -182,53 +147,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-taunton-leisure-instagram",
-      "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-above-and-beyond-instagram",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-shiner-distribution-website-contact",
-      "company": "Shiner Distribution",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-brands-uk-website-contact",
-      "company": "Outdoor Brands UK",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "id": "google-customer-minnis-brands-website-contact",
+      "company": "Minnis Brands",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
@@ -287,6 +210,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-bbq-fans-website-contact",
+      "company": "BBQ Fans",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
       "action": "email_priority",
@@ -306,6 +236,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-minnis-brands-linkedin",
+      "company": "Minnis Brands",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "verified_linkedin_profile_ready"
     },
     {
       "id": "google-customer-esprinet-group-linkedin",
@@ -357,15 +294,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-rock-creek-facebook",
-      "company": "Rock/Creek",
+      "id": "google-customer-taunton-leisure-facebook",
+      "company": "Taunton Leisure",
       "action": "develop",
       "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-naturehike-south-africa-facebook",
       "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-bbq-fans-facebook",
+      "company": "BBQ Fans",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -378,11 +322,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-eastern-mountain-sports-facebook",
-      "company": "Eastern Mountain Sports",
+      "id": "google-customer-minnis-brands-instagram",
+      "company": "Minnis Brands",
       "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
+      "platform": "instagram",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-hardin-outdoors-instagram",
@@ -455,6 +399,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-taunton-leisure-instagram",
+      "company": "Taunton Leisure",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-rock-creek-instagram",
       "company": "Rock/Creek",
       "action": "develop",
@@ -469,15 +427,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-atmosphere-instagram",
-      "company": "Atmosphere",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-instagram",
-      "company": "Eastern Mountain Sports",
+      "id": "google-customer-bbq-fans-instagram",
+      "company": "BBQ Fans",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -490,11 +441,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-shiner-distribution-website-contact",
+      "company": "Shiner Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-brands-uk-website-contact",
+      "company": "Outdoor Brands UK",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-palisade-trading-website-contact",
@@ -595,6 +560,27 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-powers-pedersen-sales-group-website-contact",
+      "company": "Powers Pedersen Sales Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-skyline-sales-consulting-website-contact",
+      "company": "Skyline Sales & Consulting",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-suggs-nicholas-shea-website-contact",
+      "company": "Suggs-Nicholas-Shea",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-shiner-distribution-website-contact",
       "company": "Shiner Distribution",
       "action": "verify_target",
@@ -662,7 +648,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 36
+      "count": 37
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
@@ -672,12 +658,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 12
-    },
-    {
-      "reason": "social_profile_not_first_party_verified",
-      "status": "skipped",
-      "count": 10
+      "count": 13
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -687,7 +668,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 4
+      "count": 5
+    },
+    {
+      "reason": "social_profile_not_first_party_verified",
+      "status": "skipped",
+      "count": 5
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -701,20 +687,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "official_website_social_channel_verified": 36,
+    "official_website_social_channel_verified": 37,
     "homepage_only_contact_path_requires_verification": 14,
-    "official_public_business_email_verified": 12,
-    "social_profile_not_first_party_verified": 10,
+    "official_public_business_email_verified": 13,
     "website_contact_capability_not_verified": 9,
-    "official_website_contact_channel": 4,
+    "official_website_contact_channel": 5,
+    "social_profile_not_first_party_verified": 5,
     "concrete_google_discovered_major_customer_instagram": 3,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 25,
-    "queueCount": 80,
-    "googleDiscovered": 80,
+    "queueCount": 78,
+    "googleDiscovered": 78,
     "refillNeeded": 75,
     "confirmedToday": 0,
     "reached": false,
@@ -988,9 +974,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 50,
-    "dueNow": 80,
-    "visibleTodayQueue": 76,
+    "readyToDevelop": 46,
+    "dueNow": 78,
+    "visibleTodayQueue": 75,
     "potentialPool": 25,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
@@ -1007,9 +993,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 80,
-    "facebookDiscovered": 21,
-    "websiteContactDiscovered": 12,
+    "googleDiscovered": 78,
+    "facebookDiscovered": 19,
+    "websiteContactDiscovered": 13,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1019,13 +1005,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "bounce_scan_complete",
-    "scanned": 21,
+    "ok": false,
+    "reason": "email_sender_not_configured",
     "updated": 0,
-    "senderIdentityFailures": 5,
-    "historicalSenderIdentityFailures": 5,
-    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
-  "completedAt": "2026-08-26T10:07:57.327Z"
+  "completedAt": "2026-08-26T10:45:49.432Z"
 };

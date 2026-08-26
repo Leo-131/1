@@ -253,9 +253,16 @@ function composeAttachmentControlExpression() {
     const pattern = /\b(attach|attachment|add file)\b|\u9644\u4ef6|\u6dfb\u52a0\u6587\u4ef6/i;
     const controls = Array.from(compose.querySelectorAll('button,[role="button"],a,[tabindex]'))
       .filter(element => visible(element) && !element.disabled && pattern.test(identity(element)));
-    if (controls.length !== 1) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_attachment_control_not_unique', count: controls.length });
-    controls[0].click();
-    return JSON.stringify({ ok: true, inputReady: false, evidence: 'alibaba_webmail_attachment_control_clicked' });
+    if (!controls.length) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_attachment_control_missing', count: 0 });
+    const ranked = controls
+      .map((element, index) => ({ element, index, label: identity(element) }))
+      .sort((left, right) => {
+        const score = item => Number(/^(attach|attachment|add file|附件|添加文件)$/i.test(item.label)) * 2
+          + Number(/attach|attachment|附件/i.test(item.element.getAttribute?.('aria-label') || item.element.getAttribute?.('title') || ''));
+        return score(right) - score(left) || left.index - right.index;
+      });
+    ranked[0].element.click();
+    return JSON.stringify({ ok: true, inputReady: false, evidence: 'alibaba_webmail_attachment_control_clicked', count: controls.length, selectedLabel: ranked[0].label.slice(0, 120) });
   })()`;
 }
 

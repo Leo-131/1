@@ -1565,11 +1565,11 @@ function websiteContactMessage(item) {
   ).replace(/\s+/g, ' ').trim();
   return `Dear ${teamName} Team,
 
-I’m Leo from FLEXTAIL. Your focus on ${relevance} looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
+I’m Leo from FLEXTAIL. Your focus on ${relevance} fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.
 
-FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
+Our 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.
 
-Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
+Could you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?
 
 Product overview: https://www.flextail.com/
 
@@ -1802,9 +1802,18 @@ function buildLeads(limit = 40) {
       if (!leadsById.has(lead.id) || /^official_supplier_/.test(lead.externalVerificationStatus)) {
         leadsById.set(lead.id, lead);
       }
-    });
+  });
   return [...leadsById.values()]
-    .sort((left, right) => right.fitScore - left.fitScore || left.channelPriority - right.channelPriority)
+    .sort((left, right) => {
+      const executableEmail = lead => Boolean(
+        String(lead.contactEmail || lead.publicEmail || '').includes('@')
+        && (/^official_supplier_email_verified$/i.test(String(lead.externalVerificationStatus || ''))
+          || /^official_public_business_email$/i.test(String(lead.emailVerificationStatus || '')))
+      );
+      return Number(executableEmail(right)) - Number(executableEmail(left))
+        || right.fitScore - left.fitScore
+        || left.channelPriority - right.channelPriority;
+    })
     .slice(0, limit);
 }
 
