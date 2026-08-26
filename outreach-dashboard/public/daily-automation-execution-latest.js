@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 13,
   "queueDate": "2026-08-26",
   "queueSource": "dailyQueue",
   "executed": [
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T03:46:52.845Z",
+      "timestamp": "2026-08-26T04:07:23.839Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -47,7 +47,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "",
       "evidence": "",
-      "timestamp": "2026-08-26T03:46:52.845Z",
+      "timestamp": "2026-08-26T04:07:23.839Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -56,6 +56,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
@@ -162,6 +169,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-minnis-brands-website-contact",
       "company": "Minnis Brands",
       "action": "email_priority",
@@ -234,13 +248,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -596,13 +603,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-powers-pedersen-sales-group-website-contact",
-      "company": "Powers Pedersen Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
       "action": "develop",
@@ -813,7 +813,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 13
+      "count": 12
     },
     {
       "reason": "official_public_business_email_verified",
@@ -833,7 +833,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 4
+      "count": 5
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -848,11 +848,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "official_website_social_channel_verified": 50,
-    "homepage_only_contact_path_requires_verification": 13,
+    "homepage_only_contact_path_requires_verification": 12,
     "official_public_business_email_verified": 12,
     "social_profile_not_first_party_verified": 10,
     "website_contact_capability_not_verified": 9,
-    "official_website_contact_channel": 4,
+    "official_website_contact_channel": 5,
     "concrete_google_discovered_major_customer_instagram": 3,
     "verified_linkedin_profile_ready": 1
   },
@@ -874,7 +874,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (50); homepage_only_contact_path_requires_verification (13); official_public_business_email_verified (12).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (50); homepage_only_contact_path_requires_verification (12); official_public_business_email_verified (12).",
   "recoveryHint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -899,12 +899,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-26T03:47:01.873Z",
+      "updatedAt": "2026-08-26T04:07:33.747Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-26",
-      "artifactGeneratedAt": "2026-08-26T03:46:56.297Z",
-      "executionGeneratedAt": "2026-08-26T01:49:43.951Z",
-      "githubSyncUpdatedAt": "2026-08-26T01:50:13.008Z",
+      "artifactGeneratedAt": "2026-08-26T04:07:28.342Z",
+      "executionGeneratedAt": "2026-08-26T03:47:03.203Z",
+      "githubSyncUpdatedAt": "2026-08-26T03:51:12.280Z",
       "counts": {
         "dailyQueue": 79,
         "googleDiscovered": 79,
@@ -960,19 +960,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "ok": true,
     "evidence": "alibaba_webmail_authenticated_compose_visible",
     "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
-    "title": "阿里邮箱"
+    "title": "(9封未读邮件)阿里邮箱"
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
+    "ok": true,
+    "reason": "bounce_scan_complete",
+    "scanned": 21,
     "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "senderIdentityFailures": 5,
+    "historicalSenderIdentityFailures": 5,
+    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
   },
   "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-26T03:47:03.203Z"
+  "completedAt": "2026-08-26T04:07:35.065Z"
 };
