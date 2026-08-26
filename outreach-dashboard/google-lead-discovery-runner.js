@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { APPROVED_EMAIL_SIGNATURE } = require('./sales-collateral');
 
 const ROOT = __dirname;
 const OUT_JSON = path.join(ROOT, 'google-lead-discovery-latest.json');
@@ -1525,18 +1526,7 @@ function websiteContactSubject(item) {
 }
 
 function legacyMarketingEmailSignature() {
-  return `[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
-
-[Sincerely](https://wa.me/8617321028184)
-[Best Regard](https://wa.me/8617321028184)
-[Leo Liu](https://wa.me/8617321028184)
-[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
-[Brand & ODM Department](https://wa.me/8617321028184)
-[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
-
-[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
-[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
-[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)`;
+  return APPROVED_EMAIL_SIGNATURE;
 }
 
 function legacyWebsiteContactMessage(item) {
@@ -1583,10 +1573,9 @@ Would you be the right person to review a potential supplier partnership, or cou
 
 Product overview: https://www.flextail.com/
 
-Best regards,
-Leo Liu
-Sales & Operations Director
-Leo@flextailgear.com`;
+I’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.
+
+${APPROVED_EMAIL_SIGNATURE}`;
 }
 
 function baseLead(item, id, evidenceUrl) {

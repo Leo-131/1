@@ -1291,6 +1291,14 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
   const normalizedSource = item.source || sourceType;
   const normalizedSourceType = item.sourceType
     || (normalizedSource === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '') ? 'google' : sourceType);
+  // Discovery rows frequently carry an official social URL and an independently
+  // verified first-party business email on the same record. Email is the
+  // preferred execution route; retaining the social platform here previously
+  // hid the verified recipient from the Alibaba queue. Preserve the social URL
+  // as alternate evidence, but promote the executable route to email.
+  const preferredPlatform = verifiedBusinessEmailTarget(item).ok
+    ? 'email'
+    : String(item.platform || legacyCustomerPlatform(item) || 'research').toLowerCase();
   const base = {
     ...item,
     id: item.id || `potential-${sourceType}-${slugKey(item.company || item.name || index)}`,
@@ -1298,7 +1306,7 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
     company: item.company || item.name || '',
     country: item.countryEn || item.country || item.headquarters || '',
     countryEn: item.countryEn || item.country || item.headquarters || '',
-    platform: String(item.platform || legacyCustomerPlatform(item) || 'research').toLowerCase(),
+    platform: preferredPlatform,
     fitScore: Number(item.fitScore || legacyCustomerFitScore(item)),
     fitTier: item.fitTier || (Number(item.fitScore || legacyCustomerFitScore(item)) >= 90 ? 'A' : 'B'),
     source: normalizedSource,
@@ -1360,12 +1368,6 @@ function channelExecutionReadiness(item = {}) {
   const target = item.url || item.contactUrl || item.platformUrl || item.website || '';
   const officialStatus = String(item.externalVerificationStatus || '').toLowerCase();
   const liveFirstPartyEvidence = item.firstPartyChannelVerification && item.firstPartyChannelVerification.evidenceUrl || '';
-  const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
-  if (social) {
-    return item.officialSocialProfileVerified === true && /^https:\/\//i.test(String(target))
-      ? { ready: true, gate: 'first_party_verified_social', evidenceUrl: item.socialProfileEvidenceUrl || liveFirstPartyEvidence || item.sourceEvidenceUrl || item.website || '' }
-      : { ready: false, gate: 'enrichment_required', reason: 'social_profile_not_first_party_verified' };
-  }
   const verifiedEmail = /^official_supplier_email_verified$/.test(officialStatus)
     || /^official_public_business_email$/i.test(String(item.emailVerificationStatus || ''));
   if (platform === 'email' || item.publicEmail || item.contactEmail) {
@@ -1373,6 +1375,12 @@ function channelExecutionReadiness(item = {}) {
     return verifiedEmail && executableEmail.ok
       ? { ready: true, gate: 'official_business_email', evidenceUrl: liveFirstPartyEvidence || item.sourceEvidenceUrl || item.evidenceUrl || '' }
       : { ready: false, gate: 'enrichment_required', reason: executableEmail.reason || 'public_business_email_requires_verification' };
+  }
+  const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
+  if (social) {
+    return item.officialSocialProfileVerified === true && /^https:\/\//i.test(String(target))
+      ? { ready: true, gate: 'first_party_verified_social', evidenceUrl: item.socialProfileEvidenceUrl || liveFirstPartyEvidence || item.sourceEvidenceUrl || item.website || '' }
+      : { ready: false, gate: 'enrichment_required', reason: 'social_profile_not_first_party_verified' };
   }
   const verifiedWebsiteRoute = /^official_(?:supplier_(?:form|route)|contact_form)_verified$/.test(officialStatus)
     || item.contactCapabilityVerified === true;
@@ -1750,6 +1758,8 @@ module.exports = {
   writeFileWithRetry,
   preferSocialChannels,
   channelExecutionReadiness,
+  normalizePotentialItem,
+  buildDailyPotentialPool,
   dedupeQueueItems,
   promoteExecutionReadyQueueRows,
   preferredCountryScore,
