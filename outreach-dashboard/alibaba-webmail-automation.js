@@ -247,11 +247,21 @@ function composeAttachmentControlExpression() {
     const compose = document.querySelector('[data-testid="compose-container"]');
     if (!compose) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_compose_container_missing_for_attachments' });
     const visible = element => Boolean(element?.getClientRects?.().length);
-    const identity = element => [element.innerText, element.textContent, element.getAttribute?.('aria-label'), element.getAttribute?.('title'), element.getAttribute?.('data-testid')].filter(Boolean).join(' ').trim();
-    const input = compose.querySelector('input[type="file"]');
+    const identity = element => [element.innerText, element.textContent, element.getAttribute?.('aria-label'), element.getAttribute?.('title'), element.getAttribute?.('data-testid'), element.getAttribute?.('data-role'), element.getAttribute?.('name'), element.getAttribute?.('class')].filter(Boolean).join(' ').trim();
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      for (const element of roots[index].querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') {
+          try { if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument); } catch {}
+        }
+      }
+    }
+    const fileInputs = roots.flatMap(root => Array.from(root.querySelectorAll('input[type="file"]')));
+    const input = compose.querySelector('input[type="file"]') || (fileInputs.length === 1 ? fileInputs[0] : null);
     if (input) return JSON.stringify({ ok: true, inputReady: true, evidence: 'alibaba_webmail_attachment_input_ready' });
     const pattern = /\b(attach|attachment|add file)\b|\u9644\u4ef6|\u6dfb\u52a0\u6587\u4ef6/i;
-    const controls = Array.from(compose.querySelectorAll('button,[role="button"],a,[tabindex]'))
+    const controls = roots.flatMap(root => Array.from(root.querySelectorAll('button,[role="button"],a,[tabindex],[class*="attach" i],[data-role*="attach" i],[name*="attach" i]')))
       .filter(element => visible(element) && !element.disabled && pattern.test(identity(element)));
     if (!controls.length) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_attachment_control_missing', count: 0 });
     const ranked = controls
@@ -259,7 +269,9 @@ function composeAttachmentControlExpression() {
       .sort((left, right) => {
         const score = item => Number(/^(attach|attachment|add file|附件|添加文件)$/i.test(item.label)) * 2
           + Number(/attach|attachment|附件/i.test(item.element.getAttribute?.('aria-label') || item.element.getAttribute?.('title') || ''));
-        return score(right) - score(left) || left.index - right.index;
+        return score(right) - score(left)
+          || Number(compose.contains(right.element)) - Number(compose.contains(left.element))
+          || left.index - right.index;
       });
     ranked[0].element.click();
     return JSON.stringify({ ok: true, inputReady: false, evidence: 'alibaba_webmail_attachment_control_clicked', count: controls.length, selectedLabel: ranked[0].label.slice(0, 120) });

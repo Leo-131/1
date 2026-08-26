@@ -458,6 +458,7 @@ function blockingAutomationResultFor(item) {
   }
   const sameDayFailedAttempts = results
     .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
+    .filter(result => !isFixedAlibabaPreSendTechnicalFailure(result))
     // A technical failure retires the company for the rest of the Shanghai
     // day, regardless of which official channel the browser fell back to.
     // Code repairs may improve future companies, but must never reopen this
@@ -478,6 +479,7 @@ function blockingAutomationResultFor(item) {
   const itemTaskIds = new Set([item.id, item.taskId, item.task_id].filter(Boolean).map(String));
   const sameDayExactTerminalAttempt = results.find(result => result
     && ['failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))
+    && !isFixedAlibabaPreSendTechnicalFailure(result)
     && isSameAutomationDay(result.timestamp)
     && !verifiedSocialRouteChangedAfterWebsitePreSendFailure(item, result)
     && [result.id, result.taskId, result.task_id].filter(Boolean).some(id => itemTaskIds.has(String(id))));
@@ -688,7 +690,9 @@ function itemBlockedBySameDayCompany(item, companyKeys) {
 
 function failedOpenResultShouldBlockRetry(result = {}) {
   const evidence = String(result.evidence || '').toLowerCase();
-  if (isFixedAlibabaRecipientVerifierFailure(result) || isFixedAlibabaSubjectVerifierFailure(result)) return false;
+  if (isFixedAlibabaRecipientVerifierFailure(result)
+    || isFixedAlibabaSubjectVerifierFailure(result)
+    || isFixedAlibabaPreSendTechnicalFailure(result)) return false;
   const temporarySafetyFailure = /captcha_or_human_verification|platform_rate_limit_or_action_block|dedicated_browser_login_required|identity_not_verified_fail_closed/.test(evidence);
   if (temporarySafetyFailure) {
     const failedAt = Date.parse(result.timestamp || result.resultCheckedAt || '');
@@ -1887,13 +1891,26 @@ async function setChromeFileInput(opened, filePath) {
     : { ok: false, evidence: 'marketing_attachment_select_failed' };
 }
 
+function isFixedAlibabaPreSendTechnicalFailure(result = {}) {
+  if (result.status !== 'failed_open') return false;
+  const evidence = String(result.evidence || '').toLowerCase();
+  if (!evidence.includes('no_send_performed')) return false;
+  if (/send_clicked|enter_send_attempted|submit_clicked|message_sent|persisted_after_reload/.test(evidence)) return false;
+  return /alibaba_webmail_attachment_control_(?:not_unique|missing)|first_touch_email_policy_failed:email_body_must_be_90_140_words/.test(evidence);
+}
+
 async function setChromeFileInputs(opened, filePaths = []) {
   const files = Array.isArray(filePaths) ? filePaths : [];
   if (!opened || !opened.webSocketDebuggerUrl || !files.length || files.some(filePath => !fs.existsSync(filePath))) {
     return { ok: false, evidence: 'approved_email_attachment_missing' };
   }
   const evaluated = await cdpCommand(opened.webSocketDebuggerUrl, 'Runtime.evaluate', {
-    expression: 'document.querySelector(\'[data-testid="compose-container"] input[type="file"]\')',
+    expression: `(() => {
+      const scoped = document.querySelector('[data-testid="compose-container"] input[type="file"]');
+      if (scoped) return scoped;
+      const inputs = Array.from(document.querySelectorAll('input[type="file"]'));
+      return inputs.length === 1 ? inputs[0] : null;
+    })()`,
   }, 5000);
   const objectId = evaluated && evaluated.result && evaluated.result.objectId;
   if (!objectId) return { ok: false, evidence: 'alibaba_webmail_attachment_file_input_not_found' };

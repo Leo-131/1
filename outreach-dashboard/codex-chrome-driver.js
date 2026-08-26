@@ -1869,6 +1869,28 @@ async function inspectLinkedinSalesSearch(payload = {}) {
   return { ok: true, sendStatus: 'read_only_inspection', evidence: 'sales_navigator_visible_rows_collected_no_interaction', count: rows.size, results: Array.from(rows.values()).slice(0, maximum) };
 }
 
+async function inspectAlibabaComposeControls(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, evidence: 'dedicated_chrome_port_9224_required' };
+  const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+  const tab = tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
+  if (!tab) return { ok: false, evidence: 'alibaba_compose_tab_not_found' };
+  const controls = await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('[data-testid="compose-container"] *'))
+    .filter(element => element.matches('button,[role="button"],a,input,[tabindex]'))
+    .map(element => ({
+      tag: element.tagName,
+      type: element.type || '',
+      text: String(element.innerText || element.textContent || '').replace(/\\s+/g, ' ').trim().slice(0, 100),
+      aria: element.getAttribute?.('aria-label') || '',
+      title: element.getAttribute?.('title') || '',
+      testid: element.getAttribute?.('data-testid') || '',
+      className: String(element.className || '').slice(0, 140),
+      visible: Boolean(element.getClientRects?.().length),
+    }))
+    .filter(item => item.visible || item.type === 'file')))()`, 8000);
+  return { ok: true, sendStatus: 'read_only_inspection', evidence: 'alibaba_compose_controls_inspected_no_interaction', controls };
+}
+
 async function main() {
   const command = process.argv[2];
   const rawPayload = process.argv[3] || '{}';
@@ -1883,6 +1905,7 @@ async function main() {
   else if (command === 'connect-linkedin-sales-search') result = await connectLinkedinSalesSearch(payload);
   else if (command === 'inspect-linkedin-sales-lead') result = await inspectLinkedinSalesLead(payload);
   else if (command === 'inspect-linkedin-sales-search') result = await inspectLinkedinSalesSearch(payload);
+  else if (command === 'inspect-alibaba-compose-controls') result = await inspectAlibabaComposeControls(payload);
   else throw new Error(`Unknown command: ${command}`);
   process.stdout.write(JSON.stringify(result));
 }
