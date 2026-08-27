@@ -28,6 +28,7 @@ const {
   composeSubjectFocusExpression,
   composeInspectionExpression,
   composeAttachmentControlExpression,
+  composeAttachmentMenuItemExpression,
   composeAttachmentInspectionExpression,
   composeSendExpression,
   postSendStateExpression,
@@ -1892,7 +1893,7 @@ async function setChromeFileInput(opened, filePath) {
 }
 
 function isFixedAlibabaPreSendTechnicalFailure(result = {}) {
-  if (result.status !== 'failed_open') return false;
+  if (String(result.status || result.sendStatus || '') !== 'failed_open') return false;
   const evidence = String(result.evidence || '').toLowerCase();
   if (!evidence.includes('no_send_performed')) return false;
   if (/send_clicked|enter_send_attempted|submit_clicked|message_sent|persisted_after_reload/.test(evidence)) return false;
@@ -1906,24 +1907,54 @@ async function setChromeFileInputs(opened, filePaths = []) {
   }
   let evaluated = null;
   let objectId = '';
+  const collectFrameIds = (node, output = []) => {
+    if (!node || typeof node !== 'object') return output;
+    if (node.frame && node.frame.id) output.push(node.frame.id);
+    for (const child of Array.isArray(node.childFrames) ? node.childFrames : []) collectFrameIds(child, output);
+    return output;
+  };
+  const inputExpression = `(() => {
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      for (const element of roots[index].querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') {
+          try { if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument); } catch {}
+        }
+      }
+    }
+    const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input[type="file"]')));
+    const compose = document.querySelector('[data-testid="compose-container"]');
+    return (compose && inputs.find(input => compose.contains(input))) || (inputs.length === 1 ? inputs[0] : null);
+  })()`;
   for (let attempt = 0; attempt < 12 && !objectId; attempt += 1) {
     evaluated = await cdpCommand(opened.webSocketDebuggerUrl, 'Runtime.evaluate', {
-      expression: `(() => {
-        const roots = [document];
-        for (let index = 0; index < roots.length; index += 1) {
-          for (const element of roots[index].querySelectorAll('*')) {
-            if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
-            if (element.tagName === 'IFRAME') {
-              try { if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument); } catch {}
-            }
-          }
-        }
-        const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input[type="file"]')));
-        const compose = document.querySelector('[data-testid="compose-container"]');
-        return (compose && inputs.find(input => compose.contains(input))) || (inputs.length === 1 ? inputs[0] : null);
-      })()`,
+      expression: inputExpression,
     }, 5000);
     objectId = evaluated && evaluated.result && evaluated.result.objectId;
+    if (!objectId) {
+      // Alibaba Mail creates the standard attachment uploader in a lazy,
+      // cross-origin child frame. A main-document query cannot see it, so
+      // inspect every CDP frame in an isolated world and bind the exact
+      // pre-approved files directly to the native input.
+      const frameTree = await cdpCommand(opened.webSocketDebuggerUrl, 'Page.getFrameTree', {}, 5000).catch(() => null);
+      const frameIds = collectFrameIds(frameTree && frameTree.frameTree);
+      for (const frameId of frameIds) {
+        const world = await cdpCommand(opened.webSocketDebuggerUrl, 'Page.createIsolatedWorld', {
+          frameId,
+          worldName: `codex-approved-attachment-${attempt}`,
+          grantUniveralAccess: true,
+        }, 5000).catch(() => null);
+        const contextId = world && world.executionContextId;
+        if (!contextId) continue;
+        const frameInput = await cdpCommand(opened.webSocketDebuggerUrl, 'Runtime.evaluate', {
+          contextId,
+          expression: inputExpression,
+        }, 5000).catch(() => null);
+        objectId = frameInput && frameInput.result && frameInput.result.objectId;
+        if (objectId) break;
+      }
+    }
     if (!objectId && attempt < 11) await sleep(500);
   }
   if (!objectId) return { ok: false, evidence: 'alibaba_webmail_attachment_file_input_not_found' };
@@ -1935,8 +1966,9 @@ async function setChromeFileInputs(opened, filePaths = []) {
 
 function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}, clickExpression = '') {
   const files = Array.isArray(filePaths) ? filePaths : [];
+  const hasTrustedCoordinates = Number(control && control.x || 0) > 0 && Number(control && control.y || 0) > 0;
   if (!opened?.webSocketDebuggerUrl || !files.length || files.some(filePath => !fs.existsSync(filePath))
-    || !String(clickExpression || '').trim()) {
+    || (!hasTrustedCoordinates && !String(clickExpression || '').trim())) {
     return Promise.resolve({ ok: false, evidence: 'alibaba_webmail_file_chooser_preconditions_failed' });
   }
   if (typeof WebSocket === 'undefined') {
@@ -1961,7 +1993,10 @@ function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}, cli
       done({ ok: false, evidence: 'alibaba_webmail_file_chooser_transport_unavailable' });
       return;
     }
-    socket.addEventListener('open', () => send(1, 'Page.setInterceptFileChooserDialog', { enabled: true }));
+    socket.addEventListener('open', () => {
+      send(0, 'Page.enable');
+      send(1, 'Page.setInterceptFileChooserDialog', { enabled: true });
+    });
     socket.addEventListener('message', async (event) => {
       try {
         let raw;
@@ -2057,6 +2092,7 @@ function setChromeFileInputsViaChooserRawSocket(wsUrl, files, control, clickExpr
         }
         handshakeDone = true;
         buffer = buffer.subarray(headerEnd + 4);
+        send(0, 'Page.enable');
         send(1, 'Page.setInterceptFileChooserDialog', { enabled: true });
       }
       const decoded = decodeWebSocketFrames(buffer);
@@ -3423,14 +3459,36 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       manualApprovalRequired: false,
       autoSendAuthorized: true,
     };
-    const attachmentSelection = attachmentControl.inputReady
-      ? await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS)
-      : await setChromeFileInputsViaChooser(
+    let attachmentSelection;
+    if (attachmentControl.inputReady) {
+      attachmentSelection = await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS);
+    } else {
+      attachmentSelection = await setChromeFileInputsViaChooser(
         chromeOpen,
         APPROVED_EMAIL_ATTACHMENTS,
         attachmentControl,
         composeAttachmentControlExpression({ click: true }),
       );
+      if (!attachmentSelection.ok && attachmentSelection.evidence === 'alibaba_webmail_file_chooser_not_opened') {
+        // Alibaba creates its hidden file input lazily after the first trusted
+        // attachment click. Re-discover that input before trying a dropdown
+        // submenu; this keeps the exact pre-approved files and avoids an OS
+        // file-dialog dependency.
+        const lazyInputSelection = await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS);
+        if (lazyInputSelection.ok) attachmentSelection = lazyInputSelection;
+      }
+      if (!attachmentSelection.ok && attachmentSelection.evidence === 'alibaba_webmail_file_chooser_not_opened') {
+        const menuItem = await evaluateChromeTabJson(chromeOpen, composeAttachmentMenuItemExpression(), 5000).catch(() => null);
+        if (menuItem && menuItem.ok) {
+          attachmentSelection = await setChromeFileInputsViaChooser(
+            chromeOpen,
+            APPROVED_EMAIL_ATTACHMENTS,
+            menuItem,
+            '',
+          );
+        }
+      }
+    }
     if (!attachmentSelection.ok) return {
       ok: false,
       sendStatus: 'failed_open',
@@ -5136,7 +5194,10 @@ async function runDailyAutomationQueue(payload = {}) {
     const verifiedProfileIdentityRetry = Boolean((item.officialSocialProfileVerified || exactSocialHandleMatchesCompany(item))
       && checkpointResult
       && isFixedIdentityVerifierFailure(checkpointResult));
-    if (checkpointCompletedIds.has(item.id) && !verifiedProfileIdentityRetry) {
+    const fixedAlibabaPreSendRetry = Boolean(checkpointResult
+      && verifiedBusinessEmailTarget(item).ok
+      && isFixedAlibabaPreSendTechnicalFailure(checkpointResult));
+    if (checkpointCompletedIds.has(item.id) && !verifiedProfileIdentityRetry && !fixedAlibabaPreSendRetry) {
       skipped.push({
         id: item.id,
         company: item.company,

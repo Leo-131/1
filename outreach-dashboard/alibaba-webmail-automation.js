@@ -273,17 +273,40 @@ function composeAttachmentControlExpression({ click = false } = {}) {
           || Number(compose.contains(right.element)) - Number(compose.contains(left.element))
           || left.index - right.index;
       });
-    const rect = ranked[0].element.getBoundingClientRect();
-    if (${Boolean(click)}) ranked[0].element.click();
+    // The outer Ant dropdown owns only the arrow menu. Alibaba binds the
+    // native file picker to the inner label area containing the paperclip and
+    // “添加附件” text, so click that region instead of the icon or arrow shell.
+    const trigger = ranked[0].element.closest?.('.ant-dropdown-trigger');
+    const selected = trigger?.querySelector?.(':scope > div') || trigger || ranked[0].element;
+    const rect = selected.getBoundingClientRect();
+    if (${Boolean(click)}) selected.click();
     return JSON.stringify({
       ok: true,
       inputReady: false,
       evidence: ${Boolean(click) ? "'alibaba_webmail_attachment_control_clicked'" : "'alibaba_webmail_attachment_control_ready'"},
       count: controls.length,
       selectedLabel: ranked[0].label.slice(0, 120),
+      selectedTriggerClass: String(selected.className || '').slice(0, 120),
       x: Math.round(rect.x + rect.width / 2),
       y: Math.round(rect.y + rect.height / 2),
     });
+  })()`;
+}
+
+function composeAttachmentMenuItemExpression() {
+  return `(() => {
+    const visible = element => Boolean(element?.getClientRects?.().length);
+    const identity = element => [element.innerText, element.textContent, element.getAttribute?.('aria-label'), element.getAttribute?.('title'), element.getAttribute?.('data-testid'), element.getAttribute?.('data-role'), element.getAttribute?.('name'), element.getAttribute?.('class')].filter(Boolean).join(' ').replace(/\\s+/g, ' ').trim();
+    const exact = /^(local file|upload file|add attachment|computer|from computer|本地文件|上传文件|添加附件|从电脑上传)$/i;
+    const broad = /local file|upload file|add attachment|from computer|本地文件|上传文件|添加附件|从电脑上传/i;
+    const candidates = Array.from(document.querySelectorAll('[role="menuitem"],li,button,[role="button"],a,[tabindex]'))
+      .filter(element => visible(element) && !element.disabled)
+      .map(element => ({ element, label: identity(element) }))
+      .filter(item => broad.test(item.label))
+      .sort((left, right) => Number(exact.test(right.label)) - Number(exact.test(left.label)) || left.label.length - right.label.length);
+    if (!candidates.length) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_attachment_menu_item_missing' });
+    const rect = candidates[0].element.getBoundingClientRect();
+    return JSON.stringify({ ok: true, evidence: 'alibaba_webmail_attachment_menu_item_ready', label: candidates[0].label.slice(0, 160), x: Math.round(rect.x + rect.width / 2), y: Math.round(rect.y + rect.height / 2) });
   })()`;
 }
 
@@ -512,4 +535,4 @@ function sentFolderConfirmationExpression({ subject } = {}) {
   })()`;
 }
 
-module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeRecipientChipExpression, composeRecipientTooltipInspectionExpression, composeSubjectFocusExpression, composeInspectionExpression, composeAttachmentControlExpression, composeAttachmentInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };
+module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeRecipientChipExpression, composeRecipientTooltipInspectionExpression, composeSubjectFocusExpression, composeInspectionExpression, composeAttachmentControlExpression, composeAttachmentMenuItemExpression, composeAttachmentInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };

@@ -32448,5 +32448,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-qvc-group-website-contact",
+    "company": "QVC Group",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-27T10:12:33.495Z",
+    "target_url": "mailto:vendor.relations@qvc.com",
+    "evidence": "smtp_send_failed:ESTREAM",
+    "draft": "Dear QVC Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nI’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+    "subject": "FLEXTAIL global distribution partnership | QVC Group",
+    "recipientEmail": "vendor.relations@qvc.com",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

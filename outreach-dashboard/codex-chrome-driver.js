@@ -1,6 +1,7 @@
 'use strict';
 
 const http = require('http');
+const { composeStartExpression } = require('./alibaba-webmail-automation');
 
 function httpJson(url, timeoutMs = 2500, method = 'GET') {
   return new Promise((resolve, reject) => {
@@ -1962,7 +1963,8 @@ async function inspectAlibabaComposeControls(payload = {}) {
   const port = Number(payload.port || 9224);
   if (port !== 9224) return { ok: false, evidence: 'dedicated_chrome_port_9224_required' };
   const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
-  const tab = tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
+  const tab = tabs.find(item => payload.tabId && item.id === payload.tabId)
+    || tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
   if (!tab) return { ok: false, evidence: 'alibaba_compose_tab_not_found' };
   const controls = await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('[data-testid="compose-container"] *'))
     .filter(element => element.matches('button,[role="button"],a,input,[tabindex]'))
@@ -1978,6 +1980,100 @@ async function inspectAlibabaComposeControls(payload = {}) {
     }))
     .filter(item => item.visible || item.type === 'file')))()`, 8000);
   return { ok: true, sendStatus: 'read_only_inspection', evidence: 'alibaba_compose_controls_inspected_no_interaction', controls };
+}
+
+async function inspectAlibabaAttachmentControl(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, evidence: 'dedicated_chrome_port_9224_required' };
+  const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+  const tab = tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
+  if (!tab) return { ok: false, evidence: 'alibaba_compose_tab_not_found' };
+  const inspection = await evaluateJson(tab, `(() => {
+    const compose = document.querySelector('[data-testid="compose-container"]');
+    if (!compose) return JSON.stringify({ ok: false, evidence: 'compose_missing' });
+    const label = el => [el.innerText, el.textContent, el.getAttribute('aria-label'), el.getAttribute('title'), el.getAttribute('data-testid'), el.className].filter(Boolean).join(' ').replace(/\\s+/g, ' ').trim();
+    const fileInputs = Array.from(compose.querySelectorAll('input[type="file"]')).map(el => ({
+      outer: el.outerHTML.slice(0, 500), disabled: Boolean(el.disabled), connected: el.isConnected,
+    }));
+    const candidates = Array.from(compose.querySelectorAll('button,[role="button"],a,[tabindex],[class*="attach" i]'))
+      .map(el => ({ el, text: label(el) }))
+      .filter(item => /attach|attachment|add file|附件|添加文件/i.test(item.text))
+      .slice(0, 12)
+      .map(item => { const r = item.el.getBoundingClientRect(); return {
+        tag: item.el.tagName, text: item.text.slice(0, 300), outer: item.el.outerHTML.slice(0, 900),
+        ancestors: [item.el.parentElement, item.el.parentElement?.parentElement, item.el.parentElement?.parentElement?.parentElement].filter(Boolean).map(el => { const pk=Object.keys(el).find(k=>k.startsWith('__reactProps')); const props=pk?el[pk]:{}; return { text: String(el.innerText||el.textContent||'').replace(/\\s+/g,' ').trim(), className: String(el.className||''), reactHandlers:Object.keys(props||{}).filter(k=>/^on[A-Z]/.test(k)), html: el.outerHTML.slice(-1800) }; }),
+        visible: Boolean(item.el.getClientRects().length), x: Math.round(r.x + r.width / 2), y: Math.round(r.y + r.height / 2),
+      }; });
+    return JSON.stringify({ ok: true, fileInputs, candidates, composeHtml: compose.outerHTML.slice(0, 1800) });
+  })()`, 15000);
+  return { ok: true, sendStatus: 'read_only_inspection', evidence: 'alibaba_attachment_control_inspected_no_interaction', ...inspection };
+}
+
+async function openAlibabaComposeForInspection(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, evidence: 'dedicated_chrome_port_9224_required' };
+  const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+  const sent = tabs.find(item => payload.tabId && item.id === payload.tabId)
+    || tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/mail\/sentitems\/all/i.test(String(item.url || '')));
+  if (!sent) return { ok: false, evidence: 'alibaba_sent_tab_missing' };
+  const started = await evaluateJson(sent, composeStartExpression(), 8000);
+  if (!started || !started.ok) return { ok: false, evidence: started?.evidence || 'alibaba_compose_start_failed' };
+  for (let attempt = 0; attempt < 30; attempt += 1) {
+    await sleep(300);
+    const current = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+    const compose = current.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
+    if (compose) return { ok: true, evidence: 'alibaba_compose_opened_for_read_only_inspection', tabId: compose.id, url: compose.url };
+  }
+  return { ok: false, evidence: 'alibaba_compose_tab_not_found_after_start' };
+}
+
+async function clickAlibabaAttachmentForInspection(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, evidence: 'dedicated_chrome_port_9224_required' };
+  const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+  const tab = tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
+  if (!tab) return { ok: false, evidence: 'alibaba_compose_tab_not_found' };
+  const control = await evaluateJson(tab, `(() => { const icon = document.querySelector('[data-testid="compose-container"] ${payload.arrowOnly ? '[aria-label="dropdown-arrow-down-outlined-icon"]' : '[aria-label="attachment-icon"]'}'); const trigger = ${payload.arrowOnly ? 'icon' : "icon?.closest('.ant-dropdown-trigger') || icon?.parentElement"}; const r = trigger?.getBoundingClientRect(); return JSON.stringify(trigger && r ? { x: Math.round(r.x+r.width/2), y: Math.round(r.y+r.height/2), outer: trigger.outerHTML.slice(0,500) } : null); })()`, 5000);
+  if (!control) return { ok: false, evidence: 'alibaba_attachment_dropdown_trigger_missing' };
+  if (payload.hoverOnly) {
+    await cdp(tab.webSocketDebuggerUrl, 'Page.bringToFront', {}, 5000).catch(() => null);
+    await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x: control.x, y: control.y, button: 'none' }, 5000);
+    await sleep(1200);
+  } else {
+    await clickAt(tab, control.x, control.y);
+    await sleep(500);
+  }
+  const menus = await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('.ant-dropdown:not(.ant-dropdown-hidden),[role="menu"]')).filter(el => el.getClientRects().length).map(el => ({ text: String(el.innerText||el.textContent||'').replace(/\\s+/g,' ').trim(), html: el.outerHTML.slice(0,2400) }))))()`, 5000);
+  return { ok: true, evidence: 'alibaba_attachment_dropdown_clicked_for_inspection', control, menus };
+}
+
+async function diagnoseAlibabaFileChooser(payload = {}) {
+  const port = Number(payload.port || 9224);
+  const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+  const tab = tabs.find(item => payload.tabId && item.id === payload.tabId)
+    || tabs.find(item => /qiye\.aliyun\.com\/alimail\/entries\/v5\.1\/compose/i.test(String(item.url || '')));
+  if (!tab) return { ok: false, evidence: 'alibaba_compose_tab_not_found' };
+  const control = await evaluateJson(tab, `(() => { const icon=document.querySelector('[data-testid="compose-container"] [aria-label="attachment-icon"]'); const trigger=icon?.closest('.ant-dropdown-trigger'); const selected=trigger?.querySelector(':scope > div')||trigger; const r=selected?.getBoundingClientRect(); return JSON.stringify(r?{x:Math.round(r.x+r.width/2),y:Math.round(r.y+r.height/2)}:null); })()`, 5000);
+  if (!control) return { ok: false, evidence: 'alibaba_attachment_control_missing' };
+  return new Promise((resolve) => {
+    const events = [];
+    const ws = new WebSocket(tab.webSocketDebuggerUrl);
+    const timer = setTimeout(() => { try { ws.close(); } catch {}; resolve({ ok: true, evidence: 'alibaba_file_chooser_protocol_diagnosed', control, events }); }, 6000);
+    ws.onopen = () => {
+      ws.send(JSON.stringify({ id: 1, method: 'Page.enable' }));
+      ws.send(JSON.stringify({ id: 2, method: 'Page.setInterceptFileChooserDialog', params: { enabled: true } }));
+    };
+    ws.onmessage = (event) => {
+      const message = JSON.parse(event.data);
+      events.push({ id: message.id, method: message.method, error: message.error, params: message.method === 'Page.fileChooserOpened' ? message.params : undefined });
+      if (message.id === 2) {
+        ws.send(JSON.stringify({ id: 3, method: 'Input.dispatchMouseEvent', params: { type: 'mouseMoved', x: control.x, y: control.y } }));
+        ws.send(JSON.stringify({ id: 4, method: 'Input.dispatchMouseEvent', params: { type: 'mousePressed', x: control.x, y: control.y, button: 'left', clickCount: 1 } }));
+        ws.send(JSON.stringify({ id: 5, method: 'Input.dispatchMouseEvent', params: { type: 'mouseReleased', x: control.x, y: control.y, button: 'left', clickCount: 1 } }));
+      }
+      if (message.method === 'Page.fileChooserOpened') { clearTimeout(timer); try { ws.close(); } catch {}; resolve({ ok: true, evidence: 'alibaba_file_chooser_event_seen', control, events }); }
+    };
+  });
 }
 
 async function main() {
@@ -1996,6 +2092,10 @@ async function main() {
   else if (command === 'inspect-linkedin-sales-lead') result = await inspectLinkedinSalesLead(payload);
   else if (command === 'inspect-linkedin-sales-search') result = await inspectLinkedinSalesSearch(payload);
   else if (command === 'inspect-alibaba-compose-controls') result = await inspectAlibabaComposeControls(payload);
+  else if (command === 'inspect-alibaba-attachment-control') result = await inspectAlibabaAttachmentControl(payload);
+  else if (command === 'open-alibaba-compose-for-inspection') result = await openAlibabaComposeForInspection(payload);
+  else if (command === 'click-alibaba-attachment-for-inspection') result = await clickAlibabaAttachmentForInspection(payload);
+  else if (command === 'diagnose-alibaba-file-chooser') result = await diagnoseAlibabaFileChooser(payload);
   else throw new Error(`Unknown command: ${command}`);
   process.stdout.write(JSON.stringify(result));
 }
