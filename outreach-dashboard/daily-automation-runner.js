@@ -578,7 +578,8 @@ function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
   // to retry after a code/UI repair. Uncertain clicks remain hard same-day locks.
   if (result.status === 'failed_open') {
     const evidence = String(result.evidence || '');
-    return !/no_send_performed/i.test(evidence)
+    const provenPreSendTransportFailure = /smtp_send_failed:estream|alibaba_webmail_compose_unavailable/i.test(evidence);
+    return (!/no_send_performed/i.test(evidence) && !provenPreSendTransportFailure)
       || /send_clicked|enter_send_attempted|submit_clicked/i.test(evidence);
   }
   return isTouchResult(result);
@@ -672,7 +673,7 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
   const partners = new Set([...PARTNER_COMPANIES].flatMap(partnerCompanyKeys));
   for (const result of results || []) {
     const recoverablePreSendFailure = result.status === 'failed_open'
-      && /no_send_performed/i.test(String(result.evidence || ''))
+      && /no_send_performed|smtp_send_failed:estream|alibaba_webmail_compose_unavailable/i.test(String(result.evidence || ''))
       && !/send_clicked|enter_send_attempted|submit_clicked/i.test(String(result.evidence || ''));
     if (!recoverablePreSendFailure && ['sent_confirmed', 'submitted_confirmed', 'send_unconfirmed', 'bounced', 'failed_open', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(String(result.status || ''))) {
       routeLeadKeys(result).forEach(key => routeBlocked.add(key));

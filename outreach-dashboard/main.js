@@ -606,6 +606,7 @@ function sameDayDevelopmentResult(result = {}, now = Date.now()) {
   return Boolean(result
     && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
     && isSameAutomationDay(result.timestamp, now)
+    && !isFixedAlibabaPreSendTechnicalFailure(result)
     && isVerifiedSameDayWebsiteResult(result)
     && sendStatusHasCustomerInteraction(result.status, result.evidence));
 }
@@ -1895,9 +1896,10 @@ async function setChromeFileInput(opened, filePath) {
 function isFixedAlibabaPreSendTechnicalFailure(result = {}) {
   if (String(result.status || result.sendStatus || '') !== 'failed_open') return false;
   const evidence = String(result.evidence || '').toLowerCase();
-  if (!evidence.includes('no_send_performed')) return false;
+  if (!evidence.includes('no_send_performed')
+    && !/smtp_send_failed:estream|alibaba_webmail_compose_unavailable/.test(evidence)) return false;
   if (/send_clicked|enter_send_attempted|submit_clicked|message_sent|persisted_after_reload/.test(evidence)) return false;
-  return /alibaba_webmail_attachment_control_(?:not_unique|missing)|alibaba_webmail_attachment_file_input_not_found|alibaba_webmail_file_chooser_(?:preconditions_failed|not_opened|backend_node_missing|selection_timeout|selection_failed|transport_unavailable|transport_error|transport_closed|protocol_error)|first_touch_email_policy_failed:email_body_must_be_90_140_words/.test(evidence);
+  return /smtp_send_failed:estream|alibaba_webmail_compose_unavailable|alibaba_webmail_attachment_control_(?:not_unique|missing)|alibaba_webmail_attachment_file_input_not_found|alibaba_webmail_file_chooser_(?:preconditions_failed|not_opened|backend_node_missing|selection_timeout|selection_failed|transport_unavailable|transport_error|transport_closed|protocol_error)|first_touch_email_policy_failed:email_body_must_be_90_140_words/.test(evidence);
 }
 
 async function setChromeFileInputs(opened, filePaths = []) {
@@ -3841,16 +3843,17 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
   }
   let result;
   try {
-    result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });
-    if (result.reason === 'email_sender_not_configured') {
-      result = await runAlibabaWebmailEmailLead(lead, subject, draft);
-    }
+    // Production outreach is explicitly Alibaba Webmail UI only. Do not take
+    // an SMTP detour when the authenticated dedicated Chrome session is ready:
+    // SMTP failures previously terminated safe leads before the visible UI
+    // could attach the approved collateral and confirm the matching Sent row.
+    result = await runAlibabaWebmailEmailLead(lead, subject, draft);
   } finally {
     releaseSendTransaction(transaction);
   }
   return {
     ...result,
-    engine: result.engine || 'alibaba-enterprise-mail-smtp-imap',
+    engine: result.engine || 'alibaba-enterprise-mail-web-session',
     mode: result.mode || (result.sendStatus === 'sent_confirmed' ? 'alibaba_email_sent_folder_confirmed' : 'alibaba_email_delivery_unconfirmed'),
     targetUrl: domainSafety.recipient ? `mailto:${domainSafety.recipient}` : '',
     subject,
