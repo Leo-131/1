@@ -1,7 +1,7 @@
 'use strict';
 
 const nodemailer = require('nodemailer');
-const { APPROVED_EMAIL_ATTACHMENTS, APPROVED_EMAIL_SIGNATURE, validateApprovedEmailAttachments } = require('./sales-collateral');
+const { APPROVED_EMAIL_ATTACHMENTS, APPROVED_EMAIL_SIGNATURE, validateApprovedEmailAttachments, validateApprovedEmailCollateralLinks } = require('./sales-collateral');
 const { ImapFlow } = require('imapflow');
 const dns = require('dns').promises;
 const { alibabaEmailConfig, emailSenderReadiness, isEmail } = require('./email-channel');
@@ -139,8 +139,9 @@ function validateFirstTouchEmail({ from, to, subject, text, attachments } = {}) 
   if (!/buyer|procurement|purchasing|vendor|supplier|category|assortment/i.test(clean(text))) errors.push('email_procurement_cta_missing');
   if (!clean(text).endsWith(clean(APPROVED_EMAIL_SIGNATURE))) errors.push('approved_email_signature_missing_or_modified');
   const attachmentValidation = validateApprovedEmailAttachments(attachments);
-  if (!attachmentValidation.ok) errors.push('approved_first_touch_attachment_set_required');
-  return { ok: errors.length === 0, errors, words, attachmentValidation };
+  const collateralLinkValidation = validateApprovedEmailCollateralLinks(text);
+  if (!attachmentValidation.ok && !collateralLinkValidation.ok) errors.push('approved_first_touch_collateral_required');
+  return { ok: errors.length === 0, errors, words, attachmentValidation, collateralLinkValidation };
 }
 
 function sentMailboxPath(list = []) {

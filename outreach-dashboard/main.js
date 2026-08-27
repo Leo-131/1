@@ -35,7 +35,7 @@ const {
   sendToastExpression,
   sentFolderConfirmationExpression,
 } = require('./alibaba-webmail-automation');
-const { APPROVED_EMAIL_ATTACHMENTS, APPROVED_EMAIL_SIGNATURE, approvedEmailAttachmentNames } = require('./sales-collateral');
+const { APPROVED_EMAIL_ATTACHMENTS, APPROVED_EMAIL_COLLATERAL_LINKS, APPROVED_EMAIL_SIGNATURE, approvedEmailAttachmentNames, approvedEmailCollateralBlock, validateApprovedEmailCollateralLinks } = require('./sales-collateral');
 const {
   normalizeTarget,
   validateLeadForExecution,
@@ -1896,6 +1896,9 @@ async function setChromeFileInput(opened, filePath) {
 function isFixedAlibabaPreSendTechnicalFailure(result = {}) {
   if (String(result.status || result.sendStatus || '') !== 'failed_open') return false;
   const evidence = String(result.evidence || '').toLowerCase();
+  if (/email_sender_delivery_disabled/.test(evidence)
+    && /no_send_performed/.test(evidence)
+    && senderDisabledFailurePredatesRestoration(result)) return true;
   if (!evidence.includes('no_send_performed')
     && !/smtp_send_failed:estream|alibaba_webmail_compose_unavailable/.test(evidence)) return false;
   if (/send_clicked|enter_send_attempted|submit_clicked|message_sent|persisted_after_reload/.test(evidence)) return false;
@@ -2520,7 +2523,7 @@ Would you be the right person to review a potential supplier partnership, or cou
 
 Product overview: https://www.flextail.com/
 
-I’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.
+${approvedEmailCollateralBlock()}
 
 ${APPROVED_EMAIL_SIGNATURE}`;
 }
@@ -3298,7 +3301,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     to: target.recipient,
     subject,
     text: draft,
-    attachments: APPROVED_EMAIL_ATTACHMENTS.map(filePath => ({ path: filePath })),
+    attachments: [],
   });
   if (!contentValidation.ok) {
     return {
@@ -3451,65 +3454,12 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       await sleep(350);
     }
     await sleep(500);
-    const attachmentNames = approvedEmailAttachmentNames();
-    const attachmentControl = await evaluateChromeTabJson(chromeOpen, composeAttachmentControlExpression(), 8000).catch(() => null);
-    if (!attachmentControl || !attachmentControl.ok) return {
+    const collateralLinkInspection = validateApprovedEmailCollateralLinks(draft);
+    if (!collateralLinkInspection.ok) return {
       ok: false,
       sendStatus: 'failed_open',
-      reason: 'alibaba_webmail_attachment_control_unavailable',
-      evidence: `${autoSendAuthorization};${attachmentControl && attachmentControl.evidence || 'alibaba_webmail_attachment_control_unavailable'};no_send_performed`,
-      manualApprovalRequired: false,
-      autoSendAuthorized: true,
-    };
-    let attachmentSelection;
-    if (attachmentControl.inputReady) {
-      attachmentSelection = await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS);
-    } else {
-      attachmentSelection = await setChromeFileInputsViaChooser(
-        chromeOpen,
-        APPROVED_EMAIL_ATTACHMENTS,
-        attachmentControl,
-        composeAttachmentControlExpression({ click: true }),
-      );
-      if (!attachmentSelection.ok && attachmentSelection.evidence === 'alibaba_webmail_file_chooser_not_opened') {
-        // Alibaba creates its hidden file input lazily after the first trusted
-        // attachment click. Re-discover that input before trying a dropdown
-        // submenu; this keeps the exact pre-approved files and avoids an OS
-        // file-dialog dependency.
-        const lazyInputSelection = await setChromeFileInputs(chromeOpen, APPROVED_EMAIL_ATTACHMENTS);
-        if (lazyInputSelection.ok) attachmentSelection = lazyInputSelection;
-      }
-      if (!attachmentSelection.ok && attachmentSelection.evidence === 'alibaba_webmail_file_chooser_not_opened') {
-        const menuItem = await evaluateChromeTabJson(chromeOpen, composeAttachmentMenuItemExpression(), 5000).catch(() => null);
-        if (menuItem && menuItem.ok) {
-          attachmentSelection = await setChromeFileInputsViaChooser(
-            chromeOpen,
-            APPROVED_EMAIL_ATTACHMENTS,
-            menuItem,
-            '',
-          );
-        }
-      }
-    }
-    if (!attachmentSelection.ok) return {
-      ok: false,
-      sendStatus: 'failed_open',
-      reason: 'alibaba_webmail_required_attachment_selection_failed',
-      evidence: `${autoSendAuthorization};${attachmentControl.evidence};${attachmentSelection.evidence};no_send_performed`,
-      manualApprovalRequired: false,
-      autoSendAuthorized: true,
-    };
-    let attachmentInspection = null;
-    for (let attempt = 0; attempt < 60; attempt += 1) {
-      await sleep(500);
-      attachmentInspection = await evaluateChromeTabJson(chromeOpen, composeAttachmentInspectionExpression({ names: attachmentNames }), 5000).catch(() => null);
-      if (attachmentInspection && attachmentInspection.ok) break;
-    }
-    if (!attachmentInspection || !attachmentInspection.ok) return {
-      ok: false,
-      sendStatus: 'failed_open',
-      reason: 'alibaba_webmail_required_attachments_not_verified',
-      evidence: `${autoSendAuthorization};${attachmentSelection.evidence};${attachmentInspection && attachmentInspection.evidence || 'attachment_inspection_missing'};matched:${attachmentInspection && (attachmentInspection.matched || []).join('|') || 'none'};no_send_performed`,
+      reason: 'alibaba_webmail_required_collateral_links_not_verified',
+      evidence: `${autoSendAuthorization};approved_collateral_links_missing;matched:${collateralLinkInspection.matched.join('|') || 'none'};no_send_performed`,
       manualApprovalRequired: false,
       autoSendAuthorized: true,
     };
@@ -3623,7 +3573,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       ok: confirmed,
       sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
       reason: confirmed ? 'sent_folder_message_confirmed' : 'sent_folder_confirmation_missing',
-      evidence: `official_public_business_email;${autoSendAuthorization};alibaba_webmail_session_reused;${attachmentInspection.evidence}:${attachmentNames.join('|')};${sendControl.evidence};${physicalClickEvidence};${postSend.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+      evidence: `official_public_business_email;${autoSendAuthorization};alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:${APPROVED_EMAIL_COLLATERAL_LINKS.map(item => item.url).join('|')};${sendControl.evidence};${physicalClickEvidence};${postSend.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
       recipientEmail: target.recipient,
       targetUrl: `mailto:${target.recipient}`,
       subject,

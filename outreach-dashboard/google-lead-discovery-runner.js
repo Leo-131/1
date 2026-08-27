@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { APPROVED_EMAIL_SIGNATURE } = require('./sales-collateral');
+const { APPROVED_EMAIL_SIGNATURE, approvedEmailCollateralBlock } = require('./sales-collateral');
 
 const ROOT = __dirname;
 const OUT_JSON = path.join(ROOT, 'google-lead-discovery-latest.json');
@@ -1573,7 +1573,7 @@ Could you review a distribution partnership, or direct me to your category buyer
 
 Product overview: https://www.flextail.com/
 
-I’ve attached our 2026 catalog, monthly product roadmap, and distributor network overview for reference.
+${approvedEmailCollateralBlock()}
 
 ${APPROVED_EMAIL_SIGNATURE}`;
 }
