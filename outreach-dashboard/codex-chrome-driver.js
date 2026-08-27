@@ -420,6 +420,13 @@ function composerExpression(platform) {
       }
       return JSON.stringify(null);
     }
+    if (platform === 'linkedin') {
+      return JSON.stringify(
+        elements.filter(item => item.match && item.inDialog).sort((a, b) => b.y - a.y)[0]
+        || elements.filter(item => item.visible && item.inDialog && !/search|filter|find/.test(item.label + ' ' + item.placeholder)).sort((a, b) => b.y - a.y)[0]
+        || null
+      );
+    }
     return JSON.stringify(
       elements.filter(item => item.match && item.inDialog).sort((a, b) => b.y - a.y)[0]
       || elements.filter(item => item.match).sort((a, b) => b.y - a.y)[0]
@@ -1302,7 +1309,9 @@ async function ensureComposerOpen(tab, port, platform) {
     await clickAt(tab, button.x, button.y);
   }
   await sleep(900);
-  await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
+  // Sales Navigator opens its message composer in a dialog. The generic
+  // dismiss routine would close that valid composer before it can be used.
+  if (platform !== 'linkedin') await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
   await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
   if (platform === 'facebook') {
     const startButton = await evaluateJson(tab, facebookStartButtonExpression(), 2500).catch(() => null);
@@ -1371,7 +1380,6 @@ async function ensureComposerOpen(tab, port, platform) {
     if (retryButton && Number.isFinite(retryButton.x)) {
       await clickAt(tab, retryButton.x, retryButton.y);
       await sleep(1600);
-      await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
       await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
       composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 12000, 500);
     }
@@ -1583,7 +1591,7 @@ async function preparePlatformDraft(payload, platform) {
       return {
         ok: false,
         sendStatus: 'failed_open',
-        evidence: `${platform}_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;${insertResult.evidence}`,
+        evidence: `${platform}_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;${insertResult.evidence};controls:${JSON.stringify(await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('button,a,[role="button"]')).filter(el => { const r=el.getBoundingClientRect(); return r.width>0&&r.height>0; }).map(el => ({text:String(el.innerText||el.textContent||'').replace(/\\s+/g,' ').trim(),aria:el.getAttribute('aria-label')||'',title:el.getAttribute('title')||''})).filter(v=>v.text||v.aria||v.title).slice(-80)))()`, 3000).catch(() => []))}`,
         nextAction: 'An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.',
       };
     }
@@ -1824,6 +1832,57 @@ async function connectLinkedinSalesSearch(payload = {}) {
   };
 }
 
+async function connectLinkedinSalesLead(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, sendStatus: 'failed_open', evidence: 'dedicated_cdp_9224_required' };
+  const tab = await findTab(port, payload.tabId, payload.targetUrl);
+  if (!tab) return { ok: false, sendStatus: 'failed_open', evidence: 'linkedin_sales_lead_tab_not_found' };
+  const identity = await evaluateJson(tab, `(() => {
+    const url = location.href;
+    const body = String(document.body && document.body.innerText || '');
+    const expectedName = ${JSON.stringify(String(payload.expectedName || ''))};
+    const expectedCompany = ${JSON.stringify(String(payload.expectedCompany || ''))};
+    const ok = /linkedin\\.com\\/sales\\/lead\\//i.test(url) && (!expectedName || body.toLowerCase().includes(expectedName.toLowerCase())) && (!expectedCompany || body.toLowerCase().includes(expectedCompany.toLowerCase()));
+    const el = Array.from(document.querySelectorAll('button,[role="button"]')).find(node => /open actions overflow menu/i.test(String(node.getAttribute('aria-label') || '')));
+    if (!ok || !el) return JSON.stringify({ ok: false, evidence: !ok ? 'linkedin_sales_lead_identity_mismatch' : 'lead_actions_menu_not_found' });
+    el.click();
+    return JSON.stringify({ ok: true, url });
+  })()`, 5000).catch(() => null);
+  if (!identity || !identity.ok) return { ok: false, sendStatus: 'failed_open', evidence: identity && identity.evidence || 'lead_identity_check_failed' };
+  await sleep(500);
+  const connect = await waitForJson(tab, linkedinVisibleActionExpression(['connect', '\u5efa\u7acb\u8054\u7cfb']), item => item && Number.isFinite(item.x), 4000, 250).catch(() => null);
+  if (!connect) {
+    const menuState = await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('button,a,[role="button"],[role="menuitem"]')).filter(el => { const r=el.getBoundingClientRect(); return r.width>0&&r.height>0; }).map(el => String(el.innerText||el.textContent||el.getAttribute('aria-label')||'').replace(/\\s+/g,' ').trim()).filter(Boolean).filter(v => /connect|invite|withdraw|pending|message|save/i.test(v)).slice(0,30)))()`, 3000).catch(() => []);
+    await pressEscape(tab).catch(() => null);
+    if ((menuState || []).some(value => /connect\s*[—-]\s*pending|withdraw invitation|invitation pending/i.test(String(value)))) {
+      return { ok: true, sendStatus: 'connection_requested_confirmed_existing', evidence: `linkedin_connect_pending_visible:${JSON.stringify(menuState)}`, url: identity.url };
+    }
+    return { ok: false, sendStatus: 'failed_open', evidence: `lead_connect_action_not_available:${JSON.stringify(menuState || [])}` };
+  }
+  if (payload.dryRun === true) { await pressEscape(tab).catch(() => null); return { ok: true, sendStatus: 'ready_to_connect', evidence: 'verified_lead_connect_action_visible', url: identity.url }; }
+  await clickAt(tab, connect.x, connect.y);
+  await sleep(700);
+  const confirm = await evaluateJson(tab, linkedinVisibleActionExpression(['send without a note', 'send invitation', '\u4e0d\u6dfb\u52a0\u7559\u8a00\u76f4\u63a5\u53d1\u9001', '\u53d1\u9001\u9080\u8bf7']), 3000).catch(() => null);
+  if (confirm && Number.isFinite(confirm.x)) { await clickAt(tab, confirm.x, confirm.y); await sleep(900); }
+  const confirmation = await waitForJson(tab, `(() => { const body=String(document.body&&document.body.innerText||'').toLowerCase(); return JSON.stringify({ blocked:/weekly invitation limit|invitation limit|too many requests|temporarily restricted|captcha|security check|verify you are human/.test(body), confirmed:/invitation sent|connection request sent|\u9080\u8bf7\u5df2\u53d1\u9001|\u8054\u7cfb\u8bf7\u6c42\u5df2\u53d1\u9001/.test(body) }); })()`, item => item && (item.blocked || item.confirmed), 5000, 300).catch(() => null);
+  if (confirmation && confirmation.blocked) return { ok: false, sendStatus: 'failed_open', evidence: 'linkedin_platform_limit_or_verification' };
+  if (!confirmation || !confirmation.confirmed) {
+    const pendingState = await evaluateJson(tab, `(() => {
+      const el=Array.from(document.querySelectorAll('button,[role="button"]')).find(node=>/open actions overflow menu/i.test(String(node.getAttribute('aria-label')||'')));
+      if(!el) return JSON.stringify({opened:false,items:[]}); el.click();
+      return JSON.stringify({opened:true,items:[]});
+    })()`, 3000).catch(() => null);
+    if (pendingState && pendingState.opened) await sleep(500);
+    const pendingItems = await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('button,a,[role="button"],[role="menuitem"]')).filter(el=>{const r=el.getBoundingClientRect();return r.width>0&&r.height>0;}).map(el=>String(el.innerText||el.textContent||el.getAttribute('aria-label')||'').replace(/\\s+/g,' ').trim()).filter(Boolean).filter(v=>/connect|invite|withdraw|pending/i.test(v)).slice(0,30)))()`, 3000).catch(() => []);
+    await pressEscape(tab).catch(() => null);
+    if ((pendingItems || []).some(value => /connect\s*[—-]\s*pending|withdraw invitation|invitation pending/i.test(String(value)))) {
+      return { ok: true, sendStatus: 'connection_requested_confirmed', evidence: `sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:${JSON.stringify(pendingItems)}`, url: identity.url };
+    }
+    return { ok: false, sendStatus: 'send_unconfirmed', evidence: 'linkedin_connect_clicked_confirmation_missing_no_replay' };
+  }
+  return { ok: true, sendStatus: 'connection_requested_confirmed', evidence: 'sales_navigator_lead_identity_visible;connect_clicked_once;invitation_sent_visible', url: identity.url };
+}
+
 async function inspectLinkedinSalesLead(payload = {}) {
   const port = Number(payload.port || 9224);
   if (port !== 9224) return { ok: false, sendStatus: 'failed_open', evidence: 'dedicated_cdp_9224_required' };
@@ -1840,7 +1899,15 @@ async function inspectLinkedinSalesLead(payload = {}) {
       text: String(a.innerText || a.textContent || '').replace(/\\s+/g, ' ').trim(),
       href: a.href,
     })).filter(v => String(v.href || '').includes('/sales/company/') || /contact|website|mailto:/i.test(v.href) || /company|website|contact/i.test(v.text)).slice(0, 30);
-    return JSON.stringify({ url, title, emails, lines, links });
+    const controls = Array.from(document.querySelectorAll('button,a,[role="button"],[role="menuitem"]')).map(el => {
+      const rect = el.getBoundingClientRect();
+      return {
+        text: String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim(),
+        aria: el.getAttribute('aria-label') || '',
+        visible: rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight,
+      };
+    }).filter(v => v.visible && (v.text || v.aria)).slice(0, 100);
+    return JSON.stringify({ url, title, emails, lines, links, controls });
   })()`, 8000);
   let parsed;
   try { parsed = new URL(result.url); } catch { parsed = null; }
@@ -1925,6 +1992,7 @@ async function main() {
   else if (command === 'engage-social-profile') result = await engageSocialProfile(payload);
   else if (command === 'inspect-social-context') result = await inspectSocialContext(payload);
   else if (command === 'connect-linkedin-sales-search') result = await connectLinkedinSalesSearch(payload);
+  else if (command === 'connect-linkedin-sales-lead') result = await connectLinkedinSalesLead(payload);
   else if (command === 'inspect-linkedin-sales-lead') result = await inspectLinkedinSalesLead(payload);
   else if (command === 'inspect-linkedin-sales-search') result = await inspectLinkedinSalesSearch(payload);
   else if (command === 'inspect-alibaba-compose-controls') result = await inspectAlibabaComposeControls(payload);

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Steve Davies",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAQQaJ4BvS1VKkecdO3exzOqgVB4AQnDV08,NAME_SEARCH,8wUW?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:58:39.6266511Z"
+  },
+  {
+    "name": "Todd Spivek",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABmowHUBXcjKuK8ZalyPGi-Ecxa1t_5F5q4,NAME_SEARCH,eVXk?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:58:43.8341994Z"
+  },
+  {
+    "name": "Kevin Schubert",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAb3OXIBUOdhcxVd59iZEiyOdmqgULKoXI4,NAME_SEARCH,l2NM?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:58:46.5248888Z"
+  },
+  {
+    "name": "Maura DiDomenicus",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABO09YoBIBFhB370P1evaaAmpB69hKvv6AE,NAME_SEARCH,2oFj?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:58:51.8041114Z"
+  },
+  {
+    "name": "Emma Thomas",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAACZB6FMBoDCy7jE2l05nnURXNjDdnwUMQTs,NAME_SEARCH,fIAc?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:58:54.8464550Z"
+  },
+  {
+    "name": "Scott Dixon",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAn5tFEB4k88S_M8WDM_PRYjvMj7aDJ4l5U,NAME_SEARCH,-nok?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:58:59.6036310Z"
+  },
+  {
+    "name": "Chelsea Frey",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABFM4qwBlHN3zXO47_eJX-6DchgdXAhu5q0,NAME_SEARCH,lHGl?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:59:03.6903671Z"
+  },
+  {
+    "name": "Garrett Melton",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAB2s1tYBfYn4FS-PgohqGw4UXZ2rjG2bHys,NAME_SEARCH,vgBk?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T03:59:07.9063311Z"
+  }
+]

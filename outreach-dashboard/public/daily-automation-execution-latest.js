@@ -56,13 +56,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "company": "Naturehike South Africa",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-smith-power-equipment-website-contact",
       "company": "Smith Power Equipment",
       "action": "email_priority",
@@ -86,6 +79,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-oukitel-south-africa-website-contact",
       "company": "Oukitel South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -168,13 +168,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-facebook",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-latulippe-facebook",
       "company": "Latulippe",
       "action": "develop",
@@ -210,60 +203,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-instagram",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-gjs-africa-distribution-website-contact",
-      "company": "GJS Africa Distribution",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-novo-brands-website-contact",
-      "company": "Novo Brands",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-bvc-holdings-website-contact",
-      "company": "BVC Holdings",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-minnis-brands-website-contact",
@@ -336,6 +280,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-naturehike-south-africa-website-contact",
+      "company": "Naturehike South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-bbq-fans-website-contact",
       "company": "BBQ Fans",
       "action": "email_priority",
@@ -352,13 +303,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -443,6 +387,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-taunton-leisure-facebook",
       "company": "Taunton Leisure",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-facebook",
+      "company": "Naturehike South Africa",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -574,6 +525,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
+      "id": "google-customer-naturehike-south-africa-instagram",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-bbq-fans-instagram",
       "company": "BBQ Fans",
       "action": "develop",
@@ -586,6 +544,27 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-alpinewaves-website-contact",
+      "company": "AlpineWaves",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-shiner-distribution-website-contact",
+      "company": "Shiner Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-shiner-distribution-website-contact",
@@ -668,6 +647,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 9
     },
     {
+      "reason": "social_profile_not_first_party_verified",
+      "status": "skipped",
+      "count": 5
+    },
+    {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
       "count": 4
@@ -675,17 +659,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 4
-    },
-    {
-      "reason": "social_profile_not_first_party_verified",
-      "status": "skipped",
-      "count": 4
+      "count": 2
     },
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 3
+      "count": 1
     },
     {
       "reason": "verified_linkedin_profile_ready",
@@ -697,17 +676,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "official_website_social_channel_verified": 41,
     "official_public_business_email_verified": 22,
     "website_contact_capability_not_verified": 9,
+    "social_profile_not_first_party_verified": 5,
     "concrete_google_discovered_major_customer_instagram": 4,
-    "homepage_only_contact_path_requires_verification": 4,
-    "social_profile_not_first_party_verified": 4,
-    "official_website_contact_channel": 3,
+    "homepage_only_contact_path_requires_verification": 2,
+    "official_website_contact_channel": 1,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 32,
-    "queueCount": 79,
-    "googleDiscovered": 79,
+    "queueCount": 76,
+    "googleDiscovered": 76,
     "refillNeeded": 68,
     "confirmedToday": 0,
     "reached": false,
@@ -1093,8 +1072,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 50,
-    "dueNow": 79,
+    "readyToDevelop": 51,
+    "dueNow": 76,
     "visibleTodayQueue": 86,
     "potentialPool": 32,
     "potentialPoolTarget": 100,
@@ -1113,7 +1092,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 79,
+    "googleDiscovered": 76,
     "facebookDiscovered": 20,
     "websiteContactDiscovered": 22,
     "scheduledLater": 0,
@@ -1125,14 +1104,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
+    "ok": true,
+    "reason": "bounce_scan_complete",
+    "scanned": 10,
     "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "senderIdentityFailures": 5,
+    "historicalSenderIdentityFailures": 0,
+    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
   },
-  "completedAt": "2026-08-27T02:05:07.429Z"
+  "completedAt": "2026-08-27T04:07:57.144Z"
 };

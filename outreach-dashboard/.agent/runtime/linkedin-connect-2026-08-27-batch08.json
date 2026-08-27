@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Garrett Melton",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAB2s1tYBfYn4FS-PgohqGw4UXZ2rjG2bHys,NAME_SEARCH,vgBk?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:05:34.0947730Z"
+  },
+  {
+    "name": "Chelsea Frey",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABFM4qwBlHN3zXO47_eJX-6DchgdXAhu5q0,NAME_SEARCH,lHGl?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:05:42.5466869Z"
+  },
+  {
+    "name": "Scott Dixon",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAn5tFEB4k88S_M8WDM_PRYjvMj7aDJ4l5U,NAME_SEARCH,-nok?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:05:50.7597773Z"
+  },
+  {
+    "name": "Emma Thomas",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAACZB6FMBoDCy7jE2l05nnURXNjDdnwUMQTs,NAME_SEARCH,fIAc?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:05:58.7471686Z"
+  },
+  {
+    "name": "Maura DiDomenicus",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABO09YoBIBFhB370P1evaaAmpB69hKvv6AE,NAME_SEARCH,2oFj?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:06:07.1224264Z"
+  },
+  {
+    "name": "Kevin Schubert",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAb3OXIBUOdhcxVd59iZEiyOdmqgULKoXI4,NAME_SEARCH,l2NM?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\",\"1 mutual connection\",\"1 TeamLink connection\",\"View all shared connections\"]",
+    "verifiedAt": "2026-08-27T04:06:15.4014134Z"
+  },
+  {
+    "name": "Todd Spivek",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABmowHUBXcjKuK8ZalyPGi-Ecxa1t_5F5q4,NAME_SEARCH,eVXk?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:06:23.5706204Z"
+  },
+  {
+    "name": "Steve Davies",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAQQaJ4BvS1VKkecdO3exzOqgVB4AQnDV08,NAME_SEARCH,8wUW?_ntb=QiGEOHIPRCicq9ZcTk3b2w%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:06:31.8867414Z"
+  }
+]

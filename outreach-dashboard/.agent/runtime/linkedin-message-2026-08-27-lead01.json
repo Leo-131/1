@@ -1,0 +1,1 @@
+{"ok":false,"sendStatus":"failed_open","evidence":"linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified","nextAction":"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel."}
