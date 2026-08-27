@@ -1125,13 +1125,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "bounce_scan_complete",
-    "scanned": 10,
+    "ok": false,
+    "reason": "email_sender_not_configured",
     "updated": 0,
-    "senderIdentityFailures": 5,
-    "historicalSenderIdentityFailures": 0,
-    "senderRestoredAt": "2026-08-14T05:43:37.464Z"
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
-  "completedAt": "2026-08-27T02:04:29.562Z"
+  "completedAt": "2026-08-27T02:05:07.429Z"
 };

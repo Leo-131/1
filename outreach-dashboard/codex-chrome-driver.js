@@ -98,8 +98,8 @@ async function clickAt(tab, x, y) {
   await cdp(tab.webSocketDebuggerUrl, 'Page.bringToFront', {}, 6000).catch(() => null);
   try {
     await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' }, 6000);
-    await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 }, 6000);
-    await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 }, 6000);
+    await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', buttons: 1, clickCount: 1 }, 6000);
+    await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', buttons: 0, clickCount: 1 }, 6000);
   } catch (error) {
     const domClicked = await evaluateJson(tab, `
       (() => {
@@ -1725,6 +1725,18 @@ function linkedinVisibleActionExpression(labels) {
   })()`;
 }
 
+function linkedinOpenCandidateMenuExpression(name) {
+  return `(() => {
+    const expected = ${JSON.stringify(String(name || ''))};
+    const menu = Array.from(document.querySelectorAll('button[aria-label^="See more actions for "]'))
+      .find(el => String(el.getAttribute('aria-label') || '').replace(/^See more actions for /, '').trim() === expected);
+    if (!menu) return JSON.stringify({ ok: false, evidence: 'candidate_menu_not_found' });
+    menu.scrollIntoView({ block: 'center', inline: 'nearest' });
+    const rect = menu.getBoundingClientRect();
+    return JSON.stringify({ ok: true, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2), evidence: 'candidate_menu_resolved_by_verified_name' });
+  })()`;
+}
+
 async function connectLinkedinSalesSearch(payload = {}) {
   const port = Number(payload.port || 9224);
   if (port !== 9224) return { ok: false, sendStatus: 'failed_open', evidence: 'dedicated_cdp_9224_required' };
@@ -1760,12 +1772,22 @@ async function connectLinkedinSalesSearch(payload = {}) {
       results.push({ ...candidate, sendStatus: 'ready_to_connect' });
       continue;
     }
-    await clickAt(tab, candidate.x, candidate.y);
+    const menuOpened = await evaluateJson(tab, linkedinOpenCandidateMenuExpression(candidate.name), 5000).catch(() => null);
+    if (!menuOpened || menuOpened.ok !== true) {
+      results.push({ ...candidate, sendStatus: 'skipped', evidence: menuOpened && menuOpened.evidence || 'candidate_menu_click_failed' });
+      continue;
+    }
+    await clickAt(tab, menuOpened.x, menuOpened.y);
     await sleep(500);
     const connect = await waitForJson(tab, linkedinVisibleActionExpression(['connect', '\u5efa\u7acb\u8054\u7cfb']), item => item && Number.isFinite(item.x), 3000, 250).catch(() => null);
     if (!connect) {
+      const menuEvidence = await evaluateJson(tab, `(() => JSON.stringify(Array.from(document.querySelectorAll('[role="menuitem"],[role="menu"] button,[role="menu"] a'))
+        .filter(el => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; })
+        .map(el => String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim())
+        .filter(Boolean).slice(0, 20)))()`, 3000).catch(() => []);
+      const bodyTail = await evaluateJson(tab, `(() => { const text = String(document.body && document.body.innerText || '').replace(/\\s+/g, ' ').trim(); return JSON.stringify(text.slice(-1200)); })()`, 3000).catch(() => '');
       await pressEscape(tab).catch(() => null);
-      results.push({ ...candidate, sendStatus: 'skipped', evidence: 'connect_action_not_available' });
+      results.push({ ...candidate, sendStatus: 'skipped', evidence: `connect_action_not_available:${JSON.stringify(menuEvidence || [])}:${String(bodyTail || '').slice(-500)}` });
       continue;
     }
     await clickAt(tab, connect.x, connect.y);
