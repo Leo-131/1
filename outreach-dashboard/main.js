@@ -1940,7 +1940,7 @@ function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}, cli
     return Promise.resolve({ ok: false, evidence: 'alibaba_webmail_file_chooser_preconditions_failed' });
   }
   if (typeof WebSocket === 'undefined') {
-    return setChromeFileInputsViaChooserRawSocket(opened.webSocketDebuggerUrl, files, clickExpression);
+    return setChromeFileInputsViaChooserRawSocket(opened.webSocketDebuggerUrl, files, control, clickExpression);
   }
   return new Promise((resolve) => {
     let settled = false;
@@ -1971,7 +1971,17 @@ function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}, cli
         const message = JSON.parse(raw);
         if (message.id === 1) {
           send(2, 'Page.bringToFront');
-          send(3, 'Runtime.evaluate', { expression: clickExpression, returnByValue: true });
+          const x = Number(control.x || 0);
+          const y = Number(control.y || 0);
+          if (x > 0 && y > 0) {
+            // Current Chrome requires a trusted user gesture to open a file
+            // chooser. Use the already-scoped attachment control centre.
+            send(3, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y });
+            send(4, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
+            send(5, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+          } else {
+            send(3, 'Runtime.evaluate', { expression: clickExpression, returnByValue: true });
+          }
         } else if (message.method === 'Page.fileChooserOpened') {
           chooserSeen = true;
           const backendNodeId = message.params && message.params.backendNodeId;
@@ -1993,7 +2003,7 @@ function setChromeFileInputsViaChooser(opened, filePaths = [], control = {}, cli
   });
 }
 
-function setChromeFileInputsViaChooserRawSocket(wsUrl, files, clickExpression) {
+function setChromeFileInputsViaChooserRawSocket(wsUrl, files, control, clickExpression) {
   return new Promise((resolve) => {
     const parsed = new URL(wsUrl);
     const secure = parsed.protocol === 'wss:';
@@ -2057,7 +2067,15 @@ function setChromeFileInputsViaChooserRawSocket(wsUrl, files, clickExpression) {
         try { message = JSON.parse(frame.text); } catch { continue; }
         if (message.id === 1) {
           send(2, 'Page.bringToFront');
-          send(3, 'Runtime.evaluate', { expression: clickExpression, returnByValue: true });
+          const x = Number(control && control.x || 0);
+          const y = Number(control && control.y || 0);
+          if (x > 0 && y > 0) {
+            send(3, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y });
+            send(4, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 });
+            send(5, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 });
+          } else {
+            send(3, 'Runtime.evaluate', { expression: clickExpression, returnByValue: true });
+          }
         } else if (message.method === 'Page.fileChooserOpened') {
           chooserSeen = true;
           const backendNodeId = message.params && message.params.backendNodeId;

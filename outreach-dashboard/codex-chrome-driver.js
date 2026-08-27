@@ -1282,7 +1282,7 @@ async function ensureComposerOpen(tab, port, platform) {
     social: ['message', 'contact', '\u53d1\u6d88\u606f', '\u53d1\u9001\u6d88\u606f', '\u6d88\u606f'],
   };
   const keywords = keywordsByPlatform[platform] || keywordsByPlatform.social;
-  const buttonExpressionForPlatform = (platform === 'instagram' || platform === 'facebook')
+  const buttonExpressionForPlatform = (platform === 'instagram' || platform === 'facebook' || platform === 'linkedin')
     ? profileMessageButtonExpression(platform, keywords)
     : buttonExpression(keywords);
   let button = await waitForJson(
@@ -1372,7 +1372,7 @@ async function ensureComposerOpen(tab, port, platform) {
   if ((!composer || !Number.isFinite(composer.x)) && platform === 'linkedin') {
     const retryButton = await waitForJson(
       tab,
-      buttonExpression(keywords),
+      profileMessageButtonExpression(platform, keywords),
       item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
       5000,
       500
