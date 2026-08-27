@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Ronald Kohen",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAKcx0UBtXScnDiHCY3O8a5r1zJF-krxVR0,NAME_SEARCH,bUIc?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T04:22:59.4394506Z"
+  },
+  {
+    "name": "Zach DuBois",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAACatCZABan9fMblhyb7Xh7sZOGPD3sXICH4,NAME_SEARCH,CWTD?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:23:14.6327087Z"
+  },
+  {
+    "name": "Geoff Hatton",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAABCWQUBwCu49lo5hVKJfNx_aZlI5DqaFIk,NAME_SEARCH,7Em3?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:23:30.0762233Z"
+  },
+  {
+    "name": "Saloni Shah",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAACIuWx0B5bVA2tfNTGDREkp3JzkxA2Iw3r8,NAME_SEARCH,ix3H?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:23:45.2435817Z"
+  },
+  {
+    "name": "Christina Porcaro",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAKu0-kB6W-50029WQ2muVjWGYVUeindbbE,NAME_SEARCH,dFmD?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:24:00.6697517Z"
+  },
+  {
+    "name": "MARTIN CHECKOWAY",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAHkeAIBND3Q3F4fGxxm4YrEX9dyydy4tgw,NAME_SEARCH,fOSW?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:24:15.9105810Z"
+  },
+  {
+    "name": "David Kritzik",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAACqaVMUBUHuuBzZdFaFBQA3k2JEbZO5k9uY,NAME_SEARCH,IRBS?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:24:31.5603678Z"
+  },
+  {
+    "name": "BUSE AVDAN",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABOQk08BWtSOHxnz-FivcN8VKq-9v5XvAyk,NAME_SEARCH,MjEd?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:24:47.0512121Z"
+  },
+  {
+    "name": "Rachel Caulfield",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAEr6U1gBFDhkwuF4hCLwxbzZAVHXKMQuaoI,NAME_SEARCH,DkNb?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T04:24:54.1852115Z"
+  },
+  {
+    "name": "Kimberly Gordon (Ritter)",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAKn-r0B2RuEndoJ0wtlFhVyb-T1CDSZSTM,NAME_SEARCH,ATSK?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:25:09.8153978Z"
+  }
+]

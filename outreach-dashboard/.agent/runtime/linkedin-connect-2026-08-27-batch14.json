@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Codi Bifone",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAYKZlUB5CXmeu-kZLuDavrif4fhePSSvok,NAME_SEARCH,6Pq4?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:29:09.3251788Z"
+  },
+  {
+    "name": "Suresh Selvaratnam was last active 1 day ago",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAb8Lv4BFJzhLjnR2SfNu_qy8wG03LeLlW4,NAME_SEARCH,PiF4?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T04:29:17.1826364Z"
+  },
+  {
+    "name": "Matthew Smith",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAB3kTgcBnw8Y_2syjT21jv-UKCjkJ3vc81g,NAME_SEARCH,6WGv?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\",\"1 mutual connection\",\"View all shared connections\"]",
+    "verifiedAt": "2026-08-27T04:29:32.6395389Z"
+  },
+  {
+    "name": "Kristen Davis",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABu-s14BDOgJAIbs13hiJczSTcBgN6J8Nww,NAME_SEARCH,glI_?_ntb=AqR5YovWTOK%2BIqOxxo1ASg%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:29:48.3350839Z"
+  }
+]

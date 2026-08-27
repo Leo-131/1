@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Shane Edgar",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABaDutoB0lFX5pXWfgRkTRq6uGjdOp8S1Rg,NAME_SEARCH,MSny?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:19:27.3567366Z"
+  },
+  {
+    "name": "Tyler Mosler",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAADgsgO0BKruMB3jO0Tu5ox46m0oco0g1EaE,NAME_SEARCH,i2Rv?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:19:42.7211816Z"
+  },
+  {
+    "name": "Magdalena Negrete",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAluQsgBucvzc4I2AjPL1eRX6e9fprqg-Ho,NAME_SEARCH,iaT_?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "failed_open",
+    "ok": false,
+    "evidence": "linkedin_sales_lead_identity_mismatch",
+    "verifiedAt": "2026-08-27T04:19:50.1368704Z"
+  },
+  {
+    "name": "George Flower",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAkZiFkBf2Li-ukOlhRxkbXKZQa74AQv4f0,NAME_SEARCH,V3HZ?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "send_unconfirmed",
+    "ok": false,
+    "evidence": "linkedin_connect_clicked_confirmation_missing_no_replay",
+    "verifiedAt": "2026-08-27T04:20:05.1101735Z"
+  },
+  {
+    "name": "Chadwick Jaggard",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAOF-R0BrWl0yxCRqlPZ0Cu0cQ8iM6cijDU,NAME_SEARCH,J_BG?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:20:20.8944988Z"
+  },
+  {
+    "name": "Anthony Lee",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABZz7OgB5X3gawhSbUDqaP7RYRyyRQ4QGXY,NAME_SEARCH,j7JP?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:20:36.7348973Z"
+  },
+  {
+    "name": "Bailey Smith",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAADJusHQBhspFf9ggr-WIoR5BildNm2k27fI,NAME_SEARCH,m7i5?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\",\"2 mutual connections\",\"2 TeamLink connections\",\"View all shared connections\"]",
+    "verifiedAt": "2026-08-27T04:20:52.2464519Z"
+  },
+  {
+    "name": "Natalie Schenker",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAB-cp7EBZo7Zii93vdia6Q4k2R0C28eBRXc,NAME_SEARCH,CGE4?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:21:07.5502603Z"
+  },
+  {
+    "name": "Tim Timmes",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAGlhTwBX1JHO29QWnBt6emYLbKJ1K47xRk,NAME_SEARCH,XcIa?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:21:22.8947379Z"
+  },
+  {
+    "name": "Anna Dominijanni",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAABQT0RMBa96RQPhPxJq3tO86e77V-6gvDNw,NAME_SEARCH,MORU?_ntb=sdgOgEEpR72LAbXXjVhwKQ%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:21:38.1766655Z"
+  }
+]

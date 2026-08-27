@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Lucy Breen",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAu3VfQB4Xt2wHgiHTMWjTMhyGR4PdVPmjQ,NAME_SEARCH,Kju5?_ntb=7lJIkFhWQVi6EIPhRoeQPA%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\",\"1 mutual connection\",\"View all shared connections\"]",
+    "verifiedAt": "2026-08-27T04:44:42.9786848Z",
+    "sourceText": "Lucy Breen 2nd degree connection · 2nd Category Manager The Very Group St Helens, England, United Kingdom 2 years in role 9 years 7 months in company About: I am a co operative and dependable person, comm … Show more 1 mutual connection Message Save"
+  },
+  {
+    "name": "Bryan Campos",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAUvAckBnCHJ3vqAZGhaWm1BpRkJ2x6TTgI,NAME_SEARCH,wAHx?_ntb=7lJIkFhWQVi6EIPhRoeQPA%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:44:58.9278557Z",
+    "sourceText": "Bryan Campos 3rd degree connection · 3rd Saved Buyer/Category Manager WHSmith North America Las Vegas, Nevada, United States 2 years 2 months in role 2 years 2 months in company About: Experienced leader with a demonst … Show more Experience: 2010 – 2024 ( 14 yrs ) A-Bar-L Western Store Retail Consultant 2 Lists Message Saved"
+  },
+  {
+    "name": "Jon Boone",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAtwZ7gBC3O2Yc1JaBcj52n4vIwPg6eNEGI,NAME_SEARCH,yaHM?_ntb=7lJIkFhWQVi6EIPhRoeQPA%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\"]",
+    "verifiedAt": "2026-08-27T04:45:14.6427818Z",
+    "sourceText": "Jon Boone 3rd degree connection · 3rd Buyer Hibbett Sporting Goods Gardendale, Alabama, United States 9 years 11 months in role 9 years 11 months in company Experience: 2003 – 2007 ( 3 yrs 11 mos ) Hibbett Sporting Goods Store Manager Message Save"
+  },
+  {
+    "name": "Chris Taylor",
+    "profileUrl": "https://www.linkedin.com/sales/lead/ACwAAAOtQaIBO2c55Ap8yuuF18L0KOZYIhVcpu4,NAME_SEARCH,k3zp?_ntb=7lJIkFhWQVi6EIPhRoeQPA%3D%3D",
+    "status": "connection_requested_confirmed",
+    "ok": true,
+    "evidence": "sales_navigator_lead_identity_visible;connect_clicked_once;connect_pending_visible:[\"Connect — Pending\",\"1 mutual connection\",\"View all shared connections\"]",
+    "verifiedAt": "2026-08-27T04:45:29.9407459Z",
+    "sourceText": "Chris Taylor 2nd degree connection · 2nd Buyer Costco Wholesale Snoqualmie, Washington, United States 32 years 2 months in role 32 years 2 months in company 1 mutual connection Message Save"
+  }
+]
