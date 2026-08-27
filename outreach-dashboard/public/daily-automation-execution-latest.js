@@ -1,17 +1,17 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": true,
+  "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "cdp",
-  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
+  "browserTransportUsed": "none",
+  "browserTransportFallbackReason": "",
   "extensionReceiptCount": 0,
-  "executionPhase": "browser_execution",
-  "chromeStage": "opened",
-  "chromeOpened": true,
-  "chromeOpenedCount": 1,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 1,
-  "reportingVerdict": "development_performed",
+  "executionPhase": "no_browser_execution",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -21,61 +21,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-ollie-s-bargain-outlet-website-contact",
-      "company": "Ollie's Bargain Outlet",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.ollies.com/pages/reach-the-buyers",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-27T14:24:44.896Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "jmorrison@ollies.us",
-        "targetUrl": "mailto:jmorrison@ollies.us",
-        "subject": "FLEXTAIL global distribution partnership | Ollie's Bargain Outlet",
-        "draft": "Dear Ollie's Bargain Outlet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108,
-          "attachmentValidation": {
-            "ok": false,
-            "expected": [
-              "One Page_Flextail_Monthly_Product_Roadmap_Sorted_2026-07.pdf",
-              "2026 Catalog (HD).pdf",
-              "Distributor Network.png"
-            ],
-            "actual": []
-          },
-          "collateralLinkValidation": {
-            "ok": true,
-            "expected": [
-              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
-              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
-              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
-            ],
-            "matched": [
-              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
-              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
-              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
-            ]
-          }
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jmorrison@ollies.us\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
       "id": "google-customer-stella-blue-sales-website-contact",
       "company": "Stella Blue Sales",
       "action": "email_priority",
@@ -84,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-27T14:24:47.575Z",
+      "timestamp": "2026-08-27T14:31:17.187Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -106,7 +51,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-27T14:24:50.218Z",
+      "timestamp": "2026-08-27T14:31:19.851Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -122,61 +67,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "results": [
     {
-      "id": "google-customer-ollie-s-bargain-outlet-website-contact",
-      "company": "Ollie's Bargain Outlet",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.ollies.com/pages/reach-the-buyers",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-27T14:24:44.896Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "jmorrison@ollies.us",
-        "targetUrl": "mailto:jmorrison@ollies.us",
-        "subject": "FLEXTAIL global distribution partnership | Ollie's Bargain Outlet",
-        "draft": "Dear Ollie's Bargain Outlet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108,
-          "attachmentValidation": {
-            "ok": false,
-            "expected": [
-              "One Page_Flextail_Monthly_Product_Roadmap_Sorted_2026-07.pdf",
-              "2026 Catalog (HD).pdf",
-              "Distributor Network.png"
-            ],
-            "actual": []
-          },
-          "collateralLinkValidation": {
-            "ok": true,
-            "expected": [
-              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
-              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
-              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
-            ],
-            "matched": [
-              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
-              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
-              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
-            ]
-          }
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jmorrison@ollies.us\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
       "id": "google-customer-stella-blue-sales-website-contact",
       "company": "Stella Blue Sales",
       "action": "email_priority",
@@ -185,7 +75,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-27T14:24:47.575Z",
+      "timestamp": "2026-08-27T14:31:17.187Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -207,7 +97,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-27T14:24:50.218Z",
+      "timestamp": "2026-08-27T14:31:19.851Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -741,6 +631,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-granite-marketing-website-contact",
+      "company": "Granite Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-powers-pedersen-sales-group-website-contact",
+      "company": "Powers Pedersen Sales Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
       "action": "develop",
@@ -920,28 +824,28 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 46,
-    "dueNow": 77,
-    "visibleTodayQueue": 82,
-    "potentialPool": 28,
+    "dueNow": 78,
+    "visibleTodayQueue": 81,
+    "potentialPool": 27,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 72,
-    "executableCompanies": 19,
+    "refillNeeded": 73,
+    "executableCompanies": 18,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 111,
+    "executableReserveNeeded": 112,
     "executableByChannel": {
       "linkedin": 2,
       "facebook": 10,
       "instagram": 4,
-      "email": 3
+      "email": 2
     },
     "verifiedSocialCompanies": 16,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 77,
+    "googleDiscovered": 78,
     "facebookDiscovered": 19,
-    "websiteContactDiscovered": 15,
+    "websiteContactDiscovered": 14,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -959,7 +863,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 12
+      "count": 14
     },
     {
       "reason": "official_public_business_email_verified",
@@ -992,11 +896,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 1
-    },
-    {
       "reason": "verified_linkedin_profile_ready",
       "status": "skipped",
       "count": 1
@@ -1004,23 +903,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "official_website_social_channel_verified": 54,
-    "homepage_only_contact_path_requires_verification": 12,
+    "homepage_only_contact_path_requires_verification": 14,
     "official_public_business_email_verified": 12,
     "website_contact_capability_not_verified": 9,
     "concrete_google_discovered_major_customer_instagram": 4,
     "official_website_contact_channel": 4,
     "social_profile_not_first_party_verified": 3,
     "recipient_domain_mail_exchange_unverified": 2,
-    "sent_folder_message_confirmed": 1,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 28,
-    "queueCount": 77,
-    "googleDiscovered": 77,
-    "refillNeeded": 72,
-    "confirmedToday": 8,
+    "potentialPool": 27,
+    "queueCount": 78,
+    "googleDiscovered": 78,
+    "refillNeeded": 73,
+    "confirmedToday": 9,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1032,17 +930,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (54); homepage_only_contact_path_requires_verification (12); official_public_business_email_verified (12).",
-  "recoveryHint": "Refill the high-ICP pool with 72 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (54); homepage_only_contact_path_requires_verification (14); official_public_business_email_verified (12).",
+  "recoveryHint": "Refill the high-ICP pool with 73 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 72 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 72 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 73 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 73 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 28,
-      "refillNeeded": 72
+      "potentialPool": 27,
+      "refillNeeded": 73
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1053,20 +951,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-27\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 46,\n    \"dueNow\": 78,\n    \"visibleTodayQueue\": 81,\n    \"potentialPool\": 27,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 73,\n    \"executableCompanies\": 18,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 112,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4,\n      \"email\": 2\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 78,\n    \"facebookDiscovered\": 19,\n    \"websiteContactDiscovered\": 14,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-27-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-27-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-27\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 44,\n    \"dueNow\": 77,\n    \"visibleTodayQueue\": 81,\n    \"potentialPool\": 27,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 73,\n    \"executableCompanies\": 18,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 112,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 10,\n      \"instagram\": 4,\n      \"email\": 2\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 77,\n    \"facebookDiscovered\": 19,\n    \"websiteContactDiscovered\": 13,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-27-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-27-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-27T14:24:53.344Z",
+      "updatedAt": "2026-08-27T14:31:22.819Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-27",
-      "artifactGeneratedAt": "2026-08-27T14:24:50.537Z",
-      "executionGeneratedAt": "2026-08-27T14:15:06.819Z",
-      "githubSyncUpdatedAt": "2026-08-27T14:15:48.531Z",
+      "artifactGeneratedAt": "2026-08-27T14:31:20.202Z",
+      "executionGeneratedAt": "2026-08-27T14:24:54.218Z",
+      "githubSyncUpdatedAt": "2026-08-27T14:25:43.379Z",
       "counts": {
-        "dailyQueue": 78,
-        "googleDiscovered": 78,
-        "websiteContact": 32,
+        "dailyQueue": 77,
+        "googleDiscovered": 77,
+        "websiteContact": 33,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1132,5 +1030,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "ledgerReconciliationCount": 1,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-27T14:24:54.218Z"
+  "completedAt": "2026-08-27T14:31:23.411Z"
 };
