@@ -12,3 +12,6 @@ credentials.plain.json
 daily-runs/
 daily-automation-latest.json
 daily-automation-state.json
+.agent/runtime/*-reply-inbox-snapshot.json
+.agent/runtime/*-reply-inbox-scan*.json
+.agent/runtime/*-reply-inbox-debug.json
