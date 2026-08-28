@@ -1370,11 +1370,16 @@
     const report = analytics.buildPeriodReport(reportRecords, { type, anchor: query.get('period') || undefined });
     currentReport = report;
     const metricLabels = [
-      ['discovered', '发现客户'], ['profiled', '显式画像评分'], ['approved', '自动决策'],
+      ['discovered', '发现客户'], ['profiled', '画像记录'], ['approved', '自动决策'],
       ['sent', '确认发送'], ['replied', '收到回复'], ['contactCaptured', '获得联系方式'],
       ['opportunity', '成交机会'], ['autoSkipped', '自动跳过'],
     ];
-    const funnelMetrics = metricLabels.slice(0, 7);
+    const headlineMetrics = [
+      ['discovered', '发现客户'], ['icpAverage', '平均 ICP 评分'], ['approved', '自动决策'],
+      ['sent', '确认发送'], ['replied', '收到回复'], ['contactCaptured', '获得联系方式'],
+      ['opportunity', '成交机会'], ['autoSkipped', '自动跳过'],
+    ];
+    const funnelMetrics = metricLabels.filter(([key]) => key !== 'profiled').slice(0, 6);
     const previous = shiftReportAnchor(type, report.period.anchor, -1);
     const next = shiftReportAnchor(type, report.period.anchor, 1);
     const qualityTotal = report.dataQuality.missingTimestamps + report.dataQuality.invalidTimestamps;
@@ -1389,9 +1394,11 @@
         <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
-      <div class="cc-quality cc-report-scope">数据口径：汇报数字是本周期有时间证据的唯一客户累计；“显式画像评分”只统计真实 profiledAt，不再由发送记录反向补齐。今日队列是当前待处理快照（${queueSnapshotCount} 个），两者不直接相加或要求相等。核心触达漏斗一致性：${report.consistency.funnelMonotonic ? '通过' : `异常（${report.consistency.violations.join(', ')}）`}。</div>
+      <div class="cc-quality cc-report-scope">数据口径：汇报数字是本周期有时间证据的唯一客户累计；平均 ICP 评分只使用客户真实 fitScore/icpScore，并按客户去重，缺失分数不按 0 计。当前已评分 ${report.icpScoring.scoredCustomers}/${report.icpScoring.discoveredCustomers} 家（覆盖率 ${rate(report.icpScoring.coverage)}）。今日队列是当前待处理快照（${queueSnapshotCount} 个），两者不直接相加或要求相等。核心触达漏斗一致性：${report.consistency.funnelMonotonic ? '通过' : `异常（${report.consistency.violations.join(', ')}）`}。</div>
       ${reportExecutiveSummary(report)}
-      <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<a class="cc-kpi cc-kpi-link ${selectedMetric === key ? 'active' : ''}" href="${urlFor('reports', { report: type, period: report.period.anchor, detail: key })}"><span>${label}</span><b>${report.metrics[key]}</b></a>`).join('')}</div>
+      <div class="cc-kpis cc-report-kpis">${headlineMetrics.map(([key, label]) => key === 'icpAverage'
+        ? `<div class="cc-kpi"><span>${label}</span><b>${report.icpScoring.average === null ? '暂无' : `${report.icpScoring.average}/100`}</b><small>已评分 ${report.icpScoring.scoredCustomers} 家</small></div>`
+        : `<a class="cc-kpi cc-kpi-link ${selectedMetric === key ? 'active' : ''}" href="${urlFor('reports', { report: type, period: report.period.anchor, detail: key })}"><span>${label}</span><b>${report.metrics[key]}</b></a>`).join('')}</div>
       ${selectedMetric ? reportMetricDetail(report, selectedMetric, selectedMetricLabel) : ''}
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${replyConversionPanel(report)}
