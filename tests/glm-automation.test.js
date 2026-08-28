@@ -1708,7 +1708,7 @@ test('recoverable social composer failures fall back across verified channels wi
   assert.ok(mainSource.includes("['email', cameFromWebsiteSocialFallback ? '' : (channels.websiteContact || lead.contactUrl || lead.website)]"));
   assert.ok(mainSource.includes('cameFromWebsiteSocialFallback'));
   assert.ok(mainSource.includes('if (!blockingAutomationResultFor(fallback)) return fallback'));
-  assert.ok(mainSource.includes('if (resultTaskIds.some(id => itemTaskIds.has(id))) return false'));
+  assert.ok(mainSource.includes('Stable task IDs may survive a later first-party channel promotion'));
   assert.ok(mainSource.includes('fallbackPlatform: alternateFallback.platform'));
   assert.ok(mainSource.includes('driver_timeout_bounded:80000'));
   assert.ok(mainSource.includes('fallbackDepth < 3'));
@@ -2351,6 +2351,8 @@ test('a social task only bypasses its website failure after a verified target-ro
   assert.ok(mainSource.includes('function socialTargetIdentifiesCompany'));
   assert.ok(mainSource.includes('if (!socialTargetIdentifiesCompany(item)) return false'));
   assert.match(mainSource, /currentTarget === failedTarget/);
+  assert.doesNotMatch(mainSource, /resultTaskIds\.some\(id => itemTaskIds\.has\(id\)\)\) return false/);
+  assert.ok(mainSource.includes('Same-day terminal attempts remain'));
   assert.match(mainSource, /send_unconfirmed\|submit_unconfirmed[\s\S]*customer_interaction\|message_sent\|draft_inserted/);
 });
 

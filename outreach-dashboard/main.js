@@ -395,12 +395,10 @@ function verifiedSocialRouteChangedAfterWebsitePreSendFailure(item = {}, result 
   if (!isSocialQueueItem(item) || item.officialSocialProfileVerified !== true) return false;
   if (!socialTargetIdentifiesCompany(item)) return false;
   if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(result.status || ''))) return false;
-  const itemTaskIds = new Set([item.id, item.taskId, item.task_id].filter(Boolean).map(String));
-  const resultTaskIds = [result.id, result.taskId, result.task_id].filter(Boolean).map(String);
-  // A website fallback produced by this exact social task is still the same
-  // attempt. Do not mistake the fallback URL for newly discovered social
-  // evidence and replay the same company indefinitely.
-  if (resultTaskIds.some(id => itemTaskIds.has(id))) return false;
+  // Stable task IDs may survive a later first-party channel promotion. Compare
+  // the actual verified target route instead of treating an old website URL as
+  // the same action as today's social URL. Same-day terminal attempts remain
+  // protected separately by the Shanghai-day retry circuit below.
   const currentTarget = canonicalExactAutomationKey(
     item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl,
   );
@@ -4696,11 +4694,9 @@ function websiteCanReinspectForFirstPartySocial(item = {}) {
 function verifiedSocialCanBypassWebsitePreSendBlock(item = {}, block = null) {
   if (!isSocialQueueItem(item) || item.officialSocialProfileVerified !== true || !block) return false;
   if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(block.status || ''))) return false;
-  // If a social task already fell back to an unreachable website, that result
-  // must not make the original social task executable again on every run. The
-  // Bypass is only for a distinct, company-matching verified social target
-  // discovered after a website-only attempt. Stable task IDs may survive that
-  // channel promotion, so compare the target route as well as the task ID.
+  // A historical website-only failure must not suppress a currently verified
+  // company-matching social target. Stable task IDs may survive channel
+  // promotion, so the actual target route is authoritative.
   const blockTaskId = String(block.task_id || block.taskId || block.id || '');
   if (blockTaskId && blockTaskId === String(item.id || item.taskId || '')
     && !verifiedSocialRouteChangedAfterWebsitePreSendFailure(item, block)) return false;
