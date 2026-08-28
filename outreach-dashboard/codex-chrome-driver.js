@@ -1734,6 +1734,117 @@ function linkedinVisibleActionExpression(labels) {
   })()`;
 }
 
+async function inspectReplyInbox(payload = {}) {
+  const port = Number(payload.port || 9224);
+  if (port !== 9224) return { ok: false, evidence: 'dedicated_cdp_9224_required', contextText: '' };
+  const tab = await findTab(port, payload.tabId, payload.targetUrl);
+  if (!tab || !tab.webSocketDebuggerUrl) {
+    return { ok: false, evidence: 'reply_inbox_tab_not_found', contextText: '' };
+  }
+  const readContext = () => evaluateJson(tab, `(() => {
+    const text = String(document.body && document.body.innerText || '')
+      .replace(/\\r/g, '')
+      .replace(/\\n{3,}/g, '\\n\\n')
+      .trim()
+      .slice(0, 50000);
+    const candidates = Array.from(document.querySelectorAll('[role="row"],[role="listitem"],li,a[href],div[tabindex]'))
+      .map(el => {
+        const rect = el.getBoundingClientRect();
+        const value = String(el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim();
+        return {
+          tag: el.tagName,
+          role: el.getAttribute('role') || '',
+          href: el.href || '',
+          text: value.slice(0, 900),
+          visible: rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight,
+        };
+      })
+      .filter(item => item.visible && item.text && item.text.length <= 900)
+      .slice(0, 400);
+    const scrollers = Array.from(document.querySelectorAll('*')).map(el => {
+      const rect = el.getBoundingClientRect();
+      return {
+        tag: el.tagName,
+        className: String(el.className || '').slice(0, 180),
+        role: el.getAttribute('role') || '',
+        x: Math.round(rect.x),
+        y: Math.round(rect.y),
+        width: Math.round(rect.width),
+        height: Math.round(rect.height),
+        clientHeight: el.clientHeight || 0,
+        scrollHeight: el.scrollHeight || 0,
+        scrollTop: el.scrollTop || 0,
+      };
+    }).filter(item => item.clientHeight >= 200 && item.scrollHeight > item.clientHeight + 100)
+      .sort((a, b) => (b.scrollHeight - b.clientHeight) - (a.scrollHeight - a.clientHeight))
+      .slice(0, 30);
+    return JSON.stringify({ title: document.title || '', url: location.href, text, candidates, scrollers });
+  })()`, 10000).catch(() => null);
+  const contexts = [];
+  let context = await readContext();
+  if (context) contexts.push(context);
+  const passes = Math.max(0, Math.min(Number(payload.scrollPasses || 0), 80));
+  for (let pass = 0; pass < passes; pass += 1) {
+    const moved = await evaluateJson(tab, `(() => {
+      const candidates = Array.from(document.querySelectorAll('*')).map(el => {
+        const rect = el.getBoundingClientRect();
+        return {
+          el,
+          x: rect.x,
+          y: rect.y,
+          width: rect.width,
+          height: rect.height,
+          clientHeight: el.clientHeight || 0,
+          scrollHeight: el.scrollHeight || 0,
+          scrollTop: el.scrollTop || 0,
+        };
+      }).filter(item => item.clientHeight >= 240
+        && item.scrollHeight > item.clientHeight + 120
+        && item.width >= 220
+        && item.width <= innerWidth * 0.72
+        && item.x < innerWidth * 0.72
+        && item.y < innerHeight);
+      candidates.sort((a, b) => (b.scrollHeight - b.clientHeight) - (a.scrollHeight - a.clientHeight)
+        || a.x - b.x || b.height - a.height);
+      const item = candidates[0];
+      if (!item) return JSON.stringify({ moved: false, reason: 'reply_list_scroller_not_found' });
+      const before = item.el.scrollTop;
+      item.el.scrollTop = Math.min(item.el.scrollHeight, before + Math.max(260, item.el.clientHeight * 0.8));
+      return JSON.stringify({ moved: item.el.scrollTop > before, before, after: item.el.scrollTop, max: item.el.scrollHeight - item.el.clientHeight });
+    })()`, 5000).catch(() => null);
+    if (!moved || !moved.moved) break;
+    await sleep(500);
+    context = await readContext();
+    if (context) contexts.push(context);
+  }
+  context = contexts[contexts.length - 1] || context;
+  const url = String(context && context.url || tab.url || payload.targetUrl || '');
+  let host = '';
+  try { host = new URL(url).hostname.toLowerCase(); } catch {}
+  const expected = String(payload.platform || '').toLowerCase();
+  const hostMatches = expected === 'alibaba'
+    ? host === 'qiye.aliyun.com'
+    : expected === 'facebook'
+      ? /(^|\.)facebook\.com$/.test(host)
+      : expected === 'instagram'
+        ? /(^|\.)instagram\.com$/.test(host)
+        : false;
+  if (!hostMatches) {
+    return { ok: false, evidence: 'reply_inbox_identity_mismatch', contextText: '', url, title: context && context.title || '' };
+  }
+  return {
+    ok: Boolean(context && context.text),
+    platform: expected,
+    contextText: [...new Set(contexts.map(item => item.text).filter(Boolean))].join('\n\n--- inbox scan page ---\n\n'),
+    candidates: contexts.flatMap(item => item.candidates || []),
+    scrollers: context && context.scrollers || [],
+    scanPages: contexts.length,
+    title: context && context.title || tab.title || '',
+    url,
+    evidence: context && context.text ? `${expected}_reply_inbox_context_collected_read_only` : `${expected}_reply_inbox_context_unavailable`,
+  };
+}
+
 function linkedinOpenCandidateMenuExpression(name) {
   return `(() => {
     const expected = ${JSON.stringify(String(name || ''))};
@@ -2087,6 +2198,7 @@ async function main() {
   else if (command === 'prepare-social-draft') result = await prepareSocialDraft(payload);
   else if (command === 'engage-social-profile') result = await engageSocialProfile(payload);
   else if (command === 'inspect-social-context') result = await inspectSocialContext(payload);
+  else if (command === 'inspect-reply-inbox') result = await inspectReplyInbox(payload);
   else if (command === 'connect-linkedin-sales-search') result = await connectLinkedinSalesSearch(payload);
   else if (command === 'connect-linkedin-sales-lead') result = await connectLinkedinSalesLead(payload);
   else if (command === 'inspect-linkedin-sales-lead') result = await inspectLinkedinSalesLead(payload);

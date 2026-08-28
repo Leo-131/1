@@ -104,7 +104,15 @@ function buildCompanyTruth({ leads = [], results = [], records = [] } = {}) {
     if (channel !== 'research') existing.channels = [...new Set([...existing.channels, channel])];
     const proof = evidenceScore(item);
     if (proof.evidenceUrl) existing.evidence.push({ channel, ...proof });
-    if (item.status || item.sendStatus) existing.history.push({ status: item.status || item.sendStatus, timestamp: item.timestamp || item.lastTouch || '', channel, evidence: item.evidence || '' });
+    if (item.status || item.sendStatus) existing.history.push({
+      status: item.status || item.sendStatus,
+      timestamp: item.timestamp || item.lastTouch || '',
+      channel,
+      evidence: item.evidence || '',
+      repliedAt: item.repliedAt || item.replyAt || '',
+      replyType: item.replyType || '',
+      replyOutcome: item.replyOutcome || '',
+    });
   }
   return [...companies.values()].map(row => ({ ...row, evidence: row.evidence.sort((a, b) => b.score - a.score), history: row.history.sort((a, b) => Date.parse(a.timestamp || 0) - Date.parse(b.timestamp || 0)) }));
 }
@@ -145,7 +153,13 @@ function buildLearning(companies = []) {
       const bucket = buckets.get(channel) || { channel, confirmed: 0, replies: 0, opportunities: 0 };
       const status = clean(event.status);
       if (status === 'sent_confirmed' || status === 'submitted_confirmed') bucket.confirmed += 1;
-      if (status.includes('repl')) bucket.replies += 1;
+      const replyEvidence = /recipient_(?:auto_)?reply_received|recipient_replied|inbound_reply_(?:received|visible)|reply_bubble_visible/i.test(String(event.evidence || ''));
+      if (status.includes('repl') || event.repliedAt || replyEvidence) {
+        bucket.replies += 1;
+        if (event.replyType === 'human') bucket.humanReplies = (bucket.humanReplies || 0) + 1;
+        else if (event.replyType === 'automated') bucket.automatedReplies = (bucket.automatedReplies || 0) + 1;
+        else bucket.unclassifiedReplies = (bucket.unclassifiedReplies || 0) + 1;
+      }
       if (OUTCOME_STATUSES.has(status) && !status.includes('repl')) bucket.opportunities += 1;
       buckets.set(channel, bucket);
     }
