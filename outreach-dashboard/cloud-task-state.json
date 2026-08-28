@@ -4,8 +4,8 @@
   "mode": "cloud_control_plane_local_browser_executor",
   "shanghaiDate": "2026-08-28",
   "status": "active",
-  "revision": 16,
-  "updatedAt": "2026-08-28T05:17:49.087Z",
+  "revision": 17,
+  "updatedAt": "2026-08-28T05:40:14.117Z",
   "objective": {
     "dailyTarget": 100,
     "countries": [
@@ -50,12 +50,12 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "e923b2c40ff2aff84e620dbe7d1729af79cb2dfe",
-    "upstreamHead": "e923b2c40ff2aff84e620dbe7d1729af79cb2dfe",
-    "remoteHead": "e923b2c40ff2aff84e620dbe7d1729af79cb2dfe"
+    "localHead": "573f4c1c9aa8acb554db12a197caa2b577a976d2",
+    "upstreamHead": "573f4c1c9aa8acb554db12a197caa2b577a976d2",
+    "remoteHead": "573f4c1c9aa8acb554db12a197caa2b577a976d2"
   },
   "latestExecution": {
-    "completedAt": "2026-08-28T05:14:48.774Z",
+    "completedAt": "2026-08-28T05:40:05.635Z",
     "browserTransportUsed": "none",
     "chromeOpened": false,
     "realDevelopmentCount": 0

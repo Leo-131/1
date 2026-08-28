@@ -1277,7 +1277,8 @@
     return date.toISOString().slice(0, 10);
   }
   function rate(value) {
-    return `${Math.round(Number(value || 0) * 100)}%`;
+    const percent = Math.round(Number(value || 0) * 1000) / 10;
+    return `${Number.isInteger(percent) ? percent.toFixed(0) : percent.toFixed(1)}%`;
   }
   function rateDetail(value, numerator, denominator) {
     return `${rate(value)} (${Number(numerator || 0)}/${Number(denominator || 0)})`;
@@ -1354,7 +1355,7 @@
       const record = entry.record || {};
       const target = entryUrl(record);
       const customer = target ? `<a href="${esc(target)}" target="_blank" rel="noopener">${esc(record.company || record.name)}</a>` : esc(record.company || record.name);
-      const stageLabels = { discovered: '发现', profiled: '画像评分', approved: '决策通过', sent: '确认发送', replied: '收到回复', contactCaptured: '获得联系方式', opportunity: '成交机会' };
+      const stageLabels = { discovered: '发现', profiled: '显式画像评分', approved: '决策通过', sent: '确认发送', replied: '收到回复', contactCaptured: '获得联系方式', opportunity: '成交机会' };
       const inferredStage = String(entry.eventEvidence && entry.eventEvidence[metric] || '').replace('inferred_from_', '');
       const evidenceType = entry.eventEvidence && entry.eventEvidence[metric] === 'explicit'
         ? '原始阶段时间证据'
@@ -1369,7 +1370,7 @@
     const report = analytics.buildPeriodReport(reportRecords, { type, anchor: query.get('period') || undefined });
     currentReport = report;
     const metricLabels = [
-      ['discovered', '发现客户'], ['profiled', '画像评分'], ['approved', '自动决策'],
+      ['discovered', '发现客户'], ['profiled', '显式画像评分'], ['approved', '自动决策'],
       ['sent', '确认发送'], ['replied', '收到回复'], ['contactCaptured', '获得联系方式'],
       ['opportunity', '成交机会'], ['autoSkipped', '自动跳过'],
     ];
@@ -1388,7 +1389,7 @@
         <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
-      <div class="cc-quality cc-report-scope">数据口径：汇报数字是本周期有时间证据的唯一客户累计；今日队列是当前待处理快照（${queueSnapshotCount} 个），两者不直接相加或要求相等。漏斗一致性：${report.consistency.funnelMonotonic ? '通过' : `异常（${report.consistency.violations.join(', ')}）`}。</div>
+      <div class="cc-quality cc-report-scope">数据口径：汇报数字是本周期有时间证据的唯一客户累计；“显式画像评分”只统计真实 profiledAt，不再由发送记录反向补齐。今日队列是当前待处理快照（${queueSnapshotCount} 个），两者不直接相加或要求相等。核心触达漏斗一致性：${report.consistency.funnelMonotonic ? '通过' : `异常（${report.consistency.violations.join(', ')}）`}。</div>
       ${reportExecutiveSummary(report)}
       <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<a class="cc-kpi cc-kpi-link ${selectedMetric === key ? 'active' : ''}" href="${urlFor('reports', { report: type, period: report.period.anchor, detail: key })}"><span>${label}</span><b>${report.metrics[key]}</b></a>`).join('')}</div>
       ${selectedMetric ? reportMetricDetail(report, selectedMetric, selectedMetricLabel) : ''}

@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-28T05:12:43.890Z",
+  "generatedAt": "2026-08-28T05:38:46.667Z",
   "companies": [
     {
       "companyId": "company_ed6567ba8d8e4e77",
@@ -132,7 +132,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": "2026-08-27T14:22:22.468Z"
+          "checkedAt": "2026-08-28T05:38:18.234Z"
         },
         {
           "channel": "linkedin",
@@ -142,7 +142,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": "2026-08-27T14:22:22.468Z"
+          "checkedAt": "2026-08-28T05:38:18.234Z"
         },
         {
           "channel": "facebook",
@@ -152,7 +152,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": "2026-08-27T14:22:22.468Z"
+          "checkedAt": "2026-08-28T05:38:18.234Z"
         },
         {
           "channel": "linkedin",
@@ -162,7 +162,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": "2026-08-27T14:22:22.468Z"
+          "checkedAt": "2026-08-28T05:38:18.234Z"
         },
         {
           "channel": "website_form",
@@ -465,7 +465,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-28T05:12:01.855Z"
+          "checkedAt": "2026-08-28T05:38:06.804Z"
         },
         {
           "channel": "facebook",
@@ -475,7 +475,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-28T05:12:01.855Z"
+          "checkedAt": "2026-08-28T05:38:06.804Z"
         },
         {
           "channel": "facebook",
@@ -485,7 +485,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-28T05:12:01.855Z"
+          "checkedAt": "2026-08-28T05:38:06.804Z"
         },
         {
           "channel": "instagram",
@@ -495,7 +495,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-28T05:12:01.855Z"
+          "checkedAt": "2026-08-28T05:38:06.804Z"
         },
         {
           "channel": "website_form",
@@ -1436,7 +1436,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://latulippe.com/",
-          "checkedAt": "2026-08-27T14:22:37.615Z"
+          "checkedAt": "2026-08-28T05:38:35.033Z"
         },
         {
           "channel": "facebook",
@@ -1446,7 +1446,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://latulippe.com/",
-          "checkedAt": "2026-08-27T14:22:37.615Z"
+          "checkedAt": "2026-08-28T05:38:35.033Z"
         },
         {
           "channel": "facebook",
@@ -1456,7 +1456,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://latulippe.com/",
-          "checkedAt": "2026-08-27T14:22:37.615Z"
+          "checkedAt": "2026-08-28T05:38:35.033Z"
         },
         {
           "channel": "instagram",
@@ -1466,7 +1466,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://latulippe.com/",
-          "checkedAt": "2026-08-27T14:22:37.615Z"
+          "checkedAt": "2026-08-28T05:38:35.033Z"
         },
         {
           "channel": "website_form",
@@ -2137,7 +2137,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://garibaldisupplyco.com/",
-          "checkedAt": "2026-08-27T14:22:36.786Z"
+          "checkedAt": "2026-08-28T05:38:31.337Z"
         },
         {
           "channel": "instagram",
@@ -2147,7 +2147,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://garibaldisupplyco.com/",
-          "checkedAt": "2026-08-27T14:22:36.786Z"
+          "checkedAt": "2026-08-28T05:38:31.337Z"
         },
         {
           "channel": "instagram",
@@ -2157,7 +2157,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://garibaldisupplyco.com/",
-          "checkedAt": "2026-08-27T14:22:36.786Z"
+          "checkedAt": "2026-08-28T05:38:31.337Z"
         },
         {
           "channel": "website_form",
@@ -6980,7 +6980,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://northernsporting.com/",
-          "checkedAt": "2026-08-27T14:22:34.611Z"
+          "checkedAt": "2026-08-28T05:38:21.794Z"
         },
         {
           "channel": "instagram",
@@ -6990,7 +6990,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://northernsporting.com/",
-          "checkedAt": "2026-08-27T14:22:34.611Z"
+          "checkedAt": "2026-08-28T05:38:21.794Z"
         },
         {
           "channel": "linkedin",
@@ -7000,7 +7000,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://northernsporting.com/",
-          "checkedAt": "2026-08-27T14:22:34.611Z"
+          "checkedAt": "2026-08-28T05:38:21.794Z"
         },
         {
           "channel": "instagram",
@@ -7010,7 +7010,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://northernsporting.com/",
-          "checkedAt": "2026-08-27T14:22:34.611Z"
+          "checkedAt": "2026-08-28T05:38:21.794Z"
         },
         {
           "channel": "website_form",
@@ -7608,7 +7608,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.tauntonleisure.com/",
-          "checkedAt": "2026-08-27T14:22:36.450Z"
+          "checkedAt": "2026-08-28T05:38:29.480Z"
         },
         {
           "channel": "instagram",
@@ -7618,7 +7618,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.tauntonleisure.com/",
-          "checkedAt": "2026-08-27T14:22:36.450Z"
+          "checkedAt": "2026-08-28T05:38:29.480Z"
         },
         {
           "channel": "facebook",
@@ -7628,7 +7628,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.tauntonleisure.com/",
-          "checkedAt": "2026-08-27T14:22:36.450Z"
+          "checkedAt": "2026-08-28T05:38:29.480Z"
         },
         {
           "channel": "instagram",
@@ -7638,7 +7638,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.tauntonleisure.com/",
-          "checkedAt": "2026-08-27T14:22:36.450Z"
+          "checkedAt": "2026-08-28T05:38:29.480Z"
         },
         {
           "channel": "website_form",
@@ -8265,7 +8265,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-28T05:12:31.288Z"
+          "checkedAt": "2026-08-28T05:38:08.023Z"
         },
         {
           "channel": "instagram",
@@ -8275,7 +8275,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-28T05:12:31.288Z"
+          "checkedAt": "2026-08-28T05:38:08.023Z"
         },
         {
           "channel": "website_form",
@@ -8588,7 +8588,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.heronoutdoors.co/",
-          "checkedAt": "2026-08-27T14:22:36.036Z"
+          "checkedAt": "2026-08-28T05:38:25.777Z"
         },
         {
           "channel": "instagram",
@@ -8598,7 +8598,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.heronoutdoors.co/",
-          "checkedAt": "2026-08-27T14:22:36.036Z"
+          "checkedAt": "2026-08-28T05:38:25.777Z"
         },
         {
           "channel": "website_form",
@@ -10940,10 +10940,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-21T08:20:23.091Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-21",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "human",
+          "replyOutcome": "not_interested"
         }
       ]
     },
@@ -11808,10 +11808,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-21T09:23:19.038Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-22",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "human",
+          "replyOutcome": "qualified_response"
         }
       ]
     },
@@ -13803,10 +13803,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-14T07:18:11.484Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-14",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "acknowledgement"
         }
       ]
     },
@@ -14285,7 +14285,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-28T05:12:00.285Z"
+          "checkedAt": "2026-08-28T05:38:05.863Z"
         },
         {
           "channel": "instagram",
@@ -14295,7 +14295,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-28T05:12:00.285Z"
+          "checkedAt": "2026-08-28T05:38:05.863Z"
         },
         {
           "channel": "website_form",
@@ -15684,10 +15684,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-25T13:36:26.900Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "ticket_created"
         }
       ]
     },
@@ -15849,10 +15849,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-25T14:09:30.024Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "acknowledgement"
         }
       ]
     },
@@ -17231,10 +17231,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-25T13:57:54.758Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "ticket_created"
         }
       ]
     },
@@ -19874,10 +19874,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-10T11:00:00.000Z",
           "channel": "email",
-          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_ticket_CS_1923706_confirms_safe_receipt",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_ticket_CS_1923706_confirms_safe_receipt;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "ticket_created"
         }
       ]
     },
@@ -22150,10 +22150,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-04T03:35:36.106Z",
           "channel": "website_form",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;buyer_contact_received;message_list_date:2026-08-04",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "human",
+          "replyOutcome": "buyer_routing"
         }
       ]
     },
@@ -23115,10 +23115,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-10T10:33:00.000Z",
           "channel": "email",
-          "evidence": "official_contact_page_publishes_info_at_outdoorworlddirect_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;inbound_request_receipt_100603_confirmed;no_matched_DSN_in_bounded_scan",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_contact_page_publishes_info_at_outdoorworlddirect_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;inbound_request_receipt_100603_confirmed;no_matched_DSN_in_bounded_scan;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "ticket_created"
         }
       ]
     },
@@ -23329,10 +23329,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-10T11:21:00.000Z",
           "channel": "email",
-          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "acknowledgement"
         }
       ]
     },
@@ -23821,10 +23821,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-21T12:04:20.859Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-21",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "ticket_created"
         }
       ]
     },
@@ -24134,10 +24134,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-10T09:53:00.000Z",
           "channel": "website_form",
-          "evidence": "official_company_terms_publish_kundeservice_at_spejdersport_dk_with_company_identity;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_company_terms_publish_kundeservice_at_spejdersport_dk_with_company_identity;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "acknowledgement"
         }
       ]
     },
@@ -26852,10 +26852,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-21T12:04:54.913Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;sample_request_received;message_list_date:2026-08-21",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "human",
+          "replyOutcome": "sample_request"
         }
       ]
     },
@@ -33611,7 +33611,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-27T14:12:45.671Z"
+          "checkedAt": "2026-08-28T05:12:13.534Z"
         },
         {
           "channel": "facebook",
@@ -33621,7 +33621,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-27T14:12:45.671Z"
+          "checkedAt": "2026-08-28T05:12:13.534Z"
         },
         {
           "channel": "linkedin",
@@ -33631,7 +33631,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-27T14:12:45.671Z"
+          "checkedAt": "2026-08-28T05:12:13.534Z"
         },
         {
           "channel": "website_form",
@@ -33788,7 +33788,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://suggsnicholasshea.com/contact/",
+          "evidenceUrl": "https://suggsnicholasshea.com/about/",
           "checkedAt": ""
         }
       ],
@@ -33881,10 +33881,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-24T12:44:57.804Z",
           "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-25",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "human",
+          "replyOutcome": "qualified_response"
         }
       ]
     },
@@ -33988,7 +33988,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/en/contact-us",
+          "evidenceUrl": "https://www.sail.ca/",
           "checkedAt": ""
         },
         {
@@ -36325,7 +36325,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://escala.ca/",
-          "checkedAt": "2026-08-27T14:22:20.075Z"
+          "checkedAt": "2026-08-28T05:38:16.329Z"
         },
         {
           "channel": "website_form",
@@ -36386,7 +36386,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.roam-sales.com/",
-          "checkedAt": "2026-08-27T14:22:19.068Z"
+          "checkedAt": "2026-08-28T05:38:17.013Z"
         },
         {
           "channel": "facebook",
@@ -36396,7 +36396,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.roam-sales.com/",
-          "checkedAt": "2026-08-27T14:22:19.068Z"
+          "checkedAt": "2026-08-28T05:38:17.013Z"
         }
       ],
       "history": [
@@ -36483,7 +36483,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.7summitssportsinc.com/",
-          "checkedAt": "2026-08-27T14:22:19.558Z"
+          "checkedAt": "2026-08-28T05:38:17.288Z"
         }
       ],
       "history": [
@@ -36897,7 +36897,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.evo.com/",
-          "checkedAt": "2026-08-27T14:22:22.082Z"
+          "checkedAt": "2026-08-28T05:38:18.677Z"
         },
         {
           "channel": "facebook",
@@ -36907,7 +36907,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.evo.com/",
-          "checkedAt": "2026-08-27T14:22:22.082Z"
+          "checkedAt": "2026-08-28T05:38:18.677Z"
         },
         {
           "channel": "website_form",
@@ -37022,7 +37022,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://highcountryoutfitters.com/",
-          "checkedAt": "2026-08-27T14:22:20.818Z"
+          "checkedAt": "2026-08-28T05:38:19.140Z"
         },
         {
           "channel": "website_form",
@@ -37031,7 +37031,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://highcountryoutfitters.com/pages/contact-us",
+          "evidenceUrl": "https://highcountryoutfitters.com/",
           "checkedAt": ""
         },
         {
@@ -37042,7 +37042,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://highcountryoutfitters.com/",
-          "checkedAt": "2026-08-27T14:22:20.818Z"
+          "checkedAt": "2026-08-28T05:38:19.140Z"
         },
         {
           "channel": "website_form",
@@ -37091,7 +37091,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.tacticaldistributors.co.za/bulk-wholesale/",
-          "checkedAt": "2026-08-27T14:22:32.088Z"
+          "checkedAt": "2026-08-28T05:38:25.191Z"
         },
         {
           "channel": "facebook",
@@ -37247,7 +37247,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wilcor.net/",
-          "checkedAt": "2026-08-27T14:22:35.442Z"
+          "checkedAt": "2026-08-28T05:38:28.386Z"
         },
         {
           "channel": "instagram",
@@ -37257,7 +37257,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wilcor.net/",
-          "checkedAt": "2026-08-27T14:22:35.442Z"
+          "checkedAt": "2026-08-28T05:38:28.386Z"
         },
         {
           "channel": "website_form",
@@ -37325,7 +37325,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.wileyoutdoorproducts.com/",
-          "checkedAt": "2026-08-27T14:22:36.300Z"
+          "checkedAt": "2026-08-28T05:38:26.393Z"
         }
       ],
       "history": [
@@ -37374,7 +37374,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.highgearsales.ca/",
-          "checkedAt": "2026-08-27T14:22:35.880Z"
+          "checkedAt": "2026-08-28T05:38:28.992Z"
         },
         {
           "channel": "instagram",
@@ -37384,7 +37384,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.highgearsales.ca/",
-          "checkedAt": "2026-08-27T14:22:35.880Z"
+          "checkedAt": "2026-08-28T05:38:28.992Z"
         }
       ],
       "history": [
@@ -37786,7 +37786,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://alpenglowsports.com/",
-          "checkedAt": "2026-08-27T14:22:37.288Z"
+          "checkedAt": "2026-08-28T05:38:29.046Z"
         },
         {
           "channel": "email",
@@ -37806,7 +37806,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://alpenglowsports.com/",
-          "checkedAt": "2026-08-27T14:22:37.288Z"
+          "checkedAt": "2026-08-28T05:38:29.046Z"
         }
       ],
       "history": [
@@ -37865,7 +37865,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-28T05:12:03.387Z"
+          "checkedAt": "2026-08-28T05:38:10.909Z"
         },
         {
           "channel": "facebook",
@@ -37875,7 +37875,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-28T05:12:03.387Z"
+          "checkedAt": "2026-08-28T05:38:10.909Z"
         }
       ],
       "history": [
@@ -37997,7 +37997,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://henrysportsgroup.ca/about",
-          "checkedAt": "2026-08-27T14:22:39.421Z"
+          "checkedAt": "2026-08-28T05:38:31.562Z"
         },
         {
           "channel": "website_form",
@@ -38047,7 +38047,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://360adventurecollective.org/",
-          "checkedAt": "2026-08-27T10:52:36.179Z"
+          "checkedAt": "2026-08-28T05:38:38.198Z"
         },
         {
           "channel": "instagram",
@@ -38057,7 +38057,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://360adventurecollective.org/",
-          "checkedAt": "2026-08-27T10:52:36.179Z"
+          "checkedAt": "2026-08-28T05:38:38.198Z"
         },
         {
           "channel": "linkedin",
@@ -38067,7 +38067,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://360adventurecollective.org/",
-          "checkedAt": "2026-08-27T10:52:36.179Z"
+          "checkedAt": "2026-08-28T05:38:38.198Z"
         },
         {
           "channel": "website_form",
@@ -38250,10 +38250,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-05T05:59:11.363Z",
           "channel": "website_form",
-          "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-05",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "acknowledgement"
         }
       ]
     },
@@ -38291,7 +38291,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://theevansgroup.net/about/",
-          "checkedAt": "2026-08-27T10:52:36.028Z"
+          "checkedAt": "2026-08-28T05:38:38.013Z"
         },
         {
           "channel": "facebook",
@@ -38301,7 +38301,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://theevansgroup.net/about/",
-          "checkedAt": "2026-08-27T10:52:36.028Z"
+          "checkedAt": "2026-08-28T05:38:38.013Z"
         }
       ],
       "history": [
@@ -38510,7 +38510,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
-          "checkedAt": "2026-08-27T10:52:39.996Z"
+          "checkedAt": "2026-08-28T05:38:40.098Z"
         },
         {
           "channel": "facebook",
@@ -38520,7 +38520,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
-          "checkedAt": "2026-08-27T10:52:39.996Z"
+          "checkedAt": "2026-08-28T05:38:40.098Z"
         },
         {
           "channel": "website_form",
@@ -38529,7 +38529,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.mountainwarehouse.com/",
+          "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
           "checkedAt": ""
         }
       ],
@@ -39673,7 +39673,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-28T05:12:04.151Z"
+          "checkedAt": "2026-08-28T05:38:08.098Z"
         },
         {
           "channel": "facebook",
@@ -39683,7 +39683,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-28T05:12:04.151Z"
+          "checkedAt": "2026-08-28T05:38:08.098Z"
         }
       ],
       "history": [
@@ -40067,7 +40067,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-28T05:12:06.285Z"
+          "checkedAt": "2026-08-28T05:38:11.633Z"
         },
         {
           "channel": "instagram",
@@ -40400,7 +40400,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-28T05:12:08.138Z"
+          "checkedAt": "2026-08-28T05:38:14.730Z"
         },
         {
           "channel": "facebook",
@@ -40410,7 +40410,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-28T05:12:08.138Z"
+          "checkedAt": "2026-08-28T05:38:14.730Z"
         }
       ],
       "history": [
@@ -40505,7 +40505,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-          "checkedAt": "2026-08-28T05:12:07.269Z"
+          "checkedAt": "2026-08-28T05:38:13.171Z"
         }
       ],
       "history": [
@@ -44554,10 +44554,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-05T13:10:00.000Z",
           "channel": "email",
-          "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
+          "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-05",
+          "repliedAt": "2026-08-28T05:26:00.000Z",
+          "replyType": "automated",
+          "replyOutcome": "ticket_created"
         }
       ]
     },
@@ -49399,7 +49399,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-21T08:20:23.091Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-21"
     },
     {
       "companyId": "company_a06cab1ac9d498e1",
@@ -49549,7 +49549,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-21T09:23:19.038Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-22"
     },
     {
       "companyId": "company_2b779fa6b17ab462",
@@ -49819,7 +49819,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-14T07:18:11.484Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-14"
     },
     {
       "companyId": "company_1b2d4d877d8eadc7",
@@ -50049,7 +50049,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-25T13:36:26.900Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25"
     },
     {
       "companyId": "company_cd84adb93b36ee54",
@@ -50079,7 +50079,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-25T14:09:30.024Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25"
     },
     {
       "companyId": "company_f5066c53652879fe",
@@ -50299,7 +50299,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-25T13:57:54.758Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25"
     },
     {
       "companyId": "company_d98814f9f6f6c4e8",
@@ -50719,7 +50719,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:00:00.000Z",
-      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_ticket_CS_1923706_confirms_safe_receipt"
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_ticket_CS_1923706_confirms_safe_receipt;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10"
     },
     {
       "companyId": "company_e76c722a1203ce12",
@@ -51039,7 +51039,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-04T03:35:36.106Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;buyer_contact_received;message_list_date:2026-08-04"
     },
     {
       "companyId": "company_5187ab05b8fc6e6e",
@@ -51189,7 +51189,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T10:33:00.000Z",
-      "evidence": "official_contact_page_publishes_info_at_outdoorworlddirect_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;inbound_request_receipt_100603_confirmed;no_matched_DSN_in_bounded_scan"
+      "evidence": "official_contact_page_publishes_info_at_outdoorworlddirect_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;inbound_request_receipt_100603_confirmed;no_matched_DSN_in_bounded_scan;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10"
     },
     {
       "companyId": "company_992ad3abf81da10e",
@@ -51229,7 +51229,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:21:00.000Z",
-      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed"
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10"
     },
     {
       "companyId": "company_44a995c179397396",
@@ -51319,7 +51319,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-21T12:04:20.859Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-21"
     },
     {
       "companyId": "company_039c9cf84849b6cb",
@@ -51369,7 +51369,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T09:53:00.000Z",
-      "evidence": "official_company_terms_publish_kundeservice_at_spejdersport_dk_with_company_identity;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
+      "evidence": "official_company_terms_publish_kundeservice_at_spejdersport_dk_with_company_identity;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10"
     },
     {
       "companyId": "company_f69a52361010ecda",
@@ -51739,7 +51739,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-21T12:04:54.913Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;sample_request_received;message_list_date:2026-08-21"
     },
     {
       "companyId": "company_05114ab76b18fc9f",
@@ -52509,7 +52509,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-24T12:44:57.804Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-25"
     },
     {
       "companyId": "company_3e78128b46c51249",
@@ -52949,7 +52949,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-05T05:59:11.363Z",
-      "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+      "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-05"
     },
     {
       "companyId": "company_7b4c288432624b77",
@@ -53729,7 +53729,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-05T13:10:00.000Z",
-      "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00"
+      "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-05"
     },
     {
       "companyId": "company_52d12f93abf45f2e",
@@ -55166,9 +55166,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "channel": "website_form",
         "confirmed": 29,
-        "replies": 0,
+        "replies": 3,
         "opportunities": 0,
-        "replyRate": 0,
+        "humanReplies": 1,
+        "automatedReplies": 2,
+        "replyRate": 0.10344827586206896,
         "opportunityRate": 0,
         "confidence": "high"
       },
@@ -55187,12 +55189,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "channel": "email",
         "confirmed": 463,
-        "replies": 7,
+        "replies": 20,
         "opportunities": 0,
-        "humanReplies": 2,
-        "automatedReplies": 4,
+        "humanReplies": 6,
+        "automatedReplies": 13,
         "unclassifiedReplies": 1,
-        "replyRate": 0.01511879049676026,
+        "replyRate": 0.04319654427645788,
         "opportunityRate": 0,
         "confidence": "high"
       },
@@ -55225,7 +55227,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "dimension": "channel",
         "variant": "website_form",
         "sampleSize": 29,
-        "observedReplyRate": 0,
+        "observedReplyRate": 0.10344827586206896,
         "recommendation": "use_as_bounded_allocation_signal"
       },
       {
@@ -55239,13 +55241,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "dimension": "channel",
         "variant": "email",
         "sampleSize": 463,
-        "observedReplyRate": 0.01511879049676026,
+        "observedReplyRate": 0.04319654427645788,
         "recommendation": "use_as_bounded_allocation_signal"
       }
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-28T05:12:43.890Z",
+    "generatedAt": "2026-08-28T05:38:46.667Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 706,
@@ -55413,9 +55415,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "channel": "website_form",
           "confirmed": 29,
-          "replies": 0,
+          "replies": 3,
           "opportunities": 0,
-          "replyRate": 0,
+          "humanReplies": 1,
+          "automatedReplies": 2,
+          "replyRate": 0.10344827586206896,
           "opportunityRate": 0,
           "confidence": "high"
         },
@@ -55434,12 +55438,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "channel": "email",
           "confirmed": 463,
-          "replies": 7,
+          "replies": 20,
           "opportunities": 0,
-          "humanReplies": 2,
-          "automatedReplies": 4,
+          "humanReplies": 6,
+          "automatedReplies": 13,
           "unclassifiedReplies": 1,
-          "replyRate": 0.01511879049676026,
+          "replyRate": 0.04319654427645788,
           "opportunityRate": 0,
           "confidence": "high"
         },
@@ -55472,7 +55476,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "dimension": "channel",
           "variant": "website_form",
           "sampleSize": 29,
-          "observedReplyRate": 0,
+          "observedReplyRate": 0.10344827586206896,
           "recommendation": "use_as_bounded_allocation_signal"
         },
         {
@@ -55486,7 +55490,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "dimension": "channel",
           "variant": "email",
           "sampleSize": 463,
-          "observedReplyRate": 0.01511879049676026,
+          "observedReplyRate": 0.04319654427645788,
           "recommendation": "use_as_bounded_allocation_signal"
         }
       ]

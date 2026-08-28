@@ -29,7 +29,7 @@
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-28T05:14:40.878Z",
+      "timestamp": "2026-08-28T05:39:58.479Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -51,7 +51,7 @@
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-28T05:14:43.597Z",
+      "timestamp": "2026-08-28T05:40:01.072Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -75,7 +75,7 @@
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-28T05:14:40.878Z",
+      "timestamp": "2026-08-28T05:39:58.479Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -97,7 +97,7 @@
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-28T05:14:43.597Z",
+      "timestamp": "2026-08-28T05:40:01.072Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -969,12 +969,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-28T05:14:48.504Z",
+      "updatedAt": "2026-08-28T05:40:05.442Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-28",
-      "artifactGeneratedAt": "2026-08-28T05:14:45.326Z",
-      "executionGeneratedAt": "2026-08-28T02:15:51.867Z",
-      "githubSyncUpdatedAt": "2026-08-28T02:16:27.617Z",
+      "artifactGeneratedAt": "2026-08-28T05:40:01.646Z",
+      "executionGeneratedAt": "2026-08-28T05:14:48.774Z",
+      "githubSyncUpdatedAt": "2026-08-28T05:18:03.729Z",
       "counts": {
         "dailyQueue": 83,
         "googleDiscovered": 83,
@@ -1027,8 +1027,10 @@
     }
   },
   "alibabaSessionProbe": {
-    "ok": false,
-    "evidence": "alibaba_webmail_login_required"
+    "ok": true,
+    "evidence": "alibaba_webmail_authenticated_compose_visible",
+    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1042,5 +1044,5 @@
   },
   "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-28T05:14:48.774Z"
+  "completedAt": "2026-08-28T05:40:05.635Z"
 }

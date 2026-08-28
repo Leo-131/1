@@ -10817,13 +10817,19 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-04T03:35:36.106Z",
     "target_url": "https://scandinavianoutdoor.com/page/customer-service/",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;buyer_contact_received;message_list_date:2026-08-04",
     "draft": "Dear Scandinavian Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "info@scandinavianoutdoor.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "human",
+    "replyOutcome": "buyer_routing",
+    "buyerRoutedAt": "2026-08-28T05:26:00.000Z"
   },
   {
     "task_id": "google-customer-varuste-website-contact",
@@ -13349,13 +13355,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "none",
     "timestamp": "2026-08-05T05:59:11.363Z",
     "target_url": "https://www.kampeerwereld.nl/",
-    "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-05",
     "draft": "Dear Kampeerwereld Hendriks Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "info@kampeerwereld.nl",
     "messageId": "<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>",
     "sentFolder": "已发送",
-    "sentUid": 2923
+    "sentUid": 2923,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "acknowledgement"
   },
   {
     "task_id": "google-customer-ute-mountaineer-website-contact",
@@ -13708,13 +13719,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "attached-dedicated-chrome",
     "timestamp": "2026-08-05T13:10:00.000Z",
     "target_url": "mailto:support@gho.com",
-    "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00",
+    "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-05",
     "draft": "",
     "subject": "FLEXTAIL retail partnership | compact outdoor electrics",
     "recipientEmail": "support@gho.com",
     "messageId": "",
     "sentFolder": "Sent",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "ticket_created"
   },
   {
     "task_id": "manual-mountain-high-outfitters-email-2026-08-05",
@@ -14440,10 +14456,15 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "target_url": "https://www.spejdersport.dk/handelsbetingelser/",
     "evidenceUrl": "https://www.spejdersport.dk/handelsbetingelser/",
     "verificationStatus": "first_party_company_email_verified_live_2026-08-10",
-    "evidence": "official_company_terms_publish_kundeservice_at_spejdersport_dk_with_company_identity;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear",
+    "evidence": "official_company_terms_publish_kundeservice_at_spejdersport_dk_with_company_identity;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
     "subject": "FLEXTAIL retail partnership | compact outdoor electrics",
     "recipientEmail": "kundeservice@spejdersport.dk",
-    "sentFolder": "alibaba_sent_toast_confirmed"
+    "sentFolder": "alibaba_sent_toast_confirmed",
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "acknowledgement"
   },
   {
     "task_id": "google-customer-hardloop-website-contact",
@@ -14830,10 +14851,15 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "target_url": "mailto:info@outdoorworlddirect.co.uk",
     "evidenceUrl": "https://www.outdoorworlddirect.co.uk/contact",
     "verificationStatus": "first_party_company_email_verified_live_2026-08-10",
-    "evidence": "official_contact_page_publishes_info_at_outdoorworlddirect_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;inbound_request_receipt_100603_confirmed;no_matched_DSN_in_bounded_scan",
+    "evidence": "official_contact_page_publishes_info_at_outdoorworlddirect_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;inbound_request_receipt_100603_confirmed;no_matched_DSN_in_bounded_scan;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
     "subject": "FLEXTAIL retail partnership | compact outdoor electrics",
     "recipientEmail": "info@outdoorworlddirect.co.uk",
-    "sentFolder": "alibaba_sent_folder_unique_message_reconciled"
+    "sentFolder": "alibaba_sent_folder_unique_message_reconciled",
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "ticket_created"
   },
   {
     "task_id": "google-customer-survive-thrive-email-20260810",
@@ -15166,8 +15192,13 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "target_url": "mailto:contact@tentworld.com.au",
     "evidenceUrl": "https://www.tentworld.com.au/contact-us",
     "verificationStatus": "first_party_company_email_verified_live_2026-08-10",
-    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_ticket_CS_1923706_confirms_safe_receipt",
-    "recipientEmail": "contact@tentworld.com.au"
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_ticket_CS_1923706_confirms_safe_receipt;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
+    "recipientEmail": "contact@tentworld.com.au",
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "ticket_created"
   },
   {
     "task_id": "google-customer-pack-gear-go-email-20260810",
@@ -15380,8 +15411,13 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "target_url": "mailto:enquiries@castlebergoutdoors.co.uk",
     "evidenceUrl": "https://www.castlebergoutdoors.co.uk/about-castleberg-outdoors",
     "verificationStatus": "first_party_company_email_verified_live_2026-08-10",
-    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed",
-    "recipientEmail": "enquiries@castlebergoutdoors.co.uk"
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-10",
+    "recipientEmail": "enquiries@castlebergoutdoors.co.uk",
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "acknowledgement"
   },
   {
     "task_id": "google-customer-wm-camping-email-20260810",
@@ -21246,13 +21282,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-14T07:18:11.484Z",
     "target_url": "mailto:csr@gravelagency.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-14",
     "draft": "Dear Gravel Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "csr@gravelagency.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "acknowledgement"
   },
   {
     "task_id": "google-customer-rock-gear-distribution-website-contact",
@@ -25140,13 +25181,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-21T08:20:23.091Z",
     "target_url": "mailto:matt@proagencies.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-21",
     "draft": "Dear ProAgencies Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "matt@proagencies.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "human",
+    "replyOutcome": "not_interested"
   },
   {
     "task_id": "google-customer-the-gravity-collective-website-contact",
@@ -25718,13 +25764,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-21T09:23:19.038Z",
     "target_url": "mailto:tj@tworiverssales.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-22",
     "draft": "Dear Two Rivers Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "tj@tworiverssales.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "human",
+    "replyOutcome": "qualified_response"
   },
   {
     "task_id": "google-customer-trail-house-website-contact-instagram-fallback",
@@ -26472,13 +26523,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-21T12:04:20.859Z",
     "target_url": "mailto:info@sportdimension.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-21",
     "draft": "Dear Sport Dimension Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "info@sportdimension.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "ticket_created"
   },
   {
     "task_id": "google-customer-stellar-sales-alliance-website-contact",
@@ -26489,13 +26545,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-21T12:04:54.913Z",
     "target_url": "mailto:fernando@stellarsalesalliance.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;sample_request_received;message_list_date:2026-08-21",
     "draft": "Dear Stellar Sales Alliance Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL retail partnership | 2026 assortment",
     "recipientEmail": "fernando@stellarsalesalliance.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "human",
+    "replyOutcome": "sample_request"
   },
   {
     "task_id": "google-customer-wire-to-wire-partners-website-contact",
@@ -29406,13 +29467,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-24T12:44:57.804Z",
     "target_url": "mailto:cody@crfagency.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_replied;inbound_reply_visible;channel_reply_sync:alibaba;recipient_replied;inbound_reply_visible;message_list_date:2026-08-25",
     "draft": "Dear CRF Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL global brand representation | CRF Agency",
     "recipientEmail": "cody@crfagency.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "human",
+    "replyOutcome": "qualified_response"
   },
   {
     "task_id": "google-customer-two-skies-inc-website-contact",
@@ -30529,13 +30595,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-25T13:36:26.900Z",
     "target_url": "mailto:info@accapigroup.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25",
     "draft": "Dear Accapi Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL global brand representation | Accapi Group",
     "recipientEmail": "info@accapigroup.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "ticket_created"
   },
   {
     "task_id": "google-customer-madison-h-young-website-contact",
@@ -30631,13 +30702,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-25T13:57:54.758Z",
     "target_url": "mailto:trade@novaoutdoorliving.co.uk",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25",
     "draft": "Dear Nova Outdoor Living Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL global distribution partnership | Nova Outdoor Living",
     "recipientEmail": "trade@novaoutdoorliving.co.uk",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "ticket_created"
   },
   {
     "task_id": "google-customer-highlander-scotland-website-contact",
@@ -30648,13 +30724,18 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "browserTransportUsed": "cdp",
     "timestamp": "2026-08-25T14:09:30.024Z",
     "target_url": "mailto:sales@highlander-outdoor.com",
-    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+    "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;recipient_auto_reply_received;inbound_reply_visible;channel_reply_sync:alibaba;recipient_auto_reply_received;message_list_date:2026-08-25",
     "draft": "Dear Highlander Scotland Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL global brand representation | Highlander Scotland",
     "recipientEmail": "sales@highlander-outdoor.com",
     "messageId": "",
     "sentFolder": "",
-    "sentUid": null
+    "sentUid": null,
+    "replyAt": "2026-08-28T05:26:00.000Z",
+    "repliedAt": "2026-08-28T05:26:00.000Z",
+    "replyObservedAt": "2026-08-28T05:26:00.000Z",
+    "replyType": "automated",
+    "replyOutcome": "acknowledgement"
   },
   {
     "task_id": "google-customer-urban-supply-south-africa-website-contact",

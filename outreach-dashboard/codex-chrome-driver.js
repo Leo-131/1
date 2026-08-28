@@ -1828,15 +1828,23 @@ async function inspectReplyInbox(payload = {}) {
       ? /(^|\.)facebook\.com$/.test(host)
       : expected === 'instagram'
         ? /(^|\.)instagram\.com$/.test(host)
+        : expected === 'dashboard'
+          ? ['127.0.0.1', 'localhost'].includes(host)
         : false;
   if (!hostMatches) {
     return { ok: false, evidence: 'reply_inbox_identity_mismatch', contextText: '', url, title: context && context.title || '' };
   }
+  const compact = payload.compact === true;
+  const compactRows = [...new Set(contexts.flatMap(item => item.candidates || [])
+    .filter(item => ['row', 'listitem'].includes(item.role))
+    .map(item => String(item.text || '').trim())
+    .filter(Boolean))];
   return {
     ok: Boolean(context && context.text),
     platform: expected,
-    contextText: [...new Set(contexts.map(item => item.text).filter(Boolean))].join('\n\n--- inbox scan page ---\n\n'),
-    candidates: contexts.flatMap(item => item.candidates || []),
+    contextText: compact ? '' : [...new Set(contexts.map(item => item.text).filter(Boolean))].join('\n\n--- inbox scan page ---\n\n'),
+    candidates: compact ? [] : contexts.flatMap(item => item.candidates || []),
+    compactRows,
     scrollers: context && context.scrollers || [],
     scanPages: contexts.length,
     title: context && context.title || tab.title || '',
