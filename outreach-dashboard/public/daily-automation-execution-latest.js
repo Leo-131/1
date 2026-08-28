@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 13,
+  "limit": 25,
   "queueDate": "2026-08-28",
   "queueSource": "dailyQueue",
   "executed": [
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-28T01:07:17.297Z",
+      "timestamp": "2026-08-28T02:15:43.443Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -51,7 +51,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-28T01:07:20.122Z",
+      "timestamp": "2026-08-28T02:15:46.141Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -75,7 +75,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-28T01:07:17.297Z",
+      "timestamp": "2026-08-28T02:15:43.443Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -97,7 +97,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-28T01:07:20.122Z",
+      "timestamp": "2026-08-28T02:15:46.141Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -115,13 +115,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-naturehike-south-africa-website-contact",
       "company": "Naturehike South Africa",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -281,13 +274,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "company": "Outdoor Nature",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-minnis-brands-website-contact",
       "company": "Minnis Brands",
       "action": "email_priority",
@@ -381,6 +367,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -694,6 +687,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-green-room-trading-website-contact",
+      "company": "Green Room Trading",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
       "action": "develop",
@@ -896,7 +896,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 12
+      "count": 13
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -906,7 +906,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 8
+      "count": 7
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -932,9 +932,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "blockerCounts": {
     "official_website_social_channel_verified": 52,
     "official_public_business_email_verified": 16,
-    "homepage_only_contact_path_requires_verification": 12,
+    "homepage_only_contact_path_requires_verification": 13,
     "website_contact_capability_not_verified": 9,
-    "official_website_contact_channel": 8,
+    "official_website_contact_channel": 7,
     "concrete_google_discovered_major_customer_instagram": 4,
     "social_profile_not_first_party_verified": 3,
     "recipient_domain_mail_exchange_unverified": 2,
@@ -958,7 +958,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (52); official_public_business_email_verified (16); homepage_only_contact_path_requires_verification (12).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (52); official_public_business_email_verified (16); homepage_only_contact_path_requires_verification (13).",
   "recoveryHint": "Refill the high-ICP pool with 76 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -983,12 +983,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-28T01:07:24.272Z",
+      "updatedAt": "2026-08-28T02:15:50.995Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-28",
-      "artifactGeneratedAt": "2026-08-28T01:07:21.383Z",
-      "executionGeneratedAt": "2026-08-27T22:08:35.991Z",
-      "githubSyncUpdatedAt": "2026-08-27T22:09:03.258Z",
+      "artifactGeneratedAt": "2026-08-28T02:15:47.600Z",
+      "executionGeneratedAt": "2026-08-28T01:07:24.851Z",
+      "githubSyncUpdatedAt": "2026-08-28T01:07:48.318Z",
       "counts": {
         "dailyQueue": 85,
         "googleDiscovered": 85,
@@ -1047,15 +1047,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "title": "阿里邮箱"
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "bounce_scan_complete",
-    "scanned": 9,
+    "ok": false,
+    "reason": "email_sender_not_configured",
     "updated": 0,
-    "senderIdentityFailures": 0,
-    "historicalSenderIdentityFailures": 5,
-    "senderRestoredAt": "2026-08-27T13:10:00.000Z"
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
-  "ledgerReconciliationCount": 1,
+  "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-28T01:07:24.851Z"
+  "completedAt": "2026-08-28T02:15:51.867Z"
 };
