@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T22:06:14.711Z",
+  "generatedAt": "2026-08-28T01:05:57.853Z",
   "companies": [
     {
       "companyId": "company_ed6567ba8d8e4e77",
@@ -372,7 +372,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-27T22:05:22.987Z"
+          "checkedAt": "2026-08-28T01:05:18.406Z"
         },
         {
           "channel": "facebook",
@@ -382,7 +382,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-27T22:05:22.987Z"
+          "checkedAt": "2026-08-28T01:05:18.406Z"
         },
         {
           "channel": "facebook",
@@ -392,7 +392,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-27T22:05:22.987Z"
+          "checkedAt": "2026-08-28T01:05:18.406Z"
         },
         {
           "channel": "instagram",
@@ -402,7 +402,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-27T22:05:22.987Z"
+          "checkedAt": "2026-08-28T01:05:18.406Z"
         },
         {
           "channel": "website_form",
@@ -1984,158 +1984,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "history": []
     },
     {
-      "companyId": "company_49c7b4fd282ea0a2",
-      "company": "Babbling Brook Sales",
-      "keys": [
-        "babblingbrooksales",
-        "babblingbrooksalescom"
-      ],
-      "domains": [
-        "babblingbrooksales.com"
-      ],
-      "channels": [
-        "website_form",
-        "instagram",
-        "facebook"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-27T14:07:08.216Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-27T14:07:08.216Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-27T14:07:08.216Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-27T14:07:08.216Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-27T14:07:08.216Z"
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:07:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-14T09:12:34.850Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-17T02:13:11.024Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-18T02:16:05.330Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-18T19:15:19.545Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-19T19:15:15.673Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-21T07:14:29.709Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-21T19:08:29.950Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-22T16:18:17.917Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-24T02:19:38.857Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-25T02:16:44.489Z",
-          "channel": "facebook",
-          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-25T19:15:21.625Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-26T19:14:18.016Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_046d797f14c80048",
       "company": "Sportco Marketing",
       "keys": [
@@ -2149,16 +1997,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "website_form"
       ],
       "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.sportcomarketinginc.com/",
-          "checkedAt": ""
-        },
         {
           "channel": "website_form",
           "score": 80,
@@ -2469,6 +2307,861 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         }
       ],
       "history": []
+    },
+    {
+      "companyId": "company_13a6e576723b2a45",
+      "company": "Naturehike South Africa",
+      "keys": [
+        "naturehikesouthafrica",
+        "naturehikecoza",
+        "naturehikeafrica"
+      ],
+      "domains": [
+        "naturehike.co.za",
+        "naturehike.africa"
+      ],
+      "channels": [
+        "email",
+        "facebook",
+        "instagram",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-28T01:05:34.830Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-28T01:05:34.830Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-28T01:05:34.830Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-28T01:05:34.830Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+          "checkedAt": "2026-08-25T13:25:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-25T13:20:27.727Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing"
+        }
+      ]
+    },
+    {
+      "companyId": "company_68ba78830347b19c",
+      "company": "Wildfire Sports",
+      "keys": [
+        "wildfiresports",
+        "wildfiresportscomau",
+        "wildfiresportsemail"
+      ],
+      "domains": [
+        "wildfiresports.com.au"
+      ],
+      "channels": [
+        "email",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.wildfiresports.com.au/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.wildfiresports.com.au/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:11:53.109Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:39:51.883Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to main content\nAUD Australian Dollar\nNZD New Zealand Dollar\n |\n|\n Shoes \n Apparel \n Bags \n Gear \n Electronics \n Nutrition & Health \n Sale \n Gifts \n Brands \n \n90 Day Returns\nF;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-21T05:27:50.983Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-21T07:06:03.268Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-21T10:19:06.281Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-22T07:06:32.855Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T07:06:26.807Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T11:05:23.061Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T11:07:57.850Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_draft_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T11:09:57.050Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_content_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-24T13:10:29.584Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-24T14:03:53.480Z",
+          "channel": "email",
+          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-26T22:06:34.999Z",
+          "channel": "website_form",
+          "evidence": "prior_unconfirmed_sent_folder_unavailable;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T02:49:59.525Z",
+          "channel": "website_form",
+          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T02:51:37.195Z",
+          "channel": "email",
+          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-25T09:55:00.000Z",
+          "channel": "email",
+          "evidence": "alibaba_mail_send_success_toast_visible;recipient_subject_body_verified_before_click;sent_folder_verification_interrupted_by_chrome_extension_disconnect;automatic_resend_forbidden"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ca049a336c94b7d9",
+      "company": "Left Point Distribution",
+      "keys": [
+        "leftpointdistribution",
+        "leftpointdistributioncom"
+      ],
+      "domains": [
+        "leftpointdistribution.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T13:14:43.898Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T14:02:57.881Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T16:07:28.244Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T17:02:27.742Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:07:07.795Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:08.090Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_47b2a10dc85c3892",
+      "company": "GJS Africa Distribution",
+      "keys": [
+        "gjsafricadistribution",
+        "gjsafricacoza"
+      ],
+      "domains": [
+        "gjsafrica.co.za"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://gjsafrica.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://gjsafrica.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://gjsafrica.co.za/",
+          "checkedAt": "2026-08-26T08:30:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-26T09:22:09.411Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_3f3b83b76fe401dd",
+      "company": "Novo Brands",
+      "keys": [
+        "novobrands",
+        "novobrandscoza"
+      ],
+      "domains": [
+        "novobrands.co.za"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.novobrands.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.novobrands.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.novobrands.co.za/",
+          "checkedAt": "2026-08-21T12:56:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T12:59:44.413Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:11:48.100Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-22T22:10:10.965Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-24T04:17:34.934Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e77bfa57786d1cde",
+      "company": "BVC Holdings",
+      "keys": [
+        "bvcholdings",
+        "bvchcoza"
+      ],
+      "domains": [
+        "bvch.co.za"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.bvch.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.bvch.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.bvch.co.za/",
+          "checkedAt": "2026-08-21T12:56:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T13:00:57.813Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-21T22:12:49.867Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-22T22:10:48.618Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Home\nAbout\nServices\nOur Brands\nMarket Entry\nSourcing\nContact\n404\nPage Not Found\n\nThe page you're looking for doesn't exist or has been moved.\n\nBack to Home\nContact Us\n\nProduct dist;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-24T11:10:44.659Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Home\nAbout\nServices\nOur Brands\nMarket Entry\nSourcing\nContact\n404\nPage Not Found\n\nThe page you're looking for doesn't exist or has been moved.\n\nBack to Home\nContact Us\n\nProduct dist;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_152c4973e4cf4ec0",
+      "company": "Obelink",
+      "keys": [
+        "obelink",
+        "obelinknl"
+      ],
+      "domains": [
+        "obelink.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:04:45.810Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:00:12.876Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:14:15.188Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;runtime_exception: Uncaught;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T16:07:29.544Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:07:24.275Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T05:14:16.654Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T05:55:00.790Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:06:18.063Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:07.841Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-31T16:09:16.482Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-31T19:05:48.032Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_28c2f8a5d864dc7b",
+      "company": "De Wit Schijndel",
+      "keys": [
+        "dewitschijndel",
+        "dewitnl"
+      ],
+      "domains": [
+        "de-wit.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.de-wit.nl/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.de-wit.nl/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:08:21.870Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:57:45.813Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-24T04:06:34.878Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nProducten\nMerken\nSale\nAccount\nCategorieën\nTenten\n Tenten\nAlle artikelen in Te;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-24T16:13:36.912Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nMerken\nSale\nAccount\nTenten\nTentsoorten\nBijzettenten\nDaktenten\nDouchetenten\nFa;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_b2563fd0c1c5db2a",
+      "company": "OutdoorXL",
+      "keys": [
+        "outdoorxl",
+        "outdoorxlnl"
+      ],
+      "domains": [
+        "outdoorxl.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outdoorxl.nl/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outdoorxl.nl/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:10:13.014Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:04:01.812Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T10:17:04.476Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T02:49:59.813Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_d43133da7d17b52b",
+      "company": "Outdoor Nature",
+      "keys": [
+        "outdoornature",
+        "outdoornaturecomau"
+      ],
+      "domains": [
+        "outdoornature.com.au"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T13:14:06.635Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T14:02:57.783Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T16:06:54.001Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T17:02:27.424Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:06:40.575Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:08.035Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T09:06:30.000Z",
+          "channel": "website_form",
+          "evidence": "official_supplier_form_verified_and_product_fit_passed;recaptcha_present;no_submit_clicked;captcha_platform_blocker_skipped_safely"
+        }
+      ]
     },
     {
       "companyId": "company_d22dee0aa0829306",
@@ -3338,7 +4031,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.198Z"
+          "checkedAt": "2026-08-28T01:05:29.411Z"
         },
         {
           "channel": "instagram",
@@ -3348,7 +4041,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.198Z"
+          "checkedAt": "2026-08-28T01:05:29.411Z"
         },
         {
           "channel": "facebook",
@@ -3358,7 +4051,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.083Z"
+          "checkedAt": "2026-08-28T01:05:29.357Z"
         },
         {
           "channel": "instagram",
@@ -3368,7 +4061,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.083Z"
+          "checkedAt": "2026-08-28T01:05:29.357Z"
         },
         {
           "channel": "facebook",
@@ -3378,7 +4071,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.198Z"
+          "checkedAt": "2026-08-28T01:05:29.411Z"
         },
         {
           "channel": "instagram",
@@ -3388,7 +4081,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.198Z"
+          "checkedAt": "2026-08-28T01:05:29.411Z"
         },
         {
           "channel": "facebook",
@@ -3398,7 +4091,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.185Z"
+          "checkedAt": "2026-08-28T01:05:29.412Z"
         },
         {
           "channel": "instagram",
@@ -3408,7 +4101,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-27T13:45:15.185Z"
+          "checkedAt": "2026-08-28T01:05:29.412Z"
         },
         {
           "channel": "facebook",
@@ -4578,7 +5271,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.agentfiamma.co.uk/agent-fiamma-contact-information.html",
-          "checkedAt": "2026-08-27T13:45:01.295Z"
+          "checkedAt": "2026-08-28T01:05:23.361Z"
         },
         {
           "channel": "email",
@@ -4598,7 +5291,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.agentfiamma.co.uk/agent-fiamma-contact-information.html",
-          "checkedAt": "2026-08-27T13:45:01.295Z"
+          "checkedAt": "2026-08-28T01:05:23.361Z"
         },
         {
           "channel": "website_form",
@@ -4641,105 +5334,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-27T16:08:14.012Z",
           "channel": "website_form",
           "evidence": "email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@agentfiamma.co.uk"
-        }
-      ]
-    },
-    {
-      "companyId": "company_13a6e576723b2a45",
-      "company": "Naturehike South Africa",
-      "keys": [
-        "naturehikesouthafrica",
-        "naturehikecoza",
-        "naturehikeafrica"
-      ],
-      "domains": [
-        "naturehike.co.za",
-        "naturehike.africa"
-      ],
-      "channels": [
-        "email",
-        "facebook",
-        "instagram",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": "2026-08-27T13:45:21.028Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": "2026-08-27T13:45:21.028Z"
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": "2026-08-27T13:45:21.028Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": "2026-08-27T13:45:21.028Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-          "checkedAt": "2026-08-25T13:25:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-08-25T13:20:27.727Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing"
         }
       ]
     },
@@ -5305,142 +5899,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T07:01:10.014Z",
           "channel": "website_form",
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_68ba78830347b19c",
-      "company": "Wildfire Sports",
-      "keys": [
-        "wildfiresports",
-        "wildfiresportscomau",
-        "wildfiresportsemail"
-      ],
-      "domains": [
-        "wildfiresports.com.au"
-      ],
-      "channels": [
-        "email",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.wildfiresports.com.au/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.wildfiresports.com.au/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:11:53.109Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:39:51.883Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to main content\nAUD Australian Dollar\nNZD New Zealand Dollar\n |\n|\n Shoes \n Apparel \n Bags \n Gear \n Electronics \n Nutrition & Health \n Sale \n Gifts \n Brands \n \n90 Day Returns\nF;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-21T05:27:50.983Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-21T07:06:03.268Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-21T10:19:06.281Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-22T07:06:32.855Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T07:06:26.807Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T11:05:23.061Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T11:07:57.850Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_draft_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T11:09:57.050Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_content_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-24T13:10:29.584Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-24T14:03:53.480Z",
-          "channel": "email",
-          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-26T22:06:34.999Z",
-          "channel": "website_form",
-          "evidence": "prior_unconfirmed_sent_folder_unavailable;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T02:49:59.525Z",
-          "channel": "website_form",
-          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T02:51:37.195Z",
-          "channel": "email",
-          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-08-25T09:55:00.000Z",
-          "channel": "email",
-          "evidence": "alibaba_mail_send_success_toast_visible;recipient_subject_body_verified_before_click;sent_folder_verification_interrupted_by_chrome_extension_disconnect;automatic_resend_forbidden"
         }
       ]
     },
@@ -6776,16 +7234,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://level8outdoor.com/about-us",
           "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://level8outdoor.com/about-us",
-          "checkedAt": ""
         }
       ],
       "history": [
@@ -7737,116 +8185,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-22T19:15:09.072Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Home\nWho We Are\nWhat We Do\nProduct Lines\nContact\n920-662-1884\n404\nPage Not Found\nWe couldn't find the page you were looking for\nContact\n1 920 662 1884\nAddress\n2121 Woodale Avenue\nG;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_c6229577d5349f15",
-      "company": "Green Room Trading",
-      "keys": [
-        "greenroomtrading",
-        "greenroomtradingca"
-      ],
-      "domains": [
-        "greenroomtrading.ca"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.greenroomtrading.ca/",
-          "checkedAt": "2026-08-25T14:54:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.greenroomtrading.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.greenroomtrading.ca/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-25T14:56:22.937Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_92baeb13e39161d0",
-      "company": "The Curtis Group Sales",
-      "keys": [
-        "thecurtisgroupsales",
-        "thecurtisgroupsalescom"
-      ],
-      "domains": [
-        "thecurtisgroupsales.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-13T11:40:11.935Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-14T04:12:44.602Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-18T04:13:07.818Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
         }
       ]
     },
@@ -12203,7 +12541,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-27T22:05:22.083Z"
+          "checkedAt": "2026-08-28T01:05:17.572Z"
         },
         {
           "channel": "instagram",
@@ -12213,7 +12551,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://formalito.co.za/contact-us/",
-          "checkedAt": "2026-08-27T22:05:22.083Z"
+          "checkedAt": "2026-08-28T01:05:17.572Z"
         },
         {
           "channel": "website_form",
@@ -15344,7 +15682,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://advanced4x4.co.za/pages/outdoor",
-          "checkedAt": "2026-08-27T13:35:21.944Z"
+          "checkedAt": "2026-08-27T22:05:40.350Z"
         },
         {
           "channel": "research",
@@ -16435,7 +16773,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://thr-outdoor.co.za/contact/",
-          "checkedAt": "2026-08-26T12:08:04.416Z"
+          "checkedAt": "2026-08-27T22:06:04.737Z"
         },
         {
           "channel": "website_form",
@@ -17377,7 +17715,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
@@ -18185,7 +18523,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greatoutdoorprovision.com/pages/faqs-policies",
-          "checkedAt": "2026-08-27T13:45:07.774Z"
+          "checkedAt": "2026-08-28T01:05:24.978Z"
         },
         {
           "channel": "instagram",
@@ -18195,7 +18533,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greatoutdoorprovision.com/pages/faqs-policies",
-          "checkedAt": "2026-08-27T13:45:07.774Z"
+          "checkedAt": "2026-08-28T01:05:24.978Z"
         },
         {
           "channel": "email",
@@ -18241,7 +18579,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.billjacksons.com/",
+          "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
           "checkedAt": ""
         },
         {
@@ -18252,7 +18590,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
-          "checkedAt": "2026-08-27T13:45:08.420Z"
+          "checkedAt": "2026-08-28T01:05:25.620Z"
         },
         {
           "channel": "facebook",
@@ -18262,7 +18600,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
-          "checkedAt": "2026-08-27T13:45:08.420Z"
+          "checkedAt": "2026-08-28T01:05:25.620Z"
         },
         {
           "channel": "email",
@@ -18454,7 +18792,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.skcamping.com/",
-          "checkedAt": "2026-08-27T13:45:10.231Z"
+          "checkedAt": "2026-08-28T01:05:25.761Z"
         },
         {
           "channel": "instagram",
@@ -18464,7 +18802,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.skcamping.com/",
-          "checkedAt": "2026-08-27T13:45:10.231Z"
+          "checkedAt": "2026-08-28T01:05:25.761Z"
         },
         {
           "channel": "email",
@@ -18851,7 +19189,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.tandemwestsales.com/",
-          "checkedAt": "2026-08-27T13:45:12.086Z"
+          "checkedAt": "2026-08-28T01:05:26.453Z"
         }
       ],
       "history": [
@@ -19555,7 +19893,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://rmtcompany.ca/",
-          "checkedAt": "2026-08-27T13:45:17.385Z"
+          "checkedAt": "2026-08-28T01:05:31.973Z"
         },
         {
           "channel": "linkedin",
@@ -19565,7 +19903,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://rmtcompany.ca/",
-          "checkedAt": "2026-08-27T13:45:17.385Z"
+          "checkedAt": "2026-08-28T01:05:31.973Z"
         },
         {
           "channel": "research",
@@ -19658,7 +19996,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.base-camp-agency.com/",
-          "checkedAt": "2026-08-27T13:45:20.112Z"
+          "checkedAt": "2026-08-28T01:05:34.800Z"
         },
         {
           "channel": "email",
@@ -19678,7 +20016,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.base-camp-agency.com/",
-          "checkedAt": "2026-08-27T13:45:20.112Z"
+          "checkedAt": "2026-08-28T01:05:34.800Z"
         }
       ],
       "history": [
@@ -19726,7 +20064,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.pnwgolfsales.com/",
-          "checkedAt": "2026-08-27T13:45:20.057Z"
+          "checkedAt": "2026-08-28T01:05:34.598Z"
         },
         {
           "channel": "email",
@@ -19746,7 +20084,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.pnwgolfsales.com/",
-          "checkedAt": "2026-08-27T13:45:20.057Z"
+          "checkedAt": "2026-08-28T01:05:34.598Z"
         },
         {
           "channel": "research",
@@ -19800,7 +20138,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ikamper.co.za/contact/",
-          "checkedAt": "2026-08-27T13:45:21.611Z"
+          "checkedAt": "2026-08-28T01:05:34.205Z"
         },
         {
           "channel": "facebook",
@@ -19810,7 +20148,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ikamper.co.za/contact/",
-          "checkedAt": "2026-08-27T13:45:21.611Z"
+          "checkedAt": "2026-08-28T01:05:34.205Z"
         },
         {
           "channel": "email",
@@ -19883,7 +20221,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://billandpauls.com/pages/hours-and-location",
-          "checkedAt": "2026-08-27T13:45:22.910Z"
+          "checkedAt": "2026-08-28T01:05:35.756Z"
         },
         {
           "channel": "instagram",
@@ -19893,7 +20231,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://billandpauls.com/pages/hours-and-location",
-          "checkedAt": "2026-08-27T13:45:22.910Z"
+          "checkedAt": "2026-08-28T01:05:35.756Z"
         },
         {
           "channel": "email",
@@ -19986,7 +20324,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.benchmarkoutfitter.com/",
+          "evidenceUrl": "https://www.benchmarkoutfitter.com/service/",
           "checkedAt": ""
         },
         {
@@ -19997,7 +20335,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.benchmarkoutfitter.com/service/",
-          "checkedAt": "2026-08-27T13:45:22.651Z"
+          "checkedAt": "2026-08-28T01:05:35.951Z"
         },
         {
           "channel": "instagram",
@@ -20007,7 +20345,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.benchmarkoutfitter.com/service/",
-          "checkedAt": "2026-08-27T13:45:22.651Z"
+          "checkedAt": "2026-08-28T01:05:35.951Z"
         },
         {
           "channel": "email",
@@ -20053,7 +20391,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.appalachianoutfitters.com/",
+          "evidenceUrl": "https://www.appalachianoutfitters.com/policies/contact-information",
           "checkedAt": ""
         },
         {
@@ -20064,7 +20402,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.appalachianoutfitters.com/policies/contact-information",
-          "checkedAt": "2026-08-27T13:45:22.753Z"
+          "checkedAt": "2026-08-28T01:05:35.567Z"
         },
         {
           "channel": "instagram",
@@ -20074,7 +20412,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.appalachianoutfitters.com/policies/contact-information",
-          "checkedAt": "2026-08-27T13:45:22.753Z"
+          "checkedAt": "2026-08-28T01:05:35.567Z"
         },
         {
           "channel": "email",
@@ -20120,7 +20458,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://packpaddle.com/",
+          "evidenceUrl": "https://packpaddle.com/contact-us/",
           "checkedAt": ""
         },
         {
@@ -20131,7 +20469,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://packpaddle.com/contact-us/",
-          "checkedAt": "2026-08-27T13:45:28.871Z"
+          "checkedAt": "2026-08-28T01:05:38.535Z"
         },
         {
           "channel": "instagram",
@@ -20141,7 +20479,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://packpaddle.com/contact-us/",
-          "checkedAt": "2026-08-27T13:45:28.871Z"
+          "checkedAt": "2026-08-28T01:05:38.535Z"
         },
         {
           "channel": "email",
@@ -20198,7 +20536,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorworlddirect.co.uk/",
-          "checkedAt": "2026-08-27T13:45:25.014Z"
+          "checkedAt": "2026-08-28T01:05:38.882Z"
         },
         {
           "channel": "instagram",
@@ -20208,7 +20546,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorworlddirect.co.uk/",
-          "checkedAt": "2026-08-27T13:45:25.014Z"
+          "checkedAt": "2026-08-28T01:05:38.882Z"
         },
         {
           "channel": "email",
@@ -20355,7 +20693,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greatwesterncamping.co.uk/contact",
-          "checkedAt": "2026-08-27T07:05:42.801Z"
+          "checkedAt": "2026-08-28T01:05:39.023Z"
         },
         {
           "channel": "instagram",
@@ -20365,7 +20703,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greatwesterncamping.co.uk/contact",
-          "checkedAt": "2026-08-27T07:05:42.801Z"
+          "checkedAt": "2026-08-28T01:05:39.023Z"
         },
         {
           "channel": "email",
@@ -20454,7 +20792,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://crazeoutdoors.com/",
+          "evidenceUrl": "https://crazeoutdoors.com/pages/contact-us",
           "checkedAt": ""
         },
         {
@@ -20774,7 +21112,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.lacordee.com/",
+          "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
           "checkedAt": ""
         },
         {
@@ -20785,7 +21123,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
-          "checkedAt": "2026-08-27T07:05:40.324Z"
+          "checkedAt": "2026-08-28T01:05:41.455Z"
         },
         {
           "channel": "instagram",
@@ -20795,7 +21133,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
-          "checkedAt": "2026-08-27T07:05:40.324Z"
+          "checkedAt": "2026-08-28T01:05:41.455Z"
         },
         {
           "channel": "website_form",
@@ -20999,7 +21337,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.airfreshmarketing.com/outdoor-recreation-brand-ambassadors",
-          "checkedAt": "2026-08-27T07:05:44.369Z"
+          "checkedAt": "2026-08-28T01:05:50.636Z"
         },
         {
           "channel": "facebook",
@@ -21009,7 +21347,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.airfreshmarketing.com/outdoor-recreation-brand-ambassadors",
-          "checkedAt": "2026-08-27T07:05:44.369Z"
+          "checkedAt": "2026-08-28T01:05:50.636Z"
         },
         {
           "channel": "instagram",
@@ -21019,7 +21357,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.airfreshmarketing.com/outdoor-recreation-brand-ambassadors",
-          "checkedAt": "2026-08-27T07:05:44.369Z"
+          "checkedAt": "2026-08-28T01:05:50.636Z"
         }
       ],
       "history": [
@@ -28006,6 +28344,144 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_49c7b4fd282ea0a2",
+      "company": "Babbling Brook Sales",
+      "keys": [
+        "babblingbrooksales",
+        "babblingbrooksalescom"
+      ],
+      "domains": [
+        "babblingbrooksales.com"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-27T14:07:08.216Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-27T14:07:08.216Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-27T14:07:08.216Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-14T09:07:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-14T09:12:34.850Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-17T02:13:11.024Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-18T02:16:05.330Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-18T19:15:19.545Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-19T19:15:15.673Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-21T07:14:29.709Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-21T19:08:29.950Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-22T16:18:17.917Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-24T02:19:38.857Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-25T02:16:44.489Z",
+          "channel": "facebook",
+          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-25T19:15:21.625Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-26T19:14:18.016Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-27T22:08:30.279Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_26740a539a1a8594",
       "company": "CMS Distribution",
       "keys": [
@@ -29042,50 +29518,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_47b2a10dc85c3892",
-      "company": "GJS Africa Distribution",
-      "keys": [
-        "gjsafricadistribution",
-        "gjsafricacoza"
-      ],
-      "domains": [
-        "gjsafrica.co.za"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://gjsafrica.co.za/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://gjsafrica.co.za/",
-          "checkedAt": "2026-08-26T08:30:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-26T09:22:09.411Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_b0173d34c53df024",
       "company": "Sportsman's Warehouse",
       "keys": [
@@ -29166,14 +29598,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_152c4973e4cf4ec0",
-      "company": "Obelink",
+      "companyId": "company_92baeb13e39161d0",
+      "company": "The Curtis Group Sales",
       "keys": [
-        "obelink",
-        "obelinknl"
+        "thecurtisgroupsales",
+        "thecurtisgroupsalescom"
       ],
       "domains": [
-        "obelink.nl"
+        "thecurtisgroupsales.com"
       ],
       "channels": [
         "website_form"
@@ -29186,9 +29618,45 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "evidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
           "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T11:40:11.935Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
         },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-14T04:12:44.602Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-18T04:13:07.818Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_c6229577d5349f15",
+      "company": "Green Room Trading",
+      "keys": [
+        "greenroomtrading",
+        "greenroomtradingca"
+      ],
+      "domains": [
+        "greenroomtrading.ca"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
         {
           "channel": "research",
           "score": 100,
@@ -29196,76 +29664,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "evidenceUrl": "https://www.greenroomtrading.ca/",
+          "checkedAt": "2026-08-25T14:54:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.greenroomtrading.ca/",
           "checkedAt": ""
         }
       ],
       "history": [
         {
           "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:04:45.810Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:00:12.876Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:14:15.188Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;runtime_exception: Uncaught;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T16:07:29.544Z",
+          "timestamp": "2026-08-25T14:56:22.937Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:07:24.275Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T05:14:16.654Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T05:55:00.790Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:06:18.063Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:07.841Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-31T16:09:16.482Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-31T19:05:48.032Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
       ]
     },
@@ -29694,96 +30112,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-24T12:44:57.804Z",
           "channel": "email",
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
-        }
-      ]
-    },
-    {
-      "companyId": "company_d43133da7d17b52b",
-      "company": "Outdoor Nature",
-      "keys": [
-        "outdoornature",
-        "outdoornaturecomau"
-      ],
-      "domains": [
-        "outdoornature.com.au"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T13:14:06.635Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T14:02:57.783Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T16:06:54.001Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T17:02:27.424Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:06:40.575Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:08.035Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-10T09:06:30.000Z",
-          "channel": "website_form",
-          "evidence": "official_supplier_form_verified_and_product_fit_passed;recaptcha_present;no_submit_clicked;captcha_platform_blocker_skipped_safely"
         }
       ]
     },
@@ -32140,58 +32468,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_28c2f8a5d864dc7b",
-      "company": "De Wit Schijndel",
-      "keys": [
-        "dewitschijndel",
-        "dewitnl"
-      ],
-      "domains": [
-        "de-wit.nl"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.de-wit.nl/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:08:21.870Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:57:45.813Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-24T04:06:34.878Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nProducten\nMerken\nSale\nAccount\nCategorieën\nTenten\n Tenten\nAlle artikelen in Te;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-24T16:13:36.912Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nMerken\nSale\nAccount\nTenten\nTentsoorten\nBijzettenten\nDaktenten\nDouchetenten\nFa;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_ef861e4dd1af2c1c",
       "company": "Ekosport",
       "keys": [
@@ -32875,58 +33151,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_b2563fd0c1c5db2a",
-      "company": "OutdoorXL",
-      "keys": [
-        "outdoorxl",
-        "outdoorxlnl"
-      ],
-      "domains": [
-        "outdoorxl.nl"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdoorxl.nl/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:10:13.014Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:04:01.812Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T10:17:04.476Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T02:49:59.813Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_5f36d2322708a2d3",
       "company": "Friluftsland",
       "keys": [
@@ -32988,80 +33212,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-05T05:47:10.431Z",
           "channel": "website_form",
           "evidence": "smtp_accepted;message_id:<16d6676a-685f-e583-fad5-788f5e90da0f@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_ca049a336c94b7d9",
-      "company": "Left Point Distribution",
-      "keys": [
-        "leftpointdistribution",
-        "leftpointdistributioncom"
-      ],
-      "domains": [
-        "leftpointdistribution.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T13:14:43.898Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T14:02:57.881Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T16:07:28.244Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T17:02:27.742Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:07:07.795Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:08.090Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
       ]
     },
@@ -33262,7 +33412,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-27T22:05:23.589Z"
+          "checkedAt": "2026-08-28T01:05:21.299Z"
         },
         {
           "channel": "facebook",
@@ -33272,7 +33422,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-27T22:05:23.589Z"
+          "checkedAt": "2026-08-28T01:05:21.299Z"
         }
       ],
       "history": [
@@ -33644,68 +33794,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-13T02:14:40.643Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<8cc2e463-b3fe-c9e3-e52c-4c77661158b0@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_3f3b83b76fe401dd",
-      "company": "Novo Brands",
-      "keys": [
-        "novobrands",
-        "novobrandscoza"
-      ],
-      "domains": [
-        "novobrands.co.za"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.novobrands.co.za/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.novobrands.co.za/",
-          "checkedAt": "2026-08-21T12:56:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-21T12:59:44.413Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-21T22:11:48.100Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-22T22:10:10.965Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-24T04:17:34.934Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Page not found | Novo Brands;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -34353,68 +34441,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_e77bfa57786d1cde",
-      "company": "BVC Holdings",
-      "keys": [
-        "bvcholdings",
-        "bvchcoza"
-      ],
-      "domains": [
-        "bvch.co.za"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.bvch.co.za/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.bvch.co.za/",
-          "checkedAt": "2026-08-21T12:56:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-21T13:00:57.813Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-21T22:12:49.867Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-22T22:10:48.618Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Home\nAbout\nServices\nOur Brands\nMarket Entry\nSourcing\nContact\n404\nPage Not Found\n\nThe page you're looking for doesn't exist or has been moved.\n\nBack to Home\nContact Us\n\nProduct dist;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-24T11:10:44.659Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Home\nAbout\nServices\nOur Brands\nMarket Entry\nSourcing\nContact\n404\nPage Not Found\n\nThe page you're looking for doesn't exist or has been moved.\n\nBack to Home\nContact Us\n\nProduct dist;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_e7273e7cc7cae1e8",
       "company": "Public Lands",
       "keys": [
@@ -34800,7 +34826,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-27T22:05:23.762Z"
+          "checkedAt": "2026-08-28T01:05:21.165Z"
         },
         {
           "channel": "facebook",
@@ -34810,7 +34836,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-27T22:05:23.762Z"
+          "checkedAt": "2026-08-28T01:05:21.165Z"
         }
       ],
       "history": [
@@ -35122,7 +35148,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-27T22:05:25.287Z"
+          "checkedAt": "2026-08-28T01:05:20.315Z"
         },
         {
           "channel": "instagram",
@@ -35371,7 +35397,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-27T22:05:27.066Z"
+          "checkedAt": "2026-08-28T01:05:24.367Z"
         },
         {
           "channel": "facebook",
@@ -35381,7 +35407,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-27T22:05:27.066Z"
+          "checkedAt": "2026-08-28T01:05:24.367Z"
         }
       ],
       "history": [
@@ -35467,7 +35493,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-          "checkedAt": "2026-08-27T22:05:26.799Z"
+          "checkedAt": "2026-08-28T01:05:23.997Z"
         }
       ],
       "history": [
@@ -42613,6 +42639,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
     },
     {
+      "companyId": "company_13a6e576723b2a45",
+      "company": "Naturehike South Africa",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-08-25T13:20:27.727Z",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing"
+    },
+    {
+      "companyId": "company_68ba78830347b19c",
+      "company": "Wildfire Sports",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-07-29T02:51:37.195Z",
+      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_d22dee0aa0829306",
       "company": "Minnis Brands",
       "permanent": true,
@@ -42653,16 +42699,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "official_profile_cross_verified_with_first_party_website;instagram_account_followed;instagram_direct_message_visible_in_conversation;composer_cleared_after_enter"
     },
     {
-      "companyId": "company_13a6e576723b2a45",
-      "company": "Naturehike South Africa",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-08-25T13:20:27.727Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing"
-    },
-    {
       "companyId": "company_3730ead171dee679",
       "company": "BBQ Fans",
       "permanent": true,
@@ -42691,16 +42727,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "send_unconfirmed",
       "sourceTimestamp": "2026-08-04T07:01:10.014Z",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
-    },
-    {
-      "companyId": "company_68ba78830347b19c",
-      "company": "Wildfire Sports",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-07-29T02:51:37.195Z",
-      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
     },
     {
       "companyId": "company_b8b4a5abb5ca31b4",
@@ -48739,13 +48765,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-27T22:06:14.711Z",
+    "generatedAt": "2026-08-28T01:05:57.853Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 706,
       "permanentlySuppressed": 574,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 1254
+      "verifiedEvidenceRoutes": 1257
     },
     "decisions": [
       {

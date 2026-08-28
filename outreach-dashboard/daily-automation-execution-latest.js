@@ -1,13 +1,13 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "cdp",
-  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
+  "browserTransportUsed": "none",
+  "browserTransportFallbackReason": "",
   "extensionReceiptCount": 0,
-  "executionPhase": "browser_execution",
-  "chromeStage": "opened",
-  "chromeOpened": true,
-  "chromeOpenedCount": 1,
+  "executionPhase": "no_browser_execution",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-27T22:07:35.444Z",
+      "timestamp": "2026-08-28T01:07:17.297Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -51,7 +51,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-27T22:07:38.194Z",
+      "timestamp": "2026-08-28T01:07:20.122Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -62,57 +62,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
         "recipientEmail": "distributor@beaveroutdoor.ca",
         "nextAction": "Do not send to this address; continue with a first-party-verified official social channel for the same company."
-      }
-    },
-    {
-      "id": "google-customer-babbling-brook-sales-website-contact",
-      "company": "Babbling Brook Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "targetUrl": "https://www.babblingbrooksales.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-      "timestamp": "2026-08-27T22:08:30.492Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "tabId": "5D0733D65003791AA88E3C2031F1DBBE",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5D0733D65003791AA88E3C2031F1DBBE",
-        "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/babblingbrooksales",
-          "tabId": "5D0733D65003791AA88E3C2031F1DBBE",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5D0733D65003791AA88E3C2031F1DBBE",
-          "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/babblingbrooksales\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"identity_mismatch_expected_Babbling Brook Sales_title_Facebook\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 98,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/babblingbrooksales",
-        "fallbackPlatform": "instagram",
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-        "socialFallbackEvidence": "instagram_message_button_clicked_composer_not_found"
       }
     }
   ],
@@ -126,7 +75,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-27T22:07:35.444Z",
+      "timestamp": "2026-08-28T01:07:17.297Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -148,7 +97,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-27T22:07:38.194Z",
+      "timestamp": "2026-08-28T01:07:20.122Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -160,60 +109,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "recipientEmail": "distributor@beaveroutdoor.ca",
         "nextAction": "Do not send to this address; continue with a first-party-verified official social channel for the same company."
       }
-    },
-    {
-      "id": "google-customer-babbling-brook-sales-website-contact",
-      "company": "Babbling Brook Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "targetUrl": "https://www.babblingbrooksales.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-      "timestamp": "2026-08-27T22:08:30.492Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "tabId": "5D0733D65003791AA88E3C2031F1DBBE",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5D0733D65003791AA88E3C2031F1DBBE",
-        "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/babblingbrooksales",
-          "tabId": "5D0733D65003791AA88E3C2031F1DBBE",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5D0733D65003791AA88E3C2031F1DBBE",
-          "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/babblingbrooksales\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"identity_mismatch_expected_Babbling Brook Sales_title_Facebook\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 98,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/babblingbrooksales",
-        "fallbackPlatform": "instagram",
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-        "socialFallbackEvidence": "instagram_message_button_clicked_composer_not_found"
-      }
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-naturehike-south-africa-website-contact",
+      "company": "Naturehike South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
@@ -271,6 +183,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-naturehike-south-africa-facebook",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-latulippe-facebook",
       "company": "Latulippe",
       "action": "develop",
@@ -304,6 +223,69 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-instagram",
+      "company": "Naturehike South Africa",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-gjs-africa-distribution-website-contact",
+      "company": "GJS Africa Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-novo-brands-website-contact",
+      "company": "Novo Brands",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bvc-holdings-website-contact",
+      "company": "BVC Holdings",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-minnis-brands-website-contact",
@@ -383,13 +365,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "company": "Naturehike South Africa",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-bbq-fans-website-contact",
       "company": "BBQ Fans",
       "action": "email_priority",
@@ -406,13 +381,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -504,13 +472,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-taunton-leisure-facebook",
       "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-facebook",
-      "company": "Naturehike South Africa",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -635,13 +596,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-naturehike-south-africa-instagram",
-      "company": "Naturehike South Africa",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-bbq-fans-instagram",
       "company": "BBQ Fans",
       "action": "develop",
@@ -738,34 +692,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-green-room-trading-website-contact",
-      "company": "Green Room Trading",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-level-8-outdoor-website-contact",
-      "company": "Level 8 Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sportco-marketing-website-contact",
-      "company": "Sportco Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-curtis-group-sales-website-contact",
-      "company": "The Curtis Group Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-mcqueen-ball-linkedin",
@@ -925,28 +851,27 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 48,
-    "dueNow": 82,
-    "visibleTodayQueue": 80,
-    "potentialPool": 25,
+    "readyToDevelop": 47,
+    "dueNow": 85,
+    "visibleTodayQueue": 79,
+    "potentialPool": 24,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 75,
-    "executableCompanies": 16,
+    "refillNeeded": 76,
+    "executableCompanies": 15,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 114,
+    "executableReserveNeeded": 115,
     "executableByChannel": {
       "linkedin": 2,
       "facebook": 7,
       "instagram": 4,
-      "email": 2,
-      "website_form": 1
+      "email": 2
     },
     "verifiedSocialCompanies": 13,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 7,
     "enrichmentBacklogCount": 9,
-    "googleDiscovered": 82,
+    "googleDiscovered": 85,
     "facebookDiscovered": 17,
     "websiteContactDiscovered": 18,
     "scheduledLater": 0,
@@ -979,12 +904,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 9
     },
     {
-      "reason": "concrete_google_discovered_major_customer_instagram",
+      "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 4
+      "count": 8
     },
     {
-      "reason": "official_website_contact_channel",
+      "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
       "count": 4
     },
@@ -999,11 +924,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
-      "reason": "failed_open",
-      "status": "failed_open",
-      "count": 1
-    },
-    {
       "reason": "verified_linkedin_profile_ready",
       "status": "skipped",
       "count": 1
@@ -1014,19 +934,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "official_public_business_email_verified": 16,
     "homepage_only_contact_path_requires_verification": 12,
     "website_contact_capability_not_verified": 9,
+    "official_website_contact_channel": 8,
     "concrete_google_discovered_major_customer_instagram": 4,
-    "official_website_contact_channel": 4,
     "social_profile_not_first_party_verified": 3,
     "recipient_domain_mail_exchange_unverified": 2,
-    "failed_open": 1,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 25,
-    "queueCount": 82,
-    "googleDiscovered": 82,
-    "refillNeeded": 75,
+    "potentialPool": 24,
+    "queueCount": 85,
+    "googleDiscovered": 85,
+    "refillNeeded": 76,
     "confirmedToday": 0,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -1040,46 +959,40 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "platformCircuitState": {},
   "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (52); official_public_business_email_verified (16); homepage_only_contact_path_requires_verification (12).",
-  "recoveryHint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "recoveryHint": "Refill the high-ICP pool with 76 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 75 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 75 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 76 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 76 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 25,
-      "refillNeeded": 75
+      "potentialPool": 24,
+      "refillNeeded": 76
     },
     {
       "reason": "google_social_profile_not_executable",
       "action": "Complete Google social channel verification",
       "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
       "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
-    },
-    {
-      "reason": "failed_open",
-      "action": "Verify profile accessibility",
-      "description": "Open the official profile manually or switch to another verified channel before retrying.",
-      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
     }
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-28\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 47,\n    \"dueNow\": 82,\n    \"visibleTodayQueue\": 79,\n    \"potentialPool\": 24,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 76,\n    \"executableCompanies\": 15,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 115,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 7,\n      \"instagram\": 4,\n      \"email\": 2\n    },\n    \"verifiedSocialCompanies\": 13,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 7,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 82,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 18,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-28-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-28-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-28\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 47,\n    \"dueNow\": 85,\n    \"visibleTodayQueue\": 79,\n    \"potentialPool\": 24,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 76,\n    \"executableCompanies\": 15,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 115,\n    \"executableByChannel\": {\n      \"linkedin\": 2,\n      \"facebook\": 7,\n      \"instagram\": 4,\n      \"email\": 2\n    },\n    \"verifiedSocialCompanies\": 13,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 7,\n    \"enrichmentBacklogCount\": 9,\n    \"googleDiscovered\": 85,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 18,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-28-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-28-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-27T22:08:35.357Z",
+      "updatedAt": "2026-08-28T01:07:24.272Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-28",
-      "artifactGeneratedAt": "2026-08-27T22:08:32.156Z",
-      "executionGeneratedAt": "2026-08-27T19:16:49.532Z",
-      "githubSyncUpdatedAt": "2026-08-27T19:17:22.209Z",
+      "artifactGeneratedAt": "2026-08-28T01:07:21.383Z",
+      "executionGeneratedAt": "2026-08-27T22:08:35.991Z",
+      "githubSyncUpdatedAt": "2026-08-27T22:09:03.258Z",
       "counts": {
-        "dailyQueue": 82,
-        "googleDiscovered": 82,
-        "websiteContact": 35,
+        "dailyQueue": 85,
+        "googleDiscovered": 85,
+        "websiteContact": 38,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1136,13 +1049,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "bounceReconciliation": {
     "ok": true,
     "reason": "bounce_scan_complete",
-    "scanned": 10,
+    "scanned": 9,
     "updated": 0,
     "senderIdentityFailures": 0,
     "historicalSenderIdentityFailures": 5,
     "senderRestoredAt": "2026-08-27T13:10:00.000Z"
   },
-  "ledgerReconciliationCount": 11,
+  "ledgerReconciliationCount": 1,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-27T22:08:35.991Z"
+  "completedAt": "2026-08-28T01:07:24.851Z"
 };
