@@ -472,14 +472,17 @@
         }
       }
 
-      // A verified downstream event proves this customer reached every prior
-      // funnel stage, even when a legacy row lacks the upstream timestamps.
+      // A verified downstream event may establish operational eligibility, but
+      // it never proves that a scored profile was actually materialized.
+      // Keep profile scoring explicit so the dashboard cannot turn every send
+      // into a fabricated profile event.
       const funnel = ['discovered', 'profiled', 'approved', 'sent', 'replied', 'contactCaptured', 'opportunity'];
       for (let downstreamIndex = funnel.length - 1; downstreamIndex > 0; downstreamIndex -= 1) {
         const downstream = funnel[downstreamIndex];
         if (!events[downstream]) continue;
         for (let upstreamIndex = 0; upstreamIndex < downstreamIndex; upstreamIndex += 1) {
           const upstream = funnel[upstreamIndex];
+          if (upstream === 'profiled') continue;
           if (events[upstream]) continue;
           events[upstream] = true;
           eventTimes[upstream] = eventTimes[downstream];
@@ -504,16 +507,23 @@
       const groups = new Map();
       for (const entry of evaluated) {
         const label = normalizeGroupKey(keySelector(entry.record), 'unknown');
-        if (!groups.has(label)) groups.set(label, emptyReportMetrics());
-        const groupMetrics = groups.get(label);
+        if (!groups.has(label)) groups.set(label, {
+          metrics: emptyReportMetrics(),
+          customers: new Map(REPORT_EVENTS.map(([metric]) => [metric, new Set()])),
+        });
+        const group = groups.get(label);
         for (const [metric] of REPORT_EVENTS) {
-          if (entry.events[metric]) groupMetrics[metric] += 1;
+          if (!entry.events[metric]) continue;
+          const seen = group.customers.get(metric);
+          if (seen.has(entry.customerKey)) continue;
+          seen.add(entry.customerKey);
+          group.metrics[metric] += 1;
         }
       }
-      return Array.from(groups, ([label, groupMetrics]) => ({
+      return Array.from(groups, ([label, group]) => ({
         label,
-        metrics: groupMetrics,
-        rates: buildConversionRates(groupMetrics),
+        metrics: group.metrics,
+        rates: buildConversionRates(group.metrics),
       })).filter(item => Object.values(item.metrics).some(Boolean))
         .sort((left, right) => right.metrics.sent - left.metrics.sent
           || right.metrics.replied - left.metrics.replied
@@ -522,7 +532,42 @@
     }
 
     const rates = buildConversionRates(metrics);
-    const funnelMetrics = ['discovered', 'profiled', 'approved', 'sent', 'replied', 'contactCaptured', 'opportunity'];
+    const scoredCustomers = new Map();
+    evaluated.forEach(entry => {
+      if (!entry.events.discovered) return;
+      const rawScore = entry.record.icpScore ?? entry.record.fitScore;
+      const score = Number(rawScore);
+      if (!Number.isFinite(score) || score <= 0 || score > 100) return;
+      const current = scoredCustomers.get(entry.customerKey);
+      if (!Number.isFinite(current) || score > current) scoredCustomers.set(entry.customerKey, score);
+    });
+    const scoredValues = [...scoredCustomers.values()];
+    const icpScoring = {
+      average: scoredValues.length
+        ? Math.round((scoredValues.reduce((sum, score) => sum + score, 0) / scoredValues.length) * 10) / 10
+        : null,
+      scoredCustomers: scoredValues.length,
+      discoveredCustomers: metrics.discovered,
+      coverage: metrics.discovered ? scoredValues.length / metrics.discovered : 0,
+      minimum: scoredValues.length ? Math.min(...scoredValues) : null,
+      maximum: scoredValues.length ? Math.max(...scoredValues) : null,
+    };
+    const replyTypesByCustomer = new Map();
+    evaluated.forEach(entry => {
+      if (!entry.events.replied) return;
+      const type = ['human', 'automated'].includes(entry.record.replyType)
+        ? entry.record.replyType
+        : 'unclassified';
+      const existing = replyTypesByCustomer.get(entry.customerKey);
+      if (!existing || existing === 'unclassified' || (existing === 'automated' && type === 'human')) {
+        replyTypesByCustomer.set(entry.customerKey, type);
+      }
+    });
+    const replyDiagnostics = [...replyTypesByCustomer.values()].reduce((summary, type) => {
+      summary[type] += 1;
+      return summary;
+    }, { human: 0, automated: 0, unclassified: 0 });
+    const funnelMetrics = ['discovered', 'approved', 'sent', 'replied', 'contactCaptured', 'opportunity'];
     const consistencyViolations = funnelMetrics.slice(1).filter((metric, index) => metrics[metric] > metrics[funnelMetrics[index]]);
     const breakdowns = {
       platform: breakdown(record => record.platform),
@@ -534,7 +579,9 @@
     return {
       period,
       metrics,
+      icpScoring,
       rates,
+      replyDiagnostics,
       conversion: buildReplyConversionInsights(breakdowns),
       breakdowns,
       eventRecords: evaluated,

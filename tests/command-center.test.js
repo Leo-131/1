@@ -32,7 +32,7 @@ test('command center uses an atomic boot gate so the legacy dashboard never flas
   assert.ok(html.includes('正在加载客户开发系统'));
   assert.ok(js.includes("document.body.classList.remove('command-center-booting')"));
   assert.match(js, /document\.body\.appendChild\(shell\);\s*document\.body\.classList\.remove\('command-center-booting'\)/);
-  assert.ok(js.includes("document.body.classList.remove('command-center-active')"));
+  assert.ok(js.includes("failedShell.dataset.startupFailure = '1'"));
   assert.ok(js.includes('Command center startup failed'));
   assert.doesNotMatch(js, /\bstatusLabel\(/);
 });
@@ -81,7 +81,11 @@ test('command center contains separated operational views', () => {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
   assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
-  assert.ok(publicIndexHtml.includes('command-center.js?v=20260715-verified-customer-research'));
+  const rootCommandCenterAsset = html.match(/command-center\.js\?v=([^"']+)/);
+  const publicCommandCenterAsset = publicIndexHtml.match(/command-center\.js\?v=([^"']+)/);
+  assert.ok(rootCommandCenterAsset, 'root command-center asset version');
+  assert.ok(publicCommandCenterAsset, 'public command-center asset version');
+  assert.equal(publicCommandCenterAsset[1], rootCommandCenterAsset[1]);
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
@@ -206,16 +210,54 @@ test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes("query.get('queue') || 'potential'"));
   assert.ok(js.includes("latestQueueRows('visibleTodayQueue')"));
   assert.ok(js.includes("latestQueueRows('dailyPotentialPool')"));
+  assert.ok(js.includes('enrichment backlog'));
+  assert.ok(js.includes('enrichmentBacklogCount'));
   assert.ok(js.includes("queue: 'untouched'"));
   assert.ok(js.includes("queue: 'followup'"));
+});
+
+test('today queue hides companies already developed on the same Shanghai day', () => {
+  const currentTaskBlock = js.slice(js.indexOf('function currentTask()'), js.indexOf('function executionResultKey'));
+  const todayQueueBlock = js.slice(js.indexOf('function queue()'), js.indexOf('function customers()'));
+  assert.ok(currentTaskBlock.includes('executableDevelopmentTasks()'));
+  assert.ok(!currentTaskBlock.includes("latestQueueRows('visibleTodayQueue')"));
+  assert.ok(todayQueueBlock.includes('const visibleRows = executableDevelopmentTasks()'));
 });
 
 test('today queue exposes verified developed customer records', () => {
   assert.ok(js.includes('function dailyDevelopedRows'));
   assert.ok(js.includes('function dailyDevelopedPanel'));
+  assert.ok(js.includes('...autonomousResultRecords()'));
   assert.ok(js.includes("mode === 'developed'"));
   assert.ok(js.includes('interactionEvidence'));
   assert.ok(js.includes('developedAt'));
+});
+
+test('workspace shows confirmed customers and email-first channel priority', () => {
+  assert.ok(js.includes('Email → LinkedIn → Facebook → Instagram'));
+  assert.ok(js.includes("['sent_confirmed', 'submitted_confirmed']"));
+  assert.ok(js.includes('今日真实开发'));
+  assert.ok(js.includes('dailyDevelopedPanel()'));
+  assert.ok(js.includes('Email运营漏斗'));
+  assert.ok(js.includes('同域名每日最多3封'));
+  assert.ok(js.includes('buyerRoutedAt'));
+  assert.ok(js.includes('meetingBookedAt'));
+});
+
+test('North America reserve is visibly separated from confirmed development', () => {
+  assert.ok(js.includes('function northAmericaAgencyReserveRows'));
+  assert.ok(js.includes('function northAmericaMarketPanel'));
+  assert.ok(js.includes("item.customerType === 'sales_agency'"));
+  assert.ok(js.includes("['United States', 'Canada', 'Mexico']"));
+  assert.ok(js.includes('候选储备与真实开发分开统计'));
+  assert.ok(js.includes('储备不是已发送'));
+  assert.ok(js.includes("['north-america', '\\u5317\\u7f8e\\u4ee3\\u7406\\u50a8\\u5907'"));
+});
+
+test('autonomous result company identity survives dated email task ids', () => {
+  assert.ok(js.includes('name: item.company || task.name'));
+  assert.ok(js.includes('company: item.company || task.company'));
+  assert.ok(js.includes('const discovery = discoveryCompanyRecord(company) || {}'));
 });
 
 test('command center customer list restores 18.4 filtering and sorting controls', () => {
@@ -239,6 +281,32 @@ test('customer table displays bounded ICP scores instead of composite priority s
   const customerTableBlock = js.slice(js.indexOf('function customers()'), js.indexOf('function countryGeoCode'));
   assert.ok(customerTableBlock.includes('>${icpScore(record)}</td>'));
   assert.ok(!customerTableBlock.includes('>${dealProbabilityScore(record)}</td>'));
+});
+
+test('customer timeline uses real customer events instead of artifact refresh time', () => {
+  assert.ok(js.includes('function customerEventLedger'));
+  assert.ok(js.includes("latestCustomerEvent(record, ['sent_confirmed'])"));
+  assert.ok(js.includes('function recordEventTime'));
+  assert.ok(js.includes('最近真实触达'));
+  assert.ok(js.includes('无真实触达时间'));
+  assert.ok(!js.includes("resultCheckedAt: latestRun && latestRun.generatedAt || ''"));
+  assert.ok(!js.includes("discoveredAt: latestRun && latestRun.generatedAt || ''"));
+});
+
+test('customer table exposes validated contact email and mailto reachability', () => {
+  const customerTableBlock = js.slice(js.indexOf('function customers()'), js.indexOf('function countryGeoCode'));
+  assert.ok(customerTableBlock.includes('可建联 Email'));
+  assert.ok(js.includes('function contactEmailValue'));
+  assert.ok(customerTableBlock.includes('mailto:${esc(email)}'));
+  assert.ok(js.includes('未发现有效公开邮箱'));
+});
+
+test('customer email never falls back to FLEXTAIL sender identity', () => {
+  assert.ok(js.includes('emailFrom is FLEXTAIL'));
+  assert.ok(js.includes("/^leo@flextailgear\\.com$/i"));
+  assert.ok(js.includes('source.publicEmail || source.contactEmail || source.email'));
+  assert.ok(!js.includes('source.publicEmail || source.contactEmail || source.emailFrom || source.email'));
+  assert.ok(js.includes("enriched.publicEmail = ''"));
 });
 
 test('today queue displays bounded ICP scores instead of composite deal scores', () => {
@@ -271,9 +339,32 @@ test('artifact-derived collections are memoized for responsive module navigation
   assert.ok(js.includes("memoized('customerRecords'"));
 });
 
+test('same-day result checks use one Shanghai date formatter and one indexed scan', () => {
+  assert.ok(js.includes("const AUTOMATION_DAY_FORMATTER = new Intl.DateTimeFormat('en-CA'"));
+  assert.ok(js.includes("memoized('sameDayDevelopmentIndex'"));
+  assert.ok(js.includes('const item = index.get(key)'));
+  assert.ok(!js.includes('const today = new Intl.DateTimeFormat'));
+});
+
+test('auditable inbound reply evidence populates reply conversion records', () => {
+  assert.ok(js.includes('function replySignalFromEvidence'));
+  assert.ok(js.includes('recipient_(?:auto_)?reply_received'));
+  assert.ok(js.includes("replyTimestampSource: confirmed && reply ? 'automation_result_timestamp' : ''"));
+  assert.ok(js.includes('function replyTypePanel'));
+  assert.ok(js.includes('${replyTypePanel(report)}'));
+});
+
+test('live record deduplication preserves downstream reply and opportunity events', () => {
+  assert.ok(js.includes('const merged = new Map()'));
+  assert.ok(js.includes('...(data.tasks || [])'));
+  assert.ok(js.includes('repliedAt: replyCandidate'));
+  assert.ok(js.includes('contactCapturedAt: newerTimestamp(existing.contactCapturedAt, item.contactCapturedAt)'));
+  assert.ok(js.includes('opportunityAt: newerTimestamp(existing.opportunityAt, item.opportunityAt)'));
+});
+
 test('current task sorting does not mutate the memoized visible queue', () => {
   const currentTaskBlock = js.slice(js.indexOf('function currentTask'), js.indexOf('function executionResultKey'));
-  assert.ok(currentTaskBlock.includes("[...latestQueueRows('visibleTodayQueue')].sort(dealPriorityCompare)[0]"));
+  assert.ok(currentTaskBlock.includes('executableDevelopmentTasks().sort(dealPriorityCompare)[0]'));
   assert.ok(!currentTaskBlock.includes("latestQueueRows('visibleTodayQueue').sort(dealPriorityCompare)"));
 });
 
@@ -305,14 +396,27 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260714-icp-score-fix'));
+  assert.ok(html.includes('20260727-smooth-startup'));
   assert.ok(html.includes('ensureCommandCenterModule'));
   assert.ok(html.includes('正在加载客户开发系统'));
   assert.ok(!html.includes('ensureVisibleCommandCenterFallback'));
   assert.ok(!html.includes('System display recovered in fallback mode'));
   assert.ok(!html.includes('Display repair mode'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-34-20260720-immutable-ledger'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-37-20260727-smooth-startup'));
+});
+
+test('local dashboard clears legacy caches without reload loops', () => {
+  assert.ok(html.includes("localStorage.getItem(key)"));
+  assert.ok(html.includes("!['127.0.0.1','localhost','::1'].includes(location.hostname)"));
+  assert.ok(!html.includes("next.searchParams.set('cacheReset'"));
+  assert.ok(!publicIndexHtml.includes("next.searchParams.set('cacheReset'"));
+});
+
+test('command center startup failures replace the spinner with a recovery screen', () => {
+  assert.ok(js.includes("failedShell.dataset.startupFailure = '1'"));
+  assert.ok(js.includes('\\u5ba2\\u6237\\u5f00\\u53d1\\u7cfb\\u7edf\\u542f\\u52a8\\u5931\\u8d25'));
+  assert.ok(js.includes("document.body.classList.add('command-center-active')"));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {
@@ -323,6 +427,24 @@ test('reporting center exposes reply conversion diagnostics and CSV rates', () =
   assert.ok(js.includes('topReplySegments'));
   assert.ok(js.includes('underperformingSegments'));
   assert.ok(js.includes('reply_conversion_segments'));
+});
+
+test('reporting center shows a real ICP average and scored-customer coverage', () => {
+  assert.ok(js.includes('平均 ICP 评分'));
+  assert.ok(js.includes('report.icpScoring.average'));
+  assert.ok(js.includes('已评分 ${report.icpScoring.scoredCustomers}/${report.icpScoring.discoveredCustomers} 家'));
+  assert.ok(js.includes('缺失分数不按 0 计'));
+});
+
+test('reporting center keeps profile-event counts separate from the ICP average', () => {
+  assert.ok(js.includes("['discovered', '发现客户'], ['profiled', '画像记录']"));
+  assert.ok(js.includes('平均 ICP 评分'));
+  assert.ok(analyticsJs.includes("if (upstream === 'profiled') continue"));
+});
+
+test('reporting center preserves one decimal when reply rate is above five percent', () => {
+  assert.ok(js.includes('Math.round(Number(value || 0) * 1000) / 10'));
+  assert.ok(js.includes("percent.toFixed(1)"));
 });
 
 test('weekly and monthly reports include log attribution and next-stage actions', () => {

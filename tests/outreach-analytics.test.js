@@ -364,7 +364,7 @@ test('period headline counts unique discovered customers and only explicit profi
   assert.equal(report.metrics.profiled, 1);
 });
 
-test('period funnel backfills required upstream stages from confirmed downstream evidence', () => {
+test('period funnel never fabricates explicit profile scoring from downstream evidence', () => {
   const report = buildPeriodReport([
     {
       company: 'Legacy Outdoor',
@@ -387,7 +387,7 @@ test('period funnel backfills required upstream stages from confirmed downstream
 
   assert.deepEqual(report.metrics, {
     discovered: 3,
-    profiled: 3,
+    profiled: 0,
     approved: 3,
     sent: 3,
     replied: 1,
@@ -400,7 +400,42 @@ test('period funnel backfills required upstream stages from confirmed downstream
   assert.equal(report.consistency.funnelMonotonic, true);
   assert.deepEqual(report.consistency.violations, []);
   assert.equal(report.eventRecords[0].eventEvidence.discovered, 'inferred_from_sent');
-  assert.ok(report.metrics.discovered >= report.metrics.profiled);
-  assert.ok(report.metrics.profiled >= report.metrics.approved);
+  assert.equal(report.eventRecords.filter(entry => entry.events.profiled).length, 0);
   assert.ok(report.metrics.approved >= report.metrics.sent);
+});
+
+test('period reports calculate customer-deduplicated ICP average without treating missing scores as zero', () => {
+  const report = buildPeriodReport([
+    { company: 'A', discoveredAt: '2026-07-14T01:00:00+08:00', fitScore: 80 },
+    { company: 'A', discoveredAt: '2026-07-14T02:00:00+08:00', fitScore: 84 },
+    { company: 'B', discoveredAt: '2026-07-14T01:00:00+08:00', icpScore: 76 },
+    { company: 'C', discoveredAt: '2026-07-14T01:00:00+08:00' },
+    { company: 'Invalid', discoveredAt: '2026-07-14T01:00:00+08:00', fitScore: 120 },
+  ], { type: 'monthly', anchor: '2026-07-14' });
+  assert.deepEqual(report.icpScoring, {
+    average: 80,
+    scoredCustomers: 2,
+    discoveredCustomers: 4,
+    coverage: 0.5,
+    minimum: 76,
+    maximum: 84,
+  });
+});
+
+test('period breakdowns deduplicate the same customer and metric within each segment', () => {
+  const report = buildPeriodReport([
+    { company: 'Same Buyer', platform: 'facebook', state: 'sent_confirmed', sentAt: '2026-06-04T01:00:00+08:00' },
+    { company: 'Same Buyer', platform: 'facebook', state: 'sent_confirmed', sentAt: '2026-06-04T01:00:00+08:00' },
+  ], { type: 'monthly', anchor: '2026-06-14' });
+  assert.equal(report.metrics.sent, 1);
+  assert.equal(report.breakdowns.platform[0].metrics.sent, 1);
+});
+
+test('period reports separate human, automated, and unclassified replies', () => {
+  const report = buildPeriodReport([
+    { company: 'Human', sendStatus: 'sent_confirmed', sentAt: '2026-07-01T01:00:00+08:00', repliedAt: '2026-07-02T01:00:00+08:00', replyType: 'human' },
+    { company: 'Bot', sendStatus: 'sent_confirmed', sentAt: '2026-07-01T02:00:00+08:00', repliedAt: '2026-07-02T02:00:00+08:00', replyType: 'automated' },
+    { company: 'Legacy', sendStatus: 'sent_confirmed', sentAt: '2026-07-01T03:00:00+08:00', repliedAt: '2026-07-02T03:00:00+08:00' },
+  ], { type: 'monthly', anchor: '2026-07-15' });
+  assert.deepEqual(report.replyDiagnostics, { human: 1, automated: 1, unclassified: 1 });
 });
