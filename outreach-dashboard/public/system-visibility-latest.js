@@ -1,14 +1,14 @@
 window.SYSTEM_VISIBILITY_LATEST = {
-  "updatedAt": "2026-08-28T05:48:19.977Z",
-  "source": "sync-local-data-to-github-writeSyncStatus",
+  "updatedAt": "2026-08-28T07:07:50.940Z",
+  "source": "main-writeDailyExecutionArtifact",
   "runDate": "2026-08-28",
-  "artifactGeneratedAt": "2026-08-28T05:40:01.646Z",
-  "executionGeneratedAt": "2026-08-28T05:40:05.635Z",
+  "artifactGeneratedAt": "2026-08-28T07:07:45.216Z",
+  "executionGeneratedAt": "2026-08-28T07:07:50.890Z",
   "githubSyncUpdatedAt": "2026-08-28T05:48:19.917Z",
   "counts": {
-    "dailyQueue": 83,
-    "googleDiscovered": 83,
-    "websiteContact": 35,
+    "dailyQueue": 86,
+    "googleDiscovered": 86,
+    "websiteContact": 38,
     "cooldownQueue": 30,
     "scheduledLater": 0
   },
