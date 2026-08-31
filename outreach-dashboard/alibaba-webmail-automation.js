@@ -342,8 +342,9 @@ function composeRecipientFocusExpression() {
   })()`;
 }
 
-function composeRecipientChipExpression() {
+function composeRecipientChipExpression({ recipient } = {}) {
   return `(() => {
+    const recipientNeedle = ${serialized(recipient)}.trim().toLowerCase();
     const fields = ${composeFieldsExpression()};
     const input = fields.recipientInput;
     const compose = input?.closest?.('[data-testid="compose-container"]');
@@ -401,6 +402,7 @@ function composeRecipientChipExpression() {
       ok: true,
       evidence: 'alibaba_webmail_scoped_recipient_chip_found',
       text: chip.text.slice(0, 120),
+      exactRecipient: chip.text.trim().toLowerCase() === recipientNeedle,
       preferredSelectorMatch: chip.preferred,
       x: Math.round(chip.rect.x + chip.rect.width / 2),
       y: Math.round(chip.rect.y + chip.rect.height / 2),

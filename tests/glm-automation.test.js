@@ -1842,6 +1842,8 @@ test('Alibaba recipient name chip requires an exact tooltip email before send', 
   assert.ok(mainSource.includes('recipientTooltipExactMatch: true'));
   assert.ok(alibabaWebmailSource.includes('alibaba_webmail_scoped_recipient_chip_found'));
   assert.ok(alibabaWebmailSource.includes('alibaba_webmail_recipient_tooltip_exact_match'));
+  assert.ok(mainSource.includes('alibaba_webmail_draft_verified_by_exact_rendered_recipient_chip'));
+  assert.ok(alibabaWebmailSource.includes("chip.text.trim().toLowerCase() === recipientNeedle"));
 });
 
 test('Alibaba subject fallback physically fills the verified subject and safely retries the fixed pre-send verifier failure', () => {

@@ -3464,11 +3464,14 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     let inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
     let recipientTooltipEvidence = 'recipient_tooltip_verification_not_needed';
     if (inspected && !inspected.recipientReady && inspected.subjectReady && inspected.bodyReady) {
-      const chip = await evaluateChromeTabJson(chromeOpen, composeRecipientChipExpression(), 5000).catch(() => null);
+      const chip = await evaluateChromeTabJson(chromeOpen, composeRecipientChipExpression({ recipient: target.recipient }), 5000).catch(() => null);
       recipientTooltipEvidence = chip
         ? `${chip.evidence || 'alibaba_webmail_scoped_recipient_chip_missing'};nearby:${JSON.stringify(chip.nearby || []).slice(0, 1200)}`
         : 'alibaba_webmail_scoped_recipient_chip_missing';
-      if (chip && chip.ok && Number.isFinite(chip.x) && Number.isFinite(chip.y)) {
+      if (chip && chip.ok && chip.exactRecipient) {
+        inspected = { ...inspected, ok: true, recipientReady: true, recipientChipExactMatch: true, evidence: 'alibaba_webmail_draft_verified_by_exact_rendered_recipient_chip' };
+        recipientTooltipEvidence = `${recipientTooltipEvidence};alibaba_webmail_recipient_chip_exact_match`;
+      } else if (chip && chip.ok && Number.isFinite(chip.x) && Number.isFinite(chip.y)) {
         for (let clickAttempt = 0; clickAttempt < 2; clickAttempt += 1) {
           await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x: chip.x, y: chip.y }, 3000);
           await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x: chip.x, y: chip.y, button: 'left', clickCount: 1 }, 3000);

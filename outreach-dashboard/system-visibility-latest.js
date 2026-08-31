@@ -1,14 +1,14 @@
 window.SYSTEM_VISIBILITY_LATEST = {
-  "updatedAt": "2026-08-31T06:08:00.051Z",
+  "updatedAt": "2026-08-31T07:12:39.292Z",
   "source": "main-writeDailyExecutionArtifact",
   "runDate": "2026-08-31",
-  "artifactGeneratedAt": "2026-08-31T06:07:54.652Z",
-  "executionGeneratedAt": "2026-08-31T06:07:59.784Z",
-  "githubSyncUpdatedAt": "2026-08-31T04:07:24.880Z",
+  "artifactGeneratedAt": "2026-08-31T07:12:32.094Z",
+  "executionGeneratedAt": "2026-08-31T07:12:39.049Z",
+  "githubSyncUpdatedAt": "2026-08-31T06:11:07.103Z",
   "counts": {
-    "dailyQueue": 88,
-    "googleDiscovered": 88,
-    "websiteContact": 44,
+    "dailyQueue": 95,
+    "googleDiscovered": 95,
+    "websiteContact": 87,
     "cooldownQueue": 30,
     "scheduledLater": 0
   },
@@ -33,8 +33,8 @@ window.SYSTEM_VISIBILITY_LATEST = {
   ],
   "dailyQueueGoal": {
     "target": 100,
-    "potentialPool": 20,
-    "refillNeeded": 80,
+    "potentialPool": 11,
+    "refillNeeded": 89,
     "reached": false
   },
   "contactEnrichment": {
