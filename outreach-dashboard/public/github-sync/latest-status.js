@@ -1,10 +1,9 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-08-31T06:11:07.103Z",
-  "ok": false,
-  "pushed": false,
+  "updatedAt": "2026-08-31T07:18:17.188Z",
+  "ok": true,
+  "pushed": true,
   "branch": "vercel-main-sync",
-  "localCommit": "e61cc433cd772cc7f9b64dfd57a55a727af28631",
-  "remoteCommit": "fd70c4a55396b3df71fa810d6c78c88528c37f07",
-  "message": "sync: local outreach data 2026-08-31",
-  "error": "Command failed: git -c gc.auto=0 merge --no-edit --no-ff refs/remotes/origin/vercel-main-sync"
+  "localCommit": "fbd86dd8b9b359d7f81145f9fa6ee203e41a0583",
+  "remoteCommit": "fbd86dd8b9b359d7f81145f9fa6ee203e41a0583",
+  "message": "sync: local outreach data 2026-08-31"
 };
