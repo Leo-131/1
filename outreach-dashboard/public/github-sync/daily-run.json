@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:10:13.451Z",
+  "generatedAt": "2026-08-31T02:17:57.496Z",
   "date": "2026-08-31",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -155,7 +155,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -184,7 +184,7 @@
       "discoveredAt": "2026-08-21T08:56:57.503Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T16:05:44.407Z",
+        "verifiedAt": "2026-08-31T02:14:50.024Z",
         "evidenceUrl": "https://minnisbrands.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -269,7 +269,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -375,7 +375,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -488,7 +488,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -603,7 +603,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -712,7 +712,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -825,7 +825,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -934,7 +934,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1049,7 +1049,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1162,7 +1162,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1270,7 +1270,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1380,7 +1380,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1408,7 +1408,7 @@
       "discoveredAt": "2026-08-14T05:42:08.438Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-28T07:06:01.807Z",
+        "verifiedAt": "2026-08-31T02:14:43.391Z",
         "evidenceUrl": "https://www.gbstumpp.com/Contact.html",
         "httpStatus": 0,
         "signals": [],
@@ -1488,7 +1488,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1588,7 +1588,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1696,7 +1696,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1806,7 +1806,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1918,7 +1918,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2030,7 +2030,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2138,7 +2138,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -2248,7 +2248,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2358,7 +2358,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2470,7 +2470,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2578,7 +2578,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2688,7 +2688,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2802,7 +2802,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2914,7 +2914,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3026,7 +3026,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -3138,7 +3138,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3248,7 +3248,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3360,7 +3360,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3472,7 +3472,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3584,7 +3584,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3699,7 +3699,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3809,7 +3809,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3911,7 +3911,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4019,7 +4019,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4127,7 +4127,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4239,7 +4239,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -4352,7 +4352,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -4464,7 +4464,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4578,7 +4578,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4678,7 +4678,7 @@
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-31T02:08:25.907Z",
+      "socialProfileVerifiedAt": "2026-08-31T02:14:17.767Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4688,7 +4688,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4719,7 +4719,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-31T02:08:25.907Z",
+        "verifiedAt": "2026-08-31T02:14:17.767Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -4798,7 +4798,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4910,7 +4910,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5019,7 +5019,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5129,7 +5129,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5241,7 +5241,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5349,7 +5349,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5461,7 +5461,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5573,7 +5573,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5683,7 +5683,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5797,7 +5797,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5909,7 +5909,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6021,7 +6021,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6131,7 +6131,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -6241,7 +6241,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6349,7 +6349,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6460,7 +6460,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -6572,7 +6572,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -6684,7 +6684,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6791,7 +6791,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6901,7 +6901,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7009,7 +7009,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7117,7 +7117,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7227,7 +7227,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7339,7 +7339,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7453,7 +7453,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7565,7 +7565,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7673,7 +7673,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7785,7 +7785,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7893,7 +7893,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8005,7 +8005,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8105,7 +8105,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8214,7 +8214,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8327,7 +8327,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8441,7 +8441,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8552,7 +8552,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8663,7 +8663,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8787,7 +8787,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8907,7 +8907,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9033,7 +9033,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9155,7 +9155,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9281,7 +9281,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9405,7 +9405,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9532,7 +9532,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9654,7 +9654,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9776,7 +9776,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9900,7 +9900,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10024,7 +10024,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10144,7 +10144,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10266,7 +10266,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10386,7 +10386,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10506,7 +10506,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10628,7 +10628,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10748,7 +10748,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10868,7 +10868,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10988,7 +10988,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11112,7 +11112,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11236,7 +11236,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11360,7 +11360,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11469,7 +11469,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -11589,7 +11589,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11715,7 +11715,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11837,7 +11837,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11963,7 +11963,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12075,7 +12075,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12199,7 +12199,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12326,7 +12326,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12448,7 +12448,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:08:19",
+        "localTime": "2026/8/31 10:14:11",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12570,7 +12570,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12682,7 +12682,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12786,7 +12786,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12894,7 +12894,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13000,7 +13000,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13104,7 +13104,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13210,7 +13210,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13306,7 +13306,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13410,7 +13410,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -13439,7 +13439,7 @@
       "discoveredAt": "2026-08-21T08:56:57.503Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T16:05:44.407Z",
+        "verifiedAt": "2026-08-31T02:14:50.024Z",
         "evidenceUrl": "https://minnisbrands.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -13519,7 +13519,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13547,7 +13547,7 @@
       "discoveredAt": "2026-08-14T05:42:08.438Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-28T07:06:01.807Z",
+        "verifiedAt": "2026-08-31T02:14:43.391Z",
         "evidenceUrl": "https://www.gbstumpp.com/Contact.html",
         "httpStatus": 0,
         "signals": [],
@@ -13622,7 +13622,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13729,7 +13729,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13832,7 +13832,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13935,7 +13935,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -14043,7 +14043,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -14150,7 +14150,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14256,7 +14256,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -14363,7 +14363,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14466,7 +14466,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -14574,7 +14574,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14678,7 +14678,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 04:10",
+        "localTime": "Mon 04:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -14784,7 +14784,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Mon 05:10",
+        "localTime": "Mon 05:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -14891,7 +14891,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 12:10",
+        "localTime": "Mon 12:17",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -14985,7 +14985,7 @@
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://minnisbrands.com/contact/",
-      "socialProfileVerifiedAt": "2026-08-27T16:05:44.407Z",
+      "socialProfileVerifiedAt": "2026-08-31T02:14:50.024Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14995,7 +14995,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -15016,7 +15016,7 @@
       "discoveredAt": "2026-08-21T08:56:57.503Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T16:05:44.407Z",
+        "verifiedAt": "2026-08-31T02:14:50.024Z",
         "evidenceUrl": "https://minnisbrands.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -15096,7 +15096,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -15198,7 +15198,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -15307,7 +15307,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -15417,7 +15417,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -15525,7 +15525,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 04:10",
+        "localTime": "Mon 04:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/Rome morning",
         "weight": 0
@@ -15625,7 +15625,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -15733,7 +15733,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -15843,7 +15843,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -15952,7 +15952,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -16058,7 +16058,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -16169,7 +16169,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16275,7 +16275,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16385,7 +16385,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16493,7 +16493,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -16604,7 +16604,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16711,7 +16711,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16809,7 +16809,7 @@
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://minnisbrands.com/contact/",
-      "socialProfileVerifiedAt": "2026-08-27T16:05:44.407Z",
+      "socialProfileVerifiedAt": "2026-08-31T02:14:50.024Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16819,7 +16819,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -16840,7 +16840,7 @@
       "discoveredAt": "2026-08-21T08:56:57.503Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T16:05:44.407Z",
+        "verifiedAt": "2026-08-31T02:14:50.024Z",
         "evidenceUrl": "https://minnisbrands.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -16920,7 +16920,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17018,7 +17018,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17127,7 +17127,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17237,7 +17237,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17346,7 +17346,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17441,7 +17441,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -17551,7 +17551,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17648,7 +17648,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -17754,7 +17754,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17854,7 +17854,7 @@
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-31T02:08:25.907Z",
+      "socialProfileVerifiedAt": "2026-08-31T02:14:17.767Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17864,7 +17864,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17895,7 +17895,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-31T02:08:25.907Z",
+        "verifiedAt": "2026-08-31T02:14:17.767Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -17970,7 +17970,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18078,7 +18078,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18184,7 +18184,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -18292,7 +18292,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -18402,7 +18402,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18510,7 +18510,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -18621,7 +18621,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18716,7 +18716,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18823,7 +18823,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 04:10",
+        "localTime": "Mon 04:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -18919,7 +18919,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19025,7 +19025,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19129,7 +19129,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19237,7 +19237,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19340,7 +19340,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19443,7 +19443,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19548,7 +19548,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19653,7 +19653,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19760,7 +19760,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19865,7 +19865,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -19968,7 +19968,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20075,7 +20075,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20182,7 +20182,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20289,7 +20289,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -20396,7 +20396,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20503,7 +20503,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20608,7 +20608,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20792,7 +20792,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 09:10",
+        "localTime": "Mon 09:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20849,7 +20849,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:10",
+        "localTime": "Mon 14:17",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20906,7 +20906,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:10",
+        "localTime": "Mon 14:17",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20963,7 +20963,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:10",
+        "localTime": "Mon 14:17",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21020,7 +21020,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:10",
+        "localTime": "Mon 14:17",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21077,7 +21077,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:10",
+        "localTime": "Mon 14:17",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21134,7 +21134,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -21191,7 +21191,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -21248,7 +21248,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:10",
+        "localTime": "Mon 03:17",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -21305,7 +21305,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -21361,7 +21361,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -21417,7 +21417,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:10",
+        "localTime": "Sun 22:17",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -21473,7 +21473,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 12:10",
+        "localTime": "Mon 12:17",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -21530,7 +21530,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 07:40",
+        "localTime": "Mon 07:47",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -21604,7 +21604,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21633,7 +21633,7 @@
       "discoveredAt": "2026-08-21T09:54:43.476Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-28T07:05:35.586Z",
+        "verifiedAt": "2026-08-31T02:14:28.356Z",
         "evidenceUrl": "https://agent-c.co.za/",
         "httpStatus": 200,
         "signals": [
@@ -21713,7 +21713,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21825,7 +21825,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21936,7 +21936,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22049,7 +22049,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22161,7 +22161,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22268,7 +22268,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22379,7 +22379,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22491,7 +22491,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22603,7 +22603,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22714,7 +22714,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22826,7 +22826,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22938,7 +22938,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23050,7 +23050,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23161,7 +23161,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23272,7 +23272,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:10",
+        "localTime": "Mon 10:17",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
