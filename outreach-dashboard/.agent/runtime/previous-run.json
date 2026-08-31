@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T10:42:34.872Z",
+  "generatedAt": "2026-08-31T10:55:25.271Z",
   "automationId": "daily-google-lead-outreach-automation",
   "phase": "pre-sync",
   "runState": "completed",
   "verdict": "FAIL",
-  "confirmedThisRun": 0,
-  "confirmedToday": 18,
-  "remainingToday": 82,
+  "confirmedThisRun": 2,
+  "confirmedToday": 20,
+  "remainingToday": 80,
   "policyStatus": "READY",
   "blocks": [],
-  "localHead": "ae4aa6bde2f2431774303db294beac405dfe9060",
-  "upstreamHead": "ae4aa6bde2f2431774303db294beac405dfe9060",
+  "localHead": "d0bac145067df1227a6fdd006a24435dc49ff90b",
+  "upstreamHead": "d0bac145067df1227a6fdd006a24435dc49ff90b",
   "nextAction": "Continue the required bounded automation sequence"
 }
