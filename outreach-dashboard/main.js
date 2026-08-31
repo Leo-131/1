@@ -4750,6 +4750,15 @@ function executableQueueCandidates(items = [], options = {}) {
     .filter(item => {
       const block = blockingAutomationResultFor(item);
       if (!block) return true;
+      if (block.status === 'send_unconfirmed') {
+        const target = verifiedBusinessEmailTarget(item);
+        const subject = String(item.websiteContactSubject || item.subject || '').trim();
+        const exactRecovery = target.ok
+          && subject
+          && String(block.recipientEmail || '').trim().toLowerCase() === String(target.recipient || '').trim().toLowerCase()
+          && String(block.subject || '').trim() === subject;
+        if (exactRecovery) return true;
+      }
       if (block.status === 'same_day_retry_circuit_open') return false;
       return websiteCanReinspectForFirstPartySocial(item)
         || verifiedSocialCanBypassWebsitePreSendBlock(item, block);
@@ -5124,6 +5133,16 @@ async function runDailyAutomationQueue(payload = {}) {
     terminalTaskCount: checkpointCompletedIds.size,
     rule: 'completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id',
   };
+  const isPriorUnconfirmedEmailRecovery = item => {
+    const target = verifiedBusinessEmailTarget(item);
+    if (!target.ok) return false;
+    const subject = String(item.websiteContactSubject || item.subject || '').trim();
+    if (!subject) return false;
+    return previousResults.some(result => result
+      && result.status === 'send_unconfirmed'
+      && String(result.recipientEmail || '').trim().toLowerCase() === String(target.recipient || '').trim().toLowerCase()
+      && String(result.subject || '').trim() === subject);
+  };
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
     if (executable.length >= limit) break;
@@ -5146,7 +5165,11 @@ async function runDailyAutomationQueue(payload = {}) {
     const fixedAlibabaPreSendRetry = Boolean(checkpointResult
       && verifiedBusinessEmailTarget(item).ok
       && isFixedAlibabaPreSendTechnicalFailure(checkpointResult));
-    if (checkpointCompletedIds.has(item.id) && !verifiedProfileIdentityRetry && !fixedAlibabaPreSendRetry) {
+    const priorUnconfirmedEmailRecovery = isPriorUnconfirmedEmailRecovery(item);
+    if (checkpointCompletedIds.has(item.id)
+      && !verifiedProfileIdentityRetry
+      && !fixedAlibabaPreSendRetry
+      && !priorUnconfirmedEmailRecovery) {
       skipped.push({
         id: item.id,
         company: item.company,
@@ -5155,7 +5178,11 @@ async function runDailyAutomationQueue(payload = {}) {
       });
       continue;
     }
-    if (itemBlockedBySameDayCompany(item, selectedCompanyKeys)) {
+    // An exact prior send_unconfirmed email is allowed through selection only
+    // so runVerifiedAlibabaEmailLead can inspect Sent and reconcile it. That
+    // path never composes or clicks Send again. All other company-wide locks
+    // remain unchanged.
+    if (itemBlockedBySameDayCompany(item, selectedCompanyKeys) && !priorUnconfirmedEmailRecovery) {
       skipped.push({
         id: item.id,
         company: item.company,

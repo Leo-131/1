@@ -3074,6 +3074,18 @@ test('every send_unconfirmed result is a company-wide no-replay lock', () => {
   assert.equal(source.includes('prior_send_unconfirmed_no_resend|sent_folder_record_missing'), false);
 });
 
+test('exact unconfirmed Alibaba email can pass selection only for Sent-folder recovery', () => {
+  const source = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'main.js'), 'utf8');
+  assert.match(source, /const isPriorUnconfirmedEmailRecovery = item =>/);
+  assert.match(source, /result\.status === 'send_unconfirmed'/);
+  assert.match(source, /result\.recipientEmail[\s\S]*target\.recipient/);
+  assert.match(source, /result\.subject[\s\S]*subject/);
+  assert.match(source, /itemBlockedBySameDayCompany\(item, selectedCompanyKeys\) && !priorUnconfirmedEmailRecovery/);
+  assert.match(source, /checkpointCompletedIds\.has\(item\.id\)[\s\S]*!priorUnconfirmedEmailRecovery/);
+  assert.match(source, /block\.status === 'send_unconfirmed'[\s\S]*exactRecovery[\s\S]*if \(exactRecovery\) return true/);
+  assert.match(source, /That[\s\S]*path never composes or clicks Send again/);
+});
+
 test('restored verified email can retry explicit pre-send composer and alternate-channel failures', () => {
   assert.ok(mainSource.includes("'no_email_composer_opened'"));
   assert.ok(mainSource.includes("'email_route_preserved_draft_no_reopen'"));

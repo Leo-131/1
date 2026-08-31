@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T02:23:19.968Z",
+  "generatedAt": "2026-08-31T02:38:17.171Z",
   "date": "2026-08-31",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,9 +50,9 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 49,
-    "dueNow": 90,
-    "visibleTodayQueue": 78,
+    "readyToDevelop": 45,
+    "dueNow": 88,
+    "visibleTodayQueue": 76,
     "potentialPool": 20,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
@@ -70,9 +70,9 @@
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 12,
     "enrichmentBacklogCount": 10,
-    "googleDiscovered": 90,
-    "facebookDiscovered": 16,
-    "websiteContactDiscovered": 19,
+    "googleDiscovered": 88,
+    "facebookDiscovered": 14,
+    "websiteContactDiscovered": 17,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -155,7 +155,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -269,7 +269,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -375,7 +375,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -488,7 +488,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -603,7 +603,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -712,7 +712,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -825,7 +825,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -934,7 +934,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1049,7 +1049,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1162,7 +1162,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1270,7 +1270,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1312,118 +1312,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 267,
       "priorityScore": 267,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-asm-group-canada-website-contact",
-      "name": "ASM Group Canada",
-      "company": "ASM Group Canada",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 96,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "Canadian outdoor sports cycling sales and representation agency",
-      "role": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "background": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "buyerPersona": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "buyerName": "Loic Despres",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "Canadian outdoor sports cycling sales and representation agency",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "loic@asmsports.ca",
-      "contactEmail": "loic@asmsports.ca",
-      "vendorPortal": "https://www.asmsports.ca/en/a-propos",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Exact Director of Business Development company-domain email published on ASM Group's first-party About page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "official_named_business_development_contact",
-      "emailEvidenceUrl": "",
-      "website": "https://www.asmsports.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.asmsports.ca/en/a-propos",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
-        "window": "off_workday",
-        "nextBest": "America/Toronto morning"
-      },
-      "platform": "email",
-      "channelType": "email",
-      "platformUrl": "https://www.asmsports.ca/en/a-propos",
-      "url": "https://www.asmsports.ca/en/a-propos",
-      "contactUrl": "https://www.asmsports.ca/en/a-propos",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.asmsports.ca%20%22ASM%20Group%20Canada%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | ASM Group Canada",
-      "websiteContactMessage": "Dear ASM Group Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_public_business_email_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.asmsports.ca/en/a-propos"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-31T02:14:10.999Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-31T02:20:38.737Z",
-        "evidenceUrl": "https://www.asmsports.ca/en/a-propos",
-        "httpStatus": 200,
-        "signals": [
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "taskId": "google-customer-asm-group-canada-website-contact",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 278,
-      "priorityScore": 278,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -1492,7 +1380,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1600,7 +1488,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1700,7 +1588,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1808,7 +1696,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -1918,7 +1806,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2030,7 +1918,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2116,7 +2004,7 @@
       "contactNote": "",
       "publicEmailStatus": "Published in Therm-a-Rest official US sales representative directory.",
       "emailVerificationStatus": "official_brand_rep_directory_email",
-      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidence": "official_brand_sales_rep_pdf",
       "emailEvidenceUrl": "",
       "website": "https://www.lathropassociates.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Lathrop%20Associates%22%20%22New%20England%20outdoor%20sales%20representative%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -2142,7 +2030,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2170,7 +2058,7 @@
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-31T02:21:09.999Z",
+        "verifiedAt": "2026-08-31T02:25:48.031Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -2250,7 +2138,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -2360,7 +2248,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2470,7 +2358,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2582,7 +2470,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2690,7 +2578,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2800,7 +2688,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -2914,7 +2802,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3026,7 +2914,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3138,7 +3026,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -3250,7 +3138,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3360,7 +3248,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3472,7 +3360,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3500,7 +3388,7 @@
       "discoveredAt": "2026-08-25T14:40:34.951Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T22:05:34.438Z",
+        "verifiedAt": "2026-08-31T02:26:33.746Z",
         "evidenceUrl": "https://stellabluesales.com/",
         "httpStatus": 200,
         "signals": [
@@ -3584,7 +3472,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3696,7 +3584,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3811,7 +3699,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -3921,7 +3809,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4023,7 +3911,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4131,7 +4019,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4239,7 +4127,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4351,7 +4239,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -4464,7 +4352,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -4576,7 +4464,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4690,7 +4578,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4790,7 +4678,7 @@
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-31T02:20:44.324Z",
+      "socialProfileVerifiedAt": "2026-08-31T02:25:54.841Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4800,7 +4688,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -4831,7 +4719,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-31T02:20:44.324Z",
+        "verifiedAt": "2026-08-31T02:25:54.841Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -4910,7 +4798,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5022,7 +4910,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5131,7 +5019,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5241,7 +5129,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5353,7 +5241,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5461,7 +5349,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5573,7 +5461,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -5685,7 +5573,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5795,7 +5683,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -5909,7 +5797,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6021,7 +5909,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6133,7 +6021,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6243,7 +6131,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -6353,7 +6241,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6461,7 +6349,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6572,7 +6460,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -6684,7 +6572,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -6796,7 +6684,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -6903,7 +6791,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7013,7 +6901,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7121,7 +7009,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7229,7 +7117,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7339,7 +7227,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7451,7 +7339,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -7565,7 +7453,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7677,7 +7565,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7785,7 +7673,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -7897,7 +7785,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8005,7 +7893,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8117,7 +8005,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8217,7 +8105,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -8326,7 +8214,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8371,120 +8259,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 234,
       "priorityScore": 234,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "name": "Naturehike South Africa",
-      "company": "Naturehike South Africa",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "South Africa",
-      "countryEn": "South Africa",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "South African outdoor brand and reseller network",
-      "role": "Regional partnership team responsible for reseller and assortment growth.",
-      "background": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "buyerPersona": "Regional partnership team responsible for reseller and assortment growth.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "South African outdoor brand and reseller network",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "hello@naturehike.africa",
-      "contactEmail": "hello@naturehike.africa",
-      "vendorPortal": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official regional business email published on the first-party South Africa reseller page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "",
-      "website": "https://www.naturehike.co.za/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "email",
-      "channelType": "email",
-      "platformUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "url": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.naturehike.co.za%20%22Naturehike%20South%20Africa%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | Naturehike South Africa",
-      "websiteContactMessage": "Dear Naturehike South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_public_business_email_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.naturehike.co.za/pages/contact-alternate"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-25T13:05:06.172Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-28T10:05:38.696Z",
-        "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "taskId": "google-customer-naturehike-south-africa-website-contact",
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 241,
-      "priorityScore": 241,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -8553,7 +8327,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8664,7 +8438,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8775,7 +8549,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8899,7 +8673,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -9019,7 +8793,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9145,7 +8919,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9267,7 +9041,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9393,7 +9167,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9517,7 +9291,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9644,7 +9418,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9766,7 +9540,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9888,7 +9662,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9915,7 +9689,7 @@
       "discoveredAt": "2026-08-25T14:40:34.951Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T22:05:34.438Z",
+        "verifiedAt": "2026-08-31T02:26:33.746Z",
         "evidenceUrl": "https://stellabluesales.com/",
         "httpStatus": 200,
         "signals": [
@@ -10012,7 +9786,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10136,7 +9910,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10256,7 +10030,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10378,7 +10152,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10498,7 +10272,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10618,7 +10392,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10740,7 +10514,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10860,7 +10634,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10980,7 +10754,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11100,7 +10874,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11224,7 +10998,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11251,7 +11025,7 @@
       "discoveredAt": "2026-08-25T14:40:34.951Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T22:05:34.438Z",
+        "verifiedAt": "2026-08-31T02:26:33.746Z",
         "evidenceUrl": "https://stellabluesales.com/",
         "httpStatus": 200,
         "signals": [
@@ -11348,7 +11122,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -11408,115 +11182,6 @@
         "gate": "official_business_email",
         "evidenceUrl": "https://www.beaveroutdoor.ca/contact-us.html"
       }
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-website-contact",
-      "name": "Naturehike South Africa",
-      "company": "Naturehike South Africa",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "South Africa",
-      "countryEn": "South Africa",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "South African outdoor brand and reseller network",
-      "role": "Regional partnership team responsible for reseller and assortment growth.",
-      "background": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "buyerPersona": "Regional partnership team responsible for reseller and assortment growth.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "South African outdoor brand and reseller network",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "hello@naturehike.africa",
-      "contactEmail": "hello@naturehike.africa",
-      "vendorPortal": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official regional business email published on the first-party South Africa reseller page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "",
-      "website": "https://www.naturehike.co.za/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "email",
-      "channelType": "email",
-      "platformUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "url": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.naturehike.co.za%20%22Naturehike%20South%20Africa%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | Naturehike South Africa",
-      "websiteContactMessage": "Dear Naturehike South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_public_business_email_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.naturehike.co.za/pages/contact-alternate"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-25T13:05:06.172Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-28T10:05:38.696Z",
-        "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 241,
-      "priorityScore": 239
     },
     {
       "id": "google-customer-next-adventure-linkedin",
@@ -11581,7 +11246,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -11701,7 +11366,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11827,7 +11492,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11949,7 +11614,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12011,118 +11676,6 @@
         "gate": "first_party_verified_social",
         "evidenceUrl": "https://www.brreps.com/"
       }
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-facebook",
-      "name": "Naturehike South Africa",
-      "company": "Naturehike South Africa",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "South Africa",
-      "countryEn": "South Africa",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "South African outdoor brand and reseller network",
-      "role": "Regional partnership team responsible for reseller and assortment growth.",
-      "background": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "buyerPersona": "Regional partnership team responsible for reseller and assortment growth.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "South African outdoor brand and reseller network",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "hello@naturehike.africa",
-      "contactEmail": "hello@naturehike.africa",
-      "vendorPortal": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official regional business email published on the first-party South Africa reseller page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "",
-      "website": "https://www.naturehike.co.za/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "socialProfileVerifiedAt": "2026-08-28T10:05:38.696Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "facebook",
-      "channelType": "facebook",
-      "platformUrl": "https://www.facebook.com/naturehikeafrica",
-      "url": "https://www.facebook.com/naturehikeafrica",
-      "contactUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.naturehike.co.za%20%22Naturehike%20South%20Africa%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | Naturehike South Africa",
-      "websiteContactMessage": "Dear Naturehike South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_social_channel_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.naturehike.co.za/pages/contact-alternate"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-25T13:05:06.172Z",
-      "taskId": "google-customer-naturehike-south-africa-facebook",
-      "targetUrl": "https://www.facebook.com/naturehikeafrica",
-      "verifiedTargetUrl": "https://www.facebook.com/naturehikeafrica",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-28T10:05:38.696Z",
-        "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 241,
-      "priorityScore": 241
     },
     {
       "id": "google-customer-latulippe-facebook",
@@ -12187,7 +11740,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -12311,7 +11864,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12438,7 +11991,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12560,7 +12113,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/31 10:20:35",
+        "localTime": "2026/8/31 10:25:43",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12618,118 +12171,6 @@
         "gate": "first_party_verified_social",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home"
       }
-    },
-    {
-      "id": "google-customer-naturehike-south-africa-instagram",
-      "name": "Naturehike South Africa",
-      "company": "Naturehike South Africa",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "South Africa",
-      "countryEn": "South Africa",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "South African outdoor brand and reseller network",
-      "role": "Regional partnership team responsible for reseller and assortment growth.",
-      "background": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "buyerPersona": "Regional partnership team responsible for reseller and assortment growth.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "South African outdoor brand and reseller network",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "hello@naturehike.africa",
-      "contactEmail": "hello@naturehike.africa",
-      "vendorPortal": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official regional business email published on the first-party South Africa reseller page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "",
-      "website": "https://www.naturehike.co.za/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "socialProfileVerifiedAt": "2026-08-28T10:05:38.696Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "instagram",
-      "channelType": "instagram",
-      "platformUrl": "https://www.instagram.com/naturehikeafrica/?hl=en",
-      "url": "https://www.instagram.com/naturehikeafrica/?hl=en",
-      "contactUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.naturehike.co.za%20%22Naturehike%20South%20Africa%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | Naturehike South Africa",
-      "websiteContactMessage": "Dear Naturehike South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_social_channel_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.naturehike.co.za/pages/contact-alternate"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-25T13:05:06.172Z",
-      "taskId": "google-customer-naturehike-south-africa-instagram",
-      "targetUrl": "https://www.instagram.com/naturehikeafrica/?hl=en",
-      "verifiedTargetUrl": "https://www.instagram.com/naturehikeafrica/?hl=en",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-28T10:05:38.696Z",
-        "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 241,
-      "priorityScore": 241
     },
     {
       "id": "google-customer-left-point-distribution-website-contact",
@@ -12794,7 +12235,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12898,7 +12339,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13006,7 +12447,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13112,7 +12553,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13216,7 +12657,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13322,7 +12763,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13418,7 +12859,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13522,7 +12963,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -13567,113 +13008,6 @@
       "contactChannelScore": 29,
       "dealProbabilityScore": 296,
       "priorityScore": 294
-    },
-    {
-      "id": "google-customer-asm-group-canada-website-contact",
-      "name": "ASM Group Canada",
-      "company": "ASM Group Canada",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 96,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "Canadian outdoor sports cycling sales and representation agency",
-      "role": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "background": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "buyerPersona": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "buyerName": "Loic Despres",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "Canadian outdoor sports cycling sales and representation agency",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "loic@asmsports.ca",
-      "contactEmail": "loic@asmsports.ca",
-      "vendorPortal": "https://www.asmsports.ca/en/a-propos",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Exact Director of Business Development company-domain email published on ASM Group's first-party About page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "official_named_business_development_contact",
-      "emailEvidenceUrl": "",
-      "website": "https://www.asmsports.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.asmsports.ca/en/a-propos",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
-        "window": "off_workday",
-        "nextBest": "America/Toronto morning"
-      },
-      "platform": "email",
-      "channelType": "email",
-      "platformUrl": "https://www.asmsports.ca/en/a-propos",
-      "url": "https://www.asmsports.ca/en/a-propos",
-      "contactUrl": "https://www.asmsports.ca/en/a-propos",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.asmsports.ca%20%22ASM%20Group%20Canada%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | ASM Group Canada",
-      "websiteContactMessage": "Dear ASM Group Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_public_business_email_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.asmsports.ca/en/a-propos"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-31T02:14:10.999Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-31T02:20:38.737Z",
-        "evidenceUrl": "https://www.asmsports.ca/en/a-propos",
-        "httpStatus": 200,
-        "signals": [
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 278,
-      "priorityScore": 276
     },
     {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
@@ -13738,7 +13072,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13841,7 +13175,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13922,7 +13256,7 @@
       "contactNote": "",
       "publicEmailStatus": "Published in Therm-a-Rest official US sales representative directory.",
       "emailVerificationStatus": "official_brand_rep_directory_email",
-      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidence": "official_brand_sales_rep_pdf",
       "emailEvidenceUrl": "",
       "website": "https://www.lathropassociates.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Lathrop%20Associates%22%20%22New%20England%20outdoor%20sales%20representative%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -13948,7 +13282,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -13976,7 +13310,7 @@
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-31T02:21:09.999Z",
+        "verifiedAt": "2026-08-31T02:25:48.031Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -14051,7 +13385,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14154,7 +13488,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -14262,7 +13596,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -14369,7 +13703,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14475,7 +13809,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -14582,7 +13916,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14685,7 +14019,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -14793,7 +14127,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -14897,7 +14231,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 04:23",
+        "localTime": "Mon 04:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -15003,7 +14337,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Mon 05:23",
+        "localTime": "Mon 05:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -15110,7 +14444,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 12:23",
+        "localTime": "Mon 12:38",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -15214,7 +14548,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -15315,7 +14649,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -15417,7 +14751,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -15526,7 +14860,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -15636,7 +14970,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -15744,7 +15078,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 04:23",
+        "localTime": "Mon 04:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/Rome morning",
         "weight": 0
@@ -15844,7 +15178,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -15888,116 +15222,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 258,
       "priorityScore": 258
-    },
-    {
-      "id": "google-customer-asm-group-canada-facebook",
-      "name": "ASM Group Canada",
-      "company": "ASM Group Canada",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 96,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "Canadian outdoor sports cycling sales and representation agency",
-      "role": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "background": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "buyerPersona": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "buyerName": "Loic Despres",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "Canadian outdoor sports cycling sales and representation agency",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "loic@asmsports.ca",
-      "contactEmail": "loic@asmsports.ca",
-      "vendorPortal": "https://www.asmsports.ca/en/a-propos",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Exact Director of Business Development company-domain email published on ASM Group's first-party About page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "official_named_business_development_contact",
-      "emailEvidenceUrl": "",
-      "website": "https://www.asmsports.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.asmsports.ca/en/a-propos",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.asmsports.ca/en/a-propos",
-      "socialProfileVerifiedAt": "2026-08-31T02:20:38.737Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
-        "window": "off_workday",
-        "nextBest": "America/Toronto morning"
-      },
-      "platform": "facebook",
-      "channelType": "facebook",
-      "platformUrl": "https://www.facebook.com/ASMSPORTS.CA/",
-      "url": "https://www.facebook.com/ASMSPORTS.CA/",
-      "contactUrl": "https://www.asmsports.ca/en/a-propos",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.asmsports.ca%20%22ASM%20Group%20Canada%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | ASM Group Canada",
-      "websiteContactMessage": "Dear ASM Group Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_social_channel_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.asmsports.ca/en/a-propos"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-31T02:14:10.999Z",
-      "taskId": "google-customer-asm-group-canada-facebook",
-      "targetUrl": "https://www.facebook.com/ASMSPORTS.CA/",
-      "verifiedTargetUrl": "https://www.facebook.com/ASMSPORTS.CA/",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-31T02:20:38.737Z",
-        "evidenceUrl": "https://www.asmsports.ca/en/a-propos",
-        "httpStatus": 200,
-        "signals": [
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 278,
-      "priorityScore": 278
     },
     {
       "id": "google-customer-hardin-outdoors-facebook",
@@ -16062,7 +15286,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16172,7 +15396,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16281,7 +15505,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -16387,7 +15611,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -16498,7 +15722,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16604,7 +15828,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16714,7 +15938,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -16822,7 +16046,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -16933,7 +16157,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17040,7 +16264,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17148,7 +16372,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17249,7 +16473,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17283,116 +16507,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 283,
       "priorityScore": 283
-    },
-    {
-      "id": "google-customer-asm-group-canada-instagram",
-      "name": "ASM Group Canada",
-      "company": "ASM Group Canada",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 96,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "Canadian outdoor sports cycling sales and representation agency",
-      "role": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "background": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "buyerPersona": "Director of Business Development responsible for evaluating new outdoor-brand representation partnerships.",
-      "buyerName": "Loic Despres",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "Canadian outdoor sports cycling sales and representation agency",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "ASM Group supports outdoor and sports brands across Canada through retail representation, field support, logistics and trade-show participation. Its official team directory identifies Loic Despres as Director of Business Development and publishes his exact company-domain email.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "loic@asmsports.ca",
-      "contactEmail": "loic@asmsports.ca",
-      "vendorPortal": "https://www.asmsports.ca/en/a-propos",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Exact Director of Business Development company-domain email published on ASM Group's first-party About page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "official_named_business_development_contact",
-      "emailEvidenceUrl": "",
-      "website": "https://www.asmsports.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.asmsports.ca/en/a-propos",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22ASM%20Group%20Canada%22%20%22Canadian%20outdoor%20sports%20cycling%20sales%20and%20representation%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "https://www.asmsports.ca/en/a-propos",
-      "socialProfileVerifiedAt": "2026-08-31T02:20:38.737Z",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
-        "window": "off_workday",
-        "nextBest": "America/Toronto morning"
-      },
-      "platform": "instagram",
-      "channelType": "instagram",
-      "platformUrl": "https://www.instagram.com/asmsports.ca/",
-      "url": "https://www.instagram.com/asmsports.ca/",
-      "contactUrl": "https://www.asmsports.ca/en/a-propos",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.asmsports.ca%20%22ASM%20Group%20Canada%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | ASM Group Canada",
-      "websiteContactMessage": "Dear ASM Group Canada Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_social_channel_verified",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.asmsports.ca/en/a-propos"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-31T02:14:10.999Z",
-      "taskId": "google-customer-asm-group-canada-instagram",
-      "targetUrl": "https://www.instagram.com/asmsports.ca/",
-      "verifiedTargetUrl": "https://www.instagram.com/asmsports.ca/",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-31T02:20:38.737Z",
-        "evidenceUrl": "https://www.asmsports.ca/en/a-propos",
-        "httpStatus": 200,
-        "signals": [
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 278,
-      "priorityScore": 278
     },
     {
       "id": "google-customer-alpine-waves-instagram",
@@ -17457,7 +16571,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17566,7 +16680,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17676,7 +16790,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17785,7 +16899,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -17880,7 +16994,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -17990,7 +17104,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18087,7 +17201,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -18193,7 +17307,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18293,7 +17407,7 @@
       "officialSocialProfileVerified": true,
       "socialProfileOwnerCompany": "",
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-31T02:20:44.324Z",
+      "socialProfileVerifiedAt": "2026-08-31T02:25:54.841Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18303,7 +17417,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18334,7 +17448,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-31T02:20:44.324Z",
+        "verifiedAt": "2026-08-31T02:25:54.841Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -18409,7 +17523,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18517,7 +17631,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18623,7 +17737,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -18731,7 +17845,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -18841,7 +17955,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -18949,7 +18063,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19060,7 +18174,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19155,7 +18269,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19262,7 +18376,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 04:23",
+        "localTime": "Mon 04:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -19358,7 +18472,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19464,7 +18578,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19568,7 +18682,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19676,7 +18790,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19779,7 +18893,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19882,7 +18996,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -19987,7 +19101,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20092,7 +19206,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20199,7 +19313,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20304,7 +19418,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -20407,7 +19521,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20514,7 +19628,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20621,7 +19735,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20728,7 +19842,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -20835,7 +19949,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -20878,6 +19992,426 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 263,
       "priorityScore": 263
+    },
+    {
+      "id": "google-customer-sportco-marketing-website-contact",
+      "name": "Sportco Marketing",
+      "company": "Sportco Marketing",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified North American outdoor sales agency or wholesale distributor",
+      "role": "Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.",
+      "background": "Sportco Marketing is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.",
+      "buyerPersona": "Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified North American outdoor sales agency or wholesale distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Sportco Marketing is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.sportcomarketinginc.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://www.sportcomarketinginc.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sportco%20Marketing%22%20%22verified%20North%20American%20outdoor%20sales%20agency%20or%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.sportcomarketinginc.com/",
+      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Sportco%20Marketing%22%20%22verified%20North%20American%20outdoor%20sales%20agency%20or%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Sun 22:38",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.sportcomarketinginc.com/",
+      "url": "https://www.sportcomarketinginc.com/",
+      "contactUrl": "https://www.sportcomarketinginc.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sportcomarketinginc.com%20%22Sportco%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | Sportco Marketing",
+      "websiteContactMessage": "Dear Sportco Marketing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.sportcomarketinginc.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-12T12:11:18.234Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-28T05:12:04.876Z",
+        "evidenceUrl": "https://www.sportcomarketinginc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 263,
+      "priorityScore": 263
+    },
+    {
+      "id": "google-customer-the-curtis-group-sales-website-contact",
+      "name": "The Curtis Group Sales",
+      "company": "The Curtis Group Sales",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor industry manufacturer representative and sales agency",
+      "role": "Agency principal, brand-development lead or vendor-partnership owner.",
+      "background": "The Curtis Group Sales is qualified from its first-party website as a North American outdoor-industry sales or manufacturer-representative agency with retailer and brand-development relationships relevant to FLEXTAIL distribution.",
+      "buyerPersona": "Agency principal, brand-development lead or vendor-partnership owner.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor industry manufacturer representative and sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "The Curtis Group Sales is qualified from its first-party website as a North American outdoor-industry sales or manufacturer-representative agency with retailer and brand-development relationships relevant to FLEXTAIL distribution.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://thecurtisgroupsales.com/contact-us/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official contact form of a U.S. ski and outdoor sales agency representing brands across New England and the Mid-Atlantic.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_contact_page",
+      "emailEvidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
+      "website": "https://thecurtisgroupsales.com/contact-us/",
+      "evidenceUrl": "https://www.google.com/search?q=%22The%20Curtis%20Group%20Sales%22%20%22verified%20outdoor%20industry%20manufacturer%20representative%20and%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
+      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22The%20Curtis%20Group%20Sales%22%20%22verified%20outdoor%20industry%20manufacturer%20representative%20and%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Sun 22:38",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://thecurtisgroupsales.com/contact-us/",
+      "url": "https://thecurtisgroupsales.com/contact-us/",
+      "contactUrl": "https://thecurtisgroupsales.com/contact-us/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Athecurtisgroupsales.com%20%22The%20Curtis%20Group%20Sales%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | The Curtis Group Sales",
+      "websiteContactMessage": "Dear The Curtis Group Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://thecurtisgroupsales.com/contact-us/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T11:19:41.924Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-28T05:12:10.250Z",
+        "evidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 263,
+      "priorityScore": 263
+    },
+    {
+      "id": "google-customer-granite-marketing-website-contact",
+      "name": "Granite Marketing",
+      "company": "Granite Marketing",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 92,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor industry manufacturer representative and sales agency",
+      "role": "Agency principal, brand-development lead or vendor-partnership owner.",
+      "background": "Granite Marketing is qualified from its first-party website as a North American outdoor-industry sales or manufacturer-representative agency with retailer and brand-development relationships relevant to FLEXTAIL distribution.",
+      "buyerPersona": "Agency principal, brand-development lead or vendor-partnership owner.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor industry manufacturer representative and sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Granite Marketing is qualified from its first-party website as a North American outdoor-industry sales or manufacturer-representative agency with retailer and brand-development relationships relevant to FLEXTAIL distribution.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.granitereps.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://www.granitereps.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Granite%20Marketing%22%20%22verified%20outdoor%20industry%20manufacturer%20representative%20and%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.granitereps.com/",
+      "discoverySourceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Granite%20Marketing%22%20%22verified%20outdoor%20industry%20manufacturer%20representative%20and%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Sun 22:38",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.granitereps.com/",
+      "url": "https://www.granitereps.com/",
+      "contactUrl": "https://www.granitereps.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.granitereps.com%20%22Granite%20Marketing%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | Granite Marketing",
+      "websiteContactMessage": "Dear Granite Marketing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.granitereps.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-12T12:20:57.343Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-31T02:07:16.212Z",
+        "evidenceUrl": "https://www.granitereps.com/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 262,
+      "priorityScore": 262
+    },
+    {
+      "id": "google-customer-mcqueen-ball-website-contact",
+      "name": "McQueen Ball",
+      "company": "McQueen Ball",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 92,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Northeastern US outdoor and lifestyle sales agency",
+      "role": "Agency leadership responsible for new outdoor brand representation.",
+      "background": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "buyerPersona": "Agency leadership responsible for new outdoor brand representation.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Northeastern US outdoor and lifestyle sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "McQueen Ball connects outdoor, fishing and lifestyle brands with specialty retailers from Maryland to Maine.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://mcqueen-ball.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "No email asserted; official first-party agency site exposes a Contact Us route.",
+      "emailVerificationStatus": "",
+      "emailEvidence": "official_contact_form",
+      "emailEvidenceUrl": "",
+      "website": "https://mcqueen-ball.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://mcqueen-ball.com/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22McQueen%20Ball%22%20%22Northeastern%20US%20outdoor%20and%20lifestyle%20sales%20agency%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Sun 22:38",
+        "window": "off_workday",
+        "nextBest": "America/New_York morning"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://mcqueen-ball.com/",
+      "url": "https://mcqueen-ball.com/",
+      "contactUrl": "https://mcqueen-ball.com/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Amcqueen-ball.com%20%22McQueen%20Ball%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | McQueen Ball",
+      "websiteContactMessage": "Dear McQueen Ball Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://mcqueen-ball.com/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T14:23:47.530Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-31T02:07:19.983Z",
+        "evidenceUrl": "https://mcqueen-ball.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 262,
+      "priorityScore": 262
     }
   ],
   "enrichmentBacklog": [
@@ -21019,7 +20553,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 09:23",
+        "localTime": "Mon 09:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21076,7 +20610,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:23",
+        "localTime": "Mon 14:38",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21133,7 +20667,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:23",
+        "localTime": "Mon 14:38",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21190,7 +20724,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:23",
+        "localTime": "Mon 14:38",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21247,7 +20781,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:23",
+        "localTime": "Mon 14:38",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21304,7 +20838,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 14:23",
+        "localTime": "Mon 14:38",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21361,7 +20895,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -21418,7 +20952,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -21475,7 +21009,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 03:23",
+        "localTime": "Mon 03:38",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -21532,7 +21066,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -21588,7 +21122,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -21644,7 +21178,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 22:23",
+        "localTime": "Sun 22:38",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -21700,7 +21234,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 12:23",
+        "localTime": "Mon 12:38",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -21757,7 +21291,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 07:53",
+        "localTime": "Mon 08:08",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -21831,7 +21365,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21940,7 +21474,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22052,7 +21586,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22081,7 +21615,7 @@
       "discoveredAt": "2026-08-25T13:53:31.287Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-27T22:05:28.735Z",
+        "verifiedAt": "2026-08-31T02:26:24.077Z",
         "evidenceUrl": "https://www.urbansupply.co.za/pages/wholesale",
         "httpStatus": 200,
         "signals": [
@@ -22163,7 +21697,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22276,7 +21810,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22388,7 +21922,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22495,7 +22029,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22606,7 +22140,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22718,7 +22252,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22830,7 +22364,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22877,6 +22411,118 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
       "lastTouch": "2026-08-21T13:07:46.507Z"
+    },
+    {
+      "id": "google-customer-naturehike-south-africa-website-contact",
+      "name": "Naturehike South Africa",
+      "company": "Naturehike South Africa",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "South Africa",
+      "countryEn": "South Africa",
+      "fitScore": 89,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "South African outdoor brand and reseller network",
+      "role": "Regional partnership team responsible for reseller and assortment growth.",
+      "background": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
+      "buyerPersona": "Regional partnership team responsible for reseller and assortment growth.",
+      "buyerName": "",
+      "linkedinBuyerUrl": "",
+      "buyerIdentityVerified": false,
+      "buyerIdentityEvidenceUrl": "",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "South African outdoor brand and reseller network",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Naturehike South Africa operates a local outdoor-gear business and explicitly recruits retail resellers.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "hello@naturehike.africa",
+      "contactEmail": "hello@naturehike.africa",
+      "vendorPortal": "https://www.naturehike.co.za/pages/contact-alternate",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official regional business email published on the first-party South Africa reseller page.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
+      "website": "https://www.naturehike.co.za/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Naturehike%20South%20Africa%22%20%22South%20African%20outdoor%20brand%20and%20reseller%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileOwnerCompany": "",
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Asia/Shanghai",
+        "localTime": "Mon 10:38",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+      "url": "https://www.naturehike.co.za/pages/contact-alternate",
+      "contactUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.naturehike.co.za%20%22Naturehike%20South%20Africa%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL global brand representation | Naturehike South Africa",
+      "websiteContactMessage": "Dear Naturehike South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.naturehike.co.za/pages/contact-alternate"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-25T13:05:06.172Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-28T10:05:38.696Z",
+        "evidenceUrl": "https://www.naturehike.co.za/pages/contact-alternate",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 241,
+      "priorityScore": 241,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;follow_not_available;post_liked;facebook_post_like_clicked",
+      "lastTouch": "2026-08-31T02:36:10.724Z"
     },
     {
       "id": "google-customer-emia-distribution-website-contact",
@@ -22941,7 +22587,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23053,7 +22699,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23165,7 +22811,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23277,7 +22923,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23388,7 +23034,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
+        "localTime": "Mon 10:38",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -23435,115 +23081,6 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
       "lastTouch": "2026-08-21T12:58:32.146Z"
-    },
-    {
-      "id": "google-customer-smith-power-equipment-website-contact",
-      "name": "Smith Power Equipment",
-      "company": "Smith Power Equipment",
-      "customerType": "sales_agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "South Africa",
-      "countryEn": "South Africa",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "South African importer and distributor with a national dealer network",
-      "role": "Brand and distribution leadership responsible for new international product lines.",
-      "background": "Smith Power imports and distributes international equipment brands through a nationwide dealer network.",
-      "buyerPersona": "Brand and distribution leadership responsible for new international product lines.",
-      "buyerName": "",
-      "linkedinBuyerUrl": "",
-      "buyerIdentityVerified": false,
-      "buyerIdentityEvidenceUrl": "",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "South African importer and distributor with a national dealer network",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Smith Power imports and distributes international equipment brands through a nationwide dealer network.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "mail@smithpower.co.za",
-      "contactEmail": "mail@smithpower.co.za",
-      "vendorPortal": "https://smithpower.co.za/brands/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official company-domain email published on the first-party brands and branch contact page.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "",
-      "website": "https://smithpower.co.za/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Smith%20Power%20Equipment%22%20%22South%20African%20importer%20and%20distributor%20with%20a%20national%20dealer%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://smithpower.co.za/brands/",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "official_supplier_email_verified",
-      "query": "https://www.google.com/search?q=%22Smith%20Power%20Equipment%22%20%22South%20African%20importer%20and%20distributor%20with%20a%20national%20dealer%20network%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileOwnerCompany": "",
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 10:23",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "email",
-      "channelType": "email",
-      "platformUrl": "https://smithpower.co.za/brands/",
-      "url": "https://smithpower.co.za/brands/",
-      "contactUrl": "https://smithpower.co.za/brands/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Asmithpower.co.za%20%22Smith%20Power%20Equipment%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL global brand representation | Smith Power Equipment",
-      "websiteContactMessage": "Dear Smith Power Equipment Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://smithpower.co.za/brands/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-08-26T10:05:09.447Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-28T04:05:47.180Z",
-        "evidenceUrl": "https://smithpower.co.za/brands/",
-        "httpStatus": 200,
-        "signals": [
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 236,
-      "priorityScore": 236,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "lastTouch": "2026-08-27T13:39:18.269Z"
     }
   ],
   "scheduledLater": [],
