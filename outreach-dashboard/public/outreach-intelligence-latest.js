@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-31T03:00:21.910Z",
+  "generatedAt": "2026-08-31T03:07:04.643Z",
   "companies": [
     {
       "companyId": "company_ed6567ba8d8e4e77",
@@ -1786,19 +1786,19 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_35996f4b0ba1201f",
-      "company": "Tackle Unlimited Canada",
+      "companyId": "company_ef71f4e765a7a095",
+      "company": "Real Adventure UK",
       "keys": [
-        "tackleunlimitedcanada",
-        "tackleunlimitedca",
-        "tbaytelnet"
+        "realadventureuk",
+        "realadventurecouk"
       ],
       "domains": [
-        "tackleunlimited.ca",
-        "tbaytel.net"
+        "real-adventure.co.uk"
       ],
       "channels": [
-        "email"
+        "email",
+        "facebook",
+        "instagram"
       ],
       "evidence": [
         {
@@ -1808,7 +1808,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://tackleunlimited.ca/",
+          "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
           "checkedAt": ""
         },
         {
@@ -1818,7 +1818,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://tackleunlimited.ca/",
+          "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
           "checkedAt": ""
         },
         {
@@ -1828,8 +1828,28 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://tackleunlimited.ca/",
+          "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
           "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
+          "checkedAt": "2026-08-31T03:06:06.550Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
+          "checkedAt": "2026-08-31T03:06:06.550Z"
         },
         {
           "channel": "research",
@@ -1838,65 +1858,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://tackleunlimited.ca/",
-          "checkedAt": "2026-08-31T11:00:00.000+08:00"
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_1c93e8996bd429be",
-      "company": "Westmount Distributors Canada",
-      "keys": [
-        "westmountdistributorscanada",
-        "westmountdistributorsca"
-      ],
-      "domains": [
-        "westmountdistributors.ca"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.westmountdistributors.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.westmountdistributors.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.westmountdistributors.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.westmountdistributors.ca/",
-          "checkedAt": "2026-08-31T11:00:00.000+08:00"
+          "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
+          "checkedAt": "2026-08-31T11:06:00.000+08:00"
         }
       ],
       "history": []
@@ -6586,7 +6549,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-31T01:46:47.670Z"
+          "checkedAt": "2026-08-31T03:06:35.835Z"
         },
         {
           "channel": "linkedin",
@@ -6606,7 +6569,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-31T01:46:47.670Z"
+          "checkedAt": "2026-08-31T03:06:35.835Z"
         },
         {
           "channel": "instagram",
@@ -6636,7 +6599,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-31T01:46:47.670Z"
+          "checkedAt": "2026-08-31T03:06:35.835Z"
         },
         {
           "channel": "website_form",
@@ -6666,7 +6629,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.alpinewaves.co.uk/",
-          "checkedAt": "2026-08-31T01:46:47.670Z"
+          "checkedAt": "2026-08-31T03:06:35.835Z"
         },
         {
           "channel": "instagram",
@@ -7161,7 +7124,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://onwardup.com/brands/",
-          "checkedAt": "2026-08-31T01:46:48.054Z"
+          "checkedAt": "2026-08-31T03:06:37.486Z"
         },
         {
           "channel": "instagram",
@@ -7171,7 +7134,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://onwardup.com/brands/",
-          "checkedAt": "2026-08-31T01:46:48.054Z"
+          "checkedAt": "2026-08-31T03:06:37.486Z"
         },
         {
           "channel": "instagram",
@@ -7181,7 +7144,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://onwardup.com/brands/",
-          "checkedAt": "2026-08-31T01:46:48.054Z"
+          "checkedAt": "2026-08-31T03:06:37.486Z"
         },
         {
           "channel": "facebook",
@@ -7191,7 +7154,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://onwardup.com/brands/",
-          "checkedAt": "2026-08-31T01:46:48.054Z"
+          "checkedAt": "2026-08-31T03:06:37.486Z"
         },
         {
           "channel": "website_form",
@@ -8167,7 +8130,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.activagency.com/about",
-          "checkedAt": "2026-08-28T05:12:12.152Z"
+          "checkedAt": "2026-08-31T03:06:59.990Z"
         },
         {
           "channel": "website_form",
@@ -8187,7 +8150,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.activagency.com/about",
-          "checkedAt": "2026-08-28T05:12:12.152Z"
+          "checkedAt": "2026-08-31T03:06:59.990Z"
         },
         {
           "channel": "website_form",
@@ -8325,7 +8288,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://level8outdoor.com/about-us",
-          "checkedAt": "2026-08-28T05:12:09.466Z"
+          "checkedAt": "2026-08-31T03:06:42.536Z"
         },
         {
           "channel": "instagram",
@@ -8335,7 +8298,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://level8outdoor.com/about-us",
-          "checkedAt": "2026-08-28T05:12:09.466Z"
+          "checkedAt": "2026-08-31T03:06:42.536Z"
         },
         {
           "channel": "website_form",
@@ -8438,7 +8401,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-31T02:59:55.375Z"
+          "checkedAt": "2026-08-31T03:06:10.856Z"
         },
         {
           "channel": "instagram",
@@ -8448,7 +8411,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-31T02:59:55.375Z"
+          "checkedAt": "2026-08-31T03:06:10.856Z"
         },
         {
           "channel": "website_form",
@@ -25090,6 +25053,55 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_35996f4b0ba1201f",
+      "company": "Tackle Unlimited Canada",
+      "keys": [
+        "tackleunlimitedcanada",
+        "tackleunlimitedca",
+        "tbaytelnet"
+      ],
+      "domains": [
+        "tackleunlimited.ca",
+        "tbaytel.net"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://tackleunlimited.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://tackleunlimited.ca/",
+          "checkedAt": "2026-08-31T11:00:00.000+08:00"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-31T03:02:36.042Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        }
+      ]
+    },
+    {
       "companyId": "company_31ec0a1b0291d001",
       "company": "Neptune Mountaineering",
       "keys": [
@@ -27933,7 +27945,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://newquaycampingshop.com/pages/contact-us",
+          "evidenceUrl": "https://newquaycampingshop.com/",
           "checkedAt": ""
         },
         {
@@ -28003,7 +28015,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
+          "evidenceUrl": "https://www.canadaoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -28174,7 +28186,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://wmcamping.co.uk/pages/contact-us",
+          "evidenceUrl": "https://wmcamping.co.uk/",
           "checkedAt": ""
         },
         {
@@ -28388,7 +28400,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.avidmax.com/contact-us/",
+          "evidenceUrl": "https://www.avidmax.com/",
           "checkedAt": ""
         },
         {
@@ -28702,7 +28714,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-28T10:11:18.890Z"
+          "checkedAt": "2026-08-31T03:00:05.900Z"
         },
         {
           "channel": "website_form",
@@ -28772,23 +28784,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -28798,7 +28800,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -28925,23 +28937,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.tiso.com/pages/contact",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/contact",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -28951,7 +28953,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/contact",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -29263,7 +29275,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
+          "evidenceUrl": "https://outcamping.co.uk/",
           "checkedAt": ""
         },
         {
@@ -29302,8 +29314,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "channels": [
         "email",
-        "facebook",
-        "instagram"
+        "instagram",
+        "facebook"
       ],
       "evidence": [
         {
@@ -29317,24 +29329,24 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
-          "checkedAt": "2026-08-28T10:11:23.567Z"
-        },
-        {
           "channel": "instagram",
           "score": 100,
           "verified": true,
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
-          "checkedAt": "2026-08-28T10:11:23.567Z"
+          "evidenceUrl": "https://www.outdoorsplus.ca/",
+          "checkedAt": "2026-08-31T03:06:09.010Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoorsplus.ca/",
+          "checkedAt": "2026-08-31T03:06:09.010Z"
         },
         {
           "channel": "email",
@@ -29565,7 +29577,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
+          "evidenceUrl": "https://blackandwhiteoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -30301,6 +30313,53 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_1c93e8996bd429be",
+      "company": "Westmount Distributors Canada",
+      "keys": [
+        "westmountdistributorscanada",
+        "westmountdistributorsca"
+      ],
+      "domains": [
+        "westmountdistributors.ca"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.westmountdistributors.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.westmountdistributors.ca/",
+          "checkedAt": "2026-08-31T11:00:00.000+08:00"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-31T03:03:21.784Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        }
+      ]
+    },
+    {
       "companyId": "company_deb72f2e54293ab1",
       "company": "Equipment Outdoors",
       "keys": [
@@ -30569,7 +30628,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.remixbrands.co.uk/",
-          "checkedAt": "2026-08-28T04:05:49.039Z"
+          "checkedAt": "2026-08-31T03:00:17.920Z"
         },
         {
           "channel": "research",
@@ -30640,7 +30699,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://capeimporters.co.za/pages/about-us",
-          "checkedAt": "2026-08-28T04:05:50.007Z"
+          "checkedAt": "2026-08-31T03:00:15.980Z"
         },
         {
           "channel": "linkedin",
@@ -31593,7 +31652,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://oldschooloutdoor.com/",
+          "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
           "checkedAt": ""
         },
         {
@@ -31604,7 +31663,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
-          "checkedAt": "2026-08-31T01:46:22.872Z"
+          "checkedAt": "2026-08-31T03:06:10.256Z"
         },
         {
           "channel": "facebook",
@@ -31614,7 +31673,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
-          "checkedAt": "2026-08-31T01:46:22.872Z"
+          "checkedAt": "2026-08-31T03:06:10.256Z"
         },
         {
           "channel": "email",
@@ -32068,7 +32127,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://thegreatoutdoors.co.za/",
-          "checkedAt": "2026-08-31T01:46:40.713Z"
+          "checkedAt": "2026-08-31T03:06:29.070Z"
         },
         {
           "channel": "email",
@@ -32088,7 +32147,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://thegreatoutdoors.co.za/",
-          "checkedAt": "2026-08-31T01:46:40.713Z"
+          "checkedAt": "2026-08-31T03:06:29.070Z"
         },
         {
           "channel": "research",
@@ -32416,7 +32475,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-31T01:46:34.706Z"
+          "checkedAt": "2026-08-31T03:06:29.685Z"
         },
         {
           "channel": "facebook",
@@ -32426,7 +32485,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-31T01:46:34.706Z"
+          "checkedAt": "2026-08-31T03:06:29.685Z"
         },
         {
           "channel": "website_form",
@@ -32740,7 +32799,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-31T01:46:42.355Z"
+          "checkedAt": "2026-08-31T03:06:33.858Z"
         },
         {
           "channel": "facebook",
@@ -32750,7 +32809,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-31T01:46:42.355Z"
+          "checkedAt": "2026-08-31T03:06:33.858Z"
         },
         {
           "channel": "email",
@@ -32759,7 +32818,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.cabelas.com/",
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
           "checkedAt": ""
         },
         {
@@ -33403,7 +33462,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.adventurelabworks.com/new-page-3",
-          "checkedAt": "2026-08-31T01:46:45.121Z"
+          "checkedAt": "2026-08-31T03:06:35.443Z"
         },
         {
           "channel": "website_form",
@@ -33462,7 +33521,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-31T02:59:52.815Z"
+          "checkedAt": "2026-08-31T03:06:06.196Z"
         },
         {
           "channel": "instagram",
@@ -33472,7 +33531,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.fourcornersuk.com/contact.html",
-          "checkedAt": "2026-08-31T02:59:52.815Z"
+          "checkedAt": "2026-08-31T03:06:06.196Z"
         },
         {
           "channel": "website_form",
@@ -33611,7 +33670,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ludreps.com/about-us/",
-          "checkedAt": "2026-08-31T01:46:44.881Z"
+          "checkedAt": "2026-08-31T03:06:35.281Z"
         },
         {
           "channel": "research",
@@ -33943,7 +34002,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.pctreps.com/",
-          "checkedAt": "2026-08-31T01:46:49.181Z"
+          "checkedAt": "2026-08-31T03:06:38.331Z"
         },
         {
           "channel": "facebook",
@@ -33953,7 +34012,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.pctreps.com/",
-          "checkedAt": "2026-08-31T01:46:49.181Z"
+          "checkedAt": "2026-08-31T03:06:38.331Z"
         }
       ],
       "history": [
@@ -34001,7 +34060,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://sanitassalesgroup.com/contact/",
-          "checkedAt": "2026-08-31T01:46:51.620Z"
+          "checkedAt": "2026-08-31T03:06:40.326Z"
         },
         {
           "channel": "website_form",
@@ -38609,7 +38668,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-31T02:59:55.697Z"
+          "checkedAt": "2026-08-31T03:06:10.645Z"
         },
         {
           "channel": "facebook",
@@ -38619,7 +38678,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-31T02:59:55.697Z"
+          "checkedAt": "2026-08-31T03:06:10.645Z"
         }
       ],
       "history": [
@@ -40506,81 +40565,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_6b89c169f3692be9",
-      "company": "Half-Moon Outfitters",
-      "keys": [
-        "halfmoonoutfitters",
-        "halfmoonoutfitterscom"
-      ],
-      "domains": [
-        "halfmoonoutfitters.com"
-      ],
-      "channels": [
-        "instagram",
-        "facebook"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-          "checkedAt": "2026-08-28T07:05:30.627Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-          "checkedAt": "2026-08-28T07:05:30.627Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-16T11:33:45.986Z",
-          "channel": "facebook",
-          "evidence": "identity_mismatch_expected_Half-Moon Outfitters_title_Facebook",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-17T09:13:27.524Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"D9BA55BD27E5B3984DA56944F4A4F015\",\"targetUrl\":\"https://www.instagram.com/halfmoonoutfitters/\",\"expectedCompany\":\"Half-Moon Outfitters\",\"draft\":\"Hi Half-Moon Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T04:01:09.675Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"C3FF822487F658E60A702B1A403E8A3F\",\"targetUrl\":\"https://www.instagram.com/halfmoonoutfitters/\",\"expectedCompany\":\"Half-Moon Outfitters\",\"draft\":\"Hi Half-Moon Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-07-20T08:05:47.479Z",
-          "channel": "instagram",
-          "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_not_available",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        }
-      ]
-    },
-    {
       "companyId": "company_aeb02fd0dd014816",
       "company": "RONA",
       "keys": [
@@ -42368,6 +42352,57 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-20T04:29:00.000Z",
           "channel": "facebook",
           "evidence": "facebook_identity_verified;account_followed_confirmed;dm_send_clicked;composer_cleared;message_sent_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_6b89c169f3692be9",
+      "company": "halfmoonoutfitters",
+      "keys": [
+        "halfmoonoutfitters"
+      ],
+      "domains": [],
+      "channels": [
+        "facebook",
+        "instagram"
+      ],
+      "evidence": [],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-16T11:33:45.986Z",
+          "channel": "facebook",
+          "evidence": "identity_mismatch_expected_Half-Moon Outfitters_title_Facebook",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-17T09:13:27.524Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"D9BA55BD27E5B3984DA56944F4A4F015\",\"targetUrl\":\"https://www.instagram.com/halfmoonoutfitters/\",\"expectedCompany\":\"Half-Moon Outfitters\",\"draft\":\"Hi Half-Moon Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T04:01:09.675Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"C3FF822487F658E60A702B1A403E8A3F\",\"targetUrl\":\"https://www.instagram.com/halfmoonoutfitters/\",\"expectedCompany\":\"Half-Moon Outfitters\",\"draft\":\"Hi Half-Moon Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-07-20T08:05:47.479Z",
+          "channel": "instagram",
+          "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_not_available",
           "repliedAt": "",
           "replyType": "",
           "replyOutcome": ""
@@ -51906,6 +51941,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
     },
     {
+      "companyId": "company_35996f4b0ba1201f",
+      "company": "Tackle Unlimited Canada",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-31T03:02:36.042Z",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+    },
+    {
       "companyId": "company_31ec0a1b0291d001",
       "company": "Neptune Mountaineering",
       "permanent": true,
@@ -52573,6 +52618,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-31T02:54:49.345Z",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+    },
+    {
+      "companyId": "company_1c93e8996bd429be",
+      "company": "Westmount Distributors Canada",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-31T03:03:21.784Z",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
     },
     {
@@ -53646,16 +53701,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "facebook_identity_verified;account_followed_confirmed;dm_send_clicked;composer_cleared;message_sent_confirmed"
     },
     {
-      "companyId": "company_6b89c169f3692be9",
-      "company": "Half-Moon Outfitters",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-07-20T08:05:47.479Z",
-      "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_not_available"
-    },
-    {
       "companyId": "company_81cc0153fe56938a",
       "company": "Peak Outfitters South Africa",
       "permanent": true,
@@ -53874,6 +53919,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-20T04:29:00.000Z",
       "evidence": "facebook_identity_verified;account_followed_confirmed;dm_send_clicked;composer_cleared;message_sent_confirmed"
+    },
+    {
+      "companyId": "company_6b89c169f3692be9",
+      "company": "halfmoonoutfitters",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-07-20T08:05:47.479Z",
+      "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_not_available"
     },
     {
       "companyId": "company_b39cc30585b47213",
@@ -55490,23 +55545,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_35996f4b0ba1201f",
-        "company": "Tackle Unlimited Canada",
+        "companyId": "company_ef71f4e765a7a095",
+        "company": "Real Adventure UK",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://tackleunlimited.ca/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_1c93e8996bd429be",
-        "company": "Westmount Distributors Canada",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.westmountdistributors.ca/",
-        "alternatives": [],
+        "evidenceUrl": "https://www.real-adventure.co.uk/b2b/equipment-sales",
+        "alternatives": [
+          "facebook",
+          "instagram"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -55586,10 +55634,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "companyId": "company_773511178979fa01",
         "company": "Camperlands Manchester",
         "action": "first_touch",
-        "channel": "facebook",
+        "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.agentfiamma.co.uk/agent-fiamma-contact-information.html",
-        "alternatives": [],
+        "alternatives": [
+          "facebook"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -55620,10 +55670,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "companyId": "company_dcc787b1751a015b",
         "company": "OnwardUP",
         "action": "first_touch",
-        "channel": "instagram",
+        "channel": "facebook",
         "evidenceScore": 95,
         "evidenceUrl": "https://onwardup.com/brands/",
-        "alternatives": [],
+        "alternatives": [
+          "instagram"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -55643,6 +55695,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "instagram",
         "evidenceScore": 95,
         "evidenceUrl": "https://www.tauntonleisure.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_e25c70695b880518",
+        "company": "Palisade Trading",
+        "action": "first_touch",
+        "channel": "instagram",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.palisadetrading.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       }
@@ -55715,13 +55777,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "email",
-        "confirmed": 467,
+        "confirmed": 469,
         "replies": 20,
         "opportunities": 0,
         "humanReplies": 6,
         "automatedReplies": 13,
         "unclassifiedReplies": 1,
-        "replyRate": 0.042826552462526764,
+        "replyRate": 0.042643923240938165,
         "opportunityRate": 0,
         "confidence": "high"
       },
@@ -55767,20 +55829,20 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 467,
-        "observedReplyRate": 0.042826552462526764,
+        "sampleSize": 469,
+        "observedReplyRate": 0.042643923240938165,
         "recommendation": "use_as_bounded_allocation_signal"
       }
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-31T03:00:21.910Z",
+    "generatedAt": "2026-08-31T03:07:04.643Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 712,
-      "permanentlySuppressed": 580,
+      "companies": 713,
+      "permanentlySuppressed": 582,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 1266
+      "verifiedEvidenceRoutes": 1264
     },
     "decisions": [
       {
@@ -55964,13 +56026,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "email",
-          "confirmed": 467,
+          "confirmed": 469,
           "replies": 20,
           "opportunities": 0,
           "humanReplies": 6,
           "automatedReplies": 13,
           "unclassifiedReplies": 1,
-          "replyRate": 0.042826552462526764,
+          "replyRate": 0.042643923240938165,
           "opportunityRate": 0,
           "confidence": "high"
         },
@@ -56016,8 +56078,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 467,
-          "observedReplyRate": 0.042826552462526764,
+          "sampleSize": 469,
+          "observedReplyRate": 0.042643923240938165,
           "recommendation": "use_as_bounded_allocation_signal"
         }
       ]
