@@ -187,3 +187,5 @@ Verified email precedence: if a first-party verified business email exists, rout
 Sender-restoration recovery: release a same-day website/email pre-send block only when its sender-disabled evidence timestamp is strictly before the owner-confirmed restoration checkpoint and it proves no send click or customer interaction. Never release bounce, `sent_confirmed`, `send_unconfirmed`, populated-draft, or post-restoration locks.
 
 Reject generic social home, feed, share, watch, group, event, explore, reel, or story URLs during queue readiness. They are not company profiles and must not consume a browser slot. Require an exact Facebook/Instagram account path, LinkedIn `/company/`, or separately verified named-buyer `/in/` route.
+
+For an Alibaba email already marked `send_unconfirmed`, allow the exact same verified recipient and exact same subject through queue/checkpoint/company-lock selection only to inspect Sent. Never reopen the composer or click Send. Upgrade the existing record only when the exact Sent entry is visible; otherwise preserve `send_unconfirmed` and the company-wide no-replay lock.
