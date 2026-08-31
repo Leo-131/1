@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": false,
+  "ok": true,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -8,10 +8,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "chromeStage": "opened",
   "chromeOpened": true,
   "chromeOpenedCount": 2,
-  "customerDevelopmentPerformed": false,
-  "customerMessageSent": false,
-  "realDevelopmentCount": 0,
-  "reportingVerdict": "no_customer_development_performed",
+  "customerDevelopmentPerformed": true,
+  "customerMessageSent": true,
+  "realDevelopmentCount": 2,
+  "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-31T03:20:18.777Z",
+      "timestamp": "2026-08-31T03:26:44.820Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -51,7 +51,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-31T03:20:21.349Z",
+      "timestamp": "2026-08-31T03:26:47.435Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -65,111 +65,113 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-latulippe-facebook",
-      "company": "Latulippe",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Magasin.Latulippe/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-31T03:21:01.437Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://latulippe.com/help/contact-us",
-        "tabId": "1B68618F0BC0CA6871D5C8ED95D77FD3",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B68618F0BC0CA6871D5C8ED95D77FD3",
-        "title": "Attention Required! | Cloudflare"
-      },
+      "id": "google-customer-outdoor-design-logistics-uk-website-contact",
+      "company": "Outdoor Design Logistics UK",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://odl.uk.com/contact",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-31T03:27:14.644Z",
+      "chromeOpen": null,
       "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://latulippe.com/help/contact-us",
-        "chromeOpen": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "carol@odl.uk.com",
+        "targetUrl": "mailto:carol@odl.uk.com",
+        "subject": "FLEXTAIL global brand representation | Outdoor Design Logistics UK",
+        "draft": "Dear Outdoor Design Logistics UK Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
           "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://latulippe.com/help/contact-us",
-          "tabId": "1B68618F0BC0CA6871D5C8ED95D77FD3",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B68618F0BC0CA6871D5C8ED95D77FD3",
-          "title": "Attention Required! | Cloudflare"
+          "errors": [],
+          "words": 109,
+          "attachmentValidation": {
+            "ok": false,
+            "expected": [
+              "One Page_Flextail_Monthly_Product_Roadmap_Sorted_2026-07.pdf",
+              "2026 Catalog (HD).pdf",
+              "Distributor Network.png"
+            ],
+            "actual": []
+          },
+          "collateralLinkValidation": {
+            "ok": true,
+            "expected": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ],
+            "matched": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ]
+          }
         },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global distribution partnership | Latulippe",
-        "draft": "Dear Latulippe Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global distribution partnership | Latulippe\",\"draft\":\"Dear Latulippe Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\\n\\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\\n\\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nSales materials:\\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://latulippe.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/Magasin.Latulippe/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Latulippe_title_Facebook\"}",
-        "fallbackFrom": "https://www.facebook.com/Magasin.Latulippe/",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 87,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Latulippe team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"carol@odl.uk.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
     {
-      "id": "google-customer-ascension-sales-group-instagram",
-      "company": "Ascension Sales Group",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/ascensionsales/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-31T03:22:24.232Z",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
-        "tabId": "A9EBD16F2D07D3943218F135DB4470C1",
-        "title": "404 Not Found | Ascension Sales Group",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
-      },
+      "id": "google-customer-high-days-ltd-uk-website-contact",
+      "company": "High Days Ltd UK",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://highdaysltd.com/pages/contact",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-31T03:27:41.197Z",
+      "chromeOpen": null,
       "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
-          "tabId": "A9EBD16F2D07D3943218F135DB4470C1",
-          "title": "404 Not Found | Ascension Sales Group",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "kris@highdaysltd.com",
+        "targetUrl": "mailto:kris@highdaysltd.com",
+        "subject": "FLEXTAIL global brand representation | High Days Ltd UK",
+        "draft": "Dear High Days Ltd UK Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 109,
+          "attachmentValidation": {
+            "ok": false,
+            "expected": [
+              "One Page_Flextail_Monthly_Product_Roadmap_Sorted_2026-07.pdf",
+              "2026 Catalog (HD).pdf",
+              "Distributor Network.png"
+            ],
+            "actual": []
+          },
+          "collateralLinkValidation": {
+            "ok": true,
+            "expected": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ],
+            "matched": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ]
+          }
         },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | Ascension Sales Group",
-        "draft": "Dear Ascension Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | Ascension Sales Group\",\"draft\":\"Dear Ascension Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\\n\\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\\n\\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nSales materials:\\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ascensionsalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.instagram.com/ascensionsales/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "fallbackFrom": "https://www.instagram.com/ascensionsales/",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 92,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Ascension Sales Group team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"kris@highdaysltd.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     }
   ],
@@ -183,7 +185,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:stellbluesales.com;no_send_performed",
-      "timestamp": "2026-08-31T03:20:18.777Z",
+      "timestamp": "2026-08-31T03:26:44.820Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -205,7 +207,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "recipient_domain_mail_exchange_unverified;domain:beaveroutdoor.ca;no_send_performed",
-      "timestamp": "2026-08-31T03:20:21.349Z",
+      "timestamp": "2026-08-31T03:26:47.435Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -219,111 +221,113 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-latulippe-facebook",
-      "company": "Latulippe",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Magasin.Latulippe/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-31T03:21:01.437Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://latulippe.com/help/contact-us",
-        "tabId": "1B68618F0BC0CA6871D5C8ED95D77FD3",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B68618F0BC0CA6871D5C8ED95D77FD3",
-        "title": "Attention Required! | Cloudflare"
-      },
+      "id": "google-customer-outdoor-design-logistics-uk-website-contact",
+      "company": "Outdoor Design Logistics UK",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://odl.uk.com/contact",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-31T03:27:14.644Z",
+      "chromeOpen": null,
       "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://latulippe.com/help/contact-us",
-        "chromeOpen": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "carol@odl.uk.com",
+        "targetUrl": "mailto:carol@odl.uk.com",
+        "subject": "FLEXTAIL global brand representation | Outdoor Design Logistics UK",
+        "draft": "Dear Outdoor Design Logistics UK Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
           "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://latulippe.com/help/contact-us",
-          "tabId": "1B68618F0BC0CA6871D5C8ED95D77FD3",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B68618F0BC0CA6871D5C8ED95D77FD3",
-          "title": "Attention Required! | Cloudflare"
+          "errors": [],
+          "words": 109,
+          "attachmentValidation": {
+            "ok": false,
+            "expected": [
+              "One Page_Flextail_Monthly_Product_Roadmap_Sorted_2026-07.pdf",
+              "2026 Catalog (HD).pdf",
+              "Distributor Network.png"
+            ],
+            "actual": []
+          },
+          "collateralLinkValidation": {
+            "ok": true,
+            "expected": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ],
+            "matched": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ]
+          }
         },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global distribution partnership | Latulippe",
-        "draft": "Dear Latulippe Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL global distribution partnership | Latulippe\",\"draft\":\"Dear Latulippe Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\\n\\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\\n\\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nSales materials:\\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://latulippe.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://latulippe.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/Magasin.Latulippe/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Latulippe_title_Facebook\"}",
-        "fallbackFrom": "https://www.facebook.com/Magasin.Latulippe/",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 87,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Latulippe team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"carol@odl.uk.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     },
     {
-      "id": "google-customer-ascension-sales-group-instagram",
-      "company": "Ascension Sales Group",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/ascensionsales/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-31T03:22:24.232Z",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
-        "tabId": "A9EBD16F2D07D3943218F135DB4470C1",
-        "title": "404 Not Found | Ascension Sales Group",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
-      },
+      "id": "google-customer-high-days-ltd-uk-website-contact",
+      "company": "High Days Ltd UK",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://highdaysltd.com/pages/contact",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-31T03:27:41.197Z",
+      "chromeOpen": null,
       "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
-          "tabId": "A9EBD16F2D07D3943218F135DB4470C1",
-          "title": "404 Not Found | Ascension Sales Group",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "kris@highdaysltd.com",
+        "targetUrl": "mailto:kris@highdaysltd.com",
+        "subject": "FLEXTAIL global brand representation | High Days Ltd UK",
+        "draft": "Dear High Days Ltd UK Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 109,
+          "attachmentValidation": {
+            "ok": false,
+            "expected": [
+              "One Page_Flextail_Monthly_Product_Roadmap_Sorted_2026-07.pdf",
+              "2026 Catalog (HD).pdf",
+              "Distributor Network.png"
+            ],
+            "actual": []
+          },
+          "collateralLinkValidation": {
+            "ok": true,
+            "expected": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ],
+            "matched": [
+              "https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link",
+              "https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link",
+              "https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link"
+            ]
+          }
         },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL global brand representation | Ascension Sales Group",
-        "draft": "Dear Ascension Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\n\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\n\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nSales materials:\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\n\nSincerely\nBest Regard\nLeo Liu\nOverseas Business Unit\nTel/whatsapp: +86 17321028184\nEmail: Leo@flextailgear.com\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)",
-        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL global brand representation | Ascension Sales Group\",\"draft\":\"Dear Ascension Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail fits our compact outdoor electrics: portable pumps, camping lighting and lightweight power solutions.\\n\\nOur 2026 range adds 36+ practical SKUs across multiple uses and price tiers, supporting seasonal launches and category expansion.\\n\\nCould you review a distribution partnership, or direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nSales materials:\\nRoadmap: https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link\\nCatalog: https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link\\nDistributor network: https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link\\n\\nSincerely\\nBest Regard\\nLeo Liu\\nOverseas Business Unit\\nTel/whatsapp: +86 17321028184\\nEmail: Leo@flextailgear.com\\nSHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.\\n5th Floor, No. 68, Yincheng Middle Road, Pudong New Area, Shanghai (Times Finance Center)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ascensionsalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.instagram.com/ascensionsales/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "fallbackFrom": "https://www.instagram.com/ascensionsales/",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 92,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Ascension Sales Group team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"kris@highdaysltd.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     }
   ],
@@ -354,6 +358,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Brandywine River Reps",
       "action": "develop",
       "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-latulippe-facebook",
+      "company": "Latulippe",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-ascension-sales-group-instagram",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "instagram",
       "reason": "official_website_social_channel_verified"
     },
     {
@@ -903,20 +921,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-mcqueen-ball-website-contact",
-      "company": "McQueen Ball",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-powers-pedersen-sales-group-website-contact",
-      "company": "Powers Pedersen Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-mcqueen-ball-linkedin",
       "company": "McQueen Ball",
       "action": "develop",
@@ -949,6 +953,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Brandywine River Reps",
       "action": "develop",
       "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-latulippe-facebook",
+      "company": "Latulippe",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-ascension-sales-group-instagram",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "instagram",
       "reason": "official_website_social_channel_verified"
     },
     {
@@ -1034,19 +1052,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "highIcp": 16,
     "readyToDevelop": 44,
     "dueNow": 88,
-    "visibleTodayQueue": 75,
-    "potentialPool": 20,
+    "visibleTodayQueue": 77,
+    "potentialPool": 22,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 80,
-    "executableCompanies": 10,
+    "refillNeeded": 78,
+    "executableCompanies": 12,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 120,
+    "executableReserveNeeded": 118,
     "executableByChannel": {
       "linkedin": 1,
       "facebook": 4,
       "instagram": 3,
-      "email": 2
+      "email": 4
     },
     "verifiedSocialCompanies": 8,
     "verifiedSocialReserveTarget": 20,
@@ -1054,7 +1072,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "enrichmentBacklogCount": 10,
     "googleDiscovered": 88,
     "facebookDiscovered": 14,
-    "websiteContactDiscovered": 17,
+    "websiteContactDiscovered": 19,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1067,12 +1085,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 41
+      "count": 45
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 20
+      "count": 18
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1100,6 +1118,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
+      "reason": "sent_folder_message_confirmed",
+      "status": "sent_confirmed",
+      "count": 2
+    },
+    {
       "reason": "social_profile_not_first_party_verified",
       "status": "skipped",
       "count": 2
@@ -1116,23 +1139,24 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "official_website_social_channel_verified": 41,
-    "homepage_only_contact_path_requires_verification": 20,
+    "official_website_social_channel_verified": 45,
+    "homepage_only_contact_path_requires_verification": 18,
     "official_public_business_email_verified": 15,
     "website_contact_capability_not_verified": 9,
     "official_website_contact_channel": 7,
     "concrete_google_discovered_major_customer_instagram": 4,
     "recipient_domain_mail_exchange_unverified": 2,
+    "sent_folder_message_confirmed": 2,
     "social_profile_not_first_party_verified": 2,
     "social_profile_target_not_executable": 1,
     "verified_linkedin_profile_ready": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 20,
+    "potentialPool": 22,
     "queueCount": 88,
     "googleDiscovered": 88,
-    "refillNeeded": 80,
+    "refillNeeded": 78,
     "confirmedToday": 9,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -1145,17 +1169,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (41); homepage_only_contact_path_requires_verification (20); official_public_business_email_verified (15).",
-  "recoveryHint": "Refill the high-ICP pool with 80 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_social_channel_verified (45); homepage_only_contact_path_requires_verification (18); official_public_business_email_verified (15).",
+  "recoveryHint": "Refill the high-ICP pool with 78 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 80 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 80 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 78 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 78 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 20,
-      "refillNeeded": 80
+      "potentialPool": 22,
+      "refillNeeded": 78
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1165,17 +1189,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "systemRefresh": {
-    "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-31\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 44,\n    \"dueNow\": 88,\n    \"visibleTodayQueue\": 75,\n    \"potentialPool\": 20,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 80,\n    \"executableCompanies\": 10,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 120,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 4,\n      \"instagram\": 3,\n      \"email\": 2\n    },\n    \"verifiedSocialCompanies\": 8,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 12,\n    \"enrichmentBacklogCount\": 10,\n    \"googleDiscovered\": 88,\n    \"facebookDiscovered\": 14,\n    \"websiteContactDiscovered\": 17,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-31-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-31-daily-queue.csv\"\n}",
-    "stderr": "",
-    "error": "",
+    "ok": false,
+    "stdout": "",
+    "stderr": "E:\\New project\\outreach-dashboard\\daily-automation-runner.js:17\r\n      if (!TRANSIENT_FILE_ERROR_CODES.has(error && error.code) || attempt === attempts - 1) throw error;\r\n                                                                                            ^\r\n\r\nError: UNKNOWN: unknown error, open 'E:\\New project\\outreach-dashboard\\daily-automation-latest.js'\r\n    at Object.writeFileSync (node:fs:2413:20)\r\n    at writeFileWithRetry (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:14:17)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1009:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1752:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1772:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32)\r\n    at Module._load (node:internal/modules/cjs/loader:1335:12)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'open',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\daily-automation-latest.js'\r\n}\r\n\r\nNode.js v24.14.0",
+    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nE:\\New project\\outreach-dashboard\\daily-automation-runner.js:17\r\n      if (!TRANSIENT_FILE_ERROR_CODES.has(error && error.code) || attempt === attempts - 1) throw error;\r\n                                                                                            ^\r\n\r\nError: UNKNOWN: unknown error, open 'E:\\New project\\outreach-dashboard\\daily-automation-latest.js'\r\n    at Object.writeFileSync (node:fs:2413:20)\r\n    at writeFileWithRetry (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:14:17)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1009:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1752:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1772:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32)\r\n    at Module._load (node:internal/modules/cjs/loader:1335:12)\r\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'open',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\daily-automation-latest.js'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
     "visibility": {
-      "updatedAt": "2026-08-31T03:22:28.366Z",
+      "updatedAt": "2026-08-31T03:27:51.157Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-31",
-      "artifactGeneratedAt": "2026-08-31T03:22:25.717Z",
-      "executionGeneratedAt": "2026-08-31T03:16:23.903Z",
-      "githubSyncUpdatedAt": "2026-08-31T03:17:02.219Z",
+      "artifactGeneratedAt": "2026-08-31T03:27:43.549Z",
+      "executionGeneratedAt": "2026-08-31T03:22:28.781Z",
+      "githubSyncUpdatedAt": "2026-08-31T03:23:03.644Z",
       "counts": {
         "dailyQueue": 88,
         "googleDiscovered": 88,
@@ -1243,7 +1267,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 1,
+  "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-31T03:22:28.781Z"
+  "completedAt": "2026-08-31T03:27:52.089Z"
 };
