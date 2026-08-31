@@ -1385,9 +1385,11 @@ function channelExecutionReadiness(item = {}) {
   }
   const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
   if (social) {
-    return item.officialSocialProfileVerified === true && /^https:\/\//i.test(String(target))
+    return item.officialSocialProfileVerified === true && socialProfileTargetIsExecutable(target, platform, item)
       ? { ready: true, gate: 'first_party_verified_social', evidenceUrl: item.socialProfileEvidenceUrl || liveFirstPartyEvidence || item.sourceEvidenceUrl || item.website || '' }
-      : { ready: false, gate: 'enrichment_required', reason: 'social_profile_not_first_party_verified' };
+      : { ready: false, gate: 'enrichment_required', reason: socialProfileTargetIsExecutable(target, platform, item)
+        ? 'social_profile_not_first_party_verified'
+        : 'social_profile_target_not_executable' };
   }
   const verifiedWebsiteRoute = /^official_(?:supplier_(?:form|route)|contact_form)_verified$/.test(officialStatus)
     || item.contactCapabilityVerified === true;
@@ -1397,6 +1399,28 @@ function channelExecutionReadiness(item = {}) {
       : { ready: false, gate: 'enrichment_required', reason: 'website_contact_capability_not_verified' };
   }
   return { ready: false, gate: 'enrichment_required', reason: 'verified_executable_channel_missing' };
+}
+
+function socialProfileTargetIsExecutable(value, platform = '', item = {}) {
+  try {
+    const url = new URL(String(value || ''));
+    const host = url.hostname.toLowerCase().replace(/^www\./, '');
+    const path = url.pathname.replace(/\/+$/, '') || '/';
+    if (!/^https:$/.test(url.protocol)) return false;
+    if (platform === 'facebook' || host === 'facebook.com') {
+      if (host !== 'facebook.com' || path === '/' || /^\/(?:share|sharer|watch|groups|events)(?:\/|$)/i.test(path)) return false;
+    }
+    if (platform === 'instagram' || host === 'instagram.com') {
+      if (host !== 'instagram.com' || path === '/' || /^\/(?:explore|reels?|stories)(?:\/|$)/i.test(path)) return false;
+    }
+    if (platform === 'linkedin' || host === 'linkedin.com') {
+      if (host !== 'linkedin.com' || !/^\/(?:company|in)\//i.test(path)) return false;
+      if (/^\/in\//i.test(path) && item.buyerIdentityVerified !== true) return false;
+    }
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) {
@@ -1765,6 +1789,7 @@ module.exports = {
   writeFileWithRetry,
   preferSocialChannels,
   channelExecutionReadiness,
+  socialProfileTargetIsExecutable,
   normalizePotentialItem,
   buildDailyPotentialPool,
   dedupeQueueItems,

@@ -2356,6 +2356,23 @@ test('a social task only bypasses its website failure after a verified target-ro
   assert.match(mainSource, /send_unconfirmed\|submit_unconfirmed[\s\S]*customer_interaction\|message_sent\|draft_inserted/);
 });
 
+test('verified social readiness rejects generic home and share URLs before Chrome opens', () => {
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.facebook.com/', 'facebook'), false);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.facebook.com/share/abc123', 'facebook'), false);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.instagram.com/', 'instagram'), false);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.linkedin.com/feed/', 'linkedin'), false);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.facebook.com/fourcornersUKcom', 'facebook'), true);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.instagram.com/eosaleslife/', 'instagram'), true);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.linkedin.com/company/example/', 'linkedin'), true);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.linkedin.com/in/example/', 'linkedin'), false);
+  assert.equal(dailyRunner.socialProfileTargetIsExecutable('https://www.linkedin.com/in/example/', 'linkedin', { buyerIdentityVerified: true }), true);
+  assert.equal(dailyRunner.channelExecutionReadiness({
+    platform: 'facebook',
+    url: 'https://www.facebook.com/share/abc123',
+    officialSocialProfileVerified: true,
+  }).reason, 'social_profile_target_not_executable');
+});
+
 test('queue readiness rejects personal-domain email even when discovery labels it official', () => {
   const readiness = dailyRunner.channelExecutionReadiness({
     platform: 'email',

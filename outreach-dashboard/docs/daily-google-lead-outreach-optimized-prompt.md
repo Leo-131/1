@@ -185,3 +185,5 @@ The owner-authorized `oneDayAdditionalConfirmedTarget` is a date-scoped exceptio
 Verified email precedence: if a first-party verified business email exists, route `email_priority` and legacy `website-contact` ids through Alibaba Mail, not the website-form driver. A pre-send customer watchdog timeout is a same-day circuit only; it may be retried on a later Shanghai day if every verification gate still passes.
 
 Sender-restoration recovery: release a same-day website/email pre-send block only when its sender-disabled evidence timestamp is strictly before the owner-confirmed restoration checkpoint and it proves no send click or customer interaction. Never release bounce, `sent_confirmed`, `send_unconfirmed`, populated-draft, or post-restoration locks.
+
+Reject generic social home, feed, share, watch, group, event, explore, reel, or story URLs during queue readiness. They are not company profiles and must not consume a browser slot. Require an exact Facebook/Instagram account path, LinkedIn `/company/`, or separately verified named-buyer `/in/` route.
