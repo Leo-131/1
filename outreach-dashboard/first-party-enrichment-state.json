@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T03:48:39.611Z",
+  "updatedAt": "2026-09-01T04:05:39.595Z",
   "cursor": 327,
   "companyCount": 536,
   "verifications": {
@@ -11769,7 +11769,7 @@
     "naka outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:31.254Z",
+        "verifiedAt": "2026-09-01T04:05:39.594Z",
         "evidenceUrl": "https://www.nakaoutdoors.com.ar/seccion-venta-mayorista-outdoor.html",
         "httpStatus": 200,
         "signals": [
@@ -11789,7 +11789,7 @@
     "sendas outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:39.610Z",
+        "verifiedAt": "2026-09-01T04:05:38.990Z",
         "evidenceUrl": "https://www.sendasoutdoor.com.br/pagina/fale-conosco",
         "httpStatus": 200,
         "signals": [
@@ -11810,7 +11810,7 @@
     "balfer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:27.805Z",
+        "verifiedAt": "2026-09-01T04:05:17.691Z",
         "evidenceUrl": "https://balfer.cl/camping-deportes-outdoor/",
         "httpStatus": 200,
         "signals": [
@@ -11831,7 +11831,7 @@
     "out chile": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:28.687Z",
+        "verifiedAt": "2026-09-01T04:05:15.097Z",
         "evidenceUrl": "https://www.outchilestore.com/contact",
         "httpStatus": 200,
         "signals": [
@@ -11857,7 +11857,7 @@
     "wald sa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:24.988Z",
+        "verifiedAt": "2026-09-01T04:05:14.585Z",
         "evidenceUrl": "https://www.waldsa.com/",
         "httpStatus": 200,
         "signals": [
@@ -11878,7 +11878,7 @@
     "caimi allen": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:29.167Z",
+        "verifiedAt": "2026-09-01T04:05:23.536Z",
         "evidenceUrl": "https://www.caimi-allen.cl/pages/distribuidores-autorizados",
         "httpStatus": 200,
         "signals": [
@@ -11899,7 +11899,7 @@
     "koa outdoor": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-09-01T03:48:38.706Z",
+        "verifiedAt": "2026-09-01T04:05:32.746Z",
         "evidenceUrl": "https://koaoutdoor.com.ar/",
         "httpStatus": 0,
         "signals": [],
@@ -11914,7 +11914,7 @@
     "gps aventura": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:29.300Z",
+        "verifiedAt": "2026-09-01T04:05:23.466Z",
         "evidenceUrl": "https://gpsaventura.com/pages/preguntas-frecuentes",
         "httpStatus": 200,
         "signals": [
@@ -11932,7 +11932,7 @@
     "dsport outdoor": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-09-01T03:48:24.288Z",
+        "verifiedAt": "2026-09-01T04:05:20.243Z",
         "evidenceUrl": "https://www.dsport.com.pe/contactus",
         "httpStatus": 0,
         "signals": [],
@@ -11947,7 +11947,7 @@
     "distribuidora naon": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:22.281Z",
+        "verifiedAt": "2026-09-01T04:05:22.729Z",
         "evidenceUrl": "https://distribuidoranaon.com.ar/",
         "httpStatus": 200,
         "signals": [
@@ -11967,7 +11967,7 @@
     "ogi brasil": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:19.838Z",
+        "verifiedAt": "2026-09-01T04:05:20.732Z",
         "evidenceUrl": "https://www.ogibrasil.com/",
         "httpStatus": 200,
         "signals": [],
@@ -11985,7 +11985,7 @@
     "nahuel camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:23.944Z",
+        "verifiedAt": "2026-09-01T04:05:34.155Z",
         "evidenceUrl": "https://nahuelcamping.com.ar/vende-nahuel/",
         "httpStatus": 200,
         "signals": [
@@ -12005,7 +12005,7 @@
     "vital gas": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T03:48:27.714Z",
+        "verifiedAt": "2026-09-01T04:05:34.566Z",
         "evidenceUrl": "https://www.vital-gas.com/",
         "httpStatus": 200,
         "signals": [
@@ -12021,8 +12021,112 @@
         "https://www.facebook.com/vitalgasfabrica",
         "https://www.instagram.com/vitalgasfabrica/"
       ]
+    },
+    "grey fox outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:05:21.567Z",
+        "evidenceUrl": "https://www.greyfoxoutdoor.cl/contacto/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "ventas@greyfoxoutdoor.cl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/coyhaiqueflyshop.chile",
+        "https://www.instagram.com/greyfox_outdoor/",
+        "https://www.facebook.com/GreyfoxOutdoorSa"
+      ]
+    },
+    "wildlife outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:05:20.781Z",
+        "evidenceUrl": "https://wildlifeoutdoor.cl/mayorista/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "ventas@wildlifeoutdoor.cl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/wildlifeoutdoor.cl",
+        "https://instagram.com/wildlifeoutdoor.cl?igshid=OGQ5ZDc2ODk2ZA=="
+      ]
+    },
+    "andesland outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:05:23.367Z",
+        "evidenceUrl": "https://andeslandoutdoor.cl/pages/directorio-andesland",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "ventas@andeslandoutdoor.cl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/AndeslandChile/",
+        "https://www.instagram.com/andeslandoutdoor/"
+      ]
+    },
+    "distribuidora andina": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:05:38.141Z",
+        "evidenceUrl": "https://www.distribuidoraandina.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "ventas@distribuidoraandina.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/p/Distribuidora-Andina-100069119456638/",
+        "https://www.instagram.com/distribuidora.andina/"
+      ]
+    },
+    "planetsport chile": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:05:33.343Z",
+        "evidenceUrl": "https://planetsport.cl/pages/venta-mayorista",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "ventas@tro.cl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/planetsport.cl/",
+        "https://www.instagram.com/planetsport.cl/"
+      ]
     }
   },
-  "scopedCompanyCount": 13,
+  "scopedCompanyCount": 18,
   "campaignCursor": 2
 }
