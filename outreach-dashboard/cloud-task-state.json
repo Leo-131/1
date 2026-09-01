@@ -4,21 +4,24 @@
   "mode": "cloud_control_plane_local_browser_executor",
   "shanghaiDate": "2026-09-01",
   "status": "active",
-  "revision": 59,
-  "updatedAt": "2026-09-01T05:28:31.377Z",
+  "revision": 60,
+  "updatedAt": "2026-09-01T10:07:58.002Z",
   "objective": {
     "dailyTarget": 100,
-    "campaign": "middle_east_large_key_accounts_and_brand_agencies",
+    "campaign": "south_america_large_key_accounts_and_brand_agencies",
     "countries": [
-      "united arab emirates",
-      "saudi arabia",
-      "qatar",
-      "kuwait",
-      "bahrain",
-      "oman",
-      "jordan",
-      "lebanon",
-      "iraq"
+      "argentina",
+      "bolivia",
+      "brazil",
+      "chile",
+      "colombia",
+      "ecuador",
+      "guyana",
+      "paraguay",
+      "peru",
+      "suriname",
+      "uruguay",
+      "venezuela"
     ],
     "customerTypes": [
       "sales_agency",
@@ -27,13 +30,13 @@
     "multiChannelSameCustomer": true
   },
   "progress": {
-    "confirmedToday": 64,
-    "remainingToday": 36,
+    "confirmedToday": 83,
+    "remainingToday": 17,
     "potentialPool": 0,
     "executableCompanies": 0,
-    "latestExecutionPhase": "browser_execution",
-    "latestRealDevelopmentCount": 6,
-    "latestReportingVerdict": "development_performed"
+    "latestExecutionPhase": "no_executable_tasks",
+    "latestRealDevelopmentCount": 0,
+    "latestReportingVerdict": "no_customer_development_performed"
   },
   "lease": null,
   "handoff": {
@@ -57,14 +60,14 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "c710ab29a630711b8de2218a506588898da078d8",
-    "upstreamHead": "c710ab29a630711b8de2218a506588898da078d8",
-    "remoteHead": "c710ab29a630711b8de2218a506588898da078d8"
+    "localHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
+    "upstreamHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
+    "remoteHead": "5c26bb0fdece33f7fe28ba7923e877dfdce88dbd"
   },
   "latestExecution": {
-    "completedAt": "2026-09-01T05:27:12.993Z",
-    "browserTransportUsed": "cdp",
-    "chromeOpened": true,
-    "realDevelopmentCount": 6
+    "completedAt": "2026-09-01T10:07:43.897Z",
+    "browserTransportUsed": "none",
+    "chromeOpened": false,
+    "realDevelopmentCount": 0
   }
 }

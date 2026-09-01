@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T05:28:34.569Z",
+  "generatedAt": "2026-09-01T10:08:00.398Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-09-01",
   "policyVersion": "2026-07-30",
@@ -13,21 +13,24 @@
     "maximumRunLimit": 50,
     "runMaximumMinutes": 45
   },
-  "confirmedToday": 64,
-  "remainingToday": 36,
+  "confirmedToday": 83,
+  "remainingToday": 17,
   "campaignScope": {
     "enabled": true,
-    "name": "middle_east_large_key_accounts_and_brand_agencies",
+    "name": "south_america_large_key_accounts_and_brand_agencies",
     "requiredCountries": [
-      "united arab emirates",
-      "saudi arabia",
-      "qatar",
-      "kuwait",
-      "bahrain",
-      "oman",
-      "jordan",
-      "lebanon",
-      "iraq"
+      "argentina",
+      "bolivia",
+      "brazil",
+      "chile",
+      "colombia",
+      "ecuador",
+      "guyana",
+      "paraguay",
+      "peru",
+      "suriname",
+      "uruguay",
+      "venezuela"
     ],
     "requiredCustomerTypes": [
       "sales_agency",
@@ -48,10 +51,10 @@
     "executableReserveNeeded": 130
   },
   "latestExecution": {
-    "completedAt": "2026-09-01T05:27:12.993Z",
-    "phase": "browser_execution",
-    "realDevelopmentCount": 6,
-    "reportingVerdict": "development_performed"
+    "completedAt": "2026-09-01T10:07:43.897Z",
+    "phase": "no_executable_tasks",
+    "realDevelopmentCount": 0,
+    "reportingVerdict": "no_customer_development_performed"
   },
   "browser": {
     "requiredTransport": "dedicated Chrome/CDP",
@@ -60,7 +63,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "c710ab29a630711b8de2218a506588898da078d8",
-    "upstreamHead": "c710ab29a630711b8de2218a506588898da078d8"
+    "localHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
+    "upstreamHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0"
   }
 }
