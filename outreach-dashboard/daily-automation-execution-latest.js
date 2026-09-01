@@ -35,6 +35,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
+      "id": "google-customer-minnis-brands-website-contact",
+      "company": "Minnis Brands",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
       "company": "G.B. Stumpp & Associates",
       "action": "email_priority",
@@ -98,6 +105,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-mell-sports-website-contact",
+      "company": "Mell Sports",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-southam-sales-website-contact",
       "company": "Southam Sales",
       "action": "email_priority",
@@ -112,11 +126,67 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-camperlands-manchester-website-contact",
+      "company": "Camperlands Manchester",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-bbq-fans-website-contact",
       "company": "BBQ Fans",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-minnis-brands-linkedin",
+      "company": "Minnis Brands",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "verified_linkedin_profile_ready"
+    },
+    {
+      "id": "google-customer-esprinet-group-linkedin",
+      "company": "Esprinet Group",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-alpinewaves-linkedin",
+      "company": "AlpineWaves",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-alpine-waves-linkedin",
+      "company": "Alpine Waves",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "official_website_social_channel_verified"
     },
     {
       "id": "google-customer-mountain-lifestyle-kind-linkedin",
@@ -147,6 +217,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-motion-sports-facebook",
+      "company": "Motion Sports",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-babbling-brook-sales-facebook",
       "company": "Babbling Brook Sales",
       "action": "develop",
@@ -156,6 +233,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-nickel-n-diamond-sales-facebook",
       "company": "Nickel N Diamond Sales",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-mell-sports-facebook",
+      "company": "Mell Sports",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -177,6 +261,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-ascension-sales-group-facebook",
       "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-camperlands-manchester-facebook",
+      "company": "Camperlands Manchester",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -210,8 +301,36 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-minnis-brands-instagram",
+      "company": "Minnis Brands",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-alpinewaves-instagram",
+      "company": "AlpineWaves",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-alpine-waves-instagram",
+      "company": "Alpine Waves",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-hardin-outdoors-instagram",
       "company": "Hardin Outdoors",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-motion-sports-instagram",
+      "company": "Motion Sports",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -226,6 +345,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-nickel-n-diamond-sales-instagram",
       "company": "Nickel N Diamond Sales",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-mell-sports-instagram",
+      "company": "Mell Sports",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -287,11 +413,46 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "google-customer-bbq-fans-instagram",
       "company": "BBQ Fans",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-alpinewaves-website-contact",
+      "company": "AlpineWaves",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-motion-sports-website-contact",
+      "company": "Motion Sports",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-shiner-distribution-website-contact",
+      "company": "Shiner Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-babbling-brook-sales-website-contact",
@@ -504,188 +665,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-murdoch-s-ranch-home-supply-website-contact",
-      "company": "Murdoch's Ranch & Home Supply",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-wwsra-website-contact",
-      "company": "WWSRA",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-nohrth-website-contact",
-      "company": "NOHRTH",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-minnis-brands-website-contact",
-      "company": "Minnis Brands",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-mell-sports-website-contact",
-      "company": "Mell Sports",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-camperlands-manchester-website-contact",
-      "company": "Camperlands Manchester",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-minnis-brands-linkedin",
-      "company": "Minnis Brands",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "verified_linkedin_profile_ready"
-    },
-    {
-      "id": "google-customer-esprinet-group-linkedin",
-      "company": "Esprinet Group",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-alpinewaves-linkedin",
-      "company": "AlpineWaves",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-alpine-waves-linkedin",
-      "company": "Alpine Waves",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-motion-sports-facebook",
-      "company": "Motion Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-mell-sports-facebook",
-      "company": "Mell Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-camperlands-manchester-facebook",
-      "company": "Camperlands Manchester",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-minnis-brands-instagram",
-      "company": "Minnis Brands",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-alpinewaves-instagram",
-      "company": "AlpineWaves",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-alpine-waves-instagram",
-      "company": "Alpine Waves",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-motion-sports-instagram",
-      "company": "Motion Sports",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-mell-sports-instagram",
-      "company": "Mell Sports",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-esprinet-group-website-contact",
-      "company": "Esprinet Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-alpinewaves-website-contact",
-      "company": "AlpineWaves",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-motion-sports-website-contact",
-      "company": "Motion Sports",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-shiner-distribution-website-contact",
-      "company": "Shiner Distribution",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-bergfreunde-website-contact",
       "company": "Bergfreunde",
       "action": "verify_target",
@@ -702,6 +681,27 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-murdoch-s-ranch-home-supply-website-contact",
+      "company": "Murdoch's Ranch & Home Supply",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-wwsra-website-contact",
+      "company": "WWSRA",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-nohrth-website-contact",
+      "company": "NOHRTH",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -830,5 +830,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-09-01T19:07:16.912Z"
+  "completedAt": "2026-09-01T22:07:19.552Z"
 };
