@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "taskId": "daily-google-lead-outreach-automation",
   "mode": "cloud_control_plane_local_browser_executor",
-  "shanghaiDate": "2026-09-01",
+  "shanghaiDate": "2026-09-02",
   "status": "active",
-  "revision": 60,
-  "updatedAt": "2026-09-01T10:07:58.002Z",
+  "revision": 2,
+  "updatedAt": "2026-09-01T16:09:32.864Z",
   "objective": {
     "dailyTarget": 100,
     "campaign": "south_america_large_key_accounts_and_brand_agencies",
@@ -30,11 +30,11 @@
     "multiChannelSameCustomer": true
   },
   "progress": {
-    "confirmedToday": 83,
-    "remainingToday": 17,
+    "confirmedToday": 0,
+    "remainingToday": 100,
     "potentialPool": 0,
     "executableCompanies": 0,
-    "latestExecutionPhase": "no_executable_tasks",
+    "latestExecutionPhase": "browser_execution",
     "latestRealDevelopmentCount": 0,
     "latestReportingVerdict": "no_customer_development_performed"
   },
@@ -60,14 +60,14 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
-    "upstreamHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
+    "localHead": "dac2be93515a5bdb52ef908e9bdf3bf23b8730ea",
+    "upstreamHead": "5c26bb0fdece33f7fe28ba7923e877dfdce88dbd",
     "remoteHead": "5c26bb0fdece33f7fe28ba7923e877dfdce88dbd"
   },
   "latestExecution": {
-    "completedAt": "2026-09-01T10:07:43.897Z",
-    "browserTransportUsed": "none",
-    "chromeOpened": false,
+    "completedAt": "2026-09-01T16:09:22.444Z",
+    "browserTransportUsed": "cdp",
+    "chromeOpened": true,
     "realDevelopmentCount": 0
   }
 }
