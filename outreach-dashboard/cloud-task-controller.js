@@ -29,6 +29,8 @@ function isLeaseActive(lease, now = new Date()) {
 
 function buildCloudTaskState({ now = new Date(), previous = readJson(STATE_PATH, {}) } = {}) {
   const { context } = buildContext({ phase: 'cloud-task-refresh', now });
+  const config = readJson(path.join(ROOT, 'daily-automation-config.json'), {});
+  const campaignScope = config.campaignScope || {};
   const execution = readJson(path.join(ROOT, 'daily-automation-execution-latest.json'), {});
   const keepLease = previous.shanghaiDate === context.shanghaiDate && isLeaseActive(previous.lease, now);
   const lease = keepLease ? previous.lease : null;
@@ -42,9 +44,10 @@ function buildCloudTaskState({ now = new Date(), previous = readJson(STATE_PATH,
     updatedAt: now.toISOString(),
     objective: {
       dailyTarget: context.limits.dailyTarget,
-      countries: ['United States', 'United Kingdom', 'South Africa'],
-      customerTypes: ['sales_agency', 'key_account'],
-      multiChannelSameCustomer: true,
+      campaign: campaignScope.name || '',
+      countries: campaignScope.requiredCountries || [],
+      customerTypes: campaignScope.requiredCustomerTypes || [],
+      multiChannelSameCustomer: config.cadence?.multiChannelSameCustomer === true,
     },
     progress: {
       confirmedToday: context.confirmedToday,
