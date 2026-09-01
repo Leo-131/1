@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T04:58:09.688Z",
+  "updatedAt": "2026-09-01T05:09:54.204Z",
   "cursor": 327,
   "companyCount": 548,
   "verifications": {
@@ -12887,8 +12887,85 @@
         "https://www.instagram.com/camelbak/",
         "https://www.facebook.com/CamelBak"
       ]
+    },
+    "overland gcc": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T05:09:53.397Z",
+        "evidenceUrl": "https://overlandgcc.com/contact-us/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "sales@overlandgcc.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/Overlandgcc",
+        "https://www.instagram.com/Overlandgcc"
+      ]
+    },
+    "brandtrade ae": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T05:09:54.203Z",
+        "evidenceUrl": "https://www.brandtrade.ae/about-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "hello@brandtrade.ae",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.linkedin.com/company/brandtrade-ae",
+        "https://www.facebook.com/brandtrade.ae/"
+      ]
+    },
+    "lablaab trading": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-09-01T05:09:53.284Z",
+        "evidenceUrl": "https://lablaab.com/contact-us/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "info@lablaab.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "al qadah trading company llc": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T05:09:53.962Z",
+        "evidenceUrl": "https://sempertex.ae/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "sempertex@qadah.ae",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
     }
   },
-  "scopedCompanyCount": 55,
-  "campaignCursor": 52
+  "scopedCompanyCount": 4,
+  "campaignCursor": 0
 }
