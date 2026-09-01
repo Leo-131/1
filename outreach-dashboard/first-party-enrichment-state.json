@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T04:26:32.728Z",
+  "updatedAt": "2026-09-01T04:42:36.168Z",
   "cursor": 327,
   "companyCount": 540,
   "verifications": {
@@ -11769,7 +11769,7 @@
     "naka outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:29.413Z",
+        "verifiedAt": "2026-09-01T04:42:29.302Z",
         "evidenceUrl": "https://www.nakaoutdoors.com.ar/seccion-venta-mayorista-outdoor.html",
         "httpStatus": 200,
         "signals": [
@@ -11789,7 +11789,7 @@
     "sendas outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:01.928Z",
+        "verifiedAt": "2026-09-01T04:41:51.323Z",
         "evidenceUrl": "https://www.sendasoutdoor.com.br/pagina/fale-conosco",
         "httpStatus": 200,
         "signals": [
@@ -11810,7 +11810,7 @@
     "balfer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:07.236Z",
+        "verifiedAt": "2026-09-01T04:41:56.797Z",
         "evidenceUrl": "https://balfer.cl/camping-deportes-outdoor/",
         "httpStatus": 200,
         "signals": [
@@ -11831,7 +11831,7 @@
     "out chile": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:04.787Z",
+        "verifiedAt": "2026-09-01T04:41:54.790Z",
         "evidenceUrl": "https://www.outchilestore.com/contact",
         "httpStatus": 200,
         "signals": [
@@ -11857,7 +11857,7 @@
     "wald sa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:04.287Z",
+        "verifiedAt": "2026-09-01T04:42:00.461Z",
         "evidenceUrl": "https://www.waldsa.com/",
         "httpStatus": 200,
         "signals": [
@@ -11877,15 +11877,12 @@
     },
     "caimi allen": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:12.694Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-09-01T04:42:09.458Z",
         "evidenceUrl": "https://www.caimi-allen.cl/pages/distribuidores-autorizados",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "official_supplier_email_verified",
@@ -11899,7 +11896,7 @@
     "koa outdoor": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-09-01T04:26:22.404Z",
+        "verifiedAt": "2026-09-01T04:42:19.462Z",
         "evidenceUrl": "https://koaoutdoor.com.ar/",
         "httpStatus": 0,
         "signals": [],
@@ -11914,7 +11911,7 @@
     "gps aventura": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:12.813Z",
+        "verifiedAt": "2026-09-01T04:42:20.005Z",
         "evidenceUrl": "https://gpsaventura.com/pages/preguntas-frecuentes",
         "httpStatus": 200,
         "signals": [
@@ -11931,23 +11928,29 @@
     },
     "dsport outdoor": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-09-01T04:26:09.869Z",
-        "evidenceUrl": "https://www.dsport.com.pe/contactus",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:41:59.976Z",
+        "evidenceUrl": "https://www.dsport.com.pe/en",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
       },
-      "contactCapabilityVerified": false,
-      "externalVerificationStatus": "official_supplier_email_verified",
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "ventas@dsport.com.pe",
       "emailVerificationStatus": "official_public_business_email",
-      "socialProfiles": []
+      "socialProfiles": [
+        "http://www.linkedin.com/company/dsport-outdoor?trk=public_post_feed-actor-name"
+      ]
     },
     "distribuidora naon": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:12.401Z",
+        "verifiedAt": "2026-09-01T04:42:03.203Z",
         "evidenceUrl": "https://distribuidoranaon.com.ar/",
         "httpStatus": 200,
         "signals": [
@@ -11967,7 +11970,7 @@
     "ogi brasil": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:10.511Z",
+        "verifiedAt": "2026-09-01T04:42:04.027Z",
         "evidenceUrl": "https://www.ogibrasil.com/",
         "httpStatus": 200,
         "signals": [],
@@ -11985,7 +11988,7 @@
     "nahuel camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:24.774Z",
+        "verifiedAt": "2026-09-01T04:42:26.793Z",
         "evidenceUrl": "https://nahuelcamping.com.ar/vende-nahuel/",
         "httpStatus": 200,
         "signals": [
@@ -12005,7 +12008,7 @@
     "vital gas": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:24.105Z",
+        "verifiedAt": "2026-09-01T04:42:27.021Z",
         "evidenceUrl": "https://www.vital-gas.com/",
         "httpStatus": 200,
         "signals": [
@@ -12025,7 +12028,7 @@
     "grey fox outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:12.305Z",
+        "verifiedAt": "2026-09-01T04:42:06.357Z",
         "evidenceUrl": "https://www.greyfoxoutdoor.cl/contacto/",
         "httpStatus": 200,
         "signals": [
@@ -12047,7 +12050,7 @@
     "wildlife outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:10.243Z",
+        "verifiedAt": "2026-09-01T04:42:06.556Z",
         "evidenceUrl": "https://wildlifeoutdoor.cl/mayorista/",
         "httpStatus": 200,
         "signals": [
@@ -12067,7 +12070,7 @@
     "andesland outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:12.709Z",
+        "verifiedAt": "2026-09-01T04:42:20.301Z",
         "evidenceUrl": "https://andeslandoutdoor.cl/pages/directorio-andesland",
         "httpStatus": 200,
         "signals": [
@@ -12088,7 +12091,7 @@
     "distribuidora andina": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:27.172Z",
+        "verifiedAt": "2026-09-01T04:42:25.373Z",
         "evidenceUrl": "https://www.distribuidoraandina.com/",
         "httpStatus": 200,
         "signals": [
@@ -12109,8 +12112,8 @@
     "planetsport chile": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:31.388Z",
-        "evidenceUrl": "https://planetsport.cl/",
+        "verifiedAt": "2026-09-01T04:42:27.582Z",
+        "evidenceUrl": "https://planetsport.cl/pages/venta-mayorista",
         "httpStatus": 200,
         "signals": [
           "form_control"
@@ -12129,7 +12132,7 @@
     "altamontanha distribuidora": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:28.585Z",
+        "verifiedAt": "2026-09-01T04:42:28.162Z",
         "evidenceUrl": "https://distribuidora.altamontanha.com/",
         "httpStatus": 200,
         "signals": [],
@@ -12144,7 +12147,7 @@
     "grupo nautika": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:03.763Z",
+        "verifiedAt": "2026-09-01T04:41:50.696Z",
         "evidenceUrl": "https://nautikalazer.com.br/",
         "httpStatus": 200,
         "signals": [
@@ -12163,7 +12166,7 @@
     "summer pesca e camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:23.536Z",
+        "verifiedAt": "2026-09-01T04:42:26.542Z",
         "evidenceUrl": "https://www.summerpesca.com.br/pagina/quem-somos.html",
         "httpStatus": 200,
         "signals": [
@@ -12184,7 +12187,7 @@
     "conquista rv": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:32.727Z",
+        "verifiedAt": "2026-09-01T04:42:36.168Z",
         "evidenceUrl": "https://conquistatrailer.com.br/contatos/",
         "httpStatus": 200,
         "signals": [
@@ -12202,7 +12205,7 @@
     "campamento sa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:54.812Z",
+        "verifiedAt": "2026-09-01T04:41:48.756Z",
         "evidenceUrl": "https://ansilta.com/",
         "httpStatus": 200,
         "signals": [
@@ -12222,7 +12225,7 @@
     "outdoor brands peru": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-09-01T04:25:57.584Z",
+        "verifiedAt": "2026-09-01T04:41:53.440Z",
         "evidenceUrl": "https://www.deuter.com/dk-en/distributors-international",
         "httpStatus": 404,
         "signals": [],
@@ -12237,7 +12240,7 @@
     "chile montana": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:57.270Z",
+        "verifiedAt": "2026-09-01T04:41:57.270Z",
         "evidenceUrl": "https://www.chilemontana.cl/",
         "httpStatus": 200,
         "signals": [
@@ -12255,7 +12258,7 @@
     "grupo axo": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:52.376Z",
+        "verifiedAt": "2026-09-01T04:42:00.650Z",
         "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
         "httpStatus": 200,
         "signals": [
@@ -12279,7 +12282,7 @@
     "tatoo ecuador": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:57.882Z",
+        "verifiedAt": "2026-09-01T04:42:00.668Z",
         "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
         "httpStatus": 200,
         "signals": [
@@ -12303,7 +12306,7 @@
     "superdeporte sa": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-09-01T04:25:58.772Z",
+        "verifiedAt": "2026-09-01T04:42:04.649Z",
         "evidenceUrl": "https://www.deuter.com/dk-en/distributors-international",
         "httpStatus": 404,
         "signals": [],
@@ -12318,7 +12321,7 @@
     "supertex sa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:59.242Z",
+        "verifiedAt": "2026-09-01T04:42:04.776Z",
         "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
         "httpStatus": 200,
         "signals": [],
@@ -12337,7 +12340,7 @@
     "wystam corp": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:57.952Z",
+        "verifiedAt": "2026-09-01T04:42:06.621Z",
         "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
         "httpStatus": 200,
         "signals": [
@@ -12361,7 +12364,7 @@
     "brw group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:59.712Z",
+        "verifiedAt": "2026-09-01T04:42:07.038Z",
         "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
         "httpStatus": 200,
         "signals": [],
@@ -12380,7 +12383,7 @@
     "brand team sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:00.715Z",
+        "verifiedAt": "2026-09-01T04:42:10.433Z",
         "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
         "httpStatus": 200,
         "signals": [],
@@ -12399,7 +12402,7 @@
     "sallustro y cia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:25:59.478Z",
+        "verifiedAt": "2026-09-01T04:42:09.651Z",
         "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
         "httpStatus": 200,
         "signals": [
@@ -12423,7 +12426,7 @@
     "sport group paraguay": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:00.983Z",
+        "verifiedAt": "2026-09-01T04:42:11.330Z",
         "evidenceUrl": "https://www.tl.com.py/",
         "httpStatus": 200,
         "signals": [
@@ -12444,7 +12447,7 @@
     "grylan": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:02.740Z",
+        "verifiedAt": "2026-09-01T04:42:20.942Z",
         "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
         "httpStatus": 200,
         "signals": [],
@@ -12463,7 +12466,7 @@
     "7mundos": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-09-01T04:26:01.640Z",
+        "verifiedAt": "2026-09-01T04:42:26.673Z",
         "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
         "httpStatus": 200,
         "signals": [],
@@ -12478,8 +12481,92 @@
         "https://www.linkedin.com/company/arenawaterinstinct",
         "http://instagram.com/arenawaterinstinct/"
       ]
+    },
+    "andean trading": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:41:48.867Z",
+        "evidenceUrl": "https://solarez.eu/our-distributor",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "jorge@andean.cl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/solarezproducts/"
+      ]
+    },
+    "isle of moai": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:41:48.831Z",
+        "evidenceUrl": "https://solarez.eu/our-distributor",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@solarez.com.br",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/solarezproducts/"
+      ]
+    },
+    "aquasport sac": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:41:47.002Z",
+        "evidenceUrl": "https://tohatsu.com/marine/int/distributor.html",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "contactos@aquasport.pe",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/TohatsuMarineInternational/",
+        "https://www.instagram.com/tohatsu_marine_int/",
+        "https://www.facebook.com/surapolmarine.pattaya"
+      ]
+    },
+    "tecnologia maritima sa": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-09-01T04:41:49.042Z",
+        "evidenceUrl": "https://tohatsu.com/marine/int/distributor.html",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "ventas@tecnomar.cl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/TohatsuMarineInternational/",
+        "https://www.instagram.com/tohatsu_marine_int/",
+        "https://www.facebook.com/surapolmarine.pattaya"
+      ]
     }
   },
-  "scopedCompanyCount": 36,
+  "scopedCompanyCount": 40,
   "campaignCursor": 2
 }
