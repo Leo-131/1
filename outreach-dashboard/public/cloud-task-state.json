@@ -4,27 +4,14 @@
   "mode": "cloud_control_plane_local_browser_executor",
   "shanghaiDate": "2026-09-01",
   "status": "active",
-  "revision": 59,
-  "updatedAt": "2026-09-01T05:28:31.377Z",
+  "revision": 60,
+  "updatedAt": "2026-09-01T05:31:31.611Z",
   "objective": {
     "dailyTarget": 100,
-    "campaign": "middle_east_large_key_accounts_and_brand_agencies",
-    "countries": [
-      "united arab emirates",
-      "saudi arabia",
-      "qatar",
-      "kuwait",
-      "bahrain",
-      "oman",
-      "jordan",
-      "lebanon",
-      "iraq"
-    ],
-    "customerTypes": [
-      "sales_agency",
-      "key_account"
-    ],
-    "multiChannelSameCustomer": true
+    "campaign": "",
+    "countries": [],
+    "customerTypes": [],
+    "multiChannelSameCustomer": false
   },
   "progress": {
     "confirmedToday": 64,
@@ -57,9 +44,9 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "c710ab29a630711b8de2218a506588898da078d8",
-    "upstreamHead": "c710ab29a630711b8de2218a506588898da078d8",
-    "remoteHead": "c710ab29a630711b8de2218a506588898da078d8"
+    "localHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
+    "upstreamHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0",
+    "remoteHead": "c15daa49c568e0109fb1ff5454daf893ba740bd0"
   },
   "latestExecution": {
     "completedAt": "2026-09-01T05:27:12.993Z",
