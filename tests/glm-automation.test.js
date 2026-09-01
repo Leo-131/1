@@ -2923,6 +2923,16 @@ test('US, Canada, UK, and South Africa receive only the configured safe-priority
   assert.equal(dailyRunner.preferredCountryScore({ country: 'Canada' }), 30);
 });
 
+test('discovery excludes evidence-only do-not-send registry records', () => {
+  assert.ok(discoverySource.includes("endsWith('_do_not_send')"));
+  for (const company of ['Stella Blue Sales', 'Beaver Outdoor Canada']) {
+    const candidate = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(candidate, `${company} evidence must remain durable`);
+    assert.match(candidate.externalVerificationStatus, /_do_not_send$/);
+    assert.equal(candidate.contactEmail, '');
+  }
+});
+
 test('campaign scope includes US, Canada, UK, and South Africa large key accounts and brand agencies but excludes other markets', () => {
   assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'canada', 'united kingdom', 'south africa']);
   assert.deepEqual(dailyConfig.campaignScope.requiredCustomerTypes, ['sales_agency', 'key_account']);

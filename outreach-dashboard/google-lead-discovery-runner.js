@@ -51,7 +51,10 @@ function exclusiveAgentForCountry(country) {
 function loadVerifiedExternalCandidates() {
   const parsed = JSON.parse(fs.readFileSync(VERIFIED_EXTERNAL_CANDIDATES_PATH, 'utf8'));
   if (!Array.isArray(parsed)) throw new Error('verified external candidates must be an array');
-  return parsed.map((candidate, index) => {
+  // Evidence-only records stay in the durable registry for auditability, but
+  // must never re-enter discovery after a delivery gate has prohibited them.
+  const executable = parsed.filter(candidate => !String(candidate && candidate.externalVerificationStatus || '').endsWith('_do_not_send'));
+  return executable.map((candidate, index) => {
     const required = ['company', 'country', 'url', 'contactUrl', 'segment', 'fitScore', 'evidenceUrl', 'externalVerificationStatus'];
     const missing = required.filter(field => !String(candidate && candidate[field] || '').trim());
     if (missing.length) {
