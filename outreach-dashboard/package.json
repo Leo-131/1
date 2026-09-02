@@ -39,7 +39,7 @@
   },
   "build": {
     "appId": "com.flextail.outreach-dashboard",
-    "productName": "Customer Development System",
+    "productName": "260902最新版客户开发系统",
     "directories": {
       "output": "dist"
     },
