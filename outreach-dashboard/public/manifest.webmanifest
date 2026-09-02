@@ -1,6 +1,6 @@
 {
-  "name": "Customer Development System - Flextail & Vollyc",
-  "short_name": "Customer Dev",
+  "name": "260902最新版客户开发系统",
+  "short_name": "260902客户开发",
   "description": "Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.",
   "start_url": "./outreach-dashboard.html",
   "scope": "./",
