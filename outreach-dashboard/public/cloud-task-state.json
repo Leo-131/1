@@ -4,8 +4,8 @@
   "mode": "cloud_control_plane_local_browser_executor",
   "shanghaiDate": "2026-09-02",
   "status": "active",
-  "revision": 4,
-  "updatedAt": "2026-09-01T22:07:32.773Z",
+  "revision": 5,
+  "updatedAt": "2026-09-02T01:07:42.109Z",
   "objective": {
     "dailyTarget": 100,
     "campaign": "south_america_large_key_accounts_and_brand_agencies",
@@ -60,12 +60,12 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "52920848c11a66bedd970e051044bb49867713a0",
-    "upstreamHead": "52920848c11a66bedd970e051044bb49867713a0",
-    "remoteHead": "52920848c11a66bedd970e051044bb49867713a0"
+    "localHead": "731a590c75a277e8a1db49d2f20cd613c9ba9303",
+    "upstreamHead": "731a590c75a277e8a1db49d2f20cd613c9ba9303",
+    "remoteHead": "731a590c75a277e8a1db49d2f20cd613c9ba9303"
   },
   "latestExecution": {
-    "completedAt": "2026-09-01T22:07:19.552Z",
+    "completedAt": "2026-09-02T01:07:29.816Z",
     "browserTransportUsed": "none",
     "chromeOpened": false,
     "realDevelopmentCount": 0
