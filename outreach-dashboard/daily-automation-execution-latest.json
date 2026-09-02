@@ -35,46 +35,11 @@
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
-      "id": "google-customer-mell-sports-website-contact",
-      "company": "Mell Sports",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-mell-sports-facebook",
-      "company": "Mell Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-mell-sports-instagram",
-      "company": "Mell Sports",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-gjs-africa-distribution-website-contact",
-      "company": "GJS Africa Distribution",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-outdoor-nature-website-contact",
@@ -149,6 +114,13 @@
     {
       "id": "google-customer-nickel-n-diamond-sales-website-contact",
       "company": "Nickel N Diamond Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-mell-sports-website-contact",
+      "company": "Mell Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -273,6 +245,13 @@
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-mell-sports-facebook",
+      "company": "Mell Sports",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
       "id": "google-customer-onwardup-facebook",
       "company": "OnwardUP",
       "action": "develop",
@@ -373,6 +352,13 @@
     {
       "id": "google-customer-nickel-n-diamond-sales-instagram",
       "company": "Nickel N Diamond Sales",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-mell-sports-instagram",
+      "company": "Mell Sports",
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
@@ -693,6 +679,13 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
       "action": "verify_target",
@@ -719,6 +712,13 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-gjs-africa-distribution-website-contact",
+      "company": "GJS Africa Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     }
   ],
   "blockerSummary": [
@@ -830,5 +830,5 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-09-02T01:07:29.816Z"
+  "completedAt": "2026-09-02T04:07:46.260Z"
 }

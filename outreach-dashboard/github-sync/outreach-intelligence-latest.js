@@ -1,326 +1,7 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T01:06:08.987Z",
+  "generatedAt": "2026-09-02T04:06:26.494Z",
   "companies": [
-    {
-      "companyId": "company_41f6cba6b697b0d1",
-      "company": "Mell Sports",
-      "keys": [
-        "mellsports",
-        "motomelcomar",
-        "camelbakcom",
-        "belda",
-        "beldacl",
-        "texcoindustries",
-        "texcocompy",
-        "amerimexdobrasil",
-        "amerimexintlcom",
-        "grupogiga",
-        "gigacompy"
-      ],
-      "domains": [
-        "motomel.com.ar",
-        "camelbak.com",
-        "belda.cl",
-        "texco.com.py",
-        "amerimex-intl.com",
-        "giga.com.py"
-      ],
-      "channels": [
-        "email",
-        "facebook",
-        "instagram",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:41.338Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:41.338Z"
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-02T01:05:55.723Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-02T01:05:55.723Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:41.338Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:41.338Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:42.363Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:42.363Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:43.317Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:43.317Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:43.378Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T22:05:43.378Z"
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T13:25:00.000+08:00"
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T13:25:00.000+08:00"
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T13:25:00.000+08:00"
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T13:25:00.000+08:00"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
-          "checkedAt": "2026-09-01T13:25:00.000+08:00"
-        }
-      ],
-      "history": [
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-09-01T05:01:45.495Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-09-01T05:02:59.608Z",
-          "channel": "email",
-          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:254,114;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_found;nearby:[];recipientChipClick:1;alibaba_webmail_recipient_tooltip_exact_match_missing;recipientChipClick:2;alibaba_webmail_recipient_tooltip_exact_match_missing;composer_preserved_for_technical_evidence:true",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-09-01T05:03:32.941Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-09-01T05:03:57.254Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-09-01T05:04:38.525Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-09-01T16:08:32.489Z",
-          "channel": "website_form",
-          "evidence": "email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:javier.mosca@motomel.com.ar",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        }
-      ]
-    },
     {
       "companyId": "company_68ba78830347b19c",
       "company": "Wildfire Sports",
@@ -499,210 +180,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-25T09:55:00.000Z",
           "channel": "email",
           "evidence": "alibaba_mail_send_success_toast_visible;recipient_subject_body_verified_before_click;sent_folder_verification_interrupted_by_chrome_extension_disconnect;automatic_resend_forbidden",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        }
-      ]
-    },
-    {
-      "companyId": "company_152c4973e4cf4ec0",
-      "company": "Obelink",
-      "keys": [
-        "obelink",
-        "obelinknl"
-      ],
-      "domains": [
-        "obelink.nl"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:04:45.810Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:00:12.876Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:14:15.188Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;runtime_exception: Uncaught;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T16:07:29.544Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:07:24.275Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T05:14:16.654Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T05:55:00.790Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:06:18.063Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:07.841Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-31T16:09:16.482Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-31T19:05:48.032Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-          "repliedAt": "",
-          "replyType": "",
-          "replyOutcome": ""
-        }
-      ]
-    },
-    {
-      "companyId": "company_47b2a10dc85c3892",
-      "company": "GJS Africa Distribution",
-      "keys": [
-        "gjsafricadistribution",
-        "gjsafricacoza"
-      ],
-      "domains": [
-        "gjsafrica.co.za"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://gjsafrica.co.za/",
-          "checkedAt": "2026-08-26T08:30:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://gjsafrica.co.za/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://gjsafrica.co.za/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-26T09:22:09.411Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
           "repliedAt": "",
           "replyType": "",
           "replyOutcome": ""
@@ -2646,6 +2123,325 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-25T08:27:00.000Z",
           "channel": "email",
           "evidence": "alibaba_mail_sent_folder_row_visible_after_delayed_refresh;subject_exact_match;recipient_exact_match;sent_folder_time_2026-08-25_16:27_asia_shanghai",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_41f6cba6b697b0d1",
+      "company": "Mell Sports",
+      "keys": [
+        "mellsports",
+        "motomelcomar",
+        "camelbakcom",
+        "belda",
+        "beldacl",
+        "texcoindustries",
+        "texcocompy",
+        "amerimexdobrasil",
+        "amerimexintlcom",
+        "grupogiga",
+        "gigacompy"
+      ],
+      "domains": [
+        "motomel.com.ar",
+        "camelbak.com",
+        "belda.cl",
+        "texco.com.py",
+        "amerimex-intl.com",
+        "giga.com.py"
+      ],
+      "channels": [
+        "email",
+        "facebook",
+        "instagram",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:30.938Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:30.938Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T01:05:55.723Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T01:05:55.723Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:30.938Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:30.938Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:32.353Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:32.353Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:34.681Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:34.681Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:34.762Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-02T04:05:34.762Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-01T13:25:00.000+08:00"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-01T13:25:00.000+08:00"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-01T13:25:00.000+08:00"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-01T13:25:00.000+08:00"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.camelbak.com/international-distributors.html",
+          "checkedAt": "2026-09-01T13:25:00.000+08:00"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-09-01T05:01:45.495Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-09-01T05:02:59.608Z",
+          "channel": "email",
+          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:254,114;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_found;nearby:[];recipientChipClick:1;alibaba_webmail_recipient_tooltip_exact_match_missing;recipientChipClick:2;alibaba_webmail_recipient_tooltip_exact_match_missing;composer_preserved_for_technical_evidence:true",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-09-01T05:03:32.941Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-09-01T05:03:57.254Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-09-01T05:04:38.525Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-09-01T16:08:32.489Z",
+          "channel": "website_form",
+          "evidence": "email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:javier.mosca@motomel.com.ar",
           "repliedAt": "",
           "replyType": "",
           "replyOutcome": ""
@@ -7845,6 +7641,153 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_152c4973e4cf4ec0",
+      "company": "Obelink",
+      "keys": [
+        "obelink",
+        "obelinknl"
+      ],
+      "domains": [
+        "obelink.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:04:45.810Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:00:12.876Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:14:15.188Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;runtime_exception: Uncaught;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T16:07:29.544Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:07:24.275Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T05:14:16.654Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T05:55:00.790Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:06:18.063Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:07.841Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-31T16:09:16.482Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-31T19:05:48.032Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        }
+      ]
+    },
+    {
       "companyId": "company_9051f20a70b37cba",
       "company": "Au Vieux Campeur",
       "keys": [
@@ -8062,6 +8005,63 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-24T04:10:45.866Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+          "repliedAt": "",
+          "replyType": "",
+          "replyOutcome": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_47b2a10dc85c3892",
+      "company": "GJS Africa Distribution",
+      "keys": [
+        "gjsafricadistribution",
+        "gjsafricacoza"
+      ],
+      "domains": [
+        "gjsafrica.co.za"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://gjsafrica.co.za/",
+          "checkedAt": "2026-08-26T08:30:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://gjsafrica.co.za/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://gjsafrica.co.za/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-26T09:22:09.411Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
           "repliedAt": "",
           "replyType": "",
           "replyOutcome": ""
@@ -9413,7 +9413,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nakaoutdoors.com.ar/seccion-venta-mayorista-outdoor.html",
-          "checkedAt": "2026-09-01T22:05:47.800Z"
+          "checkedAt": "2026-09-02T04:05:38.341Z"
         },
         {
           "channel": "facebook",
@@ -9423,7 +9423,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nakaoutdoors.com.ar/seccion-venta-mayorista-outdoor.html",
-          "checkedAt": "2026-09-01T22:05:47.800Z"
+          "checkedAt": "2026-09-02T04:05:38.341Z"
         },
         {
           "channel": "research",
@@ -10787,7 +10787,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sendasoutdoor.com.br/pagina/fale-conosco",
-          "checkedAt": "2026-09-01T22:05:48.662Z"
+          "checkedAt": "2026-09-02T04:05:42.853Z"
         },
         {
           "channel": "facebook",
@@ -10797,7 +10797,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sendasoutdoor.com.br/pagina/fale-conosco",
-          "checkedAt": "2026-09-01T22:05:48.662Z"
+          "checkedAt": "2026-09-02T04:05:42.853Z"
         },
         {
           "channel": "research",
@@ -10857,7 +10857,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://nautikalazer.com.br/",
-          "checkedAt": "2026-09-01T19:05:36.384Z"
+          "checkedAt": "2026-09-02T04:05:43.444Z"
         },
         {
           "channel": "research",
@@ -10974,7 +10974,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ansilta.com/",
-          "checkedAt": "2026-09-02T01:05:15.814Z"
+          "checkedAt": "2026-09-02T04:05:18.926Z"
         },
         {
           "channel": "instagram",
@@ -10984,7 +10984,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ansilta.com/",
-          "checkedAt": "2026-09-02T01:05:15.814Z"
+          "checkedAt": "2026-09-02T04:05:18.926Z"
         },
         {
           "channel": "facebook",
@@ -11222,7 +11222,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://interfusion.info/",
-          "checkedAt": "2026-09-01T22:05:32.882Z"
+          "checkedAt": "2026-09-02T01:05:58.769Z"
         },
         {
           "channel": "instagram",
@@ -11232,7 +11232,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://interfusion.info/",
-          "checkedAt": "2026-09-01T22:05:32.882Z"
+          "checkedAt": "2026-09-02T01:05:58.769Z"
         },
         {
           "channel": "facebook",
@@ -13063,7 +13063,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://balfer.cl/camping-deportes-outdoor/",
-          "checkedAt": "2026-09-02T01:05:15.719Z"
+          "checkedAt": "2026-09-02T04:05:50.715Z"
         },
         {
           "channel": "instagram",
@@ -13073,7 +13073,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://balfer.cl/camping-deportes-outdoor/",
-          "checkedAt": "2026-09-02T01:05:15.719Z"
+          "checkedAt": "2026-09-02T04:05:50.715Z"
         },
         {
           "channel": "research",
@@ -13187,7 +13187,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:21.017Z"
+          "checkedAt": "2026-09-02T04:05:47.565Z"
         },
         {
           "channel": "instagram",
@@ -13197,7 +13197,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:21.017Z"
+          "checkedAt": "2026-09-02T04:05:47.565Z"
         },
         {
           "channel": "linkedin",
@@ -13207,7 +13207,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:21.017Z"
+          "checkedAt": "2026-09-02T04:05:47.565Z"
         },
         {
           "channel": "facebook",
@@ -13217,7 +13217,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:27.371Z"
+          "checkedAt": "2026-09-02T04:05:51.362Z"
         },
         {
           "channel": "instagram",
@@ -13227,7 +13227,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:27.371Z"
+          "checkedAt": "2026-09-02T04:05:51.362Z"
         },
         {
           "channel": "linkedin",
@@ -13237,7 +13237,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:27.371Z"
+          "checkedAt": "2026-09-02T04:05:51.362Z"
         },
         {
           "channel": "facebook",
@@ -13247,7 +13247,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:28.028Z"
+          "checkedAt": "2026-09-02T04:05:52.116Z"
         },
         {
           "channel": "instagram",
@@ -13257,7 +13257,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:28.028Z"
+          "checkedAt": "2026-09-02T04:05:52.116Z"
         },
         {
           "channel": "linkedin",
@@ -13267,7 +13267,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:28.028Z"
+          "checkedAt": "2026-09-02T04:05:52.116Z"
         },
         {
           "channel": "facebook",
@@ -13277,7 +13277,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:39.207Z"
+          "checkedAt": "2026-09-02T04:06:12.806Z"
         },
         {
           "channel": "instagram",
@@ -13287,7 +13287,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:39.207Z"
+          "checkedAt": "2026-09-02T04:06:12.806Z"
         },
         {
           "channel": "linkedin",
@@ -13297,7 +13297,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://ride.lezyne.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:39.207Z"
+          "checkedAt": "2026-09-02T04:06:12.806Z"
         },
         {
           "channel": "facebook",
@@ -15401,7 +15401,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outchilestore.com/contact",
-          "checkedAt": "2026-09-02T01:05:21.946Z"
+          "checkedAt": "2026-09-02T04:05:48.288Z"
         },
         {
           "channel": "facebook",
@@ -15411,7 +15411,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outchilestore.com/contact",
-          "checkedAt": "2026-09-02T01:05:21.946Z"
+          "checkedAt": "2026-09-02T04:05:48.288Z"
         },
         {
           "channel": "website_form",
@@ -15470,7 +15470,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.dsport.com.pe/en/contactus",
-          "checkedAt": "2026-09-02T01:05:26.499Z"
+          "checkedAt": "2026-09-02T04:05:21.436Z"
         },
         {
           "channel": "website_form",
@@ -15584,7 +15584,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.693Z"
+          "checkedAt": "2026-09-02T04:05:51.924Z"
         },
         {
           "channel": "instagram",
@@ -15594,7 +15594,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.693Z"
+          "checkedAt": "2026-09-02T04:05:51.924Z"
         },
         {
           "channel": "linkedin",
@@ -15604,7 +15604,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.693Z"
+          "checkedAt": "2026-09-02T04:05:51.924Z"
         },
         {
           "channel": "facebook",
@@ -15614,7 +15614,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.735Z"
+          "checkedAt": "2026-09-02T04:05:51.893Z"
         },
         {
           "channel": "instagram",
@@ -15624,7 +15624,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.735Z"
+          "checkedAt": "2026-09-02T04:05:51.893Z"
         },
         {
           "channel": "linkedin",
@@ -15634,7 +15634,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.735Z"
+          "checkedAt": "2026-09-02T04:05:51.893Z"
         },
         {
           "channel": "facebook",
@@ -15644,7 +15644,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.639Z"
+          "checkedAt": "2026-09-02T04:05:51.719Z"
         },
         {
           "channel": "instagram",
@@ -15654,7 +15654,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.639Z"
+          "checkedAt": "2026-09-02T04:05:51.719Z"
         },
         {
           "channel": "linkedin",
@@ -15664,7 +15664,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outdoorresearch.com/pages/international-distributor-list",
-          "checkedAt": "2026-09-02T01:05:27.639Z"
+          "checkedAt": "2026-09-02T04:05:51.719Z"
         },
         {
           "channel": "facebook",
@@ -15901,7 +15901,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://serfas.com/pages/distributors",
-          "checkedAt": "2026-09-02T01:05:28.403Z"
+          "checkedAt": "2026-09-02T04:05:52.821Z"
         },
         {
           "channel": "facebook",
@@ -15931,7 +15931,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://serfas.com/pages/distributors",
-          "checkedAt": "2026-09-01T22:05:40.226Z"
+          "checkedAt": "2026-09-02T04:05:29.954Z"
         },
         {
           "channel": "research",
@@ -17075,7 +17075,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.waldsa.com/",
-          "checkedAt": "2026-09-02T01:05:28.214Z"
+          "checkedAt": "2026-09-02T04:05:52.555Z"
         },
         {
           "channel": "facebook",
@@ -17085,7 +17085,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.waldsa.com/",
-          "checkedAt": "2026-09-02T01:05:28.214Z"
+          "checkedAt": "2026-09-02T04:05:52.555Z"
         },
         {
           "channel": "linkedin",
@@ -17095,7 +17095,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.waldsa.com/",
-          "checkedAt": "2026-09-02T01:05:28.214Z"
+          "checkedAt": "2026-09-02T04:05:52.555Z"
         },
         {
           "channel": "research",
@@ -17153,7 +17153,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://distribuidoranaon.com.ar/",
-          "checkedAt": "2026-09-02T01:05:30.242Z"
+          "checkedAt": "2026-09-02T04:05:54.895Z"
         },
         {
           "channel": "research",
@@ -17229,7 +17229,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cateye.com/intl/shop/",
-          "checkedAt": "2026-09-02T01:05:30.925Z"
+          "checkedAt": "2026-09-02T04:05:55.862Z"
         },
         {
           "channel": "instagram",
@@ -17239,7 +17239,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cateye.com/intl/shop/",
-          "checkedAt": "2026-09-02T01:05:30.925Z"
+          "checkedAt": "2026-09-02T04:05:55.862Z"
         },
         {
           "channel": "facebook",
@@ -19146,7 +19146,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greyfoxoutdoor.cl/contacto/",
-          "checkedAt": "2026-09-02T01:05:33.339Z"
+          "checkedAt": "2026-09-02T04:05:59.990Z"
         },
         {
           "channel": "instagram",
@@ -19156,7 +19156,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.greyfoxoutdoor.cl/contacto/",
-          "checkedAt": "2026-09-02T01:05:33.339Z"
+          "checkedAt": "2026-09-02T04:05:59.990Z"
         },
         {
           "channel": "website_form",
@@ -19256,7 +19256,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cervelo.com/en-US/distributors",
-          "checkedAt": "2026-09-02T01:05:31.213Z"
+          "checkedAt": "2026-09-02T04:05:55.625Z"
         },
         {
           "channel": "instagram",
@@ -19266,7 +19266,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cervelo.com/en-US/distributors",
-          "checkedAt": "2026-09-02T01:05:31.213Z"
+          "checkedAt": "2026-09-02T04:05:55.625Z"
         },
         {
           "channel": "facebook",
@@ -19276,7 +19276,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cervelo.com/en-US/distributors",
-          "checkedAt": "2026-09-02T01:05:33.493Z"
+          "checkedAt": "2026-09-02T04:06:00.674Z"
         },
         {
           "channel": "instagram",
@@ -19286,7 +19286,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cervelo.com/en-US/distributors",
-          "checkedAt": "2026-09-02T01:05:33.493Z"
+          "checkedAt": "2026-09-02T04:06:00.674Z"
         },
         {
           "channel": "facebook",
@@ -20866,7 +20866,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
-          "checkedAt": "2026-09-02T01:05:34.972Z"
+          "checkedAt": "2026-09-02T04:06:01.332Z"
         },
         {
           "channel": "linkedin",
@@ -20876,7 +20876,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
-          "checkedAt": "2026-09-02T01:05:34.972Z"
+          "checkedAt": "2026-09-02T04:06:01.332Z"
         },
         {
           "channel": "instagram",
@@ -20886,7 +20886,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
-          "checkedAt": "2026-09-02T01:05:34.972Z"
+          "checkedAt": "2026-09-02T04:06:01.332Z"
         },
         {
           "channel": "facebook",
@@ -20986,7 +20986,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
-          "checkedAt": "2026-09-01T22:05:40.739Z"
+          "checkedAt": "2026-09-02T04:05:23.315Z"
         },
         {
           "channel": "linkedin",
@@ -20996,7 +20996,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
-          "checkedAt": "2026-09-01T22:05:40.739Z"
+          "checkedAt": "2026-09-02T04:05:23.315Z"
         },
         {
           "channel": "instagram",
@@ -21006,7 +21006,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://about.arenasport.com/es/distribuidores-oficiales/",
-          "checkedAt": "2026-09-01T22:05:40.739Z"
+          "checkedAt": "2026-09-02T04:05:23.315Z"
         },
         {
           "channel": "research",
@@ -21184,7 +21184,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bushnell.com/pages/international-distributors",
-          "checkedAt": "2026-09-02T01:05:34.287Z"
+          "checkedAt": "2026-09-02T04:06:00.537Z"
         },
         {
           "channel": "instagram",
@@ -21194,7 +21194,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bushnell.com/pages/international-distributors",
-          "checkedAt": "2026-09-02T01:05:34.287Z"
+          "checkedAt": "2026-09-02T04:06:00.537Z"
         },
         {
           "channel": "facebook",
@@ -21244,7 +21244,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bushnell.com/pages/international-distributors",
-          "checkedAt": "2026-09-01T22:05:43.062Z"
+          "checkedAt": "2026-09-02T04:05:32.599Z"
         },
         {
           "channel": "instagram",
@@ -21254,7 +21254,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bushnell.com/pages/international-distributors",
-          "checkedAt": "2026-09-01T22:05:43.062Z"
+          "checkedAt": "2026-09-02T04:05:32.599Z"
         },
         {
           "channel": "research",
@@ -23270,7 +23270,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ogibrasil.com/",
-          "checkedAt": "2026-09-02T01:05:41.005Z"
+          "checkedAt": "2026-09-02T04:06:14.724Z"
         },
         {
           "channel": "instagram",
@@ -23280,7 +23280,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ogibrasil.com/",
-          "checkedAt": "2026-09-02T01:05:41.005Z"
+          "checkedAt": "2026-09-02T04:06:14.724Z"
         },
         {
           "channel": "research",
@@ -23501,7 +23501,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://eu.leatherman.com/es-es/pages/stores",
-          "checkedAt": "2026-09-01T22:05:39.597Z"
+          "checkedAt": "2026-09-02T04:05:30.405Z"
         },
         {
           "channel": "research",
@@ -31763,7 +31763,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.distribuidoraandina.com/",
-          "checkedAt": "2026-09-01T22:05:39.282Z"
+          "checkedAt": "2026-09-02T04:05:21.095Z"
         },
         {
           "channel": "instagram",
@@ -31773,7 +31773,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.distribuidoraandina.com/",
-          "checkedAt": "2026-09-01T22:05:39.282Z"
+          "checkedAt": "2026-09-02T04:05:21.095Z"
         },
         {
           "channel": "research",
@@ -31846,7 +31846,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://solarez.eu/our-distributor",
-          "checkedAt": "2026-09-01T22:05:35.582Z"
+          "checkedAt": "2026-09-02T04:05:23.549Z"
         },
         {
           "channel": "facebook",
@@ -31856,7 +31856,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://solarez.eu/our-distributor",
-          "checkedAt": "2026-09-01T22:05:40.081Z"
+          "checkedAt": "2026-09-02T04:05:31.879Z"
         },
         {
           "channel": "research",
@@ -33686,7 +33686,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://nahuelcamping.com.ar/vende-nahuel/",
-          "checkedAt": "2026-09-01T22:05:35.306Z"
+          "checkedAt": "2026-09-02T04:05:24.106Z"
         },
         {
           "channel": "instagram",
@@ -33696,7 +33696,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://nahuelcamping.com.ar/vende-nahuel/",
-          "checkedAt": "2026-09-01T22:05:35.306Z"
+          "checkedAt": "2026-09-02T04:05:24.106Z"
         },
         {
           "channel": "research",
@@ -33832,7 +33832,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://tohatsu.com/marine/int/distributor.html",
-          "checkedAt": "2026-09-01T22:05:41.158Z"
+          "checkedAt": "2026-09-02T04:05:32.685Z"
         },
         {
           "channel": "instagram",
@@ -33842,7 +33842,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://tohatsu.com/marine/int/distributor.html",
-          "checkedAt": "2026-09-01T22:05:41.158Z"
+          "checkedAt": "2026-09-02T04:05:32.685Z"
         },
         {
           "channel": "facebook",
@@ -33872,7 +33872,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://tohatsu.com/marine/int/distributor.html",
-          "checkedAt": "2026-09-01T22:05:43.027Z"
+          "checkedAt": "2026-09-02T04:05:34.149Z"
         },
         {
           "channel": "instagram",
@@ -33882,7 +33882,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://tohatsu.com/marine/int/distributor.html",
-          "checkedAt": "2026-09-01T22:05:43.027Z"
+          "checkedAt": "2026-09-02T04:05:34.149Z"
         },
         {
           "channel": "facebook",
@@ -35354,7 +35354,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.summerpesca.com.br/pagina/quem-somos.html",
-          "checkedAt": "2026-09-01T22:05:42.857Z"
+          "checkedAt": "2026-09-02T04:05:33.972Z"
         },
         {
           "channel": "instagram",
@@ -35364,7 +35364,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.summerpesca.com.br/pagina/quem-somos.html",
-          "checkedAt": "2026-09-01T22:05:42.857Z"
+          "checkedAt": "2026-09-02T04:05:33.972Z"
         },
         {
           "channel": "research",
@@ -35968,7 +35968,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.vital-gas.com/",
-          "checkedAt": "2026-09-01T22:05:45.066Z"
+          "checkedAt": "2026-09-02T04:05:36.538Z"
         },
         {
           "channel": "instagram",
@@ -35978,7 +35978,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.vital-gas.com/",
-          "checkedAt": "2026-09-01T22:05:45.066Z"
+          "checkedAt": "2026-09-02T04:05:36.538Z"
         },
         {
           "channel": "research",
@@ -36039,7 +36039,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://planetsport.cl/pages/venta-mayorista",
-          "checkedAt": "2026-09-01T22:05:44.135Z"
+          "checkedAt": "2026-09-02T04:05:37.570Z"
         },
         {
           "channel": "instagram",
@@ -36049,7 +36049,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://planetsport.cl/pages/venta-mayorista",
-          "checkedAt": "2026-09-01T22:05:44.135Z"
+          "checkedAt": "2026-09-02T04:05:37.570Z"
         },
         {
           "channel": "research",
@@ -54018,16 +54018,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   ],
   "suppressions": [
     {
-      "companyId": "company_41f6cba6b697b0d1",
-      "company": "Mell Sports",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-09-01T05:04:38.525Z",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
-    },
-    {
       "companyId": "company_68ba78830347b19c",
       "company": "Wildfire Sports",
       "permanent": true,
@@ -54076,6 +54066,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-24T12:37:00.000Z",
       "evidence": "official_verified_email:https://www.beaverwax.com/pages/new-contact;recipient_expanded_darkblizzardsales@gmail.com;subject_body_preflight_match;alibaba_send_success_toast;sent_folder_subject_and_body_confirmed"
+    },
+    {
+      "companyId": "company_41f6cba6b697b0d1",
+      "company": "Mell Sports",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-09-01T05:04:38.525Z",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;approved_google_drive_collateral_links_verified:https://drive.google.com/file/d/1QOQbDQrl49DiGp08HOy3C5AHbtzee2CE/view?usp=drive_link|https://drive.google.com/file/d/1gEKgMnJEPSIh8Z0P9DQ-6KndFwHz5riS/view?usp=drive_link|https://drive.google.com/file/d/1x3EGqFeOUtk8z0tfuRRThavPrH0e3pmM/view?usp=drive_link;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
     },
     {
       "companyId": "company_5fe30cfaa83c8b40",
@@ -60471,26 +60471,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_152c4973e4cf4ec0",
-        "company": "Obelink",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_47b2a10dc85c3892",
-        "company": "GJS Africa Distribution",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://gjsafrica.co.za/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_d43133da7d17b52b",
         "company": "Outdoor Nature",
         "action": "first_touch",
@@ -60626,10 +60606,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "companyId": "company_60ef8afce84d6012",
         "company": "Motion Sports",
         "action": "first_touch",
-        "channel": "facebook",
-        "evidenceScore": 95,
+        "channel": "website_form",
+        "evidenceScore": 100,
         "evidenceUrl": "https://www.motion-sports.co.uk/contact",
         "alternatives": [
+          "facebook",
           "instagram"
         ],
         "reason": "highest_priority_verified_channel"
@@ -60638,10 +60619,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "companyId": "company_49c7b4fd282ea0a2",
         "company": "Babbling Brook Sales",
         "action": "first_touch",
-        "channel": "facebook",
+        "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.babblingbrooksales.com/",
         "alternatives": [
+          "facebook",
           "instagram"
         ],
         "reason": "highest_priority_verified_channel"
@@ -60662,20 +60644,24 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "companyId": "company_561d7f5f2cf0be38",
         "company": "Old Timber Outfitters",
         "action": "first_touch",
-        "channel": "instagram",
+        "channel": "facebook",
         "evidenceScore": 100,
         "evidenceUrl": "https://oldtimberoutfitters.com/",
-        "alternatives": [],
+        "alternatives": [
+          "instagram"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
         "companyId": "company_fb5d7f105c82490f",
         "company": "Ascension Sales Group",
         "action": "first_touch",
-        "channel": "instagram",
+        "channel": "facebook",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-        "alternatives": [],
+        "alternatives": [
+          "instagram"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -60685,6 +60671,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "instagram",
         "evidenceScore": 95,
         "evidenceUrl": "https://www.brreps.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_e25c70695b880518",
+        "company": "Palisade Trading",
+        "action": "first_touch",
+        "channel": "instagram",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.palisadetrading.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_73d95342202e1e56",
+        "company": "Level 8 Outdoor",
+        "action": "first_touch",
+        "channel": "instagram",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://level8outdoor.com/about-us",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -60746,6 +60752,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "learning": {
     "channels": [
       {
+        "channel": "website_form",
+        "confirmed": 29,
+        "replies": 3,
+        "opportunities": 0,
+        "humanReplies": 1,
+        "automatedReplies": 2,
+        "replyRate": 0.10344827586206896,
+        "opportunityRate": 0,
+        "confidence": "high"
+      },
+      {
         "channel": "email",
         "confirmed": 571,
         "replies": 20,
@@ -60754,17 +60771,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "automatedReplies": 13,
         "unclassifiedReplies": 1,
         "replyRate": 0.03502626970227671,
-        "opportunityRate": 0,
-        "confidence": "high"
-      },
-      {
-        "channel": "website_form",
-        "confirmed": 29,
-        "replies": 3,
-        "opportunities": 0,
-        "humanReplies": 1,
-        "automatedReplies": 2,
-        "replyRate": 0.10344827586206896,
         "opportunityRate": 0,
         "confidence": "high"
       },
@@ -60812,16 +60818,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     "experiments": [
       {
         "dimension": "channel",
-        "variant": "email",
-        "sampleSize": 571,
-        "observedReplyRate": 0.03502626970227671,
+        "variant": "website_form",
+        "sampleSize": 29,
+        "observedReplyRate": 0.10344827586206896,
         "recommendation": "use_as_bounded_allocation_signal"
       },
       {
         "dimension": "channel",
-        "variant": "website_form",
-        "sampleSize": 29,
-        "observedReplyRate": 0.10344827586206896,
+        "variant": "email",
+        "sampleSize": 571,
+        "observedReplyRate": 0.03502626970227671,
         "recommendation": "use_as_bounded_allocation_signal"
       },
       {
@@ -60848,7 +60854,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-09-02T01:06:08.987Z",
+    "generatedAt": "2026-09-02T04:06:26.494Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 775,
@@ -60857,26 +60863,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "verifiedEvidenceRoutes": 1520
     },
     "decisions": [
-      {
-        "companyId": "company_152c4973e4cf4ec0",
-        "company": "Obelink",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_47b2a10dc85c3892",
-        "company": "GJS Africa Distribution",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://gjsafrica.co.za/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
       {
         "companyId": "company_d43133da7d17b52b",
         "company": "Outdoor Nature",
@@ -60963,6 +60949,29 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "instagram"
         ],
         "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_cca7b01c18447cb0",
+        "company": "Simpson Sales Company",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.simpsonsalesco.com/ssc-sports-division",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_773511178979fa01",
+        "company": "Camperlands Manchester",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.agentfiamma.co.uk/agent-fiamma-contact-information.html",
+        "alternatives": [
+          "website_form",
+          "facebook"
+        ],
+        "reason": "highest_priority_verified_channel"
       }
     ],
     "exceptions": [
@@ -60981,6 +60990,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     "learning": {
       "channels": [
         {
+          "channel": "website_form",
+          "confirmed": 29,
+          "replies": 3,
+          "opportunities": 0,
+          "humanReplies": 1,
+          "automatedReplies": 2,
+          "replyRate": 0.10344827586206896,
+          "opportunityRate": 0,
+          "confidence": "high"
+        },
+        {
           "channel": "email",
           "confirmed": 571,
           "replies": 20,
@@ -60989,17 +61009,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "automatedReplies": 13,
           "unclassifiedReplies": 1,
           "replyRate": 0.03502626970227671,
-          "opportunityRate": 0,
-          "confidence": "high"
-        },
-        {
-          "channel": "website_form",
-          "confirmed": 29,
-          "replies": 3,
-          "opportunities": 0,
-          "humanReplies": 1,
-          "automatedReplies": 2,
-          "replyRate": 0.10344827586206896,
           "opportunityRate": 0,
           "confidence": "high"
         },
@@ -61047,16 +61056,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "experiments": [
         {
           "dimension": "channel",
-          "variant": "email",
-          "sampleSize": 571,
-          "observedReplyRate": 0.03502626970227671,
+          "variant": "website_form",
+          "sampleSize": 29,
+          "observedReplyRate": 0.10344827586206896,
           "recommendation": "use_as_bounded_allocation_signal"
         },
         {
           "dimension": "channel",
-          "variant": "website_form",
-          "sampleSize": 29,
-          "observedReplyRate": 0.10344827586206896,
+          "variant": "email",
+          "sampleSize": 571,
+          "observedReplyRate": 0.03502626970227671,
           "recommendation": "use_as_bounded_allocation_signal"
         },
         {
