@@ -4,30 +4,14 @@
   "mode": "cloud_control_plane_local_browser_executor",
   "shanghaiDate": "2026-09-02",
   "status": "active",
-  "revision": 6,
-  "updatedAt": "2026-09-02T04:07:56.488Z",
+  "revision": 7,
+  "updatedAt": "2026-09-02T04:57:09.847Z",
   "objective": {
     "dailyTarget": 100,
-    "campaign": "south_america_large_key_accounts_and_brand_agencies",
-    "countries": [
-      "argentina",
-      "bolivia",
-      "brazil",
-      "chile",
-      "colombia",
-      "ecuador",
-      "guyana",
-      "paraguay",
-      "peru",
-      "suriname",
-      "uruguay",
-      "venezuela"
-    ],
-    "customerTypes": [
-      "sales_agency",
-      "key_account"
-    ],
-    "multiChannelSameCustomer": true
+    "campaign": "",
+    "countries": [],
+    "customerTypes": [],
+    "multiChannelSameCustomer": false
   },
   "progress": {
     "confirmedToday": 0,
@@ -60,9 +44,9 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "03a234abf7619791af059966c0f00710f171ec99",
-    "upstreamHead": "03a234abf7619791af059966c0f00710f171ec99",
-    "remoteHead": "03a234abf7619791af059966c0f00710f171ec99"
+    "localHead": "1757d1298c76dbc6ca61cf9a22c86c8f316c6661",
+    "upstreamHead": "1757d1298c76dbc6ca61cf9a22c86c8f316c6661",
+    "remoteHead": "1757d1298c76dbc6ca61cf9a22c86c8f316c6661"
   },
   "latestExecution": {
     "completedAt": "2026-09-02T04:07:46.260Z",
