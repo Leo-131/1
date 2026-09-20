@@ -1,0 +1,12 @@
+{
+  "dataDate": "2026-09-20",
+  "timezone": "Asia/Shanghai",
+  "dailyTarget": 100,
+  "dailyConfirmedNewSubmissions": 0,
+  "legacyBatchDate": "2026-09-10",
+  "legacyBatchInScopeConfirmed": 64,
+  "goalComplete": false,
+  "status": "browser_control_blocked",
+  "scope": "Aggregate only; confirmed submissions are not delivery confirmations.",
+  "fullCustomerData": "retained_locally_pending_private_destination_or_explicit_disclosure_approval"
+}
