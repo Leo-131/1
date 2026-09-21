@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "task": "Optimize model usage and synchronize customer progress with private Sites workspace",
+  "task": "Reconcile report events with customer appendix and add regression checks",
   "status": "ready_for_handoff",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-09-21T15:18:40.986Z",
-  "summary": "Private website updated; direct desktop upload blocked by upstream Cloudflare 403; no background uploader enabled",
+  "updatedAt": "2026-09-21T16:56:19.252Z",
+  "summary": "Customer projection shared across reports and appendix; regression tests added",
   "nextSteps": [
-    "Resolve Sites client network access, then activate sync on Mac and Windows"
+    "Publish private site and review PR; desktop upload still blocked by upstream 403"
   ],
   "verification": [
-    "New sync/model tests pass; full baseline has two existing UI label test failures"
+    "Projection tests pass; two existing UI label assertions remain"
   ],
   "git": {
     "branch": "codex/performance-cloud-progress",
@@ -20,6 +20,7 @@
       "AGENT_HANDOFF.json",
       "outreach-dashboard/README.md",
       "outreach-dashboard/build-portable-app.js",
+      "outreach-dashboard/command-center.js",
       "outreach-dashboard/dashboard-local-server.js",
       "outreach-dashboard/glm-service.js",
       "outreach-dashboard/main.js",
@@ -27,9 +28,12 @@
       "outreach-dashboard/package.json",
       "outreach-dashboard/preload.js",
       "outreach-dashboard/prepare-vercel-output.js",
+      "outreach-dashboard/customer-projection.js",
+      "outreach-dashboard/i18n.js",
       "outreach-dashboard/install-workspace-sync.ps1",
       "outreach-dashboard/workspace-sync-browser.js",
       "outreach-dashboard/workspace-sync.js",
+      "tests/customer-projection.test.js",
       "tests/efficiency-sync.test.js"
     ]
   }

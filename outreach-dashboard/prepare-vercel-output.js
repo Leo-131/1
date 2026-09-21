@@ -17,6 +17,7 @@ const files = [
   'verified-profile-registry.js',
   'autonomous-outreach-data.js',
   'command-center.css',
+  'customer-projection.js',
   'command-center.js',
   'service-worker.js',
   'manifest.webmanifest',

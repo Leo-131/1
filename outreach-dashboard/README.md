@@ -93,3 +93,5 @@ Progress destination: https://flextail-customer-workspace.leo13111.chatgpt.site/
 Validation: new sync/model tests pass. The existing full suite has two pre-existing text assertions expecting `Codex + AutoClaw` in HTML; the checked-out baseline already lacks that label. No unrelated execution or historical data was changed to satisfy those assertions.
 
 Live connection test on 2026-09-21: Sites v3 published successfully, but direct desktop HTTP requests were rejected upstream with Cloudflare HTTP 403. No background uploader is claimed as active. Resolve the platform/network client access restriction before enabling the Mac or Windows service.
+
+Customer appendix repair (2026-09-22): `customer-projection.js` reconciles execution-only customers and explicit event history, handles replay and out-of-order replies, and preserves contact metadata. The desktop command center uses shared task/result/audit sources for reports and the appendix. The newer private Site uses this same projection module with its existing operational adapters; private customer snapshots are not copied to this repository. Regression coverage runs in `check:domain`.

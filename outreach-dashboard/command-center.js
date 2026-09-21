@@ -210,8 +210,11 @@
     if (status === 'prepared_not_sent') return '已准备';
     return status || '';
   }
+  function operationalRecords() {
+    return window.CustomerProjection.fromSources(tasks, window.AUTONOMOUS_OUTREACH_RESULTS || [], data.audit || []);
+  }
   function customerRecords() {
-    return legacyRecords.map(record => {
+    const base = legacyRecords.map(record => {
       const task = taskForRecord(record);
       if (!task) return record;
       const enriched = { ...record };
@@ -223,6 +226,7 @@
       enriched.resultCheckedAt = task.resultCheckedAt || '';
       return enriched;
     });
+    return window.CustomerProjection.reconcile(base, operationalRecords());
   }
   function autoClawConnected() {
     return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
@@ -309,7 +313,7 @@
   }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
-    const report = analytics.buildPeriodReport(tasks, { type, anchor: query.get('period') || undefined });
+    const report = analytics.buildPeriodReport(operationalRecords(), { type, anchor: query.get('period') || undefined });
     currentReport = report;
     const metricLabels = [
       ['discovered', '发现客户'], ['profiled', '画像评分'], ['approved', '已批准'],
