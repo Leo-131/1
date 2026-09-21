@@ -23,6 +23,59 @@
     'Codex 决策':'Codex decision','公司及集团永久去重':'Permanent company/group deduplication','公司及集团永久去重；未知发送结果禁止重发':'Company/group deduplication; do not resend when the previous outcome is unknown','线上数据与分析':'Online data and analytics','发信：需已验证的桌面执行器':'Sending requires a verified desktop executor',
     '销售自动化规则':'Sales automation rules','真实事件':'Verified events','人工回复':'Human replies','自动回复':'Automatic replies','未知回复类型':'Unknown reply type','资料索取':'Material requests','已拒绝':'Declined','未开发':'Not developed','已开发':'Developed','已回复':'Replied','已发送':'Sent','失败':'Failed','未知':'Unknown','重点':'Priority','开放':'Open','独代占用':'Exclusive agency market','无':'None','是':'Yes','否':'No'
   };
+  Object.assign(translations,{
+    '已启用公司级跨渠道防重复与单客户串行执行':'Cross-channel company deduplication and sequential customer execution are enabled.',
+    '已优先处理核验通过的社媒入口':'Verified social profiles are prioritized.',
+    '已将只有首页、没有明确联系路径的官网客户降级为待核验':'Website-only prospects without a verified contact path are marked for verification.',
+    '已对高ICP客户使用买家角色和产品匹配信息生成个性化文案':'High-ICP messages use buyer roles and product-fit evidence for personalization.',
+    '优先补充带官方 Facebook、Instagram 或有效官网联系入口的新客户':'Prioritize new prospects with official Facebook, Instagram or verified website contact channels.',
+    '暂无':'None yet','未分类回复':'Unclassified replies','全部可审计回复':'All auditable replies',
+    '本周期暂无带有效时间证据的开发记录':'No timestamped development records in this period.',
+    '企业真值 · 永久防重 · 证据规划 · 结果学习':'Verified accounts · Permanent deduplication · Evidence-based planning · Outcome learning',
+    '统一企业':'Unified accounts','永久抑制':'Permanently suppressed','已验证渠道':'Verified channels','安全计划':'Validated plan',
+    '仅统计 sent_confirmed / submitted_confirmed，不把打开页面、点赞或草稿计为开发':'Only sent_confirmed / submitted_confirmed count. Page visits, likes and drafts do not count as completed outreach.',
+    '今日真实开发':'Verified outreach today','执行优先级':'Execution priority','采购邮箱 / 官网提交':'Buyer email / Website submission','公司主页建联':'Company profile connection','Messenger 建联':'Messenger outreach','企业账号 DM':'Business account DM',
+    '今天还没有带时间证据的已开发客户':'No timestamped completed outreach today.',
+    '核心安全闭环与外部连接分开评估；未配置的可选连接不会伪装成故障，也不会显示密钥值':'Core safety checks and external connections are assessed separately. Unconfigured optional integrations are not reported as failures; secrets are never displayed.',
+    'CRM客户主档':'CRM customer records','联系人与企业补全':'Contact and company enrichment','邮箱验证':'Email validation','阿里企业邮箱闭环':'Alibaba business email integration','可选 · 未配置':'Optional · Not configured','异常审批通知':'Exception approval alerts','会议预约与路由':'Meeting booking and routing',
+    '确认开发企业':'Accounts with verified outreach','采购资格确认':'Buyer qualification','合格会议':'Qualified meetings','每100家合格会议':'Qualified meetings per 100 accounts',
+    '北极星指标：每100家不同高ICP企业产生的合格采购会议数。发送量是容量指标，不替代回复、会议和Pipeline。':'Primary metric: qualified buyer meetings per 100 distinct high-ICP accounts. Send volume measures capacity and does not replace replies, meetings or pipeline.',
+    '公司域名/名称归一去重；积极回复和商业判断必须人工复核，退订与退信允许自动抑制':'Deduplicate normalized company domains/names. Positive replies and commercial decisions need human review. Unsubscribes and bounces may be suppressed automatically.',
+    '线索':'Leads','采购资格':'Qualification','会议':'Meetings','商机':'Opportunities','样品':'Samples','报价':'Quotes','成交':'Closed won',
+    '同域名每日最多3封 · 首次跟进3个工作日 · 第二次跟进再等5个工作日':'Up to 3 emails per domain per day · First follow-up after 3 business days · Second after 5 more business days',
+    '阿里邮箱已发送或官网回执':'Alibaba sent-mail record or website receipt','2. 退信':'2. Bounced','不计入完成，停止该地址':'Not counted as complete; suppress this address','进入人工意图判断':'Human intent review required','4. 转交采购':'4. Routed to buyer','已到品类/供应商负责人':'Reached category or vendor decision maker','5. 预约会议':'5. Meeting booked','进入销售机会':'Advance to sales opportunity',
+    'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用':'Chrome Extension is not connected in this web view. Use the desktop app for execution. Previously contacted customers remain protected by deduplication.',
+    '高 ICP 潜客池':'High-ICP prospect pool','每日待开发清单':'Daily outreach list','Google 发现':'Google discovery','高 ICP 官网/渠道线索':'High-ICP website/channel leads','本次执行':'Current run','系统同步':'System synchronization','官网/邮件入口，需要人工或专用邮件流程':'Website/email channel: manual or dedicated email workflow required','Instagram 线索已入队，但安全门未放行':'Instagram leads are queued but have not passed safety checks','Facebook 线索已入队，但安全门未放行':'Facebook leads are queued but have not passed safety checks','查看系统档案':'View system record','综合开发分 / 100':'Overall development score / 100',
+    '客户研究':'Customer research','画像/采购假设':'Profile / buying hypothesis','目标核验':'Target verification','官方主页/身份':'Official profile / identity','渠道匹配':'Channel matching','官网/社媒/供应商入口':'Website / social / vendor portal','重大异常':'Critical exception','暂停并通知介入':'Pause and request intervention','轻互动':'Initial engagement','点赞/关注/铺垫':'Like / follow / prepare','文案/安全门':'Copy / safety checks','精准发送':'Targeted send','单客户单动作':'One action per customer','跟进':'Follow up','回复/联系方式':'Replies / contact details','机会推进':'Opportunity progression','样品/报价/会议':'Samples / quotes / meetings','复盘沉淀':'Review and learn','模板/SEO/审计':'Templates / SEO / audit','查看全部':'View all',
+    '展开':'Expand','待判定':'Unclassified','低匹配/非采购':'Low fit / non-buyer','KA/零售':'Key accounts / retail','品牌/OEM':'Brand / OEM','房车/露营':'RV / camping','小型/独立':'Small / independent','超大型':'Very large','中型':'Medium','大型':'Large','最低综合分':'Minimum overall score','点赞关注后等待':'Wait after liking/following','30–120 秒':'30–120 seconds','客户开发节奏':'Outreach cadence','自动优化上限':'Optimization limit','2 次':'2 attempts','精确主页与去重':'Exact profile and deduplication','强制':'Required','独代冲突与冷却期':'Exclusive-agency conflicts and cooldown','自动跳过 / 排期':'Auto-skip / schedule'
+  });
+  function dynamicEnglish(text){
+    let match;
+    if((match=text.match(/^回复率 ([\d.]+)% · 联系方式率 ([\d.]+)% · 机会率 ([\d.]+)%$/)))return `Reply rate ${match[1]}% · Contact-capture rate ${match[2]}% · Opportunity rate ${match[3]}%`;
+    if(text.startsWith('数据口径：')){
+      const coverage=text.match(/已评分 (\d+)\/(\d+) 家（覆盖率 ([\d.]+)%）/);
+      const queue=text.match(/快照（(\d+) 个）/);
+      return 'Reporting basis: unique customers with timestamped events in the selected period. Average ICP uses actual fitScore/icpScore values, deduplicated by customer; missing scores are excluded.'+(coverage?` Scored: ${coverage[1]}/${coverage[2]} (${coverage[3]}% coverage).`:'')+(queue?` Today’s queue is a current snapshot of ${queue[1]} tasks and should not be added to or equated with period totals.`:'')+' Funnel consistency: '+(text.includes('一致性：通过')?'passed.':'review required.');
+    }
+    if((match=text.match(/^本周期发现 (\d+) 个客户，但没有形成已确认发送/)))return `${match[1]} prospects were discovered in this period, with no confirmed sends. The funnel is awaiting target verification or execution safety checks.`;
+    if((match=text.match(/^操作日志共 (\d+) 条，当前没有足够失败证据/)))return `${match[1]} activity log entries. There is not enough failure evidence for reliable attribution.`;
+    if((match=text.match(/^已评分 (\d+) 家$/)))return `${match[1]} accounts scored`;
+    if((match=text.match(/^数据质量：(\d+) 个应有时间缺失，(\d+) 个时间无效/)))return `Data quality: ${match[1]} missing timestamps and ${match[2]} invalid timestamps. These events are excluded from period results.`;
+    if((match=text.match(/^老板摘要：(\d+) 个安全行动 · (\d+) 个系统例外/)))return `Executive summary: ${match[1]} validated actions and ${match[2]} system exceptions. ICP, identity, deduplication and confirmation requirements still apply.`;
+    if((match=text.match(/^核心 (\d+\/\d+) · 连接 (\d+\/\d+)$/)))return `Core ${match[1]} · Connections ${match[2]}`;
+    if((match=text.match(/^(\d+) 家唯一企业$/)))return `${match[1]} unique accounts`;
+    if((match=text.match(/^(\d+) 条 · (\d+)% · 均分 ([\d.]+)$/)))return `${match[1]} records · ${match[2]}% · Average ${match[3]}`;
+    if((match=text.match(/^查看 (\d+) 条$/)))return `View ${match[1]} records`;
+    if(text.startsWith('缺少：'))return 'Missing: '+text.slice(3).replaceAll(' 或 ',' or ');
+    if(text.startsWith('系统已更新：'))return 'System updated: '+text.slice(6).replaceAll('GitHub 已同步','GitHub synced');
+    if(text.startsWith('GitHub 已同步：'))return 'GitHub synced: '+text.slice(10);
+    if(text.startsWith('市场潜力 25 + 行业/角色匹配 25')){
+      const counts=text.match(/当前 (\d+) 条 ICP > (\d+)/);
+      return 'ICP score: market potential 25 + industry/role fit 25 + identity verification 15 + buying intent 15 + SEO/trends 10 + contact history 10. '+(counts?`${counts[1]} records exceed ICP ${counts[2]}. `:'')+'Only ICP > 70 qualifies for new outreach. Lower-scoring records retain their links but are not contacted automatically.';
+    }
+    if((match=text.match(/^全球销冠流程：先用客户画像确认 (.*?)，通过 (.*?) 核验目标，再围绕 (.*?) 形成采购假设；/)))return `Sales workflow: validate the customer profile (${match[1]}), verify the target through ${match[2]}, and form a buying hypothesis from ${match[3]}. Perform one targeted action, then track replies, contact details and opportunities.`;
+    return null;
+  }
   const originalEnglish={'Customer Development':'客户开发中心','Customer Automated Development System':'客户自动开发系统','Sales Intelligence Dossier':'销售情报档案','Verified Channel Matrix':'已核验渠道','Sales-ready customer facts, opportunity, risk, and next action':'客户事实、机会、风险与下一步行动','Broken social links are marked for reroute instead of blind retry':'失效链接会标记为更换渠道，不盲目重试','Verified channel':'已核验渠道','Global Customer Analysis Dashboard V3.0':'全球客户分析看板 V3.0','CRM Pipeline':'CRM 销售流程','Dashboard KPI':'看板 KPI'};
   const originals=new WeakMap(),attributes=new WeakMap();let language='zh-CN',observer;
   try{language=localStorage.getItem('flextail_language')==='en'?'en':'zh-CN';}catch{}
@@ -31,14 +84,14 @@
     const trimmed=text.trim();if(!trimmed)return text;
     if(language==='zh-CN')return originalEnglish[trimmed]?text.replace(trimmed,originalEnglish[trimmed]):text;
     if(!/[\u4e00-\u9fff]/.test(trimmed))return text;
-    let value=translations[trimmed];
+    let value=translations[trimmed]||dynamicEnglish(trimmed);
     if(!value){
       value=trimmed
         .replace(/^第 (\d+) \/ (\d+) 页 · 共 (\d+) 条$/,'Page $1 / $2 · $3 records')
         .replace(/^18\.4 筛选模式 · (\d+) \/ (\d+) 条$/,'Filtered customers · $1 / $2 records')
         .replace(/^专业客户结构拆解 · (\d+) 条客户 · (\d+) 条高 ICP$/,'Customer analysis · $1 customers · $2 high-ICP prospects')
         .replace(/^执行时间 /,'Executed at ');
-      for(const source of sorted)if(value.includes(source))value=value.split(source).join(translations[source]);
+      for(const source of sorted)if(source.length>=4&&value.includes(source))value=value.split(source).join(translations[source]);
     }
     return text.replace(trimmed,value);
   }
