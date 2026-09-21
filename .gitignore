@@ -9,3 +9,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Private workspace sync state (must never be published to GitHub)
+.workspace-sync/
+**/.workspace-sync/

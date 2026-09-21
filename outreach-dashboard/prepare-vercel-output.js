@@ -5,6 +5,8 @@ const root = __dirname;
 const out = path.join(root, 'public');
 const files = [
   'outreach-dashboard.html',
+  'workspace-sync-browser.js',
+  'i18n.js',
   'country-market-data.js',
   'daily-outreach-tasks.js',
   'google-lead-discovery-latest.js',

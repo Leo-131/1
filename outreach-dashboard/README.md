@@ -79,3 +79,17 @@ Before deployment, `smart-deploy.js` scans for plaintext credential files and su
 5. Push the branch and open a pull request.
 
 GitHub Actions runs the same checks on pushes and pull requests.
+
+## Private Sites workspace (2026-09-21)
+
+Progress destination: https://flextail-customer-workspace.leo13111.chatgpt.site/
+
+- Set `OUTREACH_WORKSPACE_TOKEN` only in the local process environment (never in Git, frontend code or a command history). On macOS the bridge also reads the `flextail-workspace-sync` / `outreach` Keychain item. It reuses the existing Sites credential; no public access is enabled.
+- Run `npm run sync:workspace` to watch local data continuously, or use the desktop app / `npm run serve`, which start synchronization when configured. The computer must remain awake and online. Each computer that generates records needs the bridge configured.
+- Allowed data files upload only when their content changes. The website rejects older snapshots and protects concurrent writes. Status/activity changes in the desktop UI and private website synchronize in both directions. Operational execution queues and credentials are never imported as commands.
+- `.workspace-sync/` contains private local sync status and the latest cloud overlay and is excluded from Git. The current website has newer baseline data than this public repository; those newer records must not be overwritten by the older checkout or copied to public GitHub.
+- No LLM is used for synchronization, filtering or reporting. Lead analysis sends bounded relevant fields, caps output at 600 tokens by default, coalesces identical concurrent calls, and caches successful decisions for five minutes (128 entries maximum). Changed lead context causes a new request; execution itself is never cached. Response usage is reported separately and cache hits do not double-count token usage.
+
+Validation: new sync/model tests pass. The existing full suite has two pre-existing text assertions expecting `Codex + AutoClaw` in HTML; the checked-out baseline already lacks that label. No unrelated execution or historical data was changed to satisfy those assertions.
+
+Live connection test on 2026-09-21: Sites v3 published successfully, but direct desktop HTTP requests were rejected upstream with Cloudflare HTTP 403. No background uploader is claimed as active. Resolve the platform/network client access restriction before enabling the Mac or Windows service.

@@ -1,6 +1,7 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('customerDev', {
+  workspaceState: (changes) => ipcRenderer.invoke('workspace-state', changes),
   openExternalUrl: (url) => ipcRenderer.invoke('open-external-url', url),
   credentialStatus: () => ipcRenderer.invoke('credential-status'),
   saveCredential: (payload) => ipcRenderer.invoke('save-credential', payload),
