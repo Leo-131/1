@@ -79,3 +79,22 @@ Before deployment, `smart-deploy.js` scans for plaintext credential files and su
 5. Push the branch and open a pull request.
 
 GitHub Actions runs the same checks on pushes and pull requests.
+
+## Private Sites workspace (2026-09-21)
+
+Progress destination: https://flextail-customer-workspace.leo13111.chatgpt.site/
+
+- Set `OUTREACH_WORKSPACE_TOKEN` only in the local process environment (never in Git, frontend code or a command history). On macOS the bridge also reads the `flextail-workspace-sync` / `outreach` Keychain item. It reuses the existing Sites credential; no public access is enabled.
+- Run `npm run sync:workspace` to watch local data continuously, or use the desktop app / `npm run serve`, which start synchronization when configured. The computer must remain awake and online. Each computer that generates records needs the bridge configured.
+- Allowed data files upload only when their content changes. The website rejects older snapshots and protects concurrent writes. Status/activity changes in the desktop UI and private website synchronize in both directions. Operational execution queues and credentials are never imported as commands.
+- `.workspace-sync/` contains private local sync status and the latest cloud overlay and is excluded from Git. The current website has newer baseline data than this public repository; those newer records must not be overwritten by the older checkout or copied to public GitHub.
+- No LLM is used for synchronization, filtering or reporting. Lead analysis sends bounded relevant fields, caps output at 600 tokens by default, coalesces identical concurrent calls, and caches successful decisions for five minutes (128 entries maximum). Changed lead context causes a new request; execution itself is never cached. Response usage is reported separately and cache hits do not double-count token usage.
+
+Validation: the full domain and handoff checks pass. UI assertions verify the current Codex Chrome action; private APIs bypass the offline cache. Desktop upload still requires end-to-end access validation.
+
+Live connection test on 2026-09-21: Sites v3 published successfully, but direct desktop HTTP requests were rejected upstream with Cloudflare HTTP 403. No background uploader is claimed as active. Resolve the platform/network client access restriction before enabling the Mac or Windows service.
+
+Customer appendix repair (2026-09-22): `customer-projection.js` reconciles execution-only customers and explicit event history, handles replay and out-of-order replies, and preserves contact metadata. The desktop command center uses shared task/result/audit sources for reports and the appendix. The newer private Site uses this same projection module with its existing operational adapters; private customer snapshots are not copied to this repository. Regression coverage runs in `check:domain`.
+
+## Contact discovery
+Execution records retain original email, country, score, and contact provenance in the shared projection. The appendix shows email and exact LinkedIn/Instagram/Facebook profiles independently; no-email does not imply no contact channel. Per-company Google/Bing/official-site/LinkedIn/social searches are user-operated research links, not an unattended crawler. Candidate links require identity review. No inferred addresses or sends are generated. Private customer enrichment stays outside the public repository.

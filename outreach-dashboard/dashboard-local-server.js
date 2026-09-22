@@ -5,6 +5,7 @@ const os = require('os');
 const { spawn } = require('child_process');
 
 const root = __dirname;
+const workspaceSync = require('./workspace-sync').createSync();
 const port = Number(process.env.PORT || 4174);
 const host = process.env.HOST || '0.0.0.0';
 const types = {
@@ -57,8 +58,22 @@ function lanAddresses() {
     .filter((address) => !address.startsWith('169.254.') && !address.startsWith('198.18.'));
 }
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
   const parsed = new URL(req.url, `http://localhost:${port}`);
+  if (parsed.pathname === '/api/workspace-state') {
+    const origin=req.headers.origin;
+    if(!isLocalRequest(req) || (origin && origin!==`http://${req.headers.host}`))return sendJson(res,403,{ok:false,error:'Local requests only'});
+    if(!['GET','PATCH'].includes(req.method))return sendJson(res,405,{ok:false,error:'Method not allowed'});
+    try {
+      let changes=null;
+      if(req.method==='PATCH'){
+        if(!String(req.headers['content-type']).startsWith('application/json'))return sendJson(res,415,{ok:false,error:'JSON required'});
+        let body='';for await(const part of req){body+=part;if(Buffer.byteLength(body)>1100000)return sendJson(res,413,{ok:false,error:'Too large'});}
+        changes=JSON.parse(body).changes;
+      }
+      return sendJson(res,200,await workspaceSync.state(changes));
+    }catch(e){return sendJson(res,e.status||503,{ok:false,error:e.message,conflict:e.conflict});}
+  }
   if (parsed.pathname === '/launch-chrome') {
     if (!isLocalRequest(req)) {
       return sendJson(res, 403, { ok: false, error: 'Chrome launch is restricted to this computer' });
@@ -74,7 +89,7 @@ const server = http.createServer((req, res) => {
   let pathname = decodeURIComponent(parsed.pathname);
   if (pathname === '/' || pathname === '') pathname = '/outreach-dashboard.html';
   const file = path.resolve(root, pathname.replace(/^\/+/, ''));
-  if (!file.startsWith(root)) {
+  if (!file.startsWith(root + path.sep) || pathname.split('/').some(part=>part.startsWith('.')) || /credential|vault|\.env/i.test(pathname)) {
     res.writeHead(403);
     return res.end('Forbidden');
   }
@@ -89,6 +104,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, host, () => {
+  if(workspaceSync.configured())workspaceSync.start();
   console.log(`Local: http://127.0.0.1:${port}/outreach-dashboard.html`);
   for (const address of lanAddresses()) {
     console.log(`LAN:   http://${address}:${port}/outreach-dashboard.html`);

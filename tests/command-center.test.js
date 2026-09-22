@@ -73,14 +73,14 @@ test('command center opens verified platform URLs and exposes assisted automatio
   assert.ok(js.includes('openVerifiedCustomer'));
   assert.ok(js.includes('runGlmDirect'));
   assert.ok(js.includes('AutoClaw 自动开发'));
-  assert.ok(html.includes('Codex + AutoClaw'));
+  assert.match(html, /onclick="runCurrentLeadWithGlm\(\)">Codex Chrome<\/button>/);
 });
 
 test('command center uses Codex decisions and AutoClaw execution on verified URLs', () => {
   assert.ok(js.includes('Codex Decision'));
   assert.ok(js.includes('AutoClaw Execution'));
   assert.ok(js.includes("task.identityStatus === 'verified'"));
-  assert.ok(html.includes('Codex + AutoClaw'));
+  assert.match(html, /onclick="runCurrentLeadWithGlm\(\)">Codex Chrome<\/button>/);
 });
 
 test('sent tasks render a completed route ending in outcome pending', () => {

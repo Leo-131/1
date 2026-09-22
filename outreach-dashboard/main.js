@@ -5,6 +5,12 @@ const crypto = require('crypto');
 const http = require('http');
 const { execFile } = require('child_process');
 const { requestGlm } = require('./glm-service');
+const workspaceSync = require('./workspace-sync').createSync();
+ipcMain.handle('workspace-state', async (_event, changes) => {
+ try { return await workspaceSync.state(changes); } catch (e) { return {ok:false,error:e.message,conflict:e.conflict}; }
+});
+app.whenReady().then(() => { if (workspaceSync.configured()) workspaceSync.start(); });
+app.on('before-quit', () => workspaceSync.stop());
 const { normalizeTarget, validateLeadForExecution } = require('./autoglm-bridge');
 
 for (const stream of [process.stdout, process.stderr]) {
