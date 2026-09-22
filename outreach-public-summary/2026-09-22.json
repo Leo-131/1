@@ -1,0 +1,15 @@
+{
+  "dataDate": "2026-09-22",
+  "scope": "agent-verified activity for this date only",
+  "target": 100,
+  "sendAttempts": 1,
+  "sentFolderVerified": 1,
+  "knownDeliveryFailures": 1,
+  "countedNewOutreach": 0,
+  "remaining": 100,
+  "complete": false,
+  "agencySheetActuallyRead": true,
+  "fullCustomerDataUploaded": false,
+  "fullSyncStatus": "pending_private_destination_or_explicit_disclosure_approval",
+  "scheduledDeadlineClaim": false
+}
