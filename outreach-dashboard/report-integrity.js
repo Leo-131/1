@@ -1,7 +1,7 @@
 (function(root){
 'use strict';
 const valid=v=>typeof v==='string'&&Number.isFinite(Date.parse(v));
-const channel=r=>{const p=String(r.platform||r.channel||'').toLowerCase();const alias={ins:'instagram',ig:'instagram',fb:'facebook',li:'linkedin',alibaba:'email'};if(alias[p])return alias[p];if(['email','instagram','facebook','linkedin'].includes(p))return p;const text=[r.targetUrl,r.target_url,r.taskId,r.task_id].join(' ');return /instagram/i.test(text)?'instagram':/facebook/i.test(text)?'facebook':/linkedin/i.test(text)?'linkedin':/email|mailto|website-contact/i.test(text)?'email':p||'unknown';};
+const channel=r=>{const p=String(r.platform||r.channel||'').toLowerCase();const alias={aliyun:'email',alimail:'email',ins:'instagram',ig:'instagram',fb:'facebook',li:'linkedin',alibaba:'email'};if(alias[p])return alias[p];if(['email','instagram','facebook','linkedin'].includes(p))return p;const text=[r.targetUrl,r.target_url,r.taskId,r.task_id].join(' ');return /instagram/i.test(text)?'instagram':/facebook/i.test(text)?'facebook':/linkedin/i.test(text)?'linkedin':/email|mailto|website-contact/i.test(text)?'email':p||'unknown';};
 function normalize(records){const identities=new Map();for(const r of records||[])if(r&&r.company)for(const id of [r.taskId,r.task_id,r.id,r.automationTaskId].filter(Boolean))identities.set(String(id).toLowerCase(),r.company);return (records||[]).filter(r=>r&&typeof r==='object').map(r=>{
  const out={...r,platform:channel(r)};if(!out.company)out.company=[r.taskId,r.task_id,r.id,r.automationTaskId].map(id=>identities.get(String(id).toLowerCase())).find(Boolean);out.taskId=r.taskId||r.task_id||r.id;const status=String(r.sendStatus||r.status||r.result||'').toLowerCase();
  const evidence=String(r.replyEvidence||r.evidence||'');
@@ -52,6 +52,22 @@ function audit(report){
   const covered=[...sends].filter(k=>checked.has(k)).length,converted=[...sends].filter(k=>replies.has(k)).length;
   return {platform,sent:sends.size,replied:replies.size,cohortReplies:converted,checked:covered,rate:sends.size&&covered===sends.size?converted/sends.size:null};
  });
+ const replies=entries.filter(e=>e.events.replied);
+ const uniqueReplyKeys=new Set(replies.map(e=>e.customerKey));
+ const sourceTimes=replies.map(e=>e.eventTimes.replied).filter(valid).sort((a,b)=>Date.parse(a)-Date.parse(b));
+ const timingReview=new Set(replies.filter(e=>e.record.replyTimestampSource==='automation_result_timestamp'||e.record.replyTimeSource==='event_log'||e.record.replyObservedAt===e.eventTimes.replied).map(e=>e.customerKey));
+ report.attribution={
+  scope:report.period.label,
+  recordedReplies:uniqueReplyKeys.size,
+  firstReplyAt:sourceTimes[0]||null,lastReplyAt:sourceTimes.at(-1)||null,
+  earlierOrUnmatchedSendReplies:[...uniqueReplyKeys].filter(k=>!sent.has(k)).length,
+  unobservedSentCustomers:sent.size-quality.replied.checked,
+  replyTimeReviewCustomers:timingReview.size,
+  human:report.replyDiagnostics?.human||0,automated:report.replyDiagnostics?.automated||0,unclassified:report.replyDiagnostics?.unclassified||0,
+  channels:report.channels.filter(c=>c.sent||c.replied),
+  conclusions: quality.replied.complete?['observations_complete']:['incomplete_observations','cannot_attribute_to_template_or_channel'],
+  limitations:['Recorded replies are evidence, not proof of complete inbox collection.','Observed send cohorts do not establish causal channel performance.']
+ };
  report.consistency={...report.consistency,funnelMonotonic:null,definition:'Independent timestamped events; cross-period replies do not create sends'};
  return report;
 }

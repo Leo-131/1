@@ -1,6 +1,7 @@
 (function(){
   'use strict';
   const translations={
+"已确认的记录事实":"Verified record facts","查看本周期回复证据":"View reply evidence for this period","渠道贡献（不代表因果）":"Channel contribution (not causal attribution)","本周期暂无可归属的渠道事件。":"No attributable channel events in this period.","同一客户可跨渠道出现，各渠道数字不能直接相加作为唯一客户总数。":"Customers can appear across channels. Channel counts cannot be added to obtain unique customer totals.","数据缺口与待验证原因":"Data gaps and hypotheses to verify","建议下一步（尚未执行）":"Recommended next steps (not yet executed)","当前不能将回复缺口归因于邮件故障、客户不感兴趣、文案无效或渠道表现差；应先补齐阿里邮箱及社媒收件箱的采集。":"Incomplete observations cannot establish a mailbox fault, lack of interest, ineffective copy or poor channel performance. Complete email and social inbox collection first.","补采未覆盖客户的收件记录，保留客户、渠道、入站消息时间与证据；未匹配记录进入待核验，不记成未回复。":"Collect missing inbox evidence with customer, channel and inbound message timestamps. Unmatched records need verification and are not treated as no reply.","核验未分类回复，区分人工沟通、自动回执和退信。":"Classify unreviewed replies as human responses, automated receipts or bounces.","核对原始收信时间，确认后才修正周报归属。":"Verify original inbound timestamps before changing weekly attribution.","优先人工复核已记录的人工回复，确认采购需求与下一步跟进。":"Review recorded human replies for buying needs and follow-up actions.","继续保持按客户去重与时间证据核验，不根据单期样本推断因果。":"Maintain customer deduplication and timestamp verification. Do not infer causality from a single period.",
     '汇报中心':'Reports','销售资料':'Sales materials','开发工作台':'Workspace','今日队列':'Today’s queue','客户附表':'Customers','客户分析':'Customer analysis','SEO 趋势':'SEO trends','模板实验':'Template experiments','自动化审计':'Automation audit','系统设置':'Settings',
     '保存线上修改':'Save changes','刷新线上状态':'Refresh cloud data','导出未保存修改':'Export unsaved changes','私有在线工作台':'Private workspace','客户开发中心暂未加载':'Customer workspace could not load','重新加载':'Reload',
     '按自然周和自然月复盘客户开发结果，仅统计有时间证据的真实事件':'Review customer development by calendar week or month. Only timestamped, evidenced events are counted.',
@@ -51,6 +52,14 @@
   });
   function dynamicEnglish(text){
     let match;
+    if((match=text.match(/^(.+) · 事实与待核验原因分开$/)))return `${match[1]} · Facts and hypotheses separated`;
+    if((match=text.match(/^本周期已记录确认发送 (\d+) 位客户，收到回复 (\d+) 位客户。$/)))return `${match[1]} customers with confirmed sends; ${match[2]} customers with recorded replies this period.`;
+    if((match=text.match(/^回复分类：人工 (\d+) 位，自动 (\d+) 位，未分类 (\d+) 位；自动回复不代表采购意向。$/)))return `Reply classification: ${match[1]} human, ${match[2]} automated, ${match[3]} unclassified. Automatic replies do not indicate buying intent.`;
+    if((match=text.match(/^发送客户的回复观察覆盖 (\d+)\/(\d+)；还有 (\d+) 位缺少完整观察证据。$/)))return `Reply observation coverage: ${match[1]}/${match[2]}; ${match[3]} customers lack complete observations.`;
+    if((match=text.match(/^本期回复中 (\d+) 位没有匹配到本期发送，可能来自之前的发送或待补齐发送记录，不计入本期发送回复率。$/)))return `${match[1]} replying customers have no matched send this period. They may relate to earlier or missing sends and are excluded from this period’s send-cohort reply rate.`;
+    if((match=text.match(/^(\d+) 位客户的回复时间与观察时间重合，或来自执行日志时间；周归属需用原始消息时间复核，不自动改写原始日期。$/)))return `${match[1]} reply timestamps match observation times or execution logs. Verify original message times before changing weekly attribution.`;
+    if((match=text.match(/^当期日志 (\d+) 条，其中明确失败\/跳过\/拦截 (\d+) 条。这反映执行过程，不能证明是回复率变化的原因。$/)))return `${match[1]} period logs, including ${match[2]} explicit failures/skips/blocks. These describe execution and do not prove causes of reply-rate changes.`;
+    if((match=text.match(/^(.+)：发送 (\d+) 位，已收录回复 (\d+) 位；核验覆盖 (\d+)\/(\d+)。$/)))return `${match[1].replace("阿里邮箱 / Email","Alibaba Mail / Email")}: ${match[2]} sent, ${match[3]} recorded replies; coverage ${match[4]}/${match[5]}.`;
     if((match=text.match(/^回复率 ([\d.]+)% · 联系方式率 ([\d.]+)% · 机会率 ([\d.]+)%$/)))return `Reply rate ${match[1]}% · Contact-capture rate ${match[2]}% · Opportunity rate ${match[3]}%`;
     if(text.startsWith('数据口径：')){
       const coverage=text.match(/已评分 (\d+)\/(\d+) 家（覆盖率 ([\d.]+)%）/);

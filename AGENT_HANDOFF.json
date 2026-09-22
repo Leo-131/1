@@ -1,32 +1,23 @@
 {
   "schemaVersion": 1,
-  "task": "Unify multichannel replies and enforce report completeness",
-  "status": "ready_for_handoff",
+  "task": "Add evidence-based weekly/monthly attribution and maintenance contract",
+  "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-09-22T15:27:21.292Z",
-  "summary": "Multichannel report integrity tests pass; inbox collection remains unverified",
-  "nextSteps": [
-    "Publish private Site and review report-integrity PR; Alibaba/social inbox verification needs computer-use permission"
-  ],
+  "updatedAt": "2026-09-22T16:17:51.097Z",
+  "summary": "Evidence-based weekly/monthly attribution and maintenance contract implemented",
+  "nextSteps": [],
   "verification": [
-    "81 domain tests, 6 handoff tests, syntax and dashboard checks passed"
+    "83 domain tests, 6 handoff tests, syntax and dashboard checks passed; fresh inbox collection remains blocked"
   ],
   "git": {
-    "branch": "codex/report-integrity",
-    "commit": "f56fdd24c592332bdef29ff01d703b7daa729b30",
+    "branch": "codex/period-attribution",
+    "commit": "d5c685481d91d64ba88426e76279d8aa0e767210",
     "changedFiles": [
       "AGENT_HANDOFF.json",
       "outreach-dashboard/README.md",
-      "outreach-dashboard/build-portable-app.js",
       "outreach-dashboard/command-center.js",
-      "outreach-dashboard/outreach-analytics.js",
-      "outreach-dashboard/outreach-dashboard.html",
-      "outreach-dashboard/package.json",
-      "outreach-dashboard/prepare-vercel-output.js",
-      "outreach-dashboard/service-worker.js",
-      "outreach-dashboard/smart-deploy.js",
-      "tests/outreach-analytics.test.js",
+      "outreach-dashboard/i18n.js",
       "outreach-dashboard/report-integrity.js",
       "tests/report-integrity.test.js"
     ]

@@ -331,6 +331,28 @@
     const label={email:'Email',instagram:'Instagram',facebook:'Facebook',linkedin:'LinkedIn'};
     return `<section class="cc-panel" data-report-completeness><div class="cc-panel-head"><h2>多渠道回复与数据完整性</h2></div><div class="cc-panel-body"><p>回复范围包含邮件、Instagram、Facebook、LinkedIn。按客户去重；自动回复与人工回复分开记录。0 条已收录不代表真实没有回复，采集未完整时不显示 0% 或高置信度。</p><p>发送回复率采用本周期确认发送的客户队列；跨月客户的本月回复单独计入回复事件，不虚增本月发送。公开邮箱不等于客户回复提供联系方式。桌面同步尚未完成端到端验证。</p><table class="cc-table"><thead><tr><th>渠道</th><th>本期发送客户</th><th>本期已收录回复</th><th>发送客户回复核验覆盖</th><th>回复率</th></tr></thead><tbody>${report.channels.map(r=>`<tr><td>${esc(label[r.platform]||r.platform)}</td><td>${r.sent}</td><td>${r.replied}</td><td>${r.checked}/${r.sent}</td><td>${r.sent?rate(r.rate):'不适用（无发送）'}</td></tr>`).join('')}</tbody></table></div></section>`;
   }
+  function reportExecutiveSummary(report) {
+    const a=report.attribution, q=report.observation.replied;
+    const labels={email:'阿里邮箱 / Email',instagram:'Instagram',facebook:'Facebook',linkedin:'LinkedIn'};
+    const start=Date.parse(report.period.start),end=Date.parse(report.period.endExclusive);
+    const logs=(data.audit || []).filter(r=>{const t=Date.parse(r.timestamp||'');return t>=start&&t<end;});
+    const blocked=logs.filter(r=>/fail|skip|block|timeout/i.test(`${r.stage} ${r.result}`)).length;
+    const facts=[`本周期已记录确认发送 ${report.metrics.sent} 位客户，收到回复 ${a.recordedReplies} 位客户。`,
+      `回复分类：人工 ${a.human} 位，自动 ${a.automated} 位，未分类 ${a.unclassified} 位；自动回复不代表采购意向。`,
+      `发送客户的回复观察覆盖 ${q.checked}/${q.total}；还有 ${a.unobservedSentCustomers} 位缺少完整观察证据。`,
+      `本期回复中 ${a.earlierOrUnmatchedSendReplies} 位没有匹配到本期发送，可能来自之前的发送或待补齐发送记录，不计入本期发送回复率。`];
+    const limits=[];
+    if(!q.complete)limits.push('当前不能将回复缺口归因于邮件故障、客户不感兴趣、文案无效或渠道表现差；应先补齐阿里邮箱及社媒收件箱的采集。');
+    if(a.replyTimeReviewCustomers)limits.push(`${a.replyTimeReviewCustomers} 位客户的回复时间与观察时间重合，或来自执行日志时间；周归属需用原始消息时间复核，不自动改写原始日期。`);
+    limits.push(`当期日志 ${logs.length} 条，其中明确失败/跳过/拦截 ${blocked} 条。这反映执行过程，不能证明是回复率变化的原因。`);
+    const actions=[];
+    if(a.unobservedSentCustomers)actions.push('补采未覆盖客户的收件记录，保留客户、渠道、入站消息时间与证据；未匹配记录进入待核验，不记成未回复。');
+    if(a.unclassified)actions.push('核验未分类回复，区分人工沟通、自动回执和退信。');
+    if(a.replyTimeReviewCustomers)actions.push('核对原始收信时间，确认后才修正周报归属。');
+    if(a.human)actions.push('优先人工复核已记录的人工回复，确认采购需求与下一步跟进。');
+    if(!actions.length)actions.push('继续保持按客户去重与时间证据核验，不根据单期样本推断因果。');
+    return `<section class="cc-panel" data-period-attribution><div class="cc-panel-head"><h2>周期总结与数据归因</h2><span class="cc-sub">${esc(report.period.label)} · 事实与待核验原因分开</span></div><div class="cc-panel-body"><h3>已确认的记录事实</h3><ul>${facts.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><h3>渠道贡献（不代表因果）</h3><ul>${a.channels.map(c=>`<li>${esc(labels[c.platform]||c.platform)}：发送 ${c.sent} 位，已收录回复 ${c.replied} 位；核验覆盖 ${c.checked}/${c.sent}。</li>`).join('')||'<li>本周期暂无可归属的渠道事件。</li>'}</ul><p>同一客户可跨渠道出现，各渠道数字不能直接相加作为唯一客户总数。</p><h3>数据缺口与待验证原因</h3><ul>${limits.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><h3>建议下一步（尚未执行）</h3><ol>${actions.map(t=>`<li>${esc(t)}</li>`).join('')}</ol></div></section>`;
+  }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
     const report = analytics.buildPeriodReport(operationalRecords(), { type, anchor: query.get('period') || undefined });
@@ -352,7 +374,7 @@
         <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
-      ${reportCompletenessPanel(report)}<div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.observation?.[key] && !report.observation[key].complete ? '已收录 '+report.metrics[key]+' · 待核实' : report.metrics[key]}</b></div>`).join('')}</div>
+      ${reportCompletenessPanel(report)}${reportExecutiveSummary(report)}<div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.observation?.[key] && !report.observation[key].complete ? '已收录 '+report.metrics[key]+' · 待核实' : report.metrics[key]}</b></div>`).join('')}</div>
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.observation?.[key] && !report.observation[key].complete ? '已收录 '+report.metrics[key]+' · 待核实' : report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}
       ${report.hasData ? `<div class="cc-report-grid">${reportBreakdown('平台', report.breakdowns.platform)}${reportBreakdown('国家 / 市场', report.breakdowns.countryMarket)}${reportBreakdown('关键词', report.breakdowns.keyword)}${reportBreakdown('消息模板', report.breakdowns.template)}${reportBreakdown('ICP 层级', report.breakdowns.icpTier)}</div>` : '<div class="cc-empty cc-report-empty">本周期暂无带有效时间证据的开发记录</div>'}`;
@@ -677,6 +699,7 @@
       [],
       ['metric', 'value'],
       ...Object.entries(currentReport.metrics),
+      ...Object.entries(currentReport.attribution || {}).filter(([,v])=>!Array.isArray(v)&&typeof v!=='object').map(([key,value])=>['attribution_'+key,value]),
       [],
       ['dimension', 'label', 'discovered', 'sent', 'replied', 'contacts', 'opportunities', 'reply_rate'],
     ];
