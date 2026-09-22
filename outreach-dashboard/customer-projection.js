@@ -13,6 +13,7 @@
       let target=identity.map(k=>index.get(k)).find(Boolean);
       if(!target){target={...source,name:source.name||source.company||source.taskId||source.id,company:source.company||source.name||source.taskId||source.id,platform:source.platform||'unknown',source:source.source||'execution_history'};rows.push(target);}
       for(const [k,v] of Object.entries(source))if((target[k]===undefined||target[k]===null||target[k]==='')&&v!==undefined)target[k]=v;
+      for(const k of ['country','countryEn','region'])if((!target[k]||/^(global \/ unspecified|unknown)$/i.test(target[k]))&&source[k]&&!/^(global \/ unspecified|unknown)$/i.test(source[k]))target[k]=source[k];
       for(const k of Object.keys(fields)){const incoming=time(source[k]);if(incoming&&(!time(target[k])||Date.parse(incoming)>Date.parse(target[k])))target[k]=incoming;}
       const latest=eventTime(target);
       if(latest){target.lastTouch=latest;const stage=Object.keys(fields).filter(k=>time(target[k])===latest).pop();target.status=fields[stage];}
@@ -32,7 +33,7 @@
       if(!field||!time(item.timestamp))continue;
       const id=item.task_id||item.taskId||item.id;
       const task=rows.find(r=>(r.taskId||r.id)===id)||{};
-      rows.push({...task,taskId:id,company:item.company||task.company||item.name||id,name:item.name||task.name||item.company||task.company||id,platform:item.platform||item.channel||task.platform||'unknown',targetUrl:item.target_url||item.targetUrl||task.targetUrl||'',sendStatus:status,evidence:item.evidence||'', [field]:item.timestamp});
+      rows.push({...task,...item,taskId:id,company:item.company||task.company||item.name||id,name:item.name||task.name||item.company||task.company||id,platform:item.platform||item.channel||task.platform||'unknown',targetUrl:item.target_url||item.targetUrl||task.targetUrl||'',sendStatus:status,evidence:item.evidence||'', [field]:item.timestamp});
     }
     return rows;
   }

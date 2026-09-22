@@ -213,6 +213,18 @@
   function operationalRecords() {
     return window.CustomerProjection.fromSources(tasks, window.AUTONOMOUS_OUTREACH_RESULTS || [], data.audit || []);
   }
+  function contactEmailStatus(record) {
+    const point = window.ContactDiscovery.points(record).find(point => point.type === 'email');
+    if (point) return point.status === 'published' ? '公开来源已核实' : point.sourceUrl ? '已收录邮箱 · 有来源' : '已收录邮箱 · 待核验';
+    return ({not_searched:'邮箱待补全 · 尚未查找',not_found:'已查找 · 暂未找到邮箱',lookup_failed:'查找未完成 · 可重试'})[window.ContactDiscovery.emailState(record)];
+  }
+  function contactChannelsCell(record) {
+    const points = window.ContactDiscovery.points(record);
+    const labels = {email:'Email',linkedin:'LinkedIn',instagram:'Instagram',facebook:'Facebook',website:'官网联系'};
+    const links = points.map(point => `<div><a class="cc-sub-link" href="${esc(point.type === 'email' ? 'mailto:'+point.value : point.value)}" target="_blank" rel="noopener noreferrer">${esc(point.type === 'email' ? point.value : labels[point.type])}</a> <small>${point.status === 'published' ? '公开已核实' : point.status === 'recorded_verified' ? '历史已核验' : '待核验'}${point.sourceUrl ? ` · <a href="${esc(window.ContactDiscovery.url(point.sourceUrl))}" target="_blank" rel="noopener noreferrer">来源</a>` : ''}</small></div>`).join('');
+    const searches = window.ContactDiscovery.searchPlan(record).map(item => `<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.label)}</a>`).join(' · ');
+    return `${links}${points.some(p=>p.type==='email') ? '' : `<span class="cc-sub">${esc(contactEmailStatus(record))}</span>`}<details class="cc-contact-research"><summary>多渠道查找</summary><p>${searches}</p><small>搜索结果需核对公司、官网与任职信息；LinkedIn 联系信息以实际可见内容为准。</small></details>`;
+  }
   function customerRecords() {
     const base = legacyRecords.map(record => {
       const task = taskForRecord(record);
@@ -220,7 +232,8 @@
       const enriched = { ...record };
       if (task.lastTouch) enriched.lastTouch = newerTimestamp(enriched.lastTouch || enriched.date, task.lastTouch);
       if (task.sendStatus) enriched.status = automationStatusLabel(task.sendStatus, task.evidence, task.duplicateRisk) || enriched.status;
-      if (task.targetUrl) enriched.instagram_url = task.targetUrl;
+      const channel = window.ContactDiscovery.social(task.targetUrl);
+      if (channel) enriched[channel.type + '_url'] = channel.value;
       enriched.automationTaskId = task.taskId;
       enriched.automationEvidence = task.evidence || task.sendStatus || '';
       enriched.resultCheckedAt = task.resultCheckedAt || '';
@@ -499,7 +512,7 @@
         <input type="hidden" name="direction" value="${direction}">
         <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
       </form>
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('lastTouch', '最近触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th><th>联系渠道 / 公开邮箱</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('lastTouch', '最近触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
         const qualified = isIcpQualified(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
@@ -507,7 +520,7 @@
         const customerHref = target || urlFor('customer', { contact: key });
         const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: key })}">System profile</a>` : '';
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="Open verified customer platform; ${esc(icpExplanation(record))}">${icpScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td>${contactChannelsCell(record)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="Open verified customer platform; ${esc(icpExplanation(record))}">${icpScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function seo() {

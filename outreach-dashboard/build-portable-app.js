@@ -37,6 +37,7 @@ const appFiles = [
   "autonomous-outreach-data.js",
   "command-center.css",
   "customer-projection.js",
+  "contact-discovery.js",
   "command-center.js",
   "credentials.vault.json",
   "credentials.example.json",

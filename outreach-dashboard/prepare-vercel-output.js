@@ -18,6 +18,7 @@ const files = [
   'autonomous-outreach-data.js',
   'command-center.css',
   'customer-projection.js',
+  'contact-discovery.js',
   'command-center.js',
   'service-worker.js',
   'manifest.webmanifest',
