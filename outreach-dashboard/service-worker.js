@@ -16,6 +16,7 @@ const APP_SHELL = [
   './command-center.js',
   './contact-discovery.js',
   './customer-projection.js',
+  './report-integrity.js',
   './workspace-sync-browser.js',
   './i18n.js',
   './enhancements.css',

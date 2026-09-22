@@ -157,6 +157,22 @@
     return funnel;
   }
 
+  function buildConversionRates(funnel) {
+    const source = funnel || {};
+    return {
+      profileRate: safeRate(source.profiled, source.discovered),
+      approvalRate: safeRate(source.approved, source.profiled),
+      sendRate: safeRate(source.sent, source.approved),
+      discoveryToSendRate: safeRate(source.sent, source.discovered),
+      discoveryToReplyRate: safeRate(source.replied, source.discovered),
+      replyRate: safeRate(source.replied, source.sent),
+      contactCaptureRate: safeRate(source.contactCaptured, source.sent),
+      opportunityRate: safeRate(source.opportunity, source.sent),
+      replyToContactRate: safeRate(source.contactCaptured, source.replied),
+      replyToOpportunityRate: safeRate(source.opportunity, source.replied),
+    };
+  }
+
   function buildKeywordMetrics(records) {
     const groups = groupRecords(
       records,
@@ -169,14 +185,7 @@
         keyword,
         sampleSize: group.length,
         funnel,
-        rates: {
-          profileRate: safeRate(funnel.profiled, funnel.discovered),
-          approvalRate: safeRate(funnel.approved, funnel.profiled),
-          sendRate: safeRate(funnel.sent, funnel.approved),
-          replyRate: safeRate(funnel.replied, funnel.sent),
-          contactCaptureRate: safeRate(funnel.contactCaptured, funnel.sent),
-          opportunityRate: safeRate(funnel.opportunity, funnel.sent),
-        },
+        rates: buildConversionRates(funnel),
       };
     });
   }
@@ -293,6 +302,40 @@
     });
   }
 
+  function buildReplyConversionInsights(breakdowns) {
+    const source = breakdowns && typeof breakdowns === 'object' ? breakdowns : {};
+    const dimensions = ['platform', 'countryMarket', 'keyword', 'template', 'icpTier'];
+    const items = [];
+    for (const dimension of dimensions) {
+      for (const item of source[dimension] || []) {
+        const sent = Number(item.metrics && item.metrics.sent || 0);
+        if (!sent) continue;
+        items.push({
+          dimension,
+          label: item.label,
+          sent,
+          replied: Number(item.metrics.replied || 0),
+          contactCaptured: Number(item.metrics.contactCaptured || 0),
+          opportunity: Number(item.metrics.opportunity || 0),
+          rates: item.rates,
+          confidence: sent >= 10 ? 'strong' : sent >= 3 ? 'directional' : 'low_sample',
+        });
+      }
+    }
+    const ranked = items.slice().sort((left, right) =>
+      Number(right.rates.replyRate || 0) - Number(left.rates.replyRate || 0)
+      || right.replied - left.replied
+      || right.sent - left.sent
+      || left.label.localeCompare(right.label));
+    const underperforming = items
+      .filter(item => item.sent >= 3 && Number(item.rates.replyRate || 0) < 0.05)
+      .sort((left, right) => right.sent - left.sent || left.label.localeCompare(right.label));
+    return {
+      topReplySegments: ranked.slice(0, 8),
+      underperformingSegments: underperforming.slice(0, 8),
+    };
+  }
+
   function pad(value) {
     return String(value).padStart(2, '0');
   }
@@ -393,14 +436,16 @@
     const start = Date.parse(period.start);
     const endExclusive = Date.parse(period.endExclusive);
     const metrics = emptyReportMetrics();
+    const metricCustomers = new Map(REPORT_EVENTS.map(([metric]) => [metric, new Set()]));
     const dataQuality = { missingTimestamps: 0, invalidTimestamps: 0 };
-    const evaluated = source.map(item => {
+    const evaluated = source.map((item, recordIndex) => {
       const record = item && typeof item === 'object' ? item : {};
       const events = {};
+      const eventTimes = {};
+      const eventEvidence = {};
 
       for (const [metric, field] of REPORT_EVENTS) {
-        if ((metric === 'sent' || ['replied', 'contactCaptured', 'opportunity'].includes(metric))
-          && !isConfirmedSend(record)) {
+        if (metric === 'sent' && !isConfirmedSend(record)) {
           events[metric] = false;
           continue;
         }
@@ -420,30 +465,50 @@
         }
 
         events[metric] = timestamp >= start && timestamp < endExclusive;
-        if (events[metric]) metrics[metric] += 1;
+        if (events[metric]) {
+          eventTimes[metric] = value;
+          eventEvidence[metric] = 'explicit';
+        }
       }
 
-      return { record, events };
+      // A verified downstream event may establish operational eligibility, but
+      // it never proves that a scored profile was actually materialized.
+      // Keep profile scoring explicit so the dashboard cannot turn every send
+      // into a fabricated profile event.
+      const customerKey = normalizeGroupKey(record.company || record.name || record.taskId || record.id || `record-${recordIndex}`, `record-${recordIndex}`);
+      for (const [metric] of REPORT_EVENTS) {
+        if (!events[metric]) continue;
+        const seen = metricCustomers.get(metric);
+        if (!seen.has(customerKey)) {
+          seen.add(customerKey);
+          metrics[metric] += 1;
+        }
+      }
+
+      return { record, events, eventTimes, eventEvidence, customerKey };
     });
 
     function breakdown(keySelector) {
       const groups = new Map();
       for (const entry of evaluated) {
         const label = normalizeGroupKey(keySelector(entry.record), 'unknown');
-        if (!groups.has(label)) groups.set(label, emptyReportMetrics());
-        const groupMetrics = groups.get(label);
+        if (!groups.has(label)) groups.set(label, {
+          metrics: emptyReportMetrics(),
+          customers: new Map(REPORT_EVENTS.map(([metric]) => [metric, new Set()])),
+        });
+        const group = groups.get(label);
         for (const [metric] of REPORT_EVENTS) {
-          if (entry.events[metric]) groupMetrics[metric] += 1;
+          if (!entry.events[metric]) continue;
+          const seen = group.customers.get(metric);
+          if (seen.has(entry.customerKey)) continue;
+          seen.add(entry.customerKey);
+          group.metrics[metric] += 1;
         }
       }
-      return Array.from(groups, ([label, groupMetrics]) => ({
+      return Array.from(groups, ([label, group]) => ({
         label,
-        metrics: groupMetrics,
-        rates: {
-          replyRate: safeRate(groupMetrics.replied, groupMetrics.sent),
-          contactCaptureRate: safeRate(groupMetrics.contactCaptured, groupMetrics.sent),
-          opportunityRate: safeRate(groupMetrics.opportunity, groupMetrics.sent),
-        },
+        metrics: group.metrics,
+        rates: buildConversionRates(group.metrics),
       })).filter(item => Object.values(item.metrics).some(Boolean))
         .sort((left, right) => right.metrics.sent - left.metrics.sent
           || right.metrics.replied - left.metrics.replied
@@ -451,20 +516,63 @@
           || left.label.localeCompare(right.label));
     }
 
+    const rates = buildConversionRates(metrics);
+    const scoredCustomers = new Map();
+    evaluated.forEach(entry => {
+      if (!entry.events.discovered) return;
+      const rawScore = entry.record.icpScore ?? entry.record.fitScore;
+      const score = Number(rawScore);
+      if (!Number.isFinite(score) || score <= 0 || score > 100) return;
+      const current = scoredCustomers.get(entry.customerKey);
+      if (!Number.isFinite(current) || score > current) scoredCustomers.set(entry.customerKey, score);
+    });
+    const scoredValues = [...scoredCustomers.values()];
+    const icpScoring = {
+      average: scoredValues.length
+        ? Math.round((scoredValues.reduce((sum, score) => sum + score, 0) / scoredValues.length) * 10) / 10
+        : null,
+      scoredCustomers: scoredValues.length,
+      discoveredCustomers: metrics.discovered,
+      coverage: metrics.discovered ? scoredValues.length / metrics.discovered : 0,
+      minimum: scoredValues.length ? Math.min(...scoredValues) : null,
+      maximum: scoredValues.length ? Math.max(...scoredValues) : null,
+    };
+    const replyTypesByCustomer = new Map();
+    evaluated.forEach(entry => {
+      if (!entry.events.replied) return;
+      const type = ['human', 'automated'].includes(entry.record.replyType)
+        ? entry.record.replyType
+        : 'unclassified';
+      const existing = replyTypesByCustomer.get(entry.customerKey);
+      if (!existing || existing === 'unclassified' || (existing === 'automated' && type === 'human')) {
+        replyTypesByCustomer.set(entry.customerKey, type);
+      }
+    });
+    const replyDiagnostics = [...replyTypesByCustomer.values()].reduce((summary, type) => {
+      summary[type] += 1;
+      return summary;
+    }, { human: 0, automated: 0, unclassified: 0 });
+    const funnelMetrics = ['discovered', 'approved', 'sent', 'replied', 'contactCaptured', 'opportunity'];
+    const consistencyViolations = funnelMetrics.slice(1).filter((metric, index) => metrics[metric] > metrics[funnelMetrics[index]]);
+    const breakdowns = {
+      platform: breakdown(record => record.platform),
+      countryMarket: breakdown(record => record.country || record.market),
+      keyword: breakdown(record => record.keyword),
+      template: breakdown(record => record.templateId),
+      icpTier: breakdown(record => record.icpTier || record.tier),
+    };
     return {
       period,
       metrics,
-      rates: {
-        replyRate: safeRate(metrics.replied, metrics.sent),
-        contactCaptureRate: safeRate(metrics.contactCaptured, metrics.sent),
-        opportunityRate: safeRate(metrics.opportunity, metrics.sent),
-      },
-      breakdowns: {
-        platform: breakdown(record => record.platform),
-        countryMarket: breakdown(record => record.country || record.market),
-        keyword: breakdown(record => record.keyword),
-        template: breakdown(record => record.templateId),
-        icpTier: breakdown(record => record.icpTier || record.tier),
+      icpScoring,
+      rates,
+      replyDiagnostics,
+      conversion: buildReplyConversionInsights(breakdowns),
+      breakdowns,
+      eventRecords: evaluated,
+      consistency: {
+        funnelMonotonic: consistencyViolations.length === 0,
+        violations: consistencyViolations,
       },
       dataQuality,
       hasData: Object.values(metrics).some(Boolean),
@@ -476,6 +584,7 @@
     buildKeywordMetrics,
     buildKeywordOpportunities,
     buildTemplateMetrics,
+    buildConversionRates,
     getNaturalPeriod,
     buildPeriodReport,
   };

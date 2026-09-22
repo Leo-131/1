@@ -1,6 +1,8 @@
 const assert = require('node:assert/strict');
 const test = require('node:test');
 
+require('../outreach-dashboard/outreach-analytics.js');
+require('../outreach-dashboard/report-integrity.js');
 const {
   normalizeTrendRecord,
   buildKeywordMetrics,
@@ -8,7 +10,7 @@ const {
   buildTemplateMetrics,
   getNaturalPeriod,
   buildPeriodReport,
-} = require('../outreach-dashboard/outreach-analytics.js');
+} = globalThis.OutreachAnalytics;
 
 test('keyword opportunities prioritize transactional ICP phrases without inventing conversion data', () => {
   const result = buildKeywordOpportunities([
@@ -142,6 +144,10 @@ test('keyword metrics include sample sizes, funnel counts, and rates', () => {
       profileRate: 1,
       approvalRate: 1,
       sendRate: 0.5,
+      discoveryToSendRate: 0.5,
+      discoveryToReplyRate: 0.5,
+      replyToContactRate: 1,
+      replyToOpportunityRate: 1,
       replyRate: 1,
       contactCaptureRate: 1,
       opportunityRate: 1,
@@ -253,7 +259,7 @@ test('natural monthly periods use calendar month boundaries in Asia/Shanghai', (
   });
 });
 
-test('period reports count events by their timestamps and only confirmed sends convert', () => {
+test('period reports count independent timestamped replies without inventing unconfirmed sends', () => {
   const report = buildPeriodReport([
     {
       platform: 'Facebook',
@@ -294,12 +300,12 @@ test('period reports count events by their timestamps and only confirmed sends c
     profiled: 1,
     approved: 1,
     sent: 1,
-    replied: 1,
+    replied: 2,
     contactCaptured: 1,
     opportunity: 1,
     autoSkipped: 1,
   });
-  assert.deepEqual(report.rates, {
+  assert.deepEqual(Object.fromEntries(['replyRate','contactCaptureRate','opportunityRate'].map(key=>[key,report.rates[key]])), {
     replyRate: 1,
     contactCaptureRate: 1,
     opportunityRate: 1,

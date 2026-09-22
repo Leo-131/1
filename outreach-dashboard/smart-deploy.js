@@ -34,6 +34,7 @@ const APP_FILES = [
   "command-center.js",
   "contact-discovery.js",
   "customer-projection.js",
+  "report-integrity.js",
   "workspace-sync-browser.js",
   "workspace-sync.js",
   "i18n.js",

@@ -211,7 +211,9 @@
     return status || '';
   }
   function operationalRecords() {
-    return window.CustomerProjection.fromSources(tasks, window.AUTONOMOUS_OUTREACH_RESULTS || [], data.audit || []);
+    const results=window.ReportIntegrity.normalize(window.AUTONOMOUS_OUTREACH_RESULTS || []);
+    const audit=window.ReportIntegrity.normalize(data.audit || []);
+    return window.ReportIntegrity.normalize([...window.CustomerProjection.fromSources(tasks,results,audit), ...[...results,...audit].filter(r=>r.repliedAt||r.contactCapturedAt||r.opportunityAt)]);
   }
   function contactEmailStatus(record) {
     const point = window.ContactDiscovery.points(record).find(point => point.type === 'email');
@@ -318,11 +320,16 @@
     return date.toISOString().slice(0, 10);
   }
   function rate(value) {
+    if (value === null || value === undefined || !Number.isFinite(Number(value))) return '待核实';
     return `${Math.round(Number(value || 0) * 100)}%`;
   }
   function reportBreakdown(title, rows) {
     if (!rows.length) return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-empty">本周期暂无可统计数据</div></section>`;
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>分类</th><th>发现</th><th>确认发送</th><th>回复</th><th>联系方式</th><th>机会</th><th>回复率</th></tr></thead><tbody>${rows.map(item => `<tr><td>${esc(item.label)}</td><td>${item.metrics.discovered}</td><td>${item.metrics.sent}</td><td>${item.metrics.replied}</td><td>${item.metrics.contactCaptured}</td><td>${item.metrics.opportunity}</td><td>${rate(item.rates.replyRate)}</td></tr>`).join('')}</tbody></table></div></section>`;
+  }
+  function reportCompletenessPanel(report) {
+    const label={email:'Email',instagram:'Instagram',facebook:'Facebook',linkedin:'LinkedIn'};
+    return `<section class="cc-panel" data-report-completeness><div class="cc-panel-head"><h2>多渠道回复与数据完整性</h2></div><div class="cc-panel-body"><p>回复范围包含邮件、Instagram、Facebook、LinkedIn。按客户去重；自动回复与人工回复分开记录。0 条已收录不代表真实没有回复，采集未完整时不显示 0% 或高置信度。</p><p>发送回复率采用本周期确认发送的客户队列；跨月客户的本月回复单独计入回复事件，不虚增本月发送。公开邮箱不等于客户回复提供联系方式。桌面同步尚未完成端到端验证。</p><table class="cc-table"><thead><tr><th>渠道</th><th>本期发送客户</th><th>本期已收录回复</th><th>发送客户回复核验覆盖</th><th>回复率</th></tr></thead><tbody>${report.channels.map(r=>`<tr><td>${esc(label[r.platform]||r.platform)}</td><td>${r.sent}</td><td>${r.replied}</td><td>${r.checked}/${r.sent}</td><td>${r.sent?rate(r.rate):'不适用（无发送）'}</td></tr>`).join('')}</tbody></table></div></section>`;
   }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
@@ -345,8 +352,8 @@
         <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
-      <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
+      ${reportCompletenessPanel(report)}<div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.observation?.[key] && !report.observation[key].complete ? '已收录 '+report.metrics[key]+' · 待核实' : report.metrics[key]}</b></div>`).join('')}</div>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.observation?.[key] && !report.observation[key].complete ? '已收录 '+report.metrics[key]+' · 待核实' : report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}
       ${report.hasData ? `<div class="cc-report-grid">${reportBreakdown('平台', report.breakdowns.platform)}${reportBreakdown('国家 / 市场', report.breakdowns.countryMarket)}${reportBreakdown('关键词', report.breakdowns.keyword)}${reportBreakdown('消息模板', report.breakdowns.template)}${reportBreakdown('ICP 层级', report.breakdowns.icpTier)}</div>` : '<div class="cc-empty cc-report-empty">本周期暂无带有效时间证据的开发记录</div>'}`;
   }
