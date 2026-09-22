@@ -101,3 +101,24 @@ Execution records retain original email, country, score, and contact provenance 
 
 ## Report integrity contract
 Period reports count explicit timestamped events independently across Email, Instagram, Facebook and LinkedIn. A later reply cannot create a send, approval or discovery event in its month. Company identities are deduplicated across aliases. Automatic replies remain separately classified. Reply rate uses the period send cohort; until reply observations cover every sent customer, the rate is unknown, not zero. Public email discovery is not a customer-provided contact event. Missing denominators are not percentages. Segment rankings require complete observation coverage. Run the report-integrity regression suite before publishing. Reply fields (repliedAt/replyAt, replyType, replyEvidence) and per-channel replyCheckedAt must come from actual inbox observations. This change does not connect inboxes or resolve the upstream desktop-upload 403.
+
+### Weekly/monthly evidence-based review
+
+Period reports derive channel contribution, human/automated/unclassified replies,
+observation gaps and next actions from timestamped records without model calls.
+Unmatched or earlier-period sends never inflate the current send cohort. Execution
+log timestamps are flagged for review; source message dates are not rewritten.
+Suggested actions are explicitly not completed changes or causal conclusions.
+
+Scheduled maintenance must check the Beijing calendar, review the previous natural
+week on Mondays and previous natural month on the first day of each month, reuse
+same-day results and skip other dates. Record period completion to avoid replay.
+Validate accessible inbox evidence, customer deduplication and data completeness
+before diagnosing channel or template performance. Do not bypass access policies.
+Fix only evidenced defects; run `npm run check` and PR CI before merging; publish
+the matching private Site using its hosting workflow. Retain original evidence,
+bilingual UI, safety gates, rollback history and credentials outside source.
+Report substantive changes, failures or required user actions; stay quiet otherwise.
+Do not send outreach, alter access permissions or claim disconnected sources synced.
+The Codex task scheduler owns the recurring execution; opening this dashboard does
+not itself run code upgrades. An available authorized host and connections are required.

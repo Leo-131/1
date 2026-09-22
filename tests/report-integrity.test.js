@@ -23,3 +23,18 @@ test('explicit timestamp takes priority and invalid times are excluded; public e
 test('automatic reply is classified separately; aliases share customer identity',()=>{
  const r=build([{...send('A','fb'),taskId:'a'},{task_id:'a',platform:'facebook',timestamp:'2026-09-03T00:00:00Z',evidence:'recipient_auto_reply_received'}]);assert.equal(r.metrics.replied,1);assert.equal(r.replyDiagnostics.automated,1);assert.equal(r.replyDiagnostics.human,0);
 });
+
+test('period attribution separates channels, reply types and unmatched send cohorts',()=>{
+ const rows=[send('A','alimail'),{company:'A',platform:'email',repliedAt:'2026-09-03T00:00:00Z',replyType:'human'}, {company:'B',platform:'ins',repliedAt:'2026-09-04T00:00:00Z',replyType:'automated',replyTimestampSource:'automation_result_timestamp'}];
+ const before=JSON.stringify(rows), r=build([...rows,...rows]);
+ assert.equal(r.attribution.recordedReplies,2); assert.equal(r.attribution.earlierOrUnmatchedSendReplies,1);
+ assert.equal(r.attribution.human,1); assert.equal(r.attribution.automated,1); assert.equal(r.attribution.replyTimeReviewCustomers,1);
+ assert.equal(r.channels.find(c=>c.platform==='email').sent,1); assert.equal(JSON.stringify(rows),before);
+});
+test('weekly and monthly attribution excludes events outside the selected period',()=>{
+ const rows=[{company:'A',platform:'fb',repliedAt:'2026-09-03T00:00:00Z'},{company:'B',platform:'fb',repliedAt:'2026-09-22T00:00:00Z'},{company:'C',platform:'fb',repliedAt:'2026-08-22T00:00:00Z'}];
+ assert.equal(build(rows).attribution.recordedReplies,2);
+ const week=globalThis.OutreachAnalytics.buildPeriodReport(rows,{type:'weekly',anchor:'2026-09-22'});
+ assert.equal(week.attribution.recordedReplies,1);assert.equal(week.attribution.firstReplyAt,'2026-09-22T00:00:00Z');
+ assert.ok(build([send('A','email')]).attribution.conclusions.includes('cannot_attribute_to_template_or_channel'));
+});
