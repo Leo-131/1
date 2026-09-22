@@ -1,42 +1,29 @@
 {
   "schemaVersion": 1,
-  "task": "Preserve contact evidence and add multichannel discovery",
-  "status": "ready_for_handoff",
+  "task": "Validate and merge PR 2",
+  "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-09-22T14:54:10.484Z",
-  "summary": "Preserve contact metadata and add source-backed multichannel research",
-  "nextSteps": [
-    "Review PR; private site publishing separately; desktop upload 403 remains unresolved"
-  ],
+  "updatedAt": "2026-09-22T15:03:04.066Z",
+  "summary": "PR 2 review passed; corrected stale UI assertions, cache isolation, asset tracking and source score handling",
+  "nextSteps": [],
   "verification": [
-    "8 contact and projection tests pass; private site routes and 200/200 reconciliation verified"
+    "76 domain tests, 6 handoff tests, syntax and dashboard checks passed with latest main; desktop upload 403 remains separate"
   ],
   "git": {
-    "branch": "codex/performance-cloud-progress",
-    "commit": "39643495945aa02c61eb400a2f25b251084e7722",
+    "branch": null,
+    "commit": "a2e8b241d9aaa00390913bf128796c9ba0ed592e",
     "changedFiles": [
-      ".gitignore",
       "AGENT_HANDOFF.json",
       "outreach-dashboard/README.md",
-      "outreach-dashboard/build-portable-app.js",
       "outreach-dashboard/command-center.js",
-      "outreach-dashboard/dashboard-local-server.js",
-      "outreach-dashboard/glm-service.js",
-      "outreach-dashboard/main.js",
-      "outreach-dashboard/outreach-dashboard.html",
-      "outreach-dashboard/package.json",
-      "outreach-dashboard/preload.js",
-      "outreach-dashboard/prepare-vercel-output.js",
-      "outreach-dashboard/contact-discovery.js",
-      "outreach-dashboard/customer-projection.js",
-      "outreach-dashboard/i18n.js",
-      "outreach-dashboard/install-workspace-sync.ps1",
-      "outreach-dashboard/workspace-sync-browser.js",
-      "outreach-dashboard/workspace-sync.js",
-      "tests/contact-discovery.test.js",
-      "tests/customer-projection.test.js",
-      "tests/efficiency-sync.test.js"
+      "outreach-dashboard/public/outreach_data.json",
+      "outreach-dashboard/service-worker.js",
+      "outreach-dashboard/smart-deploy.js",
+      "outreach-public-summary/2026-09-22.json",
+      "outreach_data.json",
+      "tests/command-center.test.js",
+      "tests/smart-deploy.test.js"
     ]
   }
 }

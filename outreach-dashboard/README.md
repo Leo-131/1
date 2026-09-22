@@ -90,7 +90,7 @@ Progress destination: https://flextail-customer-workspace.leo13111.chatgpt.site/
 - `.workspace-sync/` contains private local sync status and the latest cloud overlay and is excluded from Git. The current website has newer baseline data than this public repository; those newer records must not be overwritten by the older checkout or copied to public GitHub.
 - No LLM is used for synchronization, filtering or reporting. Lead analysis sends bounded relevant fields, caps output at 600 tokens by default, coalesces identical concurrent calls, and caches successful decisions for five minutes (128 entries maximum). Changed lead context causes a new request; execution itself is never cached. Response usage is reported separately and cache hits do not double-count token usage.
 
-Validation: new sync/model tests pass. The existing full suite has two pre-existing text assertions expecting `Codex + AutoClaw` in HTML; the checked-out baseline already lacks that label. No unrelated execution or historical data was changed to satisfy those assertions.
+Validation: the full domain and handoff checks pass. UI assertions verify the current Codex Chrome action; private APIs bypass the offline cache. Desktop upload still requires end-to-end access validation.
 
 Live connection test on 2026-09-21: Sites v3 published successfully, but direct desktop HTTP requests were rejected upstream with Cloudflare HTTP 403. No background uploader is claimed as active. Resolve the platform/network client access restriction before enabling the Mac or Windows service.
 

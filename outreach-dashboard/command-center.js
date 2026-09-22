@@ -63,8 +63,8 @@
   }
   function icpScore(entity) {
     if (!entity) return 0;
-    const direct = Number(entity.fitScore || 0);
-    if (direct > 0) return Math.round(direct);
+    const direct = Number(entity.icpScore ?? entity.fitScore ?? 0);
+    if (Number.isFinite(direct) && direct > 0) return Math.max(0, Math.min(100, direct));
     if (entity.taskId) return scoreTask(entity).total;
     return engine.calculateDevelopmentScore({
       region: entity.country || '',

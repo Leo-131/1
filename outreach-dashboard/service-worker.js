@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-8-20260625-google-discovery';
+const CACHE_NAME = 'customer-development-system-20260922-contact-sync';
 const APP_SHELL = [
   './',
   './index.html',
@@ -14,6 +14,10 @@ const APP_SHELL = [
   './autonomous-outreach-data.js',
   './command-center.css',
   './command-center.js',
+  './contact-discovery.js',
+  './customer-projection.js',
+  './workspace-sync-browser.js',
+  './i18n.js',
   './enhancements.css',
   './manifest.webmanifest',
   './icon.svg'
@@ -37,6 +41,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  const requestUrl = new URL(event.request.url);
+  if (requestUrl.origin !== self.location.origin || requestUrl.pathname.startsWith('/api/')) return;
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
