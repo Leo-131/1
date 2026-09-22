@@ -1,29 +1,34 @@
 {
   "schemaVersion": 1,
-  "task": "Validate and merge PR 2",
-  "status": "completed",
+  "task": "Unify multichannel replies and enforce report completeness",
+  "status": "ready_for_handoff",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-09-22T15:03:04.066Z",
-  "summary": "PR 2 review passed; corrected stale UI assertions, cache isolation, asset tracking and source score handling",
-  "nextSteps": [],
+  "updatedAt": "2026-09-22T15:27:21.292Z",
+  "summary": "Multichannel report integrity tests pass; inbox collection remains unverified",
+  "nextSteps": [
+    "Publish private Site and review report-integrity PR; Alibaba/social inbox verification needs computer-use permission"
+  ],
   "verification": [
-    "76 domain tests, 6 handoff tests, syntax and dashboard checks passed with latest main; desktop upload 403 remains separate"
+    "81 domain tests, 6 handoff tests, syntax and dashboard checks passed"
   ],
   "git": {
-    "branch": null,
-    "commit": "a2e8b241d9aaa00390913bf128796c9ba0ed592e",
+    "branch": "codex/report-integrity",
+    "commit": "f56fdd24c592332bdef29ff01d703b7daa729b30",
     "changedFiles": [
       "AGENT_HANDOFF.json",
       "outreach-dashboard/README.md",
+      "outreach-dashboard/build-portable-app.js",
       "outreach-dashboard/command-center.js",
-      "outreach-dashboard/public/outreach_data.json",
+      "outreach-dashboard/outreach-analytics.js",
+      "outreach-dashboard/outreach-dashboard.html",
+      "outreach-dashboard/package.json",
+      "outreach-dashboard/prepare-vercel-output.js",
       "outreach-dashboard/service-worker.js",
       "outreach-dashboard/smart-deploy.js",
-      "outreach-public-summary/2026-09-22.json",
-      "outreach_data.json",
-      "tests/command-center.test.js",
-      "tests/smart-deploy.test.js"
+      "tests/outreach-analytics.test.js",
+      "outreach-dashboard/report-integrity.js",
+      "tests/report-integrity.test.js"
     ]
   }
 }
