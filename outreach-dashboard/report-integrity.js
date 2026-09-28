@@ -27,6 +27,10 @@ function audit(report){
  const ratio=(n,d)=>d>0?n/d:null;
  for(const [name,n,d] of [['profileRate','profiled','discovered'],['approvalRate','approved','profiled'],['sendRate','sent','approved']])if(!report.metrics[d]||report.metrics[n]>report.metrics[d])report.rates[name]=null;
  report.observation=quality;report.cohort=cohort;
+ const discovered=new Set(entries.filter(e=>e.events.discovered).map(e=>e.customerKey));
+ const discoveredSent=[...discovered].filter(k=>sent.has(k)).length;
+ report.discoveryCohort={discovered:discovered.size,sent:discoveredSent};
+ report.rates.discoveryToSendRate=ratio(discoveredSent,discovered.size);
  report.rates.replyRate=quality.replied.complete?ratio(cohort.replied,cohort.sent):null;
  report.rates.contactCaptureRate=quality.contactCaptured.complete?ratio(cohort.contactCaptured,cohort.sent):null;
  report.rates.opportunityRate=quality.opportunity.complete?ratio(cohort.opportunity,cohort.sent):null;
