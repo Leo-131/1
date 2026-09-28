@@ -38,3 +38,10 @@ test('weekly and monthly attribution excludes events outside the selected period
  assert.equal(week.attribution.recordedReplies,1);assert.equal(week.attribution.firstReplyAt,'2026-09-22T00:00:00Z');
  assert.ok(build([send('A','email')]).attribution.conclusions.includes('cannot_attribute_to_template_or_channel'));
 });
+
+test('discovery-to-send conversion uses the same customer cohort across periods',()=>{
+ const rows=[{company:'New buyer',platform:'email',discoveredAt:'2026-09-02T00:00:00Z'},...['Old A','Old B'].map(company=>({...send(company,'email'),discoveredAt:'2026-08-01T00:00:00Z'}))];
+ const report=build(rows);assert.equal(report.metrics.sent,2);assert.equal(report.discoveryCohort.discovered,1);assert.equal(report.discoveryCohort.sent,0);assert.equal(report.rates.discoveryToSendRate,0);
+ const converted=build([...rows,send('New buyer','email')]);assert.equal(converted.rates.discoveryToSendRate,1);assert.equal(converted.metrics.sent,3);
+ assert.equal(build([]).rates.discoveryToSendRate,null);
+});

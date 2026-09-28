@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "task": "Add evidence-based weekly/monthly attribution and maintenance contract",
+  "task": "Weekly 2026-09-21 review: correct discovery cohort conversion",
   "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-09-22T16:17:51.097Z",
-  "summary": "Evidence-based weekly/monthly attribution and maintenance contract implemented",
+  "updatedAt": "2026-09-28T03:15:54.205Z",
+  "summary": "Weekly review corrected discovery-to-send cohort; mailbox refresh blocked",
   "nextSteps": [],
   "verification": [
-    "83 domain tests, 6 handoff tests, syntax and dashboard checks passed; fresh inbox collection remains blocked"
+    "84 domain and 6 handoff tests pass; Site regression validation pending final result"
   ],
   "git": {
     "branch": "codex/period-attribution",
