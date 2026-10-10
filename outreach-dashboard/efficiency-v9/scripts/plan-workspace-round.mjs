@@ -1,0 +1,86 @@
+// Read-only local preflight. Never controls a browser, calls a model or sends mail.
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import crypto from 'node:crypto';
+import {pathToFileURL} from 'node:url';
+import {performance} from 'node:perf_hooks';
+import {planRound} from './plan-outreach-round.mjs';
+
+const historyFiles = {
+  'autonomous-outreach-results.js':'AUTONOMOUS_OUTREACH_RESULTS',
+  'linkedin-connection-results-latest.js':'LINKEDIN_CONNECTION_RESULTS_LATEST',
+  'daily-automation-execution-latest.js':'DAILY_AUTOMATION_EXECUTION_LATEST',
+  'google-lead-discovery-latest.js':'GOOGLE_LEAD_DISCOVERY_LATEST'
+};
+export function extractRows(value) {
+  if (Array.isArray(value)) return value;
+  if (!value || typeof value !== 'object') throw Error('Invalid row container');
+  for (const key of ['records','candidates','rows']) if (Array.isArray(value[key])) return value[key];
+  if (value.company || value.domain || value.companyName) return [value];
+  throw Error('No supported row container');
+}
+export function planWorkspace({candidateFile,researchDir,historyDir,limit=100}) {
+  const started=performance.now(), hashes=[], files=new Set();
+  function read(filename) {
+    const absolute=path.resolve(filename);
+    if (files.has(absolute)) throw Error('Duplicate input file');
+    files.add(absolute);
+    const bytes=fs.readFileSync(absolute);
+    hashes.push([path.basename(absolute),crypto.createHash('sha256').update(bytes).digest('hex')]);
+    return bytes.toString('utf8').replace(/^\uFEFF/,'');
+  }
+  const candidates=extractRows(JSON.parse(read(candidateFile)));
+  const research=[];
+  // Deliberately exclude generated preflight/provider output: it is not research evidence.
+  const selected=fs.readdirSync(researchDir).filter(name=>
+    /^(?:research-(?!provider-preflight)|october-research-).*\.json$/.test(name)
+    || /-send-attempt-.*\.json$/.test(name)).sort();
+  if (!selected.length) throw Error('No research cache files: refusing incomplete preflight');
+  for (const name of selected) {
+    const filename=path.join(researchDir,name);
+    const value=JSON.parse(read(filename));
+    // Some historical cache manifests contain only statistics; skip them explicitly.
+    if (!Array.isArray(value) && !['records','candidates','rows'].some(k=>Array.isArray(value?.[k]))
+        && !value?.company && !value?.domain && !value?.companyName) continue;
+    research.push(...extractRows(value));
+  }
+  const history=[];
+  for (const [filename,global] of Object.entries(historyFiles)) {
+    const context={};context.window=context;
+    vm.runInNewContext(read(path.join(historyDir,filename)),context,{timeout:1000});
+    // Preserve the actual named global; never silently accept a missing history source.
+    const rows=context[global];
+    if (!rows) throw Error('Missing history global: '+global);
+    if (Array.isArray(rows)) history.push(...rows);
+    else if (typeof rows==='object') {
+      const arrays=Object.values(rows).filter(Array.isArray);
+      if (!arrays.length) throw Error('No history arrays: '+global);
+      history.push(...arrays.flat().filter(row=>row&&typeof row==='object'&&!Array.isArray(row)));
+    } else throw Error('Invalid history: '+global);
+  }
+  const plan=planRound({candidates,research,history,limit});
+  return {...plan,inputs:{candidateRows:candidates.length,researchRows:research.length,
+    historyRows:history.length,filesRead:files.size,researchFiles:selected.length,
+    snapshotDigest:crypto.createHash('sha256').update(JSON.stringify(hashes)).digest('hex')},
+    localPreflightMs:Math.round((performance.now()-started)*100)/100,
+    timingScope:'Local reads and deterministic preflight only; not end-to-end outreach'};
+}
+export function compactPlan(plan) {
+  return {...plan,rows:plan.rows.map(row=>Object.fromEntries(
+    ['company','name','domain','website','websiteUrl','group','groupName','parentCompany',
+      'aliases','companyAliases','groupAliases','providerId','evidenceRevision','evidenceSources']
+      .filter(key=>row[key]!==undefined).map(key=>[key,row[key]])))};
+}
+if (process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
+  const args=process.argv.slice(2),options={};let compact=false;
+  for (let i=0;i<args.length;i++) {
+    if(args[i]==='--compact'){compact=true;continue;}
+    const key={'--candidates':'candidateFile','--research-dir':'researchDir','--history-dir':'historyDir','--limit':'limit'}[args[i]];
+    if(!key || !args[i+1] || args[i+1].startsWith('--'))throw Error('Use --candidates file --research-dir directory --history-dir directory [--limit 100] [--compact]');
+    options[key]=key==='limit'?Number(args[++i]):args[++i];
+  }
+  if (!options.candidateFile||!options.researchDir||!options.historyDir)throw Error('All three input sources are required');
+  const plan=planWorkspace(options);
+  console.log(JSON.stringify(compact?compactPlan(plan):plan));
+}
