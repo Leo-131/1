@@ -78,7 +78,7 @@ export function planWorkspace({candidateFile,researchDir,historyDir,limit=100}) 
 export function compactPlan(plan) {
   return {...plan,rows:plan.rows.map(row=>Object.fromEntries(
     ['company','name','domain','website','websiteUrl','group','groupName','parentCompany',
-      'aliases','companyAliases','groupAliases','providerId','evidenceRevision','evidenceSources']
+      'aliases','companyAliases','groupAliases','providerId','evidenceRevision','evidenceSources','cachedResearch']
       .filter(key=>row[key]!==undefined).map(key=>[key,row[key]])))};
 }
 // Small research-only execution packet. Always regenerate from fresh history;

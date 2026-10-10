@@ -3,10 +3,12 @@
   function identityKeys(row) {
     const normalize=value=>String(value||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
     const known=value=>value&&!/^(unknown|unverified|待核验)$/.test(value);
-    const names=[row.company,row.name,row.group,row.groupName,row.parentCompany,
+    const aliases=Array.isArray(row.aliases)?row.aliases.filter(value=>typeof value==='string'):[];
+    const names=[row.company,row.name,row.group,row.groupName,row.parentCompany,...aliases,
       ...(Array.isArray(row.companyAliases)?row.companyAliases:[]),
       ...(Array.isArray(row.groupAliases)?row.groupAliases:[])];
-    const domains=[row.domain,row.companyDomain,row.website,row.websiteUrl].map(value=>{
+    const domains=[row.domain,row.companyDomain,row.website,row.websiteUrl,
+      ...aliases.filter(value=>/^(?:https?:\/\/)?(?:[a-z0-9-]+\.)+[a-z]{2,}(?:\/[^\s]*)?$/i.test(value))].map(value=>{
       if(!value)return '';
       try {const url=new URL(/^https?:\/\//i.test(value)?value:'https://'+value);
         if(!['http:','https:'].includes(url.protocol)||url.username||url.password)return '';
@@ -70,40 +72,68 @@
     }
     return {generate};
   }
+  // Cheap ordering only, never eligibility or ICP. No network/model calls.
+  function prioritizeResearch(candidates) {
+    return candidates.map((row,position)=>{
+      const text=[row?.company,row?.name,row?.description,row?.industry,
+        ...(Array.isArray(row?.keywords)?row.keywords:[])].join(' ').toLowerCase();
+      const product=/\b(camping|outdoor|hiking|portable power|power bank|powerbank|camp lights?|portable pumps?)\b/.test(text);
+      const channel=/\b(retail|distribut\w*|wholesale|import\w*|electronics|trading)\b/.test(text);
+      const weak=/\b(bank|banking|real estate|restaurant|hotel|tourism|insurance)\b/.test(text);
+      return {row,position,priority:(product?4:0)+(channel?2:0)-(weak&&!product?3:0)};
+    }).sort((a,b)=>b.priority-a.priority||a.position-b.position).map(item=>item.row);
+  }
   // Planning is not sending. A source failure stays parked until evidence changes.
   function researchBatch(candidates, {keys, blocked, research = [], limit = 100}) {
     const seen = new Set(), cached = new Map(), rows = [], counts = {historical:0,duplicate:0,parked:0};
     const parked = new Set(['excluded','source_failed','evidence_insufficient','parked','identity_mismatch']);
     const outcomeBlocks = new Set(['sent_confirmed','submitted_confirmed','send_unconfirmed',
       'send_clicked_outcome_unknown_do_not_resend','outcome_pending','replied','bounced']);
-    const statuses = row => [row.researchStatus,row.status,row.sendStatus,row.automationStatus].filter(Boolean);
+    const statuses = row => [row.researchStatus,row.status,row.sendStatus,row.automationStatus,row.result,row.state]
+      .filter(value=>typeof value==='string').map(value=>value.trim().toLowerCase());
     const sources = row => new Set((row.evidenceSources || []).filter(url =>
       typeof url === 'string' && /^https?:\/\//i.test(url)));
+    // Per-invocation snapshots: aliases share work, but later calls see new receipts.
+    const metadata = new WeakMap();
+    function describe(row) {
+      if (!metadata.has(row)) {
+        const state = statuses(row);
+        metadata.set(row, {identity:keys(row).filter(Boolean),
+          historical:state.some(status=>outcomeBlocks.has(status)),
+          // Explicit cache no-retry flags also cover legacy custom status names.
+          // Never infer eligibility from a name, a score, or a source URL alone.
+          parked:row.retryWithoutNewEvidence===false || state.some(status=>parked.has(status)), sources:sources(row)});
+      }
+      return metadata.get(row);
+    }
     function newEvidence(row, previous) {
       if (!row.evidenceRevision || row.evidenceRevision === previous.evidenceRevision) return false;
-      const old = sources(previous);
-      return [...sources(row)].some(url => !old.has(url));
+      const old = describe(previous).sources;
+      return [...describe(row).sources].some(url => !old.has(url));
     }
     // Retain every alias match. A later clean row cannot erase a group failure.
     for (const row of research) {
       if (!row) continue;
-      for (const key of keys(row).filter(Boolean)) {
-        if (!cached.has(key)) cached.set(key,new Set());
-        cached.get(key).add(row);
+      const info = describe(row);
+      for (const key of info.identity) {
+        if (!cached.has(key)) cached.set(key,{historical:false,parked:new Set()});
+        const bucket = cached.get(key);
+        bucket.historical ||= info.historical;
+        if (info.parked) bucket.parked.add(row);
       }
     }
     for (const row of candidates) {
       if (!row) continue;
-      const identity = keys(row).filter(Boolean);
+      const current = describe(row), identity = current.identity;
       if (!identity.length) continue;
-      const previous = new Set(identity.flatMap(key => [...(cached.get(key) || [])]));
-      if (blocked(row) || statuses(row).some(status => outcomeBlocks.has(status)) ||
-          [...previous].some(item => statuses(item).some(status => outcomeBlocks.has(status)))) {
+      const previous = identity.map(key=>cached.get(key)).filter(Boolean);
+      if (blocked(row) || current.historical ||
+          previous.some(bucket => bucket.historical)) {
         counts.historical++;continue;
       }
       if (identity.some(key=>seen.has(key))) {counts.duplicate++;continue;}
-      if (statuses(row).some(status => parked.has(status)) || [...previous].some(item =>
-          statuses(item).some(status => parked.has(status)) && !newEvidence(row,item))) {
+      if (current.parked || previous.some(bucket =>
+          [...bucket.parked].some(item => !newEvidence(row,item)))) {
         counts.parked++;continue;
       }
       identity.forEach(key=>seen.add(key));rows.push(row);
@@ -111,5 +141,48 @@
     }
     return {rows,counts,sendPerformed:false,requiresLiveVerification:true};
   }
-  root.OutreachEfficiency = {identityKeys, researchIndex, researchFor, modelClient, researchBatch};
+  // Carry bounded existing facts into the next packet, not into send authorization.
+  // Group-only matches remain locks; a subsidiary must not inherit another firm's contact.
+  function researchContext(rows, research) {
+    const index=new Map();
+    const directKeys=row=>identityKeys({...row,group:undefined,groupName:undefined,
+      parentCompany:undefined,groupAliases:[],taskId:undefined,task_id:undefined,
+      id:undefined,automationTaskId:undefined});
+    for(const record of research) {
+      if(!record || typeof record!=='object')continue;
+      for(const key of directKeys(record)) {
+        if(!index.has(key))index.set(key,new Set());
+        index.get(key).add(record);
+      }
+    }
+    const cleanUrl=value=>{
+      try {const url=new URL(value);
+        return /^https?:$/.test(url.protocol)&&!url.username&&!url.password
+          && ![...url.searchParams.keys()].some(k=>/token|secret|password|api.?key/i.test(k))?url.href:null;
+      }catch{return null;}
+    };
+    return rows.map(row=>{
+      const matches=new Set(directKeys(row).flatMap(key=>[...(index.get(key)||[])]));
+      if(!matches.size)return {...row};
+      const sources=new Set(),emails=new Set(),scores=new Set();
+      for(const record of matches) {
+        for(const value of [...(Array.isArray(record.sources)?record.sources:[]),
+          ...(Array.isArray(record.evidenceSources)?record.evidenceSources:[])]) {
+          const url=cleanUrl(value);if(url)sources.add(url);
+        }
+        for(const key of ['publicEmail','publicBusinessEmail','contactEmail','email']) {
+          const value=String(record[key]||'').trim().toLowerCase();
+          if(/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(value))emails.add(value);
+        }
+        const score=record.icpScore??record.icp;
+        if(typeof score==='number'&&Number.isFinite(score)&&score>=0&&score<=100)scores.add(score);
+      }
+      return {...row,cachedResearch:{matchedRecords:matches.size,
+        sourceUrls:[...sources].slice(0,6),sourceCount:sources.size,
+        contactCandidates:[...emails].slice(0,3),contactConflict:emails.size>1,
+        observedScores:[...scores].slice(0,3),scoreConflict:scores.size>1,
+        trust:'cached-leads-only-live-validation-required',eligibleToSend:false}};
+    });
+  }
+  root.OutreachEfficiency = {identityKeys, researchIndex, researchFor, modelClient, researchBatch, prioritizeResearch, researchContext};
 })(typeof window !== 'undefined' ? window : globalThis);
