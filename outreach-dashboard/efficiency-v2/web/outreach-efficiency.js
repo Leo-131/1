@@ -16,7 +16,7 @@
       }catch{return '';}
     }).filter(value=>known(value)&&value.includes('.'));
     // Exact recipient addresses only; never group firms by gmail/outlook.
-    const emails=[row.email,row.recipientEmail,row.publicEmail,row.contactEmail]
+    const emails=[row.email,row.recipientEmail,row.publicEmail,row.contactEmail,row.publicBusinessEmail]
       .map(normalize).filter(value=>/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(value));
     return [...new Set([
       ...names.map(normalize).filter(known).map(value=>'entity:'+value),
@@ -50,7 +50,8 @@
       const cached = cache.get(key);
       if (cached) return Promise.resolve({...cached.result, cached:true,
         usage:{prompt_tokens:0,completion_tokens:0,total_tokens:0}});
-      if (pending.has(key)) return pending.get(key);
+      if (pending.has(key)) return pending.get(key).then(result=>({...result,coalesced:true,
+        usage:{prompt_tokens:0,completion_tokens:0,total_tokens:0}}));
       const promise = (async () => {
         const response = await fetcher('/api/models', {method:'POST',
           headers:{'Content-Type':'application/json'},

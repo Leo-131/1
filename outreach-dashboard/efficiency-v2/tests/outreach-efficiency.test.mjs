@@ -20,7 +20,19 @@ test('concurrent identical model requests merge and sequential reuse costs zero 
   let calls=0;const client=modelClient(async()=>{calls++;await Promise.resolve();return response();});
   const results=await Promise.all(Array.from({length:10},()=>client.generate('summarize','Public facts')));
   assert.equal(calls,1);assert.equal(results.length,10);
+  assert.equal(results.reduce((sum,result)=>sum+result.usage.total_tokens,0),12);
+  assert.equal(results.filter(result=>result.coalesced).length,9);
   const cached=await client.generate('summarize','Public facts');assert.equal(cached.usage.total_tokens,0);assert.equal(cached.cached,true);
+});
+
+test('permanent publicBusinessEmail matches exact recipient across different company names',()=>{
+  const {identityKeys,researchBatch}=globalThis.OutreachEfficiency;
+  const plan=researchBatch([{company:'New alias',email:'Buyer@Example.org'}],{
+    keys:identityKeys,blocked:()=>false,
+    research:[{company:'Old alias',publicBusinessEmail:'buyer@example.org',status:'sent_confirmed'}]});
+  assert.equal(plan.rows.length,0);assert.equal(plan.counts.historical,1);
+  assert.ok(!identityKeys({publicBusinessEmail:'bad address'}).some(key=>key.startsWith('email:')));
+  assert.ok(!identityKeys({publicBusinessEmail:'other@example.org'}).includes('email:buyer@example.org'));
 });
 test('failed requests release the lock, and cache expires and separates task and facts',async()=>{
   let clock=0,calls=0;const client=modelClient(async()=>{calls++;if(calls===1)throw Error('offline');return response();},()=>clock);
