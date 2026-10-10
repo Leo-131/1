@@ -3,16 +3,7 @@ import fs from 'node:fs';
 import {pathToFileURL} from 'node:url';
 import '../web/outreach-efficiency.js';
 import '../web/outreach-queue-guard.js';
-const normalize = value => String(value || '').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
-export function identityKeys(row) {
-  const identity = [row.company,row.name,row.group,row.groupName,row.parentCompany,
-    ...(Array.isArray(row.companyAliases) ? row.companyAliases : []),
-    ...(Array.isArray(row.groupAliases) ? row.groupAliases : [])];
-  return [...new Set([
-    ...identity.map(normalize).filter(value=>value && !/^(unknown|unverified|待核验)$/.test(value)).map(value=>'entity:'+value),
-    ...[row.taskId,row.task_id,row.id,row.automationTaskId].filter(Boolean).map(value=>'id:'+value)
-  ])];
-}
+export const identityKeys = globalThis.OutreachEfficiency.identityKeys;
 export function planRound({candidates=[],research=[],history=[],limit=100}) {
   const guard=globalThis.OutreachQueueGuard;
   const index=guard.build(history,identityKeys);

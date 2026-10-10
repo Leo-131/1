@@ -1,5 +1,29 @@
 (function(root) {
   'use strict';
+  function identityKeys(row) {
+    const normalize=value=>String(value||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
+    const known=value=>value&&!/^(unknown|unverified|待核验)$/.test(value);
+    const names=[row.company,row.name,row.group,row.groupName,row.parentCompany,
+      ...(Array.isArray(row.companyAliases)?row.companyAliases:[]),
+      ...(Array.isArray(row.groupAliases)?row.groupAliases:[])];
+    const domains=[row.domain,row.companyDomain,row.website,row.websiteUrl].map(value=>{
+      if(!value)return '';
+      try {const url=new URL(/^https?:\/\//i.test(value)?value:'https://'+value);
+        if(!['http:','https:'].includes(url.protocol)||url.username||url.password)return '';
+        const host=url.hostname.toLowerCase().replace(/^www\./,'').replace(/\.$/,'');
+        if(/(^|\.)(facebook\.com|instagram\.com|linkedin\.com|google\.com|wixsite\.com|amazon\.com|gmail\.com|outlook\.com)$/.test(host))return '';
+        return host;
+      }catch{return '';}
+    }).filter(value=>known(value)&&value.includes('.'));
+    // Exact recipient addresses only; never group firms by gmail/outlook.
+    const emails=[row.email,row.recipientEmail,row.publicEmail,row.contactEmail]
+      .map(normalize).filter(value=>/^[^\s<>@]+@[^\s<>@]+\.[^\s<>@]+$/.test(value));
+    return [...new Set([
+      ...names.map(normalize).filter(known).map(value=>'entity:'+value),
+      ...domains.map(value=>'domain:'+value),...emails.map(value=>'email:'+value),
+      ...[row.taskId,row.task_id,row.id,row.automationTaskId].filter(Boolean).map(value=>'id:'+value)
+    ])];
+  }
   // Preserve Array.find's first-source precedence without rescanning every row.
   function researchIndex(rows) {
     const byId = new Map();
@@ -86,5 +110,5 @@
     }
     return {rows,counts,sendPerformed:false,requiresLiveVerification:true};
   }
-  root.OutreachEfficiency = {researchIndex, researchFor, modelClient, researchBatch};
+  root.OutreachEfficiency = {identityKeys, researchIndex, researchFor, modelClient, researchBatch};
 })(typeof window !== 'undefined' ? window : globalThis);
