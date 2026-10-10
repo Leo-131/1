@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 import {planWorkspace,compactPlan,extractRows,executionPacket} from '../scripts/plan-workspace-round.mjs';
 function fixture(t) {
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'outreach-preflight-'));
@@ -48,6 +50,34 @@ test('every invocation sees new permanent receipts and snapshot digest changes',
 test('row extraction accepts arrays and known envelopes but never turns a summary into evidence',()=>{
   for(const value of [[{company:'A'}],{records:[{company:'A'}]},{candidates:[{company:'A'}]},{rows:[{company:'A'}]},{company:'A'}])assert.equal(extractRows(value)[0].company,'A');
   assert.throws(()=>extractRows({confirmed:100}),/No supported/);
+});
+
+test('provider organizations map into the same history locks without inventing evidence',t=>{
+  const input=fixture(t);
+  const raw={organizations:[{name:'Old renamed',primary_domain:'old.test',website_url:'https://old.test',id:'provider-a',parentCompany:'Old'},
+    {name:'Outdoor Retailer',primary_domain:'new.test',website_url:'https://new.test',id:'provider-b',aliases:['Shop alias']}]};
+  fs.writeFileSync(input.candidateFile,JSON.stringify(raw));
+  const plan=planWorkspace(input);
+  assert.equal(plan.counts.historical,1);assert.equal(plan.rows.length,1);
+  assert.equal(plan.rows[0].company,'Outdoor Retailer');assert.equal(plan.rows[0].domain,'new.test');
+  assert.equal(plan.rows[0].providerId,'provider-b');assert.deepEqual(plan.rows[0].aliases,['Shop alias']);
+  assert.equal(plan.rows[0].icpScore,undefined);assert.equal(plan.rows[0].publicEmail,undefined);
+  assert.equal(plan.sendPerformed,false);assert.equal(plan.requiresLiveVerification,true);
+  assert.deepEqual(raw.organizations[1],{name:'Outdoor Retailer',primary_domain:'new.test',website_url:'https://new.test',id:'provider-b',aliases:['Shop alias']});
+  assert.throws(()=>extractRows({organizations:[null]}),/Invalid organization/);
+});
+
+test('routine CLI defaults to ten rows after full preflight, with explicit full audit available',t=>{
+  const input=fixture(t);
+  fs.writeFileSync(input.candidateFile,JSON.stringify({candidates:Array.from({length:100},(_,i)=>({company:'Retail '+i}))}));
+  const args=[fileURLToPath(new URL('../scripts/plan-workspace-round.mjs',import.meta.url)),
+    '--candidates',input.candidateFile,'--research-dir',input.researchDir,'--history-dir',input.historyDir];
+  const packet=JSON.parse(execFileSync(process.execPath,args,{encoding:'utf8'}));
+  const full=JSON.parse(execFileSync(process.execPath,[...args,'--compact'],{encoding:'utf8'}));
+  assert.equal(packet.inputs.candidateRows,100);assert.equal(packet.rows.length,10);
+  assert.equal(packet.packet.totalPending,100);assert.equal(packet.packet.eligibleToSend,false);
+  assert.equal(full.rows.length,100);assert.equal(packet.inputs.snapshotDigest,full.inputs.snapshotDigest);
+  assert.ok(Buffer.byteLength(JSON.stringify(packet))<Buffer.byteLength(JSON.stringify(full)));
 });
 test('execution packets bound output without changing safety or losing pending totals',()=>{
   const plan={rows:Array.from({length:87},(_,i)=>({company:'Retailer '+i,domain:i+'.test',rawHugeField:'private'})),

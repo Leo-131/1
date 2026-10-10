@@ -17,6 +17,15 @@ export function extractRows(value) {
   if (Array.isArray(value)) return value;
   if (!value || typeof value !== 'object') throw Error('Invalid row container');
   for (const key of ['records','candidates','rows']) if (Array.isArray(value[key])) return value[key];
+  // Shallow organization results are discovery metadata, never verified evidence.
+  // Preserve explicit aliases/groups while mapping provider spelling once.
+  if (Array.isArray(value.organizations)) return value.organizations.map(row=> {
+    if (!row || typeof row !== 'object' || Array.isArray(row)) throw Error('Invalid organization row');
+    return {...row,company:row.company || row.name,
+      domain:row.domain || row.primary_domain,
+      website:row.website || row.website_url,
+      providerId:row.providerId || row.id};
+  });
   if (value.company || value.domain || value.companyName) return [value];
   throw Error('No supported row container');
 }
@@ -93,5 +102,7 @@ if (process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
   }
   if (!options.candidateFile||!options.researchDir||!options.historyDir)throw Error('All three input sources are required');
   const plan=planWorkspace(options);
-  console.log(JSON.stringify(packetSize!==undefined?executionPacket(plan,packetSize):compact?compactPlan(plan):plan));
+  // Normal executions emit only the next research packet. --compact explicitly
+  // retains the full pending queue for audit/export, not routine execution.
+  console.log(JSON.stringify(packetSize!==undefined?executionPacket(plan,packetSize):compact?compactPlan(plan):executionPacket(plan,10)));
 }
