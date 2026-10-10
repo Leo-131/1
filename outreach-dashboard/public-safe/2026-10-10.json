@@ -1,0 +1,14 @@
+{
+  "dataDate": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "targetUniqueCompanies": 100,
+  "confirmedUniqueNewSends": 20,
+  "remaining": 80,
+  "countingRule": "Single send verified in Sent folder; drafts, failures and historical contacts excluded",
+  "deliveryStatus": "Sent-folder confirmation only; delivery not independently verified",
+  "executionTransport": "Codex in-app browser",
+  "template": "marketing-template-2",
+  "modelPolicy": "Deterministic rules for metrics and eligibility; bounded cached DeepSeek for public summaries and drafts; Codex review",
+  "privateCustomerDataIncluded": false,
+  "fullCustomerSync": "Private site only; not authorized for public GitHub disclosure"
+}
