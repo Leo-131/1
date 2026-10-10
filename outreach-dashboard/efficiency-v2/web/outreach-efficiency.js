@@ -184,5 +184,16 @@
         trust:'cached-leads-only-live-validation-required',eligibleToSend:false}};
     });
   }
-  root.OutreachEfficiency = {identityKeys, researchIndex, researchFor, modelClient, researchBatch, prioritizeResearch, researchContext};
+  // Verify existing source/contact leads first, never treat cached scores as gates.
+  // Stable order preserves product/channel ordering within each evidence tier.
+  function prioritizeVerification(rows) {
+    const tier=row=>{
+      const facts=row?.cachedResearch;
+      if(!facts || facts.contactConflict || facts.scoreConflict)return 0;
+      return facts.sourceUrls?.length ? (facts.contactCandidates?.length ? 2 : 1) : 0;
+    };
+    return rows.map((row,position)=>({row,position,tier:tier(row)}))
+      .sort((a,b)=>b.tier-a.tier||a.position-b.position).map(item=>item.row);
+  }
+  root.OutreachEfficiency = {identityKeys, researchIndex, researchFor, modelClient, researchBatch, prioritizeResearch, researchContext, prioritizeVerification};
 })(typeof window !== 'undefined' ? window : globalThis);

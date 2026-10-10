@@ -7,13 +7,15 @@ export const identityKeys = globalThis.OutreachEfficiency.identityKeys;
 export function planRound({candidates=[],research=[],history=[],limit=100}) {
   const guard=globalThis.OutreachQueueGuard;
   const index=guard.build(history,identityKeys);
-  const ordered=globalThis.OutreachEfficiency.prioritizeResearch(candidates);
+  const efficiency=globalThis.OutreachEfficiency;
+  const ordered=efficiency.prioritizeVerification(efficiency.prioritizeResearch(
+    efficiency.researchContext(candidates,research)));
   const plan=globalThis.OutreachEfficiency.researchBatch(ordered,{
     keys:identityKeys,blocked:row=>guard.blocked(row,index,identityKeys),research,limit
   });
-  return {...plan,rows:globalThis.OutreachEfficiency.researchContext(plan.rows,research),
+  return {...plan,
     transport:'iab',emailTemplate:'营销模板2',modelCalls:0,
-    researchOrdering:'deterministic-product-and-channel-signals-not-ICP',
+    researchOrdering:'cached-evidence-first-then-product-and-channel-not-ICP',
     liveChecksStillRequired:['daily-agency-table','official-public-contact','ICP>70',
       'current-product-fit','live-CRM-group-dedup','mailbox-all-folders-and-recipient-dedup'],
     execution:'serial-single-send-confirm-receipt-write-permanent-record',batchWaitMs:0};

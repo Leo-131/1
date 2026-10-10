@@ -29,7 +29,7 @@ export function extractRows(value) {
   if (value.company || value.domain || value.companyName) return [value];
   throw Error('No supported row container');
 }
-export function planWorkspace({candidateFile,researchDir,historyDir,limit=100}) {
+export function planWorkspace({candidateFile,candidateFiles,researchDir,historyDir,limit=100}) {
   const started=performance.now(), hashes=[], files=new Set();
   function read(filename) {
     const absolute=path.resolve(filename);
@@ -39,7 +39,10 @@ export function planWorkspace({candidateFile,researchDir,historyDir,limit=100}) 
     hashes.push([path.basename(absolute),crypto.createHash('sha256').update(bytes).digest('hex')]);
     return bytes.toString('utf8').replace(/^\uFEFF/,'');
   }
-  const candidates=extractRows(JSON.parse(read(candidateFile)));
+  const inputs=candidateFiles ?? [candidateFile];
+  if(!Array.isArray(inputs)||!inputs.length||inputs.some(file=>typeof file!=='string'||!file))
+    throw Error('At least one candidate file is required');
+  const candidates=inputs.flatMap(file=>extractRows(JSON.parse(read(file))));
   const research=[];
   // Deliberately exclude generated preflight/provider output: it is not research evidence.
   const selected=fs.readdirSync(researchDir).filter(name=>
@@ -69,7 +72,7 @@ export function planWorkspace({candidateFile,researchDir,historyDir,limit=100}) 
     } else throw Error('Invalid history: '+global);
   }
   const plan=planRound({candidates,research,history,limit});
-  return {...plan,inputs:{candidateRows:candidates.length,researchRows:research.length,
+  return {...plan,inputs:{candidateRows:candidates.length,candidateFiles:inputs.length,researchRows:research.length,
     historyRows:history.length,filesRead:files.size,researchFiles:selected.length,
     snapshotDigest:crypto.createHash('sha256').update(JSON.stringify(hashes)).digest('hex')},
     localPreflightMs:Math.round((performance.now()-started)*100)/100,
@@ -92,15 +95,16 @@ export function executionPacket(plan, size=10) {
       eligibleToSend:false}};
 }
 if (process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
-  const args=process.argv.slice(2),options={};let compact=false,packetSize;
+  const args=process.argv.slice(2),options={candidateFiles:[]};let compact=false,packetSize;
   for (let i=0;i<args.length;i++) {
     if(args[i]==='--compact'){compact=true;continue;}
     if(args[i]==='--packet-size'){packetSize=Number(args[++i]);continue;}
     const key={'--candidates':'candidateFile','--research-dir':'researchDir','--history-dir':'historyDir','--limit':'limit'}[args[i]];
     if(!key || !args[i+1] || args[i+1].startsWith('--'))throw Error('Use --candidates file --research-dir directory --history-dir directory [--limit 100] [--compact]');
-    options[key]=key==='limit'?Number(args[++i]):args[++i];
+    if(key==='candidateFile')options.candidateFiles.push(args[++i]);
+    else options[key]=key==='limit'?Number(args[++i]):args[++i];
   }
-  if (!options.candidateFile||!options.researchDir||!options.historyDir)throw Error('All three input sources are required');
+  if (!options.candidateFiles.length||!options.researchDir||!options.historyDir)throw Error('All three input sources are required');
   const plan=planWorkspace(options);
   // Normal executions emit only the next research packet. --compact explicitly
   // retains the full pending queue for audit/export, not routine execution.
