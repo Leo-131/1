@@ -1,0 +1,15 @@
+{
+  "dataDate": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "fixedBatchDate": "2026-10-10",
+  "targetUniqueCompanies": 100,
+  "confirmedUniqueNewSendsOnDataDate": 2,
+  "confirmedUniqueNewSendsInFixedBatch": 50,
+  "remainingInFixedBatch": 50,
+  "countingRule": "Single send verified in Sent folder with actual execution timestamp; drafts, failures and historical contacts excluded",
+  "deliveryStatus": "Sent-folder confirmation only; delivery not independently verified",
+  "executionTransport": "Codex in-app browser",
+  "template": "marketing-template-2",
+  "privateCustomerDataIncluded": false,
+  "fullCustomerSync": "Private site only; not authorized for public GitHub disclosure"
+}
